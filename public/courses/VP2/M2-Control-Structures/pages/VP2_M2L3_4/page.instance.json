@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 2,
+  "id": "VP2_M2L3_4",
+  "title": "Turns and degrees - Part 4",
+  "type": "generic-captured-page",
+  "taskCount": 2,
+  "tasks": [
+    {
+      "id": "task-1-21717",
+      "taskId": "task-1-21717",
+      "title": "Test yourself. Degrees",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\nMatch the correct descriptions of the turns.\nMove the clock pictures to the appropriate categories.\nANSWER\ncounterclockwise 120 degrees\nclockwise 30 degrees\ncounterclockwise 90 degrees",
+      "bodyText": "1\n2\nMatch the correct descriptions of the turns.\n\nMove the clock pictures to the appropriate categories.\n\nANSWER\n\ncounterclockwise 120 degrees\n\nclockwise 30 degrees\n\ncounterclockwise 90 degrees",
+      "textLines": [
+        "1",
+        "2",
+        "Match the correct descriptions of the turns.",
+        "Move the clock pictures to the appropriate categories.",
+        "ANSWER",
+        "counterclockwise 120 degrees",
+        "clockwise 30 degrees",
+        "counterclockwise 90 degrees"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-1-21717-state-1",
+          "stateId": "task-1-21717-state-1",
+          "name": "1",
+          "instruction": "1\n2\nMatch the correct descriptions of the turns.\nMove the clock pictures to the appropriate categories.\nANSWER\ncounterclockwise 120 degrees\nclockwise 30 degrees\ncounterclockwise 90 degrees",
+          "bodyText": "1\n2\nMatch the correct descriptions of the turns.\n\nMove the clock pictures to the appropriate categories.\n\nANSWER\n\ncounterclockwise 120 degrees\n\nclockwise 30 degrees\n\ncounterclockwise 90 degrees",
+          "textLines": [
+            "1",
+            "2",
+            "Match the correct descriptions of the turns.",
+            "Move the clock pictures to the appropriate categories.",
+            "ANSWER",
+            "counterclockwise 120 degrees",
+            "clockwise 30 degrees",
+            "counterclockwise 90 degrees"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-2-21717",
+      "taskId": "task-2-21717",
+      "title": "Test yourself. Degrees",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
+      "bodyText": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "Which direction will the MarsBot be looking in after clicking on it?",
+        "ANSWER"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-2-21717-state-1",
+          "stateId": "task-2-21717-state-1",
+          "name": "2",
+          "instruction": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
+          "bodyText": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "Which direction will the MarsBot be looking in after clicking on it?",
+            "ANSWER"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg"
+        }
+      ]
+    }
+  ],
+  "frameConfig": {
+    "showTopNavigation": true,
+    "showSideNavigation": true,
+    "showBottomControls": true,
+    "showNextButton": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "M2-Control-Structures",
+  "title": "Space",
+  "pages": [
+    {
+      "id": "VP2_M2L3_SLIDES",
+      "title": "Slide: M2L3 - Turns and degrees",
+      "lessonId": "VP2_M2L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L3_1",
+      "title": "Turns and degrees - Part 1",
+      "lessonId": "VP2_M2L3",
+      "taskCount": 14
+    },
+    {
+      "id": "VP2_M2L3_2",
+      "title": "Turns and degrees - Part 2",
+      "lessonId": "VP2_M2L3",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M2L3_3",
+      "title": "Turns and degrees - Part 3",
+      "lessonId": "VP2_M2L3",
+      "taskCount": 6
+    },
+    {
+      "id": "VP2_M2L3_4",
+      "title": "Turns and degrees - Part 4",
+      "lessonId": "VP2_M2L3",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M2L4_SLIDES",
+      "title": "Slide: M2L4 - Messages",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L4_1",
+      "title": "Messages - Part 1",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 6
+    },
+    {
+      "id": "VP2_M2L4_2",
+      "title": "Messages - Part 2",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L4_3",
+      "title": "Messages - Part 3",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L4_4",
+      "title": "Messages - Part 4",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M2L4_5",
+      "title": "Messages - Part 5",
+      "lessonId": "VP2_M2L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L5_SLIDES",
+      "title": "Slide: M2L5 - Project Animation",
+      "lessonId": "VP2_M2L5",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M2L5_1",
+      "title": "Project Animation - Part 1",
+      "lessonId": "VP2_M2L5",
+      "taskCount": 1
+    }
+  ],
+  "pageCount": 13,
+  "taskCount": 43
+}

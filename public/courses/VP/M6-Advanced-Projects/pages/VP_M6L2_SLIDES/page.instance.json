@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M6L2_SLIDES",
+  "title": "Slide: M6L2 - Local and global variables",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1ofWfGh6Jn38S5ZDsnxzdUWNwO9sj33X7ypHUViVZ9Ao/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

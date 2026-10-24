@@ -1,0 +1,134 @@
+{
+  "id": "M3-Functions-and-Modules",
+  "title": "Game",
+  "pages": [
+    {
+      "id": "VP2_M3L1_1",
+      "title": "Conditions and the selection operator - Part 1",
+      "lessonId": "VP2_M3L1",
+      "taskCount": 10
+    },
+    {
+      "id": "VP2_M3L1_2",
+      "title": "Conditions and the selection operator - Part 2",
+      "lessonId": "VP2_M3L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L1_3",
+      "title": "Conditions and the selection operator - Part 3",
+      "lessonId": "VP2_M3L1",
+      "taskCount": 9
+    },
+    {
+      "id": "VP2_M3L1_4",
+      "title": "Conditions and the selection operator - Part 4",
+      "lessonId": "VP2_M3L1",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M3L2_SLIDES",
+      "title": "Slide: M3L2 - Changing coordinates",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L2_1_track1",
+      "title": "Changing coordinates - VP_M3L2_1_track1",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M3L2_1_track2",
+      "title": "Changing coordinates - VP_M3L2_1_track2",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 15
+    },
+    {
+      "id": "VP2_M3L2_2",
+      "title": "Changing coordinates - Part 2",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L2_3",
+      "title": "Changing coordinates - Part 3",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 9
+    },
+    {
+      "id": "VP2_M3L2_4",
+      "title": "Changing coordinates - Part 4",
+      "lessonId": "VP2_M3L2",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M3L3_SLIDES",
+      "title": "Slide: M3L3 - Procedures",
+      "lessonId": "VP2_M3L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L3_1",
+      "title": "Procedures - Part 1",
+      "lessonId": "VP2_M3L3",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M3L3_2",
+      "title": "Procedures - Part 2",
+      "lessonId": "VP2_M3L3",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M3L3_3",
+      "title": "Procedures - Part 3",
+      "lessonId": "VP2_M3L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L3_4",
+      "title": "Procedures - Part 4",
+      "lessonId": "VP2_M3L3",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M3L4_SLIDES",
+      "title": "Slide: M3L4 - Game planning",
+      "lessonId": "VP2_M3L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L4_1",
+      "title": "Game planning - Part 1",
+      "lessonId": "VP2_M3L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L5_SLIDES",
+      "title": "Slide: M3L5 - Game Testing",
+      "lessonId": "VP2_M3L5",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L5_1",
+      "title": "Game Testing - Part 1",
+      "lessonId": "VP2_M3L5",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L6_SLIDES",
+      "title": "Slide: M3L6 - Game Presentation",
+      "lessonId": "VP2_M3L6",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M3L6_1",
+      "title": "Game Presentation - Part 1",
+      "lessonId": "VP2_M3L6",
+      "taskCount": 1
+    }
+  ],
+  "pageCount": 21,
+  "taskCount": 87
+}

@@ -1,0 +1,92 @@
+{
+  "id": "M6-Advanced-Projects",
+  "title": "Clones",
+  "pages": [
+    {
+      "id": "VP2_M6L1_SLIDES",
+      "title": "Slide: M6L1 - Classes and objects",
+      "lessonId": "VP2_M6L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L1_1",
+      "title": "Classes and objects - Part 1",
+      "lessonId": "VP2_M6L1",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M6L1_2",
+      "title": "Classes and objects - Part 2",
+      "lessonId": "VP2_M6L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L1_3",
+      "title": "Classes and objects - Part 3",
+      "lessonId": "VP2_M6L1",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M6L2_SLIDES",
+      "title": "Slide: M6L2 - Local and global variables",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L2_1",
+      "title": "Local and global variables - Part 1",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M6L2_2",
+      "title": "Local and global variables - Part 2",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M6L2_3",
+      "title": "Local and global variables - Part 3",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L2_4",
+      "title": "Local and global variables - Part 4",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L2_5",
+      "title": "Local and global variables - Part 5",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L2_6",
+      "title": "Local and global variables - Part 6",
+      "lessonId": "VP2_M6L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M6L3_1",
+      "title": "Adding an interface - Part 1",
+      "lessonId": "VP2_M6L3",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M6L3_2",
+      "title": "Adding an interface - Part 2",
+      "lessonId": "VP2_M6L3",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M6L4_1",
+      "title": "Scratch. Game creation - Part 1",
+      "lessonId": "VP2_M6L4",
+      "taskCount": 3
+    }
+  ],
+  "pageCount": 14,
+  "taskCount": 24
+}

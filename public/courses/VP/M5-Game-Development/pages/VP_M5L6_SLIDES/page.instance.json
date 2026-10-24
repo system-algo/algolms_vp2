@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M5L6_SLIDES",
+  "title": "Slide: M5L6 - Project. Presentation",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1zpkyORarAFsYzQ1UEoQrp6s9XgzlZHF5vuX68dwAmIA/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

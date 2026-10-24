@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "id": "VP2_M3L1_4",
+  "title": "Conditions and the selection operator - Part 4",
+  "type": "generic-captured-page",
+  "taskCount": 3,
+  "tasks": [
+    {
+      "id": "task-1-22224",
+      "taskId": "task-1-22224",
+      "title": "Test yourself. Conditions",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nWhat script for the Bat sprite will make the walls of the maze impenetrable?\nAt the beginning of the program, the Bat sprite has these coordinates (-200; -110)\nANSWER",
+      "bodyText": "1\n2\n3\nWhat script for the Bat sprite will make the walls of the maze impenetrable?\n\nAt the beginning of the program, the Bat sprite has these coordinates (-200; -110)\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "What script for the Bat sprite will make the walls of the maze impenetrable?",
+        "At the beginning of the program, the Bat sprite has these coordinates (-200; -110)",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-1-22224-state-1",
+          "stateId": "task-1-22224-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\nWhat script for the Bat sprite will make the walls of the maze impenetrable?\nAt the beginning of the program, the Bat sprite has these coordinates (-200; -110)\nANSWER",
+          "bodyText": "1\n2\n3\nWhat script for the Bat sprite will make the walls of the maze impenetrable?\n\nAt the beginning of the program, the Bat sprite has these coordinates (-200; -110)\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "What script for the Bat sprite will make the walls of the maze impenetrable?",
+            "At the beginning of the program, the Bat sprite has these coordinates (-200; -110)",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-2-22224",
+      "taskId": "task-2-22224",
+      "title": "Test yourself. Conditions",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nWhen will the MarsBot pick up the cargo?\nTake a look at this script and choose under what condition the MarsBot will pick up the cargo.\nANSWER\nWhen it is run\nIf the cargo under the MarsBot is in the shape of a prism\nWhen it turns to the left\nIf the cargo under the MarsBot is in the shape of a cube",
+      "bodyText": "1\n2\n3\nWhen will the MarsBot pick up the cargo?\n\nTake a look at this script and choose under what condition the MarsBot will pick up the cargo.\n\nANSWER\n\nWhen it is run\n\nIf the cargo under the MarsBot is in the shape of a prism\n\nWhen it turns to the left\n\nIf the cargo under the MarsBot is in the shape of a cube",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "When will the MarsBot pick up the cargo?",
+        "Take a look at this script and choose under what condition the MarsBot will pick up the cargo.",
+        "ANSWER",
+        "When it is run",
+        "If the cargo under the MarsBot is in the shape of a prism",
+        "When it turns to the left",
+        "If the cargo under the MarsBot is in the shape of a cube"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-2-22224-state-1",
+          "stateId": "task-2-22224-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\nWhen will the MarsBot pick up the cargo?\nTake a look at this script and choose under what condition the MarsBot will pick up the cargo.\nANSWER\nWhen it is run\nIf the cargo under the MarsBot is in the shape of a prism\nWhen it turns to the left\nIf the cargo under the MarsBot is in the shape of a cube",
+          "bodyText": "1\n2\n3\nWhen will the MarsBot pick up the cargo?\n\nTake a look at this script and choose under what condition the MarsBot will pick up the cargo.\n\nANSWER\n\nWhen it is run\n\nIf the cargo under the MarsBot is in the shape of a prism\n\nWhen it turns to the left\n\nIf the cargo under the MarsBot is in the shape of a cube",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "When will the MarsBot pick up the cargo?",
+            "Take a look at this script and choose under what condition the MarsBot will pick up the cargo.",
+            "ANSWER",
+            "When it is run",
+            "If the cargo under the MarsBot is in the shape of a prism",
+            "When it turns to the left",
+            "If the cargo under the MarsBot is in the shape of a cube"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-3-22224",
+      "taskId": "task-3-22224",
+      "title": "Test yourself. Conditions",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nWhat needs to be done to make the sprite glide to a random position?\nANSWER\nClick on the mouse\nClick on the mouse and then on the space bar\nClick on the space bar and then on the mouse\nClick on the space bar",
+      "bodyText": "1\n2\n3\nWhat needs to be done to make the sprite glide to a random position?\nANSWER\n\nClick on the mouse\n\nClick on the mouse and then on the space bar\n\nClick on the space bar and then on the mouse\n\nClick on the space bar",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "What needs to be done to make the sprite glide to a random position?",
+        "ANSWER",
+        "Click on the mouse",
+        "Click on the mouse and then on the space bar",
+        "Click on the space bar and then on the mouse",
+        "Click on the space bar"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-3-22224-state-1",
+          "stateId": "task-3-22224-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\nWhat needs to be done to make the sprite glide to a random position?\nANSWER\nClick on the mouse\nClick on the mouse and then on the space bar\nClick on the space bar and then on the mouse\nClick on the space bar",
+          "bodyText": "1\n2\n3\nWhat needs to be done to make the sprite glide to a random position?\nANSWER\n\nClick on the mouse\n\nClick on the mouse and then on the space bar\n\nClick on the space bar and then on the mouse\n\nClick on the space bar",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "What needs to be done to make the sprite glide to a random position?",
+            "ANSWER",
+            "Click on the mouse",
+            "Click on the mouse and then on the space bar",
+            "Click on the space bar and then on the mouse",
+            "Click on the space bar"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    }
+  ],
+  "frameConfig": {
+    "showTopNavigation": true,
+    "showSideNavigation": true,
+    "showBottomControls": true,
+    "showNextButton": true
+  }
+}

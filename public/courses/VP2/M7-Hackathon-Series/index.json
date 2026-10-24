@@ -1,0 +1,98 @@
+{
+  "id": "M7-Hackathon-Series",
+  "title": "Final Project",
+  "pages": [
+    {
+      "id": "VP2_M7L1_SLIDES",
+      "title": "Slide: M7L1 - Preparing for the final project",
+      "lessonId": "VP2_M7L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M7L1_1",
+      "title": "Preparing for the final project - Part 1",
+      "lessonId": "VP2_M7L1",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M7L2_SLIDES",
+      "title": "Slide: M7L2 - Graduation",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M7L2_1",
+      "title": "Graduation - Part 1",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_2",
+      "title": "Graduation - Part 2",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_3",
+      "title": "Graduation - Part 3",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_4",
+      "title": "Graduation - Part 4",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_5",
+      "title": "Graduation - Part 5",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_6",
+      "title": "Graduation - Part 6",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_7",
+      "title": "Graduation - Part 7",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_8",
+      "title": "Graduation - Part 8",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_9",
+      "title": "Graduation - Part 9",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_10",
+      "title": "Graduation - Part 10",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_11",
+      "title": "Graduation - Part 11",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M7L2_12",
+      "title": "Graduation - Part 12",
+      "lessonId": "VP2_M7L2",
+      "taskCount": 5
+    }
+  ],
+  "pageCount": 15,
+  "taskCount": 65
+}

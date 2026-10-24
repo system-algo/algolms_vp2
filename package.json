@@ -1,0 +1,24 @@
+{
+  "name": "algolms_vp2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "import": "node scripts/importH5p.mjs",
+    "import:watch": "node scripts/importH5p.mjs --watch",
+    "import:force": "node scripts/importH5p.mjs --force",
+    "import:clean": "node scripts/importH5p.mjs --clean --force"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "adm-zip": "^0.5.17",
+    "h5p-standalone": "^3.8.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "sharp": "latest",
+    "vite": "latest"
+  }
+}

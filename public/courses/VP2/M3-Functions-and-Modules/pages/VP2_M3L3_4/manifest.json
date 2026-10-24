@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "id": "VP2_M3L3_4",
+  "title": "Procedures - Part 4",
+  "type": "generic-captured-page",
+  "taskCount": 3,
+  "metadata": {
+    "courseId": "VP2",
+    "lessonId": "M3-Functions-and-Modules",
+    "sourceZip": "VP_M3L3_4.zip",
+    "format": "logika-crawler-capture",
+    "importedAt": "2026-10-24T08:51:30.376Z"
+  },
+  "tasks": [
+    {
+      "id": "task-1-22853",
+      "taskId": "task-1-22853",
+      "title": "Test yourself. Procedures",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nWhat will the sprite do when you click on it?\nANSWER\nGet 20% bigger 10 times and become 10 times more transparent\nGet 10% bigger 10 times and become 5 times more transparent\nSay \"inflate a large balloon\"\nSend the message \"inflate a large balloon\"",
+      "bodyText": "1\n2\n3\nWhat will the sprite do when you click on it?\nANSWER\n\nGet 20% bigger 10 times and become 10 times more transparent\n\nGet 10% bigger 10 times and become 5 times more transparent\n\nSay \"inflate a large balloon\"\n\nSend the message \"inflate a large balloon\"",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "What will the sprite do when you click on it?",
+        "ANSWER",
+        "Get 20% bigger 10 times and become 10 times more transparent",
+        "Get 10% bigger 10 times and become 5 times more transparent",
+        "Say \"inflate a large balloon\"",
+        "Send the message \"inflate a large balloon\""
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-1-22853-state-1",
+          "stateId": "task-1-22853-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\nWhat will the sprite do when you click on it?\nANSWER\nGet 20% bigger 10 times and become 10 times more transparent\nGet 10% bigger 10 times and become 5 times more transparent\nSay \"inflate a large balloon\"\nSend the message \"inflate a large balloon\"",
+          "bodyText": "1\n2\n3\nWhat will the sprite do when you click on it?\nANSWER\n\nGet 20% bigger 10 times and become 10 times more transparent\n\nGet 10% bigger 10 times and become 5 times more transparent\n\nSay \"inflate a large balloon\"\n\nSend the message \"inflate a large balloon\"",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "What will the sprite do when you click on it?",
+            "ANSWER",
+            "Get 20% bigger 10 times and become 10 times more transparent",
+            "Get 10% bigger 10 times and become 5 times more transparent",
+            "Say \"inflate a large balloon\"",
+            "Send the message \"inflate a large balloon\""
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-2-22853",
+      "taskId": "task-2-22853",
+      "title": "Test yourself. Procedures",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
+      "bodyText": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "After which blocks can no other commands be placed?",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-2-22853-state-1",
+          "stateId": "task-2-22853-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
+          "bodyText": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "After which blocks can no other commands be placed?",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-3-22853",
+      "taskId": "task-3-22853",
+      "title": "Test yourself. Procedures",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nHow will the sprite behave when this program is run?\nANSWER",
+      "bodyText": "1\n2\n3\nHow will the sprite behave when this program is run?\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "How will the sprite behave when this program is run?",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-3-22853-state-1",
+          "stateId": "task-3-22853-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\nHow will the sprite behave when this program is run?\nANSWER",
+          "bodyText": "1\n2\n3\nHow will the sprite behave when this program is run?\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "How will the sprite behave when this program is run?",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    }
+  ]
+}

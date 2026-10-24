@@ -1,0 +1,2339 @@
+{
+  "schemaVersion": 2,
+  "id": "VP2_M2L3_1",
+  "title": "Turns and degrees - Part 1",
+  "type": "generic-captured-page",
+  "taskCount": 14,
+  "tasks": [
+    {
+      "id": "task-1-21714",
+      "taskId": "task-1-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "Next"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_02_img.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_02_img.png",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-1-21714-state-1",
+          "stateId": "task-1-21714-state-1",
+          "name": "icon_1",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "Next"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_02_img.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_02_img.png",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_01_task_21714_actual_1_activity_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-2-21714",
+      "taskId": "task-2-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant\n✕\nTo destroy a pest plant, use the destroy command.\nContinue",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant\n✕\nTo destroy a pest plant, use the destroy command.\nContinue",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Destroy one pest plant",
+        "✕",
+        "To destroy a pest plant, use the destroy command.",
+        "Continue"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_02_img.gif",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_02_img.gif",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_06_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_06_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_09_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_09_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_10_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_10_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-2-21714-state-1",
+          "stateId": "task-2-21714-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant\n✕\nTo destroy a pest plant, use the destroy command.\nContinue",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant\n✕\nTo destroy a pest plant, use the destroy command.\nContinue",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Destroy one pest plant",
+            "✕",
+            "To destroy a pest plant, use the destroy command.",
+            "Continue"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_02_img.gif",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_02_img.gif",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_06_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_06_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_09_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_09_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_10_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_10_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-3-21714",
+      "taskId": "task-3-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nFind the small sprout and water it\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nFind the small sprout and water it\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Find the small sprout and water it",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-3-21714-state-1",
+          "stateId": "task-3-21714-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nFind the small sprout and water it\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nFind the small sprout and water it\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Find the small sprout and water it",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_03_task_21714_actual_3_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-4-21714",
+      "taskId": "task-4-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant and grow one good one\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant and grow one good one\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Destroy one pest plant and grow one good one",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-4-21714-state-1",
+          "stateId": "task-4-21714-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant and grow one good one\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nDestroy one pest plant and grow one good one\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Destroy one pest plant and grow one good one",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_04_task_21714_actual_4_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-5-21714",
+      "taskId": "task-5-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nWhen Start clicked\nHelp with the greenhouse\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nWhen Start clicked\nHelp with the greenhouse\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "When Start clicked",
+        "Help with the greenhouse",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-5-21714-state-1",
+          "stateId": "task-5-21714-state-1",
+          "name": "4",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nWhen Start clicked\nHelp with the greenhouse\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nWhen Start clicked\nHelp with the greenhouse\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "When Start clicked",
+            "Help with the greenhouse",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_05_task_21714_actual_5_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-6-21714",
+      "taskId": "task-6-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe greenhouse needs plants\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe greenhouse needs plants\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "The greenhouse needs plants",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-6-21714-state-1",
+          "stateId": "task-6-21714-state-1",
+          "name": "5",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe greenhouse needs plants\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe greenhouse needs plants\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "The greenhouse needs plants",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_06_task_21714_actual_6_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-7-21714",
+      "taskId": "task-7-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the greenhouse\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the greenhouse\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Help with the greenhouse",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-7-21714-state-1",
+          "stateId": "task-7-21714-state-1",
+          "name": "6",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the greenhouse\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the greenhouse\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Help with the greenhouse",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_07_task_21714_actual_7_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-8-21714",
+      "taskId": "task-8-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSprout all the plants\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSprout all the plants\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Sprout all the plants",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-8-21714-state-1",
+          "stateId": "task-8-21714-state-1",
+          "name": "7",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSprout all the plants\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSprout all the plants\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Sprout all the plants",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_08_task_21714_actual_8_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-9-21714",
+      "taskId": "task-9-21714",
+      "title": "Laser and plants",
+      "activityType": "feedback_rating_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nDid you like the task?",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nDid you like the task?",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "Did you like the task?"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_02_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_02_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_03_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_03_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-9-21714-state-1",
+          "stateId": "task-9-21714-state-1",
+          "name": "icon_9",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nDid you like the task?",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nDid you like the task?",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "Did you like the task?"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_02_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_02_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_03_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_03_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_09_task_21714_actual_9_feedback_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-10-21714",
+      "taskId": "task-10-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "Next"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_02_img.jpg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_02_img.jpg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-10-21714-state-1",
+          "stateId": "task-10-21714-state-1",
+          "name": "icon_10",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nNext",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "Next"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_02_img.jpg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_02_img.jpg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_10_task_21714_actual_10_activity_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-11-21714",
+      "taskId": "task-11-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe hordes are coming! Destroy the enemies and protect the little ones.\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe hordes are coming! Destroy the enemies and protect the little ones.\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "The hordes are coming! Destroy the enemies and protect the little ones.",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-11-21714-state-1",
+          "stateId": "task-11-21714-state-1",
+          "name": "8",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe hordes are coming! Destroy the enemies and protect the little ones.\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nThe hordes are coming! Destroy the enemies and protect the little ones.\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "The hordes are coming! Destroy the enemies and protect the little ones.",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_11_task_21714_actual_11_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-12-21714",
+      "taskId": "task-12-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the plants\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the plants\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Help with the plants",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-12-21714-state-1",
+          "stateId": "task-12-21714-state-1",
+          "name": "9",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the plants\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nHelp with the plants\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Help with the plants",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_12_task_21714_actual_12_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-13-21714",
+      "taskId": "task-13-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSometimes the long way is faster than the shortcut\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSometimes the long way is faster than the shortcut\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Sometimes the long way is faster than the shortcut",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-13-21714-state-1",
+          "stateId": "task-13-21714-state-1",
+          "name": "10",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSometimes the long way is faster than the shortcut\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nSometimes the long way is faster than the shortcut\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Sometimes the long way is faster than the shortcut",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_13_task_21714_actual_13_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-14-21714",
+      "taskId": "task-14-21714",
+      "title": "Laser and plants",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nBuild a loop. No more than 3 commands!\n✕",
+      "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nBuild a loop. No more than 3 commands!\n✕",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "commands used: 0",
+        "turn clockwise to",
+        "30 ▾",
+        "turn counterclockwise to",
+        "30 ▾",
+        "repeat",
+        "2 ▾",
+        "times",
+        "destroy",
+        "water",
+        "When Start clicked",
+        "Build a loop. No more than 3 commands!",
+        "✕"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_04_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_04_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_05_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_05_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_08_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_08_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-14-21714-state-1",
+          "stateId": "task-14-21714-state-1",
+          "name": "11",
+          "instruction": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0\nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nBuild a loop. No more than 3 commands!\n✕",
+          "bodyText": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\ncommands used: 0 \nturn clockwise to\n30 ▾\nturn counterclockwise to\n30 ▾\nrepeat\n2 ▾\ntimes\ndestroy\nwater\nWhen Start clicked\nBuild a loop. No more than 3 commands!\n✕",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "commands used: 0",
+            "turn clockwise to",
+            "30 ▾",
+            "turn counterclockwise to",
+            "30 ▾",
+            "repeat",
+            "2 ▾",
+            "times",
+            "destroy",
+            "water",
+            "When Start clicked",
+            "Build a loop. No more than 3 commands!",
+            "✕"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_04_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_04_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_05_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_05_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_08_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_08_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_14_task_21714_actual_14_static_image_01_img.svg"
+        }
+      ]
+    }
+  ],
+  "frameConfig": {
+    "showTopNavigation": true,
+    "showSideNavigation": true,
+    "showBottomControls": true,
+    "showNextButton": true
+  }
+}

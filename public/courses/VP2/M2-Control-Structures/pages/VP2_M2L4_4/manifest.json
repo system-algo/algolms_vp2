@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "id": "VP2_M2L4_4",
+  "title": "Messages - Part 4",
+  "type": "generic-captured-page",
+  "taskCount": 3,
+  "metadata": {
+    "courseId": "VP2",
+    "lessonId": "M2-Control-Structures",
+    "sourceZip": "VP_M2L4_4.zip",
+    "format": "logika-crawler-capture",
+    "importedAt": "2026-10-24T08:51:30.184Z"
+  },
+  "tasks": [
+    {
+      "id": "task-1-21661",
+      "taskId": "task-1-21661",
+      "title": "Test yourself. Messages",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nFind clear messages\nChoose the properly worded messages that make it clear what actions they trigger.\nANSWER",
+      "bodyText": "1\n2\n3\nFind clear messages\n\nChoose the properly worded messages that make it clear what actions they trigger.\n\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Find clear messages",
+        "Choose the properly worded messages that make it clear what actions they trigger.",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-1-21661-state-1",
+          "stateId": "task-1-21661-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\nFind clear messages\nChoose the properly worded messages that make it clear what actions they trigger.\nANSWER",
+          "bodyText": "1\n2\n3\nFind clear messages\n\nChoose the properly worded messages that make it clear what actions they trigger.\n\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Find clear messages",
+            "Choose the properly worded messages that make it clear what actions they trigger.",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-2-21661",
+      "taskId": "task-2-21661",
+      "title": "Test yourself. Messages",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nSort the events and messages\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\nANSWER\nMessages\nEvents",
+      "bodyText": "1\n2\n3\nSort the events and messages\n\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\n\nANSWER\n\nMessages\n\nEvents",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Sort the events and messages",
+        "Which commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?",
+        "ANSWER",
+        "Messages",
+        "Events"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-2-21661-state-1",
+          "stateId": "task-2-21661-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\nSort the events and messages\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\nANSWER\nMessages\nEvents",
+          "bodyText": "1\n2\n3\nSort the events and messages\n\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\n\nANSWER\n\nMessages\n\nEvents",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Sort the events and messages",
+            "Which commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?",
+            "ANSWER",
+            "Messages",
+            "Events"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-3-21661",
+      "taskId": "task-3-21661",
+      "title": "Test yourself. Messages",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nChoose a script\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\nANSWER",
+      "bodyText": "1\n2\n3\nChoose a script\n\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\n\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Choose a script",
+        "Choose the script where the sprite will rotate slightly 10 times when you run the above script.",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-3-21661-state-1",
+          "stateId": "task-3-21661-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\nChoose a script\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\nANSWER",
+          "bodyText": "1\n2\n3\nChoose a script\n\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\n\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Choose a script",
+            "Choose the script where the sprite will rotate slightly 10 times when you run the above script.",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    }
+  ]
+}

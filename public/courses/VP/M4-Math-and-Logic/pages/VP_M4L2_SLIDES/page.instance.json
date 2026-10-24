@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L2_SLIDES",
+  "title": "Slide: M4L2 - Conditional loop",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1tSfPKiUsY8MSBm8EOq-Uo1wiQZnreDY3eo4jePQGBzM/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

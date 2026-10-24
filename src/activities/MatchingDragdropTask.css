@@ -1,0 +1,36 @@
+.matching-rule-item,
+.matching-rule-placed-item {
+  white-space: pre-wrap;
+}
+
+.matching-rule-item-content-image,
+.matching-rule-placed-item-content-image {
+  display: block;
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin: 0 auto 8px;
+}
+
+.matching-rule-item-content-text,
+.matching-rule-placed-item-content-text {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.matching-rule-definition {
+  gap: 8px;
+  flex-direction: column;
+}
+
+.matching-rule-definition-image {
+  display: block;
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.matching-rule-definition-text {
+  display: block;
+  white-space: pre-wrap;
+}

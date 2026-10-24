@@ -1,0 +1,15 @@
+import React from 'react';
+import GeneratedPageShell from '../../../../templates/GeneratedPageShell';
+
+export default function VP2_M4L1_3_track2() {
+  return (
+    <GeneratedPageShell
+      manifestUrl="/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_3_track2/manifest.json"
+      pageInstanceUrl="/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_3_track2/page.instance.json"
+      courseId="VP2"
+      lessonId="M4-Math-and-Logic"
+      pageId="VP2_M4L1_3_track2"
+      onBackToPages={() => window.history.back()}
+    />
+  );
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M5L3_SLIDES",
+  "title": "Slide: M5L3 - Variables in games",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1CN3Fvatg0r8Ph1Tw9wrwb22bnynRijCc919grE6ZLn4/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

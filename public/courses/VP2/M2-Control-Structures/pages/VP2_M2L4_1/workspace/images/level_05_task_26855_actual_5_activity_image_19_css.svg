@@ -1,0 +1,46 @@
+<svg
+  width="80"
+  height="80"
+  viewBox="0 0 80 80"
+  xmlns="http://www.w3.org/2000/svg"
+  class="algo-preloader"
+>
+  <path d="M56 20H24V52H32L40 60L48 52H56V20Z"/>
+
+  <defs>
+    <style>
+      @keyframes algoPreloaderFlip {
+      0% {
+      transform: perspective(200px) rotate3d(0, 1, 0, 90deg);
+      }
+
+      100% {
+      transform: perspective(200px) rotate3d(0, 1, 0, 450deg);
+      }
+      }
+
+      @keyframes algoPreloaderFill {
+      0% {
+      fill: #6a6e73;
+      }
+
+      50% {
+      fill: #6a6e73;
+      }
+
+      51% {
+      fill: #b5babf;
+      }
+
+      100% {
+      fill: #b5babf;
+      }
+      }
+
+      .algo-preloader {
+      transform-style: preserve-3d;
+      animation: algoPreloaderFlip 4s linear infinite reverse, 4s algoPreloaderFill linear infinite;
+      }
+    </style>
+  </defs>
+</svg>

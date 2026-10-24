@@ -1,0 +1,164 @@
+{
+  "id": "M4-Math-and-Logic",
+  "title": "Logic",
+  "pages": [
+    {
+      "id": "VP2_M4L1_SLIDES",
+      "title": "Slide: M4L1 - Logical operators",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M4L1_1",
+      "title": "Logical operators - Part 1",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 9
+    },
+    {
+      "id": "VP2_M4L1_2",
+      "title": "Logical operators - Part 2",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M4L1_3_track1",
+      "title": "Logical operators - VP_M4L1_3_track1",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M4L1_3_track2",
+      "title": "Logical operators - VP_M4L1_3_track2",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 14
+    },
+    {
+      "id": "VP2_M4L1_4",
+      "title": "Logical operators - Part 4",
+      "lessonId": "VP2_M4L1",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M4L2_SLIDES",
+      "title": "Slide: M4L2 - Conditional loop",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M4L2_1_track1",
+      "title": "Conditional loop - VP_M4L2_1_track1",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M4L2_1_track2",
+      "title": "Conditional loop - VP_M4L2_1_track2",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 27
+    },
+    {
+      "id": "VP2_M4L2_2",
+      "title": "Conditional loop - Part 2",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 15
+    },
+    {
+      "id": "VP2_M4L2_3",
+      "title": "Conditional loop - Part 3",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 22
+    },
+    {
+      "id": "VP2_M4L2_5",
+      "title": "Conditional loop - Part 5",
+      "lessonId": "VP2_M4L2",
+      "taskCount": 5
+    },
+    {
+      "id": "VP2_M4L3_SLIDES",
+      "title": "Slide: M4L3 - Random numbers and ranges",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M4L3_1",
+      "title": "Random numbers and ranges - Part 1",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 14
+    },
+    {
+      "id": "VP2_M4L3_2",
+      "title": "Random numbers and ranges - Part 2",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M4L3_3",
+      "title": "Random numbers and ranges - Part 3",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M4L3_4",
+      "title": "Random numbers and ranges - Part 4",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M4L4_1",
+      "title": "Random numbers and ranges - Part 1",
+      "lessonId": "VP2_M4L3",
+      "taskCount": 13
+    },
+    {
+      "id": "VP2_M4L4_SLIDES",
+      "title": "Slide: M4L4 - Coordinate areas",
+      "lessonId": "VP2_M4L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M4L4_1",
+      "title": "Coordinate areas - Part 1",
+      "lessonId": "VP2_M4L4",
+      "taskCount": 6
+    },
+    {
+      "id": "VP2_M4L4_2",
+      "title": "Coordinate areas - Part 2",
+      "lessonId": "VP2_M4L4",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M4L4_3",
+      "title": "Coordinate areas - Part 3",
+      "lessonId": "VP2_M4L4",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M4L4_4",
+      "title": "Coordinate areas - Part 4",
+      "lessonId": "VP2_M4L4",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M4L5_SLIDES",
+      "title": "Slide: M4L5 - Group project. Planning",
+      "lessonId": "VP2_M4L5",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M4L5_1",
+      "title": "Group project. Planning - Part 1",
+      "lessonId": "VP2_M4L5",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M4L5_2",
+      "title": "Group project. Planning - Part 2",
+      "lessonId": "VP2_M4L5",
+      "taskCount": 5
+    }
+  ],
+  "pageCount": 26,
+  "taskCount": 221
+}

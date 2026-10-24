@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M3L4_SLIDES",
+  "title": "Slide: M3L4 - Game planning",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/16gWVeHKs2yntMI7S9kWE_OzTT2dihP5AAoUOfL6gMwg/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

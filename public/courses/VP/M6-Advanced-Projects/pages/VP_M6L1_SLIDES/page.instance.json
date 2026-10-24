@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M6L1_SLIDES",
+  "title": "Slide: M6L1 - Classes and objects",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1qEkgRVWNRx02ub0xq5nxNw4kSdiJM2Nvjf-WT-wSDmE/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "id": "VP2_M3L2_4",
+  "title": "Changing coordinates - Part 4",
+  "type": "generic-captured-page",
+  "taskCount": 3,
+  "metadata": {
+    "courseId": "VP2",
+    "lessonId": "M3-Functions-and-Modules",
+    "sourceZip": "VP_M3L2_4.zip",
+    "format": "logika-crawler-capture",
+    "importedAt": "2026-10-24T08:51:30.311Z"
+  },
+  "tasks": [
+    {
+      "id": "task-1-22441",
+      "taskId": "task-1-22441",
+      "title": "Test yourself. Changing coordinates",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
+      "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Which script will move the smiley face to the red dot?",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-1-22441-state-1",
+          "stateId": "task-1-22441-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
+          "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Which script will move the smiley face to the red dot?",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-2-22441",
+      "taskId": "task-2-22441",
+      "title": "Test yourself. Changing coordinates",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
+      "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Select all the commands that will move the sprite down",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-2-22441-state-1",
+          "stateId": "task-2-22441-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
+          "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Select all the commands that will move the sprite down",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    },
+    {
+      "id": "task-3-22441",
+      "taskId": "task-3-22441",
+      "title": "Test yourself. Changing coordinates",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
+      "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "Select all the commands that will move the sprite to the right.",
+        "ANSWER"
+      ],
+      "images": [],
+      "states": [
+        {
+          "id": "task-3-22441-state-1",
+          "stateId": "task-3-22441-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
+          "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "Select all the commands that will move the sprite to the right.",
+            "ANSWER"
+          ],
+          "images": [],
+          "screenshot": ""
+        }
+      ]
+    }
+  ]
+}

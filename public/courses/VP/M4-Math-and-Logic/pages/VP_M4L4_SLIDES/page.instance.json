@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L4_SLIDES",
+  "title": "Slide: M4L4 - Coordinate areas",
+  "type": "google-slides",
+  "taskCount": 1,
+  "frameConfig": {
+    "googleSlides": {
+      "embedUrl": "https://docs.google.com/presentation/d/1X38mJEgutHBQlDAaaWha-v_D7Q7D5Ogz0kfXGeCq928/embed?start=false&loop=false&delayms=3000"
+    }
+  }
+}

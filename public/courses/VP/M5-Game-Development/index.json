@@ -1,0 +1,152 @@
+{
+  "id": "M5-Game-Development",
+  "title": "Variables",
+  "pages": [
+    {
+      "id": "VP2_M5L1_SLIDES",
+      "title": "Slide: M5L1 - Variables in loops",
+      "lessonId": "VP2_M5L1",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L1_1",
+      "title": "Variables in loops - Part 1",
+      "lessonId": "VP2_M5L1",
+      "taskCount": 3
+    },
+    {
+      "id": "VP2_M5L1_2",
+      "title": "Variables in loops - Part 2",
+      "lessonId": "VP2_M5L1",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M5L1_3",
+      "title": "Variables in loops - Part 3",
+      "lessonId": "VP2_M5L1",
+      "taskCount": 11
+    },
+    {
+      "id": "VP2_M5L1_4",
+      "title": "Variables in loops - Part 4",
+      "lessonId": "VP2_M5L1",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L2_SLIDES",
+      "title": "Slide: M5L2 - Data types and operators",
+      "lessonId": "VP2_M5L2",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L2_1",
+      "title": "Data types and operators - Part 1",
+      "lessonId": "VP2_M5L2",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L2_2",
+      "title": "Data types and operators - Part 2",
+      "lessonId": "VP2_M5L2",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L2_3",
+      "title": "Data types and operators - Part 3",
+      "lessonId": "VP2_M5L2",
+      "taskCount": 14
+    },
+    {
+      "id": "VP2_M5L2_4",
+      "title": "Data types and operators - Part 4",
+      "lessonId": "VP2_M5L2",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L3_SLIDES",
+      "title": "Slide: M5L3 - Variables in games",
+      "lessonId": "VP2_M5L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L3_1",
+      "title": "Variables in games - Part 1",
+      "lessonId": "VP2_M5L3",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M5L3_2",
+      "title": "Variables in games - Part 2",
+      "lessonId": "VP2_M5L3",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L3_3",
+      "title": "Variables in games - Part 3",
+      "lessonId": "VP2_M5L3",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L3_4",
+      "title": "Variables in games - Part 4",
+      "lessonId": "VP2_M5L3",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L4_SLIDES",
+      "title": "Slide: M5L4 - Variables as parameters",
+      "lessonId": "VP2_M5L4",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L4_1",
+      "title": "Variables as parameters - Part 1",
+      "lessonId": "VP2_M5L4",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M5L4_2",
+      "title": "Variables as parameters - Part 2",
+      "lessonId": "VP2_M5L4",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M5L4_3",
+      "title": "Variables as parameters - Part 3",
+      "lessonId": "VP2_M5L4",
+      "taskCount": 16
+    },
+    {
+      "id": "VP2_M5L4_4",
+      "title": "Variables as parameters - Part 4",
+      "lessonId": "VP2_M5L4",
+      "taskCount": 4
+    },
+    {
+      "id": "VP2_M5L5_SLIDES",
+      "title": "Slide: M5L5 - Chatbot. Planning",
+      "lessonId": "VP2_M5L5",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L5_1",
+      "title": "Chatbot. Planning - Part 1",
+      "lessonId": "VP2_M5L5",
+      "taskCount": 2
+    },
+    {
+      "id": "VP2_M5L6_SLIDES",
+      "title": "Slide: M5L6 - Project. Presentation",
+      "lessonId": "VP2_M5L6",
+      "taskCount": 1
+    },
+    {
+      "id": "VP2_M5L6_1",
+      "title": "Project. Presentation - Part 1",
+      "lessonId": "VP2_M5L6",
+      "taskCount": 1
+    }
+  ],
+  "pageCount": 24,
+  "taskCount": 90
+}

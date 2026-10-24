@@ -1,0 +1,772 @@
+{
+  "version": 1,
+  "id": "VP2_M2L3_2",
+  "title": "Turns and degrees - Part 2",
+  "type": "generic-captured-page",
+  "taskCount": 5,
+  "metadata": {
+    "courseId": "VP2",
+    "lessonId": "M2-Control-Structures",
+    "sourceZip": "VP_M2L3_2.zip",
+    "format": "logika-crawler-capture",
+    "importedAt": "2026-10-24T08:51:29.809Z"
+  },
+  "tasks": [
+    {
+      "id": "task-1-1",
+      "taskId": "task-1-1",
+      "title": "Additional task. Artist",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nWhat might this symbol mean?",
+      "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nWhat might this symbol mean?",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "commands used: 0",
+        "move",
+        "forward ▾",
+        "by",
+        "100 ▾",
+        "turn",
+        "right ↻ ▾",
+        "90° ▾",
+        "repeat",
+        "4 ▾",
+        "times",
+        "When Start clicked",
+        "✕",
+        "What might this symbol mean?"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_04_css.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_04_css.svg",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_05_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_05_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-1-1-state-1",
+          "stateId": "task-1-1-state-1",
+          "name": "1",
+          "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nWhat might this symbol mean?",
+          "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nWhat might this symbol mean?",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "commands used: 0",
+            "move",
+            "forward ▾",
+            "by",
+            "100 ▾",
+            "turn",
+            "right ↻ ▾",
+            "90° ▾",
+            "repeat",
+            "4 ▾",
+            "times",
+            "When Start clicked",
+            "✕",
+            "What might this symbol mean?"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_04_css.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_04_css.svg",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_05_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_05_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_01_activity_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-2-21715",
+      "taskId": "task-2-21715",
+      "title": "Additional task. Artist",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nTriangle!",
+      "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nTriangle!",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "commands used: 0",
+        "move",
+        "forward ▾",
+        "by",
+        "100 ▾",
+        "turn",
+        "right ↻ ▾",
+        "90° ▾",
+        "repeat",
+        "4 ▾",
+        "times",
+        "When Start clicked",
+        "✕",
+        "Triangle!"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_04_css.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_04_css.svg",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_05_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_05_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-2-21715-state-1",
+          "stateId": "task-2-21715-state-1",
+          "name": "2",
+          "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nTriangle!",
+          "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nTriangle!",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "commands used: 0",
+            "move",
+            "forward ▾",
+            "by",
+            "100 ▾",
+            "turn",
+            "right ↻ ▾",
+            "90° ▾",
+            "repeat",
+            "4 ▾",
+            "times",
+            "When Start clicked",
+            "✕",
+            "Triangle!"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_04_css.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_04_css.svg",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_05_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_05_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_02_task_21715_actual_2_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-3-21715",
+      "taskId": "task-3-21715",
+      "title": "Additional task. Artist",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nYou already learned how to draw one triangle, now draw two!\nContinue",
+      "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nYou already learned how to draw one triangle, now draw two!\n Continue",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "commands used: 0",
+        "move",
+        "forward ▾",
+        "by",
+        "100 ▾",
+        "turn",
+        "right ↻ ▾",
+        "90° ▾",
+        "repeat",
+        "4 ▾",
+        "times",
+        "When Start clicked",
+        "✕",
+        "You already learned how to draw one triangle, now draw two!",
+        "Continue"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_04_css.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_04_css.svg",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_05_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_05_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_07_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_07_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-3-21715-state-1",
+          "stateId": "task-3-21715-state-1",
+          "name": "3",
+          "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nYou already learned how to draw one triangle, now draw two!\nContinue",
+          "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nYou already learned how to draw one triangle, now draw two!\n Continue",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "commands used: 0",
+            "move",
+            "forward ▾",
+            "by",
+            "100 ▾",
+            "turn",
+            "right ↻ ▾",
+            "90° ▾",
+            "repeat",
+            "4 ▾",
+            "times",
+            "When Start clicked",
+            "✕",
+            "You already learned how to draw one triangle, now draw two!",
+            "Continue"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_04_css.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_04_css.svg",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_05_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_05_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_07_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_07_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_03_task_21715_actual_3_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-4-21715",
+      "taskId": "task-4-21715",
+      "title": "Additional task. Artist",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nWell, the meaning of this sign is clear",
+      "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nWell, the meaning of this sign is clear",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "commands used: 0",
+        "move",
+        "forward ▾",
+        "by",
+        "100 ▾",
+        "turn",
+        "right ↻ ▾",
+        "90° ▾",
+        "repeat",
+        "4 ▾",
+        "times",
+        "When Start clicked",
+        "✕",
+        "Well, the meaning of this sign is clear"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_04_css.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_04_css.svg",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_05_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_05_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-4-21715-state-1",
+          "stateId": "task-4-21715-state-1",
+          "name": "4",
+          "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nWell, the meaning of this sign is clear",
+          "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nWell, the meaning of this sign is clear",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "commands used: 0",
+            "move",
+            "forward ▾",
+            "by",
+            "100 ▾",
+            "turn",
+            "right ↻ ▾",
+            "90° ▾",
+            "repeat",
+            "4 ▾",
+            "times",
+            "When Start clicked",
+            "✕",
+            "Well, the meaning of this sign is clear"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_04_css.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_04_css.svg",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_05_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_05_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_04_task_21715_actual_4_static_image_01_img.svg"
+        }
+      ]
+    },
+    {
+      "id": "task-5-21715",
+      "taskId": "task-5-21715",
+      "title": "Additional task. Artist",
+      "activityType": "generic_captured_task",
+      "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nA Martian jewel! Draw it. You deserve it!",
+      "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nA Martian jewel! Draw it. You deserve it!",
+      "textLines": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "commands used: 0",
+        "move",
+        "forward ▾",
+        "by",
+        "100 ▾",
+        "turn",
+        "right ↻ ▾",
+        "90° ▾",
+        "repeat",
+        "4 ▾",
+        "times",
+        "When Start clicked",
+        "✕",
+        "A Martian jewel! Draw it. You deserve it!"
+      ],
+      "images": [
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_01_img.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_01_img.svg",
+          "kind": "img",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_02_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_02_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_03_css.png",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_03_css.png",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_04_css.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_04_css.svg",
+          "kind": "css_background_or_style",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_05_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_05_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_06_svg.svg",
+          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_06_svg.svg",
+          "kind": "inline_svg",
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "states": [
+        {
+          "id": "task-5-21715-state-1",
+          "stateId": "task-5-21715-state-1",
+          "name": "5",
+          "instruction": "1\n2\n3\n4\n5\ncommands used: 0\nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\nA Martian jewel! Draw it. You deserve it!",
+          "bodyText": "1\n2\n3\n4\n5\ncommands used: 0 \nmove\nforward ▾\nby\n100 ▾\nturn\nright ↻ ▾\n90° ▾\nrepeat\n4 ▾\ntimes\nWhen Start clicked\n✕\n\n\nA Martian jewel! Draw it. You deserve it!",
+          "textLines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "commands used: 0",
+            "move",
+            "forward ▾",
+            "by",
+            "100 ▾",
+            "turn",
+            "right ↻ ▾",
+            "90° ▾",
+            "repeat",
+            "4 ▾",
+            "times",
+            "When Start clicked",
+            "✕",
+            "A Martian jewel! Draw it. You deserve it!"
+          ],
+          "images": [
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_01_img.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_01_img.svg",
+              "kind": "img",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_02_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_02_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_03_css.png",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_03_css.png",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_04_css.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_04_css.svg",
+              "kind": "css_background_or_style",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_05_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_05_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            },
+            {
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_06_svg.svg",
+              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_06_svg.svg",
+              "kind": "inline_svg",
+              "width": 0,
+              "height": 0
+            }
+          ],
+          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_2/workspace/images/level_05_task_21715_actual_5_static_image_01_img.svg"
+        }
+      ]
+    }
+  ]
+}

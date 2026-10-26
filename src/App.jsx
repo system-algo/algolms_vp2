@@ -594,7 +594,17 @@ export default function App() {
         }
       } catch (error) {
         console.warn('VP2 page access verification failed:', error);
-        if (!cancelled) setLessonAccess({ route, status: 'denied' });
+        if (!cancelled) {
+          try {
+            const lessonNum = await getVp2PageLessonNumber(pageId);
+            setLessonAccess({
+              route,
+              status: lessonNum && lessonNum <= 2 ? 'allowed' : 'denied',
+            });
+          } catch {
+            setLessonAccess({ route, status: 'denied' });
+          }
+        }
       }
     }
     void verify();
@@ -669,12 +679,19 @@ export default function App() {
   if (pageId && role === 'student') {
     const route = `${courseId}/${lessonId}/${pageId}`;
     const status = lessonAccess.route === route ? lessonAccess.status : 'checking';
+    if (status === 'checking') {
+      return (
+        <main style={{ padding: 36, fontFamily: 'Nunito, Arial, sans-serif', textAlign: 'center' }}>
+          <h2>Verifying lesson access...</h2>
+        </main>
+      );
+    }
     if (status !== 'allowed') {
       return (
         <main style={{ padding: 36, fontFamily: 'Nunito, Arial, sans-serif', textAlign: 'center' }}>
-          <h2>{status === 'checking' ? 'Verifying lesson access...' : 'Lesson Locked'}</h2>
-          {status === 'denied' && <p>This VP2 lesson has not been scheduled for your account.</p>}
-          <button type="button" onClick={backToPageCatalog}>Back to lessons</button>
+          <h2>Lesson Locked</h2>
+          <p>This VP2 lesson has not been scheduled for your account.</p>
+          <button type="button" onClick={backToLessonCatalog}>Back to lessons</button>
         </main>
       );
     }

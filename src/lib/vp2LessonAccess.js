@@ -15,24 +15,29 @@ export async function getVp2UnlockedLessonLimit(studentEmail) {
   const email = String(studentEmail || '').trim().toLowerCase();
   const { url, key, token } = getCredentials();
   if (!url || !key || !email || !token || token.split('.').length !== 3) {
-    throw new Error('Authenticated VP2 session is required to verify scheduled lessons.');
+    return DEFAULT_UNLOCKED_LESSONS;
   }
 
-  const endpoint = new URL(`${url.replace(/\/$/, '')}/rest/v1/student_lesson_schedules`);
-  endpoint.searchParams.set('student_email', `eq.${email}`);
-  endpoint.searchParams.set('lms_course_id', `eq.${VP2_LMS_CODE}`);
-  endpoint.searchParams.set('select', 'topic_id');
-  const response = await fetch(endpoint.toString(), {
-    headers: { apikey: key, Authorization: `Bearer ${token}` },
-  });
-  if (!response.ok) throw new Error(`VP2 lesson schedule lookup failed (${response.status})`);
-  const rows = await response.json();
-  return (Array.isArray(rows) ? rows : []).reduce((highest, row) => {
-    const lessonNumber = Number(row.topic_id);
-    return Number.isInteger(lessonNumber) && lessonNumber > 0
-      ? Math.max(highest, lessonNumber)
-      : highest;
-  }, DEFAULT_UNLOCKED_LESSONS);
+  try {
+    const endpoint = new URL(`${url.replace(/\/$/, '')}/rest/v1/student_lesson_schedules`);
+    endpoint.searchParams.set('student_email', `eq.${email}`);
+    endpoint.searchParams.set('lms_course_id', `eq.${VP2_LMS_CODE}`);
+    endpoint.searchParams.set('select', 'topic_id');
+    const response = await fetch(endpoint.toString(), {
+      headers: { apikey: key, Authorization: `Bearer ${token}` },
+    });
+    if (!response.ok) return DEFAULT_UNLOCKED_LESSONS;
+    const rows = await response.json();
+    return (Array.isArray(rows) ? rows : []).reduce((highest, row) => {
+      const lessonNumber = Number(row.topic_id);
+      return Number.isInteger(lessonNumber) && lessonNumber > 0
+        ? Math.max(highest, lessonNumber)
+        : highest;
+    }, DEFAULT_UNLOCKED_LESSONS);
+  } catch (err) {
+    console.warn('VP2 lesson schedule lookup error, falling back to default unlocked lessons:', err);
+    return DEFAULT_UNLOCKED_LESSONS;
+  }
 }
 
 function moduleNumber(id) {

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, lazy, Suspense } from 'react';
 import Dashboard from './pages/Dashboard.jsx';
+import { getVp2UnlockedLessonLimit, getVp2PageLessonNumber } from './lib/vp2LessonAccess.js';
 import H5pPlayerPage from './pages/H5pPlayerPage.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
@@ -56,6 +57,7 @@ export default function App() {
   // Role checking state
   const [role, setRole] = useState('student');
   const [loadingRole, setLoadingRole] = useState(true);
+  const [lessonAccess, setLessonAccess] = useState({ route: '', status: 'checking' });
   const sessionRedirectStartedRef = useRef(false);
 
 
@@ -568,6 +570,37 @@ export default function App() {
   }
 
   // ─── Role Check redirects ──────────────────────────
+  // Check direct page URLs as well as dashboard buttons; a locked VP2
+  // lesson must not be accessible by typing its generated-page address.
+  // This check is isolated to the VP2 LMS (never reads schedules for VP).
+  useEffect(() => {
+    if (!pageId || loadingRole || role !== 'student') return;
+    const route = `${courseId}/${lessonId}/${pageId}`;
+    let cancelled = false;
+    setLessonAccess({ route, status: 'checking' });
+    async function verify() {
+      try {
+        if (courseId !== 'VP2') throw new Error('Unknown VP2 course route');
+        const email = localStorage.getItem('lms_student_email') || '';
+        const [lessonNumber, highestUnlocked] = await Promise.all([
+          getVp2PageLessonNumber(pageId),
+          getVp2UnlockedLessonLimit(email),
+        ]);
+        if (!cancelled) {
+          setLessonAccess({
+            route,
+            status: lessonNumber && lessonNumber <= highestUnlocked ? 'allowed' : 'denied',
+          });
+        }
+      } catch (error) {
+        console.warn('VP2 page access verification failed:', error);
+        if (!cancelled) setLessonAccess({ route, status: 'denied' });
+      }
+    }
+    void verify();
+    return () => { cancelled = true; };
+  }, [courseId, lessonId, pageId, loadingRole, role]);
+
   if (loadingRole) {
     return (
       <div style={{
@@ -631,6 +664,20 @@ export default function App() {
         initialCourseId={courseId}
       />
     );
+  }
+
+  if (pageId && role === 'student') {
+    const route = `${courseId}/${lessonId}/${pageId}`;
+    const status = lessonAccess.route === route ? lessonAccess.status : 'checking';
+    if (status !== 'allowed') {
+      return (
+        <main style={{ padding: 36, fontFamily: 'Nunito, Arial, sans-serif', textAlign: 'center' }}>
+          <h2>{status === 'checking' ? 'Verifying lesson access...' : 'Lesson Locked'}</h2>
+          {status === 'denied' && <p>This VP2 lesson has not been scheduled for your account.</p>}
+          <button type="button" onClick={backToPageCatalog}>Back to lessons</button>
+        </main>
+      );
+    }
   }
 
   if (GeneratedPage) {

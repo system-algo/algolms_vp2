@@ -66,6 +66,9 @@ export default function App() {
   }, [courseId, lessonId, pageId]);
 
   useEffect(() => {
+    // Wait for the portal's verified postMessage handoff instead of redirecting
+    // before the identity and JWT have arrived.
+    if (window.__algoSecureLmsHandoffPending) return;
     const params = new URLSearchParams(window.location.search);
 
     const email = params.get('studentEmail');

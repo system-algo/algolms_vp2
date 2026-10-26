@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import customNames from '../config/mapping.json';
+import { getVp2UnlockedLessonLimit } from '../lib/vp2LessonAccess.js';
 import {
   ALL_PATHWAY_NODES,
   MAIN_PATHWAY,
@@ -112,7 +113,32 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
   const [activeTab, setActiveTab] = useState('course'); // 'course' view only (home hidden)
 
   // Dynamic hierarchy state: course has modules -> modules have lessons -> lessons have pages
-  const [lessonsData, setLessonsData] = useState([]); // holds structured modules
+  const [rawLessonsData, setRawLessonsData] = useState([]); // full VP2 catalog
+  const [highestUnlocked, setHighestUnlocked] = useState(2);
+  // The VP2 student dashboard never reads VP schedules. Lessons 1-2 are
+  // available by default; higher lessons require VP2 schedule records.
+  const lessonsData = useMemo(() => {
+    const role = String(localStorage.getItem('lms_user_role') || 'student').toLowerCase();
+    const unrestricted = role === 'teacher' || role === 'admin';
+    return rawLessonsData.map((module) => {
+      const lessons = (module.lessons || []).map((lesson) => {
+        const isLocked = !unrestricted && lesson.number > highestUnlocked;
+        return {
+          ...lesson,
+          isLocked,
+          locked: isLocked,
+          isUnlocked: !isLocked,
+          pages: (lesson.pages || []).map((page) => ({
+            ...page,
+            isLocked,
+            locked: isLocked,
+          })),
+        };
+      });
+      const isLocked = lessons.length ? lessons[0].isLocked : !unrestricted;
+      return { ...module, lessons, isLocked, locked: isLocked, isUnlocked: !isLocked };
+    });
+  }, [rawLessonsData, highestUnlocked]);
   const [selectedModuleIndex, setSelectedModuleIndex] = useState(() => {
     const saved = sessionStorage.getItem('vp_dashboard_module_index');
     return saved ? parseInt(saved, 10) : 0;
@@ -140,6 +166,18 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
   // Student specific details
   const studentEmail = localStorage.getItem('lms_student_email') || 'tim.tran@algo.edu.vn';
   const studentName = studentEmail.split('@')[0].split('.').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+
+  useEffect(() => {
+    let cancelled = false;
+    setHighestUnlocked(2);
+    getVp2UnlockedLessonLimit(studentEmail)
+      .then((limit) => { if (!cancelled) setHighestUnlocked(limit); })
+      .catch((error) => {
+        console.warn('VP2 lesson unlock check failed:', error);
+        if (!cancelled) setHighestUnlocked(2);
+      });
+    return () => { cancelled = true; };
+  }, [studentEmail]);
 
   const [dbProgress, setDbProgress] = useState([]);
   const [hasFetchedProgress, setHasFetchedProgress] = useState(false);
@@ -461,7 +499,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
           };
         });
 
-        setLessonsData(structuredModules);
+        setRawLessonsData(structuredModules);
 
         try {
           sessionStorage.setItem(

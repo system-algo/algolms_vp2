@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "VP_M1L4_2",
+  "title": "Single choice set",
+  "type": "h5p-standalone",
+  "taskCount": 5,
+  "metadata": {
+    "courseId": "VP",
+    "lessonId": "M1-Visual-Programming-Basics",
+    "sourceH5p": "VP M1L4_2.h5p",
+    "importedAt": "2026-08-10T08:08:18.678Z"
+  }
+}

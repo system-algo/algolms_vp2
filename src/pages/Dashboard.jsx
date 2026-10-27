@@ -544,7 +544,13 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
   const courses = useMemo(() => {
     if (!Array.isArray(catalog?.courses)) return [];
-    return catalog.courses;
+    const unique = catalog.courses.filter(
+      (course, idx, arr) => arr.findIndex((c) => c.id === course.id) === idx
+    );
+    if (unique.some((c) => c.id === 'VP2')) {
+      return unique.filter((c) => c.id !== 'VP');
+    }
+    return unique;
   }, [catalog]);
 
 

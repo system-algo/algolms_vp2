@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import { getVp2UnlockedLessonLimit, getVp2PageLessonNumber } from './lib/vp2LessonAccess.js';
 import H5pPlayerPage from './pages/H5pPlayerPage.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
+import BlockGameTask from './components/BlockGame/BlockGameTask.jsx';
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
 
 
@@ -610,6 +611,18 @@ export default function App() {
     void verify();
     return () => { cancelled = true; };
   }, [courseId, lessonId, pageId, loadingRole, role]);
+
+  const params = new URLSearchParams(window.location.search);
+  const gameParam = params.get('game');
+  if (gameParam) {
+    return (
+      <BlockGameTask
+        standalone
+        initialLevelId={gameParam === 'plants' ? 'plant_level_1' : 'mars_level_7'}
+        onTaskCompleted={(res) => console.log('Game level completed:', res)}
+      />
+    );
+  }
 
   if (loadingRole) {
     return (

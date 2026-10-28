@@ -16,6 +16,7 @@ import TeacherChecklistTask from './TeacherChecklistTask.jsx';
 import DiagramCanvasTask from "./DiagramCanvasTask";
 import FeedbackRatingTask from './FeedbackRatingTask';
 import SequenceOrderTask from './SequenceOrderTask.jsx';
+import BlockGameTask from '../components/BlockGame/BlockGameTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -307,9 +308,28 @@ function hasPlaceholderTypingShape(task, state, lines) {
   return codeLines.length >= 2;
 }
 
+function hasBlockGameShape(lines) {
+  const joined = joinedText(lines);
+  return (
+    joined.includes('take the cargo') ||
+    joined.includes('put the cargo down') ||
+    (joined.includes('when start clicked') && joined.includes('move forward')) ||
+    (joined.includes('when start clicked') && joined.includes('destroy')) ||
+    (joined.includes('commands used') && joined.includes('repeat')) ||
+    joined.includes('destroy one pest plant') ||
+    joined.includes('laser and plants') ||
+    joined.includes('sorting cargo')
+  );
+}
+
 function inferSubtype(task, state) {
   const source = getCurrentSource(task, state);
   const lines = getLinesFromSource(source);
+
+  if (hasBlockGameShape(lines)) {
+    return 'block_game';
+  }
+
 
   if (hasMcqShape(task, state, lines)) {
     return 'mcq';
@@ -453,12 +473,19 @@ function normalizeRendererType(value) {
     generic_captured_task: 'generic-captured-task',
     generic: 'generic-captured-task',
     'generic-captured-task': 'generic-captured-task',
+    block_game: 'block-game-task',
+    block_game_task: 'block-game-task',
+    'block-game': 'block-game-task',
+    'block-game-task': 'block-game-task',
+    'block-programming': 'block-game-task',
+    block_programming: 'block-game-task',
   };
 
   return aliases[text] || text.replaceAll('_', '-');
 }
 
 function rendererTypeFromLegacySubtype(subtype) {
+  if (subtype === 'block_game') return 'block-game-task';
   if (subtype === 'mcq') return 'mcq-checkbox';
   if (subtype === 'classification_matching') return 'code-classification';
   if (subtype === 'matching_dragdrop') return 'matching-dragdrop';
@@ -924,6 +951,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'teacher-checklist-task') {
     return <TeacherChecklistTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'block-game-task') {
+    return <BlockGameTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'feedback-rating-task') {

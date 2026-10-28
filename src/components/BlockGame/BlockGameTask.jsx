@@ -20,7 +20,7 @@ export default function BlockGameTask({
     initialLevelId ||
     task?.levelId ||
     task?.metadata?.levelId ||
-    getDefaultLevel().id;
+    getDefaultLevel('plants').id;
 
   const [currentLevelId, setCurrentLevelId] = useState(resolvedLevelId);
   const level = getLevelById(currentLevelId);
@@ -44,7 +44,7 @@ export default function BlockGameTask({
   const [statusMessage, setStatusMessage] = useState('');
 
   // Resizable split pane state ("kéo ra kéo dô" chia cột giao diện)
-  const [splitRatio, setSplitRatio] = useState(52); // percentage for left pane
+  const [splitRatio, setSplitRatio] = useState(50); // percentage for left pane
   const [isResizing, setIsResizing] = useState(false);
   const splitContainerRef = useRef(null);
 
@@ -95,7 +95,7 @@ export default function BlockGameTask({
     setIsExecuting(false);
   }, [currentLevelId]);
 
-  // Reset level to initial state
+  // Reset level to initial state (preserves user code in workspace)
   const handleReset = useCallback(() => {
     if (executionTimerRef.current) {
       clearTimeout(executionTimerRef.current);
@@ -161,7 +161,12 @@ export default function BlockGameTask({
 
         if (level.mode === 'radial') {
           const remainingEvil = simPlants.filter((p) => p.isEvil && !p.destroyed);
-          if (remainingEvil.length === 0) {
+          const reqDestroy = level.targetDestroyedCount ?? 1;
+          const reqWater = level.targetWateredCount ?? 0;
+          const destroyedEvil = simPlants.filter((p) => p.isEvil && p.destroyed).length;
+          const wateredGood = simPlants.filter((p) => !p.isEvil && p.isWatered).length;
+
+          if (remainingEvil.length === 0 && destroyedEvil >= reqDestroy && wateredGood >= reqWater) {
             setExecutionStatus('completed');
             playLmsSound(LMS_SOUND_TYPES.CORRECT);
             onTaskCompleted?.({
@@ -169,13 +174,20 @@ export default function BlockGameTask({
               isCorrect: true,
               score: 1,
               maxScore: 1,
-              feedback: 'All pest plants destroyed!',
+              feedback: 'Great job! Destroyed pest plant and grew good plant.',
             });
           } else {
             setExecutionStatus('failed');
             playLmsSound(LMS_SOUND_TYPES.WRONG);
-            setStatusMessage('Pest plant still alive! Aim laser and destroy it.');
+            if (remainingEvil.length > 0) {
+              setStatusMessage('Pest plant still alive! Aim laser and destroy it.');
+            } else if (wateredGood < reqWater) {
+              setStatusMessage('Good plant not watered yet! Turn to the sprout and water it.');
+            } else {
+              setStatusMessage('Mission incomplete! Check instructions.');
+            }
           }
+          return;
         } else {
           // Grid / Mars mode
           if (simCargos.length === 0) {
@@ -221,7 +233,6 @@ export default function BlockGameTask({
         simRobot = { ...simRobot, direction: step.direction };
         setRobotState({ ...simRobot });
       } else if (step.action === 'take_cargo') {
-        // Check if cargo on current tile
         const cargoIndex = simCargos.findIndex((c) => c.x === simRobot.x && c.y === simRobot.y);
         if (cargoIndex >= 0) {
           simCargos.splice(cargoIndex, 1);
@@ -230,7 +241,6 @@ export default function BlockGameTask({
           setRobotState({ ...simRobot });
           playLmsSound(LMS_SOUND_TYPES.CORRECT);
         } else {
-          // Warning no cargo
           setStatusMessage('No cargo found at current tile!');
         }
       } else if (step.action === 'turn_clockwise') {
@@ -244,9 +254,9 @@ export default function BlockGameTask({
         setRobotState({ ...simRobot });
       } else if (step.action === 'destroy') {
         setLaserActive(true);
-        setTimeout(() => setLaserActive(false), 250);
+        setTimeout(() => setLaserActive(false), 280);
 
-        // Check plant in target direction
+        // Check if plant at current robot direction
         simPlants = simPlants.map((p) => {
           if (p.angle === simRobot.direction && p.isEvil) {
             return { ...p, destroyed: true };
@@ -256,8 +266,9 @@ export default function BlockGameTask({
         setPlants([...simPlants]);
       } else if (step.action === 'water') {
         setWaterActive(true);
-        setTimeout(() => setWaterActive(false), 250);
+        setTimeout(() => setWaterActive(false), 280);
 
+        // Water plant at current direction
         simPlants = simPlants.map((p) => {
           if (p.angle === simRobot.direction && !p.isEvil) {
             return { ...p, isWatered: true };
@@ -283,28 +294,110 @@ export default function BlockGameTask({
     };
   }, []);
 
+  const isRadial = level.mode === 'radial';
+
   return (
     <div className="block-game-task-root">
-      {/* Top Level Bar (Level 1, Level 2, Level 7...) */}
+      {/* Top Header Navigation Bar (Exact Algo LMS Style from Screenshot) */}
       <div className="block-game-level-bar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ fontWeight: 800, fontSize: '15px', color: '#f8fafc' }}>
-            {level.title}
-          </span>
-        </div>
+        {/* Left: Back Button */}
+        <button
+          type="button"
+          className="algo-lms-back-btn"
+          onClick={() => (onPrevTask ? onPrevTask() : window.history.back())}
+          title="Back to lesson catalog"
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+          </svg>
+        </button>
 
+        {/* Center: Sequence of Level progression pills */}
         <div className="level-pills-container">
-          {ALL_LEVELS.map((lvl) => (
+          {/* Item 0: Overview video / image icon */}
+          <button
+            type="button"
+            className="level-pill-btn completed pill-icon-btn"
+            title="Lesson Overview"
+            onClick={() => setCurrentLevelId(isRadial ? 'plant_level_1' : 'mars_level_1')}
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+            </svg>
+          </button>
+
+          {/* Level Numbers (1 to 7 active/completed) */}
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => {
+            const lvlId = isRadial ? `plant_level_${num}` : `mars_level_${num}`;
+            const isCurrent = level.levelNumber === num;
+            const isAvailable = Boolean(ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode));
+
+            return (
+              <button
+                key={num}
+                type="button"
+                className={`level-pill-btn ${isCurrent ? 'active has-ring' : isAvailable ? 'completed' : 'completed'}`}
+                onClick={() => {
+                  const targetLevel = ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode);
+                  if (targetLevel) setCurrentLevelId(targetLevel.id);
+                }}
+                title={`Level ${num}`}
+              >
+                {num}
+              </button>
+            );
+          })}
+
+          {/* Mid-lesson video icon */}
+          <button
+            type="button"
+            className="level-pill-btn completed pill-icon-btn"
+            title="Video Guide"
+          >
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </button>
+
+          {/* Locked / Future Levels (8, 9, 10, Lock) */}
+          {[8, 9, 10].map((num) => (
             <button
-              key={lvl.id}
+              key={num}
               type="button"
-              className={`level-pill-btn ${lvl.id === currentLevelId ? 'active' : ''}`}
-              onClick={() => setCurrentLevelId(lvl.id)}
-              title={lvl.title}
+              className="level-pill-btn locked"
+              title={`Level ${num} (Locked)`}
+              disabled
             >
-              {lvl.levelNumber || lvl.id.split('_').pop()}
+              {num}
             </button>
           ))}
+
+          {/* Lock icon pill */}
+          <button
+            type="button"
+            className="level-pill-btn locked pill-icon-btn"
+            title="Locked"
+            disabled
+          >
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Right: User Profile Avatar */}
+        <div className="algo-lms-user-badge">
+          <div className="algo-lms-avatar-circle">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z" />
+            </svg>
+          </div>
+          <div className="algo-lms-username-text">
+            <span style={{ fontWeight: 700, fontSize: '13px', color: '#f1f5f9' }}>Huy (501713)</span>
+            <span style={{ fontSize: '10px', color: '#94a3b8' }}>Học sinh</span>
+          </div>
+          <span style={{ fontSize: '12px', color: '#94a3b8', marginLeft: '2px' }}>▾</span>
         </div>
       </div>
 

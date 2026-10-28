@@ -11,18 +11,42 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Optional In-Game Level Bar (when run standalone) */
+/* Algo LMS Top Navigation Level Bar */
 .block-game-level-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 18px;
-  background: #1e293b;
-  border-bottom: 1px solid #334155;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
   color: #e2e8f0;
   z-index: 20;
+  min-height: 52px;
+  box-sizing: border-box;
 }
 
+/* White Back Button on Left */
+.algo-lms-back-btn {
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.algo-lms-back-btn:hover {
+  background: #f1f5f9;
+  transform: translateX(-1px);
+}
+
+/* Center Level Pills Container */
 .level-pills-container {
   display: flex;
   align-items: center;
@@ -30,32 +54,83 @@
 }
 
 .level-pill-btn {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 13px;
   font-weight: 700;
-  border: 2px solid #475569;
-  background: #334155;
-  color: #cbd5e1;
+  border: none;
   cursor: pointer;
   transition: all 0.15s ease;
+  user-select: none;
 }
 
-.level-pill-btn:hover {
-  border-color: #94a3b8;
-  background: #475569;
-  color: #ffffff;
-}
-
-.level-pill-btn.active {
+/* Completed & Available Levels (Solid Green) */
+.level-pill-btn.completed {
   background: #22c55e;
-  border-color: #ffffff;
   color: #ffffff;
-  box-shadow: 0 0 10px rgba(34, 197, 94, 0.45);
+}
+
+.level-pill-btn.completed:hover {
+  background: #16a34a;
+  transform: scale(1.08);
+}
+
+/* Active Current Level with Outer Ring (Matching Screenshot Level 3) */
+.level-pill-btn.active.has-ring {
+  background: #22c55e;
+  color: #ffffff;
+  box-shadow: 0 0 0 2.5px #0f172a, 0 0 0 4.5px #22c55e;
+  transform: scale(1.1);
+}
+
+/* Locked Levels (Darker with Muted Numbers) */
+.level-pill-btn.locked {
+  background: #090e17;
+  color: #475569;
+  border: 1px solid #1e293b;
+  cursor: not-allowed;
+}
+
+.level-pill-btn.pill-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* User Profile Badge on Right */
+.algo-lms-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.algo-lms-user-badge:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.algo-lms-avatar-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.4);
+}
+
+.algo-lms-username-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 /* Two-pane Split Screen (Workspace vs Game View) */
@@ -63,7 +138,7 @@
   display: flex;
   flex: 1;
   width: 100%;
-  height: calc(100% - 48px);
+  height: calc(100% - 52px);
   overflow: hidden;
   position: relative;
 }

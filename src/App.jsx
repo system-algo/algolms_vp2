@@ -618,7 +618,7 @@ export default function App() {
     return (
       <BlockGameTask
         standalone
-        initialLevelId={gameParam === 'plants' ? 'plant_level_1' : 'mars_level_7'}
+        initialLevelId={params.get('level') || (gameParam === 'plants' ? 'plant_level_3' : 'mars_level_7')}
         onTaskCompleted={(res) => console.log('Game level completed:', res)}
       />
     );

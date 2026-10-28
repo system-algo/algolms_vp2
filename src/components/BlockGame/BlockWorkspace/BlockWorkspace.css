@@ -171,11 +171,15 @@
   to { opacity: 1; transform: scaleY(1.1); }
 }
 
-/* Floating Dragged Block Ghost */
-.drag-ghost-layer {
+/* Floating Dragged Block Ghost (strictly ignore all pointer events) */
+.drag-ghost-layer,
+.drag-ghost-layer * {
   position: fixed;
-  pointer-events: none;
+  pointer-events: none !important;
   z-index: 99999;
+}
+
+.drag-ghost-layer {
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
 }

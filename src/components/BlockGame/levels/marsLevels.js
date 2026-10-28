@@ -66,26 +66,9 @@ export const MARS_LEVEL_7 = {
     BLOCK_TYPES.REPEAT,
   ],
 
-  // Solution from Image 1 pre-configured
+  // Default: only the Start Hat block. All command blocks must be dragged from BLOCKS toolbox.
   initialBlocks: [
     createBlockInstance(BLOCK_TYPES.START_HAT),
-    {
-      ...createBlockInstance(BLOCK_TYPES.REPEAT, { times: 4 }),
-      children: [createBlockInstance(BLOCK_TYPES.MOVE_FORWARD)],
-    },
-    createBlockInstance(BLOCK_TYPES.POINT_DIRECTION, { direction: 0 }),
-    createBlockInstance(BLOCK_TYPES.TAKE_CARGO),
-    {
-      ...createBlockInstance(BLOCK_TYPES.REPEAT, { times: 4 }),
-      children: [createBlockInstance(BLOCK_TYPES.MOVE_FORWARD)],
-    },
-    createBlockInstance(BLOCK_TYPES.TAKE_CARGO),
-    createBlockInstance(BLOCK_TYPES.POINT_DIRECTION, { direction: -90 }),
-    {
-      ...createBlockInstance(BLOCK_TYPES.REPEAT, { times: 4 }),
-      children: [createBlockInstance(BLOCK_TYPES.MOVE_FORWARD)],
-    },
-    createBlockInstance(BLOCK_TYPES.TAKE_CARGO),
   ],
 };
 

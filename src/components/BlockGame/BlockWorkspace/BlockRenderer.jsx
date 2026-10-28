@@ -20,6 +20,9 @@ export default function BlockRenderer({
     if (e.target.tagName === 'SELECT' || e.target.tagName === 'OPTION') {
       return; // allow select dropdown interaction
     }
+    if (isHat) {
+      return; // "When Start clicked" is fixed and cannot be dragged
+    }
     e.stopPropagation();
     onStartDrag?.(block, e);
   };
@@ -126,7 +129,7 @@ export default function BlockRenderer({
     return <span>{def.label}</span>;
   };
 
-  // C-Block (Repeat) rendering
+  // C-Block (Repeat) rendering in workspace
   if (isCBlock && !isToolbox) {
     const activeTargetId = dropTarget?.targetId || dropTarget?.blockId;
     const isTargetInside = activeTargetId === block.id && dropTarget?.position === 'inside';
@@ -135,10 +138,13 @@ export default function BlockRenderer({
       <div
         className={`block-node-wrapper ${isExecuting ? 'is-executing' : ''}`}
         style={{ margin: '3px 0', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
+        data-block-id={block.id}
+        data-block-type={block.type}
       >
         {/* Top Header Bar of C-Block */}
         <div
           data-block-id={block.id}
+          data-block-type={block.type}
           onPointerDown={handlePointerDown}
           style={{
             background: def.color,
@@ -231,6 +237,7 @@ export default function BlockRenderer({
         {/* Bottom Bracket of C-Block */}
         <div
           data-block-id={block.id}
+          data-block-type={block.type}
           data-c-bottom="true"
           style={{
             background: def.color,
@@ -246,7 +253,7 @@ export default function BlockRenderer({
     );
   }
 
-  // Standard Block Rendering
+  // Standard Block Rendering (or C-Block in toolbox)
   return (
     <div
       className={`block-node-wrapper ${isExecuting ? 'is-executing' : ''} ${isGhost ? 'is-dragging' : ''}`}
@@ -255,8 +262,11 @@ export default function BlockRenderer({
         display: 'inline-block',
       }}
       data-block-id={block.id}
+      data-block-type={block.type}
     >
       <div
+        data-block-id={block.id}
+        data-block-type={block.type}
         onPointerDown={handlePointerDown}
         style={{
           background: def.color || '#8A5BA7',

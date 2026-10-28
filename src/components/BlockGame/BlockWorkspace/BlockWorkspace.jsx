@@ -182,7 +182,8 @@ export default function BlockWorkspace({
       setDragPointerPos({ x: e.clientX, y: e.clientY });
 
       // 1. Check if hovering over toolbox or trash zone on the left
-      if (toolboxRef.current) {
+      // Only blocks dragged FROM the workspace can be deleted/trashed!
+      if (!draggingBlock.isFromToolbox && toolboxRef.current) {
         const tbRect = toolboxRef.current.getBoundingClientRect();
         if (
           e.clientX >= tbRect.left &&
@@ -205,6 +206,8 @@ export default function BlockWorkspace({
       for (const el of elements) {
         if (el.hasAttribute('data-block-id')) {
           const tid = el.getAttribute('data-block-id');
+          const bType = el.getAttribute('data-block-type');
+
           // Skip if target is the dragging block itself, or one of its descendants, or a toolbox block
           if (isDescendantOrSelf(draggingBlock, tid) || tid.startsWith('toolbox_')) {
             continue;
@@ -216,8 +219,8 @@ export default function BlockWorkspace({
             break;
           }
 
-          // Start hat block -> can only insert AFTER it
-          if (tid === 'start_hat' || tid.includes('start')) {
+          // Start hat block -> can ONLY insert AFTER it (never before!)
+          if (bType === BLOCK_TYPES.START_HAT || tid === 'start_hat' || tid.includes('start')) {
             foundTarget = { blockId: tid, targetId: tid, position: 'after' };
             break;
           }
@@ -341,7 +344,7 @@ export default function BlockWorkspace({
                 <BlockRenderer
                   block={dummyBlock}
                   isToolbox
-                  onStartDrag={() => {}}
+                  onStartDrag={(blk, e) => handleStartDrag(dummyBlock, e)}
                 />
               </div>
             );

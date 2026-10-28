@@ -44,10 +44,9 @@ export const PLANT_LEVEL_1 = {
     BLOCK_TYPES.REPEAT,
   ],
 
+  // Default: only the Start Hat block
   initialBlocks: [
     createBlockInstance(BLOCK_TYPES.START_HAT),
-    createBlockInstance(BLOCK_TYPES.TURN_COUNTERCLOCKWISE, { angle: 90 }),
-    createBlockInstance(BLOCK_TYPES.DESTROY),
   ],
 };
 

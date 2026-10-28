@@ -43,6 +43,42 @@ export default function BlockGameTask({
   const [executionStatus, setExecutionStatus] = useState('idle'); // 'idle' | 'running' | 'completed' | 'failed'
   const [statusMessage, setStatusMessage] = useState('');
 
+  // Resizable split pane state ("kéo ra kéo dô" chia cột giao diện)
+  const [splitRatio, setSplitRatio] = useState(52); // percentage for left pane
+  const [isResizing, setIsResizing] = useState(false);
+  const splitContainerRef = useRef(null);
+
+  const handleStartResize = useCallback((e) => {
+    e.preventDefault();
+    setIsResizing(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isResizing) return;
+
+    const handlePointerMove = (e) => {
+      if (!splitContainerRef.current) return;
+      const rect = splitContainerRef.current.getBoundingClientRect();
+      const relativeX = e.clientX - rect.left;
+      const newPercent = (relativeX / rect.width) * 100;
+      // Clamp between 25% and 75%
+      const clamped = Math.max(25, Math.min(75, newPercent));
+      setSplitRatio(clamped);
+    };
+
+    const handlePointerUp = () => {
+      setIsResizing(false);
+    };
+
+    window.addEventListener('pointermove', handlePointerMove);
+    window.addEventListener('pointerup', handlePointerUp);
+
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+      window.removeEventListener('pointerup', handlePointerUp);
+    };
+  }, [isResizing]);
+
   // Timer ref for stepping loop
   const executionTimerRef = useRef(null);
 
@@ -273,9 +309,15 @@ export default function BlockGameTask({
       </div>
 
       {/* Main Split Screen */}
-      <div className="block-game-split-pane">
+      <div
+        className={`block-game-split-pane ${isResizing ? 'is-resizing' : ''}`}
+        ref={splitContainerRef}
+      >
         {/* Left: Block Workspace */}
-        <div className="block-game-pane-left">
+        <div
+          className="block-game-pane-left"
+          style={{ width: `${splitRatio}%`, flex: 'none' }}
+        >
           <BlockWorkspace
             blocks={blocks}
             onChangeBlocks={setBlocks}
@@ -286,8 +328,20 @@ export default function BlockGameTask({
           />
         </div>
 
+        {/* Resizer Divider Bar */}
+        <div
+          className={`block-game-resizer ${isResizing ? 'active' : ''}`}
+          onPointerDown={handleStartResize}
+          title="Drag to resize panels (Kéo để chỉnh kích thước)"
+        >
+          <div className="resizer-handle-grip" />
+        </div>
+
         {/* Right: Game View */}
-        <div className="block-game-pane-right">
+        <div
+          className="block-game-pane-right"
+          style={{ width: `calc(${100 - splitRatio}% - 10px)`, flex: 'none' }}
+        >
           <GameView
             level={level}
             robotState={robotState}

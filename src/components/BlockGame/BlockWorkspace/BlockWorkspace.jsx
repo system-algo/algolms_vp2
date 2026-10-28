@@ -9,7 +9,23 @@ import {
 import './BlockWorkspace.css';
 
 /**
- * Recursive helpers to find, insert, and remove blocks in the tree
+ * Check if targetId is the source block itself or any descendant of source
+ */
+function isDescendantOrSelf(source, targetId) {
+  if (!source || !targetId) return false;
+  if (source.id === targetId) return true;
+  if (Array.isArray(source.children)) {
+    for (const child of source.children) {
+      if (child.id === targetId || isDescendantOrSelf(child, targetId)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+/**
+ * Recursive removal of a block by ID from tree (root or nested inside C-blocks)
  */
 function removeBlockFromTree(blocks, blockId) {
   const result = [];
@@ -38,6 +54,58 @@ function removeBlockFromTree(blocks, blockId) {
   return { blocks: result, removed };
 }
 
+/**
+ * Recursive insertion of a block into tree at target location
+ */
+function insertBlockIntoTree(blocks, targetId, position, blockToInsert) {
+  if (position === 'root_end' || !targetId) {
+    return [...blocks, blockToInsert];
+  }
+
+  let inserted = false;
+
+  function walk(list) {
+    const res = [];
+    for (const item of list) {
+      if (item.id === targetId) {
+        inserted = true;
+        if (position === 'before') {
+          res.push(blockToInsert);
+          res.push(item);
+        } else if (position === 'after') {
+          res.push(item);
+          res.push(blockToInsert);
+        } else if (position === 'inside') {
+          res.push({
+            ...item,
+            children: [...(item.children || []), blockToInsert],
+          });
+        }
+      } else {
+        if (Array.isArray(item.children)) {
+          res.push({
+            ...item,
+            children: walk(item.children),
+          });
+        } else {
+          res.push(item);
+        }
+      }
+    }
+    return res;
+  }
+
+  const updated = walk(blocks);
+  if (!inserted) {
+    // Fallback: append safely to root if target wasn't found
+    return [...updated, blockToInsert];
+  }
+  return updated;
+}
+
+/**
+ * Update parameters (e.g. repeat count or angle) in tree recursively
+ */
 function updateParamInTree(blocks, blockId, paramName, value) {
   return blocks.map((blk) => {
     if (blk.id === blockId) {
@@ -78,7 +146,7 @@ export default function BlockWorkspace({
   // Dragging state
   const [draggingBlock, setDraggingBlock] = useState(null);
   const [dragPointerPos, setDragPointerPos] = useState({ x: 0, y: 0 });
-  const [dropTarget, setDropTarget] = useState(null); // { blockId, position: 'after' | 'inside' }
+  const [dropTarget, setDropTarget] = useState(null); // { blockId, targetId, position: 'before' | 'after' | 'inside' | 'root_end' }
   const [isOverTrash, setIsOverTrash] = useState(false);
 
   // Handle parameter changes (e.g. angle dropdown, repeat count)
@@ -90,11 +158,11 @@ export default function BlockWorkspace({
     [blocks, onChangeBlocks]
   );
 
-  // Start dragging a block (either from toolbox or from workspace)
+  // Start dragging a block (either from toolbox or from workspace / loop)
   const handleStartDrag = (block, e) => {
     if (isExecuting) return; // cannot edit while running
 
-    const isFromToolbox = !blocks.some((b) => b.id === block.id || (b.children && b.children.some(c => c.id === block.id)));
+    const isFromToolbox = String(block.id).startsWith('toolbox_');
     const blockToDrag = isFromToolbox ? createBlockInstance(block.type) : block;
 
     setDraggingBlock({
@@ -106,14 +174,14 @@ export default function BlockWorkspace({
     setDragPointerPos({ x: e.clientX, y: e.clientY });
   };
 
-  // Global pointer move during drag
+  // Global pointer move and drop handling during drag
   useEffect(() => {
     if (!draggingBlock) return;
 
     const handlePointerMove = (e) => {
       setDragPointerPos({ x: e.clientX, y: e.clientY });
 
-      // Check if pointer is hovering over trash / toolbox
+      // 1. Check if hovering over toolbox or trash zone on the left
       if (toolboxRef.current) {
         const tbRect = toolboxRef.current.getBoundingClientRect();
         if (
@@ -129,34 +197,55 @@ export default function BlockWorkspace({
       }
       setIsOverTrash(false);
 
-      // Check element under pointer
+      // 2. Scan elements under pointer for drop targeting
       const elements = document.elementsFromPoint(e.clientX, e.clientY);
+      let foundTarget = null;
 
-      // 1. Check if hovering inside a C-Block slot
-      const slotElement = elements.find((el) => el.hasAttribute('data-slot-for'));
-      if (slotElement) {
-        const targetCBlockId = slotElement.getAttribute('data-slot-for');
-        if (targetCBlockId !== draggingBlock.id) {
-          setDropTarget({ blockId: targetCBlockId, position: 'inside' });
-          return;
-        }
-      }
+      // Pass A: Check for specific block element (child block, root block, C-header, or C-bottom bracket)
+      for (const el of elements) {
+        if (el.hasAttribute('data-block-id')) {
+          const tid = el.getAttribute('data-block-id');
+          // Skip if target is the dragging block itself, or one of its descendants, or a toolbox block
+          if (isDescendantOrSelf(draggingBlock, tid) || tid.startsWith('toolbox_')) {
+            continue;
+          }
 
-      // 2. Check if hovering on/near a block node
-      const blockElement = elements.find((el) => el.hasAttribute('data-block-id'));
-      if (blockElement) {
-        const targetBlockId = blockElement.getAttribute('data-block-id');
-        if (targetBlockId !== draggingBlock.id) {
-          const rect = blockElement.getBoundingClientRect();
+          // Bottom bracket of a C-block -> always insert AFTER the whole C-block
+          if (el.hasAttribute('data-c-bottom')) {
+            foundTarget = { blockId: tid, targetId: tid, position: 'after' };
+            break;
+          }
+
+          // Start hat block -> can only insert AFTER it
+          if (tid === 'start_hat' || tid.includes('start')) {
+            foundTarget = { blockId: tid, targetId: tid, position: 'after' };
+            break;
+          }
+
+          // Normal or child block: determine before or after based on pointer vertical half
+          const rect = el.getBoundingClientRect();
           const relativeY = e.clientY - rect.top;
           const position = relativeY > rect.height / 2 ? 'after' : 'before';
-          setDropTarget({ blockId: targetBlockId, position });
-          return;
+          foundTarget = { blockId: tid, targetId: tid, position };
+          break;
         }
       }
 
-      // 3. If in workspace but not over specific block, append to end of main stack
-      if (workspaceRef.current) {
+      // Pass B: If not directly over a block, check if inside an empty or padded C-Block slot
+      if (!foundTarget) {
+        for (const el of elements) {
+          if (el.hasAttribute('data-slot-for') || el.hasAttribute('data-slot-placeholder-for')) {
+            const cBlockId = el.getAttribute('data-slot-for') || el.getAttribute('data-slot-placeholder-for');
+            if (!isDescendantOrSelf(draggingBlock, cBlockId) && !cBlockId.startsWith('toolbox_')) {
+              foundTarget = { blockId: cBlockId, targetId: cBlockId, position: 'inside' };
+              break;
+            }
+          }
+        }
+      }
+
+      // Pass C: If in workspace canvas (e.g. empty space below or beside blocks)
+      if (!foundTarget && workspaceRef.current) {
         const wsRect = workspaceRef.current.getBoundingClientRect();
         if (
           e.clientX >= wsRect.left &&
@@ -164,75 +253,57 @@ export default function BlockWorkspace({
           e.clientY >= wsRect.top &&
           e.clientY <= wsRect.bottom
         ) {
-          const lastBlock = blocks[blocks.length - 1];
-          if (lastBlock) {
-            setDropTarget({ blockId: lastBlock.id, position: 'after' });
-            return;
+          if (blocks.length > 0) {
+            const lastBlock = blocks[blocks.length - 1];
+            if (!isDescendantOrSelf(draggingBlock, lastBlock.id)) {
+              foundTarget = { blockId: lastBlock.id, targetId: lastBlock.id, position: 'after' };
+            }
+          } else {
+            foundTarget = { blockId: null, targetId: null, position: 'root_end' };
           }
         }
       }
 
-      setDropTarget(null);
+      setDropTarget(foundTarget);
     };
 
     const handlePointerUp = () => {
       if (!draggingBlock) return;
 
-      // If dragged to trash / toolbox, delete if it was from workspace
       if (isOverTrash) {
+        // Dragged to trash or toolbox: delete if it was already in workspace
         if (!draggingBlock.isFromToolbox) {
           const { blocks: updated } = removeBlockFromTree(blocks, draggingBlock.id);
           onChangeBlocks?.(updated);
         }
       } else if (dropTarget) {
-        // Remove block from current position if it was in the workspace
+        // Remove block from current position if it was already in the workspace
         let cleanBlocks = blocks;
         if (!draggingBlock.isFromToolbox) {
           const res = removeBlockFromTree(blocks, draggingBlock.id);
           cleanBlocks = res.blocks;
         }
 
-        // Insert into target position
+        // Construct block to insert
         const blockToInsert = {
           id: draggingBlock.id,
           type: draggingBlock.type,
           params: draggingBlock.params || {},
-          children: draggingBlock.children || (BLOCK_DEFINITIONS[draggingBlock.type]?.kind === 'c_block' ? [] : undefined),
+          children:
+            draggingBlock.children ||
+            (BLOCK_DEFINITIONS[draggingBlock.type]?.kind === 'c_block' ? [] : undefined),
         };
 
-        const insertInto = (list) => {
-          const res = [];
-          for (const item of list) {
-            if (item.id === dropTarget.blockId) {
-              if (dropTarget.position === 'before') {
-                res.push(blockToInsert);
-                res.push(item);
-              } else if (dropTarget.position === 'after') {
-                res.push(item);
-                res.push(blockToInsert);
-              } else if (dropTarget.position === 'inside') {
-                res.push({
-                  ...item,
-                  children: [...(item.children || []), blockToInsert],
-                });
-              }
-            } else {
-              if (Array.isArray(item.children)) {
-                res.push({
-                  ...item,
-                  children: insertInto(item.children),
-                });
-              } else {
-                res.push(item);
-              }
-            }
-          }
-          return res;
-        };
-
-        const nextBlocks = insertInto(cleanBlocks);
+        const targetId = dropTarget.targetId || dropTarget.blockId;
+        const nextBlocks = insertBlockIntoTree(
+          cleanBlocks,
+          targetId,
+          dropTarget.position,
+          blockToInsert
+        );
         onChangeBlocks?.(nextBlocks);
       }
+      // If dropped outside without target or trash: keep previous state safely (no accidental deletion)
 
       setDraggingBlock(null);
       setDropTarget(null);
@@ -286,9 +357,10 @@ export default function BlockWorkspace({
         </div>
 
         <div className="workspace-block-canvas">
-          {blocks.map((block, idx) => {
-            const isTargetBefore = dropTarget?.blockId === block.id && dropTarget?.position === 'before';
-            const isTargetAfter = dropTarget?.blockId === block.id && dropTarget?.position === 'after';
+          {blocks.map((block) => {
+            const targetId = dropTarget?.targetId || dropTarget?.blockId;
+            const isTargetBefore = targetId === block.id && dropTarget?.position === 'before';
+            const isTargetAfter = targetId === block.id && dropTarget?.position === 'after';
 
             return (
               <React.Fragment key={block.id}>
@@ -296,7 +368,7 @@ export default function BlockWorkspace({
                 <div style={{ display: 'block' }}>
                   <BlockRenderer
                     block={block}
-                    isExecuting={activeBlockId === block.id}
+                    activeBlockId={activeBlockId}
                     onStartDrag={handleStartDrag}
                     onParamChange={handleParamChange}
                     dropTarget={dropTarget}
@@ -323,7 +395,12 @@ export default function BlockWorkspace({
       )}
 
       {/* TRASH ZONE INDICATOR */}
-      <div className={`workspace-trash-zone ${draggingBlock && !draggingBlock.isFromToolbox ? 'visible' : ''} ${isOverTrash ? 'hovered' : ''}`}>
+      <div
+        className={`workspace-trash-zone ${
+          draggingBlock && !draggingBlock.isFromToolbox ? 'visible' : ''
+        } ${isOverTrash ? 'hovered' : ''}`}
+        title="Drag here to delete"
+      >
         <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2">
           <polyline points="3 6 5 6 21 6" />
           <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />

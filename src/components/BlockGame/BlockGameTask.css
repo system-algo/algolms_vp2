@@ -65,18 +65,70 @@
   width: 100%;
   height: calc(100% - 48px);
   overflow: hidden;
+  position: relative;
 }
 
 .block-game-pane-left {
-  flex: 55;
   height: 100%;
   display: flex;
-  border-right: 2px solid #334155;
   overflow: hidden;
 }
 
+/* Resizable Divider Handle ("kéo ra kéo dô" chia cột giao diện) */
+.block-game-resizer {
+  width: 10px;
+  background: #1e293b;
+  cursor: col-resize;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  user-select: none;
+  z-index: 15;
+  border-left: 1px solid #334155;
+  border-right: 1px solid #334155;
+  flex-shrink: 0;
+}
+
+.block-game-resizer:hover,
+.block-game-resizer.active {
+  background: #2563eb;
+  border-color: #60a5fa;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+.resizer-handle-grip {
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  background: #64748b;
+  transition: all 0.15s ease;
+}
+
+.block-game-resizer:hover .resizer-handle-grip,
+.block-game-resizer.active .resizer-handle-grip {
+  background: #ffffff;
+  height: 50px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.block-game-split-pane.is-resizing {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
+.block-game-split-pane.is-resizing * {
+  cursor: col-resize !important;
+  user-select: none !important;
+  pointer-events: none !important;
+}
+
+.block-game-split-pane.is-resizing .block-game-resizer {
+  pointer-events: auto !important;
+}
+
 .block-game-pane-right {
-  flex: 45;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -88,11 +140,15 @@
     flex-direction: column;
   }
   .block-game-pane-left {
-    flex: 1;
-    border-right: none;
+    width: 100% !important;
+    height: 50% !important;
     border-bottom: 2px solid #334155;
   }
+  .block-game-resizer {
+    display: none;
+  }
   .block-game-pane-right {
-    flex: 1;
+    width: 100% !important;
+    height: 50% !important;
   }
 }

@@ -3,98 +3,9 @@
   "title": "Visual Programming 2",
   "lessons": [
     {
-      "id": "M1-Visual-Programming-Basics",
-      "title": "Introduction",
-      "pageCount": 15,
-      "taskCount": 27,
-      "pages": [
-        {
-          "id": "VP_M1L1_SLIDES",
-          "title": "Slide: Linear algorithm",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L1_1",
-          "title": "M1L1 Practice",
-          "taskCount": 5
-        },
-        {
-          "id": "VP_M1L1_2",
-          "title": "How to Make Toast Algorithm",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L2_SLIDES",
-          "title": "Slide: Loops",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L2_1",
-          "title": "M1L2 Practice",
-          "taskCount": 5
-        },
-        {
-          "id": "VP_M1L2_2",
-          "title": "Match the Scratch vocabulary",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L3_SLIDES",
-          "title": "Slide: Initial arrangement",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L3_1",
-          "title": "Coder Crossword",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L3_2",
-          "title": "Drag the Words Task",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L4_SLIDES",
-          "title": "Slide: Events",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L4_1",
-          "title": "Fill in the blanks",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L4_2",
-          "title": "Single choice set",
-          "taskCount": 5
-        },
-        {
-          "id": "VP_M1L5_SLIDES",
-          "title": "Slide: Project Showpiece",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L5_1",
-          "title": "Drag the words Module 1",
-          "taskCount": 1
-        },
-        {
-          "id": "VP_M1L5_2",
-          "title": "Memory Game Module 1",
-          "taskCount": 1
-        }
-      ]
-    },
-    {
       "id": "M2-Control-Structures",
       "title": "Space",
       "pages": [
-        {
-          "id": "VP2_M2L3_SLIDES",
-          "title": "Slide: Turns and degrees",
-          "lessonId": "VP2_M2L3",
-          "taskCount": 1
-        },
         {
           "id": "VP2_M2L3_1",
           "title": "Laser and plants",
@@ -118,12 +29,6 @@
           "title": "Test yourself. Degrees",
           "lessonId": "VP2_M2L3",
           "taskCount": 2
-        },
-        {
-          "id": "VP2_M2L4_SLIDES",
-          "title": "Slide: Messages",
-          "lessonId": "VP2_M2L4",
-          "taskCount": 1
         },
         {
           "id": "VP2_M2L4_1",
@@ -156,20 +61,14 @@
           "taskCount": 1
         },
         {
-          "id": "VP2_M2L5_SLIDES",
-          "title": "Slide: Project Animation",
-          "lessonId": "VP2_M2L5",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M2L5_1",
           "title": "Project. Animation",
           "lessonId": "VP2_M2L5",
           "taskCount": 1
         }
       ],
-      "pageCount": 13,
-      "taskCount": 43
+      "pageCount": 10,
+      "taskCount": 40
     },
     {
       "id": "M3-Functions-and-Modules",
@@ -198,12 +97,6 @@
           "title": "Test yourself. Conditions",
           "lessonId": "VP2_M3L1",
           "taskCount": 3
-        },
-        {
-          "id": "VP2_M3L2_SLIDES",
-          "title": "Slide: Changing coordinates",
-          "lessonId": "VP2_M3L2",
-          "taskCount": 1
         },
         {
           "id": "VP2_M3L2_1_track1",
@@ -236,12 +129,6 @@
           "taskCount": 3
         },
         {
-          "id": "VP2_M3L3_SLIDES",
-          "title": "Slide: Procedures",
-          "lessonId": "VP2_M3L3",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M3L3_1",
           "title": "Jump",
           "lessonId": "VP2_M3L3",
@@ -266,21 +153,9 @@
           "taskCount": 3
         },
         {
-          "id": "VP2_M3L4_SLIDES",
-          "title": "Slide: Game planning",
-          "lessonId": "VP2_M3L4",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M3L4_1",
           "title": "Game planning",
           "lessonId": "VP2_M3L4",
-          "taskCount": 1
-        },
-        {
-          "id": "VP2_M3L5_SLIDES",
-          "title": "Slide: Game Testing",
-          "lessonId": "VP2_M3L5",
           "taskCount": 1
         },
         {
@@ -290,31 +165,19 @@
           "taskCount": 1
         },
         {
-          "id": "VP2_M3L6_SLIDES",
-          "title": "Slide: Game Presentation",
-          "lessonId": "VP2_M3L6",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M3L6_1",
           "title": "Game Presentation",
           "lessonId": "VP2_M3L6",
           "taskCount": 1
         }
       ],
-      "pageCount": 21,
-      "taskCount": 87
+      "pageCount": 16,
+      "taskCount": 82
     },
     {
       "id": "M4-Math-and-Logic",
       "title": "Logic",
       "pages": [
-        {
-          "id": "VP2_M4L1_SLIDES",
-          "title": "Slide: Logical operators",
-          "lessonId": "VP2_M4L1",
-          "taskCount": 1
-        },
         {
           "id": "VP2_M4L1_1",
           "title": "Logical operators - Part 1",
@@ -344,12 +207,6 @@
           "title": "Test yourself. Logical operators",
           "lessonId": "VP2_M4L1",
           "taskCount": 4
-        },
-        {
-          "id": "VP2_M4L2_SLIDES",
-          "title": "Slide: Conditional loop",
-          "lessonId": "VP2_M4L2",
-          "taskCount": 1
         },
         {
           "id": "VP2_M4L2_1_track1",
@@ -382,12 +239,6 @@
           "taskCount": 5
         },
         {
-          "id": "VP2_M4L3_SLIDES",
-          "title": "Slide: Random numbers and ranges",
-          "lessonId": "VP2_M4L3",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M4L3_1",
           "title": "Random numbers - Part 1",
           "lessonId": "VP2_M4L3",
@@ -418,12 +269,6 @@
           "taskCount": 13
         },
         {
-          "id": "VP2_M4L4_SLIDES",
-          "title": "Slide: Coordinate areas",
-          "lessonId": "VP2_M4L4",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M4L4_1",
           "title": "Coordinate areas",
           "lessonId": "VP2_M4L4",
@@ -448,12 +293,6 @@
           "taskCount": 4
         },
         {
-          "id": "VP2_M4L5_SLIDES",
-          "title": "Slide: Group project. Planning",
-          "lessonId": "VP2_M4L5",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M4L5_1",
           "title": "Group project. Planning",
           "lessonId": "VP2_M4L5",
@@ -466,19 +305,13 @@
           "taskCount": 5
         }
       ],
-      "pageCount": 26,
-      "taskCount": 221
+      "pageCount": 21,
+      "taskCount": 216
     },
     {
       "id": "M5-Game-Development",
       "title": "Variables",
       "pages": [
-        {
-          "id": "VP2_M5L1_SLIDES",
-          "title": "Slide: Variables in loops",
-          "lessonId": "VP2_M5L1",
-          "taskCount": 1
-        },
         {
           "id": "VP2_M5L1_1",
           "title": "Variables in loops - Part 1",
@@ -502,12 +335,6 @@
           "title": "Test yourself. Variables in loops",
           "lessonId": "VP2_M5L1",
           "taskCount": 4
-        },
-        {
-          "id": "VP2_M5L2_SLIDES",
-          "title": "Slide: Data types and operators",
-          "lessonId": "VP2_M5L2",
-          "taskCount": 1
         },
         {
           "id": "VP2_M5L2_1",
@@ -534,12 +361,6 @@
           "taskCount": 4
         },
         {
-          "id": "VP2_M5L3_SLIDES",
-          "title": "Slide: Variables in games",
-          "lessonId": "VP2_M5L3",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M5L3_1",
           "title": "Variables in games - Part 1",
           "lessonId": "VP2_M5L3",
@@ -562,12 +383,6 @@
           "title": "Test yourself. Variables in games",
           "lessonId": "VP2_M5L3",
           "taskCount": 4
-        },
-        {
-          "id": "VP2_M5L4_SLIDES",
-          "title": "Slide: Variables as parameters",
-          "lessonId": "VP2_M5L4",
-          "taskCount": 1
         },
         {
           "id": "VP2_M5L4_1",
@@ -594,22 +409,10 @@
           "taskCount": 4
         },
         {
-          "id": "VP2_M5L5_SLIDES",
-          "title": "Slide: Chatbot. Planning",
-          "lessonId": "VP2_M5L5",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M5L5_1",
           "title": "Chatbot. Planning",
           "lessonId": "VP2_M5L5",
           "taskCount": 2
-        },
-        {
-          "id": "VP2_M5L6_SLIDES",
-          "title": "Slide: Project. Presentation",
-          "lessonId": "VP2_M5L6",
-          "taskCount": 1
         },
         {
           "id": "VP2_M5L6_1",
@@ -618,19 +421,13 @@
           "taskCount": 1
         }
       ],
-      "pageCount": 24,
-      "taskCount": 90
+      "pageCount": 18,
+      "taskCount": 84
     },
     {
       "id": "M6-Advanced-Projects",
       "title": "Clones",
       "pages": [
-        {
-          "id": "VP2_M6L1_SLIDES",
-          "title": "Slide: Classes and objects",
-          "lessonId": "VP2_M6L1",
-          "taskCount": 1
-        },
         {
           "id": "VP2_M6L1_1",
           "title": "Classes and objects - Part 1",
@@ -648,12 +445,6 @@
           "title": "Test yourself. Classes and objects",
           "lessonId": "VP2_M6L1",
           "taskCount": 3
-        },
-        {
-          "id": "VP2_M6L2_SLIDES",
-          "title": "Slide: Local and global variables",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 1
         },
         {
           "id": "VP2_M6L2_1",
@@ -710,30 +501,18 @@
           "taskCount": 3
         }
       ],
-      "pageCount": 14,
-      "taskCount": 24
+      "pageCount": 12,
+      "taskCount": 22
     },
     {
       "id": "M7-Hackathon-Series",
       "title": "Final Project",
       "pages": [
         {
-          "id": "VP2_M7L1_SLIDES",
-          "title": "Slide: Preparing for final project",
-          "lessonId": "VP2_M7L1",
-          "taskCount": 1
-        },
-        {
           "id": "VP2_M7L1_1",
           "title": "Final project",
           "lessonId": "VP2_M7L1",
           "taskCount": 3
-        },
-        {
-          "id": "VP2_M7L2_SLIDES",
-          "title": "Slide: Graduation",
-          "lessonId": "VP2_M7L2",
-          "taskCount": 1
         },
         {
           "id": "VP2_M7L2_1",
@@ -808,10 +587,10 @@
           "taskCount": 5
         }
       ],
-      "pageCount": 15,
-      "taskCount": 65
+      "pageCount": 13,
+      "taskCount": 63
     }
   ],
-  "pageCount": 113,
-  "taskCount": 530
+  "pageCount": 90,
+  "taskCount": 507
 }

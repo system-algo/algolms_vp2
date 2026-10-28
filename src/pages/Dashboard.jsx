@@ -7,39 +7,6 @@ import {
 } from '../pathway/pathwayConfig';
 import './Dashboard.css';
 
-const ACTIVITY_NUMBER_MAP = {
-  // M2L1
-  'VP2_M2L1_1': '1', 'VP2_M2L1_2': '2',
-  'VP_M2L1_1': '1', 'VP_M2L1_2': '2',
-  // M2L2
-  'VP2_M2L2_1': '3', 'VP2_M2L2_2': '★', 'VP2_M2L2_3': '5', 'VP2_M2L2_4': '6',
-  'VP_M2L2_1': '3', 'VP_M2L2_2': '★', 'VP_M2L2_3': '5', 'VP_M2L2_4': '6',
-  // M2L3 (Space) - Image 2 exact match
-  'VP2_M2L3_1': '7',
-  'VP2_M2L3_2': '★',
-  'VP2_M2L3_3': '8',
-  'VP2_M2L3_4': '9',
-  'VP_M2L3_1': '7',
-  'VP_M2L3_2': '★',
-  'VP_M2L3_3': '8',
-  'VP_M2L3_4': '9',
-  // M2L4 (Space) - Image 2 exact match
-  'VP2_M2L4_1': '10',
-  'VP2_M2L4_2': '★',
-  'VP2_M2L4_3': '11',
-  'VP2_M2L4_4': '12',
-  'VP2_M2L4_5': '13',
-  'VP_M2L4_1': '10',
-  'VP_M2L4_2': '★',
-  'VP_M2L4_3': '11',
-  'VP_M2L4_4': '12',
-  'VP_M2L4_5': '13',
-  // M2L5 (Space)
-  'VP2_M2L5_1': '14',
-  'VP_M2L5_1': '14'
-};
-
-
 const CATALOG_URL = '/courses/index.json';
 const DEFAULT_COURSE_ID = 'VP2';
 
@@ -146,35 +113,10 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
   const [activeTab, setActiveTab] = useState('course'); // 'course' view only (home hidden)
 
   // Dynamic hierarchy state: course has modules -> modules have lessons -> lessons have pages
-  const [rawLessonsData, setRawLessonsData] = useState([]); // full VP2 catalog
-  const [highestUnlocked, setHighestUnlocked] = useState(2);
-  // The VP2 student dashboard never reads VP schedules. Lessons 1-2 are
-  // available by default; higher lessons require VP2 schedule records.
-  const lessonsData = useMemo(() => {
-    const role = String(localStorage.getItem('lms_user_role') || 'student').toLowerCase();
-    const unrestricted = role === 'teacher' || role === 'admin';
-    return rawLessonsData.map((module) => {
-      const lessons = (module.lessons || []).map((lesson) => {
-        const isLocked = !unrestricted && lesson.number > highestUnlocked;
-        return {
-          ...lesson,
-          isLocked,
-          locked: isLocked,
-          isUnlocked: !isLocked,
-          pages: (lesson.pages || []).map((page) => ({
-            ...page,
-            isLocked,
-            locked: isLocked,
-          })),
-        };
-      });
-      const isLocked = lessons.length ? lessons[0].isLocked : !unrestricted;
-      return { ...module, lessons, isLocked, locked: isLocked, isUnlocked: !isLocked };
-    });
-  }, [rawLessonsData, highestUnlocked]);
+  const [lessonsData, setLessonsData] = useState([]); // holds structured modules
   const [selectedModuleIndex, setSelectedModuleIndex] = useState(() => {
     const saved = sessionStorage.getItem('vp_dashboard_module_index');
-    return saved !== null && saved !== undefined ? parseInt(saved, 10) : 1;
+    return saved ? parseInt(saved, 10) : 0;
   }); // active module index in timeline
   const [selectedLessonIndex, setSelectedLessonIndex] = useState(() => {
     const saved = sessionStorage.getItem('vp_dashboard_lesson_index');
@@ -199,7 +141,6 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
   // Student specific details
   const studentEmail = localStorage.getItem('lms_student_email') || 'tim.tran@algo.edu.vn';
   const studentName = studentEmail.split('@')[0].split('.').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-
   useEffect(() => {
     let cancelled = false;
     setHighestUnlocked(2);
@@ -211,6 +152,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
       });
     return () => { cancelled = true; };
   }, [studentEmail]);
+
 
   const [dbProgress, setDbProgress] = useState([]);
   const [hasFetchedProgress, setHasFetchedProgress] = useState(false);
@@ -384,7 +326,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
   // Fetch course modules and group pages into lessons dynamically
   useEffect(() => {
-    if (!selectedCourseId) {
+    if (!selectedCourseId || selectedCourseId !== DEFAULT_COURSE_ID) {
       return;
     }
 
@@ -440,16 +382,11 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
         const structuredModules = modules.map((module, moduleIndex) => {
           const loadedModule =
             loadedModules.find((item) => item?.id === module.id) || module;
-          
-          const modNumMatch = String(module.id).match(/M(\d+)/i);
-          const modNum = modNumMatch ? parseInt(modNumMatch[1], 10) : moduleIndex + 1;
-
           const moduleTitle =
             customNames?.modules?.[module.id] ||
             loadedModule.title ||
             module.title ||
-            `Module ${modNum}`;
-
+            `Module ${moduleIndex + 1}`;
           const flatPages = Array.isArray(loadedModule.pages)
             ? loadedModule.pages
             : Array.isArray(module.pages)
@@ -462,53 +399,18 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
           const sortPages = (pages) =>
             [...(pages || [])].sort((a, b) => {
-              const aIsSlide = String(a.id || a.pageId || '').includes('SLIDE');
-              const bIsSlide = String(b.id || b.pageId || '').includes('SLIDE');
-              if (aIsSlide && !bIsSlide) return -1;
-              if (!aIsSlide && bIsSlide) return 1;
               const numA = parseInt(
-                String(a.id || a.pageId || '').match(/_(\d+)(?:_.*)?$/)?.[1] || '0',
+                String(a.id || a.pageId || '').match(/_(\d+)$/)?.[1] || '0',
                 10
               );
               const numB = parseInt(
-                String(b.id || b.pageId || '').match(/_(\d+)(?:_.*)?$/)?.[1] || '0',
+                String(b.id || b.pageId || '').match(/_(\d+)$/)?.[1] || '0',
                 10
               );
               return numA - numB;
             });
 
           let lessons = [];
-          let currentActivityCounter = 1;
-
-          const enrichPages = (pagesList) => {
-            return sortPages(pagesList).map((page) => {
-              const pId = page.id || page.pageId || '';
-              const isSlide = pId.toUpperCase().includes('SLIDE') || String(page.title || '').toUpperCase().startsWith('SLIDE');
-              const displayTitle = customNames?.pages?.[pId] || customNames?.pages?.[pId.replace(/^VP2_/, 'VP_')] || page.title || pId;
-              const isBonus = ACTIVITY_NUMBER_MAP[pId] === '★' || (!isSlide && (
-                /additional|bonus|artist|riddle|pen|hedgehog|apple|broom/i.test(displayTitle) ||
-                /additional|bonus/i.test(pId)
-              ));
-              
-              let activityBadge = ACTIVITY_NUMBER_MAP[pId];
-              if (!activityBadge) {
-                if (isBonus) activityBadge = '★';
-                else if (isSlide) activityBadge = 'SLIDE';
-                else {
-                  activityBadge = String(currentActivityCounter++);
-                }
-              }
-
-              return {
-                ...page,
-                id: pId,
-                displayTitle,
-                isSlide,
-                isBonus,
-                activityBadge
-              };
-            });
-          };
 
           if (lessonCatalog.length > 0) {
             lessons = lessonCatalog
@@ -517,12 +419,6 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
                 if (!lessonId) return null;
 
                 const currentLessonNumber = globalLessonCounter++;
-                const lNumMatch = lessonId.match(/L(\d+)/i);
-                const lessonNum = lNumMatch ? parseInt(lNumMatch[1], 10) : currentLessonNumber;
-                const codeMatch = lessonId.match(/(?:M\d+)?L\d+/i);
-                const code = codeMatch ? codeMatch[0] : `L${lessonNum}`;
-                const rawTitle = customNames?.lessons?.[lessonId] || customNames?.lessons?.[lessonId.replace(/^VP2_/, 'VP_')] || lesson.title || `Lesson ${lessonNum}`;
-
                 const lessonPages =
                   Array.isArray(lesson.pages) && lesson.pages.length > 0
                     ? lesson.pages
@@ -532,14 +428,14 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
                   ...lesson,
                   id: lessonId,
                   key: lessonId,
-                  code,
-                  lessonNum,
                   moduleId: module.id,
                   moduleTitle,
-                  number: lessonNum,
-                  title: rawTitle,
-                  headerTitle: `LESSON ${lessonNum}. ${code}. ${rawTitle.toUpperCase()}`,
-                  pages: enrichPages(lessonPages),
+                  number: currentLessonNumber,
+                  title:
+                    customNames?.lessons?.[lessonId] ||
+                    lesson.title ||
+                    `Lesson ${currentLessonNumber}`,
+                  pages: sortPages(lessonPages),
                 };
               })
               .filter(Boolean);
@@ -552,23 +448,17 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
               })
               .map(([lessonId, lessonPages]) => {
                 const currentLessonNumber = globalLessonCounter++;
-                const lNumMatch = lessonId.match(/L(\d+)/i);
-                const lessonNum = lNumMatch ? parseInt(lNumMatch[1], 10) : currentLessonNumber;
-                const codeMatch = lessonId.match(/(?:M\d+)?L\d+/i);
-                const code = codeMatch ? codeMatch[0] : `L${lessonNum}`;
-                const rawTitle = customNames?.lessons?.[lessonId] || customNames?.lessons?.[lessonId.replace(/^VP2_/, 'VP_')] || `Lesson ${lessonNum}`;
 
                 return {
                   id: lessonId,
                   key: lessonId,
-                  code,
-                  lessonNum,
                   moduleId: module.id,
                   moduleTitle,
-                  number: lessonNum,
-                  title: rawTitle,
-                  headerTitle: `LESSON ${lessonNum}. ${code}. ${rawTitle.toUpperCase()}`,
-                  pages: enrichPages(lessonPages),
+                  number: currentLessonNumber,
+                  title:
+                    customNames?.lessons?.[lessonId] ||
+                    `Lesson ${currentLessonNumber}`,
+                  pages: sortPages(lessonPages),
                 };
               });
           }
@@ -577,7 +467,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
             ...module,
             id: module.id,
             title: moduleTitle,
-            number: modNum,
+            number: moduleIndex + 1,
             lessons,
             pageCount: module.pageCount || flatPages.length,
             taskCount: module.taskCount,
@@ -629,13 +519,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
   const courses = useMemo(() => {
     if (!Array.isArray(catalog?.courses)) return [];
-    const unique = catalog.courses.filter(
-      (course, idx, arr) => arr.findIndex((c) => c.id === course.id) === idx
-    );
-    if (unique.some((c) => c.id === 'VP2')) {
-      return unique.filter((c) => c.id !== 'VP');
-    }
-    return unique;
+    return catalog.courses;
   }, [catalog]);
 
 
@@ -880,54 +764,43 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
     return { percentage: 0, completedCount: 0, totalCount };
   };
 
-  const getPageProgress = (page, lessonId) => {
-    const pageId = page?.id || page?.pageId || '';
-    const total = Number(page?.taskCount) || 1;
-    if (!pageId) return { completed: 0, total: 1, isCompleted: false };
+  const isPageCompleted = (page) => {
+    const pageId = page.id || page.pageId || '';
+    if (!pageId) return false;
 
-    let completed = 0;
-
-    // 1. Check local storage
+    // 1. Check local storage first
     try {
       const storageKey = [
         'lms-completed-tasks',
         String(selectedCourseId || 'VP2'),
-        String(lessonId || activeLesson?.id || ''),
+        String(activeLesson?.id || activeLesson?.moduleId || ''),
         String(pageId),
       ].join(':');
       const localCompleted = JSON.parse(localStorage.getItem(storageKey) || '[]');
-      if (Array.isArray(localCompleted)) {
-        completed = Math.max(completed, localCompleted.length);
+      const taskCount = page.taskCount || 0;
+      if (Array.isArray(localCompleted) && taskCount > 0 && localCompleted.length >= taskCount) {
+        return true;
       }
     } catch (e) {}
 
-    // 2. Check DB progress as fallback/sync
+    // 2. Check DB progress as fallback
     if (hasFetchedProgress && Array.isArray(dbProgress)) {
-      const dbSet = new Set();
-      const altPageId = pageId.replace(/^VP2_/, 'VP_');
-      dbProgress.forEach((attempt) => {
-        const isFinished =
+      const completedTasks = new Set();
+      dbProgress.forEach(attempt => {
+        const isCompleted =
           attempt.status === 'completed' ||
           attempt.is_completed === true ||
           attempt.status === 'correct' ||
           String(attempt.feedback || '').toLowerCase().includes('correct');
-        if (isFinished && (attempt.page_id === pageId || attempt.page_id === altPageId) && attempt.task_id) {
-          dbSet.add(attempt.task_id);
+        if (isCompleted && attempt.page_id === pageId && attempt.task_id) {
+          completedTasks.add(attempt.task_id);
         }
       });
-      completed = Math.max(completed, dbSet.size);
+      const taskCount = page.taskCount || 0;
+      return taskCount > 0 && completedTasks.size >= taskCount;
     }
 
-    const isCompleted = completed >= total && total > 0;
-    return {
-      completed: Math.min(completed, total),
-      total,
-      isCompleted
-    };
-  };
-
-  const isPageCompleted = (page) => {
-    return getPageProgress(page, activeLesson?.id).isCompleted;
+    return false;
   };
 
   // Expose test helper to console for quick testing
@@ -1221,46 +1094,6 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
             </div>
           </div>
 
-          {/* Authentic Algorithmics Modules Sidebar List */}
-          {lessonsData.length > 0 && (
-            <div className="sidebar-modules-container">
-              <div className="sidebar-course-badge">
-                <img src="/course-badges/vp.png" alt="VP" className="sidebar-course-avatar" />
-                <span className="sidebar-course-label">Visual Programming</span>
-              </div>
-              <div className="sidebar-modules-nav">
-                {lessonsData.map((module, idx) => {
-                  const isCurrent = idx === selectedModuleIndex;
-                  const isLocked = module.isLocked === true;
-
-                  return (
-                    <button
-                      key={module.id}
-                      type="button"
-                      disabled={isLocked}
-                      className={`sidebar-module-btn ${isCurrent ? 'active' : ''} ${isLocked ? 'locked' : ''}`}
-                      onClick={() => {
-                        if (isLocked) {
-                          triggerToast(`Module ${module.number} is locked.`);
-                          return;
-                        }
-                        setSelectedModuleIndex(idx);
-                        setSelectedLessonIndex(0);
-                      }}
-                    >
-                      <div className="sidebar-module-ring">
-                        <span className="ring-num">{isLocked ? '🔒' : module.number}</span>
-                      </div>
-                      <span className="sidebar-module-text">
-                        {module.number}. {module.title.split(': ')[1] || module.title}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
           {/* Coming Soon Sidebar items */}
           <button type="button" className="menu-item" onClick={() => triggerToast('Coming soon: Achievements')}>
             <svg className="menu-item-icon" viewBox="0 0 24 24">
@@ -1489,90 +1322,62 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
           </div>
         </section>
 
-        {/* 3. ALGORITHMICS LESSONS ARCHIVE CURRICULUM VIEW (MATCHING AUTHENTIC LMS) */}
-        <section className="algo-module-curriculum">
+        {/* 3. LESSONS AND LESSON PAGES */}
+        <div className="dashboard-grid">
           {activeModule ? (
-            activeModule.lessons && activeModule.lessons.length > 0 ? (
-              activeModule.lessons.map((lesson) => {
-                const isLessonLocked = lesson.isLocked === true;
-                const headerTitle =
-                  lesson.headerTitle ||
-                  `LESSON ${lesson.lessonNum || lesson.number}. ${lesson.code || lesson.id}. ${(lesson.title || '').toUpperCase()}`;
-
-                return (
-                  <div key={lesson.key || lesson.id} className="algo-lesson-section">
-                    <div className="algo-lesson-header">
-                      <h3 className="algo-lesson-heading">{headerTitle}</h3>
-                    </div>
-
-                    <div className="algo-activities-row">
-                      {lesson.pages && lesson.pages.length > 0 ? (
-                        lesson.pages.map((page) => {
-                          const pageId = page.id || page.pageId;
-                          const isPageLocked = isLessonLocked || page.isLocked === true;
-                          const progress = getPageProgress(page, lesson.id);
-                          const isCompleted = progress.isCompleted;
-                          const isBonus = page.isBonus || page.activityBadge === '★';
-                          const isSlide = page.isSlide;
-                          const badgeSymbol = page.activityBadge || (isBonus ? '★' : isSlide ? 'SLIDE' : '•');
-
-                          return (
-                            <button
-                              key={pageId}
-                              type="button"
-                              disabled={isPageLocked}
-                              aria-disabled={isPageLocked}
-                              className={[
-                                'algo-activity-item',
-                                isPageLocked ? 'locked' : '',
-                                isCompleted ? 'completed' : '',
-                                isBonus ? 'bonus' : '',
-                                isSlide ? 'slide' : ''
-                              ].filter(Boolean).join(' ')}
-                              onClick={() => {
-                                if (isPageLocked) return;
-                                handleLaunchPage(activeModule.id, pageId);
-                              }}
-                            >
-                              <div className="algo-circle-node">
-                                {/* Top-right badge: fraction (e.g. 10/14) or yellow checkmark (✓) */}
-                                <span className={`algo-circle-badge ${isCompleted ? 'badge-completed' : ''}`}>
-                                  {isCompleted ? '✓' : `${progress.completed}/${progress.total}`}
-                                </span>
-
-                                {/* Center symbol: gold star ★, SLIDE, or task number */}
-                                <div className="algo-circle-symbol">
-                                  {isBonus ? (
-                                    <span className="algo-star-icon">★</span>
-                                  ) : isSlide ? (
-                                    <span className="algo-slide-icon">SLIDE</span>
-                                  ) : (
-                                    <span className="algo-number-icon">{badgeSymbol}</span>
-                                  )}
-                                </div>
-                              </div>
-
-                              {/* Title underneath the circle */}
-                              <span className="algo-activity-title" title={page.displayTitle || page.title}>
-                                {page.displayTitle || page.title}
-                              </span>
-                            </button>
-                          );
-                        })
-                      ) : (
-                        <p className="dashboard-empty-pages">No activities in this lesson.</p>
-                      )}
-                    </div>
-
-                    <hr className="algo-lesson-divider" />
-                  </div>
-                );
-              })
-            ) : (
-              <div className="continue-card dashboard-loading-card">
-                <p className="dashboard-loading-text">No lessons found in this module.</p>
+            <div className="continue-card lesson-selector-card">
+              <div className="continue-card-header">
+                <span className="card-label">Module {activeModule.number}</span>
+                <h4 className="card-title">{activeModule.title}</h4>
               </div>
-            )
+
+              <div className="lesson-selection-list">
+                {activeModule.lessons.map((lesson, index) => {
+                  const isSelected = index === selectedLessonIndex;
+                  const isLocked = lesson.isLocked === true;
+
+                  return (
+                    <button
+                      key={lesson.key}
+                      type="button"
+                      disabled={isLocked}
+                      aria-disabled={isLocked}
+                      className={[
+                        'lesson-list-btn',
+                        isSelected ? 'active' : '',
+                        isLocked ? 'locked' : ''
+                      ].filter(Boolean).join(' ')}
+                      onClick={() => {
+                        if (isLocked) return;
+
+                        setSelectedLessonIndex(index);
+                        const progress = getLessonProgress(lesson);
+
+                        if (progress.percentage === 100) {
+                          setCelebratedLesson(lesson);
+                          setShowCelebration(true);
+                        }
+                      }}
+                    >
+                      <div className="lesson-number-badge">L{lesson.number}</div>
+
+                      <div className="lesson-info-text">
+                        <div className="lesson-list-title">{lesson.title}</div>
+                        <div className="lesson-list-pages-count">
+                          {isLocked
+                            ? 'Locked'
+                            : `${lesson.pages?.length || 0} activities`}
+                        </div>
+                      </div>
+
+                      <span className="lesson-list-arrow">
+                        {isLocked ? '🔒' : '>'}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           ) : (
             <div className="continue-card dashboard-loading-card">
               <p className="dashboard-loading-text">
@@ -1580,9 +1385,90 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
               </p>
             </div>
           )}
-        </section>
 
-{/* Motivational message banner */}
+          <div className="my-courses-card">
+            <div className="section-header">
+              <h3 className="section-title">Lesson Pages</h3>
+              <span className="pages-count-tag">
+                {activeLesson?.pages?.length || 0} pages
+              </span>
+            </div>
+
+            <div className="pages-circles-grid">
+              {activeLesson?.pages && activeLesson.pages.length > 0 ? (
+                activeLesson.pages.map((page, index) => {
+                  const pageNum = index + 1;
+                  const tasksCount = page.taskCount || 0;
+                  const isLocked =
+                    activeLesson.isLocked === true ||
+                    page.isLocked === true;
+
+                  const completed = isPageCompleted(page);
+
+                  return (
+                    <button
+                      key={page.id || page.pageId}
+                      type="button"
+                      disabled={isLocked}
+                      aria-disabled={isLocked}
+                      className={[
+                        'page-circle-item',
+                        isLocked ? 'locked' : '',
+                        completed ? 'completed' : ''
+                      ].filter(Boolean).join(' ')}
+                      onClick={() => {
+                        if (isLocked) return;
+
+                        handleLaunchPage(
+                          activeLesson.moduleId,
+                          page.id || page.pageId
+                        );
+                      }}
+                    >
+                      <div className="circle-node">
+                        <span className="circle-label">
+                          {isLocked ? 'LOCKED' : completed ? 'DONE' : 'PAGE'}
+                        </span>
+                        <span className="circle-number">
+                          {isLocked
+                            ? '🔒'
+                            : completed
+                            ? '✓'
+                            : String(pageNum).padStart(2, '0')}
+                        </span>
+                      </div>
+                      <span className="circle-task-count">
+                        {isLocked
+                          ? 'Locked'
+                          : `${tasksCount} ${tasksCount === 1 ? 'task' : 'tasks'}`}
+                      </span>
+                    </button>
+                  );
+                })
+              ) : (
+                <p className="dashboard-empty-pages">No pages in this lesson.</p>
+              )}
+            </div>
+
+            <div className="continue-card-footer lesson-pages-footer">
+              <button
+                type="button"
+                disabled={!activeLesson || activeLesson.isLocked === true}
+                aria-disabled={!activeLesson || activeLesson.isLocked === true}
+                className="card-btn lesson-start-button"
+                onClick={() => handleLaunchFirstPageOfLesson(activeLesson)}
+              >
+                {!activeLesson
+                  ? 'Select a lesson'
+                  : activeLesson.isLocked
+                    ? `Lesson ${activeLesson.number} Locked`
+                    : `Start Lesson ${activeLesson.number}`}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Motivational message banner */}
         <div className="motivational-banner">
           <span className="moti-icon">👾</span>
           <p className="moti-text">

@@ -527,19 +527,8 @@ async function runImport() {
       lessonMapping[folderName] ||
       (isGraduation ? 'Graduation' : folderName);
 
-    // 1. Add Slide page if exists in mapping
-    if (slideKey && slidesMapping[slideKey]) {
-      const slidePage = processSlidePage(
-        COURSE_ID,
-        moduleId,
-        slideKey,
-        slidesMapping[slideKey],
-        mappedLessonTitle,
-        lessonKey
-      );
-      currentModule.pages.push(slidePage);
-      console.log(`  Added slide: ${slidePage.id} (${lessonKey})`);
-    }
+    // 1. Slide pages disabled - import only actual zip pages
+    // if (slideKey && slidesMapping[slideKey]) { ... }
 
     // 2. Process all zip files in this folder
     const zipFiles = fs

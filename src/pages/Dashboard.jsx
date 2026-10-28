@@ -113,7 +113,30 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
   const [activeTab, setActiveTab] = useState('course'); // 'course' view only (home hidden)
 
   // Dynamic hierarchy state: course has modules -> modules have lessons -> lessons have pages
-  const [lessonsData, setLessonsData] = useState([]); // holds structured modules
+  const [rawLessonsData, setRawLessonsData] = useState([]); // full VP2 catalog
+  const [highestUnlocked, setHighestUnlocked] = useState(2);
+  const lessonsData = useMemo(() => {
+    const role = String(localStorage.getItem('lms_user_role') || 'student').toLowerCase();
+    const unrestricted = role === 'teacher' || role === 'admin';
+    return rawLessonsData.map((module) => {
+      const lessons = (module.lessons || []).map((lesson) => {
+        const isLocked = !unrestricted && lesson.number > highestUnlocked;
+        return {
+          ...lesson,
+          isLocked,
+          locked: isLocked,
+          isUnlocked: !isLocked,
+          pages: (lesson.pages || []).map((page) => ({
+            ...page,
+            isLocked,
+            locked: isLocked,
+          })),
+        };
+      });
+      const isLocked = lessons.length ? lessons[0].isLocked : !unrestricted;
+      return { ...module, lessons, isLocked, locked: isLocked, isUnlocked: !isLocked };
+    });
+  }, [rawLessonsData, highestUnlocked]);
   const [selectedModuleIndex, setSelectedModuleIndex] = useState(() => {
     const saved = sessionStorage.getItem('vp_dashboard_module_index');
     return saved ? parseInt(saved, 10) : 0;

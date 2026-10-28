@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import { BLOCK_DEFINITIONS, BLOCK_TYPES } from './blockDefinitions.js';
+import BlockSvgShape from './BlockSvgShape';
 
 export default function BlockRenderer({
   block,
@@ -15,13 +16,26 @@ export default function BlockRenderer({
   const isCBlock = def.kind === 'c_block';
   const isExecuting = activeBlockId === block.id;
 
+  const contentRef = useRef(null);
+  const [contentWidth, setContentWidth] = useState(130);
+
+  // Measure content width dynamically
+  useLayoutEffect(() => {
+    if (contentRef.current) {
+      const measured = contentRef.current.scrollWidth || contentRef.current.offsetWidth;
+      if (measured && Math.abs(measured - contentWidth) > 1) {
+        setContentWidth(Math.max(80, measured));
+      }
+    }
+  }, [block.type, block.params, def.label]);
+
   // Drag start handler
   const handlePointerDown = (e) => {
     if (e.target.tagName === 'SELECT' || e.target.tagName === 'OPTION') {
       return; // allow select dropdown interaction
     }
     if (isHat) {
-      return; // "When Start clicked" is fixed and cannot be dragged
+      return; // "When Start clicked" is fixed
     }
     e.stopPropagation();
     onStartDrag?.(block, e);
@@ -31,11 +45,11 @@ export default function BlockRenderer({
     onParamChange?.(block.id, paramName, value);
   };
 
-  // Render internal block content
+  // Render internal block text and dropdown pills
   const renderContent = () => {
     if (isHat) {
       return (
-        <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
           <span>{def.label}</span>
         </span>
       );
@@ -48,7 +62,7 @@ export default function BlockRenderer({
         paramDef.options.find((o) => o.value === Number(currentDir)) || paramDef.options[1];
 
       return (
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
           <span>point in direction</span>
           <span className="block-dropdown-pill" style={{ position: 'relative' }}>
             <span>{selectedOption.label} ▾</span>
@@ -70,11 +84,11 @@ export default function BlockRenderer({
     }
 
     if (block.type === BLOCK_TYPES.REPEAT) {
-      const times = block.params?.times ?? 4;
+      const times = block.params?.times ?? 2;
       const paramDef = def.params[0];
 
       return (
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
           <span>repeat</span>
           <span className="block-dropdown-pill" style={{ position: 'relative' }}>
             <span>{times} ▾</span>
@@ -104,10 +118,10 @@ export default function BlockRenderer({
       const paramDef = def.params[0];
 
       return (
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
           <span>{def.label}</span>
           <span className="block-dropdown-pill" style={{ position: 'relative' }}>
-            <span>{angle}° ▾</span>
+            <span>{angle} ▾</span>
             <select
               className="block-select-input"
               value={angle}
@@ -116,7 +130,7 @@ export default function BlockRenderer({
             >
               {paramDef.options.map((opt) => (
                 <option key={opt.value} value={opt.value}>
-                  {opt.label}°
+                  {opt.label}
                 </option>
               ))}
             </select>
@@ -125,19 +139,28 @@ export default function BlockRenderer({
       );
     }
 
-    // Default simple label
+    // Default simple statement label (e.g. destroy, water, move forward)
     return <span>{def.label}</span>;
   };
 
-  // C-Block (Repeat) rendering in workspace
+  const blockHeight = 34;
+  const totalWidth = contentWidth + 24;
+
+  // C-Block (Repeat) Rendering
   if (isCBlock && !isToolbox) {
     const activeTargetId = dropTarget?.targetId || dropTarget?.blockId;
     const isTargetInside = activeTargetId === block.id && dropTarget?.position === 'inside';
+    const bottomBracketWidth = Math.max(72, Math.min(100, totalWidth * 0.65));
 
     return (
       <div
-        className={`block-node-wrapper ${isExecuting ? 'is-executing' : ''}`}
-        style={{ margin: '3px 0', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
+        className={`block-node-wrapper c-block-root ${isExecuting ? 'is-executing' : ''}`}
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          position: 'relative',
+        }}
         data-block-id={block.id}
         data-block-type={block.type}
       >
@@ -147,91 +170,132 @@ export default function BlockRenderer({
           data-block-type={block.type}
           onPointerDown={handlePointerDown}
           style={{
-            background: def.color,
-            color: '#fff',
-            padding: '7px 14px 7px 12px',
-            borderRadius: '6px 6px 0 0',
-            fontWeight: 700,
-            fontSize: '13px',
-            display: 'inline-flex',
-            alignItems: 'center',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.12)',
+            position: 'relative',
+            width: `${totalWidth}px`,
+            height: `${blockHeight}px`,
             cursor: 'grab',
-            border: `1px solid ${def.darkColor}`,
-            borderBottomWidth: '2px',
+            userSelect: 'none',
           }}
         >
-          {renderContent()}
+          {/* Vector SVG interlocking shape */}
+          <BlockSvgShape
+            width={totalWidth}
+            height={blockHeight}
+            type="c_header"
+            color={def.color || '#20B26C'}
+            darkColor={def.darkColor || '#16804D'}
+            isExecuting={isExecuting}
+          />
+
+          {/* HTML content layer */}
+          <div
+            ref={contentRef}
+            style={{
+              position: 'relative',
+              zIndex: 1,
+              padding: '0 12px 0 14px',
+              height: '100%',
+              display: 'inline-flex',
+              alignItems: 'center',
+              color: '#ffffff',
+              fontSize: '12.5px',
+              fontWeight: 700,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {renderContent()}
+          </div>
         </div>
 
-        {/* Indented Inner Slot for Child Blocks */}
+        {/* Middle: Spine and Children Slot */}
         <div
-          className="block-c-slot"
-          data-slot-for={block.id}
+          className="block-c-slot-container"
           style={{
-            borderColor: def.color,
-            borderLeftWidth: '16px',
-            borderLeftStyle: 'solid',
-            padding: '4px 0 4px 12px',
-            minHeight: '36px',
-            background: isTargetInside ? 'rgba(250, 204, 21, 0.2)' : 'transparent',
-            transition: 'background 0.15s ease',
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
             width: '100%',
-            boxSizing: 'border-box',
+            position: 'relative',
+            marginTop: '-4px', // Interlock with header
+            zIndex: 1,
           }}
         >
-          {Array.isArray(block.children) && block.children.length > 0 ? (
-            <>
-              {block.children.map((childBlock) => {
-                const isChildBefore =
-                  activeTargetId === childBlock.id && dropTarget?.position === 'before';
-                const isChildAfter =
-                  activeTargetId === childBlock.id && dropTarget?.position === 'after';
+          {/* Left Vertical Spine (width: 16px) */}
+          <div
+            className="block-c-spine"
+            style={{
+              width: '16px',
+              backgroundColor: def.color || '#20B26C',
+              borderLeft: `1.2px solid ${def.darkColor || '#16804D'}`,
+              borderRight: `1.2px solid ${def.darkColor || '#16804D'}`,
+              boxSizing: 'border-box',
+              flexShrink: 0,
+            }}
+          />
 
-                return (
-                  <React.Fragment key={childBlock.id}>
-                    {isChildBefore && <div className="block-drop-indicator" />}
-                    <BlockRenderer
-                      block={childBlock}
-                      activeBlockId={activeBlockId}
-                      onStartDrag={onStartDrag}
-                      onParamChange={onParamChange}
-                      dropTarget={dropTarget}
-                    />
-                    {isChildAfter && <div className="block-drop-indicator" />}
-                  </React.Fragment>
-                );
-              })}
-              {isTargetInside && <div className="block-drop-indicator" />}
-            </>
-          ) : (
-            <div
-              data-slot-placeholder-for={block.id}
-              style={{
-                height: '30px',
-                minWidth: '160px',
-                maxWidth: '240px',
-                border: isTargetInside ? '2px dashed #f59e0b' : '2px dashed #cbd5e1',
-                borderRadius: '6px',
-                margin: '4px 0',
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '0 12px',
-                color: isTargetInside ? '#b45309' : '#94a3b8',
-                fontSize: '11px',
-                fontWeight: 600,
-                background: isTargetInside ? '#fef3c7' : 'rgba(255, 255, 255, 0.65)',
-                transition: 'all 0.15s ease',
-                cursor: 'default',
-              }}
-            >
-              drop commands here
-            </div>
-          )}
+          {/* Children Slot (NO LIMIT on capacity!) */}
+          <div
+            className="block-c-slot"
+            data-slot-for={block.id}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              flex: 1,
+              minHeight: '26px',
+              background: isTargetInside ? 'rgba(250, 204, 21, 0.15)' : 'transparent',
+              transition: 'background 0.15s ease',
+            }}
+          >
+            {Array.isArray(block.children) && block.children.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+                {block.children.map((childBlock, cIdx) => {
+                  const isChildBefore =
+                    activeTargetId === childBlock.id && dropTarget?.position === 'before';
+                  const isChildAfter =
+                    activeTargetId === childBlock.id && dropTarget?.position === 'after';
+
+                  return (
+                    <React.Fragment key={childBlock.id}>
+                      {isChildBefore && <div className="block-drop-indicator" />}
+                      <div style={{ display: 'block', marginTop: cIdx === 0 ? '-4px' : '-4px' }}>
+                        <BlockRenderer
+                          block={childBlock}
+                          activeBlockId={activeBlockId}
+                          onStartDrag={onStartDrag}
+                          onParamChange={onParamChange}
+                          dropTarget={dropTarget}
+                        />
+                      </div>
+                      {isChildAfter && <div className="block-drop-indicator" />}
+                    </React.Fragment>
+                  );
+                })}
+                {isTargetInside && <div className="block-drop-indicator" />}
+              </div>
+            ) : (
+              <div
+                data-slot-placeholder-for={block.id}
+                style={{
+                  height: '24px',
+                  minWidth: '120px',
+                  maxWidth: '180px',
+                  border: isTargetInside ? '2px dashed #f59e0b' : '1.5px dashed #a7f3d0',
+                  borderRadius: '4px',
+                  margin: '2px 0 2px 4px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0 8px',
+                  color: isTargetInside ? '#b45309' : '#047857',
+                  fontSize: '11px',
+                  fontWeight: 600,
+                  background: isTargetInside ? '#fef3c7' : 'rgba(255, 255, 255, 0.35)',
+                  cursor: 'default',
+                }}
+              >
+                drop commands here
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Bottom Bracket of C-Block */}
@@ -240,26 +304,38 @@ export default function BlockRenderer({
           data-block-type={block.type}
           data-c-bottom="true"
           style={{
-            background: def.color,
+            position: 'relative',
+            width: `${bottomBracketWidth}px`,
             height: '14px',
-            width: '84px',
-            borderRadius: '0 0 6px 6px',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.12)',
-            border: `1px solid ${def.darkColor}`,
-            borderTop: 'none',
+            marginTop: '-4px', // Interlock with last child block
+            cursor: 'grab',
+            userSelect: 'none',
+            zIndex: 2,
           }}
-        />
+        >
+          <BlockSvgShape
+            width={bottomBracketWidth}
+            height={14}
+            type="c_bottom"
+            color={def.color || '#20B26C'}
+            darkColor={def.darkColor || '#16804D'}
+            isExecuting={isExecuting}
+          />
+        </div>
       </div>
     );
   }
 
-  // Standard Block Rendering (or C-Block in toolbox)
+  // Standard Statement Block or Hat Block
+  const shapeType = isHat ? 'hat' : 'statement';
+
   return (
     <div
       className={`block-node-wrapper ${isExecuting ? 'is-executing' : ''} ${isGhost ? 'is-dragging' : ''}`}
       style={{
-        margin: isToolbox ? '0' : '3px 0',
         display: 'inline-block',
+        position: 'relative',
+        userSelect: 'none',
       }}
       data-block-id={block.id}
       data-block-type={block.type}
@@ -269,22 +345,42 @@ export default function BlockRenderer({
         data-block-type={block.type}
         onPointerDown={handlePointerDown}
         style={{
-          background: def.color || '#8A5BA7',
-          color: '#ffffff',
-          padding: isHat ? '10px 16px 8px 14px' : '7px 14px 7px 12px',
-          borderRadius: isHat ? '14px 14px 4px 4px' : '6px',
-          fontWeight: 700,
-          fontSize: '13px',
+          position: 'relative',
+          width: `${totalWidth}px`,
+          height: `${blockHeight}px`,
+          cursor: isHat ? 'default' : 'grab',
           display: 'inline-flex',
           alignItems: 'center',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.12)',
-          cursor: isHat ? 'default' : 'grab',
-          border: `1px solid ${def.darkColor || '#6B4284'}`,
-          borderBottomWidth: '2px',
-          transition: 'transform 0.1s ease',
         }}
       >
-        {renderContent()}
+        {/* Exact Puzzle Notch Vector SVG Shape */}
+        <BlockSvgShape
+          width={totalWidth}
+          height={blockHeight}
+          type={shapeType}
+          color={def.color || '#8A5BA7'}
+          darkColor={def.darkColor || '#6B4284'}
+          isExecuting={isExecuting}
+        />
+
+        {/* Content Layer */}
+        <div
+          ref={contentRef}
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            padding: isHat ? '0 14px 0 16px' : '0 12px 0 14px',
+            height: '100%',
+            display: 'inline-flex',
+            alignItems: 'center',
+            color: '#ffffff',
+            fontSize: '12.5px',
+            fontWeight: 700,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {renderContent()}
+        </div>
       </div>
     </div>
   );

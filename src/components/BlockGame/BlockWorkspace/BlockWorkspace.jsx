@@ -360,7 +360,7 @@ export default function BlockWorkspace({
         </div>
 
         <div className="workspace-block-canvas">
-          {blocks.map((block) => {
+          {blocks.map((block, idx) => {
             const targetId = dropTarget?.targetId || dropTarget?.blockId;
             const isTargetBefore = targetId === block.id && dropTarget?.position === 'before';
             const isTargetAfter = targetId === block.id && dropTarget?.position === 'after';
@@ -368,7 +368,7 @@ export default function BlockWorkspace({
             return (
               <React.Fragment key={block.id}>
                 {isTargetBefore && <div className="block-drop-indicator" />}
-                <div style={{ display: 'block' }}>
+                <div style={{ display: 'block', marginTop: idx === 0 ? '0' : '-4px' }}>
                   <BlockRenderer
                     block={block}
                     activeBlockId={activeBlockId}

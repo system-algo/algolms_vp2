@@ -34,10 +34,10 @@
 }
 
 .toolbox-blocks-list {
-  padding: 16px 12px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   overflow-y: auto;
   flex: 1;
 }
@@ -61,7 +61,7 @@
 /* CENTER: Workspace Canvas */
 .block-workspace {
   flex: 1;
-  background-color: #ffffff;
+  background-color: #f1f5f9;
   background-image: 
     radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
   background-size: 24px 24px;
@@ -96,15 +96,9 @@
   min-width: 400px;
 }
 
-/* BLOCK RENDERING (SVG / Pill styling) */
+/* BLOCK RENDERING */
 .block-node-wrapper {
-  transition: transform 0.1s ease, filter 0.15s ease;
-}
-
-.block-node-wrapper.is-executing {
-  filter: drop-shadow(0 0 8px #f59e0b) brightness(1.2);
-  transform: scale(1.02);
-  z-index: 20 !important;
+  transition: filter 0.15s ease;
 }
 
 .block-node-wrapper.is-dragging {
@@ -114,24 +108,25 @@
   pointer-events: none;
 }
 
-/* Dropdown Pill in Block */
+/* Dropdown Pill in Block (Translucent capsule matching Image 2) */
 .block-dropdown-pill {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  background: rgba(255, 255, 255, 0.25);
+  gap: 3px;
+  background: rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  padding: 2px 6px;
+  padding: 1px 6px;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 700;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   transition: background 0.15s ease;
+  line-height: 1.4;
 }
 
 .block-dropdown-pill:hover {
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(0, 0, 0, 0.26);
 }
 
 /* HTML-based Dropdown Select overlay */
@@ -145,24 +140,16 @@
   left: 0;
 }
 
-/* Nested C-Block indentation slot */
-.block-c-slot {
-  margin-left: 18px;
-  min-height: 28px;
-  position: relative;
-  border-left: 16px solid;
-}
-
 /* Drop indicator insertion line */
 .block-drop-indicator {
-  height: 6px;
+  height: 5px;
   background: #facc15;
   border-radius: 3px;
-  margin: 3px 0;
+  margin: 2px 0;
   box-shadow: 0 0 10px #facc15, 0 0 4px #eab308;
   animation: pulseDrop 0.8s infinite alternate;
   width: 100%;
-  max-width: 260px;
+  max-width: 240px;
   pointer-events: none;
 }
 

@@ -4,6 +4,7 @@ import { getVp2UnlockedLessonLimit, getVp2PageLessonNumber } from './lib/vp2Less
 import H5pPlayerPage from './pages/H5pPlayerPage.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import BlockGameTask from './components/BlockGame/BlockGameTask.jsx';
+const VpPlayer = lazy(() => import('./vp/VpPlayer.jsx'));
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
 
 
@@ -614,6 +615,13 @@ export default function App() {
 
   const params = new URLSearchParams(window.location.search);
   const gameParam = params.get('game');
+  if (params.get('vp')) {
+    return (
+      <Suspense fallback={<div style={{ padding: 24 }}>Loading…</div>}>
+        <VpPlayer />
+      </Suspense>
+    );
+  }
   if (gameParam) {
     return (
       <BlockGameTask

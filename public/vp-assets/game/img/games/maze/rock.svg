@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="50px" viewBox="0 0 300 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>rock</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5 11.875 10.625 6.25 11.5442496 6.32474264 16.875 2.5 21.2516788 4.59124167 25 3.75 29.8886707 5.24197391 36.25 2.5 45.625 10 44.532615 14.0788624 46.25 18.125 43.0258849 23.213347 45 28.75 43.5365651 33.5961152 46.25 38.75 41.875 44.375 34.375 44.375 29.8886707 42.687436 25 44.375 18.125 41.4455232 12.5 45 5.45876866 41.4455232 3.75 36.25 7.55673103 29.0291211 3.75 22.5 7.095305 16.2549606"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="59.9612814 3.39306062 53.4612814 9.39306062 55.9612814 14.3930606 62.9612814 9.39306062"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M66.164653,0.809014256 L61.664653,4.30901426 L64.164653,10.3090143 L57.164653,15.3090143 C57.164653,15.3090143 66.664653,20.8090143 67.164653,20.8090143 C67.664653,20.8090143 71.664653,12.3090143 71.664653,12.3090143 L70.664653,3.30901426 L66.164653,0.809014256 Z" id="path-5"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="71.1090811 2.98379063 72.1090811 11.9837906 80.6090811 12.9837906 81.1090811 7.98379063 79.6090811 3.48379063 74.6090811 1.98379063"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-9" points="80.7588846 4.03552707 82.7588846 8.03552707 81.7588846 13.0355271 89.2588846 9.03552707 88.7588846 3.03552707 86.7588846 1.53552707"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-11" points="88.7329181 3.83994856 88.2329181 10.3399486 94.7329181 13.8399486 95.7329181 9.33994856"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M88.9951109,10.2094878 C88.9951109,10.2094878 81.4951109,14.7094878 81.9951109,14.7094878 C82.4951109,14.7094878 87.9951109,19.7094878 87.9951109,19.7094878 L93.9951109,22.7094878 L96.9951109,17.7094878 L95.4951109,13.7094878 L88.9951109,10.2094878 Z" id="path-13"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-15" points="88.7098762 20.6869217 87.2098762 24.1869217 94.2098762 34.1869217 95.7098762 30.1869217 94.7098762 23.6869217"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-17" points="87.4075826 25.2531714 83.9075826 28.2531714 83.4075826 36.2531714 85.9075826 45.7531714 92.9075826 46.7531714 96.4075826 40.7531714 93.9075826 34.2531714"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-19" points="81.969751 28.0119376 75.969751 29.0119376 67.969751 24.0119376 69.469751 32.5119376 73.969751 37.5119376 81.969751 36.0119376"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-20">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-21" points="81.5779649 36.942498 74.0779649 38.442498 68.0779649 43.942498 74.0779649 46.942498 78.0779649 44.942498 83.5779649 46.942498"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-22">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-23" points="68.7717096 43.4610019 61.7717096 38.4610019 53.7717096 41.4610019 54.7717096 43.9610019 61.2717096 47.4610019"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-24">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-25" points="61.3532125 30.2526306 60.8532125 35.2526306 53.8532125 38.7526306 52.3532125 36.7526306 55.8532125 29.2526306"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-26">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-27" points="68.179397 24.314864 62.179397 30.814864 62.179397 36.814864 69.679397 41.814864 74.179397 37.814864 69.679397 32.814864"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-28">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M68.5,23 C68.5,22.5 57.5,17 57.5,17 L53.5,22.5 L57.5,28.5 L62.5,30 C62.5,30 68.5,23.5 68.5,23 Z" id="path-29"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-30">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-31" points="72 13 67 21.5 75.5 27.5 79.5 19.5 80 14"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-32">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-33" points="81.5 16 81 21 77 29 83 27.5 86.5 24.5 87.5 21"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-34">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-35" points="104.027936 0.937577477 100.875155 7.61016672 104.371605 10.696495 108.223676 4.64117137"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-36">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M115.257555,1.05861491 L110.615555,3.01708456 L111.377272,8.71082566 L104.258042,11.3779337 C104.258042,11.3779337 111.109681,18.2459945 111.536506,18.360362 C111.963331,18.4747295 117.322181,12.1336393 117.322181,12.1336393 L118.527145,4.22204887 L115.257555,1.05861491 L115.257555,1.05861491 Z" id="path-37"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-38">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-39" points="122.914124 0.706126708 120.097539 7.45267951 125.708204 11.4858118 128.018329 8.15088451 128.720495 4.38619568 125.77698 1.36994349"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-40">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-41" points="129.745136 4.47461103 132.490272 6.98433694 133.204087 11.1646854 137.835309 5.82344082 135.658752 1.31371546 133.658753 0.745136498"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-42">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-43" points="142.416402 2.25559007 138.78913 5.95980501 140.959805 11.4146786 143.869316 9.1844553"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-44">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M141.908038,11.5248964 C141.908038,11.5248964 134.50877,12.2978588 134.894213,12.4775941 C135.279657,12.6573293 137.722182,18.4888508 137.722182,18.4888508 L141.269092,22.9583338 L145.379104,20.182311 L145.660656,16.559558 L141.908038,11.5248964 L141.908038,11.5248964 Z" id="path-45"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-46">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-47" points="137.080524 23.9112573 137.455629 27.056321 146.657013 31.3485573 146.073962 27.843319 142.650302 23.576942"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-48">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-49" points="142.967616 32.2221439 139.952239 32.9517123 137.208128 37.5961291 135.804656 44.056626 139.696657 46.7950259 143.628641 44.2665132 144.115505 39.6049606"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-50">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-51" points="134.56079 34.31802 129.452003 32.8976094 124.973564 26 123.027154 33.2681489 124.740375 38.8763158 131.613492 40.6385194"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-52">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-53" points="126.386582 38.7393977 121.726362 42.5550924 119.587892 48.5974485 124.868803 48.4651626 126.910614 45.5957625 131.474175 44.9530237"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-54">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-55" points="115.216292 48.8069617 111.762629 42.1618719 104.371404 41.3270711 104.159009 43.6615311 107.817678 48.9454683"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-56">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-57" points="105.448445 28.7547096 108.351386 32.856287 105.364625 40.0901837 102.920443 39.5648531 100.641484 31.6083247"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-58">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-59" points="110.676722 28.5923494 108.808378 36.2511476 111.400728 40.9278697 119.406922 41.5847014 121.18623 36.5226246 115.518398 34.5696183"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-60">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M113.664881,25.2628343 C113.845081,24.8580983 106.92309,16.4416006 106.92309,16.4416006 L101.703001,19.452096 L102.778488,25.7505286 L106.285248,28.7667373 C106.285248,28.7667373 113.484681,25.6675703 113.664881,25.2628343 L113.664881,25.2628343 Z" id="path-61"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-62">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-63" points="120.674866 10.954045 114.144854 18.3438311 121.343831 25.8554706 126.796812 18.7656891 128.337075 13.4621441"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-64">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-65" points="131.456206 14.8350386 131.656938 19.8559655 128.80925 28.3348025 134.542099 26.0143617 137.590518 22.5564517 138.09368 18.9513403"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-66">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.394616168 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-67" points="1.73513732 2.90750892 0.987152563 8.04064715 3.97168005 9.39668454 5.31657029 4.53475379"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-68">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M16.787146,5.04393741 L13.0508895,5.56072321 L12.4984769,9.82564109 L6.83354955,10.3748716 C6.83354955,10.3748716 10.4574143,16.6689765 10.7439051,16.8343821 C11.030396,16.9997876 16.1342172,13.4526879 16.1342172,13.4526879 L18.5385357,7.96504166 L16.787146,5.04393741 L16.787146,5.04393741 Z" id="path-69"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-70">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-71" points="25.7417431 1.49462355 23.7687979 6.22040985 27.6989238 9.04551507 29.3171071 6.70948445 29.8089562 4.07241699 27.7470999 1.9596101"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-72">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-73" points="33.4743854 5.74589611 35.2220551 7.34369382 35.6764995 10.0050805 38.6249316 6.60461823 37.2392433 3.73353625 35.9659591 3.37155483"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-74">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-75" points="45.7429932 1.17662499 43.2363749 3.736415 44.736415 7.50599404 46.7470268 5.96480286"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-76">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M44.5083047,12.6585317 C44.5083047,12.6585317 39.6479387,13.1662684 39.9011254,13.2843313 C40.154312,13.4023942 41.7587366,17.2329526 41.7587366,17.2329526 L44.0885993,20.1688273 L46.7883482,18.3453379 L46.9732913,15.9656558 L44.5083047,12.6585317 L44.5083047,12.6585317 Z" id="path-77"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-78">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-79" points="40.8350066 26.2497594 41.1248797 28.6801996 48.2355195 31.9971511 47.7849493 29.2883754 45.1392158 25.9914075"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-80">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-81" points="45.7126817 38.9148321 43.4555309 39.4609484 41.4014343 42.9375126 40.35087 47.7734981 43.2642154 49.823319 46.2074903 47.9306085 46.5719305 44.4412173"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-82">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-83" points="37.6121069 37.2992254 33.8887518 36.2640104 30.6248031 31.2369362 29.2062325 36.5340647 30.4548512 40.6213751 35.4640755 41.9056937"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-84">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-85" points="26.8622228 41.106048 23.3388422 43.9909217 21.7220416 48.5592729 25.7146986 48.4592576 27.2584199 46.2898344 30.708721 45.8038887"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-86">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-87" points="10.3094932 49.1659416 8.13806817 44.9879671 3.49097534 44.4631019 3.35743626 45.9308494 5.65775484 49.253025"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-88">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-89" points="3.97474193 32.504063 5.9135867 35.2434654 3.91875932 40.0749125 2.28631438 39.7240495 0.764220376 34.4099639"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-90">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-91" points="12.8127655 31.6418261 11.5058594 36.9991547 13.3192075 40.2705213 18.9195392 40.729975 20.1641654 37.1890528 16.199517 35.8229251"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-92">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M11.0483371,25.9459417 C11.1718097,25.6686176 6.42887999,19.901656 6.42887999,19.901656 L2.85208913,21.9644394 L3.58900998,26.2801085 L5.99183236,28.3468066 C5.99183236,28.3468066 10.9248645,26.2232657 11.0483371,25.9459417 L11.0483371,25.9459417 Z" id="path-93"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-94">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-95" points="25.6973342 13.8515093 19.9783806 17.3608209 23.1682624 23.6805346 28.126741 20.1521732 30.183985 17.0077077"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-96">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-97" points="35.3453429 17.6268764 35.4960351 21.3961637 33.3582321 27.7613575 37.6619702 26.0193668 39.9504654 23.4234604 40.328197 20.7170476"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-98">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.341176471   0 0 0 0 0.125490196   0 0 0 0 0.121568627  0 0 0 0.202049366 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rock">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <polygon id="Path-109" fill="#000000" opacity="0.049999997" points="35.625 44.375 33.75 34.375 33.75 26.25 36.875 23.75 43.75 32.5 46.25 38.75 42.5 43.75"></polygon>
+            <polyline id="Path-110" fill="#000000" opacity="0.049999997" points="18.125 23.125 26.25 27.5 28.75 23.75 31.25 15 22.5 14.375 18.125 22.5"></polyline>
+            <path d="M7.5,28.75 L11.875,29.375 L12.5,35 C12.5,35 4.375,40 4.375,39.375 C4.375,38.75 3.75,36.25 3.75,36.25 L7.5,28.75 Z" id="Path-111" fill="#000000" opacity="0.049999997"></path>
+            <polygon id="Path-114" fill="#FFFFFF" opacity="0.300000012" points="21.875 5 22.5 13.125 18.125 21.875 8.125 16.25 15 11.875 12.5 6.25 16.875 2.5"></polygon>
+            <polygon id="Path-116" fill="#FFFFFF" opacity="0.400000006" points="19.375 24.375 20.625 30.625 25 35.625 33.125 35 33.125 26.875 26.875 28.125"></polygon>
+            <polygon id="Path-117" fill="#FFFFFF" opacity="0.400000006" points="44.375 14.375 37.5 11.25 31.25 15 36.875 20 42.5 22.5 46.25 18.125"></polygon>
+            <polygon id="Path-118" fill="#000000" opacity="0.049999997" points="11.875 5.625 14.375 11.25 8.125 16.875 5 11.875"></polygon>
+            <g id="Group-2" transform="translate(3.750000, 2.500000)">
+                <path d="M26.25,3.125 C27.5,6.25 28.125,9.375 27.5,12.5 C29.5429879,12.2081446 34.375,7.8125 34.375,7.8125 C34.375,7.8125 38.6674217,11.5418554 40,11.875" id="Path-83" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <path d="M39.375,20.625 C35,18.125 29.375,15 27.5,12.5" id="Path-84" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <path d="M22.5,26.25 C27.5,20 27.5,12.5 27.5,12.5 C27.5,12.5 18.75,12.5 18.75,11.875 C18.75,11.25 17.5,2.5 17.5,2.5" id="Path-85" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <polyline id="Path-86" stroke-opacity="0.166100543" stroke="#000000" points="18.75 11.875 14.375 20 3.75 13.75"></polyline>
+                <polyline id="Path-87" stroke-opacity="0.166100543" stroke="#000000" points="8.75 4.375 11.25 9.375 3.75 15"></polyline>
+                <path d="M14.375,20.625 C15,20.625 22.5,25.625 22.5,25.625 L29.375,24.375 L32.5,21.25 L39.375,30.625" id="Path-88" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <path d="M32.5,21.25 L33.75,17.5" id="Path-89" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <polyline id="Path-90" stroke-opacity="0.166100543" stroke="#000000" points="29.375 24.375 29.375 31.875 31.25 41.25"></polyline>
+                <polyline id="Path-96" stroke-opacity="0.166100543" stroke="#000000" points="29.375 32.5 21.25 33.75 16.875 38.125"></polyline>
+                <polyline id="Path-97" stroke-opacity="0.166100543" stroke="#000000" points="21.25 33.75 16.875 28.75 14.375 20"></polyline>
+                <polyline id="Path-98" stroke-opacity="0.166100543" stroke="#000000" points="15 20 8.75 26.875 3.125 26.25"></polyline>
+                <polyline id="Path-99" stroke-opacity="0.166100543" stroke="#000000" points="8.75 26.875 8.75 33.75 16.25 38.125"></polyline>
+                <path d="M8.75,33.125 L0.625,36.875" id="Path-100" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <path d="M35,8.125 C35,7.5 34.375,0.625 34.375,0.625" id="Path-101" stroke-opacity="0.166100543" stroke="#000000"></path>
+                <polyline id="Path-102" stroke-opacity="0.753679801" stroke="#FFFFFF" points="21.25 11.875 18.75 11.25 16.25 15"></polyline>
+                <path d="M10.625,11.25 L7.5,13.125" id="Path-103" stroke-opacity="0.753679801" stroke="#FFFFFF"></path>
+                <polyline id="Path-104" stroke-opacity="0.753679801" stroke="#FFFFFF" points="11.25 25.625 9.375 27.5 10 30.625"></polyline>
+                <path d="M32.5,22.5 L30.625,24.375" id="Path-105" stroke-opacity="0.753679801" stroke="#FFFFFF"></path>
+                <path d="M34.375,9.375 L31.875,11.25" id="Path-106" stroke-opacity="0.753679801" stroke="#FFFFFF"></path>
+                <path d="M24.375,26.25 L22.5,26.25" id="Path-107" stroke-opacity="0.753679801" stroke="#FFFFFF"></path>
+                <path d="M21.875,35 L20,36.875" id="Path-108" stroke-opacity="0.753679801" stroke="#FFFFFF"></path>
+            </g>
+            <g id="Path-119" transform="translate(58.211281, 8.893061) rotate(-5.000000) translate(-58.211281, -8.893061) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <g id="Path-120" transform="translate(64.414653, 10.809014) rotate(7.000000) translate(-64.414653, -10.809014) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="#FFF2E7" fill-rule="evenodd" xlink:href="#path-5"></use>
+            </g>
+            <g id="Path-121" transform="translate(76.109081, 7.483791) rotate(13.000000) translate(-76.109081, -7.483791) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-7"></use>
+            </g>
+            <g id="Path-122" transform="translate(85.008885, 7.285527) rotate(-8.000000) translate(-85.008885, -7.285527) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-9"></use>
+            </g>
+            <g id="Path-123" transform="translate(91.982918, 8.839949) rotate(16.000000) translate(-91.982918, -8.839949) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-11"></use>
+            </g>
+            <g id="Path-124" transform="translate(89.483144, 16.459488) rotate(10.000000) translate(-89.483144, -16.459488) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-13"></use>
+            </g>
+            <g id="Path-125" transform="translate(91.459876, 27.436922) rotate(-11.000000) translate(-91.459876, -27.436922) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-15"></use>
+            </g>
+            <g id="Path-126" transform="translate(89.907583, 36.003171) rotate(14.000000) translate(-89.907583, -36.003171) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-17"></use>
+            </g>
+            <g id="Path-127" transform="translate(74.969751, 30.761938) rotate(9.000000) translate(-74.969751, -30.761938) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-19"></use>
+            </g>
+            <g id="Path-128" transform="translate(75.827965, 41.942498) rotate(-16.000000) translate(-75.827965, -41.942498) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#path-21"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-21"></use>
+            </g>
+            <g id="Path-129" transform="translate(61.271710, 42.961002) rotate(12.000000) translate(-61.271710, -42.961002) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-23"></use>
+            </g>
+            <g id="Path-130" transform="translate(56.853212, 34.002631) rotate(-20.000000) translate(-56.853212, -34.002631) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-25"></use>
+            </g>
+            <g id="Path-131" transform="translate(68.179397, 33.064864) rotate(-16.000000) translate(-68.179397, -33.064864) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-28)" xlink:href="#path-27"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-27"></use>
+            </g>
+            <g id="Path-132" transform="translate(61.000000, 23.500000) rotate(9.000000) translate(-61.000000, -23.500000) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-30)" xlink:href="#path-29"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-29"></use>
+            </g>
+            <g id="Path-133">
+                <use fill="black" fill-opacity="1" filter="url(#filter-32)" xlink:href="#path-31"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-31"></use>
+            </g>
+            <g id="Path-134">
+                <use fill="black" fill-opacity="1" filter="url(#filter-34)" xlink:href="#path-33"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-33"></use>
+            </g>
+            <g id="Path-119">
+                <use fill="black" fill-opacity="1" filter="url(#filter-36)" xlink:href="#path-35"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-35"></use>
+            </g>
+            <g id="Path-120">
+                <use fill="black" fill-opacity="1" filter="url(#filter-38)" xlink:href="#path-37"></use>
+                <use fill="#FFF2E7" fill-rule="evenodd" xlink:href="#path-37"></use>
+            </g>
+            <g id="Path-121">
+                <use fill="black" fill-opacity="1" filter="url(#filter-40)" xlink:href="#path-39"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-39"></use>
+            </g>
+            <g id="Path-122">
+                <use fill="black" fill-opacity="1" filter="url(#filter-42)" xlink:href="#path-41"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-41"></use>
+            </g>
+            <g id="Path-123">
+                <use fill="black" fill-opacity="1" filter="url(#filter-44)" xlink:href="#path-43"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-43"></use>
+            </g>
+            <g id="Path-124">
+                <use fill="black" fill-opacity="1" filter="url(#filter-46)" xlink:href="#path-45"></use>
+                <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-45"></use>
+            </g>
+            <g id="Path-125">
+                <use fill="black" fill-opacity="1" filter="url(#filter-48)" xlink:href="#path-47"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-47"></use>
+            </g>
+            <g id="Path-126">
+                <use fill="black" fill-opacity="1" filter="url(#filter-50)" xlink:href="#path-49"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-49"></use>
+            </g>
+            <g id="Path-127">
+                <use fill="black" fill-opacity="1" filter="url(#filter-52)" xlink:href="#path-51"></use>
+                <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-51"></use>
+            </g>
+            <g id="Path-128">
+                <use fill="black" fill-opacity="1" filter="url(#filter-54)" xlink:href="#path-53"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-53"></use>
+            </g>
+            <g id="Path-129">
+                <use fill="black" fill-opacity="1" filter="url(#filter-56)" xlink:href="#path-55"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-55"></use>
+            </g>
+            <g id="Path-130">
+                <use fill="black" fill-opacity="1" filter="url(#filter-58)" xlink:href="#path-57"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-57"></use>
+            </g>
+            <g id="Path-131">
+                <use fill="black" fill-opacity="1" filter="url(#filter-60)" xlink:href="#path-59"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-59"></use>
+            </g>
+            <g id="Path-132">
+                <use fill="black" fill-opacity="1" filter="url(#filter-62)" xlink:href="#path-61"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-61"></use>
+            </g>
+            <g id="Path-133">
+                <use fill="black" fill-opacity="1" filter="url(#filter-64)" xlink:href="#path-63"></use>
+                <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-63"></use>
+            </g>
+            <g id="Path-134">
+                <use fill="black" fill-opacity="1" filter="url(#filter-66)" xlink:href="#path-65"></use>
+                <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-65"></use>
+            </g>
+            <g id="Group" transform="translate(149.000000, -1.000000)">
+                <g id="Path-119">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-68)" xlink:href="#path-67"></use>
+                    <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-67"></use>
+                </g>
+                <g id="Path-120">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-70)" xlink:href="#path-69"></use>
+                    <use fill="#FFF2E7" fill-rule="evenodd" xlink:href="#path-69"></use>
+                </g>
+                <g id="Path-121" transform="translate(26.788877, 5.270069) rotate(22.000000) translate(-26.788877, -5.270069) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-72)" xlink:href="#path-71"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-71"></use>
+                </g>
+                <g id="Path-122" transform="translate(36.049659, 6.688318) rotate(-24.000000) translate(-36.049659, -6.688318) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-74)" xlink:href="#path-73"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-73"></use>
+                </g>
+                <g id="Path-123" transform="translate(44.991701, 4.341310) rotate(29.000000) translate(-44.991701, -4.341310) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-76)" xlink:href="#path-75"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-75"></use>
+                </g>
+                <g id="Path-124" transform="translate(43.432429, 16.413679) rotate(26.000000) translate(-43.432429, -16.413679) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-78)" xlink:href="#path-77"></use>
+                    <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-77"></use>
+                </g>
+                <g id="Path-125">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-80)" xlink:href="#path-79"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-79"></use>
+                </g>
+                <g id="Path-126" transform="translate(43.461400, 44.369076) rotate(16.000000) translate(-43.461400, -44.369076) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-82)" xlink:href="#path-81"></use>
+                    <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-81"></use>
+                </g>
+                <g id="Path-127" transform="translate(33.409170, 36.571315) rotate(-11.000000) translate(-33.409170, -36.571315) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-84)" xlink:href="#path-83"></use>
+                    <use fill="#FFF4EA" fill-rule="evenodd" xlink:href="#path-83"></use>
+                </g>
+                <g id="Path-128" transform="translate(26.215381, 44.832660) rotate(-20.000000) translate(-26.215381, -44.832660) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-86)" xlink:href="#path-85"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-85"></use>
+                </g>
+                <g id="Path-129" transform="translate(6.833465, 46.858063) rotate(19.000000) translate(-6.833465, -46.858063) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-88)" xlink:href="#path-87"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-87"></use>
+                </g>
+                <g id="Path-130" transform="translate(3.338904, 36.289488) rotate(12.000000) translate(-3.338904, -36.289488) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-90)" xlink:href="#path-89"></use>
+                    <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-89"></use>
+                </g>
+                <g id="Path-131" transform="translate(15.835012, 36.185901) rotate(-12.000000) translate(-15.835012, -36.185901) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-92)" xlink:href="#path-91"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-91"></use>
+                </g>
+                <g id="Path-132" transform="translate(6.951398, 24.124231) rotate(-11.000000) translate(-6.951398, -24.124231) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-94)" xlink:href="#path-93"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-93"></use>
+                </g>
+                <g id="Path-133" transform="translate(25.081183, 18.766022) rotate(15.000000) translate(-25.081183, -18.766022) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-96)" xlink:href="#path-95"></use>
+                    <use fill="#F2E0D1" fill-rule="evenodd" xlink:href="#path-95"></use>
+                </g>
+                <g id="Path-134" transform="translate(36.843215, 22.694117) rotate(-13.000000) translate(-36.843215, -22.694117) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-98)" xlink:href="#path-97"></use>
+                    <use fill="#FFEDDD" fill-rule="evenodd" xlink:href="#path-97"></use>
+                </g>
+            </g>
+            <polygon id="Path-119" fill="#F2E0D1" points="201.493193 3.64361206 201.145438 6.03012793 202.533014 6.6605814 203.158285 4.40015622"></polygon>
+            <path d="M213.944524,4 L211.337775,4.36055623 L210.952363,7.3361463 L207,7.71933887 C207,7.71933887 209.528334,12.1106722 209.728216,12.226074 C209.928097,12.3414758 213.488982,9.86670016 213.488982,9.86670016 L215.16645,6.0380249 L213.944524,4 L213.944524,4 Z" id="Path-120" fill="#FFF2E7"></path>
+            <polygon id="Path-121" fill="#FFEDDD" transform="translate(225.788877, 4.270069) rotate(22.000000) translate(-225.788877, -4.270069) " points="225.21806 2.21198657 224.142562 4.7881219 226.284965 6.32815205 227.167074 5.05472777 227.435192 3.61720135 226.311226 2.46546148"></polygon>
+            <polygon id="Path-122" fill="#FFEDDD" transform="translate(235.049659, 5.688318) rotate(-24.000000) translate(-235.049659, -5.688318) " points="233.848091 5.24860385 234.663516 5.99410223 234.87555 7.2358486 236.251226 5.6492653 235.604693 4.30967959 235.010606 4.14078677"></polygon>
+            <polygon id="Path-123" fill="#FFEDDD" transform="translate(243.991701, 3.341310) rotate(29.000000) translate(-243.991701, -3.341310) " points="244.41691 1.55019224 242.998239 2.99895722 243.847217 5.13242678 244.985163 4.26015843"></polygon>
+            <path d="M243.220112,12.664414 C243.220112,12.664414 239.661681,13.0361446 239.847047,13.1225823 C240.032413,13.2090199 241.207064,16.0134959 241.207064,16.0134959 L242.912833,18.1629449 L244.889406,16.8279092 L245.024809,15.0856669 L243.220112,12.664414 L243.220112,12.664414 Z" id="Path-124" fill="#FFF4EA" transform="translate(242.432429, 15.413679) rotate(26.000000) translate(-242.432429, -15.413679) "></path>
+            <polygon id="Path-125" fill="#FFEDDD" points="240.952766 26.0788138 241.155076 27.7750756 246.11776 30.0900547 245.803296 28.1995359 243.956776 25.8985039"></polygon>
+            <polygon id="Path-126" fill="#F2E0D1" transform="translate(242.461400, 43.369076) rotate(16.000000) translate(-242.461400, -43.369076) " points="243.686456 40.4010993 242.458206 40.6982734 241.340451 42.5900775 240.768777 45.2216231 242.3541 46.3370519 243.95571 45.3071162 244.154024 43.4083322"></polygon>
+            <polygon id="Path-127" fill="#FFF4EA" transform="translate(235.514606, 36.804822) rotate(-11.000000) translate(-235.514606, -36.804822) " points="238.246781 37.4002734 235.826364 36.5534384 233.704591 32.4411508 232.78243 36.7743504 233.594111 40.117885 236.850425 41.1684937"></polygon>
+            <polygon id="Path-128" fill="#FFEDDD" transform="translate(225.215381, 43.832660) rotate(-20.000000) translate(-225.215381, -43.832660) " points="225.661605 41.2618543 223.230999 43.2519864 222.115648 46.4034666 224.869985 46.334471 225.934922 44.8378929 228.315115 44.5026629"></polygon>
+            <polygon id="Path-129" fill="#FFEDDD" transform="translate(205.833465, 45.858063) rotate(19.000000) translate(-205.833465, -45.858063) " points="208.45605 47.5993053 206.817759 44.4471181 203.311632 44.0511192 203.21088 45.1585015 204.946418 47.6650077"></polygon>
+            <polygon id="Path-130" fill="#F2E0D1" transform="translate(202.338904, 35.289488) rotate(12.000000) translate(-202.338904, -35.289488) " points="202.677893 33.2713347 203.711564 34.7318137 202.648047 37.3076408 201.777728 37.1205824 200.966243 34.2874425"></polygon>
+            <polygon id="Path-131" fill="#FFEDDD" transform="translate(213.109094, 36.462572) rotate(-12.000000) translate(-213.109094, -36.462572) " points="210.711346 32.8574576 209.674491 37.1077805 211.11314 39.7031719 215.556253 40.0676868 216.543698 37.2584392 213.39828 36.1745998"></polygon>
+            <path d="M208.226252,24.1357489 C208.294811,23.9817628 205.661266,20.7796166 205.661266,20.7796166 L203.675228,21.9249916 L204.084408,24.3212974 L205.418592,25.4688461 C205.418592,25.4688461 208.157693,24.289735 208.226252,24.1357489 L208.226252,24.1357489 Z" id="Path-132" fill="#FFEDDD" transform="translate(205.951398, 23.124231) rotate(-11.000000) translate(-205.951398, -23.124231) "></path>
+            <polygon id="Path-133" fill="#F2E0D1" transform="translate(219.791613, 14.710202) rotate(15.000000) translate(-219.791613, -14.710202) " points="220.168366 11.705165 216.671444 13.8509753 218.621935 17.7152394 221.653856 15.5577809 222.911782 13.6350601"></polygon>
+            <polygon id="Path-134" fill="#FFEDDD" transform="translate(237.412929, 15.496014) rotate(-13.000000) translate(-237.412929, -15.496014) " points="236.497654 12.3996743 236.589734 14.7028989 235.283429 18.5923532 237.91323 17.5279091 239.311616 15.9416794 239.542429 14.2879247"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>brush</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.7387695,26.8720703 L13.6064453,29.4335938 C13.6064453,29.4335938 6.64355469,23.3527832 3.30493164,16.927002 C-0.0336914063,10.5012207 0.455566406,0.640625 1.68652344,0.0832519531 C2.91748047,-0.474121094 11.9841309,4.50317383 15.1271973,11.8869629 C18.2702637,19.270752 18.7387695,26.8720703 18.7387695,26.8720703 Z" id="path-1"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="21.9835695" height="33.3928479">
+            <rect x="-1.24479994" y="-1.9592542" width="21.9835695" height="33.3928479" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M1.48595177,4.44804759 C0.674358678,7.59341685 0.616362372,10.4013369 3.07836914,12.4384766 C5.89086914,14.765625 12.8256836,15.2536621 16.2250977,13.2236328 C14.0437012,11.1936035 13.5874023,9.92480469 13.2316895,7.984375 C12.9163942,6.26442537 12.2717578,1.85392934 7.96271793,0.873855273 C5.91088867,1.85392934 3.48388672,3.06542969 1.48595177,4.44804759 Z" id="path-4"></path>
+    </defs>
+    <g id="5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="brush">
+            <g id="Group-8-Copy" transform="translate(11.000000, 4.000000)">
+                <g id="Group-7">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#FFDE9C" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use stroke="#9D6E61" mask="url(#mask-3)" stroke-width="4" xlink:href="#path-1"></use>
+                    </g>
+                    <polygon id="Path-56" fill="#9D6E62" mask="url(#mask-2)" points="17.8730469 16.6806641 2.73461914 23.4958496 14.0251465 31.9204102 21.7299805 26.5649414"></polygon>
+                    <path d="M11,19.3161621 L16.2189941,28.0083008 C16.2189941,28.0083008 18.1142578,27.2976074 18.1142578,27.0117188 C18.1142578,26.7258301 15.6652832,17 15.6652832,17 L11,19.3161621 Z" id="Path-57" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6" transform="translate(13.000000, 28.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Mask" stroke="#19080F" stroke-width="2" fill="#9A66D3" xlink:href="#path-4"></use>
+                    <path d="M3.41537999,4.53440064 C4.21543534,7.48953803 6.17176175,9.9140625 9.2890625,9.9140625 C13.4855957,9.9140625 12.2897949,4.76801419 9.98876953,3.20581055 C9.3042572,2.74108397 8.56691997,2.3384201 7.86137795,2.00202001 C6.59375,2.70361328 4.86816406,3.66870117 3.41537999,4.53440064 Z" id="Path-58" fill="#FFFFFF" opacity="0.5" mask="url(#mask-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

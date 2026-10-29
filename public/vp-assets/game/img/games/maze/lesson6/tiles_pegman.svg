@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="250px" height="200px" viewBox="0 0 250 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>tiles_pegman</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="46.0070801%" x2="45.7763672%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#668589" offset="0%"></stop>
+            <stop stop-color="#88A5A8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="50%" x2="54.8937988%" y2="54.7924805%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.207682292" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.110337409" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.25,0 L50,0 L50,48.75 L25.625,48.75 C12.1630592,48.75 1.25,37.8399007 1.25,24.375 L1.25,0 L1.25,0 Z" id="path-3"></path>
+        <rect id="path-4" x="0" y="1.25" width="50" height="47.5"></rect>
+        <path d="M25.6231179,1.25 L32.9628906,1.25 L50,1.25 L50,50 L1.25,50 L1.25,25.625 C1.25,12.1630592 12.1533759,1.25 25.6231179,1.25 Z" id="path-5"></path>
+        <path d="M0,0 L48.75,0 L48.75,24.375 C48.75,37.8369408 37.8399007,48.75 24.375,48.75 L0,48.75 L0,0 L0,0 Z" id="path-6"></path>
+        <path d="M0,1.25 L24.375,1.25 C37.8369408,1.25 48.75,12.1600993 48.75,25.625 L48.75,50 L0,50 L0,1.25 L0,1.25 Z" id="path-7"></path>
+        <path d="M48.75,0 L48.75,42.7478654 C48.75,46.0627528 46.0600969,48.75 42.7581592,48.75 L7.24184078,48.75 C3.93263849,48.75 1.25,46.0595479 1.25,42.7478654 L1.25,0 L48.75,0 Z" id="path-8"></path>
+        <path d="M7.24184078,1.25 L48.75,1.25 L48.75,48.75 L7.24184078,48.75 C3.93263849,48.75 1.25,46.0600969 1.25,42.7581592 L1.25,7.24184078 C1.25,3.93263849 3.93990308,1.25 7.24184078,1.25 Z" id="path-9"></path>
+        <path d="M1.25,1.25 L43.7543042,1.25 C47.0656355,1.25 49.75,3.93990308 49.75,7.24184078 L49.75,42.7581592 C49.75,46.0673615 47.0733451,48.75 43.7543042,48.75 L1.25,48.75 L1.25,1.25 L1.25,1.25 Z" id="path-10"></path>
+        <rect id="path-11" x="1.25" y="0" width="47.5" height="50"></rect>
+        <path d="M1.25,6.25213461 C1.25,2.9372472 3.93990308,0.25 7.24184078,0.25 L42.7581592,0.25 C46.0673615,0.25 48.75,2.94045206 48.75,6.25213461 L48.75,49 L1.25,49 L1.25,6.25213461 L1.25,6.25213461 Z" id="path-12"></path>
+        <rect id="path-13" x="1.25" y="0" width="47.5" height="50"></rect>
+        <rect id="path-14" x="1.25" y="0" width="47.5" height="48.75"></rect>
+        <rect id="path-15" x="1.25" y="0" width="47.5" height="50"></rect>
+        <rect id="path-16" x="1.25" y="1.25" width="47.5" height="47.5"></rect>
+        <rect id="path-17" x="1.25" y="0" width="47.5" height="50"></rect>
+    </defs>
+    <g id="6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tiles_pegman">
+            <g id="Group">
+                <g id="Group-6-Copy-2" transform="translate(100.000000, 150.000000)">
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-3"></use>
+                    </g>
+                    <rect id="Rectangle-2-Copy" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-4" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                </g>
+                <g id="Group-5-Copy" transform="translate(150.000000, 100.000000)">
+                    <g id="Rectangle-Copy-5">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-4"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-4"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <rect id="Rectangle-2-Copy" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                </g>
+                <g id="Group-Copy-2">
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-5"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-5"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-5"></use>
+                    </g>
+                    <polygon id="Line-Copy-4" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                    <rect id="Rectangle-2-Copy" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                </g>
+                <g id="Group-6-Copy-5" transform="translate(200.000000, 100.000000)">
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-6"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-6"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-6"></use>
+                    </g>
+                    <rect id="Rectangle-2-Copy" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-4" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                </g>
+                <g id="Group-6-Copy-5" transform="translate(100.000000, 0.000000)">
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-7"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-7"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-7"></use>
+                    </g>
+                    <rect id="Rectangle-2-Copy" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-4" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+                <g id="Group-2-Copy" transform="translate(0.000000, 50.000000)">
+                    <rect id="Rectangle-3" fill-opacity="0" fill="#D8D8D8" x="0" y="1.25" width="50" height="48.75"></rect>
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-8"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-8"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-8"></use>
+                    </g>
+                    <polygon id="Line" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                </g>
+                <g id="Group-2-Copy-2" transform="translate(0.000000, 100.000000)">
+                    <rect id="Rectangle-3" fill-opacity="0" fill="#D8D8D8" x="0" y="1.25" width="50" height="48.75"></rect>
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-9"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-9"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-9"></use>
+                    </g>
+                    <polygon id="Line" fill="#94A8AA" points="49.984375 50 50 50 50 0 49.984375 0 48.765625 0 48.75 0 48.75 50 48.765625 50"></polygon>
+                </g>
+                <g id="Group-2-Copy-3" transform="translate(149.000000, 150.000000)">
+                    <rect id="Rectangle-3" fill-opacity="0" fill="#D8D8D8" x="1" y="1.25" width="50" height="48.75"></rect>
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-10"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-10"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-10"></use>
+                    </g>
+                    <polygon id="Line" fill="#6B7F82" points="1.984375 50 2 50 2 0 1.984375 0 0.765625 0 0.75 0 0.75 50 0.765625 50"></polygon>
+                </g>
+                <g id="Group-4-Copy-14" transform="translate(200.000000, 50.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-11"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-11"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-11"></use>
+                    </g>
+                    <polygon id="Line-Copy-2" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                    <polygon id="Line-Copy" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+                <g id="Group-2" transform="translate(200.000000, 1.000000)">
+                    <rect id="Rectangle-3" fill-opacity="0" fill="#D8D8D8" x="0" y="0.25" width="50" height="48.75"></rect>
+                    <g id="Combined-Shape">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-12"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-12"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-12"></use>
+                    </g>
+                    <polygon id="Line" fill="#94A8AA" points="49.375 49 50 49 50 47.75 49.375 47.75 0.625 47.75 0 47.75 0 49 0.625 49"></polygon>
+                </g>
+                <g id="Group-4-Copy-14" transform="translate(50.000000, 50.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-13"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-13"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-13"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-2" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                    <polygon id="Line-Copy" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+                <g id="Group-4-Copy-12" transform="translate(50.000000, 100.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-14"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-14"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-14"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                    <rect id="Rectangle-2-Copy-5" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-2" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                </g>
+                <g id="Group-4-Copy-15" transform="translate(100.000000, 50.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-15"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-15"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-15"></use>
+                    </g>
+                    <rect id="Rectangle-2-Copy-5" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-2" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                    <polygon id="Line-Copy-3" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+                <g id="Group-4-Copy-16" transform="translate(50.000000, 0.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-16"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-16"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-16"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                    <rect id="Rectangle-2-Copy-5" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-2" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+                <g id="Group-4-Copy-13" transform="translate(100.000000, 100.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-17"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-17"></use>
+                        <use fill-opacity="0.1387851" fill="#8BA3A5" xlink:href="#path-17"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#94A8AA" x="48.75" y="0" width="1.25" height="50"></rect>
+                    <rect id="Rectangle-2-Copy-4" fill="#6B7F82" x="0" y="0" width="1.25" height="50"></rect>
+                    <polygon id="Line-Copy-2" fill="#6B7F82" points="49.375 1.25 50 1.25 50 0 49.375 0 0.625 0 0 0 0 1.25 0.625 1.25"></polygon>
+                    <polygon id="Line-Copy" fill="#94A8AA" points="49.375 50 50 50 50 48.75 49.375 48.75 0.625 48.75 0 48.75 0 50 0.625 50"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

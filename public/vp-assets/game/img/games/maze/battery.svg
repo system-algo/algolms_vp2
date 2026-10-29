@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>battery</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="battery">
+            <g id="Group" transform="translate(17.000000, 11.000000)">
+                <g id="Group-22-Copy-5" transform="translate(0.500000, 0.250000)">
+                    <path d="M16.226319,18.75 C16.2420107,18.956276 16.25,19.164705 16.25,19.375 C16.25,23.8623136 12.6123136,27.5 8.125,27.5 C3.63768641,27.5 0,23.8623136 0,19.375 C0,19.164705 0.00798932878,18.956276 0.0236810209,18.75 L0,18.75 L0,7.5 L16.25,7.5 L16.25,18.75 L16.226319,18.75 Z" id="Combined-Shape" fill="#FF4747"></path>
+                    <path d="M8.125,16.25 C12.6123136,16.25 16.25,12.6123136 16.25,8.125 C16.25,3.63768641 12.6123136,0 8.125,0 C3.63768641,0 0,3.63768641 0,8.125 C0,12.6123136 3.63768641,16.25 8.125,16.25 Z" id="Oval-8" fill="#A7A7A7"></path>
+                    <circle id="Oval-8-Copy" fill="#FFFFFF" cx="8.125" cy="6.875" r="4.375"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

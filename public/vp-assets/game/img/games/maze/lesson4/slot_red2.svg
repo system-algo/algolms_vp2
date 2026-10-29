@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>slot_red2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="13.5708055 0 12.6477285 0.53293871 0.923076923 7.30216948 0 7.83510819 0 8.90098561 0 22.4394471 0 23.5053246 0.923076923 24.0382633 12.6477285 30.807494 13.5708055 31.3404328 14.4938824 30.807494 26.218534 24.0382633 27.1416109 23.5053246 27.1416109 22.4394471 27.1416109 8.90098561 27.1416109 7.83510819 26.218534 7.30216948 14.4938824 0.53293871"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.347826087 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="13.5384615 3.69230769 12.8687329 4.09598055 4.36203635 9.22331441 3.69230769 9.62698727 3.69230769 10.434333 3.69230769 20.6890007 3.69230769 21.4963464 4.36203635 21.9000193 12.8687329 27.0273531 13.5384615 27.431026 14.2081902 27.0273531 22.7148867 21.9000193 23.3846154 21.4963464 23.3846154 20.6890007 23.3846154 10.434333 23.3846154 9.62698727 22.7148867 9.22331441 14.2081902 4.09598055"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slot_red2">
+            <g id="Group-2-Copy" transform="translate(12.000000, 10.000000)">
+                <g id="Polygon-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M24.3723802,10.4998017 L23.4493032,8.90098561 L23.4493032,22.4394471 L24.3723802,20.840631 L12.6477285,27.6098618 L14.4938824,27.6098618 L2.76923077,20.840631 L3.69230769,22.4394471 L3.69230769,8.90098561 L2.76923077,10.4998017 L14.4938824,3.73057097 L12.6477285,3.73057097 L24.3723802,10.4998017 Z M13.5708055,0 L12.6477285,0.53293871 L0.923076923,7.30216948 L0,7.83510819 L0,8.90098561 L0,22.4394471 L0,23.5053246 L0.923076923,24.0382633 L12.6477285,30.807494 L13.5708055,31.3404328 L14.4938824,30.807494 L26.218534,24.0382633 L27.1416109,23.5053246 L27.1416109,22.4394471 L27.1416109,8.90098561 L27.1416109,7.83510819 L26.218534,7.30216948 L14.4938824,0.53293871 L13.5708055,0 Z" id="Polygon" fill="#FFFFFF"></path>
+                <g id="Polygon-Copy-2">
+                    <use fill="#FF4747" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

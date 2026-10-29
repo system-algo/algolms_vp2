@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>box_green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="box_green">
+            <g id="Group-2-Copy-5" transform="translate(13.750000, 12.500000)">
+                <rect id="Rectangle-2-Copy-2" fill="#000000" opacity="0.200000003" x="1.25" y="6.25" width="21.25" height="20"></rect>
+                <polygon id="Rectangle-2" fill="#58AA3A" points="0 15 21.25 15 21.25 25 0 25"></polygon>
+                <rect id="Rectangle-2-Copy" fill="#B8D747" x="0" y="0" width="21.25" height="17.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

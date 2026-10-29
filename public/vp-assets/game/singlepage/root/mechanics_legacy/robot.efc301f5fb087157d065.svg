@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="280px" height="330px" viewBox="0 0 280 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>robot</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,10 C-1,34 21.0,148.9 31,177 C45.0,202.9 70.4,240.9 78.4,243.4 C90.4,247.2 180.9,237.5 191,225.5 C201.0,213.5 219.9,105.5 218.5,79.5 C217.0,53.5 163.5,43.5 163.5,43.5 C163.5,43.5 29.9,16.5 30,16.5 C30.0,16.5 3,-14 1,10 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M155.5,1.5 C174.5,3.6 229,39.5 235.5,52 C242,64.5 241.5,132.5 232.5,141 C223.5,149.5 84.4,168.4 57.5,163 C43.8,160.2 8.4,100.5 3.4,85.5 C-1.5,70.5 -1.4,25.9 6,19 C13.4,12.0 110.9,-3.4 155.5,1.5 Z" id="path-5"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#C66523" offset="0%"></stop>
+            <stop stop-color="#FFE55E" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-11" cx="43.0" cy="42.3" rx="28" ry="32"></ellipse>
+        <ellipse id="path-13" cx="42.1" cy="41.9" rx="28" ry="31.5"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="robot">
+            <g id="Group" transform="translate(3.0, 6.0)">
+                <g id="Group-6-Copy-5" transform="translate(234.3, 182.7) scale(-1, 1) rotate(30.0) translate(-234.3, -182.7) translate(201.3, 121.2)" fill="#000000">
+                    <path d="M41.1,113.6 C38.6,114.5 35.8,115 33,115 C19.1,115 8,103.8 8,90 C8,76.1 19.1,65 33,65 C46.8,65 58,76.1 58,90 C58,94.9 56.5,99.5 54.0,103.4 L46.1,98.3 C46.6,97.0 47,95.5 47,94 C47,87.9 42.0,83 36,83 C29.9,83 25,87.9 25,94 C25,100.0 29.9,105 36,105 C36.8,105 37.6,104.9 38.4,104.7 L38.4,104.7 L41.1,113.6 Z" id="Combined-Shape" transform="translate(33.0, 90.0) rotate(22.0) translate(-33.0, -90.0) "></path>
+                    <path d="M34.5,4.6 C17.5,15.6 -3.5,48.5 15,80.5 C22,80.5 33.5,76.0 33.5,76.0 C33.5,76.0 47,79.0 39,70.0 C24.7,49.7 30.7,33.8 41.2,17.3 C41.2,8.8 51.5,-6.3 34.5,4.6 Z" id="Path-6"></path>
+                </g>
+                <g id="Group-2" transform="translate(12.0, 75.0)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFE55E" xlink:href="#path-1"></use>
+                    <path d="M-27,3 L55.5,51.5 C55.5,51.5 58,60.5 55.5,101 C53,141.5 66.5,213.5 76,252 C85.5,290.5 3,227 3,225 C3,223 -27,3 -27,3 Z" id="Path-34" fill="#F3B34D" opacity="0.8" filter="url(#filter-3)" mask="url(#mask-2)"></path>
+                    <path d="M197,31.5 L148,64 C148,64 153.5,181.5 83,253.5 C144,263.5 201,245.5 201,245.5 L239,98 L229,46.5 L197,31.5 Z" id="Path-35" fill="#F3B34D" opacity="0.5" filter="url(#filter-4)" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6-Copy-4" transform="translate(49.7, 204.4) rotate(-29.0) translate(-49.7, -204.4) translate(24.7, 146.9)" fill="#000000">
+                    <path d="M33.1,113.6 C30.6,114.5 27.8,115 25,115 C11.1,115 5.6e-13,103.8 5.6e-13,90 C5.6e-13,76.1 11.1,65 25,65 C38.8,65 50,76.1 50,90 C50,94.9 48.5,99.5 46.0,103.4 L38.1,98.3 C38.6,97.0 39,95.5 39,94 C39,87.9 34.0,83 28,83 C21.9,83 17,87.9 17,94 C17,100.0 21.9,105 28,105 C28.8,105 29.6,104.9 30.4,104.7 L30.4,104.7 L33.1,113.6 Z" id="Combined-Shape"></path>
+                    <path d="M22.9,5.7 C5.9,16.7 -9.1,45.1 7,80.5 C14,80.5 25.5,76.0 25.5,76.0 C25.5,76.0 44.7,80.6 36.7,71.6 C23.6,53.1 16.9,36.1 35.6,17.9 C41.6,-1.0 35.6,-3.1 22.9,5.7 Z" id="Path-6"></path>
+                </g>
+                <path d="M22,95.8 C22,106.3 48.5,172.8 69,180.3 C89.5,187.8 151,180.8 167,178.3 C183,175.8 221,170.3 221,160.8 C221,151.3 219,141.8 211,137.3 C203,132.8 97.5,122.8 97.5,122.8 C97.5,122.8 22,85.3 22,95.8 Z" id="Path-15" fill="#000000"></path>
+                <g id="Group-36" transform="translate(7.0, 0.0)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFE55E" xlink:href="#path-5"></use>
+                    <path d="M241.5,52.5 C241.5,52.5 195.5,53.5 172,57 C172,81 163.5,148 157,167.5 C150.5,187 262.5,149 262.5,149 L241.5,52.5 Z" id="Path-85" fill="#F3B34D" opacity="0.5" filter="url(#filter-7)" mask="url(#mask-6)"></path>
+                    <path d="M1,12 C14.5,33 47,65.5 56,74.5 C112.5,62.5 191.5,55 231,55 C240,86 243.5,124.5 243.5,124.5 L266,74 L191.5,-23 L80.5,-15 C80.5,-15 -12.5,-9 1,12 Z" id="Path-68" fill="#F3B34D" filter="url(#filter-8)" mask="url(#mask-6)"></path>
+                    <path d="M-2.5,7 C-2.5,7 33.5,53 55.5,74 C51,101 49,143 55,169 C61,195 -35,120.5 -35,117.5 C-35,114.5 -2.5,7 -2.5,7 Z" id="Path-84" fill="#F3B34D" opacity="0.8" filter="url(#filter-9)" mask="url(#mask-6)"></path>
+                    <path d="M43.5,103 C43.5,87 44.5,72 49.5,67.5 C54.5,63 67,59 90,55 C88.5,52.5 87,51.5 84.5,48.5 C52.5,52.5 46,59 44,61.5 C42,64 38,73 37.5,98 C40,100 40,100.5 43.5,103 Z" id="Path-12" fill="#000000" mask="url(#mask-6)"></path>
+                    <path d="M186,37.5 L191,44 C191,44 226,41 236,48 C237,46 234,45 234,45 C234,45 234,36.5 186,37.5 Z" id="Path-13" fill="#000000" mask="url(#mask-6)"></path>
+                </g>
+                <g id="Group-16" transform="translate(68.0, 66.0)">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-10)" transform="translate(43.0, 42.3) rotate(47.0) translate(-43.0, -42.3) " xlink:href="#path-11"></use>
+                    <ellipse id="Oval-3-Copy-7" fill="#52BBD3" mask="url(#mask-12)" transform="translate(39.0, 39.3) rotate(47.0) translate(-39.0, -39.3) " cx="39.0" cy="39.3" rx="28" ry="32"></ellipse>
+                    <ellipse id="Oval-3" fill="#FFFBD7" mask="url(#mask-12)" transform="translate(38.2, 39.5) rotate(34.0) translate(-38.2, -39.5) " cx="38.2" cy="39.5" rx="20" ry="24"></ellipse>
+                </g>
+                <polygon id="Polygon" fill="#000000" transform="translate(102.8, 102.9) rotate(17.0) translate(-102.8, -102.9) " points="102.8 90.8 113.3 96.8 113.3 108.9 102.8 115.0 92.3 108.9 92.3 96.8"></polygon>
+                <g id="Group-17" transform="translate(158.0, 56.0)">
+                    <mask id="mask-14" fill="white">
+                        <use xlink:href="#path-13"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-10)" transform="translate(42.1, 41.9) rotate(47.0) translate(-42.1, -41.9) " xlink:href="#path-13"></use>
+                    <ellipse id="Oval-3-Copy-3" fill="#52BBD3" mask="url(#mask-14)" transform="translate(38.1, 38.9) rotate(47.0) translate(-38.1, -38.9) " cx="38.1" cy="38.9" rx="28" ry="31.5"></ellipse>
+                    <ellipse id="Oval-3-Copy-4" fill="#FFFBD7" mask="url(#mask-14)" transform="translate(38.2, 38.5) rotate(39.0) translate(-38.2, -38.5) " cx="38.2" cy="38.5" rx="20" ry="24"></ellipse>
+                </g>
+                <polygon id="Polygon-Copy" fill="#000000" transform="translate(192.8, 91.9) rotate(17.0) translate(-192.8, -91.9) " points="192.8 79.8 203.3 85.8 203.3 97.9 192.8 104.0 182.3 97.9 182.3 85.8"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

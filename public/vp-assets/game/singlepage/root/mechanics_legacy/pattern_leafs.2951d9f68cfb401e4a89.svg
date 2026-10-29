@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="133px" viewBox="0 0 284 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>pattern_leafs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square" opacity="0.5">
+        <g id="pattern_leafs" stroke="#762F2F">
+            <g id="Group-3-Copy-7" transform="translate(1.000000, 1.000000)">
+                <g id="Group-3-Copy">
+                    <path d="M26.5,0.5 L26.5,8.56225777" id="Line"></path>
+                    <path d="M19.5,0.5 L19.5,6.58276272" id="Line"></path>
+                    <path d="M13.5,3.5 L13.5,8.59901953" id="Line"></path>
+                    <path d="M7.5,1.5 L7.5,6.5" id="Line"></path>
+                    <path d="M1.5,6.5 L1.5,9.5" id="Line"></path>
+                    <path d="M32.5,4.5 L32.5,6.5" id="Line"></path>
+                    <path d="M39.5,5.5 L39.5,8.5" id="Line"></path>
+                </g>
+                <g id="Group-3-Copy-3" transform="translate(142.000000, 69.000000)">
+                    <path d="M26.5,0.5 L26.5,8.56225777" id="Line"></path>
+                    <path d="M19.5,0.5 L19.5,6.58276272" id="Line"></path>
+                    <path d="M13.5,3.5 L13.5,8.59901953" id="Line"></path>
+                    <path d="M7.5,1.5 L7.5,6.5" id="Line"></path>
+                    <path d="M1.5,6.5 L1.5,9.5" id="Line"></path>
+                    <path d="M32.5,4.5 L32.5,6.5" id="Line"></path>
+                    <path d="M39.5,5.5 L39.5,8.5" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

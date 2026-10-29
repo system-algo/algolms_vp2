@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
+    "prebuild": "bash scripts/fetchScratchGui.sh",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "import": "node scripts/importH5p.mjs",
     "import:watch": "node scripts/importH5p.mjs --watch",
     "import:force": "node scripts/importH5p.mjs --force",
-    "import:clean": "node scripts/importH5p.mjs --clean --force"
+    "import:clean": "node scripts/importH5p.mjs --clean --force",
+    "vp:scratch-gui": "bash scripts/fetchScratchGui.sh",
+    "vp:data": "node scripts/buildVpData.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

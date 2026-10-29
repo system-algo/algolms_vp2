@@ -6,3 +6,4 @@ node_modules/
 .vite/
 input/VP2/
 *.zip
+public/vp-assets/scratch-gui/

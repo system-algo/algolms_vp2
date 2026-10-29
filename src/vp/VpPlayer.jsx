@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import './vp.css';
 import MazeLevel from './levels/MazeLevel.jsx';
 import ContentLevel from './levels/ContentLevel.jsx';
+import ScratchLevel from './levels/ScratchLevel.jsx';
 
 const BASE = `${import.meta.env.BASE_URL || '/'}vp-data/`.replace('//', '/');
 const PROGRESS_KEY = 'vp_replica_progress_v1';
@@ -28,7 +29,7 @@ function LevelBody({ level, onSolved, onNext, hasNext, registry }) {
 }
 
 /** Extra level renderers (games, Scratch) register themselves here. */
-export const levelRegistry = {};
+export const levelRegistry = { scratch: ScratchLevel, scratch_game: ScratchLevel };
 
 export default function VpPlayer() {
   const params = new URLSearchParams(window.location.search);

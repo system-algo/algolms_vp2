@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" value="notranslate">
+<title>Scratch</title>
+<style>
+html,body{margin:0;height:100%}
+/* LMS embed: no sharing / account / feedback chrome */
+[class*="share-button_"],[class*="community-button_"],[class*="menu-bar_account-info-group"],[class*="menu-bar_mystuff"],
+[class*="menu-bar_feedback"],[class*="menu-bar_remix"],[class*="menu-bar_coming-soon"],[class*="menu-bar_tutorials-label"]{display:none!important}
+[class*="menu-bar_scratch-logo"]{pointer-events:none}
+</style>
+<script>
+// Serve captured VP projects/assets from this site instead of scratch.mit.edu.
+// Project id comes from the URL hash (#<projectId>), exactly like the Scratch playground.
+(function () {
+  var ROOT = '/vp-assets/scratch/';
+  function rewrite(u) {
+    if (typeof u !== 'string') return u;
+    var m = u.match(/^https?:\/\/projects\.scratch\.mit\.edu\/(\d+)(?:[/?#].*)?$/);
+    if (m) return ROOT + 'projects/' + m[1] + '.json';
+    m = u.match(/^https?:\/\/assets\.scratch\.mit\.edu\/internalapi\/asset\/([^/]+)\/get\/?/);
+    if (m) return ROOT + 'assets/' + m[1];
+    m = u.match(/^https?:\/\/cdn\.assets\.scratch\.mit\.edu\/internalapi\/asset\/([^/]+)\/get\/?/);
+    if (m) return ROOT + 'assets/' + m[1];
+    return u;
+  }
+  var f = window.fetch;
+  window.fetch = function (input, init) {
+    if (typeof input === 'string') return f.call(this, rewrite(input), init);
+    if (input && input.url) { var r = rewrite(input.url); if (r !== input.url) return f.call(this, r, init); }
+    return f.call(this, input, init);
+  };
+  var open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function (method, url) {
+    var a = Array.prototype.slice.call(arguments); a[1] = rewrite(url); return open.apply(this, a);
+  };
+})();
+</script>
+<script defer="defer" src="gui.js"></script>
+</head>
+<body></body>
+</html>

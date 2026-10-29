@@ -1,0 +1,1081 @@
+{
+ "courseId": 1363,
+ "title": "Visual Programming",
+ "modules": [
+  {
+   "id": 3510,
+   "number": 1,
+   "title": "Introduction",
+   "lessons": [
+    {
+     "id": 8464,
+     "title": "M1L1. Linear algorithm",
+     "moduleNumber": 1,
+     "tasks": [
+      {
+       "id": 18341,
+       "title": "Excursion",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 13
+      },
+      {
+       "id": 18342,
+       "title": "Bonus! Help load the rocket!",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 15
+      },
+      {
+       "id": 18343,
+       "title": "Scratch. Let's get acquainted",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 13
+      },
+      {
+       "id": 18344,
+       "title": "Test yourself. Linear algorithm",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 8750,
+     "title": "M1L2. Loops",
+     "moduleNumber": 1,
+     "tasks": [
+      {
+       "id": 19095,
+       "title": "Building a Marsbase",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 19
+      },
+      {
+       "id": 19096,
+       "title": "Bonus! Excavations. Loops in Loops",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 15
+      },
+      {
+       "id": 19097,
+       "title": "Scratch. Changing looks!",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 8
+      },
+      {
+       "id": 19098,
+       "title": "Test yourself. Loops",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 8918,
+     "title": "M1L3. Initial placement",
+     "moduleNumber": 1,
+     "tasks": [
+      {
+       "id": 19846,
+       "title": "Scratch. Where to start?",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 8
+      },
+      {
+       "id": 19847,
+       "title": "Extra task: Graphic editor",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 6
+      },
+      {
+       "id": 19848,
+       "title": "Scratch. Dialogs and planning",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 19849,
+       "title": "Test yourself. Initial placement",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 9215,
+     "title": "M1L4. Events",
+     "moduleNumber": 1,
+     "tasks": [
+      {
+       "id": 26846,
+       "title": "Scratch. Events",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 26847,
+       "title": "Additional task: Clicker",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 1
+      },
+      {
+       "id": 26848,
+       "title": "Scratch. Script management",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 20654,
+       "title": "Test yourself. Events",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 9460,
+     "title": "M1L5. Project. Personal website",
+     "moduleNumber": 1,
+     "tasks": [
+      {
+       "id": 26836,
+       "title": "Project. Personal website",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5159,
+   "number": 2,
+   "title": "Space",
+   "lessons": [
+    {
+     "id": 9520,
+     "title": "M2L1. Coordinates",
+     "moduleNumber": 2,
+     "tasks": [
+      {
+       "id": 21608,
+       "title": "Rocket flight",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 18
+      },
+      {
+       "id": 21609,
+       "title": "Additional task: find the coordinates",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 3
+      },
+      {
+       "id": 26849,
+       "title": "Scratch. Coordinates",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 8
+      },
+      {
+       "id": 21611,
+       "title": "Test yourself. Coordinates",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 9528,
+     "title": "M2L2. Pointing in different directions",
+     "moduleNumber": 2,
+     "tasks": [
+      {
+       "id": 21625,
+       "title": "Collecting cargo",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 16
+      },
+      {
+       "id": 26853,
+       "title": "Additional task — Pen",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 5
+      },
+      {
+       "id": 26852,
+       "title": "Scratch. Pointing in different directions",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 21628,
+       "title": "Test yourself. Directions",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 9571,
+     "title": "M2L3. Turns and degrees",
+     "moduleNumber": 2,
+     "tasks": [
+      {
+       "id": 21714,
+       "title": "Laser and plants",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 15
+      },
+      {
+       "id": 21715,
+       "title": "Additional task. Artist",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 7
+      },
+      {
+       "id": 26854,
+       "title": "Scratch. Turns and rotations",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 21717,
+       "title": "Test yourself. Degrees",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 9551,
+     "title": "M2L4. Messages",
+     "moduleNumber": 2,
+     "tasks": [
+      {
+       "id": 26855,
+       "title": "Scratch. Messages",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 26856,
+       "title": "Bonus: solve the riddle",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 1
+      },
+      {
+       "id": 26857,
+       "title": "Scratch. Animation",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 21661,
+       "title": "Test yourself. Messages",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 9623,
+     "title": "M2L5. Project. Animation",
+     "moduleNumber": 2,
+     "tasks": [
+      {
+       "id": 26837,
+       "title": "Project. Animation",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5160,
+   "number": 3,
+   "title": "Game",
+   "lessons": [
+    {
+     "id": 9756,
+     "title": "M3L1. Conditions and selection operator",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 22221,
+       "title": "Sorting cargo",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 13
+      },
+      {
+       "id": 22222,
+       "title": "Bonus: Hedgehog and Lightning",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 2
+      },
+      {
+       "id": 26859,
+       "title": "Scratch. Conditions",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 10
+      },
+      {
+       "id": 22224,
+       "title": "Test yourself. Conditions",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 9885,
+     "title": "M3L2. Changing coordinates",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 22438,
+       "title": "The rocket's journey",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 18
+      },
+      {
+       "id": 22439,
+       "title": "Bonus: take the apple",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 1
+      },
+      {
+       "id": 26861,
+       "title": "Scratch. Changing coordinates",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 10
+      },
+      {
+       "id": 22441,
+       "title": "Test yourself. Changing coordinates",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 9993,
+     "title": "M3L3. Procedures",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 26862,
+       "title": "Scratch. Procedures",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 6
+      },
+      {
+       "id": 26863,
+       "title": "Bonus: find the error",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 3
+      },
+      {
+       "id": 22852,
+       "title": "Scratch. Maze",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 22853,
+       "title": "Test yourself. Procedures",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 9975,
+     "title": "M3L4. Game planning",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 26838,
+       "title": "Project. Game",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      }
+     ]
+    },
+    {
+     "id": 10205,
+     "title": "M3L5. Game testing",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 26839,
+       "title": "Project. Game",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      }
+     ]
+    },
+    {
+     "id": 10662,
+     "title": "M3L6. Game presentation",
+     "moduleNumber": 3,
+     "tasks": [
+      {
+       "id": 26840,
+       "title": "Project. Game",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3890,
+   "number": 4,
+   "title": "Logic",
+   "lessons": [
+    {
+     "id": 10664,
+     "title": "M4L1. Logical operators AND, OR, NOT",
+     "moduleNumber": 4,
+     "tasks": [
+      {
+       "id": 26864,
+       "title": "Scratch. Logical operators",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 10
+      },
+      {
+       "id": 26866,
+       "title": "Bonus: logical operators in games",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 4
+      },
+      {
+       "id": 23815,
+       "title": "Martian Chef",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 18
+      },
+      {
+       "id": 23816,
+       "title": "Test yourself",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 10800,
+     "title": "M4L2. Conditional loop",
+     "moduleNumber": 4,
+     "tasks": [
+      {
+       "id": 24121,
+       "title": "Unknown maze",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 12
+      },
+      {
+       "id": 24122,
+       "title": "Bonus: Training base",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 16
+      },
+      {
+       "id": 24123,
+       "title": "Bonus: Maze in the dark",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 8
+      },
+      {
+       "id": 26867,
+       "title": "Scratch: Condition checking",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 8
+      },
+      {
+       "id": 24125,
+       "title": "Test yourself. Conditional loops",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 5
+      }
+     ]
+    },
+    {
+     "id": 10752,
+     "title": "M4L3. Random numbers and ranges",
+     "moduleNumber": 4,
+     "tasks": [
+      {
+       "id": 24005,
+       "title": "Scratch. Random numbers",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 7
+      },
+      {
+       "id": 26868,
+       "title": "Bonus: Game. Geometric shapes",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 2
+      },
+      {
+       "id": 26869,
+       "title": "Scratch: Shooter",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 24008,
+       "title": "Test yourself. Random numbers",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 10870,
+     "title": "M4L4. Coordinate areas",
+     "moduleNumber": 4,
+     "tasks": [
+      {
+       "id": 26870,
+       "title": "Scratch. Coordinate areas",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 6
+      },
+      {
+       "id": 24491,
+       "title": "Getting the soccer field ready",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 16
+      },
+      {
+       "id": 26871,
+       "title": "Scratch: Platformer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      },
+      {
+       "id": 24493,
+       "title": "Test yourself. Coordinate areas",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 10864,
+     "title": "M4L5. Group project",
+     "moduleNumber": 4,
+     "tasks": [
+      {
+       "id": 26841,
+       "title": "Group project",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 25010,
+       "title": "Additional examples",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 10924,
+     "title": "M4L6. Group project. Modifications and presentation",
+     "moduleNumber": 4,
+     "tasks": []
+    }
+   ]
+  },
+  {
+   "id": 3952,
+   "number": 5,
+   "title": "Variables",
+   "lessons": [
+    {
+     "id": 10985,
+     "title": "M5L1. Variables in loops",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26872,
+       "title": "Scratch. Greeting",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      },
+      {
+       "id": 26873,
+       "title": "Bonus: Project. Enter password",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 24870,
+       "title": "Land of minerals",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 12
+      },
+      {
+       "id": 24871,
+       "title": "Test yourself. Variables in loops",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 11085,
+     "title": "M5L2. Data types and operators",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26874,
+       "title": "Scratch. Guess the number",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 4
+      },
+      {
+       "id": 26875,
+       "title": "Bonus. More variables",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 4
+      },
+      {
+       "id": 25152,
+       "title": "Retro laboratory",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 15
+      },
+      {
+       "id": 25153,
+       "title": "Test yourself. Data types",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 11070,
+     "title": "M5L3. Variables in games",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26876,
+       "title": "Scratch. Variables in games",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 26878,
+       "title": "Bonus. Remember everything!",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 4
+      },
+      {
+       "id": 26877,
+       "title": "Scratch. Ping-pong",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      },
+      {
+       "id": 25087,
+       "title": "Test yourself. Game score",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 11475,
+     "title": "M5L4. Variables as parameters",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26879,
+       "title": "Scratch. Flower generator",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 26880,
+       "title": "Bonus. Store",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 2
+      },
+      {
+       "id": 26033,
+       "title": "Martian variables",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 16
+      },
+      {
+       "id": 26034,
+       "title": "Test yourself. Variables as parameters",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 4
+      }
+     ]
+    },
+    {
+     "id": 11477,
+     "title": "M5L5. The Chatbot project",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26842,
+       "title": "Project. Chatbot",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      }
+     ]
+    },
+    {
+     "id": 11472,
+     "title": "M5L6. Finalizing and presenting our projects",
+     "moduleNumber": 5,
+     "tasks": [
+      {
+       "id": 26843,
+       "title": "Project. Chat bot. Finalization",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4023,
+   "number": 6,
+   "title": "Clones",
+   "lessons": [
+    {
+     "id": 11468,
+     "title": "M6L1. Classes and objects",
+     "moduleNumber": 6,
+     "tasks": [
+      {
+       "id": 26881,
+       "title": "Scratch. Free fall",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 26882,
+       "title": "Bonus: drawing snowflakes",
+       "type": "regular",
+       "isBonus": true,
+       "levelCount": 1
+      },
+      {
+       "id": 26005,
+       "title": "Test yourself. Clones",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 11506,
+     "title": "M6L2. Local and global variables",
+     "moduleNumber": 6,
+     "tasks": [
+      {
+       "id": 26883,
+       "title": "Scratch. Snowfall: continued",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 26192,
+       "title": "Test yourself. Local variables",
+       "type": "assignment",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 26884,
+       "title": "Scrolling bird",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      },
+      {
+       "id": 26885,
+       "title": "Snake",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      },
+      {
+       "id": 26886,
+       "title": "Martian farmer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      },
+      {
+       "id": 26887,
+       "title": "Zombie shooter",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 1
+      }
+     ]
+    },
+    {
+     "id": 36868,
+     "title": "M6L3. Interfaces",
+     "moduleNumber": 6,
+     "tasks": [
+      {
+       "id": 88000,
+       "title": "Scratch. Creating an interface",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 2
+      },
+      {
+       "id": 88001,
+       "title": "Check yourself. Interface",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 37621,
+     "title": "M6L4. Creating the Mirrors game",
+     "moduleNumber": 6,
+     "tasks": [
+      {
+       "id": 89360,
+       "title": "Scratch. Game creation",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 37622,
+     "title": "M6L5. Completing the Mirrors game",
+     "moduleNumber": 6,
+     "tasks": []
+    }
+   ]
+  },
+  {
+   "id": 4356,
+   "number": 7,
+   "title": "Final Project",
+   "lessons": [
+    {
+     "id": 11644,
+     "title": "M7L1 Preparing for the final project",
+     "moduleNumber": 7,
+     "tasks": [
+      {
+       "id": 26845,
+       "title": "Final project",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 3
+      }
+     ]
+    },
+    {
+     "id": 37623,
+     "title": "M7L2. Completion of the final project",
+     "moduleNumber": 7,
+     "tasks": []
+    },
+    {
+     "id": 12758,
+     "title": "Graduation. Visual Programming",
+     "moduleNumber": 7,
+     "tasks": [
+      {
+       "id": 28618,
+       "title": "Captain",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28619,
+       "title": "Assistant Captain",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28620,
+       "title": "Navigation man",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28621,
+       "title": "Communication man",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28622,
+       "title": "Research Scientist",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28623,
+       "title": "MarsBots Programmer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28624,
+       "title": "MarsBots Engineer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28625,
+       "title": "Fuel Systems Engineer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28626,
+       "title": "Navigation Systems Engineer",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28627,
+       "title": "Astromech",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28628,
+       "title": "Navigator",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      },
+      {
+       "id": 28629,
+       "title": "Meteorologist",
+       "type": "regular",
+       "isBonus": false,
+       "levelCount": 5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

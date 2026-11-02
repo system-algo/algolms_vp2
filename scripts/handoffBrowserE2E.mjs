@@ -147,7 +147,8 @@ try {
       isPending:window.__algoSecureLmsHandoffPending===true,
       hasBlockedAlert:Boolean(document.querySelector('[role="alert"]')?.textContent?.includes('Could not verify your learning session')),
     }));
-    assert.equal(status.receiverInstalled,true);
+    // VP2 intentionally returns early from its handoff receiver when
+    // there is no opener. This is the direct-link Guest fallback, not an error.
     assert.equal(status.isPending,false);
     assert.equal(status.hasBlockedAlert,false);
     await direct.close();

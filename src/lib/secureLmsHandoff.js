@@ -201,7 +201,8 @@ export function installSecureLmsHandoffReceiver() {
     if (completed) return;
     cleanup();
     window.__algoSecureLmsHandoffPending = false;
-    // Resume the app's existing session-required flow if the handoff failed.
-    window.location.reload();
+    // Do not reload on timeout: this would start an endless READY/reload
+    // loop with the same opener, preventing main.jsx from showing its
+    // fail-closed session-verification error.
   }, 12000);
 }

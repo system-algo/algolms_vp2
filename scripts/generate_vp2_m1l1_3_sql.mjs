@@ -543,7 +543,7 @@ const sqlRows = levels.map((lvl) => {
     }
 
     const starterProjectId = config.project ? String(config.project) : null;
-    const commandKeys = ["motion", "looks", "sound", "events", "control"];
+    const commandKeys = ["motion", "looks", "events", "control"];
 
     return `(
     '${activityId}',

@@ -8,63 +8,190 @@
   <title>Scratch 3.0 GUI</title>
   <script defer="defer" src="gui.js"></script>
   <script>
-    // Algo LMS Scratch Bridge
+    // Algo LMS Scratch Bridge - Precision Block & Category Filter
     (function() {
       const params = new URLSearchParams(window.location.search);
-      const projectUrl = params.get('project') || '/scratch/potion.sb3';
+      const projectUrl = params.get('project') || '';
+      const levelParam = params.get('level') || '1';
       const categoriesParam = params.get('categories') || 'motion,looks,events,control';
       const allowedCategories = categoriesParam.split(',').map(s => s.trim().toLowerCase());
 
-      const allPossibleCategories = [
+      const allCategories = [
         'motion', 'looks', 'sound', 'events', 'control',
         'sensing', 'operators', 'variables', 'myblocks', 'data'
       ];
-      const disallowed = allPossibleCategories.filter(c => !allowedCategories.includes(c));
+      const disallowed = allCategories.filter(c => !allowedCategories.includes(c));
 
-      // 1. Inject comprehensive CSS to hide disallowed categories & blocks
+      // Level 1 Authentic Algorithmics Toolbox XML
+      const LEVEL_1_XML = `<xml id="toolbox" style="display: none">
+  <category name="Motion" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
+    <block type="motion_movesteps">
+      <value name="STEPS">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="motion_gotoxy">
+      <value name="X">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="Y">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="motion_pointtowards">
+      <value name="TOWARDS">
+        <shadow type="motion_pointtowards_menu">
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
+    <block type="looks_sayforsecs">
+      <value name="MESSAGE">
+        <shadow type="text">
+          <field name="TEXT">Hello!</field>
+        </shadow>
+      </value>
+      <value name="SECS">
+        <shadow type="math_number">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_switchcostumeto">
+      <value name="COSTUME">
+        <shadow type="looks_costume">
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_switchbackdropto">
+      <value name="BACKDROP">
+        <shadow type="looks_backdrops">
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_setsizeto">
+      <value name="SIZE">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
+    <block type="event_whenflagclicked"/>
+  </category>
+  <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
+  </category>
+</xml>`;
+
+      // 1. Inject targeted CSS rules to prevent flicker of disallowed categories
+      const categoryClassMap = {
+        motion: '.scratchCategoryId-motion',
+        looks: '.scratchCategoryId-looks',
+        sound: '.scratchCategoryId-sound',
+        events: '.scratchCategoryId-events',
+        control: '.scratchCategoryId-control',
+        sensing: '.scratchCategoryId-sensing',
+        operators: '.scratchCategoryId-operators',
+        variables: '.scratchCategoryId-variables, .scratchCategoryId-data',
+        myblocks: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures',
+        data: '.scratchCategoryId-data'
+      };
+
+      const blockPrefixMap = {
+        sound: 'g[data-category="sound"], g[data-id^="sound_"]',
+        sensing: 'g[data-category="sensing"], g[data-id^="sensing_"], g[data-id="sensing_of"]',
+        operators: 'g[data-category="operators"], g[data-id^="operator_"]',
+        variables: 'g[data-category="data"], g[data-id^="data_"]',
+        myblocks: 'g[data-category="myBlocks"], g[data-id^="procedures_"]'
+      };
+
       const style = document.createElement('style');
-      const rules = [];
+      const cssRules = [];
 
       disallowed.forEach(cat => {
-        // Hide blocks in flyout
-        rules.push(`g[data-category="${cat}"] { display: none !important; }`);
-        rules.push(`g[data-category="${cat.toLowerCase()}"] { display: none !important; }`);
-        // Hide sidebar menu items
-        rules.push(`[id*="${cat}"], [class*="${cat}"] { display: none !important; }`);
-        rules.push(`[id*="${cat.toLowerCase()}"], [class*="${cat.toLowerCase()}"] { display: none !important; }`);
-        rules.push(`.scratchCategoryItem${cat.charAt(0).toUpperCase() + cat.slice(1)} { display: none !important; }`);
+        if (categoryClassMap[cat]) {
+          cssRules.push(`${categoryClassMap[cat]} { display: none !important; }`);
+        }
+        if (blockPrefixMap[cat]) {
+          cssRules.push(`${blockPrefixMap[cat]} { display: none !important; }`);
+        }
       });
 
-      style.textContent = rules.join('\n');
-      document.head.appendChild(style);
-
-      // 2. Hide text category labels in the SVG flyout
-      function cleanupFlyoutLabels() {
-        const disallowedNames = disallowed.map(d => d.toLowerCase());
-        document.querySelectorAll('text.blocklyText, text, .scratchCategoryMenuRow').forEach(el => {
-          const content = (el.textContent || '').trim().toLowerCase();
-          if (disallowedNames.includes(content)) {
-            el.style.display = 'none';
-            if (el.parentElement && el.parentElement.tagName === 'g') {
-              el.parentElement.style.display = 'none';
-            }
-          }
-        });
+      // Extra guarantee: hide sensing reporters & checkboxes in flyout if sensing is disallowed
+      if (disallowed.includes('sensing')) {
+        cssRules.push('g[data-id="sensing_of"], g[data-id*="sensing"] { display: none !important; }');
       }
 
-      setInterval(cleanupFlyoutLabels, 250);
+      style.textContent = cssRules.join('\n');
+      document.head.appendChild(style);
 
-      // 3. Load Project natively via Scratch Redux Project Loader
+      // 2. Native Blockly updateToolbox hook
+      let toolboxUpdated = false;
+      function applyBlocklyToolbox() {
+        if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
+        const ws = window.Blockly.getMainWorkspace();
+        if (!ws || !ws.options) return false;
+
+        try {
+          if (levelParam === '1') {
+            ws.updateToolbox(LEVEL_1_XML);
+            toolboxUpdated = true;
+            return true;
+          } else if (ws.options.languageTree) {
+            // General level category filtering
+            const serializer = new XMLSerializer();
+            const xmlStr = serializer.serializeToString(ws.options.languageTree);
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlStr, 'text/xml');
+            const categories = Array.from(xmlDoc.querySelectorAll('category'));
+            let modified = false;
+            for (const cat of categories) {
+              const id = (cat.getAttribute('id') || cat.getAttribute('name') || '').toLowerCase();
+              if (disallowed.includes(id)) {
+                cat.parentNode.removeChild(cat);
+                modified = true;
+              }
+            }
+            if (modified) {
+              ws.updateToolbox(serializer.serializeToString(xmlDoc));
+              toolboxUpdated = true;
+              return true;
+            }
+          }
+        } catch (err) {
+          console.warn('[AlgoLMS Bridge] updateToolbox error:', err);
+        }
+        return false;
+      }
+
+      // Check for Blockly readiness
+      let checks = 0;
+      const blocklyInterval = setInterval(() => {
+        checks++;
+        if (applyBlocklyToolbox()) {
+          clearInterval(blocklyInterval);
+        }
+        if (checks > 100) {
+          clearInterval(blocklyInterval);
+        }
+      }, 150);
+
+      // 3. Load Project natively via Scratch Redux Project Loader if URL/sb3 exists
       async function loadProjectFile(url) {
-        if (!url) return;
+        if (!url || !url.endsWith('.sb3')) return;
         const filename = url.split('/').pop() || 'project.sb3';
         console.log('[AlgoLMS Bridge] Fetching project:', url);
         try {
           const res = await fetch(url);
-          if (!res.ok) {
-            console.warn('[AlgoLMS Bridge] Fetch failed with status:', res.status);
-            return false;
-          }
+          if (!res.ok) return false;
           const blob = await res.blob();
           const file = new File([blob], filename, { type: 'application/x.scratch.sb3' });
 
@@ -74,7 +201,7 @@
             loader.fileReader = new FileReader();
             loader.fileReader.onload = loader.onload;
             loader.props.requestProjectUpload(loader.props.loadingState);
-            console.log('[AlgoLMS Bridge] Successfully dispatched to native Scratch loader!');
+            console.log('[AlgoLMS Bridge] Dispatched to native Scratch loader!');
             return true;
           }
         } catch (e) {
@@ -83,7 +210,6 @@
         return false;
       }
 
-      // Check for loader readiness
       let attempts = 0;
       let projectLoaded = false;
       const loaderCheck = setInterval(async () => {
@@ -91,9 +217,8 @@
         if (window.__scratchProjectLoader && !projectLoaded) {
           projectLoaded = true;
           clearInterval(loaderCheck);
-          // Small delay to allow Scratch GUI default initialization to settle
           setTimeout(async () => {
-            await loadProjectFile(projectUrl);
+            if (projectUrl) await loadProjectFile(projectUrl);
           }, 400);
         }
         if (attempts > 200) {

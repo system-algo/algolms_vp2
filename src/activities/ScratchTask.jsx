@@ -30,13 +30,15 @@ export default function ScratchTask({
   // Accordion open/collapse state inside drawer
   const [isAccordionOpen, setIsAccordionOpen] = useState(true);
 
-  const initialUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}`;
+  const levelPosition = task?.level_position || task?.position || 1;
+
+  const initialUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
   const [editorUrl, setEditorUrl] = useState(initialUrl);
 
   useEffect(() => {
-    const url = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}`;
+    const url = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
     setEditorUrl(url);
-  }, [projectId, categoriesQuery]);
+  }, [projectId, categoriesQuery, levelPosition]);
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 

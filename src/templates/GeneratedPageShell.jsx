@@ -137,9 +137,48 @@ export default function GeneratedPageShell({
 }) {
   const [manifest, setManifest] = useState(null);
   const [pageInstance, setPageInstance] = useState(null);
-  const [error, setError] = useState('');
-  const [taskIndex, setTaskIndex] = useState(0);
+  const getInitialTaskIndex = () => {
+    try {
+      const p = new URLSearchParams(window.location.search);
+      const val = p.get('task') || p.get('level') || p.get('t');
+      if (val) {
+        const num = parseInt(val, 10);
+        if (!isNaN(num) && num > 0) {
+          return num - 1;
+        }
+      }
+    } catch {}
+    return 0;
+  };
+
+  const [taskIndex, setTaskIndex] = useState(getInitialTaskIndex);
   const [stateIndex, setStateIndex] = useState(0);
+
+  const updateUrlTaskParam = useCallback((newIndex) => {
+    try {
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.set('task', String(newIndex + 1));
+      window.history.replaceState({}, '', currentUrl.toString());
+    } catch (e) {
+      console.warn('Could not update URL task param:', e);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const p = new URLSearchParams(window.location.search);
+      const val = p.get('task') || p.get('level') || p.get('t');
+      if (val) {
+        const num = parseInt(val, 10);
+        if (!isNaN(num) && num > 0) {
+          setTaskIndex(num - 1);
+          setStateIndex(0);
+        }
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
   const completedTasksStorageKey = useMemo(
     () => getCompletedTasksStorageKey(courseId, lessonId, pageId),
     [courseId, lessonId, pageId],
@@ -246,7 +285,11 @@ export default function GeneratedPageShell({
                     clearTimeout(autoTransitionTimerRef.current);
                   }
                   autoTransitionTimerRef.current = setTimeout(() => {
-                    setTaskIndex((prev) => Math.min(tasksRef.current.length - 1, prev + 1));
+                    setTaskIndex((prev) => {
+                      const nextIdx = Math.min(tasksRef.current.length - 1, prev + 1);
+                      updateUrlTaskParam(nextIdx);
+                      return nextIdx;
+                    });
                     setStateIndex(0);
                   }, 1500);
                 }
@@ -408,6 +451,28 @@ export default function GeneratedPageShell({
     return Array.isArray(manifest?.tasks) ? manifest.tasks : [];
   }, [manifest]);
 
+  // Sync taskIndex when manifest loads if task/level query param is present
+  useEffect(() => {
+    if (!manifest?.tasks?.length) return;
+    const p = new URLSearchParams(window.location.search);
+    const val = p.get('task') || p.get('level') || p.get('t');
+    if (!val) return;
+
+    const num = parseInt(val, 10);
+    if (!isNaN(num) && num > 0) {
+      const targetIdx = Math.min(manifest.tasks.length - 1, num - 1);
+      setTaskIndex(targetIdx);
+      return;
+    }
+
+    const foundIdx = manifest.tasks.findIndex(
+      (t) => t.id === val || t.taskId === val || t.activity_id === val
+    );
+    if (foundIdx !== -1) {
+      setTaskIndex(foundIdx);
+    }
+  }, [manifest]);
+
   const task = tasks[taskIndex] || null;
   const states = getStates(task);
   const state = states[stateIndex] || null;
@@ -459,20 +524,25 @@ export default function GeneratedPageShell({
     if (autoTransitionTimerRef.current) clearTimeout(autoTransitionTimerRef.current);
     setTaskIndex(nextTaskIndex);
     setStateIndex(0);
+    updateUrlTaskParam(nextTaskIndex);
   }
 
   function prevTask() {
     if (autoTransitionTimerRef.current) clearTimeout(autoTransitionTimerRef.current);
     if (!tasks.length) return;
-    setTaskIndex(Math.max(0, taskIndex - 1));
+    const prevIdx = Math.max(0, taskIndex - 1);
+    setTaskIndex(prevIdx);
     setStateIndex(0);
+    updateUrlTaskParam(prevIdx);
   }
 
   function nextTask() {
     if (autoTransitionTimerRef.current) clearTimeout(autoTransitionTimerRef.current);
     if (!tasks.length) return;
-    setTaskIndex(Math.min(tasks.length - 1, taskIndex + 1));
+    const nextIdx = Math.min(tasks.length - 1, taskIndex + 1);
+    setTaskIndex(nextIdx);
     setStateIndex(0);
+    updateUrlTaskParam(nextIdx);
   }
 
   function prevState() {

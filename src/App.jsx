@@ -242,17 +242,19 @@ export default function App() {
 
     // Remove transferred credentials from the browser address bar
     // after they have been stored locally.
-    if (window.location.search) {
-      const cleanUrl =
-        window.location.protocol +
-        '//' +
-        window.location.host +
-        window.location.pathname;
+    if (window.location.search && hasIncomingSession) {
+      const currentUrl = new URL(window.location.href);
+      currentUrl.searchParams.delete('studentEmail');
+      currentUrl.searchParams.delete('supabaseUrl');
+      currentUrl.searchParams.delete('supabaseKey');
+      currentUrl.searchParams.delete('accessToken');
+      currentUrl.searchParams.delete('backendUrl');
+      currentUrl.searchParams.delete('courseId');
 
       window.history.replaceState(
-        { path: cleanUrl },
+        { path: currentUrl.toString() },
         '',
-        cleanUrl,
+        currentUrl.toString(),
       );
     }
 

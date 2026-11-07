@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import path from 'node:path';
 
 const rawData = {
     "status": "success",
@@ -512,25 +513,30 @@ const sqlRows = levels.map((lvl) => {
     const config = lvl.config || {};
     
     // Requirements / Checklist
-    const requirements = (config.hints || []).map((h, i) => ({
-        id: h.id || `req_${i + 1}`,
-        title: h.title || '',
-        text: h.text || '',
-        type: h.type || 'text',
-        url: h.url ? (h.url.startsWith('http') ? h.url : `https://learn.alg.academy${h.url}`) : ''
-    }));
+    const requirements = (config.hints || []).map((h, i) => {
+        let assetUrl = '';
+        if (h.url) {
+            const filename = path.basename(h.url);
+            assetUrl = `/vp-assets/18343/${filename}`;
+        }
+        return {
+            id: h.id || `req_${i + 1}`,
+            title: h.title || '',
+            text: h.text || '',
+            type: h.type || 'text',
+            url: assetUrl
+        };
+    });
 
     // Media
     const media = [];
     if (config.presentation?.image) {
-        const imgUrl = config.presentation.image.startsWith('http')
-            ? config.presentation.image
-            : `https://learn.alg.academy${config.presentation.image}`;
+        const imgFilename = path.basename(config.presentation.image);
         media.push({
             type: 'presentation',
             title: config.presentation.title || '',
             text: config.presentation.text || '',
-            url: imgUrl
+            url: `/vp-assets/18343/${imgFilename}`
         });
     }
 
@@ -550,7 +556,6 @@ const sqlRows = levels.map((lvl) => {
     '${JSON.stringify(requirements).replace(/'/g, "''")}'::jsonb,
     '${JSON.stringify(media).replace(/'/g, "''")}'::jsonb,
     ${starterProjectId ? `'${starterProjectId}'` : 'NULL'},
-    '{}'::jsonb,
     NULL,
     '${JSON.stringify(commandKeys).replace(/'/g, "''")}'::jsonb
 )`;
@@ -558,6 +563,7 @@ const sqlRows = levels.map((lvl) => {
 
 const sql = `-- ==============================================================================
 -- INSERT ACTIVITIES: MODULE 1 - LESSON 1 - PAGE 3 (Scratch: Let's get acquainted - 13 Levels)
+-- Sử dụng đường dẫn ảnh/GIF cục bộ tự host (/vp-assets/18343/...)
 -- ==============================================================================
 INSERT INTO public.vp_activities (
     activity_id,
@@ -572,7 +578,6 @@ INSERT INTO public.vp_activities (
     requirements,
     media,
     starter_project_id,
-    starter_blocks,
     demo_project_id,
     command_keys
 ) VALUES 

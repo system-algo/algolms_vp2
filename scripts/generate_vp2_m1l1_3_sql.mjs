@@ -516,8 +516,9 @@ const sqlRows = levels.map((lvl) => {
     const requirements = (config.hints || []).map((h, i) => {
         let assetUrl = '';
         if (h.url) {
-            const filename = path.basename(h.url);
-            assetUrl = `/vp-assets/18343/${filename}`;
+            const ext = path.extname(h.url);
+            const base = path.basename(h.url, ext);
+            assetUrl = `/vp-assets/18343/${base}.webp`;
         }
         return {
             id: h.id || `req_${i + 1}`,
@@ -531,12 +532,13 @@ const sqlRows = levels.map((lvl) => {
     // Media
     const media = [];
     if (config.presentation?.image) {
-        const imgFilename = path.basename(config.presentation.image);
+        const ext = path.extname(config.presentation.image);
+        const base = path.basename(config.presentation.image, ext);
         media.push({
             type: 'presentation',
             title: config.presentation.title || '',
             text: config.presentation.text || '',
-            url: `/vp-assets/18343/${imgFilename}`
+            url: `/vp-assets/18343/${base}.webp`
         });
     }
 

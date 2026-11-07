@@ -91,6 +91,39 @@
   </category>
 </xml>`;
 
+      // Level 2 & 3 Authentic Algorithmics Toolbox XML (Looks & Events only)
+      const LEVEL_2_XML = `<xml id="toolbox" style="display: none">
+  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
+    <block type="looks_sayforsecs">
+      <value name="MESSAGE">
+        <shadow type="text">
+          <field name="TEXT">Hello!</field>
+        </shadow>
+      </value>
+      <value name="SECS">
+        <shadow type="math_number">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_switchcostumeto">
+      <value name="COSTUME">
+        <shadow type="looks_costume">
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_switchbackdropto">
+      <value name="BACKDROP">
+        <shadow type="looks_backdrops">
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
+    <block type="event_whenflagclicked"/>
+  </category>
+</xml>`;
+
       // 1. Inject targeted CSS rules to prevent flicker of disallowed categories
       const categoryClassMap = {
         motion: '.scratchCategoryId-motion',
@@ -106,7 +139,11 @@
       };
 
       const blockPrefixMap = {
+        motion: 'g[data-category="motion"], g[data-id^="motion_"]',
+        looks: 'g[data-category="looks"], g[data-id^="looks_"]',
         sound: 'g[data-category="sound"], g[data-id^="sound_"]',
+        events: 'g[data-category="events"], g[data-id^="event_"]',
+        control: 'g[data-category="control"], g[data-id^="control_"]',
         sensing: 'g[data-category="sensing"], g[data-id^="sensing_"], g[data-id="sensing_of"]',
         operators: 'g[data-category="operators"], g[data-id^="operator_"]',
         variables: 'g[data-category="data"], g[data-id^="data_"]',
@@ -143,6 +180,10 @@
         try {
           if (levelParam === '1') {
             ws.updateToolbox(LEVEL_1_XML);
+            toolboxUpdated = true;
+            return true;
+          } else if (levelParam === '2' || levelParam === '3') {
+            ws.updateToolbox(LEVEL_2_XML);
             toolboxUpdated = true;
             return true;
           } else if (ws.options.languageTree) {
@@ -184,47 +225,83 @@
         }
       }, 150);
 
-      // 3. Load Project natively via Scratch Redux Project Loader if URL/sb3 exists
+      // 3. Resolve & Load Project natively via Scratch Redux Project Loader / VM
+      function resolveProjectUrl(param, level) {
+        if (!param && (!level || level === '1')) return null;
+        if (level === '1') return null; // Level 1 is Scratch cat default project
+        if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
+        if (param && /^\d+$/.test(param)) {
+          return `/starter-projects/18343/${param}.sb3`;
+        }
+        if (level && level !== '1') {
+          return `/starter-projects/18343/level_${level}.sb3`;
+        }
+        return null;
+      }
+
       async function loadProjectFile(url) {
-        if (!url || !url.endsWith('.sb3')) return;
+        if (!url) return false;
         const filename = url.split('/').pop() || 'project.sb3';
         console.log('[AlgoLMS Bridge] Fetching project:', url);
         try {
           const res = await fetch(url);
-          if (!res.ok) return false;
-          const blob = await res.blob();
-          const file = new File([blob], filename, { type: 'application/x.scratch.sb3' });
+          if (!res.ok) {
+            console.warn('[AlgoLMS Bridge] Failed to fetch project:', url, res.status);
+            return false;
+          }
+          const arrayBuffer = await res.arrayBuffer();
 
           const loader = window.__scratchProjectLoader;
-          if (loader) {
-            loader.fileToUpload = file;
-            loader.fileReader = new FileReader();
-            loader.fileReader.onload = loader.onload;
-            loader.props.requestProjectUpload(loader.props.loadingState);
-            console.log('[AlgoLMS Bridge] Dispatched to native Scratch loader!');
+          if (loader && loader.props && loader.props.vm) {
+            if (loader.props.onLoadingStarted) loader.props.onLoadingStarted();
+            try {
+              await loader.props.vm.loadProject(arrayBuffer);
+              const title = loader.getProjectTitleFromFilename ? loader.getProjectTitleFromFilename(filename) : '';
+              if (title && loader.props.onSetProjectTitle) {
+                loader.props.onSetProjectTitle(title);
+              }
+              if (loader.props.onLoadingFinished) {
+                loader.props.onLoadingFinished(loader.props.loadingState, true);
+              }
+              console.log('[AlgoLMS Bridge] Project successfully loaded into VM via __scratchProjectLoader!');
+              setTimeout(applyBlocklyToolbox, 150);
+              return true;
+            } catch (err) {
+              console.error('[AlgoLMS Bridge] Error in loader.props.vm.loadProject:', err);
+              if (loader.props.onLoadingFinished) {
+                loader.props.onLoadingFinished(loader.props.loadingState, false);
+              }
+            }
+          } else if (window.vm) {
+            await window.vm.loadProject(arrayBuffer);
+            console.log('[AlgoLMS Bridge] Project successfully loaded into window.vm!');
+            setTimeout(applyBlocklyToolbox, 150);
             return true;
           }
         } catch (e) {
-          console.error('[AlgoLMS Bridge] Error loading project:', e);
+          console.error('[AlgoLMS Bridge] Error fetching or loading project:', e);
         }
         return false;
       }
 
+      const initialProjectUrl = resolveProjectUrl(projectUrl, levelParam);
       let attempts = 0;
       let projectLoaded = false;
-      const loaderCheck = setInterval(async () => {
-        attempts++;
-        if (window.__scratchProjectLoader && !projectLoaded) {
-          projectLoaded = true;
-          clearInterval(loaderCheck);
-          setTimeout(async () => {
-            if (projectUrl) await loadProjectFile(projectUrl);
-          }, 400);
-        }
-        if (attempts > 200) {
-          clearInterval(loaderCheck);
-        }
-      }, 100);
+      if (initialProjectUrl) {
+        const loaderCheck = setInterval(async () => {
+          attempts++;
+          if ((window.__scratchProjectLoader || window.vm) && !projectLoaded) {
+            projectLoaded = true;
+            clearInterval(loaderCheck);
+            setTimeout(async () => {
+              await loadProjectFile(initialProjectUrl);
+            }, 300);
+          }
+          if (attempts > 200) {
+            clearInterval(loaderCheck);
+          }
+        }, 100);
+      }
 
       // Listen for parent LMS postMessage
       window.addEventListener('message', async (e) => {

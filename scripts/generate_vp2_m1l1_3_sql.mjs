@@ -577,7 +577,9 @@ const sqlRows = levels.map((lvl) => {
     }
 
     const starterProjectId = config.project ? String(config.project) : null;
-    const commandKeys = ["motion", "looks", "events", "control"];
+    const commandKeys = (lvl.position === 2 || lvl.position === 3)
+        ? ["looks", "events"]
+        : ["motion", "looks", "events", "control"];
 
     return `(
     '${activityId}',

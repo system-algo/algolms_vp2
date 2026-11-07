@@ -10,17 +10,24 @@ export default function ScratchTask({
 }) {
   const taskTitle = task?.title || 'Scratch Activity';
 
+  const levelPosition = Number(task?.level_position || task?.position || 1);
+
   // Online project ID from LMS config / Supabase vp2_activities
   const projectId =
     task?.starter_project_id ||
     task?.config?.project?.id ||
+    task?.config?.project ||
     task?.projectId ||
     '';
 
-  // Flyout categories / command keys
+  // Flyout categories / command keys: Level 2 & 3 specifically only have Looks & Events
+  const defaultCommandKeys = (levelPosition === 2 || levelPosition === 3)
+    ? ['looks', 'events']
+    : ['motion', 'looks', 'events', 'control'];
+
   const categoriesQuery = Array.isArray(task?.command_keys) && task.command_keys.length > 0
     ? task.command_keys.join(',')
-    : 'motion,looks,events,control';
+    : defaultCommandKeys.join(',');
 
   // Drawer open/collapse state (open by default)
   const [isDrawerOpen, setIsDrawerOpen] = useState(true);
@@ -29,8 +36,6 @@ export default function ScratchTask({
 
   // Accordion open/collapse state inside drawer
   const [isAccordionOpen, setIsAccordionOpen] = useState(true);
-
-  const levelPosition = task?.level_position || task?.position || 1;
 
   const initialUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
   const [editorUrl, setEditorUrl] = useState(initialUrl);

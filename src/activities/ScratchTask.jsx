@@ -10,7 +10,9 @@ export default function ScratchTask({
 }) {
   const taskTitle = task?.title || 'Scratch Activity';
 
-  const levelPosition = Number(task?.level_position || task?.position || 1);
+  const matchPos = String(task?.activity_id || task?.id || task?.taskId || '').match(/_(\d+)$/);
+  const derivedPos = matchPos ? parseInt(matchPos[1], 10) : 1;
+  const levelPosition = Number(task?.level_position || task?.position || task?.levelPosition || derivedPos);
 
   // Online project ID from LMS config / Supabase vp2_activities
   const projectId =
@@ -364,6 +366,7 @@ export default function ScratchTask({
 
         <div className="scratch-task-iframe-wrapper">
           <iframe
+            key={`scratch-${levelPosition}-${projectId}`}
             ref={iframeRef}
             src={editorUrl}
             className="scratch-task-iframe"

@@ -60,7 +60,10 @@ export async function getVp2PageLessonNumber(pageId) {
   let globalNumber = 1;
   for (const module of modules) {
     const lessonEntries = Array.isArray(module.lessons) && module.lessons.length
-      ? module.lessons.map(lesson => ({ id: String(lesson.id || lesson.lessonId), pages: lesson.pages || [] }))
+      ? module.lessons.map(lesson => ({
+          id: String(lesson.id || lesson.lessonId),
+          pages: (module.pages || []).filter(page => lessonKey(page) === String(lesson.id || lesson.lessonId)),
+        }))
       : [...new Set((module.pages || []).map(lessonKey).filter(Boolean))]
           .sort((a, b) => lessonNumber(a) - lessonNumber(b))
           .map(id => ({

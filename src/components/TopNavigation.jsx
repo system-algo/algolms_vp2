@@ -18,16 +18,25 @@ function getTaskId(task) {
 
 function getTaskMarker(task, index, total) {
   const title = String(task?.title || '').toLowerCase();
+  const type = String(task?.level_type || task?.type || '').toLowerCase();
 
+  // Rating / Vote task -> smiley icon
   if (
-    title.includes('star') ||
-    title.includes('project') ||
-    title.includes('demo')
+    type === 'rating' ||
+    title.includes('rate') ||
+    title.includes('rating') ||
+    title.includes('vote') ||
+    title.includes('like the task')
   ) {
-    return '★';
+    return '☺';
   }
 
-  if (total > 7 && index >= total - 2) {
+  // Bonus / Star task -> Star
+  if (
+    task?.isBonus ||
+    title.includes('star') ||
+    title.includes('bonus')
+  ) {
     return '★';
   }
 

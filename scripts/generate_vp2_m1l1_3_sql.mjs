@@ -498,7 +498,40 @@ const rawData = {
     }
 };
 
-const levels = rawData.data.levels;
+const rawLevels = rawData.data.levels;
+
+// Filter out intermediate votes: keep regular & star tasks, and collapse multiple votes to a single final vote
+const regularOrStarTasks = [];
+const voteTasks = [];
+
+rawLevels.forEach((lvl) => {
+    const title = (lvl.title || '').toLowerCase();
+    const isVote = title.includes('rate') || title.includes('rating') || title.includes('vote') || lvl.type === 'rating';
+    if (isVote) {
+        voteTasks.push(lvl);
+    } else {
+        regularOrStarTasks.push(lvl);
+    }
+});
+
+// Keep exactly 1 vote task at the end
+const finalVoteTask = voteTasks.length > 0 ? {
+    ...voteTasks[voteTasks.length - 1],
+    title: 'Did you like the task?',
+    type: 'rating'
+} : null;
+
+const reorderedLevels = [...regularOrStarTasks];
+if (finalVoteTask) {
+    reorderedLevels.push(finalVoteTask);
+}
+
+// Re-assign positions 1 to 12
+const levels = reorderedLevels.map((lvl, idx) => ({
+    ...lvl,
+    position: idx + 1
+}));
+
 const pageId = 'VP2_M1L1_3';
 const courseId = 'VP2';
 const moduleNumber = 1;
@@ -509,7 +542,8 @@ const lessonTitle = 'Linear algorithm';
 const sqlRows = levels.map((lvl) => {
     const activityId = `${pageId}_${lvl.position}`;
     const levelTitle = lvl.title || `Level ${lvl.position}`;
-    const levelType = 'scratch';
+    const isRating = lvl.type === 'rating' || levelTitle.toLowerCase().includes('rate') || levelTitle.toLowerCase().includes('rating');
+    const levelType = isRating ? 'rating' : 'scratch';
     const config = lvl.config || {};
     
     // Requirements / Checklist
@@ -564,9 +598,11 @@ const sqlRows = levels.map((lvl) => {
 });
 
 const sql = `-- ==============================================================================
--- INSERT ACTIVITIES: MODULE 1 - LESSON 1 - PAGE 3 (Scratch: Let's get acquainted - 13 Levels)
--- Sử dụng đường dẫn ảnh/GIF cục bộ tự host (/vp-assets/18343/...)
+-- INSERT ACTIVITIES: MODULE 1 - LESSON 1 - PAGE 3 (Scratch: Let's get acquainted - 12 Levels)
+-- 8 Regular Tasks + 3 Star Tasks + 1 Final Vote Task (Did you like the task?)
 -- ==============================================================================
+DELETE FROM public.vp_activities WHERE activity_id LIKE 'VP2_M1L1_3_%' AND level_position > 12;
+
 INSERT INTO public.vp_activities (
     activity_id,
     course_id,

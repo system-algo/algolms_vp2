@@ -197,6 +197,122 @@ export default function ScratchTask({
     setIsDrawerOpen((prev) => !prev);
   };
 
+  const [selectedVote, setSelectedVote] = useState(null);
+  const isRatingTask =
+    task?.level_type === 'rating' ||
+    task?.type === 'rating' ||
+    lowerTitle.includes('rate') ||
+    lowerTitle.includes('rating') ||
+    lowerTitle.includes('like the task');
+
+  const handleVoteClick = async (voteValue) => {
+    setSelectedVote(voteValue);
+    const studentEmail = localStorage.getItem('lms_student_email') || '';
+    const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL;
+    const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY;
+    const taskId = task?.activity_id || task?.id || task?.taskId || 'rating-task';
+
+    if (supabaseUrl && supabaseKey && studentEmail) {
+      try {
+        await fetch(`${supabaseUrl}/rest/v1/activity_progress`, {
+          method: 'POST',
+          headers: {
+            'apikey': supabaseKey,
+            'Authorization': `Bearer ${supabaseKey}`,
+            'Content-Type': 'application/json',
+            'Prefer': 'resolution=merge-duplicates',
+          },
+          body: JSON.stringify({
+            user_id: studentEmail,
+            course_id: task?.course_id || 'VP2',
+            lesson_id: String(task?.lesson_id || task?.lessonId || 'VP2_L1'),
+            page_id: String(task?.page_id || task?.pageId || 'page_1'),
+            task_id: taskId,
+            activity_type: 'rating',
+            status: 'completed',
+            is_completed: true,
+            updated_at: new Date().toISOString(),
+          }),
+        });
+      } catch (err) {
+        console.warn('Lỗi lưu rating activity_progress:', err);
+      }
+    }
+
+    if (typeof onTaskCompleted === 'function') {
+      onTaskCompleted({
+        taskId,
+        completed: true,
+        activityType: 'rating',
+      });
+    }
+
+    setTimeout(() => {
+      if (typeof onNextTask === 'function') {
+        onNextTask();
+      }
+    }, 700);
+  };
+
+  if (isRatingTask) {
+    return (
+      <div className="scratch-rating-screen">
+        <h1 className="scratch-rating-title">Did you like the task?</h1>
+        <div className="scratch-rating-emojis">
+          {/* Sad */}
+          <button
+            type="button"
+            className={`scratch-rating-btn ${selectedVote === 'sad' ? 'selected' : ''}`}
+            onClick={() => handleVoteClick('sad')}
+            title="Didn't like it"
+          >
+            <svg viewBox="0 0 100 100" className="scratch-rating-svg">
+              <circle cx="50" cy="50" r="46" fill="#ffffff" />
+              <circle cx="35" cy="40" r="5" fill="#6c2eb9" />
+              <circle cx="65" cy="40" r="5" fill="#6c2eb9" />
+              <path d="M 32 68 Q 50 50 68 68" stroke="#6c2eb9" strokeWidth="6" strokeLinecap="round" fill="none" />
+            </svg>
+          </button>
+
+          {/* Neutral */}
+          <button
+            type="button"
+            className={`scratch-rating-btn ${selectedVote === 'neutral' ? 'selected' : ''}`}
+            onClick={() => handleVoteClick('neutral')}
+            title="Neutral"
+          >
+            <svg viewBox="0 0 100 100" className="scratch-rating-svg">
+              <circle cx="50" cy="50" r="46" fill="#ffffff" />
+              <circle cx="35" cy="40" r="5" fill="#6c2eb9" />
+              <circle cx="65" cy="40" r="5" fill="#6c2eb9" />
+              <line x1="32" y1="62" x2="68" y2="62" stroke="#6c2eb9" strokeWidth="6" strokeLinecap="round" />
+            </svg>
+          </button>
+
+          {/* Happy */}
+          <button
+            type="button"
+            className={`scratch-rating-btn ${selectedVote === 'happy' ? 'selected' : ''}`}
+            onClick={() => handleVoteClick('happy')}
+            title="Liked it!"
+          >
+            <svg viewBox="0 0 100 100" className="scratch-rating-svg">
+              <circle cx="50" cy="50" r="46" fill="#ffffff" />
+              <circle cx="35" cy="40" r="5" fill="#6c2eb9" />
+              <circle cx="65" cy="40" r="5" fill="#6c2eb9" />
+              <path d="M 32 58 Q 50 76 68 58" stroke="#6c2eb9" strokeWidth="6" strokeLinecap="round" fill="none" />
+            </svg>
+          </button>
+        </div>
+        {selectedVote && (
+          <div className="scratch-rating-feedback">
+            <span>✓ Thank you for your feedback!</span>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className={`scratch-task-container ${isResizing ? 'is-resizing' : ''}`} ref={containerRef}>
       {/* Left: Scratch Editor iframe (Full width background) */}

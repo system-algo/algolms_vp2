@@ -308,18 +308,27 @@ export default function ScratchTask({
 
             {isAccordionOpen && (
               <div className="scratch-task-card-body">
-                {/* Scratch Demo Player Preview */}
-                <div className="scratch-task-preview-box">
-                  <svg className="scratch-task-preview-cat" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-4h2v4zm0-6h-2v-2h2v2z" />
-                  </svg>
-                  <h4 className="scratch-task-preview-title">Loading Project</h4>
-                  <p className="scratch-task-preview-sub">Loading extensions ...</p>
-                </div>
+                {/* Scratch Demo Player / Media Preview */}
+                {task?.media?.[0]?.url ? (
+                  <div style={{ marginBottom: '16px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
+                    <img
+                      src={task.media[0].url}
+                      alt={task.media[0].title || 'Illustration'}
+                      style={{ width: '100%', height: 'auto', display: 'block' }}
+                    />
+                  </div>
+                ) : (
+                  <div className="scratch-task-preview-box">
+                    <svg className="scratch-task-preview-cat" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-4h2v4zm0-6h-2v-2h2v2z" />
+                    </svg>
+                    <h4 className="scratch-task-preview-title">Scratch Project</h4>
+                    <p className="scratch-task-preview-sub">Thực hiện các yêu cầu theo checklist bên dưới</p>
+                  </div>
+                )}
 
                 <p className="scratch-task-description">
-                  {task?.description ||
-                    'You click on the Potion sprite, and a completely different sprite reacts. Look!'}
+                  {task?.description || task?.media?.[0]?.text || ''}
                 </p>
 
                 {/* Checklist */}

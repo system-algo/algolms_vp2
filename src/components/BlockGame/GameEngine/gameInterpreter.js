@@ -58,6 +58,13 @@ export function compileProgram(blocks, maxSteps = 400) {
           blockId: blk.id,
           action: 'put_cargo',
         });
+      } else if (blk.type === BLOCK_TYPES.TURN_DIRECTION) {
+        const dir = blk.params?.direction || 'left';
+        steps.push({
+          blockId: blk.id,
+          action: 'turn_direction',
+          direction: dir, // 'left' or 'right'
+        });
       } else if (blk.type === BLOCK_TYPES.TURN_CLOCKWISE) {
         const angle = Number(blk.params?.angle ?? 30);
         steps.push({

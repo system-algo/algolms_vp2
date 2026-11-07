@@ -5,224 +5,422 @@
       "title": "Visual Programming 2",
       "lessons": [
         {
-          "id": "M2-Control-Structures",
-          "title": "Space",
+          "id": "M1-Visual-Programming-Basics",
+          "title": "Introduction",
+          "number": 1,
+          "lessons": [
+            {
+              "id": "VP2_M1L1",
+              "title": "Linear algorithm",
+              "number": 1
+            },
+            {
+              "id": "VP2_M1L2",
+              "title": "Loops",
+              "number": 2
+            },
+            {
+              "id": "VP2_M1L3",
+              "title": "Initial placement",
+              "number": 3
+            },
+            {
+              "id": "VP2_M1L4",
+              "title": "Events",
+              "number": 4
+            },
+            {
+              "id": "VP2_M1L5",
+              "title": "Project. Personal website",
+              "number": 5
+            }
+          ],
           "pages": [
             {
-              "id": "VP2_M2L3_SLIDES",
-              "title": "Slide: M2L3 - Turns and degrees",
-              "lessonId": "VP2_M2L3",
-              "taskCount": 1
+              "id": "VP2_M1L1_1",
+              "title": "Excursion",
+              "lessonId": "VP2_M1L1",
+              "taskCount": 12
+            },
+            {
+              "id": "VP2_M1L1_2",
+              "title": "Bonus! Help load the rocket!",
+              "lessonId": "VP2_M1L1",
+              "taskCount": 14,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M1L1_3",
+              "title": "Scratch. Let's get acquainted",
+              "lessonId": "VP2_M1L1",
+              "taskCount": 13
+            },
+            {
+              "id": "VP2_M1L1_4",
+              "title": "Test yourself. Linear algorithm",
+              "lessonId": "VP2_M1L1",
+              "taskCount": 3
+            },
+            {
+              "id": "VP2_M1L2_1",
+              "title": "Building a Marsbase",
+              "lessonId": "VP2_M1L2",
+              "taskCount": 18
+            },
+            {
+              "id": "VP2_M1L2_2",
+              "title": "Bonus! Excavations....",
+              "lessonId": "VP2_M1L2",
+              "taskCount": 14,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M1L2_3",
+              "title": "Scratch. Changing looks!",
+              "lessonId": "VP2_M1L2",
+              "taskCount": 8
+            },
+            {
+              "id": "VP2_M1L2_4",
+              "title": "Test yourself. Loops",
+              "lessonId": "VP2_M1L2",
+              "taskCount": 4
+            },
+            {
+              "id": "VP2_M1L3_1",
+              "title": "Scratch. Where to start?",
+              "lessonId": "VP2_M1L3",
+              "taskCount": 8
+            },
+            {
+              "id": "VP2_M1L3_2",
+              "title": "Extra task: Graphic editor",
+              "lessonId": "VP2_M1L3",
+              "taskCount": 6,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M1L3_3",
+              "title": "Scratch. Dialogs and planning",
+              "lessonId": "VP2_M1L3",
+              "taskCount": 7
+            },
+            {
+              "id": "VP2_M1L3_4",
+              "title": "Test yourself. Initial placement",
+              "lessonId": "VP2_M1L3",
+              "taskCount": 3
+            },
+            {
+              "id": "VP2_M1L4_1",
+              "title": "Scratch. Events",
+              "lessonId": "VP2_M1L4",
+              "taskCount": 7
+            },
+            {
+              "id": "VP2_M1L4_2",
+              "title": "Additional task: Clicker",
+              "lessonId": "VP2_M1L4",
+              "taskCount": 1,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M1L4_3",
+              "title": "Scratch. Script management",
+              "lessonId": "VP2_M1L4",
+              "taskCount": 5
+            },
+            {
+              "id": "VP2_M1L4_4",
+              "title": "Test yourself. Events",
+              "lessonId": "VP2_M1L4",
+              "taskCount": 3
+            },
+            {
+              "id": "VP2_M1L5_1",
+              "title": "Project. Personal website",
+              "lessonId": "VP2_M1L5",
+              "taskCount": 2
+            }
+          ],
+          "pageCount": 17,
+          "taskCount": 128
+        },
+        {
+          "id": "M2-Control-Structures",
+          "title": "Space",
+          "number": 2,
+          "lessons": [
+            {
+              "id": "VP2_M2L1",
+              "title": "Coordinates",
+              "number": 1
+            },
+            {
+              "id": "VP2_M2L2",
+              "title": "Pointing in different directions",
+              "number": 2
+            },
+            {
+              "id": "VP2_M2L3",
+              "title": "Turns and degrees",
+              "number": 3
+            },
+            {
+              "id": "VP2_M2L4",
+              "title": "Messages",
+              "number": 4
+            },
+            {
+              "id": "VP2_M2L5",
+              "title": "Project. Animation",
+              "number": 5
+            }
+          ],
+          "pages": [
+            {
+              "id": "VP2_M2L1_1",
+              "title": "Rocket flight",
+              "lessonId": "VP2_M2L1",
+              "taskCount": 17
+            },
+            {
+              "id": "VP2_M2L1_2",
+              "title": "Additional task: find the...",
+              "lessonId": "VP2_M2L1",
+              "taskCount": 3,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M2L1_3",
+              "title": "Scratch. Coordinates",
+              "lessonId": "VP2_M2L1",
+              "taskCount": 8
+            },
+            {
+              "id": "VP2_M2L1_4",
+              "title": "Test yourself. Coordinates",
+              "lessonId": "VP2_M2L1",
+              "taskCount": 4
+            },
+            {
+              "id": "VP2_M2L2_1",
+              "title": "Collecting cargo",
+              "lessonId": "VP2_M2L2",
+              "taskCount": 15
+            },
+            {
+              "id": "VP2_M2L2_2",
+              "title": "Additional task — Pen",
+              "lessonId": "VP2_M2L2",
+              "taskCount": 5,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M2L2_3",
+              "title": "Scratch. Pointing in different...",
+              "lessonId": "VP2_M2L2",
+              "taskCount": 7
+            },
+            {
+              "id": "VP2_M2L2_4",
+              "title": "Test yourself. Directions",
+              "lessonId": "VP2_M2L2",
+              "taskCount": 3
             },
             {
               "id": "VP2_M2L3_1",
-              "title": "Turns and degrees - Part 1",
+              "title": "Laser and plants",
               "lessonId": "VP2_M2L3",
               "taskCount": 14
             },
             {
               "id": "VP2_M2L3_2",
-              "title": "Turns and degrees - Part 2",
+              "title": "Additional task. Artist",
               "lessonId": "VP2_M2L3",
-              "taskCount": 5
+              "taskCount": 6,
+              "isBonus": true
             },
             {
               "id": "VP2_M2L3_3",
-              "title": "Turns and degrees - Part 3",
+              "title": "Scratch. Turns and rotations",
               "lessonId": "VP2_M2L3",
-              "taskCount": 6
+              "taskCount": 7
             },
             {
               "id": "VP2_M2L3_4",
-              "title": "Turns and degrees - Part 4",
+              "title": "Test yourself. Degrees",
               "lessonId": "VP2_M2L3",
-              "taskCount": 2
-            },
-            {
-              "id": "VP2_M2L4_SLIDES",
-              "title": "Slide: M2L4 - Messages",
-              "lessonId": "VP2_M2L4",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M2L4_1",
-              "title": "Messages - Part 1",
-              "lessonId": "VP2_M2L4",
-              "taskCount": 6
-            },
-            {
-              "id": "VP2_M2L4_2",
-              "title": "Messages - Part 2",
-              "lessonId": "VP2_M2L4",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M2L4_3",
-              "title": "Messages - Part 3",
-              "lessonId": "VP2_M2L4",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M2L4_4",
-              "title": "Messages - Part 4",
-              "lessonId": "VP2_M2L4",
               "taskCount": 3
             },
             {
-              "id": "VP2_M2L4_5",
-              "title": "Messages - Part 5",
+              "id": "VP2_M2L4_1",
+              "title": "Scratch. Messages",
               "lessonId": "VP2_M2L4",
-              "taskCount": 1
+              "taskCount": 7
             },
             {
-              "id": "VP2_M2L5_SLIDES",
-              "title": "Slide: M2L5 - Project Animation",
-              "lessonId": "VP2_M2L5",
-              "taskCount": 1
+              "id": "VP2_M2L4_2",
+              "title": "Bonus: solve the riddle",
+              "lessonId": "VP2_M2L4",
+              "taskCount": 1,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M2L4_3",
+              "title": "Scratch. Animation",
+              "lessonId": "VP2_M2L4",
+              "taskCount": 2
+            },
+            {
+              "id": "VP2_M2L4_4",
+              "title": "Test yourself. Messages",
+              "lessonId": "VP2_M2L4",
+              "taskCount": 4
             },
             {
               "id": "VP2_M2L5_1",
-              "title": "Project Animation - Part 1",
+              "title": "Project. Animation",
               "lessonId": "VP2_M2L5",
-              "taskCount": 1
+              "taskCount": 2
             }
           ],
-          "pageCount": 13,
-          "taskCount": 43
+          "pageCount": 17,
+          "taskCount": 98
         },
         {
           "id": "M3-Functions-and-Modules",
           "title": "Game",
+          "number": 3,
+          "lessons": [
+            {
+              "id": "VP2_M3L1",
+              "title": "Conditions and the selection operator",
+              "number": 1
+            },
+            {
+              "id": "VP2_M3L2",
+              "title": "Changing coordinates",
+              "number": 2
+            },
+            {
+              "id": "VP2_M3L3",
+              "title": "Procedures",
+              "number": 3
+            },
+            {
+              "id": "VP2_M3L4",
+              "title": "Game planning",
+              "number": 4
+            },
+            {
+              "id": "VP2_M3L5",
+              "title": "Game Testing",
+              "number": 5
+            },
+            {
+              "id": "VP2_M3L6",
+              "title": "Game Presentation",
+              "number": 6
+            }
+          ],
           "pages": [
             {
               "id": "VP2_M3L1_1",
-              "title": "Conditions and the selection operator - Part 1",
+              "title": "Sorting cargo",
+              "lessonId": "VP2_M3L1",
+              "taskCount": 12
+            },
+            {
+              "id": "VP2_M3L1_2",
+              "title": "Bonus: Hedgehog and...",
+              "lessonId": "VP2_M3L1",
+              "taskCount": 2,
+              "isBonus": true
+            },
+            {
+              "id": "VP2_M3L1_3",
+              "title": "Scratch. Conditions",
               "lessonId": "VP2_M3L1",
               "taskCount": 10
             },
             {
-              "id": "VP2_M3L1_2",
-              "title": "Conditions and the selection operator - Part 2",
-              "lessonId": "VP2_M3L1",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M3L1_3",
-              "title": "Conditions and the selection operator - Part 3",
-              "lessonId": "VP2_M3L1",
-              "taskCount": 9
-            },
-            {
               "id": "VP2_M3L1_4",
-              "title": "Conditions and the selection operator - Part 4",
+              "title": "Test yourself. Conditions",
               "lessonId": "VP2_M3L1",
-              "taskCount": 3
+              "taskCount": 4
             },
             {
-              "id": "VP2_M3L2_SLIDES",
-              "title": "Slide: M3L2 - Changing coordinates",
+              "id": "VP2_M3L2_1",
+              "title": "The rocket's journey",
               "lessonId": "VP2_M3L2",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M3L2_1_track1",
-              "title": "Changing coordinates - VP_M3L2_1_track1",
-              "lessonId": "VP2_M3L2",
-              "taskCount": 16
-            },
-            {
-              "id": "VP2_M3L2_1_track2",
-              "title": "Changing coordinates - VP_M3L2_1_track2",
-              "lessonId": "VP2_M3L2",
-              "taskCount": 15
+              "taskCount": 17
             },
             {
               "id": "VP2_M3L2_2",
-              "title": "Changing coordinates - Part 2",
+              "title": "Bonus: take the apple",
               "lessonId": "VP2_M3L2",
-              "taskCount": 1
+              "taskCount": 1,
+              "isBonus": true
             },
             {
               "id": "VP2_M3L2_3",
-              "title": "Changing coordinates - Part 3",
+              "title": "Scratch. Changing...",
               "lessonId": "VP2_M3L2",
-              "taskCount": 9
+              "taskCount": 10
             },
             {
               "id": "VP2_M3L2_4",
-              "title": "Changing coordinates - Part 4",
+              "title": "Test yourself. Changing...",
               "lessonId": "VP2_M3L2",
-              "taskCount": 3
-            },
-            {
-              "id": "VP2_M3L3_SLIDES",
-              "title": "Slide: M3L3 - Procedures",
-              "lessonId": "VP2_M3L3",
-              "taskCount": 1
+              "taskCount": 4
             },
             {
               "id": "VP2_M3L3_1",
-              "title": "Procedures - Part 1",
+              "title": "Scratch. Procedures",
               "lessonId": "VP2_M3L3",
-              "taskCount": 5
+              "taskCount": 6
             },
             {
               "id": "VP2_M3L3_2",
-              "title": "Procedures - Part 2",
+              "title": "Bonus: find the error",
               "lessonId": "VP2_M3L3",
-              "taskCount": 3
+              "taskCount": 3,
+              "isBonus": true
             },
             {
               "id": "VP2_M3L3_3",
-              "title": "Procedures - Part 3",
+              "title": "Scratch. Maze",
               "lessonId": "VP2_M3L3",
-              "taskCount": 1
+              "taskCount": 2
             },
             {
               "id": "VP2_M3L3_4",
-              "title": "Procedures - Part 4",
+              "title": "Test yourself. Procedures",
               "lessonId": "VP2_M3L3",
-              "taskCount": 3
-            },
-            {
-              "id": "VP2_M3L4_SLIDES",
-              "title": "Slide: M3L4 - Game planning",
-              "lessonId": "VP2_M3L4",
-              "taskCount": 1
+              "taskCount": 4
             },
             {
               "id": "VP2_M3L4_1",
-              "title": "Game planning - Part 1",
+              "title": "Project. Game",
               "lessonId": "VP2_M3L4",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M3L5_SLIDES",
-              "title": "Slide: M3L5 - Game Testing",
-              "lessonId": "VP2_M3L5",
-              "taskCount": 1
+              "taskCount": 2
             },
             {
               "id": "VP2_M3L5_1",
-              "title": "Game Testing - Part 1",
+              "title": "Project. Game",
               "lessonId": "VP2_M3L5",
-              "taskCount": 1
-            },
-            {
-              "id": "VP2_M3L6_SLIDES",
-              "title": "Slide: M3L6 - Game Presentation",
-              "lessonId": "VP2_M3L6",
-              "taskCount": 1
+              "taskCount": 2
             },
             {
               "id": "VP2_M3L6_1",
-              "title": "Game Presentation - Part 1",
+              "title": "Project. Game",
               "lessonId": "VP2_M3L6",
-              "taskCount": 1
+              "taskCount": 2
             }
           ],
-          "pageCount": 21,
-          "taskCount": 87
+          "pageCount": 15,
+          "taskCount": 77
         },
         {
           "id": "M4-Math-and-Logic",

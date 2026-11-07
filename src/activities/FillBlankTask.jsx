@@ -41,20 +41,7 @@ function getTaskId(task) {
 }
 
 function getManualMapUrl() {
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const course = params.get('course');
-    const lesson = params.get('lesson');
-    const page = params.get('page');
-
-    if (!course || !lesson || !page) return '';
-
-    return `/manual-activity-maps/${encodeURIComponent(course)}/${encodeURIComponent(
-      lesson,
-    )}/${encodeURIComponent(page)}.activity-map.json`;
-  } catch {
-    return '';
-  }
+  return '';
 }
 
 function getRuntimeIds(pageInstance) {

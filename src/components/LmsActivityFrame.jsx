@@ -16,24 +16,11 @@ export default function LmsActivityFrame({
   isResetDisabled,
   isCheckLoading,
 }) {
-  const hasNext = typeof onNextTask === 'function';
-  const hasPrev = typeof onPrevTask === 'function';
   const hasBack = typeof onBack === 'function';
 
   return (
     <main className="lms-frame">
       <div className="lms-frame__inner">
-        {hasPrev && (
-          <button
-            type="button"
-            className="lms-frame__side lms-frame__side--left"
-            onClick={onPrevTask}
-            title="Previous Activity"
-          >
-            ‹
-          </button>
-        )}
-
         <section
           className="lms-frame__card"
           aria-label={title || 'Activity'}
@@ -79,17 +66,6 @@ export default function LmsActivityFrame({
             </div>
           )}
         </section>
-
-        {hasNext && (
-          <button
-            type="button"
-            className="lms-frame__side lms-frame__side--right"
-            onClick={onNextTask}
-            title="Next Activity"
-          >
-            ›
-          </button>
-        )}
       </div>
 
       <div

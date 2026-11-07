@@ -110,6 +110,34 @@ export default function BlockRenderer({
       );
     }
 
+    if (block.type === BLOCK_TYPES.TURN_DIRECTION) {
+      const dir = block.params?.direction || 'left';
+      const paramDef = def.params[0];
+      const selectedOption =
+        paramDef.options.find((o) => o.value === dir) || paramDef.options[0];
+
+      return (
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+          <span>turn</span>
+          <span className="block-dropdown-pill" style={{ position: 'relative' }}>
+            <span>{selectedOption.label} ▾</span>
+            <select
+              className="block-select-input"
+              value={dir}
+              onChange={(e) => handleSelectChange('direction', e.target.value)}
+              disabled={isToolbox}
+            >
+              {paramDef.options.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </span>
+        </span>
+      );
+    }
+
     if (
       block.type === BLOCK_TYPES.TURN_CLOCKWISE ||
       block.type === BLOCK_TYPES.TURN_COUNTERCLOCKWISE
@@ -161,13 +189,12 @@ export default function BlockRenderer({
           alignItems: 'flex-start',
           position: 'relative',
         }}
-        data-block-id={block.id}
-        data-block-type={block.type}
       >
         {/* Top Header Bar of C-Block */}
         <div
           data-block-id={block.id}
           data-block-type={block.type}
+          data-c-header="true"
           onPointerDown={handlePointerDown}
           style={{
             position: 'relative',
@@ -240,13 +267,18 @@ export default function BlockRenderer({
               flexDirection: 'column',
               alignItems: 'flex-start',
               flex: 1,
-              minHeight: '26px',
-              background: isTargetInside ? 'rgba(250, 204, 21, 0.15)' : 'transparent',
+              minHeight: '34px',
+              padding: '2px 4px',
+              background: isTargetInside ? 'rgba(250, 204, 21, 0.25)' : 'transparent',
+              borderRadius: '4px',
               transition: 'background 0.15s ease',
             }}
           >
             {Array.isArray(block.children) && block.children.length > 0 ? (
-              <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+              <div
+                data-slot-for={block.id}
+                style={{ display: 'flex', flexDirection: 'column', width: '100%' }}
+              >
                 {block.children.map((childBlock, cIdx) => {
                   const isChildBefore =
                     activeTargetId === childBlock.id && dropTarget?.position === 'before';
@@ -273,23 +305,25 @@ export default function BlockRenderer({
               </div>
             ) : (
               <div
+                data-slot-for={block.id}
                 data-slot-placeholder-for={block.id}
                 style={{
-                  height: '24px',
-                  minWidth: '120px',
-                  maxWidth: '180px',
+                  height: '28px',
+                  minWidth: '140px',
+                  maxWidth: '220px',
                   border: isTargetInside ? '2px dashed #f59e0b' : '1.5px dashed #a7f3d0',
-                  borderRadius: '4px',
-                  margin: '2px 0 2px 4px',
+                  borderRadius: '6px',
+                  margin: '2px 0 4px 4px',
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  padding: '0 8px',
+                  padding: '0 12px',
                   color: isTargetInside ? '#b45309' : '#047857',
                   fontSize: '11px',
-                  fontWeight: 600,
-                  background: isTargetInside ? '#fef3c7' : 'rgba(255, 255, 255, 0.35)',
-                  cursor: 'default',
+                  fontWeight: 700,
+                  background: isTargetInside ? '#fef3c7' : 'rgba(255, 255, 255, 0.45)',
+                  cursor: 'pointer',
+                  pointerEvents: 'auto',
                 }}
               >
                 drop commands here

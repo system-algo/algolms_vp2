@@ -17,6 +17,7 @@ export const BLOCK_TYPES = {
   REPEAT: 'repeat',
 
   // Rotation & Plants / Laser statements
+  TURN_DIRECTION: 'turn_direction',
   TURN_CLOCKWISE: 'turn_clockwise',
   TURN_COUNTERCLOCKWISE: 'turn_counterclockwise',
   DESTROY: 'destroy',
@@ -107,6 +108,27 @@ export const BLOCK_DEFINITIONS = {
         type: 'number_select',
         default: 4,
         options: [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      },
+    ],
+  },
+
+  [BLOCK_TYPES.TURN_DIRECTION]: {
+    type: BLOCK_TYPES.TURN_DIRECTION,
+    kind: 'statement',
+    label: 'turn',
+    category: 'motion',
+    color: '#8A5BA7',
+    darkColor: '#6B4284',
+    lightColor: '#B488CE',
+    params: [
+      {
+        name: 'direction',
+        type: 'select',
+        default: 'left',
+        options: [
+          { value: 'left', label: 'left ↺' },
+          { value: 'right', label: 'right ↻' },
+        ],
       },
     ],
   },

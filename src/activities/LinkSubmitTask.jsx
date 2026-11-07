@@ -52,20 +52,7 @@ function getCurrentRouteKey() {
 }
 
 function getManualActivityMapUrl() {
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const courseId = params.get('course');
-    const lessonId = params.get('lesson');
-    const pageId = params.get('page');
-
-    if (!courseId || !lessonId || !pageId) return '';
-
-    return `/manual-activity-maps/${encodeURIComponent(courseId)}/${encodeURIComponent(
-      lessonId
-    )}/${encodeURIComponent(pageId)}.activity-map.json`;
-  } catch {
-    return '';
-  }
+  return '';
 }
 
 function getTaskId(task) {

@@ -75,36 +75,48 @@ export const MARS_LEVEL_7 = {
 export const MARS_LEVEL_1 = {
   id: 'mars_level_1',
   levelNumber: 1,
-  title: 'Level 1: Straight Ahead',
+  title: 'Level 1: Excursion Station',
   mode: 'grid',
-  hint: 'Lead the robot forward to take the cargo.',
-  targetCargoCount: 1,
-  maxCommands: 4,
+  hint: 'Lead the robot to the living compartment of the station.',
+  hasTutorial: true,
+  maxCommands: 10,
 
   grid: {
     cols: 6,
     rows: 4,
     tiles: [
+      { x: 1, y: 1 },
+      { x: 2, y: 1 },
+      { x: 3, y: 1 }, // Target X tile
       { x: 1, y: 2 },
       { x: 2, y: 2 },
       { x: 3, y: 2 },
-      { x: 4, y: 2 },
     ],
+  },
+
+  stationBuilding: {
+    x: 3,
+    y: 0,
+  },
+
+  targetTile: {
+    x: 3,
+    y: 1,
   },
 
   initialRobot: {
     x: 1,
-    y: 2,
-    direction: 90,
+    y: 1,
+    direction: 90, // Facing East (to the right)
     carriedCargo: 0,
   },
 
-  initialCargos: [{ id: 'cargo_1', x: 4, y: 2 }],
+  initialCargos: [],
 
   toolboxBlocks: [
     BLOCK_TYPES.MOVE_FORWARD,
-    BLOCK_TYPES.TAKE_CARGO,
-    BLOCK_TYPES.REPEAT,
+    { type: BLOCK_TYPES.TURN_DIRECTION, params: { direction: 'left' } },
+    { type: BLOCK_TYPES.TURN_DIRECTION, params: { direction: 'right' } },
   ],
 
   initialBlocks: [createBlockInstance(BLOCK_TYPES.START_HAT)],

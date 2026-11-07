@@ -190,7 +190,13 @@ export default function BlockGameTask({
           return;
         } else {
           // Grid / Mars mode
-          if (simCargos.length === 0) {
+          const hasTargetTile = Boolean(level.targetTile);
+          const reachedTarget = hasTargetTile
+            ? simRobot.x === level.targetTile.x && simRobot.y === level.targetTile.y
+            : true;
+          const cargoCompleted = simCargos.length === 0;
+
+          if (reachedTarget && cargoCompleted) {
             setExecutionStatus('completed');
             playLmsSound(LMS_SOUND_TYPES.CORRECT);
             onTaskCompleted?.({
@@ -198,12 +204,16 @@ export default function BlockGameTask({
               isCorrect: true,
               score: 1,
               maxScore: 1,
-              feedback: 'All cargo collected successfully!',
+              feedback: 'Success! Robot reached the living compartment.',
             });
           } else {
             setExecutionStatus('failed');
             playLmsSound(LMS_SOUND_TYPES.WRONG);
-            setStatusMessage(`Mission incomplete! ${simCargos.length} cargo box(es) remaining.`);
+            if (!reachedTarget) {
+              setStatusMessage('The robot has not reached the station living compartment (marked with ✖)!');
+            } else {
+              setStatusMessage(`Mission incomplete! ${simCargos.length} cargo box(es) remaining.`);
+            }
           }
         }
         return;
@@ -243,6 +253,13 @@ export default function BlockGameTask({
         } else {
           setStatusMessage('No cargo found at current tile!');
         }
+      } else if (step.action === 'turn_direction') {
+        const delta = step.direction === 'left' ? -90 : 90;
+        simRobot = {
+          ...simRobot,
+          direction: ((simRobot.direction + delta) % 360 + 360) % 360,
+        };
+        setRobotState({ ...simRobot });
       } else if (step.action === 'turn_clockwise') {
         simRobot = { ...simRobot, direction: (simRobot.direction + step.angle) % 360 };
         setRobotState({ ...simRobot });
@@ -326,17 +343,14 @@ export default function BlockGameTask({
             </svg>
           </button>
 
-          {/* Level Numbers (1 to 7 active/completed) */}
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => {
-            const lvlId = isRadial ? `plant_level_${num}` : `mars_level_${num}`;
+          {/* Sequence: (1) (2) (3) (4) (5) (6) (Smiley) (7) (8) (Gallery) (Star) (Star) */}
+          {[1, 2, 3, 4, 5, 6].map((num) => {
             const isCurrent = level.levelNumber === num;
-            const isAvailable = Boolean(ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode));
-
             return (
               <button
                 key={num}
                 type="button"
-                className={`level-pill-btn ${isCurrent ? 'active has-ring' : isAvailable ? 'completed' : 'completed'}`}
+                className={`level-pill-btn ${isCurrent ? 'active has-ring' : 'completed'}`}
                 onClick={() => {
                   const targetLevel = ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode);
                   if (targetLevel) setCurrentLevelId(targetLevel.id);
@@ -348,39 +362,54 @@ export default function BlockGameTask({
             );
           })}
 
-          {/* Mid-lesson video icon */}
+          {/* Smiley Icon Pill */}
           <button
             type="button"
             className="level-pill-btn completed pill-icon-btn"
-            title="Video Guide"
+            title="Practice Complete"
+          >
+            <span style={{ fontSize: '13px' }}>😊</span>
+          </button>
+
+          {/* Levels 7, 8 */}
+          {[7, 8].map((num) => {
+            const isCurrent = level.levelNumber === num;
+            return (
+              <button
+                key={num}
+                type="button"
+                className={`level-pill-btn ${isCurrent ? 'active has-ring' : 'completed'}`}
+                onClick={() => {
+                  const targetLevel = ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode);
+                  if (targetLevel) setCurrentLevelId(targetLevel.id);
+                }}
+                title={`Level ${num}`}
+              >
+                {num}
+              </button>
+            );
+          })}
+
+          {/* Gallery image icon */}
+          <button
+            type="button"
+            className="level-pill-btn completed pill-icon-btn"
+            title="Artwork Gallery"
           >
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
+              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
             </svg>
           </button>
 
-          {/* Locked / Future Levels (8, 9, 10, Lock) */}
-          {[8, 9, 10].map((num) => (
-            <button
-              key={num}
-              type="button"
-              className="level-pill-btn locked"
-              title={`Level ${num} (Locked)`}
-              disabled
-            >
-              {num}
-            </button>
-          ))}
-
-          {/* Lock icon pill */}
-          <button
-            type="button"
-            className="level-pill-btn locked pill-icon-btn"
-            title="Locked"
-            disabled
-          >
+          {/* Bonus Stars */}
+          <button type="button" className="level-pill-btn completed pill-icon-btn" title="Bonus 1">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+          </button>
+          <button type="button" className="level-pill-btn completed pill-icon-btn" title="Bonus 2">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             </svg>
           </button>
         </div>

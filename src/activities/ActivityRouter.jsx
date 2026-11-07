@@ -17,6 +17,7 @@ import DiagramCanvasTask from "./DiagramCanvasTask";
 import FeedbackRatingTask from './FeedbackRatingTask';
 import SequenceOrderTask from './SequenceOrderTask.jsx';
 import BlockGameTask from '../components/BlockGame/BlockGameTask.jsx';
+import ScratchTask from './ScratchTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -322,9 +323,27 @@ function hasBlockGameShape(lines) {
   );
 }
 
+function hasScratchTaskShape(lines, task) {
+  const title = String(task?.title || '').toLowerCase();
+  if (title.includes('potion') || title.includes('knight') || title.includes('scratch.')) {
+    return true;
+  }
+  const joined = joinedText(lines);
+  return (
+    (joined.includes('tasks will be checked by the teacher') ||
+      joined.includes('tasks to check with the teacher') ||
+      joined.includes('tasks with automatic check')) &&
+    (joined.includes('sprite') || joined.includes('motion') || joined.includes('looks') || joined.includes('stage'))
+  );
+}
+
 function inferSubtype(task, state) {
   const source = getCurrentSource(task, state);
   const lines = getLinesFromSource(source);
+
+  if (hasScratchTaskShape(lines, task)) {
+    return 'scratch_task';
+  }
 
   if (hasBlockGameShape(lines)) {
     return 'block_game';
@@ -479,12 +498,17 @@ function normalizeRendererType(value) {
     'block-game-task': 'block-game-task',
     'block-programming': 'block-game-task',
     block_programming: 'block-game-task',
+    scratch: 'scratch-task',
+    scratch_task: 'scratch-task',
+    'scratch-task': 'scratch-task',
+    scratch_programming: 'scratch-task',
   };
 
   return aliases[text] || text.replaceAll('_', '-');
 }
 
 function rendererTypeFromLegacySubtype(subtype) {
+  if (subtype === 'scratch_task') return 'scratch-task';
   if (subtype === 'block_game') return 'block-game-task';
   if (subtype === 'mcq') return 'mcq-checkbox';
   if (subtype === 'classification_matching') return 'code-classification';
@@ -955,6 +979,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'block-game-task') {
     return <BlockGameTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'scratch-task') {
+    return <ScratchTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'feedback-rating-task') {

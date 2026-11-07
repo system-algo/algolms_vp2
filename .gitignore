@@ -6,3 +6,5 @@ node_modules/
 .vite/
 input/VP2/
 *.zip
+database/
+*.map

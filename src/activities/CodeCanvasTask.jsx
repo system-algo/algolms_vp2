@@ -174,16 +174,7 @@ function getTaskIdentity(task) {
 }
 
 function getManualActivityMapUrlFromLocation() {
-  if (typeof window === 'undefined') return '';
-
-  const params = new URLSearchParams(window.location.search);
-  const course = params.get('course');
-  const lesson = params.get('lesson');
-  const page = params.get('page');
-
-  if (!course || !lesson || !page) return '';
-
-  return `/manual-activity-maps/${encodeURIComponent(course)}/${encodeURIComponent(lesson)}/${encodeURIComponent(page)}.activity-map.json`;
+  return '';
 }
 
 function getRuntimeCodeCanvasConfig(activityMap, taskId) {

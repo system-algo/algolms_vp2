@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google" value="notranslate">
+  <link rel="shortcut icon" href="static/favicon.ico">
+  <title>Scratch 3.0 GUI</title>
+  <script defer="defer" src="gui.js"></script>
+  <script>
+    // Algo LMS Scratch Bridge
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const projectUrl = params.get('project') || '/scratch/potion.sb3';
+      const categoriesParam = params.get('categories') || 'motion,looks,events,control';
+      const allowedCategories = categoriesParam.split(',').map(s => s.trim().toLowerCase());
+
+      const allPossibleCategories = [
+        'motion', 'looks', 'sound', 'events', 'control',
+        'sensing', 'operators', 'variables', 'myblocks', 'data'
+      ];
+      const disallowed = allPossibleCategories.filter(c => !allowedCategories.includes(c));
+
+      // 1. Inject comprehensive CSS to hide disallowed categories & blocks
+      const style = document.createElement('style');
+      const rules = [];
+
+      disallowed.forEach(cat => {
+        // Hide blocks in flyout
+        rules.push(`g[data-category="${cat}"] { display: none !important; }`);
+        rules.push(`g[data-category="${cat.toLowerCase()}"] { display: none !important; }`);
+        // Hide sidebar menu items
+        rules.push(`[id*="${cat}"], [class*="${cat}"] { display: none !important; }`);
+        rules.push(`[id*="${cat.toLowerCase()}"], [class*="${cat.toLowerCase()}"] { display: none !important; }`);
+        rules.push(`.scratchCategoryItem${cat.charAt(0).toUpperCase() + cat.slice(1)} { display: none !important; }`);
+      });
+
+      style.textContent = rules.join('\n');
+      document.head.appendChild(style);
+
+      // 2. Hide text category labels in the SVG flyout
+      function cleanupFlyoutLabels() {
+        const disallowedNames = disallowed.map(d => d.toLowerCase());
+        document.querySelectorAll('text.blocklyText, text, .scratchCategoryMenuRow').forEach(el => {
+          const content = (el.textContent || '').trim().toLowerCase();
+          if (disallowedNames.includes(content)) {
+            el.style.display = 'none';
+            if (el.parentElement && el.parentElement.tagName === 'g') {
+              el.parentElement.style.display = 'none';
+            }
+          }
+        });
+      }
+
+      setInterval(cleanupFlyoutLabels, 250);
+
+      // 3. Load Project natively via Scratch Redux Project Loader
+      async function loadProjectFile(url) {
+        if (!url) return;
+        const filename = url.split('/').pop() || 'project.sb3';
+        console.log('[AlgoLMS Bridge] Fetching project:', url);
+        try {
+          const res = await fetch(url);
+          if (!res.ok) {
+            console.warn('[AlgoLMS Bridge] Fetch failed with status:', res.status);
+            return false;
+          }
+          const blob = await res.blob();
+          const file = new File([blob], filename, { type: 'application/x.scratch.sb3' });
+
+          const loader = window.__scratchProjectLoader;
+          if (loader) {
+            loader.fileToUpload = file;
+            loader.fileReader = new FileReader();
+            loader.fileReader.onload = loader.onload;
+            loader.props.requestProjectUpload(loader.props.loadingState);
+            console.log('[AlgoLMS Bridge] Successfully dispatched to native Scratch loader!');
+            return true;
+          }
+        } catch (e) {
+          console.error('[AlgoLMS Bridge] Error loading project:', e);
+        }
+        return false;
+      }
+
+      // Check for loader readiness
+      let attempts = 0;
+      let projectLoaded = false;
+      const loaderCheck = setInterval(async () => {
+        attempts++;
+        if (window.__scratchProjectLoader && !projectLoaded) {
+          projectLoaded = true;
+          clearInterval(loaderCheck);
+          // Small delay to allow Scratch GUI default initialization to settle
+          setTimeout(async () => {
+            await loadProjectFile(projectUrl);
+          }, 400);
+        }
+        if (attempts > 200) {
+          clearInterval(loaderCheck);
+        }
+      }, 100);
+
+      // Listen for parent LMS postMessage
+      window.addEventListener('message', async (e) => {
+        if (!e.data) return;
+        if (e.data.type === 'LOAD_SB3' && e.data.url) {
+          await loadProjectFile(e.data.url);
+        }
+      });
+    })();
+  </script>
+</head>
+<body></body>
+</html>

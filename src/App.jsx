@@ -4,6 +4,7 @@ import { getVp2UnlockedLessonLimit, getVp2PageLessonNumber } from './lib/vp2Less
 import H5pPlayerPage from './pages/H5pPlayerPage.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import BlockGameTask from './components/BlockGame/BlockGameTask.jsx';
+import ScratchTask from './activities/ScratchTask.jsx';
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
 
 
@@ -73,6 +74,24 @@ export default function App() {
     // before the identity and JWT have arrived.
     if (window.__algoSecureLmsHandoffPending) return;
     const params = new URLSearchParams(window.location.search);
+
+    // Bypass session check for scratch preview, game preview, or local development
+    if (
+      params.get('scratch') ||
+      params.get('game') ||
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1'
+    ) {
+      if (!sessionStorage.getItem(SESSION_ACTIVE_KEY)) {
+        sessionStorage.setItem(SESSION_ACTIVE_KEY, '1');
+        sessionStorage.setItem(SESSION_DEADLINE_KEY, String(Date.now() + SESSION_DURATION_MS));
+        localStorage.setItem('lms_user_role', 'student');
+      }
+      setLoadingRole(false);
+      if (params.get('scratch') || params.get('game')) {
+        return;
+      }
+    }
 
     const email = params.get('studentEmail');
     const incomingCourseId = params.get('courseId');
@@ -620,6 +639,24 @@ export default function App() {
         standalone
         initialLevelId={params.get('level') || (gameParam === 'plants' ? 'plant_level_3' : 'mars_level_7')}
         onTaskCompleted={(res) => console.log('Game level completed:', res)}
+      />
+    );
+  }
+
+  const scratchParam = params.get('scratch');
+  if (scratchParam) {
+    const isDancing = scratchParam.toLowerCase().includes('dancing') || scratchParam.toLowerCase().includes('button');
+    return (
+      <ScratchTask
+        task={{
+          id: isDancing ? 'task-dancing' : 'task-potion',
+          title: isDancing ? 'М2L4 button for dancing' : 'М2L4 Potion',
+          description: isDancing
+            ? 'Program the button to trigger dancing animation!'
+            : 'You click on the Potion sprite, and a completely different sprite reacts. Look!',
+        }}
+        onTaskCompleted={(res) => console.log('Scratch task completed:', res)}
+        onNextTask={() => alert('Chúc mừng bạn đã hoàn thành level!')}
       />
     );
   }

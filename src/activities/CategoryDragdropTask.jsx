@@ -413,13 +413,7 @@ function getDataFromTask(task) {
 }
 
 function getManualMapUrl() {
-  const { courseId, lessonId, pageId } = getRouteContext();
-
-  if (!courseId || !lessonId || !pageId) return '';
-
-  return `/manual-activity-maps/${encodeURIComponent(courseId)}/${encodeURIComponent(
-    lessonId,
-  )}/${encodeURIComponent(pageId)}.activity-map.json`;
+  return '';
 }
 
 function normalizeItems(items) {

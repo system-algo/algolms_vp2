@@ -437,11 +437,11 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
           if (lessonCatalog.length > 0) {
             lessons = lessonCatalog
-              .map((lesson) => {
+              .map((lesson, lessonIndex) => {
                 const lessonId = lesson.id || lesson.lessonId || '';
                 if (!lessonId) return null;
 
-                const currentLessonNumber = globalLessonCounter++;
+                const currentLessonNumber = lesson.number || (lessonIndex + 1);
                 const lessonPages =
                   Array.isArray(lesson.pages) && lesson.pages.length > 0
                     ? lesson.pages
@@ -469,8 +469,8 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
                 const numB = parseInt(lessonIdB.match(/L(\d+)/i)?.[1] || '0', 10);
                 return numA - numB;
               })
-              .map(([lessonId, lessonPages]) => {
-                const currentLessonNumber = globalLessonCounter++;
+              .map(([lessonId, lessonPages], lessonIndex) => {
+                const currentLessonNumber = parseInt(lessonId.match(/L(\d+)/i)?.[1] || `${lessonIndex + 1}`, 10);
 
                 return {
                   id: lessonId,

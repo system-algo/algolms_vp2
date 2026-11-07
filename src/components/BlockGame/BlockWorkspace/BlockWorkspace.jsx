@@ -163,7 +163,12 @@ export default function BlockWorkspace({
     if (isExecuting) return; // cannot edit while running
 
     const isFromToolbox = String(block.id).startsWith('toolbox_');
-    const blockToDrag = isFromToolbox ? createBlockInstance(block.type) : block;
+    const blockToDrag = isFromToolbox
+      ? {
+          ...createBlockInstance(block.type),
+          params: { ...block.params },
+        }
+      : block;
 
     setDraggingBlock({
       ...blockToDrag,
@@ -202,47 +207,59 @@ export default function BlockWorkspace({
       const elements = document.elementsFromPoint(e.clientX, e.clientY);
       let foundTarget = null;
 
-      // Pass A: Check for specific block element (child block, root block, C-header, or C-bottom bracket)
+      // Pass A: Check if hovering directly inside a C-Block's slot / placeholder
       for (const el of elements) {
-        if (el.hasAttribute('data-block-id')) {
-          const tid = el.getAttribute('data-block-id');
-          const bType = el.getAttribute('data-block-type');
-
-          // Skip if target is the dragging block itself, or one of its descendants, or a toolbox block
-          if (isDescendantOrSelf(draggingBlock, tid) || tid.startsWith('toolbox_')) {
-            continue;
-          }
-
-          // Bottom bracket of a C-block -> always insert AFTER the whole C-block
-          if (el.hasAttribute('data-c-bottom')) {
-            foundTarget = { blockId: tid, targetId: tid, position: 'after' };
+        if (el.hasAttribute('data-slot-for') || el.hasAttribute('data-slot-placeholder-for')) {
+          const cBlockId = el.getAttribute('data-slot-for') || el.getAttribute('data-slot-placeholder-for');
+          if (!isDescendantOrSelf(draggingBlock, cBlockId) && !cBlockId.startsWith('toolbox_')) {
+            foundTarget = { blockId: cBlockId, targetId: cBlockId, position: 'inside' };
             break;
           }
-
-          // Start hat block -> can ONLY insert AFTER it (never before!)
-          if (bType === BLOCK_TYPES.START_HAT || tid === 'start_hat' || tid.includes('start')) {
-            foundTarget = { blockId: tid, targetId: tid, position: 'after' };
-            break;
-          }
-
-          // Normal or child block: determine before or after based on pointer vertical half
-          const rect = el.getBoundingClientRect();
-          const relativeY = e.clientY - rect.top;
-          const position = relativeY > rect.height / 2 ? 'after' : 'before';
-          foundTarget = { blockId: tid, targetId: tid, position };
-          break;
         }
       }
 
-      // Pass B: If not directly over a block, check if inside an empty or padded C-Block slot
+      // Pass B: Check for specific block element (child block, root block, C-header, or C-bottom bracket)
       if (!foundTarget) {
         for (const el of elements) {
-          if (el.hasAttribute('data-slot-for') || el.hasAttribute('data-slot-placeholder-for')) {
-            const cBlockId = el.getAttribute('data-slot-for') || el.getAttribute('data-slot-placeholder-for');
-            if (!isDescendantOrSelf(draggingBlock, cBlockId) && !cBlockId.startsWith('toolbox_')) {
-              foundTarget = { blockId: cBlockId, targetId: cBlockId, position: 'inside' };
+          if (el.hasAttribute('data-block-id')) {
+            const tid = el.getAttribute('data-block-id');
+            const bType = el.getAttribute('data-block-type');
+
+            // Skip if target is the dragging block itself, or one of its descendants, or a toolbox block
+            if (isDescendantOrSelf(draggingBlock, tid) || tid.startsWith('toolbox_')) {
+              continue;
+            }
+
+            // Bottom bracket of a C-block -> always insert AFTER the whole C-block
+            if (el.hasAttribute('data-c-bottom')) {
+              foundTarget = { blockId: tid, targetId: tid, position: 'after' };
               break;
             }
+
+            // Top Header of a C-block (repeat) -> if mouse is near bottom half of header, insert INSIDE
+            if (el.hasAttribute('data-c-header') || bType === BLOCK_TYPES.REPEAT) {
+              const rect = el.getBoundingClientRect();
+              const relativeY = e.clientY - rect.top;
+              if (relativeY > rect.height / 2) {
+                foundTarget = { blockId: tid, targetId: tid, position: 'inside' };
+              } else {
+                foundTarget = { blockId: tid, targetId: tid, position: 'before' };
+              }
+              break;
+            }
+
+            // Start hat block -> can ONLY insert AFTER it (never before!)
+            if (bType === BLOCK_TYPES.START_HAT || tid === 'start_hat' || tid.includes('start')) {
+              foundTarget = { blockId: tid, targetId: tid, position: 'after' };
+              break;
+            }
+
+            // Normal or child block: determine before or after based on pointer vertical half
+            const rect = el.getBoundingClientRect();
+            const relativeY = e.clientY - rect.top;
+            const position = relativeY > rect.height / 2 ? 'after' : 'before';
+            foundTarget = { blockId: tid, targetId: tid, position };
+            break;
           }
         }
       }
@@ -331,13 +348,19 @@ export default function BlockWorkspace({
       <div className="block-toolbox" ref={toolboxRef}>
         <div className="toolbox-header">Blocks</div>
         <div className="toolbox-blocks-list">
-          {toolboxBlockTypes.map((type) => {
+          {toolboxBlockTypes.map((item, idx) => {
+            const type = typeof item === 'string' ? item : item.type;
+            const customParams = typeof item === 'object' && item.params ? item.params : {};
             const def = BLOCK_DEFINITIONS[type];
             if (!def) return null;
-            const dummyBlock = { id: `toolbox_${type}`, type, params: {} };
+            const dummyBlock = {
+              id: `toolbox_${type}_${idx}`,
+              type,
+              params: { ...customParams },
+            };
             return (
               <div
-                key={type}
+                key={`${type}_${idx}`}
                 className="toolbox-item-wrapper"
                 onPointerDown={(e) => handleStartDrag(dummyBlock, e)}
               >

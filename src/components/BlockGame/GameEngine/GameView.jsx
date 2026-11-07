@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import GridEngine from './GridEngine';
 import RadialEngine from './RadialEngine';
 import PlantTutorialModal from './PlantTutorialModal';
+import MarsTutorialModal from './MarsTutorialModal';
 
 export default function GameView({
   level,
@@ -35,12 +36,12 @@ export default function GameView({
         position: 'relative',
         background: isRadial
           ? '#210a12' // Dark maroon matching screenshot
-          : 'linear-gradient(180deg, #8a3420 0%, #a4432c 40%, #5d2012 100%)',
+          : 'linear-gradient(180deg, #1f1435 0%, #2e1a47 45%, #180b2a 100%)', // Space purple matching Algo LMS
         overflow: 'hidden',
         boxSizing: 'border-box',
       }}
     >
-      {/* Top Rocky Canyon Ceiling Decoration (for Mars mode) */}
+      {/* Top Space / Nebula Ceiling Decoration */}
       {!isRadial && (
         <svg
           style={{
@@ -51,17 +52,18 @@ export default function GameView({
             height: '60px',
             pointerEvents: 'none',
             zIndex: 1,
+            opacity: 0.7,
           }}
           preserveAspectRatio="none"
           viewBox="0 0 1000 60"
         >
           <path
             d="M 0 0 L 0 35 Q 120 55 240 30 T 480 40 T 720 25 T 900 45 L 1000 30 L 1000 0 Z"
-            fill="#561d11"
+            fill="#130822"
           />
           <path
             d="M 0 0 L 0 20 Q 150 40 300 15 T 600 25 T 850 15 L 1000 20 L 1000 0 Z"
-            fill="#3e130a"
+            fill="#0b0314"
           />
         </svg>
       )}
@@ -123,6 +125,8 @@ export default function GameView({
             gridConfig={level.grid || {}}
             robotState={robotState}
             cargos={cargos}
+            targetTile={level.targetTile}
+            stationBuilding={level.stationBuilding}
             isExecuting={isExecuting}
           />
         )}
@@ -195,7 +199,7 @@ export default function GameView({
           )}
         </div>
 
-        {/* Subtitle / Instruction Hint (e.g. "Destroy one pest plant and grow one good one") */}
+        {/* Subtitle / Instruction Hint (e.g. "Lead the robot to the living compartment of the station.") */}
         <div
           className="game-instruction-hint"
           style={{
@@ -210,13 +214,19 @@ export default function GameView({
             textShadow: '0 1px 3px rgba(0,0,0,0.6)',
           }}
         >
-          {statusMessage || level.hint || 'Destroy one pest plant and grow one good one'}
+          {statusMessage || level.hint || 'Lead the robot to the living compartment of the station.'}
         </div>
       </div>
 
-      {/* TUTORIAL MODAL DIALOG (Harmful Plants vs Sprouts) */}
+      {/* TUTORIAL MODAL DIALOGS */}
       {isRadial && showTutorial && (
         <PlantTutorialModal onClose={() => setShowTutorial(false)} />
+      )}
+      {!isRadial && showTutorial && (
+        <MarsTutorialModal
+          instruction={level.hint}
+          onClose={() => setShowTutorial(false)}
+        />
       )}
 
       {/* WIN / COMPLETION OVERLAY DIALOG */}

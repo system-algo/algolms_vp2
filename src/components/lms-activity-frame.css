@@ -1,82 +1,41 @@
 .lms-frame {
   min-height: calc(100vh - 76px);
   background: linear-gradient(180deg, #8a45ef 0%, #7f39ea 100%);
-  padding: 34px 24px 26px;
+  padding: 16px 20px 24px;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
 /*
-  Frame chung cho tất cả activity.
-  Đổi từ width cố định nhỏ sang width linh hoạt theo viewport.
-  Chừa chỗ cho 2 nút vàng hai bên.
+  Frame chung cho activity: Full width linh hoạt theo màn hình.
+  Không còn trừ lề cho 2 nút vàng hai bên.
 */
 .lms-frame__inner {
   position: relative;
-  width: min(1440px, calc(100vw - 170px));
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 
 /*
-  Quan trọng:
-  Không dùng overflow: hidden nữa vì nó cắt IDE/task rộng.
+  Khung chứa activity: Không còn hộp viền trắng cố định nữa,
+  để layout con (Scratch workspace, IDE...) trải rộng tự nhiên và hiện đại.
 */
 .lms-frame__card {
   width: 100%;
-  min-height: 620px;
-  border-radius: 18px;
-  background: #f5f5f6;
-  box-shadow: 0 10px 28px rgba(18, 24, 40, 0.12);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   overflow: visible;
 }
 
 .lms-frame__content {
   width: 100%;
-  min-height: 620px;
-  padding: 24px 28px;
+  padding: 0;
   box-sizing: border-box;
   overflow: visible;
-}
-
-/*
-  Chặn child component vượt quá frame.
-  Nếu component quá rộng, nó scale theo container thay vì bị cắt.
-*/
-.lms-frame__content > * {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.lms-frame__side {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 54px;
-  height: 60px;
-  border: 0;
-  border-radius: 14px;
-  background: #f6d031;
-  color: #1f2937;
-  font-size: 40px;
-  line-height: 1;
-  cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-  z-index: 20;
-}
-
-.lms-frame__side--left {
-  left: -78px;
-}
-
-.lms-frame__side--right {
-  right: -78px;
-}
-
-.lms-frame__side:disabled {
-  opacity: 0.35;
-  cursor: default;
 }
 
 .lms-frame__floating-actions {
@@ -220,66 +179,29 @@
 */
 @media (max-width: 1200px) {
   .lms-frame {
-    padding: 28px 18px 24px;
+    padding: 14px 16px 20px;
   }
 
   .lms-frame__inner {
-    width: calc(100vw - 140px);
+    width: 100%;
   }
 
   .lms-frame__bottom {
-    width: calc(100vw - 140px);
-  }
-
-  .lms-frame__side {
-    width: 48px;
-    height: 54px;
-    font-size: 36px;
-  }
-
-  .lms-frame__side--left {
-    left: -64px;
-  }
-
-  .lms-frame__side--right {
-    right: -64px;
+    width: 100%;
   }
 }
 
 @media (max-width: 900px) {
   .lms-frame {
-    padding: 22px 14px 20px;
+    padding: 10px 12px 16px;
   }
 
   .lms-frame__inner {
-    width: calc(100vw - 28px);
-  }
-
-  .lms-frame__card,
-  .lms-frame__content {
-    min-height: 520px;
-  }
-
-  .lms-frame__content {
-    padding: 18px;
-  }
-
-  .lms-frame__side {
-    width: 42px;
-    height: 48px;
-    font-size: 34px;
-  }
-
-  .lms-frame__side--left {
-    left: 8px;
-  }
-
-  .lms-frame__side--right {
-    right: 8px;
+    width: 100%;
   }
 
   .lms-frame__bottom {
-    width: calc(100vw - 28px);
+    width: 100%;
   }
 
   .lms-frame__next {

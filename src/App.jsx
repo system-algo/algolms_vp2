@@ -5,6 +5,7 @@ import H5pPlayerPage from './pages/H5pPlayerPage.jsx';
 import TeacherDashboard from './pages/TeacherDashboard.jsx';
 import BlockGameTask from './components/BlockGame/BlockGameTask.jsx';
 import ScratchTask from './activities/ScratchTask.jsx';
+import GeneratedPageShell from './templates/GeneratedPageShell.jsx';
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
 
 
@@ -759,6 +760,21 @@ export default function App() {
           onBackToCourses={backToCourseCatalog}
         />
       </Suspense>
+    );
+  }
+
+  if (courseId && pageId) {
+    return (
+      <GeneratedPageShell
+        manifestUrl={`/courses/${courseId}/${lessonId}/pages/${pageId}/manifest.json`}
+        pageInstanceUrl={`/courses/${courseId}/${lessonId}/pages/${pageId}/page.instance.json`}
+        courseId={courseId}
+        lessonId={lessonId}
+        pageId={pageId}
+        onBackToPages={backToLessonCatalog}
+        onBackToLessons={backToLessonCatalog}
+        onBackToCourses={backToCourseCatalog}
+      />
     );
   }
 

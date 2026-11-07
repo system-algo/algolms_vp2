@@ -277,23 +277,104 @@ export default function GeneratedPageShell({
 
     async function loadPage() {
       try {
-        const manifestResponse = await fetch(manifestUrl);
-
-        if (!manifestResponse.ok) {
-          throw new Error(`Cannot load ${manifestUrl}`);
+        let nextManifest = null;
+        try {
+          const manifestResponse = await fetch(manifestUrl);
+          if (manifestResponse.ok) {
+            nextManifest = await manifestResponse.json();
+          }
+        } catch {
+          // Continue to Supabase lookup
         }
 
-        const nextManifest = await manifestResponse.json();
+        // Online-First: Fetch tasks from Supabase vp_activities
+        if (!nextManifest) {
+          const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL || '';
+          const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-        const pageInstanceResponse = await fetch(pageInstanceUrl);
-        const nextPageInstance = pageInstanceResponse.ok
-          ? await pageInstanceResponse.json()
-          : {
-            schemaVersion: 0,
-            pageInstanceId: 'legacy',
-            frameConfig: {},
-            taskRenderers: {},
+          if (supabaseUrl && supabaseKey) {
+            try {
+              const queryUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/vp_activities?or=(activity_id.like.${encodeURIComponent(pageId + '%')},course_id.eq.${encodeURIComponent(courseId)})&order=level_position.asc`;
+              const res = await fetch(queryUrl, {
+                headers: {
+                  apikey: supabaseKey,
+                  Authorization: `Bearer ${supabaseKey}`,
+                },
+              });
+              if (res.ok) {
+                const rows = await res.json();
+                const pageRows = Array.isArray(rows)
+                  ? rows.filter((r) => r.activity_id && r.activity_id.startsWith(pageId))
+                  : [];
+                if (pageRows.length > 0) {
+                  nextManifest = {
+                    metadata: {
+                      courseTitle: courseId,
+                      lessonTitle: pageRows[0].lesson_title || lessonId,
+                      pageTitle: pageRows[0].level_title || pageId,
+                    },
+                    tasks: pageRows.map((r) => ({
+                      id: r.activity_id,
+                      taskId: r.activity_id,
+                      title: r.level_title,
+                      selectedType: r.level_type || 'scratch',
+                      activityType: r.level_type || 'scratch',
+                      requirements: r.requirements || [],
+                      media: r.media || [],
+                      starter_project_id: r.starter_project_id,
+                      starter_blocks: r.starter_blocks,
+                      demo_project_id: r.demo_project_id,
+                      command_keys: r.command_keys || [],
+                      states: [
+                        {
+                          id: `${r.activity_id}_state_1`,
+                          stateId: `${r.activity_id}_state_1`,
+                          type: r.level_type || 'scratch',
+                          selectedType: r.level_type || 'scratch',
+                          requirements: r.requirements || [],
+                          media: r.media || [],
+                          starter_project_id: r.starter_project_id,
+                          starter_blocks: r.starter_blocks,
+                          demo_project_id: r.demo_project_id,
+                          command_keys: r.command_keys || [],
+                        },
+                      ],
+                    })),
+                  };
+                }
+              }
+            } catch (dbErr) {
+              console.warn('Could not query vp_activities:', dbErr);
+            }
+          }
+        }
+
+        if (!nextManifest) {
+          nextManifest = {
+            metadata: {
+              courseTitle: courseId,
+              lessonTitle: lessonId,
+              pageTitle: pageId,
+            },
+            tasks: [],
           };
+        }
+
+        let nextPageInstance = {
+          schemaVersion: 0,
+          pageInstanceId: 'legacy',
+          frameConfig: {},
+          taskRenderers: {},
+        };
+
+        try {
+          const pageInstanceResponse = await fetch(pageInstanceUrl);
+          if (pageInstanceResponse.ok) {
+            nextPageInstance = await pageInstanceResponse.json();
+          }
+        } catch {
+          // Default empty pageInstance is fine
+        }
 
         if (isCancelled) return;
 
@@ -425,6 +506,52 @@ export default function GeneratedPageShell({
           Back to pages
         </button>
       </main>
+    );
+  }
+
+  if (manifest && tasks.length === 0) {
+    return (
+      <div className="app-shell">
+        <TopNavigation
+          title={pageTitle}
+          courseId={courseId}
+          courseTitle={courseTitle}
+          moduleId={lessonId}
+          lessonTitle={lessonTitle}
+          pageId={pageId}
+          pageTitle={pageTitle}
+          tasks={[]}
+          currentTaskIndex={0}
+          completedTaskIds={completedTaskIds}
+          onBackToCatalog={onBackToPages}
+          onBackToCourses={onBackToCourses}
+        />
+        <main style={{ padding: 48, textAlign: 'center', fontFamily: 'Nunito, Arial, sans-serif' }}>
+          <h2>Trang {pageId}</h2>
+          <p style={{ color: '#64748b', fontSize: 16, marginTop: 8 }}>
+            Chưa có bài tập nào trong cơ sở dữ liệu cho trang này.
+          </p>
+          <p style={{ color: '#94a3b8', fontSize: 14, marginTop: 4 }}>
+            (Hãy import dữ liệu các task vào bảng <code>vp_activities</code> trên Supabase để hiển thị bài tập)
+          </p>
+          <button
+            type="button"
+            onClick={onBackToPages}
+            style={{
+              marginTop: 20,
+              padding: '10px 24px',
+              backgroundColor: '#3b82f6',
+              color: '#fff',
+              border: 'none',
+              borderRadius: 8,
+              cursor: 'pointer',
+              fontWeight: 600,
+            }}
+          >
+            Quay lại bài học
+          </button>
+        </main>
+      </div>
     );
   }
 

@@ -1,3 +1,4 @@
+import { getMainPlatformSignOutUrl } from '../lib/authConfig';
 import { useEffect, useState, useMemo } from 'react';
 import TeacherCoursePreview from '../components/TeacherCoursePreview.jsx';
 import customNames from '../config/mapping.json';
@@ -187,34 +188,7 @@ export default function TeacherDashboard() {
 
   const handleLogout = () => {
     localStorage.clear();
-
-    let platformOrigin = '';
-
-    // First try document.referrer to get the actual frontend origin
-    if (document.referrer) {
-      try {
-        const refUrl = new URL(document.referrer);
-        if (refUrl.origin) {
-          platformOrigin = refUrl.origin;
-        }
-      } catch (e) {
-        // ignore
-      }
-    }
-
-    // Heuristics fallback: detect if running locally vs deployed production environment
-    if (!platformOrigin || platformOrigin.includes(window.location.hostname)) {
-      const hostname = window.location.hostname;
-      if (hostname === 'localhost' || hostname === '127.0.0.1') {
-        platformOrigin = 'http://localhost:5174';
-      } else {
-        platformOrigin = 'https://algorithmics-demo.vercel.app';
-      }
-    }
-
-    const targetUrl = `${platformOrigin}/auth/sign-out`;
-
-    // Redirect top-level window if inside iframe
+    const targetUrl = getMainPlatformSignOutUrl();
     try {
       if (window.self !== window.top) {
         window.top.location.href = targetUrl;

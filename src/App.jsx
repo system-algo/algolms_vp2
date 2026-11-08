@@ -1,3 +1,4 @@
+import { getMainPlatformUrl } from './lib/authConfig';
 import { useEffect, useMemo, useRef, useState, lazy, Suspense } from 'react';
 import Dashboard from './pages/Dashboard.jsx';
 import { getVp2UnlockedLessonLimit, getVp2PageLessonNumber } from './lib/vp2LessonAccess.js';
@@ -7,57 +8,93 @@ import BlockGameTask from './components/BlockGame/BlockGameTask.jsx';
 import ScratchTask from './activities/ScratchTask.jsx';
 import GeneratedPageShell from './templates/GeneratedPageShell.jsx';
 import { generatedPages as generatedPageRegistry } from './generated-pages/registry.js';
+import { installTabIsolatedLmsStorage } from './security/secureLmsHandoffReceiver.js';
 
+installTabIsolatedLmsStorage();
 
-const SESSION_DURATION_MS = 60 * 60 * 1000;
-const SESSION_CHECK_INTERVAL_MS = 1000;
+// Synchronously persist session query parameters on first load (e.g. incognito window or direct URL redirect)
+(function initSessionFromUrl() {
+  if (typeof window === 'undefined') return;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('studentEmail') || params.get('email');
+    const incomingCourseId = params.get('courseId');
+    const supabaseUrl = params.get('supabaseUrl');
+    const supabaseKey = params.get('supabaseKey');
+    const accessToken = params.get('accessToken');
+    const backendUrl = params.get('backendUrl');
 
-const SESSION_ACTIVE_KEY = 'algo_vp_session_active';
-const SESSION_DEADLINE_KEY = 'algo_vp_session_deadline';
-const SESSION_EXPIRED_KEY = 'algo_vp_session_expired';
-
-const MAIN_LOGIN_URL =
-  import.meta.env.VITE_MAIN_LOGIN_URL ||
-  'https://learn.algo.edu.vn';
-
-function clearStoredLmsSession() {
-  localStorage.removeItem('lms_student_email');
-  localStorage.removeItem('lms_course_id');
-  localStorage.removeItem('lms_supabase_url');
-  localStorage.removeItem('lms_supabase_key');
-  localStorage.removeItem('lms_access_token');
-  localStorage.removeItem('lms_backend_url');
-  localStorage.removeItem('lms_user_role');
-}
-
-function buildMainPlatformUrl(reason) {
-  const separator = MAIN_LOGIN_URL.includes('?') ? '&' : '?';
-  return `${MAIN_LOGIN_URL}${separator}session=${encodeURIComponent(reason)}`;
-}
+    if (email) {
+      const normalizedEmail = email.trim().toLowerCase();
+      localStorage.setItem('lms_student_email', normalizedEmail);
+      localStorage.setItem('lms_user_email', normalizedEmail);
+    }
+    if (incomingCourseId) localStorage.setItem('lms_course_id', incomingCourseId);
+    if (supabaseUrl) localStorage.setItem('lms_supabase_url', supabaseUrl);
+    if (supabaseKey) localStorage.setItem('lms_supabase_key', supabaseKey);
+    if (accessToken) {
+      localStorage.setItem('lms_access_token', accessToken);
+      sessionStorage.setItem('lms_access_token', accessToken);
+    }
+    if (backendUrl) localStorage.setItem('lms_backend_url', backendUrl);
+  } catch {}
+})();
 
 function getRouteFromUrl() {
   const params = new URLSearchParams(window.location.search);
+  let courseId = params.get('course') || '';
 
-  const courseFromUrl = params.get('course');
+  if (!courseId && typeof window !== 'undefined') {
+    const host = window.location.hostname;
+    const sub = host.split('.')[0].toUpperCase();
+    if (['CK', 'VP', 'VP2', 'DL', 'GD', 'WD', 'PTSY1', 'PTSY2', 'PTPY1', 'PTPY2', 'FED', 'CS50X', 'CS50P'].includes(sub)) {
+      courseId = sub;
+    }
+  }
+
   const lessonFromUrl = params.get('lesson');
   const pageFromUrl = params.get('page');
 
-  if (courseFromUrl) sessionStorage.setItem('lms_active_course', courseFromUrl);
+  if (courseId) sessionStorage.setItem('lms_active_course', courseId);
   if (lessonFromUrl) sessionStorage.setItem('lms_active_lesson', lessonFromUrl);
   if (pageFromUrl) sessionStorage.setItem('lms_active_page', pageFromUrl);
 
-  const courseId = courseFromUrl || sessionStorage.getItem('lms_active_course') || '';
-  const lessonId = lessonFromUrl || sessionStorage.getItem('lms_active_lesson') || '';
-  const pageId = pageFromUrl || sessionStorage.getItem('lms_active_page') || '';
-
   return {
-    courseId,
-    lessonId,
-    pageId,
+    courseId: courseId || sessionStorage.getItem('lms_active_course') || 'VP2',
+    lessonId: lessonFromUrl || sessionStorage.getItem('lms_active_lesson') || '',
+    pageId: pageFromUrl || sessionStorage.getItem('lms_active_page') || '',
     h5pActivityId: params.get('h5p') || '',
   };
 }
 
+const CHILD_SESSION_DURATION_MS = 60 * 60 * 1000;
+const CHILD_SESSION_CHECK_INTERVAL_MS = 1000;
+const CHILD_SESSION_DEADLINE_KEY = 'algo_child_session_deadline';
+const CHILD_SESSION_EXPIRED_KEY = 'algo_child_session_expired';
+
+const MAIN_LOGIN_URL = getMainPlatformUrl();
+
+function buildSupabaseHeaders(apiKey, accessToken) {
+  const headers = {
+    apikey: apiKey,
+  };
+
+  const normalizedToken = String(accessToken || '').trim();
+
+  // Supabase publishable keys belong in the apikey header.
+  // Only attach Authorization when a real JWT access token is available.
+  if (
+    normalizedToken &&
+    normalizedToken !== apiKey &&
+    normalizedToken.split('.').length === 3
+  ) {
+    headers.Authorization = `Bearer ${normalizedToken}`;
+  } else if (apiKey) {
+    headers.Authorization = `Bearer ${apiKey}`;
+  }
+
+  return headers;
+}
 
 export default function App() {
   const initialRoute = getRouteFromUrl();
@@ -75,7 +112,6 @@ export default function App() {
   const [lessonAccess, setLessonAccess] = useState({ route: '', status: 'checking' });
   const sessionRedirectStartedRef = useRef(false);
 
-
   const GeneratedPage = useMemo(() => {
     const pageLoader = generatedPageRegistry?.[courseId]?.[lessonId]?.[pageId];
     if (!pageLoader) return null;
@@ -83,28 +119,7 @@ export default function App() {
   }, [courseId, lessonId, pageId]);
 
   useEffect(() => {
-    // Wait for the portal's verified postMessage handoff instead of redirecting
-    // before the identity and JWT have arrived.
-    if (window.__algoSecureLmsHandoffPending) return;
     const params = new URLSearchParams(window.location.search);
-
-    // Bypass session check for scratch preview, game preview, or local development
-    if (
-      params.get('scratch') ||
-      params.get('game') ||
-      window.location.hostname === 'localhost' ||
-      window.location.hostname === '127.0.0.1'
-    ) {
-      if (!sessionStorage.getItem(SESSION_ACTIVE_KEY)) {
-        sessionStorage.setItem(SESSION_ACTIVE_KEY, '1');
-        sessionStorage.setItem(SESSION_DEADLINE_KEY, String(Date.now() + SESSION_DURATION_MS));
-        localStorage.setItem('lms_user_role', 'student');
-      }
-      setLoadingRole(false);
-      if (params.get('scratch') || params.get('game')) {
-        return;
-      }
-    }
 
     const email = params.get('studentEmail');
     const incomingCourseId = params.get('courseId');
@@ -113,309 +128,220 @@ export default function App() {
     const accessToken = params.get('accessToken');
     const backendUrl = params.get('backendUrl');
 
-    const normalizedEmail = email?.trim().toLowerCase() || '';
-
-    const hasIncomingSession = Boolean(
-      normalizedEmail &&
-      supabaseUrl &&
-      supabaseKey,
+    const hasIncomingSessionPayload = Boolean(
+      email ||
+      incomingCourseId ||
+      supabaseUrl ||
+      supabaseKey ||
+      accessToken ||
+      backendUrl,
     );
 
-    function redirectToMainPlatform(reason) {
-      if (sessionRedirectStartedRef.current) {
-        return;
-      }
-
-      sessionRedirectStartedRef.current = true;
-
-      clearStoredLmsSession();
-
-      sessionStorage.removeItem(SESSION_ACTIVE_KEY);
-      sessionStorage.removeItem(SESSION_DEADLINE_KEY);
-
-      if (reason === 'expired') {
-        sessionStorage.setItem(SESSION_EXPIRED_KEY, '1');
-      }
-
-      window.location.replace(
-        buildMainPlatformUrl(reason),
-      );
-    }
-
-    if (hasIncomingSession) {
-      localStorage.setItem(
-        'lms_student_email',
-        normalizedEmail,
-      );
-
-      localStorage.removeItem(
-        'lms_user_role',
-      );
-
-      if (incomingCourseId) {
-        localStorage.setItem(
-          'lms_course_id',
-          incomingCourseId,
-        );
-      }
-
-      localStorage.setItem(
-        'lms_supabase_url',
-        supabaseUrl,
-      );
-
-      localStorage.setItem(
-        'lms_supabase_key',
-        supabaseKey,
-      );
-
-      if (accessToken) {
-        localStorage.setItem(
-          'lms_access_token',
-          accessToken,
-        );
-      } else {
-        localStorage.removeItem(
-          'lms_access_token',
-        );
-      }
-
-      if (backendUrl) {
-        localStorage.setItem(
-          'lms_backend_url',
-          backendUrl,
-        );
-      } else {
-        localStorage.removeItem(
-          'lms_backend_url',
-        );
-      }
+    /*
+     * Mỗi redirect mới từ trang chính sang project con
+     * sẽ bắt đầu một deadline mới là 1 giờ.
+     *
+     * Refresh project con không reset deadline vì deadline
+     * được giữ trong sessionStorage của project con.
+     */
+    if (hasIncomingSessionPayload) {
+      const nextDeadline = Date.now() + CHILD_SESSION_DURATION_MS;
 
       sessionStorage.setItem(
-        SESSION_ACTIVE_KEY,
-        '1',
-      );
-
-      sessionStorage.setItem(
-        SESSION_DEADLINE_KEY,
-        String(Date.now() + SESSION_DURATION_MS),
+        CHILD_SESSION_DEADLINE_KEY,
+        String(nextDeadline),
       );
 
       sessionStorage.removeItem(
-        SESSION_EXPIRED_KEY,
+        CHILD_SESSION_EXPIRED_KEY,
       );
 
       sessionRedirectStartedRef.current = false;
-    } else {
-      const hasActiveSession =
-        sessionStorage.getItem(
-          SESSION_ACTIVE_KEY,
-        ) === '1';
-
-      if (!hasActiveSession) {
-        redirectToMainPlatform('required');
-        return;
-      }
-
-      const storedRole =
-        localStorage.getItem('lms_user_role') ||
-        '';
-
-      const enforceDeadline =
-        storedRole !== 'teacher' &&
-        storedRole !== 'admin';
-
-      const storedDeadlineValue =
-        sessionStorage.getItem(
-          SESSION_DEADLINE_KEY,
-        );
-
-      const storedDeadline = storedDeadlineValue
-        ? Number(storedDeadlineValue)
-        : Number.NaN;
-
-      const sessionExpired =
-        sessionStorage.getItem(
-          SESSION_EXPIRED_KEY,
-        ) === '1' ||
-        (
-          enforceDeadline &&
-          (
-            !Number.isFinite(storedDeadline) ||
-            storedDeadline <= Date.now()
-          )
-        );
-
-      if (sessionExpired) {
-        redirectToMainPlatform('expired');
-        return;
-      }
     }
 
-    // Remove transferred credentials from the browser address bar
-    // after they have been stored locally.
-    if (window.location.search && hasIncomingSession) {
-      const currentUrl = new URL(window.location.href);
-      currentUrl.searchParams.delete('studentEmail');
-      currentUrl.searchParams.delete('supabaseUrl');
-      currentUrl.searchParams.delete('supabaseKey');
-      currentUrl.searchParams.delete('accessToken');
-      currentUrl.searchParams.delete('backendUrl');
-      currentUrl.searchParams.delete('courseId');
+    if (email) {
+      localStorage.setItem('lms_student_email', email);
+      localStorage.setItem('lms_user_email', email);
+    } else if (
+      !localStorage.getItem('lms_student_email') &&
+      !localStorage.getItem('lms_user_email')
+    ) {
+      localStorage.setItem('lms_student_email', 'guest@algo.edu.vn');
+      localStorage.setItem('lms_user_email', 'guest@algo.edu.vn');
+    }
 
-      window.history.replaceState(
-        { path: currentUrl.toString() },
-        '',
-        currentUrl.toString(),
-      );
+    if (incomingCourseId) {
+      localStorage.setItem('lms_course_id', incomingCourseId);
+    }
+
+    if (supabaseUrl) {
+      localStorage.setItem('lms_supabase_url', supabaseUrl);
+    }
+
+    if (supabaseKey) {
+      localStorage.setItem('lms_supabase_key', supabaseKey);
+    }
+
+    if (accessToken) {
+      localStorage.setItem('lms_access_token', accessToken);
+    }
+
+    if (backendUrl) {
+      localStorage.setItem('lms_backend_url', backendUrl);
+    }
+
+    /*
+     * Chỉ xóa các param session/auth khỏi thanh địa chỉ,
+     * giữ lại các param routing (course, lesson, page, h5p, game, scratch)
+     * để reload hoặc copy link không bị mất state bài học.
+     */
+    if (window.location.search) {
+      const searchParams = new URLSearchParams(window.location.search);
+
+      searchParams.delete('studentEmail');
+      searchParams.delete('courseId');
+      searchParams.delete('supabaseUrl');
+      searchParams.delete('supabaseKey');
+      searchParams.delete('accessToken');
+      searchParams.delete('backendUrl');
+
+      const remainingQuery = searchParams.toString();
+      const cleanUrl =
+        window.location.protocol +
+        '//' +
+        window.location.host +
+        window.location.pathname +
+        (remainingQuery ? `?${remainingQuery}` : '');
+
+      if (cleanUrl !== window.location.href) {
+        window.history.replaceState(
+          { path: cleanUrl },
+          '',
+          cleanUrl,
+        );
+      }
     }
 
     const activeEmail =
-      normalizedEmail ||
-      localStorage.getItem(
-        'lms_student_email',
-      ) ||
-      '';
+      email ||
+      localStorage.getItem('lms_student_email') ||
+      localStorage.getItem('lms_user_email') ||
+      'guest@algo.edu.vn';
 
     const activeUrl =
       supabaseUrl ||
-      localStorage.getItem(
-        'lms_supabase_url',
-      ) ||
-      '';
+      localStorage.getItem('lms_supabase_url');
 
     const activeKey =
       supabaseKey ||
-      localStorage.getItem(
-        'lms_supabase_key',
-      ) ||
-      '';
+      localStorage.getItem('lms_supabase_key');
 
     const activeToken =
       accessToken ||
-      localStorage.getItem(
-        'lms_access_token',
-      ) ||
-      activeKey;
+      localStorage.getItem('lms_access_token') ||
+      '';
 
-    if (!activeEmail || !activeUrl || !activeKey) {
-      redirectToMainPlatform('required');
-      return;
-    }
+    if (activeUrl && activeKey && activeEmail) {
+      async function determineRole() {
+        let parsedRole = 'student';
 
-    async function determineRole() {
-      let parsedRole = 'student';
-
-      try {
-        // 1. Try user_profiles table.
-        const profileUrl =
-          `${activeUrl}/rest/v1/user_profiles` +
-          `?email=eq.${encodeURIComponent(activeEmail)}` +
-          '&select=role';
-
-        const profileRes = await fetch(
-          profileUrl,
-          {
-            headers: {
-              apikey: activeKey,
-              Authorization:
-                `Bearer ${activeToken}`,
-            },
-          },
-        );
-
-        if (profileRes.ok) {
-          const profileData =
-            await profileRes.json();
-
-          if (
-            Array.isArray(profileData) &&
-            profileData[0]?.role
-          ) {
-            parsedRole = String(
-              profileData[0].role,
-            )
-              .toLowerCase()
-              .trim();
-          }
-        } else {
-          console.warn(
-            'LMS user_profiles check returned:',
-            profileRes.status,
-          );
-        }
-      } catch (error) {
-        console.warn(
-          'LMS user_profiles check failed:',
-          error,
-        );
-      }
-
-      // 2. Fallback: check teacher membership.
-      if (parsedRole === 'student') {
         try {
-          const memberUrl =
-            `${activeUrl}/rest/v1/classroom_course_members` +
+          const profileUrl =
+            `${activeUrl}/rest/v1/user_profiles` +
             `?email=eq.${encodeURIComponent(activeEmail)}` +
-            '&role=eq.teacher' +
-            '&select=role' +
-            '&limit=1';
+            '&select=role';
 
-          const memberRes = await fetch(
-            memberUrl,
+          const profileRes = await fetch(
+            profileUrl,
             {
-              headers: {
-                apikey: activeKey,
-                Authorization:
-                  `Bearer ${activeToken}`,
-              },
+              headers: buildSupabaseHeaders(
+                activeKey,
+                activeToken,
+              ),
             },
           );
 
-          if (memberRes.ok) {
-            const memberData =
-              await memberRes.json();
+          if (profileRes.ok) {
+            const profileData = await profileRes.json();
 
             if (
-              Array.isArray(memberData) &&
-              memberData.length > 0
+              profileData &&
+              profileData[0] &&
+              profileData[0].role
             ) {
-              parsedRole = 'teacher';
+              parsedRole = String(
+                profileData[0].role,
+              )
+                .toLowerCase()
+                .trim();
             }
-          } else {
-            console.warn(
-              'LMS classroom_course_members check returned:',
-              memberRes.status,
-            );
           }
         } catch (error) {
           console.warn(
-            'LMS classroom_course_members check failed:',
+            'LMS user_profiles check failed:',
             error,
           );
         }
-      }
 
-      // 3. Existing fallback heuristics.
-      if (parsedRole === 'student') {
-        const emailLower =
-          activeEmail.toLowerCase();
+        /*
+         * Fallback: kiểm tra người dùng có role teacher
+         * trong classroom_course_members hay không.
+         */
+        if (parsedRole === 'student') {
+          try {
+            const memberUrl =
+              `${activeUrl}/rest/v1/classroom_course_members` +
+              `?email=eq.${encodeURIComponent(activeEmail)}` +
+              '&role=eq.teacher&select=role';
 
-        if (
-          emailLower.includes('teacher') ||
-          emailLower.includes('academic') ||
-          emailLower.includes('kevin')
-        ) {
-          parsedRole = 'teacher';
-        } else if (
-          emailLower.includes('admin')
-        ) {
-          parsedRole = 'admin';
+            const memberRes = await fetch(
+              memberUrl,
+              {
+                headers: buildSupabaseHeaders(
+                  activeKey,
+                  activeToken,
+                ),
+              },
+            );
+
+            if (memberRes.ok) {
+              const memberData = await memberRes.json();
+
+              if (
+                Array.isArray(memberData) &&
+                memberData.length > 0
+              ) {
+                parsedRole = 'teacher';
+              }
+            }
+          } catch (error) {
+            console.warn(
+              'LMS classroom_course_members check failed:',
+              error,
+            );
+          }
         }
+
+        console.log(
+          'LMS final parsed user role:',
+          parsedRole,
+        );
+
+        localStorage.setItem(
+          'lms_user_role',
+          parsedRole,
+        );
+
+        setRole(parsedRole);
+        setLoadingRole(false);
       }
+
+      determineRole();
+    } else {
+      const parsedRole = 'student';
 
       console.log(
-        'LMS final parsed user role:',
+        'LMS final parsed user role (no authenticated role source):',
         parsedRole,
       );
 
@@ -427,10 +353,14 @@ export default function App() {
       setRole(parsedRole);
       setLoadingRole(false);
     }
-
-    void determineRole();
   }, []);
 
+  /*
+   * Timer riêng của project con.
+   *
+   * Chỉ chạy cho student.
+   * Teacher và admin không bị timeout.
+   */
   useEffect(() => {
     if (loadingRole || role !== 'student') {
       return;
@@ -438,43 +368,89 @@ export default function App() {
 
     sessionRedirectStartedRef.current = false;
 
-    function redirectExpiredSession() {
+    function redirectToMainLogin() {
       if (sessionRedirectStartedRef.current) {
         return;
       }
 
       sessionRedirectStartedRef.current = true;
 
-      clearStoredLmsSession();
+      sessionStorage.removeItem(
+        CHILD_SESSION_DEADLINE_KEY,
+      );
 
-      sessionStorage.removeItem(SESSION_ACTIVE_KEY);
-      sessionStorage.removeItem(SESSION_DEADLINE_KEY);
-      sessionStorage.setItem(SESSION_EXPIRED_KEY, '1');
+      sessionStorage.setItem(
+        CHILD_SESSION_EXPIRED_KEY,
+        '1',
+      );
+
+      /*
+       * Xóa thông tin đăng nhập đã được chuyển từ
+       * trang chính sang project con.
+       */
+      localStorage.removeItem('lms_student_email');
+      localStorage.removeItem('lms_course_id');
+      localStorage.removeItem('lms_supabase_url');
+      localStorage.removeItem('lms_supabase_key');
+      localStorage.removeItem('lms_access_token');
+      localStorage.removeItem('lms_backend_url');
+      localStorage.removeItem('lms_user_role');
+      localStorage.removeItem('lms_viewer_role');
+      localStorage.removeItem('lms_user_email');
+      localStorage.removeItem('lms_platform_origin');
+
+      const separator = MAIN_LOGIN_URL.includes('?')
+        ? '&'
+        : '?';
 
       window.location.replace(
-        buildMainPlatformUrl('expired'),
+        `${MAIN_LOGIN_URL}${separator}session=expired`,
       );
     }
 
-    const storedDeadline = Number(
-      sessionStorage.getItem(
-        SESSION_DEADLINE_KEY,
-      ),
-    );
-
+    /*
+     * Nếu session đã hết, sử dụng nút Back không được
+     * tự động bắt đầu thêm một giờ mới.
+     *
+     * Chỉ một redirect mới từ trang chính có query session
+     * mới xóa expired marker.
+     */
     if (
       sessionStorage.getItem(
-        SESSION_ACTIVE_KEY,
-      ) !== '1' ||
-      !Number.isFinite(storedDeadline)
+        CHILD_SESSION_EXPIRED_KEY,
+      ) === '1'
     ) {
-      redirectExpiredSession();
+      redirectToMainLogin();
       return;
     }
 
+    const storedValue = sessionStorage.getItem(
+      CHILD_SESSION_DEADLINE_KEY,
+    );
+
+    const storedDeadline = storedValue
+      ? Number(storedValue)
+      : Number.NaN;
+
+    /*
+     * Chưa có deadline thì bắt đầu tính một giờ
+     * kể từ lúc student mở project con.
+     */
+    const deadline =
+      Number.isFinite(storedDeadline) && storedDeadline > 0
+        ? storedDeadline
+        : Date.now() + CHILD_SESSION_DURATION_MS;
+
+    if (!Number.isFinite(storedDeadline) || storedDeadline <= 0) {
+      sessionStorage.setItem(
+        CHILD_SESSION_DEADLINE_KEY,
+        String(deadline),
+      );
+    }
+
     function checkSessionDeadline() {
-      if (Date.now() >= storedDeadline) {
-        redirectExpiredSession();
+      if (Date.now() >= deadline) {
+        redirectToMainLogin();
       }
     }
 
@@ -490,7 +466,7 @@ export default function App() {
 
     const intervalId = window.setInterval(
       checkSessionDeadline,
-      SESSION_CHECK_INTERVAL_MS,
+      CHILD_SESSION_CHECK_INTERVAL_MS,
     );
 
     window.addEventListener(
@@ -563,8 +539,6 @@ export default function App() {
     setPageId('');
     setH5pActivity(null);
   }
-
-
 
   function openH5pActivity(activity) {
     if (!activity) return;

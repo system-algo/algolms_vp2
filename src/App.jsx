@@ -38,10 +38,22 @@ function buildMainPlatformUrl(reason) {
 function getRouteFromUrl() {
   const params = new URLSearchParams(window.location.search);
 
+  const courseFromUrl = params.get('course');
+  const lessonFromUrl = params.get('lesson');
+  const pageFromUrl = params.get('page');
+
+  if (courseFromUrl) sessionStorage.setItem('lms_active_course', courseFromUrl);
+  if (lessonFromUrl) sessionStorage.setItem('lms_active_lesson', lessonFromUrl);
+  if (pageFromUrl) sessionStorage.setItem('lms_active_page', pageFromUrl);
+
+  const courseId = courseFromUrl || sessionStorage.getItem('lms_active_course') || '';
+  const lessonId = lessonFromUrl || sessionStorage.getItem('lms_active_lesson') || '';
+  const pageId = pageFromUrl || sessionStorage.getItem('lms_active_page') || '';
+
   return {
-    courseId: params.get('course') || '',
-    lessonId: params.get('lesson') || '',
-    pageId: params.get('page') || '',
+    courseId,
+    lessonId,
+    pageId,
     h5pActivityId: params.get('h5p') || '',
   };
 }
@@ -566,6 +578,10 @@ export default function App() {
   }
 
   function backToCourseCatalog() {
+    sessionStorage.removeItem('lms_active_course');
+    sessionStorage.removeItem('lms_active_lesson');
+    sessionStorage.removeItem('lms_active_page');
+    sessionStorage.removeItem('lms_active_task');
     window.history.pushState({}, '', '/');
     setCourseId('');
     setLessonId('');
@@ -574,6 +590,8 @@ export default function App() {
   }
 
   function backToLessonCatalog() {
+    sessionStorage.removeItem('lms_active_page');
+    sessionStorage.removeItem('lms_active_task');
     const nextUrl = `/?course=${encodeURIComponent(courseId)}`;
 
     window.history.pushState({}, '', nextUrl);
@@ -582,12 +600,15 @@ export default function App() {
     setH5pActivity(null);
   }
 
-
-
   function openPageFromDashboard(moduleId, pageId) {
-    const nextUrl = `/?course=${encodeURIComponent(courseId || 'VP2')}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(pageId)}`;
+    const cId = courseId || 'VP2';
+    sessionStorage.setItem('lms_active_course', cId);
+    sessionStorage.setItem('lms_active_lesson', moduleId);
+    sessionStorage.setItem('lms_active_page', pageId);
+    sessionStorage.setItem('lms_active_task', '1');
+    const nextUrl = `/?course=${encodeURIComponent(cId)}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(pageId)}&task=1`;
     window.history.pushState({}, '', nextUrl);
-    setCourseId(courseId || 'VP2');
+    setCourseId(cId);
     setLessonId(moduleId);
     setPageId(pageId);
   }

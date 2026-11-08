@@ -140,7 +140,7 @@ export default function GeneratedPageShell({
   const getInitialTaskIndex = () => {
     try {
       const p = new URLSearchParams(window.location.search);
-      const val = p.get('task') || p.get('level') || p.get('t');
+      const val = p.get('task') || p.get('level') || p.get('t') || sessionStorage.getItem('lms_active_task');
       if (val) {
         const num = parseInt(val, 10);
         if (!isNaN(num) && num > 0) {
@@ -157,12 +157,47 @@ export default function GeneratedPageShell({
   const updateUrlTaskParam = useCallback((newIndex) => {
     try {
       const currentUrl = new URL(window.location.href);
+      if (courseId) currentUrl.searchParams.set('course', courseId);
+      if (lessonId) currentUrl.searchParams.set('lesson', lessonId);
+      if (pageId) currentUrl.searchParams.set('page', pageId);
       currentUrl.searchParams.set('task', String(newIndex + 1));
-      window.history.replaceState({}, '', currentUrl.toString());
+      window.history.replaceState({}, '', `${currentUrl.pathname}${currentUrl.search}`);
+      sessionStorage.setItem('lms_active_task', String(newIndex + 1));
     } catch (e) {
       console.warn('Could not update URL task param:', e);
     }
-  }, []);
+  }, [courseId, lessonId, pageId]);
+
+  // Ensure full route is always present in address bar
+  useEffect(() => {
+    try {
+      const currentUrl = new URL(window.location.href);
+      let changed = false;
+      if (courseId && currentUrl.searchParams.get('course') !== courseId) {
+        currentUrl.searchParams.set('course', courseId);
+        changed = true;
+      }
+      if (lessonId && currentUrl.searchParams.get('lesson') !== lessonId) {
+        currentUrl.searchParams.set('lesson', lessonId);
+        changed = true;
+      }
+      if (pageId && currentUrl.searchParams.get('page') !== pageId) {
+        currentUrl.searchParams.set('page', pageId);
+        changed = true;
+      }
+      const taskStr = String(taskIndex + 1);
+      if (currentUrl.searchParams.get('task') !== taskStr) {
+        currentUrl.searchParams.set('task', taskStr);
+        changed = true;
+      }
+      if (changed) {
+        window.history.replaceState({}, '', `${currentUrl.pathname}${currentUrl.search}`);
+      }
+      sessionStorage.setItem('lms_active_task', taskStr);
+    } catch (e) {
+      console.warn('Could not ensure route in URL:', e);
+    }
+  }, [courseId, lessonId, pageId, taskIndex]);
 
   useEffect(() => {
     const handlePopState = () => {

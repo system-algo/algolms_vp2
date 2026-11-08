@@ -86,11 +86,27 @@
         </shadow>
       </value>
     </block>
+    <block type="looks_say">
+      <value name="MESSAGE">
+        <shadow type="text">
+          <field name="TEXT">Hello!</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_show"/>
+    <block type="looks_hide"/>
   </category>
   <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
     <block type="event_whenflagclicked"/>
   </category>
   <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
+    <block type="control_wait">
+      <value name="DURATION">
+        <shadow type="math_positive_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
   </category>
 </xml>`;
 
@@ -176,7 +192,6 @@
       document.head.appendChild(style);
 
       // 2. Native Blockly updateToolbox hook
-      let toolboxUpdated = false;
       function applyBlocklyToolbox() {
         if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
         const ws = window.Blockly.getMainWorkspace();
@@ -185,34 +200,13 @@
         if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
-          if (levelParam === '1') {
-            ws.updateToolbox(LEVEL_1_XML);
-            toolboxUpdated = true;
-            return true;
-          } else if (levelParam === '2' || levelParam === '3') {
+          if (levelParam === '2' || levelParam === '3' || (allowedCategories.length === 2 && allowedCategories.includes('looks') && allowedCategories.includes('events'))) {
             ws.updateToolbox(LEVEL_2_XML);
-            toolboxUpdated = true;
             return true;
-          } else if (ws.options.languageTree) {
-            // General level category filtering
-            const serializer = new XMLSerializer();
-            const xmlStr = serializer.serializeToString(ws.options.languageTree);
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlStr, 'text/xml');
-            const categories = Array.from(xmlDoc.querySelectorAll('category'));
-            let modified = false;
-            for (const cat of categories) {
-              const id = (cat.getAttribute('id') || cat.getAttribute('name') || '').toLowerCase();
-              if (disallowed.includes(id)) {
-                cat.parentNode.removeChild(cat);
-                modified = true;
-              }
-            }
-            if (modified) {
-              ws.updateToolbox(serializer.serializeToString(xmlDoc));
-              toolboxUpdated = true;
-              return true;
-            }
+          } else {
+            // M1 Basic Toolbox (Motion, Looks, Events, Control)
+            ws.updateToolbox(LEVEL_1_XML);
+            return true;
           }
         } catch (err) {
           console.warn('[AlgoLMS Bridge] updateToolbox error:', err);
@@ -227,7 +221,7 @@
         if (param && /^\d+$/.test(param) && param !== '8908684') {
           return `/starter-projects/18343/${param}.sb3`;
         }
-        if (lvl !== '1') {
+        if (lvl !== '1' && lvl !== '12') {
           return `/starter-projects/18343/level_${lvl}.sb3`;
         }
         return null;
@@ -254,7 +248,9 @@
               const title = filename.replace(/\.sb3?$/i, '');
               window.__scratchProjectLoader.props.onSetProjectTitle(title);
             }
-            setTimeout(applyBlocklyToolbox, 200);
+            setTimeout(applyBlocklyToolbox, 100);
+            setTimeout(applyBlocklyToolbox, 400);
+            setTimeout(applyBlocklyToolbox, 1000);
             return true;
           }
         } catch (e) {

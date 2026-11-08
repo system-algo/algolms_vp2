@@ -35,58 +35,59 @@ export default function ScratchTask({
   const [isDrawerOpen, setIsDrawerOpen] = useState(true);
   const [drawerWidth, setDrawerWidth] = useState(380);
   const [isResizing, setIsResizing] = useState(false);
-
-  // Accordion open/collapse state inside drawer
   const [isAccordionOpen, setIsAccordionOpen] = useState(true);
+  const [completedItems, setCompletedItems] = useState({});
 
-  const initialUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
-  const [editorUrl, setEditorUrl] = useState(initialUrl);
-
-  useEffect(() => {
-    const url = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
-    setEditorUrl(url);
-  }, [projectId, categoriesQuery, levelPosition]);
+  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 
+  // Reset checklist checkboxes when task switches
+  useEffect(() => {
+    setCompletedItems({});
+  }, [task?.activity_id, task?.id, task?.taskId, levelPosition]);
+
   const lowerTitle = (taskTitle || '').toLowerCase();
+  const isAutoCheck = levelPosition >= 9 && levelPosition <= 11;
 
   // Modal confirm state
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Extract checklist criteria from task instructions or vp_activities
-  const [completedItems, setCompletedItems] = useState({});
 
   // Checklist from vp_activities requirements or default fallback
   const checklistItems = React.useMemo(() => {
     if (Array.isArray(task?.requirements) && task.requirements.length > 0) {
       return task.requirements.map((item, idx) => ({
         id: item.id || `item_${idx + 1}`,
+        title: item.title || '',
         text: item.text || item.title || `Requirement ${idx + 1}`,
+        url: item.url || '',
       }));
     }
     if (lowerTitle.includes('potion')) {
       return [
-        { id: 'item_1', text: 'The potion sends a message' },
-        { id: 'item_2', text: 'The Sorceress receives the message' },
-        { id: 'item_3', text: 'Sorceress transformations' },
-        { id: 'item_4', text: 'Initial placement' },
+        { id: 'item_1', text: 'The potion sends a message', title: '', url: '' },
+        { id: 'item_2', text: 'The Sorceress receives the message', title: '', url: '' },
+        { id: 'item_3', text: 'Sorceress transformations', title: '', url: '' },
+        { id: 'item_4', text: 'Initial placement', title: '', url: '' },
       ];
     }
     if (lowerTitle.includes('knight')) {
       return [
-        { id: 'k_1', text: 'Initial placement' },
-        { id: 'k_2', text: 'The knight walks around one side of the tower' },
-        { id: 'k_3', text: 'The knight turns' },
-        { id: 'k_4', text: 'Loop' },
+        { id: 'k_1', text: 'Initial placement', title: '', url: '' },
+        { id: 'k_2', text: 'The knight walks around one side of the tower', title: '', url: '' },
+        { id: 'k_3', text: 'The knight turns', title: '', url: '' },
+        { id: 'k_4', text: 'Loop', title: '', url: '' },
       ];
     }
     return [
-      { id: 'c_1', text: 'Task requirements completed' },
-      { id: 'c_2', text: 'Check with teacher' },
+      { id: 'c_1', text: 'Task requirements completed', title: '', url: '' },
+      { id: 'c_2', text: 'Check with teacher', title: '', url: '' },
     ];
   }, [task?.requirements, lowerTitle]);
+
+  const previewMediaUrl = task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
+  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
 
   const toggleCheckItem = (id) => {
     setCompletedItems((prev) => ({
@@ -404,7 +405,7 @@ export default function ScratchTask({
           <div className="scratch-task-drawer-header">
             <div className="scratch-task-drawer-title-row">
               <h2 className="scratch-task-drawer-title">
-                Tasks to check with the teacher
+                {isAutoCheck ? 'Tasks with automatic check' : 'Tasks to check with the teacher'}
               </h2>
               <button
                 type="button"
@@ -435,11 +436,11 @@ export default function ScratchTask({
             {isAccordionOpen && (
               <div className="scratch-task-card-body">
                 {/* Scratch Demo Player / Media Preview */}
-                {task?.media?.[0]?.url ? (
+                {previewMediaUrl ? (
                   <div style={{ marginBottom: '16px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
                     <img
-                      src={task.media[0].url}
-                      alt={task.media[0].title || 'Illustration'}
+                      src={previewMediaUrl}
+                      alt={previewMediaTitle}
                       style={{ width: '100%', height: 'auto', display: 'block' }}
                     />
                   </div>
@@ -460,7 +461,7 @@ export default function ScratchTask({
                 {/* Checklist */}
                 <div className="scratch-task-checklist">
                   <div className="scratch-task-checklist-heading">
-                    TASKS WILL BE CHECKED BY THE TEACHER
+                    {isAutoCheck ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER'}
                   </div>
 
                   {checklistItems.map((item) => {

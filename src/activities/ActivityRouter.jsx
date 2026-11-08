@@ -502,6 +502,9 @@ function normalizeRendererType(value) {
     scratch_task: 'scratch-task',
     'scratch-task': 'scratch-task',
     scratch_programming: 'scratch-task',
+    rating: 'scratch-task',
+    rating_task: 'scratch-task',
+    'rating-task': 'scratch-task',
   };
 
   return aliases[text] || text.replaceAll('_', '-');

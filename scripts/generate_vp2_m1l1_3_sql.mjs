@@ -633,3 +633,108 @@ ON CONFLICT (activity_id) DO UPDATE SET
 
 fs.writeFileSync('database/vp2_m1l1_3_activities.sql', sql, 'utf8');
 console.log('Successfully generated database/vp2_m1l1_3_activities.sql!');
+
+// Also generate static manifest.json and page.instance.json for guaranteed offline-first loading
+const outDir = 'public/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_3';
+fs.mkdirSync(outDir, { recursive: true });
+
+const manifestTasks = levels.map((lvl) => {
+    const activityId = `${pageId}_${lvl.position}`;
+    const levelTitle = lvl.title || `Level ${lvl.position}`;
+    const isRating = lvl.type === 'rating' || levelTitle.toLowerCase().includes('rate') || levelTitle.toLowerCase().includes('rating');
+    const levelType = isRating ? 'rating' : 'scratch';
+    const config = lvl.config || {};
+
+    const requirements = (config.hints || []).map((h, i) => {
+        let assetUrl = '';
+        if (h.url) {
+            const ext = path.extname(h.url);
+            const base = path.basename(h.url, ext);
+            assetUrl = `/vp-assets/18343/${base}.webp`;
+        }
+        return {
+            id: h.id || `req_${i + 1}`,
+            title: h.title || '',
+            text: h.text || '',
+            type: h.type || 'text',
+            url: assetUrl
+        };
+    });
+
+    const media = [];
+    if (config.presentation?.image) {
+        const ext = path.extname(config.presentation.image);
+        const base = path.basename(config.presentation.image, ext);
+        media.push({
+            type: 'presentation',
+            title: config.presentation.title || '',
+            text: config.presentation.text || '',
+            url: `/vp-assets/18343/${base}.webp`
+        });
+    }
+
+    const starterProjectId = config.project ? String(config.project) : null;
+    const commandKeys = (lvl.position === 2 || lvl.position === 3)
+        ? ["looks", "events"]
+        : ["motion", "looks", "events", "control"];
+
+    return {
+        id: activityId,
+        taskId: activityId,
+        position: lvl.position,
+        level_position: lvl.position,
+        levelPosition: lvl.position,
+        title: levelTitle,
+        level_type: levelType,
+        selectedType: levelType,
+        activityType: levelType,
+        requirements,
+        media,
+        starter_project_id: starterProjectId,
+        demo_project_id: null,
+        command_keys: commandKeys,
+        states: [
+            {
+                id: `${activityId}_state_1`,
+                stateId: `${activityId}_state_1`,
+                position: lvl.position,
+                level_position: lvl.position,
+                levelPosition: lvl.position,
+                type: levelType,
+                selectedType: levelType,
+                level_type: levelType,
+                requirements,
+                media,
+                starter_project_id: starterProjectId,
+                demo_project_id: null,
+                command_keys: commandKeys
+            }
+        ]
+    };
+});
+
+const manifest = {
+    metadata: {
+        courseId,
+        courseTitle: 'Visual Programming 2',
+        moduleId: 'M1-Visual-Programming-Basics',
+        moduleTitle,
+        lessonId: 'M1L1',
+        lessonTitle,
+        pageId,
+        pageTitle: "Scratch. Let's get acquainted"
+    },
+    tasks: manifestTasks
+};
+
+const pageInstance = {
+    schemaVersion: 0,
+    pageInstanceId: pageId,
+    frameConfig: {},
+    taskRenderers: {}
+};
+
+fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
+fs.writeFileSync(path.join(outDir, 'page.instance.json'), JSON.stringify(pageInstance, null, 2), 'utf8');
+console.log('Successfully generated manifest.json and page.instance.json in', outDir);
+

@@ -1,0 +1,1106 @@
+{
+  "metadata": {
+    "courseId": "VP2",
+    "courseTitle": "Visual Programming 2",
+    "moduleId": "M1-Visual-Programming-Basics",
+    "moduleTitle": "Introduction",
+    "lessonId": "M1L1",
+    "lessonTitle": "Linear algorithm",
+    "pageId": "VP2_M1L1_3",
+    "pageTitle": "Scratch. Let's get acquainted"
+  },
+  "tasks": [
+    {
+      "id": "VP2_M1L1_3_1",
+      "taskId": "VP2_M1L1_3_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Free programming",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "11bf6ad0-a0d1-42a0-bf33-0f41438dec61",
+          "title": "Add a background",
+          "text": "Add a background to your project. Click on the animation above to see how.\nWhen the background is ready, mark the task completed by checking the box and move on to the next task!",
+          "type": "gif",
+          "url": "/vp-assets/18343/jurassic.webp"
+        },
+        {
+          "id": "1cc5a7c2-a014-4b9b-b793-53bf84f5338c",
+          "title": "Add sprites",
+          "text": "A sprite is a character that we program in Scratch. Add a sprite, size it, and move it to the desired location.",
+          "type": "gif",
+          "url": "/vp-assets/18343/dinos.webp"
+        },
+        {
+          "id": "a1b379c6-39a0-4b58-b3e6-656f61633a4a",
+          "title": "Delete the extra sprite",
+          "text": "Click on the x to delete the sprite. If you delete a sprite by accident, click \"Edit\" -> \"Restore Sprite.\"",
+          "type": "gif",
+          "url": "/vp-assets/18343/delete sprite.webp"
+        },
+        {
+          "id": "c601e0e9-9982-4699-aa35-6c6b247aec43",
+          "title": "Save the project",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
+          "type": "gif",
+          "url": "/vp-assets/18343/saving a project.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Hey! Let's get acquainted with Scratch",
+          "text": "Here are the tasks that need to be completed. To hide this window, click on the purple line to the left of the text.\nTo reopen the tasks, click on the purple line in the upper right corner.\n\nYou can find information about useful buttons in Scratch in the task list below.\nLet's open the first one!",
+          "url": "/vp-assets/18343/1-3.webp"
+        }
+      ],
+      "starter_project_id": "8908684",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_1_state_1",
+          "stateId": "VP2_M1L1_3_1_state_1",
+          "position": 1,
+          "level_position": 1,
+          "levelPosition": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "11bf6ad0-a0d1-42a0-bf33-0f41438dec61",
+              "title": "Add a background",
+              "text": "Add a background to your project. Click on the animation above to see how.\nWhen the background is ready, mark the task completed by checking the box and move on to the next task!",
+              "type": "gif",
+              "url": "/vp-assets/18343/jurassic.webp"
+            },
+            {
+              "id": "1cc5a7c2-a014-4b9b-b793-53bf84f5338c",
+              "title": "Add sprites",
+              "text": "A sprite is a character that we program in Scratch. Add a sprite, size it, and move it to the desired location.",
+              "type": "gif",
+              "url": "/vp-assets/18343/dinos.webp"
+            },
+            {
+              "id": "a1b379c6-39a0-4b58-b3e6-656f61633a4a",
+              "title": "Delete the extra sprite",
+              "text": "Click on the x to delete the sprite. If you delete a sprite by accident, click \"Edit\" -> \"Restore Sprite.\"",
+              "type": "gif",
+              "url": "/vp-assets/18343/delete sprite.webp"
+            },
+            {
+              "id": "c601e0e9-9982-4699-aa35-6c6b247aec43",
+              "title": "Save the project",
+              "text": "Click the \"Save\" button to save all the latest changes to the project!",
+              "type": "gif",
+              "url": "/vp-assets/18343/saving a project.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hey! Let's get acquainted with Scratch",
+              "text": "Here are the tasks that need to be completed. To hide this window, click on the purple line to the left of the text.\nTo reopen the tasks, click on the purple line in the upper right corner.\n\nYou can find information about useful buttons in Scratch in the task list below.\nLet's open the first one!",
+              "url": "/vp-assets/18343/1-3.webp"
+            }
+          ],
+          "starter_project_id": "8908684",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_2",
+      "taskId": "VP2_M1L1_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Let's get acquainted М1Т1 2",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "2b379473-5b1c-4c96-ab82-4cf53f5ecdee",
+          "title": "Add a suitable background",
+          "text": "Choose and add a suitable background for these characters!",
+          "type": "gif",
+          "url": "/vp-assets/18343/jurassic_1627549486.webp"
+        },
+        {
+          "id": "11a1dac3-db24-4f8c-a423-7c9f053b1365",
+          "title": "Save the project and go to the next level",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Add a background",
+          "text": "Choose and add a suitable background for these characters! Click on the animation and see how to add a background.",
+          "url": "/vp-assets/18343/1-3_1613029171.webp"
+        }
+      ],
+      "starter_project_id": "8910738",
+      "demo_project_id": null,
+      "command_keys": [
+        "looks",
+        "events"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_2_state_1",
+          "stateId": "VP2_M1L1_3_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "2b379473-5b1c-4c96-ab82-4cf53f5ecdee",
+              "title": "Add a suitable background",
+              "text": "Choose and add a suitable background for these characters!",
+              "type": "gif",
+              "url": "/vp-assets/18343/jurassic_1627549486.webp"
+            },
+            {
+              "id": "11a1dac3-db24-4f8c-a423-7c9f053b1365",
+              "title": "Save the project and go to the next level",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Add a background",
+              "text": "Choose and add a suitable background for these characters! Click on the animation and see how to add a background.",
+              "url": "/vp-assets/18343/1-3_1613029171.webp"
+            }
+          ],
+          "starter_project_id": "8910738",
+          "demo_project_id": null,
+          "command_keys": [
+            "looks",
+            "events"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_3",
+      "taskId": "VP2_M1L1_3_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Let's get acquainted М1Т1 3",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "af1d53af-dfed-4b18-bec0-ad5e3c85999f",
+          "title": "Add a suitable background",
+          "text": "Choose and add a suitable background for these characters!",
+          "type": "gif",
+          "url": "/vp-assets/18343/jurassic_1627549710.webp"
+        },
+        {
+          "id": "4c4cf8cf-d284-4c54-b5fa-ec8dae440321",
+          "title": "Save the project and go to the next level",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Add a background",
+          "text": "Choose and add a suitable background for these characters!",
+          "url": "/vp-assets/18343/1-3_1612957339.webp"
+        }
+      ],
+      "starter_project_id": "8910872",
+      "demo_project_id": null,
+      "command_keys": [
+        "looks",
+        "events"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_3_state_1",
+          "stateId": "VP2_M1L1_3_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "af1d53af-dfed-4b18-bec0-ad5e3c85999f",
+              "title": "Add a suitable background",
+              "text": "Choose and add a suitable background for these characters!",
+              "type": "gif",
+              "url": "/vp-assets/18343/jurassic_1627549710.webp"
+            },
+            {
+              "id": "4c4cf8cf-d284-4c54-b5fa-ec8dae440321",
+              "title": "Save the project and go to the next level",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Add a background",
+              "text": "Choose and add a suitable background for these characters!",
+              "url": "/vp-assets/18343/1-3_1612957339.webp"
+            }
+          ],
+          "starter_project_id": "8910872",
+          "demo_project_id": null,
+          "command_keys": [
+            "looks",
+            "events"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_4",
+      "taskId": "VP2_M1L1_3_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Let's get acquainted М1Т1 4",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "e3844aee-06a0-49af-820a-54cf95bdb614",
+          "title": "Add suitable sprites",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/dinos_1627549772.webp"
+        },
+        {
+          "id": "0985aad7-7a86-476c-a609-6958114ac8b5",
+          "title": "Move the sprites to suitable places using the mouse",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/спрайт-3.webp"
+        },
+        {
+          "id": "1652e363-274a-4958-bc16-450d3d45a435",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Add suitable sprites",
+          "text": "What sprites would look good against this background?",
+          "url": "/vp-assets/18343/44.webp"
+        }
+      ],
+      "starter_project_id": "8910976",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_4_state_1",
+          "stateId": "VP2_M1L1_3_4_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "e3844aee-06a0-49af-820a-54cf95bdb614",
+              "title": "Add suitable sprites",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/dinos_1627549772.webp"
+            },
+            {
+              "id": "0985aad7-7a86-476c-a609-6958114ac8b5",
+              "title": "Move the sprites to suitable places using the mouse",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/спрайт-3.webp"
+            },
+            {
+              "id": "1652e363-274a-4958-bc16-450d3d45a435",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Add suitable sprites",
+              "text": "What sprites would look good against this background?",
+              "url": "/vp-assets/18343/44.webp"
+            }
+          ],
+          "starter_project_id": "8910976",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_5",
+      "taskId": "VP2_M1L1_3_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Let's get acquainted М1Т1 5",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "27b91a14-c70a-4464-8715-0f84a8c7f2c5",
+          "title": "Add suitable sprites",
+          "text": "What sprites would look good against this background?",
+          "type": "gif",
+          "url": "/vp-assets/18343/dinos_1627554879.webp"
+        },
+        {
+          "id": "2f685368-fc3c-4e1c-9dbc-4a6cf1f041e1",
+          "title": "Move the sprites to suitable places using the mouse",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/5.webp"
+        },
+        {
+          "id": "230ced8a-68be-4679-a57e-4bd028afb080",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Add suitable sprites",
+          "text": "What sprites would look good against this background?",
+          "url": "/vp-assets/18343/44_1612957387.webp"
+        }
+      ],
+      "starter_project_id": "8911069",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_5_state_1",
+          "stateId": "VP2_M1L1_3_5_state_1",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "27b91a14-c70a-4464-8715-0f84a8c7f2c5",
+              "title": "Add suitable sprites",
+              "text": "What sprites would look good against this background?",
+              "type": "gif",
+              "url": "/vp-assets/18343/dinos_1627554879.webp"
+            },
+            {
+              "id": "2f685368-fc3c-4e1c-9dbc-4a6cf1f041e1",
+              "title": "Move the sprites to suitable places using the mouse",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/5.webp"
+            },
+            {
+              "id": "230ced8a-68be-4679-a57e-4bd028afb080",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Add suitable sprites",
+              "text": "What sprites would look good against this background?",
+              "url": "/vp-assets/18343/44_1612957387.webp"
+            }
+          ],
+          "starter_project_id": "8911069",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_6",
+      "taskId": "VP2_M1L1_3_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Let's get acquainted М1Т1 7",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "7781581d-be21-492b-a73e-5fbda9e97b0d",
+          "title": "Delete the extra sprite",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/delete sprite_1627554929.webp"
+        },
+        {
+          "id": "f413649b-c78e-46b1-a87c-568c76277b1c",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Delete the extra sprite",
+          "text": "To delete a sprite, click on the x next to it.",
+          "url": "/vp-assets/18343/6.webp"
+        }
+      ],
+      "starter_project_id": "8911193",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_6_state_1",
+          "stateId": "VP2_M1L1_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "7781581d-be21-492b-a73e-5fbda9e97b0d",
+              "title": "Delete the extra sprite",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/delete sprite_1627554929.webp"
+            },
+            {
+              "id": "f413649b-c78e-46b1-a87c-568c76277b1c",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Delete the extra sprite",
+              "text": "To delete a sprite, click on the x next to it.",
+              "url": "/vp-assets/18343/6.webp"
+            }
+          ],
+          "starter_project_id": "8911193",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_7",
+      "taskId": "VP2_M1L1_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Let's get acquainted М1Т1 8",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "fac769b5-e3b9-4495-8462-318b7ca37ce4",
+          "title": "Delete the extra sprite",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/delete sprite_1627554966.webp"
+        },
+        {
+          "id": "1c53cf71-114f-47c1-bf23-27c7102bb683",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Delete the extra sprite",
+          "text": "To delete a sprite, click on the x next to it.",
+          "url": "/vp-assets/18343/6_1612957429.webp"
+        }
+      ],
+      "starter_project_id": "8911262",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_7_state_1",
+          "stateId": "VP2_M1L1_3_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "fac769b5-e3b9-4495-8462-318b7ca37ce4",
+              "title": "Delete the extra sprite",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/delete sprite_1627554966.webp"
+            },
+            {
+              "id": "1c53cf71-114f-47c1-bf23-27c7102bb683",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Delete the extra sprite",
+              "text": "To delete a sprite, click on the x next to it.",
+              "url": "/vp-assets/18343/6_1612957429.webp"
+            }
+          ],
+          "starter_project_id": "8911262",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_8",
+      "taskId": "VP2_M1L1_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Let's get acquainted М1Т1 9",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "145cbe1f-d59a-4dba-b96b-7529b9cfd19f",
+          "title": "Choose a background from those that are available in the project",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/backdrop.webp"
+        },
+        {
+          "id": "725e44fd-a994-4ee9-a901-0aea89e3f903",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Choose a suitable background",
+          "text": "Please note: there are already a few ready-made backgrounds in the project. You just need to choose the right one.",
+          "url": "/vp-assets/18343/8_1613029277.webp"
+        }
+      ],
+      "starter_project_id": "25604355",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_8_state_1",
+          "stateId": "VP2_M1L1_3_8_state_1",
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "145cbe1f-d59a-4dba-b96b-7529b9cfd19f",
+              "title": "Choose a background from those that are available in the project",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/backdrop.webp"
+            },
+            {
+              "id": "725e44fd-a994-4ee9-a901-0aea89e3f903",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Choose a suitable background",
+              "text": "Please note: there are already a few ready-made backgrounds in the project. You just need to choose the right one.",
+              "url": "/vp-assets/18343/8_1613029277.webp"
+            }
+          ],
+          "starter_project_id": "25604355",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_9",
+      "taskId": "VP2_M1L1_3_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Bonus: Mini projects test",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "dd9fe566-5bc5-4d7e-bc9c-3f0d18ab6ba4",
+          "title": "Choose the costume you want",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/costumes.webp"
+        },
+        {
+          "id": "0afc6983-7b3e-4a00-aa50-281235c2bfcb",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Choose the costume you want",
+          "text": "Let the dog look at you. Can you find the right costume?",
+          "url": "/vp-assets/18343/star1.webp"
+        }
+      ],
+      "starter_project_id": "8911485",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_9_state_1",
+          "stateId": "VP2_M1L1_3_9_state_1",
+          "position": 9,
+          "level_position": 9,
+          "levelPosition": 9,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "dd9fe566-5bc5-4d7e-bc9c-3f0d18ab6ba4",
+              "title": "Choose the costume you want",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/costumes.webp"
+            },
+            {
+              "id": "0afc6983-7b3e-4a00-aa50-281235c2bfcb",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Choose the costume you want",
+              "text": "Let the dog look at you. Can you find the right costume?",
+              "url": "/vp-assets/18343/star1.webp"
+            }
+          ],
+          "starter_project_id": "8911485",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_10",
+      "taskId": "VP2_M1L1_3_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Bonus: Scratch Autocheck",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "cb32916a-9bbe-49a3-b786-cb54fc415e05",
+          "title": "What will your snowman say?",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/hello.webp"
+        },
+        {
+          "id": "5fb28082-4a33-443f-a280-2e90dba0668a",
+          "title": "The start of the script",
+          "text": "The script starts with the command \"When the green flag is clicked.\"",
+          "type": "gif",
+          "url": "/vp-assets/18343/start.webp"
+        },
+        {
+          "id": "6b69d30b-792e-48af-9ea5-e1632065ec14",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Add a phrase",
+          "text": "What will your snowman say?",
+          "url": "/vp-assets/18343/hello_1626177879.webp"
+        }
+      ],
+      "starter_project_id": "8911589",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_10_state_1",
+          "stateId": "VP2_M1L1_3_10_state_1",
+          "position": 10,
+          "level_position": 10,
+          "levelPosition": 10,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "cb32916a-9bbe-49a3-b786-cb54fc415e05",
+              "title": "What will your snowman say?",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/hello.webp"
+            },
+            {
+              "id": "5fb28082-4a33-443f-a280-2e90dba0668a",
+              "title": "The start of the script",
+              "text": "The script starts with the command \"When the green flag is clicked.\"",
+              "type": "gif",
+              "url": "/vp-assets/18343/start.webp"
+            },
+            {
+              "id": "6b69d30b-792e-48af-9ea5-e1632065ec14",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Add a phrase",
+              "text": "What will your snowman say?",
+              "url": "/vp-assets/18343/hello_1626177879.webp"
+            }
+          ],
+          "starter_project_id": "8911589",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_11",
+      "taskId": "VP2_M1L1_3_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Bonus: Finish Mars project",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "41edc7e4-49ff-486d-a05f-208dff1f8d5d",
+          "title": "Change the background from Earth to Mars",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/18343/switch backdrop space.webp"
+        },
+        {
+          "id": "32c87874-dbcb-4168-a597-896d653064b6",
+          "title": "Add a phrase",
+          "text": "Use the command \"speak...\"",
+          "type": "gif",
+          "url": "/vp-assets/18343/hello_1626177970.webp"
+        },
+        {
+          "id": "e7d4bbda-f117-4e9a-b130-31cf6636f52a",
+          "title": "Finish the project at your own discretion",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "3fe15b11-bdfb-42be-bc1e-83a473ff6977",
+          "title": "Save the project",
+          "text": "",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [],
+      "starter_project_id": "8911655",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_11_state_1",
+          "stateId": "VP2_M1L1_3_11_state_1",
+          "position": 11,
+          "level_position": 11,
+          "levelPosition": 11,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "41edc7e4-49ff-486d-a05f-208dff1f8d5d",
+              "title": "Change the background from Earth to Mars",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/18343/switch backdrop space.webp"
+            },
+            {
+              "id": "32c87874-dbcb-4168-a597-896d653064b6",
+              "title": "Add a phrase",
+              "text": "Use the command \"speak...\"",
+              "type": "gif",
+              "url": "/vp-assets/18343/hello_1626177970.webp"
+            },
+            {
+              "id": "e7d4bbda-f117-4e9a-b130-31cf6636f52a",
+              "title": "Finish the project at your own discretion",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "3fe15b11-bdfb-42be-bc1e-83a473ff6977",
+              "title": "Save the project",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [],
+          "starter_project_id": "8911655",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L1_3_12",
+      "taskId": "VP2_M1L1_3_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "rating",
+      "requirements": [
+        {
+          "id": "r2",
+          "title": "Did you like the task?",
+          "text": "Choose how you felt doing this task!",
+          "type": "text",
+          "url": ""
+        }
+      ],
+      "media": [],
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L1_3_12_state_1",
+          "stateId": "VP2_M1L1_3_12_state_1",
+          "position": 12,
+          "level_position": 12,
+          "levelPosition": 12,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [
+            {
+              "id": "r2",
+              "title": "Did you like the task?",
+              "text": "Choose how you felt doing this task!",
+              "type": "text",
+              "url": ""
+            }
+          ],
+          "media": [],
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -20,7 +20,10 @@
         'motion', 'looks', 'sound', 'events', 'control',
         'sensing', 'operators', 'variables', 'myblocks', 'data'
       ];
-      const disallowed = allCategories.filter(c => !allowedCategories.includes(c));
+      // For level 2 and 3, strictly only looks and events are allowed!
+      const isLevel2Or3 = levelParam === '2' || levelParam === '3';
+      const effectiveAllowed = isLevel2Or3 ? ['looks', 'events'] : allowedCategories;
+      const disallowed = allCategories.filter(c => !effectiveAllowed.includes(c));
 
       // Level 1 Authentic Algorithmics Toolbox XML
       const LEVEL_1_XML = `<xml id="toolbox" style="display: none">
@@ -244,9 +247,21 @@
             console.log('[AlgoLMS Bridge] Loading arrayBuffer directly into VM...');
             await vm.loadProject(arrayBuffer);
             console.log('[AlgoLMS Bridge] Project successfully loaded into VM!');
-            if (window.__scratchProjectLoader?.props?.onSetProjectTitle) {
-              const title = filename.replace(/\.sb3?$/i, '');
-              window.__scratchProjectLoader.props.onSetProjectTitle(title);
+            if (typeof vm.emitTargetsUpdate === 'function') {
+              vm.emitTargetsUpdate();
+            }
+            if (typeof vm.emitWorkspaceUpdate === 'function') {
+              vm.emitWorkspaceUpdate();
+            }
+            const loader = window.__scratchProjectLoader;
+            if (loader && loader.props) {
+              if (loader.props.onSetProjectTitle) {
+                const title = filename.replace(/\.sb3?$/i, '');
+                loader.props.onSetProjectTitle(title);
+              }
+              if (loader.props.onLoadingFinished) {
+                loader.props.onLoadingFinished(loader.props.loadingState, true);
+              }
             }
             setTimeout(applyBlocklyToolbox, 100);
             setTimeout(applyBlocklyToolbox, 400);

@@ -27,9 +27,11 @@ export default function ScratchTask({
     ? ['looks', 'events']
     : ['motion', 'looks', 'events', 'control'];
 
-  const categoriesQuery = Array.isArray(task?.command_keys) && task.command_keys.length > 0
-    ? task.command_keys.join(',')
-    : defaultCommandKeys.join(',');
+  const categoriesQuery = (levelPosition === 2 || levelPosition === 3)
+    ? 'looks,events'
+    : (Array.isArray(task?.command_keys) && task.command_keys.length > 0
+        ? task.command_keys.join(',')
+        : defaultCommandKeys.join(','));
 
   // Drawer open/collapse state (open by default)
   const [isDrawerOpen, setIsDrawerOpen] = useState(true);
@@ -42,8 +44,9 @@ export default function ScratchTask({
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 
-  // Reset checklist checkboxes when task switches
+  // Reset checklist checkboxes and ensure drawer is open when task switches
   useEffect(() => {
+    setIsDrawerOpen(true);
     setCompletedItems({});
   }, [task?.activity_id, task?.id, task?.taskId, levelPosition]);
 

@@ -47,6 +47,7 @@
     <block type="motion_pointtowards">
       <value name="TOWARDS">
         <shadow type="motion_pointtowards_menu">
+          <field name="TOWARDS">_mouse_</field>
         </shadow>
       </value>
     </block>
@@ -67,12 +68,14 @@
     <block type="looks_switchcostumeto">
       <value name="COSTUME">
         <shadow type="looks_costume">
+          <field name="COSTUME">costume1</field>
         </shadow>
       </value>
     </block>
     <block type="looks_switchbackdropto">
       <value name="BACKDROP">
         <shadow type="looks_backdrops">
+          <field name="BACKDROP">backdrop1</field>
         </shadow>
       </value>
     </block>
@@ -109,12 +112,14 @@
     <block type="looks_switchcostumeto">
       <value name="COSTUME">
         <shadow type="looks_costume">
+          <field name="COSTUME">costume1</field>
         </shadow>
       </value>
     </block>
     <block type="looks_switchbackdropto">
       <value name="BACKDROP">
         <shadow type="looks_backdrops">
+          <field name="BACKDROP">backdrop1</field>
         </shadow>
       </value>
     </block>
@@ -176,6 +181,8 @@
         if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
         const ws = window.Blockly.getMainWorkspace();
         if (!ws || !ws.options) return false;
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
           if (levelParam === '1') {
@@ -213,19 +220,7 @@
         return false;
       }
 
-      // Check for Blockly readiness
-      let checks = 0;
-      const blocklyInterval = setInterval(() => {
-        checks++;
-        if (applyBlocklyToolbox()) {
-          clearInterval(blocklyInterval);
-        }
-        if (checks > 100) {
-          clearInterval(blocklyInterval);
-        }
-      }, 150);
-
-      // 3. Resolve & Load Project natively via Scratch Redux Project Loader / VM
+      // 3. Resolve & Load Project natively into Scratch VM
       function resolveProjectUrl(param, level) {
         const lvl = String(level || '1');
         if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
@@ -250,31 +245,16 @@
           }
           const arrayBuffer = await res.arrayBuffer();
 
-          const loader = window.__scratchProjectLoader;
-          if (loader && loader.props && loader.props.vm) {
-            if (loader.props.onLoadingStarted) loader.props.onLoadingStarted();
-            try {
-              await loader.props.vm.loadProject(arrayBuffer);
-              const title = loader.getProjectTitleFromFilename ? loader.getProjectTitleFromFilename(filename) : '';
-              if (title && loader.props.onSetProjectTitle) {
-                loader.props.onSetProjectTitle(title);
-              }
-              if (loader.props.onLoadingFinished) {
-                loader.props.onLoadingFinished(loader.props.loadingState, true);
-              }
-              console.log('[AlgoLMS Bridge] Project successfully loaded into VM via __scratchProjectLoader!');
-              setTimeout(applyBlocklyToolbox, 150);
-              return true;
-            } catch (err) {
-              console.error('[AlgoLMS Bridge] Error in loader.props.vm.loadProject:', err);
-              if (loader.props.onLoadingFinished) {
-                loader.props.onLoadingFinished(loader.props.loadingState, false);
-              }
+          const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+          if (vm) {
+            console.log('[AlgoLMS Bridge] Loading arrayBuffer directly into VM...');
+            await vm.loadProject(arrayBuffer);
+            console.log('[AlgoLMS Bridge] Project successfully loaded into VM!');
+            if (window.__scratchProjectLoader?.props?.onSetProjectTitle) {
+              const title = filename.replace(/\.sb3?$/i, '');
+              window.__scratchProjectLoader.props.onSetProjectTitle(title);
             }
-          } else if (window.vm) {
-            await window.vm.loadProject(arrayBuffer);
-            console.log('[AlgoLMS Bridge] Project successfully loaded into window.vm!');
-            setTimeout(applyBlocklyToolbox, 150);
+            setTimeout(applyBlocklyToolbox, 200);
             return true;
           }
         } catch (e) {
@@ -284,19 +264,32 @@
       }
 
       const initialProjectUrl = resolveProjectUrl(projectUrl, levelParam);
-      let attempts = 0;
-      let projectLoaded = false;
-      if (initialProjectUrl) {
+
+      if (!initialProjectUrl) {
+        // Level 1: Default Cat. Wait for Blockly workspace to be ready then apply Level 1 toolbox
+        let checks = 0;
+        const blocklyInterval = setInterval(() => {
+          checks++;
+          if (applyBlocklyToolbox()) {
+            clearInterval(blocklyInterval);
+          }
+          if (checks > 100) {
+            clearInterval(blocklyInterval);
+          }
+        }, 150);
+      } else {
+        // Levels 2+: Wait for Scratch VM to complete its initial boot, then load the starter .sb3
+        let attempts = 0;
+        let projectLoaded = false;
         const loaderCheck = setInterval(async () => {
           attempts++;
-          if ((window.__scratchProjectLoader || window.vm) && !projectLoaded) {
+          const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+          if (vm && vm.runtime && Array.isArray(vm.runtime.targets) && vm.runtime.targets.length > 0 && !projectLoaded) {
             projectLoaded = true;
             clearInterval(loaderCheck);
-            setTimeout(async () => {
-              await loadProjectFile(initialProjectUrl);
-            }, 300);
+            await loadProjectFile(initialProjectUrl);
           }
-          if (attempts > 200) {
+          if (attempts > 300) {
             clearInterval(loaderCheck);
           }
         }, 100);

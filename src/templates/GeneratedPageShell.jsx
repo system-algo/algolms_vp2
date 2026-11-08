@@ -385,6 +385,7 @@ export default function GeneratedPageShell({
                 const pageRows = Array.isArray(rows)
                   ? rows.filter((r) => r.activity_id && r.activity_id.startsWith(pageId))
                   : [];
+                pageRows.sort((a, b) => (Number(a.level_position) || 0) - (Number(b.level_position) || 0));
                 if (pageRows.length > 0) {
                   nextManifest = {
                     metadata: {

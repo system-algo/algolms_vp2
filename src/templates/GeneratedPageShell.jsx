@@ -137,6 +137,7 @@ export default function GeneratedPageShell({
 }) {
   const [manifest, setManifest] = useState(null);
   const [pageInstance, setPageInstance] = useState(null);
+  const [error, setError] = useState('');
   const getInitialTaskIndex = () => {
     try {
       const p = new URLSearchParams(window.location.search);

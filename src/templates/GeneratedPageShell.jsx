@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TopNavigation from '../components/TopNavigation.jsx';
 import ActivityRouter from '../activities/ActivityRouter.jsx';
 

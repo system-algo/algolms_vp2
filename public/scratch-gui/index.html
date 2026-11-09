@@ -285,6 +285,10 @@
         if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
+          if (disallowed.length === 0) {
+            // Full toolbox allowed (e.g. Free programming / Super cat)
+            return true;
+          }
           if (!effectiveAllowed.includes('motion') && effectiveAllowed.includes('control')) {
             // M1L2 Loops Toolbox (Looks, Events, Control)
             ws.updateToolbox(LEVEL_LOOPS_XML);

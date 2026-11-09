@@ -521,6 +521,140 @@
           "command_keys": []
         }
       ]
+    },
+    {
+      "id": "VP2_M1L2_3_7",
+      "taskId": "VP2_M1L2_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "M1L2 Super cat",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "isBonus": true,
+      "type": "bonus",
+      "drawerOpen": false,
+      "requirements": [],
+      "media": [],
+      "starter_project_id": "/starter-projects/19097/level_7.sb3",
+      "demo_project_id": null,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_7_state_1",
+          "stateId": "VP2_M1L2_3_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "isBonus": true,
+          "drawerOpen": false,
+          "requirements": [],
+          "media": [],
+          "starter_project_id": "/starter-projects/19097/level_7.sb3",
+          "demo_project_id": null,
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_8",
+      "taskId": "VP2_M1L2_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "M1L2 A star",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "isBonus": true,
+      "type": "bonus",
+      "drawerOpen": false,
+      "requirements": [
+        {
+          "id": "req_8_1",
+          "title": "Flashing star",
+          "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+          "type": "gif",
+          "url": "/vp-assets/19097/flashing_star_presentation.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Flashing star",
+          "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+          "url": "/vp-assets/19097/flashing_star_presentation.webp"
+        }
+      ],
+      "starter_project_id": "/starter-projects/19097/level_8.sb3",
+      "demo_project_id": null,
+      "command_keys": [
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_8_state_1",
+          "stateId": "VP2_M1L2_3_8_state_1",
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "isBonus": true,
+          "drawerOpen": false,
+          "requirements": [
+            {
+              "id": "req_8_1",
+              "title": "Flashing star",
+              "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+              "type": "gif",
+              "url": "/vp-assets/19097/flashing_star_presentation.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Flashing star",
+              "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+              "url": "/vp-assets/19097/flashing_star_presentation.webp"
+            }
+          ],
+          "starter_project_id": "/starter-projects/19097/level_8.sb3",
+          "demo_project_id": null,
+          "command_keys": [
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
     }
   ]
 }

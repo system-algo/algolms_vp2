@@ -158,11 +158,114 @@ const LIGHT_BACKDROP = {
   rotationCenterY: 180
 };
 
+const STARS_BACKDROP = {
+  assetId: "47282ff0f7047c6fab9c94b531abf721",
+  name: "stars",
+  bitmapResolution: 2,
+  md5ext: "47282ff0f7047c6fab9c94b531abf721.png",
+  dataFormat: "png",
+  rotationCenterX: 480,
+  rotationCenterY: 360
+};
+
+// Cat costumes
+const CAT_COSTUMES = [
+  {
+    assetId: "bcf454acf82e4504149f7ffe07081dbc",
+    name: "cat-a",
+    bitmapResolution: 1,
+    md5ext: "bcf454acf82e4504149f7ffe07081dbc.svg",
+    dataFormat: "svg",
+    rotationCenterX: 48,
+    rotationCenterY: 50
+  },
+  {
+    assetId: "0fb9be3e8397c983338cb71dc84d0b25",
+    name: "cat-b",
+    bitmapResolution: 1,
+    md5ext: "0fb9be3e8397c983338cb71dc84d0b25.svg",
+    dataFormat: "svg",
+    rotationCenterX: 46,
+    rotationCenterY: 53
+  }
+];
+
+const MEOW_SOUND = {
+  assetId: "83c36d806dc92327b9e7049a565c6bff",
+  name: "Meow",
+  dataFormat: "wav",
+  format: "",
+  rate: 44100,
+  sampleCount: 37376,
+  md5ext: "83c36d806dc92327b9e7049a565c6bff.wav"
+};
+
+// Star costume
+const STAR_COSTUMES = [
+  {
+    assetId: "551629f2a64c1f3703e57aaa133effa6",
+    name: "star1",
+    bitmapResolution: 1,
+    md5ext: "551629f2a64c1f3703e57aaa133effa6.svg",
+    dataFormat: "svg",
+    rotationCenterX: 22,
+    rotationCenterY: 23
+  }
+];
+
+const STAR_SOUND = {
+  assetId: "32514c51e03db680e9c63857b840ae78",
+  name: "collect",
+  dataFormat: "wav",
+  format: "adpcm",
+  rate: 22050,
+  sampleCount: 14225,
+  md5ext: "32514c51e03db680e9c63857b840ae78.wav"
+};
+
+// Starter workspace block for Level 8 (change size by -5)
+const LEVEL_8_STAR_BLOCKS = {
+  "b_change_size": {
+    opcode: "looks_changesizeby",
+    next: null,
+    parent: null,
+    inputs: {
+      CHANGE: [
+        1,
+        [
+          4,
+          "-5"
+        ]
+      ]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 100,
+    y: 120
+  }
+};
+
 // Cache downloaded assets
 const assetCache = new Map();
 
 async function getAsset(md5ext) {
   if (assetCache.has(md5ext)) return assetCache.get(md5ext);
+
+  // Check if asset already exists in 18343 level_8.sb3 or other local projects
+  try {
+    const local18343 = path.resolve('public/starter-projects/18343/level_8.sb3');
+    if (fs.existsSync(local18343)) {
+      const zip = new AdmZip(local18343);
+      const entry = zip.getEntry(md5ext);
+      if (entry) {
+        const buf = entry.getData();
+        assetCache.set(md5ext, buf);
+        return buf;
+      }
+    }
+  } catch (e) {}
+
   const url = `https://assets.scratch.mit.edu/internalapi/asset/${md5ext}/get/`;
   console.log(`Downloading asset: ${md5ext}...`);
   const buf = await fetchBuffer(url);
@@ -191,18 +294,18 @@ function makeStage(costumes) {
   };
 }
 
-function makeSprite(name, costumes, x = 0, y = 0, size = 100) {
+function makeSprite(name, costumes, x = 0, y = 0, size = 100, blocks = {}, sounds = [POP_SOUND]) {
   return {
     isStage: false,
     name,
     variables: {},
     lists: {},
     broadcasts: {},
-    blocks: {},
+    blocks,
     comments: {},
     currentCostume: 0,
     costumes,
-    sounds: [POP_SOUND],
+    sounds,
     volume: 100,
     layerOrder: 1,
     visible: true,
@@ -292,6 +395,20 @@ async function main() {
   ];
   await buildSb3("level_5.sb3", lvl5Targets);
   await buildSb3("9099214.sb3", lvl5Targets);
+
+  // Level 7: Bonus 1 - M1L2 Super cat
+  const lvl7Targets = [
+    makeStage([BACKDROP1]),
+    makeSprite("Sprite1", CAT_COSTUMES, 0, 0, 100, {}, [MEOW_SOUND])
+  ];
+  await buildSb3("level_7.sb3", lvl7Targets);
+
+  // Level 8: Bonus 2 - M1L2 A star / Flashing star
+  const lvl8Targets = [
+    makeStage([STARS_BACKDROP]),
+    makeSprite("Star1", STAR_COSTUMES, 3, 23, 90, LEVEL_8_STAR_BLOCKS, [STAR_SOUND])
+  ];
+  await buildSb3("level_8.sb3", lvl8Targets);
 
   console.log('All Task 19097 starter projects created successfully!');
 }

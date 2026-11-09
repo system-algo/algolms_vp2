@@ -241,6 +241,69 @@ const tasks = [
     starter_project_id: null,
     demo_project_id: null,
     command_keys: []
+  },
+  {
+    id: `${pageId}_7`,
+    taskId: `${pageId}_7`,
+    position: 7,
+    level_position: 7,
+    levelPosition: 7,
+    title: "M1L2 Super cat",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    isBonus: true,
+    type: "bonus",
+    drawerOpen: false,
+    requirements: [],
+    media: [],
+    starter_project_id: "/starter-projects/19097/level_7.sb3",
+    demo_project_id: null,
+    command_keys: [
+      "motion",
+      "looks",
+      "sound",
+      "events",
+      "control",
+      "sensing",
+      "operators",
+      "variables",
+      "myblocks"
+    ]
+  },
+  {
+    id: `${pageId}_8`,
+    taskId: `${pageId}_8`,
+    position: 8,
+    level_position: 8,
+    levelPosition: 8,
+    title: "M1L2 A star",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    isBonus: true,
+    type: "bonus",
+    drawerOpen: false,
+    requirements: [
+      {
+        id: "req_8_1",
+        title: "Flashing star",
+        text: "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+        type: "gif",
+        url: "/vp-assets/19097/flashing_star_presentation.webp"
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Flashing star",
+        text: "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+        url: "/vp-assets/19097/flashing_star_presentation.webp"
+      }
+    ],
+    starter_project_id: "/starter-projects/19097/level_8.sb3",
+    demo_project_id: null,
+    command_keys: ["looks", "events", "control"]
   }
 ];
 
@@ -257,6 +320,8 @@ const manifestTasks = tasks.map(t => ({
       type: t.level_type,
       selectedType: t.selectedType,
       level_type: t.level_type,
+      isBonus: t.isBonus,
+      drawerOpen: t.drawerOpen,
       requirements: t.requirements,
       media: t.media,
       starter_project_id: t.starter_project_id,

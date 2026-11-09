@@ -22,19 +22,24 @@ export default function ScratchTask({
     task?.projectId ||
     '';
 
-  // Flyout categories / command keys: Level 2 & 3 specifically only have Looks & Events
+  // Flyout categories / command keys
   const defaultCommandKeys = (levelPosition === 2 || levelPosition === 3)
     ? ['looks', 'events']
     : ['motion', 'looks', 'events', 'control'];
 
-  const categoriesQuery = (levelPosition === 2 || levelPosition === 3)
-    ? 'looks,events'
-    : (Array.isArray(task?.command_keys) && task.command_keys.length > 0
-        ? task.command_keys.join(',')
-        : defaultCommandKeys.join(','));
+  const categoriesQuery = Array.isArray(task?.command_keys) && task.command_keys.length > 0
+    ? task.command_keys.join(',')
+    : (levelPosition === 2 || levelPosition === 3)
+      ? 'looks,events'
+      : defaultCommandKeys.join(',');
 
-  // Drawer open/collapse state (open by default)
-  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
+  const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
+                           (Array.isArray(task?.media) && task.media.length > 0);
+
+  // Drawer open/collapse state
+  const [isDrawerOpen, setIsDrawerOpen] = useState(
+    task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
+  );
   const [drawerWidth, setDrawerWidth] = useState(380);
   const [isResizing, setIsResizing] = useState(false);
   const [isAccordionOpen, setIsAccordionOpen] = useState(true);
@@ -44,11 +49,13 @@ export default function ScratchTask({
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 
-  // Reset checklist checkboxes and ensure drawer is open when task switches
+  // Reset checklist checkboxes and update drawer state when task switches
   useEffect(() => {
-    setIsDrawerOpen(true);
+    setIsDrawerOpen(
+      task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
+    );
     setCompletedItems({});
-  }, [task?.activity_id, task?.id, task?.taskId, levelPosition]);
+  }, [task?.activity_id, task?.id, task?.taskId, levelPosition, hasDrawerContent, task?.drawerOpen]);
 
   const lowerTitle = (taskTitle || '').toLowerCase();
   const isAutoCheck = levelPosition >= 9 && levelPosition <= 11;

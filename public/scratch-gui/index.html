@@ -20,9 +20,15 @@
         'motion', 'looks', 'sound', 'events', 'control',
         'sensing', 'operators', 'variables', 'myblocks', 'data'
       ];
-      // For level 2 and 3, strictly only looks and events are allowed!
-      const isLevel2Or3 = levelParam === '2' || levelParam === '3';
-      const effectiveAllowed = isLevel2Or3 ? ['looks', 'events'] : allowedCategories;
+      // Task 19097 (M1L2) check
+      const isTask19097 = [
+        '9097624', '9097811', '9098276', '9098728', '9099214',
+        '10653299', '2660241', '2660096', '2660244'
+      ].includes(String(projectUrl)) || window.location.search.includes('19097');
+
+      // For M1L1 level 2 and 3, strictly only looks and events are allowed!
+      const isM1L1Level2Or3 = !isTask19097 && (levelParam === '2' || levelParam === '3');
+      const effectiveAllowed = isM1L1Level2Or3 ? ['looks', 'events'] : allowedCategories;
       const disallowed = allCategories.filter(c => !effectiveAllowed.includes(c));
 
       // Level 1 Authentic Algorithmics Toolbox XML
@@ -110,6 +116,14 @@
         </shadow>
       </value>
     </block>
+    <block type="control_repeat">
+      <value name="TIMES">
+        <shadow type="math_whole_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="control_forever"/>
   </category>
 </xml>`;
 
@@ -145,6 +159,74 @@
   </category>
   <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
     <block type="event_whenflagclicked"/>
+  </category>
+</xml>`;
+
+      // M1L2 Loops Toolbox XML (Looks, Events, Control - wait, repeat, forever, next costume, next backdrop)
+      const LEVEL_LOOPS_XML = `<xml id="toolbox" style="display: none">
+  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
+    <block type="looks_sayforsecs">
+      <value name="MESSAGE">
+        <shadow type="text">
+          <field name="TEXT">Hello!</field>
+        </shadow>
+      </value>
+      <value name="SECS">
+        <shadow type="math_number">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_switchcostumeto">
+      <value name="COSTUME">
+        <shadow type="looks_costume">
+          <field name="COSTUME">costume1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_nextcostume"/>
+    <block type="looks_switchbackdropto">
+      <value name="BACKDROP">
+        <shadow type="looks_backdrops">
+          <field name="BACKDROP">backdrop1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_nextbackdrop"/>
+    <block type="looks_changesizeby">
+      <value name="CHANGE">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="looks_setsizeto">
+      <value name="SIZE">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
+    <block type="event_whenflagclicked"/>
+  </category>
+  <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
+    <block type="control_wait">
+      <value name="DURATION">
+        <shadow type="math_positive_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="control_repeat">
+      <value name="TIMES">
+        <shadow type="math_whole_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="control_forever"/>
   </category>
 </xml>`;
 
@@ -203,7 +285,12 @@
         if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
-          if (levelParam === '2' || levelParam === '3' || (allowedCategories.length === 2 && allowedCategories.includes('looks') && allowedCategories.includes('events'))) {
+          if (!effectiveAllowed.includes('motion') && effectiveAllowed.includes('control')) {
+            // M1L2 Loops Toolbox (Looks, Events, Control)
+            ws.updateToolbox(LEVEL_LOOPS_XML);
+            return true;
+          } else if (!effectiveAllowed.includes('motion') && !effectiveAllowed.includes('control')) {
+            // Looks and Events only
             ws.updateToolbox(LEVEL_2_XML);
             return true;
           } else {
@@ -221,6 +308,22 @@
       function resolveProjectUrl(param, level) {
         const lvl = String(level || '1');
         if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
+
+        const is19097 = [
+          '9097624', '9097811', '9098276', '9098728', '9099214',
+          '10653299', '2660241', '2660096', '2660244'
+        ].includes(String(param)) || window.location.search.includes('19097');
+
+        if (is19097) {
+          if (param && /^\d+$/.test(param)) {
+            return `/starter-projects/19097/${param}.sb3`;
+          }
+          if (lvl !== '6') {
+            return `/starter-projects/19097/level_${lvl}.sb3`;
+          }
+          return null;
+        }
+
         if (param && /^\d+$/.test(param) && param !== '8908684') {
           return `/starter-projects/18343/${param}.sb3`;
         }

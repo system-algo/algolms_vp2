@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "courseId": "VP2",
+    "courseTitle": "Visual Programming 2",
+    "moduleId": "M1-Visual-Programming-Basics",
+    "moduleTitle": "Visual Programming Basics",
+    "lessonId": "M1L2",
+    "lessonTitle": "Loops ENG",
+    "pageId": "VP2_M1L2_3",
+    "pageTitle": "Scratch. Changing looks!"
+  },
+  "tasks": [
+    {
+      "id": "VP2_M1L2_3_1",
+      "taskId": "VP2_M1L2_3_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Script: run on the flag, speak (with a/t Scratch)",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "req_1_1",
+          "title": "Add a command to start the project",
+          "text": "The project should be run by clicking on the green flag.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_2",
+          "title": "Add a command for the bear to speak.",
+          "text": "The bear should say \"Hello!\" within 3 seconds.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "See how the project should work",
+          "text": "The bear speaks for 3 seconds when the green flag is clicked.",
+          "url": "/vp-assets/19097/2_1598270849.PNG.webp"
+        }
+      ],
+      "starter_project_id": "9097624",
+      "demo_project_id": "9097732",
+      "command_keys": [
+        "looks",
+        "events"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_1_state_1",
+          "stateId": "VP2_M1L2_3_1_state_1",
+          "position": 1,
+          "level_position": 1,
+          "levelPosition": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "req_1_1",
+              "title": "Add a command to start the project",
+              "text": "The project should be run by clicking on the green flag.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_2",
+              "title": "Add a command for the bear to speak.",
+              "text": "The bear should say \"Hello!\" within 3 seconds.",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "See how the project should work",
+              "text": "The bear speaks for 3 seconds when the green flag is clicked.",
+              "url": "/vp-assets/19097/2_1598270849.PNG.webp"
+            }
+          ],
+          "starter_project_id": "9097624",
+          "demo_project_id": "9097732",
+          "command_keys": [
+            "looks",
+            "events"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_2",
+      "taskId": "VP2_M1L2_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Costume change: Snake",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "Start of the script",
+          "text": "The \"When the green flag is pressed\" command starts the script.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+        },
+        {
+          "id": "req_2_2",
+          "title": "Setting the costume",
+          "text": "This command will help you to set a specific costume. We have two different costumes set.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch2-2_1613627788.webp"
+        },
+        {
+          "id": "req_2_3",
+          "title": "Expectation",
+          "text": "The snake sees the dinosaur in a second instead of immediately. To prevent it from changing its costume ahead of time, we use the \"wait __ sec\" command",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch2-3_1613627800.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Dinosaur and Snake",
+          "text": "The snake first wriggles, then sees the dinosaur, is surprised, and then straightens its body. How do we program this?",
+          "url": "/vp-assets/19097/1_1598271971.PNG.webp"
+        }
+      ],
+      "starter_project_id": "9097811",
+      "demo_project_id": "10653299",
+      "command_keys": [
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_2_state_1",
+          "stateId": "VP2_M1L2_3_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "req_2_1",
+              "title": "Start of the script",
+              "text": "The \"When the green flag is pressed\" command starts the script.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+            },
+            {
+              "id": "req_2_2",
+              "title": "Setting the costume",
+              "text": "This command will help you to set a specific costume. We have two different costumes set.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch2-2_1613627788.webp"
+            },
+            {
+              "id": "req_2_3",
+              "title": "Expectation",
+              "text": "The snake sees the dinosaur in a second instead of immediately. To prevent it from changing its costume ahead of time, we use the \"wait __ sec\" command",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch2-3_1613627800.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Dinosaur and Snake",
+              "text": "The snake first wriggles, then sees the dinosaur, is surprised, and then straightens its body. How do we program this?",
+              "url": "/vp-assets/19097/1_1598271971.PNG.webp"
+            }
+          ],
+          "starter_project_id": "9097811",
+          "demo_project_id": "10653299",
+          "command_keys": [
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_3",
+      "taskId": "VP2_M1L2_3_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Heart beating: Repeat 10",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "Start of the script",
+          "text": "The \"When the green flag is pressed\" command starts the script.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch2-1_1613628380.webp"
+        },
+        {
+          "id": "req_3_2",
+          "title": "Costume change",
+          "text": "The \"Next Costume\" command changes the costume that is set next in the list of costumes.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch3-2.webp"
+        },
+        {
+          "id": "req_3_3",
+          "title": "Repeating actions",
+          "text": "For the sprite to perform an action multiple times, you need to use the \"Repeat __ times\" command. In the window, you can set the number of repetitions.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch3-3.webp"
+        },
+        {
+          "id": "req_3_4",
+          "title": "Expectation",
+          "text": "Oops! If we use the \"Next costume\" command multiple times in a row, the costumes will change too quickly and we will not see how they change: it will be like nothing is happening. To prevent commands from being executed almost simultaneously, we insert a \"pause.\" To do this, we need the \"Wait __ sec\" command.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch2-3_1613628407.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Heart",
+          "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second.\n\nCan you do the same?",
+          "url": "/vp-assets/19097/0.PNG.webp"
+        }
+      ],
+      "starter_project_id": "9098276",
+      "demo_project_id": "2660241",
+      "command_keys": [
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_3_state_1",
+          "stateId": "VP2_M1L2_3_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "req_3_1",
+              "title": "Start of the script",
+              "text": "The \"When the green flag is pressed\" command starts the script.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch2-1_1613628380.webp"
+            },
+            {
+              "id": "req_3_2",
+              "title": "Costume change",
+              "text": "The \"Next Costume\" command changes the costume that is set next in the list of costumes.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch3-2.webp"
+            },
+            {
+              "id": "req_3_3",
+              "title": "Repeating actions",
+              "text": "For the sprite to perform an action multiple times, you need to use the \"Repeat __ times\" command. In the window, you can set the number of repetitions.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch3-3.webp"
+            },
+            {
+              "id": "req_3_4",
+              "title": "Expectation",
+              "text": "Oops! If we use the \"Next costume\" command multiple times in a row, the costumes will change too quickly and we will not see how they change: it will be like nothing is happening. To prevent commands from being executed almost simultaneously, we insert a \"pause.\" To do this, we need the \"Wait __ sec\" command.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch2-3_1613628407.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Heart",
+              "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second.\n\nCan you do the same?",
+              "url": "/vp-assets/19097/0.PNG.webp"
+            }
+          ],
+          "starter_project_id": "9098276",
+          "demo_project_id": "2660241",
+          "command_keys": [
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_4",
+      "taskId": "VP2_M1L2_3_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Walking bear: Forever loop",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "req_4_1",
+          "title": "Constant repetition",
+          "text": "To make an action repeat itself constantly, use the \"Repeat Always\" command.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch4-1_1613629034.webp"
+        },
+        {
+          "id": "req_4_2",
+          "title": "Smooth movements",
+          "text": "You can make the movements smoother by setting a wait before each costume change. We can set the wait time. Try setting it for 0.1 seconds! This command is already ready — just put it in the right place.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch4-2_1613629047.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The bear walks",
+          "text": "Program a costume change so that it seems like the bear is constantly walking! See the example.",
+          "url": "/vp-assets/19097/1_1598272440.PNG.webp"
+        }
+      ],
+      "starter_project_id": "9098728",
+      "demo_project_id": "2660096",
+      "command_keys": [
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_4_state_1",
+          "stateId": "VP2_M1L2_3_4_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Constant repetition",
+              "text": "To make an action repeat itself constantly, use the \"Repeat Always\" command.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch4-1_1613629034.webp"
+            },
+            {
+              "id": "req_4_2",
+              "title": "Smooth movements",
+              "text": "You can make the movements smoother by setting a wait before each costume change. We can set the wait time. Try setting it for 0.1 seconds! This command is already ready — just put it in the right place.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch4-2_1613629047.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The bear walks",
+              "text": "Program a costume change so that it seems like the bear is constantly walking! See the example.",
+              "url": "/vp-assets/19097/1_1598272440.PNG.webp"
+            }
+          ],
+          "starter_project_id": "9098728",
+          "demo_project_id": "2660096",
+          "command_keys": [
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_5",
+      "taskId": "VP2_M1L2_3_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Clock background switch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "requirements": [
+        {
+          "id": "req_5_1",
+          "title": "Set the first background",
+          "text": "Let the clock hands start moving from 12.",
+          "type": "gif",
+          "url": "/vp-assets/19097/switchlight.webp"
+        },
+        {
+          "id": "req_5_2",
+          "title": "Change the background",
+          "text": "Change the background using the \"Next Background\" command. Program the background to change every second.",
+          "type": "gif",
+          "url": "/vp-assets/19097/ratch5-2.webp"
+        },
+        {
+          "id": "req_5_3",
+          "title": "Program the background change to repeat",
+          "text": "Program the backdrop change to repeat constantly or for each hour.",
+          "type": "gif",
+          "url": "/vp-assets/19097/scratch5-3.webp"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Create a clock!",
+          "text": "Look, all the backgrounds you need are already there, you just need to change them every second.",
+          "url": "/vp-assets/19097/М1У2 Внешность М1Т2 4 (1).PNG.webp"
+        }
+      ],
+      "starter_project_id": "9099214",
+      "demo_project_id": "2660244",
+      "command_keys": [
+        "looks",
+        "events",
+        "control"
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_5_state_1",
+          "stateId": "VP2_M1L2_3_5_state_1",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "requirements": [
+            {
+              "id": "req_5_1",
+              "title": "Set the first background",
+              "text": "Let the clock hands start moving from 12.",
+              "type": "gif",
+              "url": "/vp-assets/19097/switchlight.webp"
+            },
+            {
+              "id": "req_5_2",
+              "title": "Change the background",
+              "text": "Change the background using the \"Next Background\" command. Program the background to change every second.",
+              "type": "gif",
+              "url": "/vp-assets/19097/ratch5-2.webp"
+            },
+            {
+              "id": "req_5_3",
+              "title": "Program the background change to repeat",
+              "text": "Program the backdrop change to repeat constantly or for each hour.",
+              "type": "gif",
+              "url": "/vp-assets/19097/scratch5-3.webp"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Create a clock!",
+              "text": "Look, all the backgrounds you need are already there, you just need to change them every second.",
+              "url": "/vp-assets/19097/М1У2 Внешность М1Т2 4 (1).PNG.webp"
+            }
+          ],
+          "starter_project_id": "9099214",
+          "demo_project_id": "2660244",
+          "command_keys": [
+            "looks",
+            "events",
+            "control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_3_6",
+      "taskId": "VP2_M1L2_3_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "command_keys": [],
+      "states": [
+        {
+          "id": "VP2_M1L2_3_6_state_1",
+          "stateId": "VP2_M1L2_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "command_keys": []
+        }
+      ]
+    }
+  ]
+}

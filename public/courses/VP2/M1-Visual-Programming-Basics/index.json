@@ -18,6 +18,11 @@
       "taskCount": 1
     },
     {
+      "id": "VP2_M1L1_3",
+      "title": "Scratch. Let's get acquainted",
+      "taskCount": 12
+    },
+    {
       "id": "VP_M1L2_SLIDES",
       "title": "Slide: M1L2 - Loops",
       "taskCount": 1
@@ -31,6 +36,11 @@
       "id": "VP_M1L2_2",
       "title": "Match the Scratch vocabulary with the images",
       "taskCount": 1
+    },
+    {
+      "id": "VP2_M1L2_3",
+      "title": "Scratch. Changing looks!",
+      "taskCount": 6
     },
     {
       "id": "VP_M1L3_SLIDES",
@@ -78,6 +88,6 @@
       "taskCount": 1
     }
   ],
-  "pageCount": 15,
-  "taskCount": 27
+  "pageCount": 17,
+  "taskCount": 45
 }

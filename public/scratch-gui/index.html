@@ -20,11 +20,59 @@
         'motion', 'looks', 'sound', 'events', 'control',
         'sensing', 'operators', 'variables', 'myblocks', 'data'
       ];
+
+      const isPlayerOnly = params.get('isPlayerOnly') === 'true' || params.get('mode') === 'player';
+      if (isPlayerOnly) {
+        document.documentElement.classList.add('is-player-only');
+        const style = document.createElement('style');
+        style.textContent = `
+          html.is-player-only, html.is-player-only body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden !important;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          html.is-player-only div[class*="stage-wrapper_stage-wrapper"] {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            margin: 0 auto !important;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 100vw !important;
+            max-height: 100vh !important;
+          }
+          html.is-player-only div[class*="stage_stage_"] {
+            max-width: 100% !important;
+            max-height: calc(100vh - 44px) !important;
+            object-fit: contain;
+          }
+          html.is-player-only canvas {
+            max-width: 100% !important;
+            max-height: calc(100vh - 44px) !important;
+          }
+          html.is-player-only div[class*="stage-header_stage-size-toggle-group"],
+          html.is-player-only div[class*="alerts-container"] {
+            display: none !important;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+
       // Task 19097 (M1L2) check
       const isTask19097 = [
-        '9097624', '9097811', '9098276', '9098728', '9099214',
-        '10653299', '2660241', '2660096', '2660244'
-      ].includes(String(projectUrl)) || window.location.search.includes('19097');
+        '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
+        '9098728', '2660096', '9099214', '2660244'
+      ].includes(String(projectUrl)) ||
+      String(projectUrl).includes('19097') ||
+      String(projectUrl).includes('demo') ||
+      window.location.search.includes('19097');
 
       // For M1L1 level 2 and 3, strictly only looks and events are allowed!
       const isM1L1Level2Or3 = !isTask19097 && (levelParam === '2' || levelParam === '3');
@@ -314,12 +362,15 @@
         if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
 
         const is19097 = [
-          '9097624', '9097811', '9098276', '9098728', '9099214',
-          '10653299', '2660241', '2660096', '2660244'
-        ].includes(String(param)) || window.location.search.includes('19097');
+          '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
+          '9098728', '2660096', '9099214', '2660244'
+        ].includes(String(param)) ||
+        String(param).includes('19097') ||
+        String(param).includes('demo') ||
+        window.location.search.includes('19097');
 
         if (is19097) {
-          if (param && /^\d+$/.test(param)) {
+          if (param && (/^\d+$/.test(param) || param.includes('demo'))) {
             return `/starter-projects/19097/${param}.sb3`;
           }
           if (lvl !== '6') {

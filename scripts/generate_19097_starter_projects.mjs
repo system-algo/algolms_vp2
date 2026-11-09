@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import https from 'node:https';
+import crypto from 'node:crypto';
 import AdmZip from 'adm-zip';
 
 const OUT_DIR = path.resolve('public/starter-projects/19097');
@@ -246,22 +247,493 @@ const LEVEL_8_STAR_BLOCKS = {
   }
 };
 
+// DEMO BLOCKS for Level 1: Bear says "Hello!" for 3 seconds
+const LEVEL_1_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_say",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 43,
+    y: 58
+  },
+  "b_say": {
+    opcode: "looks_sayforsecs",
+    next: null,
+    parent: "b_flag",
+    inputs: {
+      MESSAGE: [1, [10, "Hello!"]],
+      SECS: [1, [4, "3"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 2: Snake switches to snake-a, waits 1s, switches to snake-b
+const LEVEL_2_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_switch1",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_switch1": {
+    opcode: "looks_switchcostumeto",
+    next: "b_wait",
+    parent: "b_flag",
+    inputs: {
+      COSTUME: [1, "b_costume1_menu"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_costume1_menu": {
+    opcode: "looks_costume",
+    next: null,
+    parent: "b_switch1",
+    inputs: {},
+    fields: {
+      COSTUME: ["snake-a", null]
+    },
+    shadow: true,
+    topLevel: false
+  },
+  "b_wait": {
+    opcode: "control_wait",
+    next: "b_switch2",
+    parent: "b_switch1",
+    inputs: {
+      DURATION: [1, [5, "1"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_switch2": {
+    opcode: "looks_switchcostumeto",
+    next: null,
+    parent: "b_wait",
+    inputs: {
+      COSTUME: [1, "b_costume2_menu"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_costume2_menu": {
+    opcode: "looks_costume",
+    next: null,
+    parent: "b_switch2",
+    inputs: {},
+    fields: {
+      COSTUME: ["snake-b", null]
+    },
+    shadow: true,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 3: Heart repeats 4 times: next costume, wait 1s
+const LEVEL_3_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_repeat",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_repeat": {
+    opcode: "control_repeat",
+    next: null,
+    parent: "b_flag",
+    inputs: {
+      TIMES: [1, [6, "4"]],
+      SUBSTACK: [2, "b_next"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_next": {
+    opcode: "looks_nextcostume",
+    next: "b_wait",
+    parent: "b_repeat",
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait": {
+    opcode: "control_wait",
+    next: null,
+    parent: "b_next",
+    inputs: {
+      DURATION: [1, [5, "1"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 4: Bear walks forever: next costume, wait 0.3s
+const LEVEL_4_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_forever",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_forever": {
+    opcode: "control_forever",
+    next: null,
+    parent: "b_flag",
+    inputs: {
+      SUBSTACK: [2, "b_next"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_next": {
+    opcode: "looks_nextcostume",
+    next: "b_wait",
+    parent: "b_forever",
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait": {
+    opcode: "control_wait",
+    next: null,
+    parent: "b_next",
+    inputs: {
+      DURATION: [1, [5, "0.3"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 5: Stage switches to light, repeats 12: wait 1s, next backdrop
+const LEVEL_5_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_switch",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_switch": {
+    opcode: "looks_switchbackdropto",
+    next: "b_repeat",
+    parent: "b_flag",
+    inputs: {
+      BACKDROP: [1, "b_backdrop_menu"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_backdrop_menu": {
+    opcode: "looks_backdrops",
+    next: null,
+    parent: "b_switch",
+    inputs: {},
+    fields: {
+      BACKDROP: ["light", null]
+    },
+    shadow: true,
+    topLevel: false
+  },
+  "b_repeat": {
+    opcode: "control_repeat",
+    next: null,
+    parent: "b_switch",
+    inputs: {
+      TIMES: [1, [6, "12"]],
+      SUBSTACK: [2, "b_wait"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait": {
+    opcode: "control_wait",
+    next: "b_next",
+    parent: "b_repeat",
+    inputs: {
+      DURATION: [1, [5, "1"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_next": {
+    opcode: "looks_nextbackdrop",
+    next: null,
+    parent: "b_wait",
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 7: Super cat flies/changes costume
+const LEVEL_7_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_say",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_say": {
+    opcode: "looks_sayforsecs",
+    next: "b_forever",
+    parent: "b_flag",
+    inputs: {
+      MESSAGE: [1, [10, "Super Cat!"]],
+      SECS: [1, [4, "2"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_forever": {
+    opcode: "control_forever",
+    next: null,
+    parent: "b_say",
+    inputs: {
+      SUBSTACK: [2, "b_next"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_next": {
+    opcode: "looks_nextcostume",
+    next: "b_wait",
+    parent: "b_forever",
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait": {
+    opcode: "control_wait",
+    next: null,
+    parent: "b_next",
+    inputs: {
+      DURATION: [1, [5, "0.3"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
+// DEMO BLOCKS for Level 8: Star decreases and increases size repeatedly
+const LEVEL_8_DEMO_BLOCKS = {
+  "b_flag": {
+    opcode: "event_whenflagclicked",
+    next: "b_forever",
+    parent: null,
+    inputs: {},
+    fields: {},
+    shadow: false,
+    topLevel: true,
+    x: 40,
+    y: 50
+  },
+  "b_forever": {
+    opcode: "control_forever",
+    next: null,
+    parent: "b_flag",
+    inputs: {
+      SUBSTACK: [2, "b_rep1"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_rep1": {
+    opcode: "control_repeat",
+    next: "b_rep2",
+    parent: "b_forever",
+    inputs: {
+      TIMES: [1, [6, "10"]],
+      SUBSTACK: [2, "b_dec"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_dec": {
+    opcode: "looks_changesizeby",
+    next: "b_wait1",
+    parent: "b_rep1",
+    inputs: {
+      CHANGE: [1, [4, "-5"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait1": {
+    opcode: "control_wait",
+    next: null,
+    parent: "b_dec",
+    inputs: {
+      DURATION: [1, [5, "0.1"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_rep2": {
+    opcode: "control_repeat",
+    next: null,
+    parent: "b_rep1",
+    inputs: {
+      TIMES: [1, [6, "10"]],
+      SUBSTACK: [2, "b_inc"]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_inc": {
+    opcode: "looks_changesizeby",
+    next: "b_wait2",
+    parent: "b_rep2",
+    inputs: {
+      CHANGE: [1, [4, "5"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  },
+  "b_wait2": {
+    opcode: "control_wait",
+    next: null,
+    parent: "b_inc",
+    inputs: {
+      DURATION: [1, [5, "0.1"]]
+    },
+    fields: {},
+    shadow: false,
+    topLevel: false
+  }
+};
+
 // Cache downloaded assets
 const assetCache = new Map();
+
+function buildClockSvg(hour) {
+  const cx = 240;
+  const cy = 180;
+  const rNums = 108;
+  const handLen = 78;
+  let numbersSvg = "";
+  for (let h = 1; h <= 12; h++) {
+    const rad = (h * 30 * Math.PI) / 180;
+    const nx = cx + rNums * Math.sin(rad);
+    const ny = cy - rNums * Math.cos(rad) + 11;
+    numbersSvg += `    <text x="${nx.toFixed(1)}" y="${ny.toFixed(1)}" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="32" text-anchor="middle" fill="#000000">${h}</text>\n`;
+  }
+  const handRad = (hour * 30 * Math.PI) / 180;
+  const hx = cx + handLen * Math.sin(handRad);
+  const hy = cy - handLen * Math.cos(handRad);
+  return `<svg version="1.1" width="480" height="360" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="480" height="360" fill="#FFE7C0"/>
+  <circle cx="${cx}" cy="${cy}" r="145" fill="#FFFCF9" stroke="#FFFFFF" stroke-width="4"/>
+  <g>
+${numbersSvg}  </g>
+  <line x1="${cx}" y1="${cy}" x2="${hx.toFixed(1)}" y2="${hy.toFixed(1)}" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+</svg>`;
+}
+
+const CLOCK_HOURS = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const CLOCK_BACKDROPS = CLOCK_HOURS.map((h, idx) => {
+  const name = idx === 0 ? "light" : `light${idx + 1}`;
+  const svg = buildClockSvg(h);
+  const buf = Buffer.from(svg, 'utf8');
+  const hash = crypto.createHash('md5').update(buf).digest('hex');
+  const md5ext = `${hash}.svg`;
+  assetCache.set(md5ext, buf);
+  return {
+    assetId: hash,
+    name,
+    bitmapResolution: 1,
+    md5ext,
+    dataFormat: "svg",
+    rotationCenterX: 240,
+    rotationCenterY: 180
+  };
+});
 
 async function getAsset(md5ext) {
   if (assetCache.has(md5ext)) return assetCache.get(md5ext);
 
-  // Check if asset already exists in 18343 level_8.sb3 or other local projects
+  // 1. Check existing .sb3 files in OUT_DIR
   try {
-    const local18343 = path.resolve('public/starter-projects/18343/level_8.sb3');
-    if (fs.existsSync(local18343)) {
-      const zip = new AdmZip(local18343);
+    const files = fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.sb3'));
+    for (const f of files) {
+      const zip = new AdmZip(path.join(OUT_DIR, f));
       const entry = zip.getEntry(md5ext);
       if (entry) {
         const buf = entry.getData();
         assetCache.set(md5ext, buf);
         return buf;
+      }
+    }
+  } catch (e) {}
+
+  // 2. Check 18343 starter projects directory
+  try {
+    const dir18343 = path.resolve('public/starter-projects/18343');
+    if (fs.existsSync(dir18343)) {
+      const files = fs.readdirSync(dir18343).filter(f => f.endsWith('.sb3'));
+      for (const f of files) {
+        const zip = new AdmZip(path.join(dir18343, f));
+        const entry = zip.getEntry(md5ext);
+        if (entry) {
+          const buf = entry.getData();
+          assetCache.set(md5ext, buf);
+          return buf;
+        }
       }
     }
   } catch (e) {}
@@ -273,16 +745,16 @@ async function getAsset(md5ext) {
   return buf;
 }
 
-function makeStage(costumes) {
+function makeStage(costumes, currentCostume = undefined, blocks = {}) {
   return {
     isStage: true,
     name: "Stage",
     variables: {},
     lists: {},
     broadcasts: {},
-    blocks: {},
+    blocks,
     comments: {},
-    currentCostume: costumes.length > 1 ? 1 : 0,
+    currentCostume: currentCostume !== undefined ? currentCostume : (costumes.length > 1 ? 1 : 0),
     costumes,
     sounds: [POP_SOUND],
     volume: 100,
@@ -389,9 +861,9 @@ async function main() {
   await buildSb3("level_4.sb3", lvl4Targets);
   await buildSb3("9098728.sb3", lvl4Targets);
 
-  // Level 5: Light / Clock Stage
+  // Level 5: Light / Clock Stage (12 authentic clock backdrops)
   const lvl5Targets = [
-    makeStage([BACKDROP1, LIGHT_BACKDROP])
+    makeStage(CLOCK_BACKDROPS, 0)
   ];
   await buildSb3("level_5.sb3", lvl5Targets);
   await buildSb3("9099214.sb3", lvl5Targets);
@@ -410,7 +882,63 @@ async function main() {
   ];
   await buildSb3("level_8.sb3", lvl8Targets);
 
-  console.log('All Task 19097 starter projects created successfully!');
+  // === DEMO PROJECTS (Authentic working solutions for demonstration player) ===
+  console.log('Building demo projects for Task 19097...');
+
+  // Level 1 Demo: 9097732
+  const lvl1DemoTargets = [
+    makeStage([BACKDROP1, ARCTIC_BACKDROP], 1),
+    makeSprite("Bear", BEAR_COSTUMES, 0, 0, 100, LEVEL_1_DEMO_BLOCKS)
+  ];
+  await buildSb3("9097732.sb3", lvl1DemoTargets);
+  await buildSb3("level_1_demo.sb3", lvl1DemoTargets);
+
+  // Level 2 Demo: 10653299
+  const lvl2DemoTargets = [
+    makeStage([BACKDROP1, JURASSIC_BACKDROP], 1),
+    makeSprite("Snake", SNAKE_COSTUMES, -40, -40, 90, LEVEL_2_DEMO_BLOCKS)
+  ];
+  await buildSb3("10653299.sb3", lvl2DemoTargets);
+  await buildSb3("level_2_demo.sb3", lvl2DemoTargets);
+
+  // Level 3 Demo: 2660241
+  const lvl3DemoTargets = [
+    makeStage([BACKDROP1], 0),
+    makeSprite("Heart", HEART_COSTUMES, 0, 0, 100, LEVEL_3_DEMO_BLOCKS)
+  ];
+  await buildSb3("2660241.sb3", lvl3DemoTargets);
+  await buildSb3("level_3_demo.sb3", lvl3DemoTargets);
+
+  // Level 4 Demo: 2660096
+  const lvl4DemoTargets = [
+    makeStage([BACKDROP1, ARCTIC_BACKDROP], 1),
+    makeSprite("Bear-walking", BEAR_WALK_COSTUMES, -120, -20, 90, LEVEL_4_DEMO_BLOCKS)
+  ];
+  await buildSb3("2660096.sb3", lvl4DemoTargets);
+  await buildSb3("level_4_demo.sb3", lvl4DemoTargets);
+
+  // Level 5 Demo: 2660244
+  const lvl5DemoTargets = [
+    makeStage(CLOCK_BACKDROPS, 0, LEVEL_5_DEMO_BLOCKS)
+  ];
+  await buildSb3("2660244.sb3", lvl5DemoTargets);
+  await buildSb3("level_5_demo.sb3", lvl5DemoTargets);
+
+  // Level 7 Demo: level_7_demo
+  const lvl7DemoTargets = [
+    makeStage([BACKDROP1], 0),
+    makeSprite("Sprite1", CAT_COSTUMES, 0, 0, 100, LEVEL_7_DEMO_BLOCKS, [MEOW_SOUND])
+  ];
+  await buildSb3("level_7_demo.sb3", lvl7DemoTargets);
+
+  // Level 8 Demo: level_8_demo
+  const lvl8DemoTargets = [
+    makeStage([STARS_BACKDROP], 0),
+    makeSprite("Star1", STAR_COSTUMES, 3, 23, 90, LEVEL_8_DEMO_BLOCKS, [STAR_SOUND])
+  ];
+  await buildSb3("level_8_demo.sb3", lvl8DemoTargets);
+
+  console.log('All Task 19097 starter and demo projects created successfully!');
 }
 
 main().catch(err => console.error(err));

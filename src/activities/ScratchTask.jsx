@@ -99,6 +99,19 @@ export default function ScratchTask({
   const previewMediaUrl = task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
 
+  const demoProjectId =
+    task?.demo_project_id ||
+    task?.demoProjectId ||
+    task?.config?.presentation?.projectId ||
+    task?.config?.presentation?.project ||
+    (levelPosition === 7 ? 'level_7_demo' : levelPosition === 8 ? 'level_8_demo' : '');
+
+  const [activeTab, setActiveTab] = useState(demoProjectId ? 'demo' : 'media');
+
+  useEffect(() => {
+    setActiveTab(demoProjectId ? 'demo' : 'media');
+  }, [task?.activity_id, task?.id, task?.taskId, levelPosition, demoProjectId]);
+
   const toggleCheckItem = (id) => {
     setCompletedItems((prev) => ({
       ...prev,
@@ -446,7 +459,53 @@ export default function ScratchTask({
             {isAccordionOpen && (
               <div className="scratch-task-card-body">
                 {/* Scratch Demo Player / Media Preview */}
-                {previewMediaUrl ? (
+                {demoProjectId ? (
+                  <div className="scratch-task-demo-wrapper">
+                    {previewMediaUrl && (
+                      <div className="scratch-task-demo-tabs">
+                        <button
+                          type="button"
+                          className={`scratch-task-demo-tab-btn ${activeTab === 'demo' ? 'active' : ''}`}
+                          onClick={() => setActiveTab('demo')}
+                        >
+                          <span className="scratch-task-tab-icon">🎮</span> Xem Demo mẫu
+                        </button>
+                        <button
+                          type="button"
+                          className={`scratch-task-demo-tab-btn ${activeTab === 'media' ? 'active' : ''}`}
+                          onClick={() => setActiveTab('media')}
+                        >
+                          <span className="scratch-task-tab-icon">🖼️</span> Hình minh họa
+                        </button>
+                      </div>
+                    )}
+
+                    {activeTab === 'demo' || !previewMediaUrl ? (
+                      <div className="scratch-task-demo-player-box">
+                        <div className="scratch-task-demo-iframe-container">
+                          <iframe
+                            key={`demo-${demoProjectId}-${levelPosition}`}
+                            src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
+                            className="scratch-task-demo-iframe"
+                            title="Scratch Demo Preview"
+                            allow="autoplay"
+                          />
+                        </div>
+                        <div className="scratch-task-demo-hint">
+                          <span className="scratch-task-demo-flag-icon">⚑</span> Bấm lá cờ xanh trong khung để xem hoạt động mẫu
+                        </div>
+                      </div>
+                    ) : (
+                      <div style={{ padding: '8px', background: '#f8fafc' }}>
+                        <img
+                          src={previewMediaUrl}
+                          alt={previewMediaTitle}
+                          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '6px' }}
+                        />
+                      </div>
+                    )}
+                  </div>
+                ) : previewMediaUrl ? (
                   <div style={{ marginBottom: '16px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
                     <img
                       src={previewMediaUrl}

@@ -538,7 +538,7 @@
       "requirements": [],
       "media": [],
       "starter_project_id": "/starter-projects/19097/level_7.sb3",
-      "demo_project_id": null,
+      "demo_project_id": "level_7_demo",
       "command_keys": [
         "motion",
         "looks",
@@ -611,7 +611,7 @@
         }
       ],
       "starter_project_id": "/starter-projects/19097/level_8.sb3",
-      "demo_project_id": null,
+      "demo_project_id": "level_8_demo",
       "command_keys": [
         "looks",
         "events",

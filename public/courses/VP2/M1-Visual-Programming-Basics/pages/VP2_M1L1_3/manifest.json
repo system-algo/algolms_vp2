@@ -122,10 +122,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Free programming"
+          "project_title": "M1L1 – Free programming",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Free programming"
+      "project_title": "M1L1 – Free programming",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_2",
@@ -164,8 +180,10 @@
       "starter_project_id": "8910738",
       "demo_project_id": null,
       "command_keys": [
+        "motion",
         "looks",
-        "events"
+        "events",
+        "control"
       ],
       "states": [
         {
@@ -204,13 +222,31 @@
           "starter_project_id": "8910738",
           "demo_project_id": null,
           "command_keys": [
+            "motion",
             "looks",
-            "events"
+            "events",
+            "control"
           ],
-          "project_title": "M1L1 – add a backdrop"
+          "project_title": "M1L1 – add a backdrop",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – add a backdrop"
+      "project_title": "M1L1 – add a backdrop",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_3",
@@ -249,8 +285,10 @@
       "starter_project_id": "8910872",
       "demo_project_id": null,
       "command_keys": [
+        "motion",
         "looks",
-        "events"
+        "events",
+        "control"
       ],
       "states": [
         {
@@ -289,13 +327,31 @@
           "starter_project_id": "8910872",
           "demo_project_id": null,
           "command_keys": [
+            "motion",
             "looks",
-            "events"
+            "events",
+            "control"
           ],
-          "project_title": "M1L1 – add a backdrop for a mermaid"
+          "project_title": "M1L1 – add a backdrop for a mermaid",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – add a backdrop for a mermaid"
+      "project_title": "M1L1 – add a backdrop for a mermaid",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_4",
@@ -395,10 +451,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – add sprites in the space"
+          "project_title": "M1L1 – add sprites in the space",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – add sprites in the space"
+      "project_title": "M1L1 – add sprites in the space",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_5",
@@ -498,10 +570,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – add sprites in the refrigerator"
+          "project_title": "M1L1 – add sprites in the refrigerator",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – add sprites in the refrigerator"
+      "project_title": "M1L1 – add sprites in the refrigerator",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_6",
@@ -587,10 +675,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Delete an extra sprite under the water"
+          "project_title": "M1L1 – Delete an extra sprite under the water",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Delete an extra sprite under the water"
+      "project_title": "M1L1 – Delete an extra sprite under the water",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_7",
@@ -676,10 +780,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Delete an extra sprite in the space"
+          "project_title": "M1L1 – Delete an extra sprite in the space",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Delete an extra sprite in the space"
+      "project_title": "M1L1 – Delete an extra sprite in the space",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_8",
@@ -765,10 +885,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Choose the right backdrop"
+          "project_title": "M1L1 – Choose the right backdrop",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Choose the right backdrop"
+      "project_title": "M1L1 – Choose the right backdrop",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_9",
@@ -854,10 +990,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Choose the costume for the dog"
+          "project_title": "M1L1 – Choose the costume for the dog",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Choose the costume for the dog"
+      "project_title": "M1L1 – Choose the costume for the dog",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_10",
@@ -957,10 +1109,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – A snowman"
+          "project_title": "M1L1 – A snowman",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – A snowman"
+      "project_title": "M1L1 – A snowman",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_11",
@@ -1060,10 +1228,26 @@
             "events",
             "control"
           ],
-          "project_title": "M1L1 – Mars"
+          "project_title": "M1L1 – Mars",
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "motion_pointtowards",
+            "looks_switchbackdropto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
         }
       ],
-      "project_title": "M1L1 – Mars"
+      "project_title": "M1L1 – Mars",
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "motion_pointtowards",
+        "looks_switchbackdropto",
+        "event_whenflagclicked",
+        "control_wait"
+      ]
     },
     {
       "id": "VP2_M1L1_3_12",

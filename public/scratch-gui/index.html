@@ -74,49 +74,56 @@
           div[class*="backpack_backpack-list_"] {
             display: none !important;
           }
-          /* Stage Controls & Project title group */
-          .algo-stage-controls-group {
+          /* Tab list layout for task title alignment matching Image 2 */
+          ul[class*="gui_tab-list_"] {
+            width: 100% !important;
             display: flex !important;
             align-items: center !important;
-            gap: 8px !important;
+            box-sizing: border-box !important;
+            padding-right: 8px !important;
+          }
+          ul[class*="gui_tab-list_"] > li[class*="gui_tab_"] {
+            flex-grow: 0 !important;
             flex-shrink: 0 !important;
+            min-width: 70px !important;
+            height: 80% !important;
           }
-          .algo-stage-controls-group div[class*="controls_controls-container_"] {
-            display: flex !important;
-            align-items: center !important;
-            margin: 0 !important;
-          }
-          /* Project title input inside stage header */
+          /* Project title input inside tab header matching Image 2 */
           .algo-stage-title-input {
-            background: #ffffff;
-            border: 1px solid #d0d7de;
-            border-radius: 6px;
-            color: #24292f;
-            font-size: 13px;
-            font-weight: 600;
-            padding: 3px 10px;
-            margin: 0;
-            height: 28px;
-            outline: none;
-            min-width: 170px;
-            max-width: 280px;
-            box-sizing: border-box;
-            box-shadow: inset 0 1px 2px rgba(27, 31, 36, 0.075);
-            transition: border-color 0.15s, box-shadow 0.15s;
+            margin-left: auto !important;
+            margin-right: 4px !important;
+            height: 25px !important;
+            background: #ffffff !important;
+            border: 1px solid #d0d7de !important;
+            border-radius: 4px !important;
+            color: #24292f !important;
+            font-size: 12.5px !important;
+            font-weight: 400 !important;
+            padding: 2px 8px !important;
+            outline: none !important;
+            min-width: 170px !important;
+            max-width: 300px !important;
+            box-sizing: border-box !important;
+            transition: border-color 0.15s, box-shadow 0.15s !important;
           }
           .algo-stage-title-input:focus {
-            border-color: #0969da;
-            box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.2);
+            border-color: #0969da !important;
+            box-shadow: 0 0 0 2px rgba(9, 105, 218, 0.18) !important;
           }
         `;
         document.head.appendChild(editorStyle);
       }
 
-      // 1. Dynamic category parsing & normalisation
+      // 1. Dynamic category & block parsing & normalisation
       const categoriesParam = (params.get('categories') || '').trim();
       let allowedCategories = categoriesParam
         ? categoriesParam.split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
         : ['motion', 'looks', 'events', 'control'];
+
+      const blocksParam = (params.get('blocks') || '').trim();
+      const allowedBlocks = blocksParam
+        ? blocksParam.split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+        : null;
 
       // Normalize category aliases between LMS manifests and Scratch 3.0 Blockly:
       if (allowedCategories.includes('variables') && !allowedCategories.includes('data')) {
@@ -434,17 +441,38 @@
       const MYBLOCKS_XML = `
   <category name="My Blocks" id="myBlocks" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE"/>`;
 
-      function buildDynamicToolboxXml(allowed) {
+      function filterCategoryXmlBlocks(categoryXmlStr, allowedBlockTypes) {
+        if (!allowedBlockTypes || allowedBlockTypes.length === 0) return categoryXmlStr;
+        try {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(`<root>${categoryXmlStr}</root>`, 'text/xml');
+          const blocks = Array.from(doc.querySelectorAll('category > block'));
+          blocks.forEach(b => {
+            const type = (b.getAttribute('type') || '').toLowerCase();
+            if (!allowedBlockTypes.includes(type)) {
+              b.remove();
+            }
+          });
+          const cat = doc.querySelector('category');
+          if (!cat) return '';
+          const serializer = new XMLSerializer();
+          return serializer.serializeToString(cat);
+        } catch (err) {
+          return categoryXmlStr;
+        }
+      }
+
+      function buildDynamicToolboxXml(allowed, allowedBlockTypes) {
         let xml = '<xml id="toolbox" style="display: none">\n';
-        if (allowed.includes('motion')) xml += MOTION_XML + '\n';
-        if (allowed.includes('looks')) xml += LOOKS_XML + '\n';
-        if (allowed.includes('sound')) xml += SOUND_XML + '\n';
-        if (allowed.includes('events')) xml += EVENTS_XML + '\n';
-        if (allowed.includes('control')) xml += CONTROL_XML + '\n';
-        if (allowed.includes('sensing')) xml += SENSING_XML + '\n';
-        if (allowed.includes('operators')) xml += OPERATORS_XML + '\n';
-        if (allowed.includes('variables') || allowed.includes('data')) xml += VARIABLES_XML + '\n';
-        if (allowed.includes('myblocks') || allowed.includes('procedures')) xml += MYBLOCKS_XML + '\n';
+        if (allowed.includes('motion')) xml += filterCategoryXmlBlocks(MOTION_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('looks')) xml += filterCategoryXmlBlocks(LOOKS_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('sound')) xml += filterCategoryXmlBlocks(SOUND_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('events')) xml += filterCategoryXmlBlocks(EVENTS_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('control')) xml += filterCategoryXmlBlocks(CONTROL_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('sensing')) xml += filterCategoryXmlBlocks(SENSING_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('operators')) xml += filterCategoryXmlBlocks(OPERATORS_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('variables') || allowed.includes('data')) xml += filterCategoryXmlBlocks(VARIABLES_XML, allowedBlockTypes) + '\n';
+        if (allowed.includes('myblocks') || allowed.includes('procedures')) xml += filterCategoryXmlBlocks(MYBLOCKS_XML, allowedBlockTypes) + '\n';
         xml += '</xml>';
         return xml;
       }
@@ -485,8 +513,8 @@
       document.head.appendChild(filterStyleElement);
 
       // 2. Native Blockly updateToolbox hook: intercept all updateToolbox calls
-      function filterToolboxXml(rawXml, allowed) {
-        if (isFullToolbox) return rawXml;
+      function filterToolboxXml(rawXml, allowed, allowedBlockTypes) {
+        if (isFullToolbox && (!allowedBlockTypes || allowedBlockTypes.length === 0)) return rawXml;
         try {
           const parser = new DOMParser();
           const doc = parser.parseFromString(rawXml, 'text/xml');
@@ -505,6 +533,14 @@
             const norm = catAliases[id] || id;
             if (!allowedNorm.includes(norm)) {
               c.remove();
+            } else if (allowedBlockTypes && allowedBlockTypes.length > 0) {
+              const blocks = Array.from(c.children).filter(el => el.tagName.toLowerCase() === 'block');
+              blocks.forEach(b => {
+                const type = (b.getAttribute('type') || '').toLowerCase();
+                if (!allowedBlockTypes.includes(type)) {
+                  b.remove();
+                }
+              });
             }
           });
           const serializer = new XMLSerializer();
@@ -521,11 +557,11 @@
         const originalUpdateToolbox = ws.updateToolbox.bind(ws);
 
         ws.updateToolbox = function(tree) {
-          if (isFullToolbox) {
+          if (isFullToolbox && (!allowedBlocks || allowedBlocks.length === 0)) {
             return originalUpdateToolbox(tree);
           }
           if (typeof tree === 'string') {
-            const filteredTree = filterToolboxXml(tree, allowedCategories);
+            const filteredTree = filterToolboxXml(tree, allowedCategories, allowedBlocks);
             return originalUpdateToolbox(filteredTree);
           }
           if (tree && tree.querySelectorAll) {
@@ -545,6 +581,14 @@
                 const norm = catAliases[id] || id;
                 if (!allowedNorm.includes(norm)) {
                   c.remove();
+                } else if (allowedBlocks && allowedBlocks.length > 0) {
+                  const blocks = Array.from(c.children).filter(el => el.tagName.toLowerCase() === 'block');
+                  blocks.forEach(b => {
+                    const type = (b.getAttribute('type') || '').toLowerCase();
+                    if (!allowedBlocks.includes(type)) {
+                      b.remove();
+                    }
+                  });
                 }
               });
             } catch (err) {}
@@ -563,8 +607,8 @@
 
         try {
           hookWorkspaceToolbox(ws);
-          if (!isFullToolbox) {
-            const customXml = buildDynamicToolboxXml(allowedCategories);
+          if (!isFullToolbox || (allowedBlocks && allowedBlocks.length > 0)) {
+            const customXml = buildDynamicToolboxXml(allowedCategories, allowedBlocks);
             ws.updateToolbox(customXml);
           }
           return true;
@@ -637,37 +681,72 @@
       };
 
       function resolveProjectTitle(url, level, explicitTitle) {
+        let raw = '';
         if (explicitTitle && explicitTitle.trim()) {
-          return explicitTitle.trim();
-        }
-        const cleanKey = url ? url.split('/').pop().replace(/\.sb3?$/i, '') : '';
-        const is19097 = (url && url.includes('19097')) ||
-                        window.location.search.includes('19097') ||
-                        [
-                          '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
-                          '9098728', '2660096', '9099214', '2660244'
-                        ].includes(cleanKey);
+          raw = explicitTitle.trim();
+        } else {
+          const cleanKey = url ? url.split('/').pop().replace(/\.sb3?$/i, '') : '';
+          const is19097 = (url && url.includes('19097')) ||
+                          window.location.search.includes('19097') ||
+                          [
+                            '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
+                            '9098728', '2660096', '9099214', '2660244'
+                          ].includes(cleanKey);
 
-        if (is19097) {
-          if (PROJECT_TITLE_MAP[`19097_${cleanKey}`]) return PROJECT_TITLE_MAP[`19097_${cleanKey}`];
-          if (PROJECT_TITLE_MAP[`19097_level_${level}`]) return PROJECT_TITLE_MAP[`19097_level_${level}`];
-          if (PROJECT_TITLE_MAP[`19097_${level}`]) return PROJECT_TITLE_MAP[`19097_${level}`];
+          if (is19097) {
+            if (PROJECT_TITLE_MAP[`19097_${cleanKey}`]) raw = PROJECT_TITLE_MAP[`19097_${cleanKey}`];
+            else if (PROJECT_TITLE_MAP[`19097_level_${level}`]) raw = PROJECT_TITLE_MAP[`19097_level_${level}`];
+            else if (PROJECT_TITLE_MAP[`19097_${level}`]) raw = PROJECT_TITLE_MAP[`19097_${level}`];
+          }
+          if (!raw && PROJECT_TITLE_MAP[cleanKey]) {
+            raw = PROJECT_TITLE_MAP[cleanKey];
+          }
+          if (!raw && PROJECT_TITLE_MAP[`level_${level}`]) {
+            raw = PROJECT_TITLE_MAP[`level_${level}`];
+          }
+          if (!raw) raw = cleanKey || 'Scratch Project';
         }
-        if (PROJECT_TITLE_MAP[cleanKey]) {
-          return PROJECT_TITLE_MAP[cleanKey];
+
+        // Remove en-dash / em-dash to match Image 2 (e.g. "M1L1 add a backdrop for a mermaid")
+        return raw.replace(/\s*[–—]\s*/g, ' ').trim();
+      }
+
+      function ensureTitleInput(title) {
+        if (isPlayerOnly) return false;
+        const tabList = document.querySelector('ul[class*="gui_tab-list_"]') || document.querySelector('ul[class*="react-tabs__tab-list"]');
+        if (!tabList) return false;
+
+        const cleanTitle = (title || expectedTitle || '').replace(/\s*[–—]\s*/g, ' ').trim();
+        let input = document.getElementById('algo-stage-title-input');
+        if (!input) {
+          input = document.createElement('input');
+          input.id = 'algo-stage-title-input';
+          input.className = 'algo-stage-title-input';
+          input.type = 'text';
+          input.value = cleanTitle;
+          input.title = 'Project Title';
+          input.addEventListener('change', (e) => {
+            applyProjectTitle(e.target.value);
+          });
+          tabList.appendChild(input);
+        } else {
+          if (input.parentNode !== tabList) {
+            tabList.appendChild(input);
+          }
+          if (cleanTitle && input.value !== cleanTitle && document.activeElement !== input) {
+            input.value = cleanTitle;
+          }
         }
-        if (PROJECT_TITLE_MAP[`level_${level}`]) {
-          return PROJECT_TITLE_MAP[`level_${level}`];
-        }
-        return cleanKey || 'Scratch Project';
+        return true;
       }
 
       function applyProjectTitle(title) {
         if (!title) return;
+        const cleanTitle = title.replace(/\s*[–—]\s*/g, ' ').trim();
         const loader = window.__scratchProjectLoader;
         if (loader && loader.props && typeof loader.props.onSetProjectTitle === 'function') {
           try {
-            loader.props.onSetProjectTitle(title);
+            loader.props.onSetProjectTitle(cleanTitle);
           } catch (err) {
             console.warn('[AlgoLMS Bridge] Error setting project title on loader:', err);
           }
@@ -675,8 +754,8 @@
         try {
           const titleInputs = document.querySelectorAll('input[class*="title-field"]');
           titleInputs.forEach(input => {
-            if (input && input.value !== title) {
-              input.value = title;
+            if (input && input.value !== cleanTitle) {
+              input.value = cleanTitle;
               input.dispatchEvent(new Event('input', { bubbles: true }));
               input.dispatchEvent(new Event('change', { bubbles: true }));
             }
@@ -686,40 +765,17 @@
         }
 
         try {
-          if (!isPlayerOnly) {
-            const stageMenu = document.querySelector('div[class*="stage-header_stage-menu-wrapper_"]');
-            if (stageMenu) {
-              const controls = stageMenu.querySelector('div[class*="controls_controls-container_"]');
-              let group = document.getElementById('algo-stage-controls-group');
-              if (!group) {
-                group = document.createElement('div');
-                group.id = 'algo-stage-controls-group';
-                group.className = 'algo-stage-controls-group';
-                if (controls && controls.parentNode === stageMenu) {
-                  stageMenu.insertBefore(group, controls);
-                  group.appendChild(controls);
-                } else {
-                  stageMenu.insertBefore(group, stageMenu.firstChild);
-                }
-              }
-
-              let input = document.getElementById('algo-stage-title-input');
-              if (!input) {
-                input = document.createElement('input');
-                input.id = 'algo-stage-title-input';
-                input.className = 'algo-stage-title-input';
-                input.type = 'text';
-                input.value = title;
-                input.title = 'Project Title';
-                input.addEventListener('change', (e) => {
-                  applyProjectTitle(e.target.value);
-                });
-                group.insertBefore(input, group.firstChild);
-              } else if (input.value !== title) {
-                input.value = title;
-              }
+          // If legacy controls group exists, restore controls to stage menu
+          const staleGroup = document.getElementById('algo-stage-controls-group');
+          if (staleGroup) {
+            const controls = staleGroup.querySelector('div[class*="controls_controls-container_"]');
+            if (controls && staleGroup.parentNode) {
+              staleGroup.parentNode.insertBefore(controls, staleGroup);
             }
+            staleGroup.remove();
           }
+
+          ensureTitleInput(cleanTitle);
         } catch (err) {}
       }
 
@@ -834,6 +890,12 @@
           }
         }, 100);
       }
+
+      // Keep checking for tab-list to attach title input when Scratch editor mounts
+      const tabTitleWatch = setInterval(() => {
+        ensureTitleInput(expectedTitle);
+      }, 150);
+      setTimeout(() => clearInterval(tabTitleWatch), 8000);
 
       // Algo LMS Native File & Edit Actions Bridge
       window.loadProjectFromComputer = function() {

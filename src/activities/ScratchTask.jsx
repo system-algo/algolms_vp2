@@ -35,9 +35,18 @@ export default function ScratchTask({
     (Array.isArray(task?.states?.[0]?.command_keys) && task.states[0].command_keys.length > 0 ? task.states[0].command_keys : null) ||
     (Array.isArray(state?.command_keys) && state.command_keys.length > 0 ? state.command_keys : null);
 
+  // Specific allowed command blocks (opcodes)
+  const taskCommandBlocks =
+    (Array.isArray(task?.command_blocks) && task.command_blocks.length > 0 ? task.command_blocks : null) ||
+    (Array.isArray(task?.commandBlocks) && task.commandBlocks.length > 0 ? task.commandBlocks : null) ||
+    (Array.isArray(task?.states?.[0]?.command_blocks) && task.states[0].command_blocks.length > 0 ? task.states[0].command_blocks : null) ||
+    (Array.isArray(state?.command_blocks) && state.command_blocks.length > 0 ? state.command_blocks : null);
+
   const categoriesQuery = taskCommandKeys
     ? taskCommandKeys.join(',')
     : ['motion', 'looks', 'events', 'control'].join(',');
+
+  const blocksQuery = taskCommandBlocks ? taskCommandBlocks.join(',') : '';
 
   const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
                            (Array.isArray(task?.media) && task.media.length > 0);
@@ -46,7 +55,12 @@ export default function ScratchTask({
   const [isDrawerOpen, setIsDrawerOpen] = useState(
     task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
   );
-  const [drawerWidth, setDrawerWidth] = useState(380);
+  const [drawerWidth, setDrawerWidth] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return Math.max(450, Math.min(680, Math.round(window.innerWidth * 0.42)));
+    }
+    return 480;
+  });
   const [isResizing, setIsResizing] = useState(false);
   const [completedItems, setCompletedItems] = useState({});
 
@@ -105,7 +119,7 @@ export default function ScratchTask({
     task?.projectName ||
     '';
 
-  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
+  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}`;
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -301,7 +315,9 @@ export default function ScratchTask({
       if (!containerRef.current) return;
       const containerRect = containerRef.current.getBoundingClientRect();
       const newWidth = containerRect.right - e.clientX;
-      if (newWidth >= 300 && newWidth <= 680) {
+      const minW = 320;
+      const maxW = typeof window !== 'undefined' ? Math.round(window.innerWidth * 0.75) : 800;
+      if (newWidth >= minW && newWidth <= maxW) {
         setDrawerWidth(newWidth);
       }
     };
@@ -445,14 +461,8 @@ export default function ScratchTask({
       className={`scratch-task-container ${isResizing ? 'is-resizing' : ''} ${isDrawerOpen ? 'has-drawer-open' : 'has-drawer-closed'}`}
       ref={containerRef}
     >
-      {/* Left: Scratch Editor iframe (Responds cleanly to drawer width) */}
-      <div
-        className="scratch-task-editor-pane"
-        style={{
-          marginRight: isDrawerOpen ? `${drawerWidth}px` : '16px',
-          transition: isResizing ? 'none' : 'margin-right 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-        }}
-      >
+      {/* Left: Scratch Editor iframe (Full width, overlayed by drawer on the right) */}
+      <div className="scratch-task-editor-pane">
         <div className="scratch-task-toolbar">
           <div className="scratch-task-toolbar-left">
             {onBackToCourses && (
@@ -493,15 +503,45 @@ export default function ScratchTask({
                   </div>
                   <div
                     className="scratch-task-dropdown-item"
-                    onClick={() => {
+                    onClick={async () => {
                       setOpenFileMenu(false);
                       const win = iframeRef.current?.contentWindow;
-                      const title = currentTask?.title || 'project';
-                      if (win?.saveProjectToComputer) {
-                        win.saveProjectToComputer(title);
-                      } else {
-                        win?.postMessage({ type: 'SAVE_TO_COMPUTER', title }, '*');
+                      const title = projectTitle || taskTitle || task?.title || 'project';
+
+                      // 1. Direct download via Scratch VM in top-level window
+                      try {
+                        const vm = win?.vm || win?.__scratchProjectLoader?.props?.vm;
+                        if (vm && typeof vm.saveProjectSb3 === 'function') {
+                          const blob = await vm.saveProjectSb3();
+                          const filename = title.endsWith('.sb3') ? title : `${title}.sb3`;
+                          const blobUrl = URL.createObjectURL(blob);
+                          const link = document.createElement('a');
+                          link.href = blobUrl;
+                          link.download = filename;
+                          document.body.appendChild(link);
+                          link.click();
+                          setTimeout(() => {
+                            document.body.removeChild(link);
+                            URL.revokeObjectURL(blobUrl);
+                          }, 1000);
+                          return;
+                        }
+                      } catch (err) {
+                        console.warn('[ScratchTask] Direct save from VM failed, trying fallback:', err);
                       }
+
+                      // 2. Call helper on iframe window
+                      try {
+                        if (win?.saveProjectToComputer) {
+                          win.saveProjectToComputer(title);
+                          return;
+                        }
+                      } catch (err) {
+                        console.warn('[ScratchTask] Call to win.saveProjectToComputer failed:', err);
+                      }
+
+                      // 3. Fallback: postMessage to iframe
+                      win?.postMessage({ type: 'SAVE_TO_COMPUTER', title }, '*');
                     }}
                   >
                     Save to your computer
@@ -630,11 +670,7 @@ export default function ScratchTask({
           onClick={handleDividerClick}
           title={isDrawerOpen ? 'Thu gọn bảng bài tập' : 'Mở bảng bài tập'}
         >
-          <div className="scratch-task-divider-handle">
-            <span className="scratch-task-divider-arrow">
-              {isDrawerOpen ? '›' : '‹'}
-            </span>
-          </div>
+          <div className="scratch-task-divider-handle" />
         </div>
 
         {/* Scrollable Drawer Body */}

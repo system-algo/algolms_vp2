@@ -89,8 +89,16 @@
           "command_keys": [
             "looks",
             "events"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_sayforsecs"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_sayforsecs"
       ]
     },
     {
@@ -188,8 +196,18 @@
             "looks",
             "events",
             "control"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_switchcostumeto",
+            "control_wait"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_switchcostumeto",
+        "control_wait"
       ]
     },
     {
@@ -301,8 +319,20 @@
             "looks",
             "events",
             "control"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_nextcostume",
+            "control_repeat",
+            "control_wait"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_nextcostume",
+        "control_repeat",
+        "control_wait"
       ]
     },
     {
@@ -386,8 +416,20 @@
             "looks",
             "events",
             "control"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_nextcostume",
+            "control_forever",
+            "control_wait"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_nextcostume",
+        "control_forever",
+        "control_wait"
       ]
     },
     {
@@ -485,8 +527,24 @@
             "looks",
             "events",
             "control"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_switchbackdropto",
+            "looks_nextbackdrop",
+            "control_repeat",
+            "control_forever",
+            "control_wait"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_switchbackdropto",
+        "looks_nextbackdrop",
+        "control_repeat",
+        "control_forever",
+        "control_wait"
       ]
     },
     {
@@ -592,9 +650,11 @@
             "operators",
             "variables",
             "myblocks"
-          ]
+          ],
+          "command_blocks": []
         }
-      ]
+      ],
+      "command_blocks": []
     },
     {
       "id": "VP2_M1L2_3_8",
@@ -668,8 +728,22 @@
             "looks",
             "events",
             "control"
+          ],
+          "command_blocks": [
+            "event_whenflagclicked",
+            "looks_changesizeby",
+            "control_repeat",
+            "control_forever",
+            "control_wait"
           ]
         }
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "looks_changesizeby",
+        "control_repeat",
+        "control_forever",
+        "control_wait"
       ]
     }
   ]

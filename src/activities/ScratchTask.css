@@ -260,26 +260,19 @@
 }
 
 .scratch-task-divider-handle {
-  width: 14px;
+  width: 6px;
   height: 48px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #ffffff;
+  border-radius: 9999px;
+  display: block;
   pointer-events: none;
-  transition: background 0.15s;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .scratch-task-divider:hover .scratch-task-divider-handle {
-  background: rgba(255, 255, 255, 0.45);
-}
-
-.scratch-task-divider-arrow {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1;
+  transform: scaleY(1.08);
+  opacity: 0.95;
 }
 
 /* Scrollable content inside drawer */

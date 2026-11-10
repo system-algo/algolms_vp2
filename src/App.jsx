@@ -54,15 +54,33 @@ function getRouteFromUrl() {
 
   const lessonFromUrl = params.get('lesson');
   const pageFromUrl = params.get('page');
+  const hasCourseParam = params.has('course');
 
-  if (courseId) sessionStorage.setItem('lms_active_course', courseId);
-  if (lessonFromUrl) sessionStorage.setItem('lms_active_lesson', lessonFromUrl);
-  if (pageFromUrl) sessionStorage.setItem('lms_active_page', pageFromUrl);
+  if (courseId) {
+    sessionStorage.setItem('lms_active_course', courseId);
+  } else if (!hasCourseParam) {
+    courseId = sessionStorage.getItem('lms_active_course') || 'VP2';
+  }
+
+  let lessonId = '';
+  let pageId = '';
+
+  if (hasCourseParam) {
+    lessonId = lessonFromUrl || '';
+    pageId = pageFromUrl || '';
+    if (lessonId) sessionStorage.setItem('lms_active_lesson', lessonId);
+    else sessionStorage.removeItem('lms_active_lesson');
+    if (pageId) sessionStorage.setItem('lms_active_page', pageId);
+    else sessionStorage.removeItem('lms_active_page');
+  } else {
+    lessonId = lessonFromUrl ?? (sessionStorage.getItem('lms_active_lesson') || '');
+    pageId = pageFromUrl ?? (sessionStorage.getItem('lms_active_page') || '');
+  }
 
   return {
-    courseId: courseId || sessionStorage.getItem('lms_active_course') || 'VP2',
-    lessonId: lessonFromUrl || sessionStorage.getItem('lms_active_lesson') || '',
-    pageId: pageFromUrl || sessionStorage.getItem('lms_active_page') || '',
+    courseId: courseId || 'VP2',
+    lessonId,
+    pageId,
     h5pActivityId: params.get('h5p') || '',
   };
 }

@@ -411,20 +411,6 @@
         procedures: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures'
       };
 
-      const blockPrefixMap = {
-        motion: 'g[data-category="motion"], g[data-id^="motion_"]',
-        looks: 'g[data-category="looks"], g[data-id^="looks_"]',
-        sound: 'g[data-category="sound"], g[data-id^="sound_"]',
-        events: 'g[data-category="events"], g[data-id^="event_"]',
-        control: 'g[data-category="control"], g[data-id^="control_"]',
-        sensing: 'g[data-category="sensing"], g[data-id^="sensing_"], g[data-id="sensing_of"]',
-        operators: 'g[data-category="operators"], g[data-id^="operator_"]',
-        variables: 'g[data-category="data"], g[data-id^="data_"]',
-        data: 'g[data-category="data"], g[data-id^="data_"]',
-        myblocks: 'g[data-category="myBlocks"], g[data-id^="procedures_"]',
-        procedures: 'g[data-category="myBlocks"], g[data-id^="procedures_"]'
-      };
-
       const filterStyleElement = document.createElement('style');
       filterStyleElement.id = 'algo-lms-toolbox-filter';
 
@@ -438,20 +424,83 @@
           if (categoryClassMap[cat]) {
             cssRules.push(`${categoryClassMap[cat]} { display: none !important; }`);
           }
-          if (blockPrefixMap[cat]) {
-            cssRules.push(`${blockPrefixMap[cat]} { display: none !important; }`);
-          }
         });
-        if (disallowedList.includes('sensing')) {
-          cssRules.push('g[data-id="sensing_of"], g[data-id*="sensing"] { display: none !important; }');
-        }
         filterStyleElement.textContent = cssRules.join('\n');
       }
 
       updateCssFilter(disallowed);
       document.head.appendChild(filterStyleElement);
 
-      // 2. Native Blockly updateToolbox hook
+      // 2. Native Blockly updateToolbox hook: intercept all updateToolbox calls
+      function filterToolboxXml(rawXml, allowed) {
+        if (isFullToolbox) return rawXml;
+        try {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(rawXml, 'text/xml');
+          const catAliases = {
+            event: 'events',
+            events: 'events',
+            data: 'variables',
+            variables: 'variables',
+            procedures: 'myblocks',
+            myblocks: 'myblocks'
+          };
+          const allowedNorm = allowed.map(c => catAliases[c] || c.toLowerCase());
+          const cats = Array.from(doc.querySelectorAll('category'));
+          cats.forEach(c => {
+            const id = (c.getAttribute('id') || '').toLowerCase();
+            const norm = catAliases[id] || id;
+            if (!allowedNorm.includes(norm)) {
+              c.remove();
+            }
+          });
+          const serializer = new XMLSerializer();
+          return serializer.serializeToString(doc);
+        } catch (err) {
+          console.warn('[AlgoLMS Bridge] filterToolboxXml error:', err);
+          return rawXml;
+        }
+      }
+
+      function hookWorkspaceToolbox(ws) {
+        if (!ws || ws.__algoToolboxHooked) return;
+        ws.__algoToolboxHooked = true;
+        const originalUpdateToolbox = ws.updateToolbox.bind(ws);
+
+        ws.updateToolbox = function(tree) {
+          if (isFullToolbox) {
+            return originalUpdateToolbox(tree);
+          }
+          if (typeof tree === 'string') {
+            const filteredTree = filterToolboxXml(tree, allowedCategories);
+            return originalUpdateToolbox(filteredTree);
+          }
+          if (tree && tree.querySelectorAll) {
+            try {
+              const catAliases = {
+                event: 'events',
+                events: 'events',
+                data: 'variables',
+                variables: 'variables',
+                procedures: 'myblocks',
+                myblocks: 'myblocks'
+              };
+              const allowedNorm = allowedCategories.map(c => catAliases[c] || c.toLowerCase());
+              const cats = Array.from(tree.querySelectorAll('category'));
+              cats.forEach(c => {
+                const id = (c.getAttribute('id') || '').toLowerCase();
+                const norm = catAliases[id] || id;
+                if (!allowedNorm.includes(norm)) {
+                  c.remove();
+                }
+              });
+            } catch (err) {}
+            return originalUpdateToolbox(tree);
+          }
+          return originalUpdateToolbox(tree);
+        };
+      }
+
       function applyBlocklyToolbox() {
         if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
         const ws = window.Blockly.getMainWorkspace();
@@ -460,12 +509,11 @@
         if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
-          if (isFullToolbox) {
-            // Full toolbox allowed (e.g. Free programming / Super cat) - keep native workspace intact
-            return true;
+          hookWorkspaceToolbox(ws);
+          if (!isFullToolbox) {
+            const customXml = buildDynamicToolboxXml(allowedCategories);
+            ws.updateToolbox(customXml);
           }
-          const customXml = buildDynamicToolboxXml(allowedCategories);
-          ws.updateToolbox(customXml);
           return true;
         } catch (err) {
           console.warn('[AlgoLMS Bridge] updateToolbox error:', err);

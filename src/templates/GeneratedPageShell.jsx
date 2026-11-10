@@ -644,6 +644,11 @@ export default function GeneratedPageShell({
         onPrevTask={prevTask}
         onSelectState={setStateIndex}
         onBack={onBackToPages}
+        tasks={tasks}
+        taskIndex={taskIndex}
+        completedTaskIds={completedTaskIds}
+        onSelectTask={gotoTask}
+        onBackToCourses={onBackToCourses}
       />
 
     </div>

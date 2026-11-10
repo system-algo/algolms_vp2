@@ -22,12 +22,12 @@
 
 .scratch-task-toolbar {
   height: 38px;
-  background: #2b2b2b;
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 12px;
-  border-bottom: 1px solid #383838;
+  border-bottom: 1px solid #282828;
   color: #e0e0e0;
   font-size: 13px;
   flex-shrink: 0;
@@ -37,7 +37,99 @@
 .scratch-task-toolbar-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+}
+
+.scratch-task-btn-tool {
+  background: #252525;
+  color: #e0e0e0;
+  border: 1px solid #3d3d3d;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.scratch-task-btn-tool:hover {
+  background: #333333;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.scratch-task-btn-tool.back {
+  margin-top: -1px;
+  font-weight: 600;
+  background: #1e1e1e;
+  border-color: #383838;
+}
+
+.scratch-task-btn-tool.back:hover {
+  background: #2c2c2c;
+  border-color: #555555;
+}
+
+/* Dropdown menus (File, Edit) */
+.scratch-task-menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.scratch-task-menu-btn {
+  background: transparent;
+  border: none;
+  color: #d1d5db;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scratch-task-menu-btn:hover {
+  background: #222222;
+  color: #ffffff;
+}
+
+.scratch-task-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: #1f1f1f;
+  border: 1px solid #383838;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  min-width: 160px;
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.scratch-task-dropdown-item {
+  background: transparent;
+  border: none;
+  color: #e5e7eb;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease;
+  width: 100%;
+}
+
+.scratch-task-dropdown-item:hover {
+  background: #2d2d2d;
+  color: #ffffff;
 }
 
 .scratch-task-badge {
@@ -63,35 +155,49 @@
 .scratch-task-toolbar-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
-.scratch-task-btn-tool {
-  background: #3a3a3a;
+.scratch-task-save-status {
+  font-size: 12px;
+  color: #94a3b8;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.scratch-task-save-btn {
+  background: #855cd6;
   color: #ffffff;
-  border: 1px solid #4d4d4d;
-  padding: 4px 10px;
+  border: none;
+  padding: 5px 14px;
   border-radius: 4px;
   font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.scratch-task-save-btn:hover {
+  background: #734fc5;
+}
+
+.scratch-task-check-btn {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px;
-  transition: background 0.15s, border-color 0.15s;
+  gap: 4px;
+  transition: background 0.15s ease;
 }
 
-.scratch-task-btn-tool:hover {
-  background: #4a4a4a;
-  border-color: #666;
-}
-
-.scratch-task-btn-tool.primary {
-  background: #6c5ce7;
-  border-color: #7d6ef0;
-}
-
-.scratch-task-btn-tool.primary:hover {
-  background: #5b4bc4;
+.scratch-task-check-btn:hover {
+  background: #059669;
 }
 
 .scratch-task-iframe-wrapper {
@@ -191,23 +297,26 @@
   background: #ffffff;
 }
 
-.scratch-task-drawer-header {
-  background: #ffcc00;
-  padding: 16px 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.scratch-task-drawer-title-row {
+.scratch-task-drawer-header-clean {
+  background: #ffffff;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e2e8f0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.scratch-task-drawer-task-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.2px;
 }
 
 .scratch-task-drawer-close-btn {
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.05);
   border: none;
   border-radius: 50%;
   width: 28px;
@@ -217,48 +326,157 @@
   justify-content: center;
   font-size: 14px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #64748b;
   cursor: pointer;
-  transition: background 0.15s;
-}
-
-.scratch-task-drawer-close-btn:hover {
-  background: rgba(0, 0, 0, 0.16);
-}
-
-.scratch-task-drawer-title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 800;
-  color: #1a1a1a;
-  letter-spacing: -0.3px;
-}
-
-.scratch-task-btn-next-level {
-  background: #6c2eb9;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  box-shadow: 0 4px 10px rgba(108, 46, 185, 0.3);
   transition: all 0.15s ease;
 }
 
-.scratch-task-btn-next-level:hover {
-  background: #58219c;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(108, 46, 185, 0.4);
+.scratch-task-drawer-close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0f172a;
 }
 
-.scratch-task-btn-next-level:active {
-  transform: translateY(0);
+/* Requirements Accordion List (Task-specific, no numbering badges) */
+.scratch-task-req-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scratch-task-req-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.scratch-task-req-card.is-active {
+  border-color: #855cd6;
+  box-shadow: 0 4px 12px rgba(133, 92, 214, 0.12);
+}
+
+.scratch-task-req-card.is-checked {
+  background: #f8fafc;
+  opacity: 0.9;
+}
+
+.scratch-task-req-header {
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #ffffff;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.scratch-task-req-header:hover {
+  background: #f8fafc;
+}
+
+.scratch-task-req-card.is-active .scratch-task-req-header {
+  background: #faf5ff;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.scratch-task-req-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.scratch-task-req-checkbox-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.scratch-task-req-checkbox {
+  width: 17px;
+  height: 17px;
+  accent-color: #855cd6;
+  cursor: pointer;
+}
+
+.scratch-task-req-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.scratch-task-req-card.is-checked .scratch-task-req-title {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.scratch-task-req-arrow {
+  font-size: 12px;
+  color: #64748b;
+  margin-left: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.scratch-task-req-card.is-active .scratch-task-req-arrow {
+  color: #855cd6;
+}
+
+.scratch-task-req-body {
+  padding: 12px 14px 14px 14px;
+  background: #ffffff;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.scratch-task-req-text {
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+
+.scratch-task-req-media {
+  position: relative;
+  display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  max-width: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.scratch-task-req-media:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.scratch-task-req-img {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+.scratch-task-req-zoom-hint {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+  pointer-events: none;
 }
 
 /* Drawer Content */

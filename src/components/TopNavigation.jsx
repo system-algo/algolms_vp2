@@ -1017,19 +1017,7 @@ export default function TopNavigation({
     <>
       <header className="lms-topbar">
         <div className="lms-topbar__info-row">
-          <div
-            className="lms-topbar__identity"
-            onClick={onBackToCourses || onBackToCatalog}
-            role="button"
-            tabIndex={0}
-            title="Quay lại khóa học (Dashboard)"
-            style={{ cursor: (onBackToCourses || onBackToCatalog) ? 'pointer' : 'default' }}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                (onBackToCourses || onBackToCatalog)?.();
-              }
-            }}
-          >
+          <div className="lms-topbar__identity">
             <div className="lms-topbar__logo">
               <span
                 className="lms-topbar__logo-fallback"
@@ -1069,38 +1057,6 @@ export default function TopNavigation({
               {resolvedCourseTitle}
             </strong>
           </div>
-
-          {(onBackToCourses || onBackToCatalog) && (
-            <button
-              type="button"
-              className="lms-topbar__back-course-btn"
-              onClick={onBackToCourses || onBackToCatalog}
-              title="Quay lại khóa học (Dashboard)"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(255, 255, 255, 0.16)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
-                borderRadius: '8px',
-                color: '#ffffff',
-                padding: '5px 12px',
-                fontSize: '12px',
-                fontWeight: 700,
-                cursor: 'pointer',
-                marginRight: '12px',
-                transition: 'all 0.15s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.28)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.16)';
-              }}
-            >
-              ← Back to Course
-            </button>
-          )}
 
           <section
             className="lms-topbar__lesson-context"

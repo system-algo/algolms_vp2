@@ -361,83 +361,11 @@ export default function GeneratedPageShell({
           const manifestResponse = await fetch(manifestUrl);
           if (manifestResponse.ok) {
             nextManifest = await manifestResponse.json();
+          } else {
+            console.warn(`Manifest not found at ${manifestUrl}: status ${manifestResponse.status}`);
           }
-        } catch {
-          // Continue to Supabase lookup
-        }
-
-        // Online-First: Fetch tasks from Supabase vp_activities
-        if (!nextManifest) {
-          const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL || '';
-          const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-
-          if (supabaseUrl && supabaseKey) {
-            try {
-              const queryUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/vp_activities?or=(activity_id.like.${encodeURIComponent(pageId + '%')},course_id.eq.${encodeURIComponent(courseId)})&order=level_position.asc`;
-              const res = await fetch(queryUrl, {
-                headers: {
-                  apikey: supabaseKey,
-                  Authorization: `Bearer ${supabaseKey}`,
-                },
-              });
-              if (res.ok) {
-                const rows = await res.json();
-                const pageRows = Array.isArray(rows)
-                  ? rows.filter((r) => r.activity_id && r.activity_id.startsWith(pageId))
-                  : [];
-                pageRows.sort((a, b) => (Number(a.level_position) || 0) - (Number(b.level_position) || 0));
-                if (pageRows.length > 0) {
-                  nextManifest = {
-                    metadata: {
-                      courseTitle: courseId,
-                      lessonTitle: pageRows[0].lesson_title || lessonId,
-                      pageTitle: pageRows[0].level_title || pageId,
-                    },
-                    tasks: pageRows.map((r, idx) => {
-                      const pos = r.level_position ?? (idx + 1);
-                      return {
-                        id: r.activity_id,
-                        taskId: r.activity_id,
-                        position: pos,
-                        level_position: pos,
-                        levelPosition: pos,
-                        title: r.level_title,
-                        level_type: r.level_type || 'scratch',
-                        selectedType: r.level_type || 'scratch',
-                        activityType: r.level_type || 'scratch',
-                        requirements: r.requirements || [],
-                        media: r.media || [],
-                        starter_project_id: r.starter_project_id,
-                        starter_blocks: r.starter_blocks,
-                        demo_project_id: r.demo_project_id,
-                        command_keys: r.command_keys || [],
-                        states: [
-                          {
-                            id: `${r.activity_id}_state_1`,
-                            stateId: `${r.activity_id}_state_1`,
-                            position: pos,
-                            level_position: pos,
-                            levelPosition: pos,
-                            type: r.level_type || 'scratch',
-                            selectedType: r.level_type || 'scratch',
-                            level_type: r.level_type || 'scratch',
-                            requirements: r.requirements || [],
-                            media: r.media || [],
-                            starter_project_id: r.starter_project_id,
-                            starter_blocks: r.starter_blocks,
-                            demo_project_id: r.demo_project_id,
-                            command_keys: r.command_keys || [],
-                          },
-                        ],
-                      };
-                    }),
-                  };
-                }
-              }
-            } catch (dbErr) {
-              console.warn('Could not query vp_activities:', dbErr);
-            }
-          }
+        } catch (err) {
+          console.warn(`Failed to fetch manifest from ${manifestUrl}:`, err);
         }
 
         if (!nextManifest) {
@@ -647,10 +575,10 @@ export default function GeneratedPageShell({
         <main style={{ padding: 48, textAlign: 'center', fontFamily: 'Nunito, Arial, sans-serif' }}>
           <h2>Trang {pageId}</h2>
           <p style={{ color: '#64748b', fontSize: 16, marginTop: 8 }}>
-            Chưa có bài tập nào trong cơ sở dữ liệu cho trang này.
+            Chưa có bài tập nào được cấu hình cho trang này.
           </p>
           <p style={{ color: '#94a3b8', fontSize: 14, marginTop: 4 }}>
-            (Hãy import dữ liệu các task vào bảng <code>vp_activities</code> trên Supabase để hiển thị bài tập)
+            (Hãy kiểm tra tệp <code>manifest.json</code> trong thư mục của trang để cấu hình bài tập)
           </p>
           <button
             type="button"

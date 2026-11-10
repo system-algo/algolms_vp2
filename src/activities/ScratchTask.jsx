@@ -64,7 +64,7 @@ export default function ScratchTask({
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Checklist from vp_activities requirements or default fallback
+  // Checklist from static manifest requirements or default fallback
   const checklistItems = React.useMemo(() => {
     if (Array.isArray(task?.requirements) && task.requirements.length > 0) {
       return task.requirements.map((item, idx) => ({

@@ -23,6 +23,9 @@ function fetchBuffer(url) {
   });
 }
 
+// Cache generated and downloaded assets
+const assetCache = new Map();
+
 // Scratch sound
 const POP_SOUND = {
   assetId: "83a9787d4cb6f3b7632b4ddfebf74367",
@@ -98,16 +101,66 @@ const SNAKE_COSTUMES = [
   }
 ];
 
+// Dinosaur4 costumes (for Level 2 Dinosaur and snake)
+const DINOSAUR4_COSTUMES = [
+  {
+    assetId: "38f8c85ca2590a6f159f7cfa531f4759",
+    name: "dinosaur4-a",
+    bitmapResolution: 1,
+    md5ext: "38f8c85ca2590a6f159f7cfa531f4759.svg",
+    dataFormat: "svg",
+    rotationCenterX: 59,
+    rotationCenterY: 54
+  },
+  {
+    assetId: "c3112746ff487285332b8b35f4f87a81",
+    name: "dinosaur4-b",
+    bitmapResolution: 1,
+    md5ext: "c3112746ff487285332b8b35f4f87a81.svg",
+    dataFormat: "svg",
+    rotationCenterX: 86,
+    rotationCenterY: 54
+  },
+  {
+    assetId: "2e6a5381615c476c5fe1fba803daa737",
+    name: "dinosaur4-c",
+    bitmapResolution: 1,
+    md5ext: "2e6a5381615c476c5fe1fba803daa737.svg",
+    dataFormat: "svg",
+    rotationCenterX: 59,
+    rotationCenterY: 54
+  },
+  {
+    assetId: "8c2edc698e79ead4c64c5e8b37838200",
+    name: "dinosaur4-d",
+    bitmapResolution: 1,
+    md5ext: "8c2edc698e79ead4c64c5e8b37838200.svg",
+    dataFormat: "svg",
+    rotationCenterX: 89,
+    rotationCenterY: 90
+  }
+];
+
+// Yellow Heart costume (costume 1 in Level 3 authentic screenshots)
+const HEART_YELLOW_SVG = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="132.15470176382826" height="129.08098655386732" viewBox="-0.964994278768522 0.13500568546869118 132.15470176382826 129.08098655386732">
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.2874125149101019" fill="#FFF10D" stroke="#330066" stroke-width="7" stroke-linejoin="round" d="M 35.8 2 C 17.4238 2 2.5098 17.9195 2.5098 37.5345 C 2.5098 77.4386 40.2201 87.9008 65.9171 127.351 C 90.212 88.1437 129.3247 76.165 129.3247 37.5345 C 129.3247 17.9195 114.4107 2 96.0345 2 C 82.7051 2 71.2327 10.401 65.9171 22.488 C 60.6018 10.401 49.1294 2 35.8 2 Z "/>
+</svg>`;
+const heartYellowBuf = Buffer.from(HEART_YELLOW_SVG, 'utf8');
+const heartYellowHash = crypto.createHash('md5').update(heartYellowBuf).digest('hex');
+const heartYellowMd5 = `${heartYellowHash}.svg`;
+assetCache.set(heartYellowMd5, heartYellowBuf);
+
 // Heart costumes
 const HEART_COSTUMES = [
   {
-    assetId: "c77e640f6e023e7ce1e376da0f26e1eb",
-    name: "heart red",
+    assetId: heartYellowHash,
+    name: "heart yellow",
     bitmapResolution: 1,
-    md5ext: "c77e640f6e023e7ce1e376da0f26e1eb.svg",
+    md5ext: heartYellowMd5,
     dataFormat: "svg",
-    rotationCenterX: 65,
-    rotationCenterY: 56
+    rotationCenterX: 66,
+    rotationCenterY: 62
   },
   {
     assetId: "e24731f5cf2759c2f289921bebb86ea2",
@@ -117,8 +170,46 @@ const HEART_COSTUMES = [
     dataFormat: "svg",
     rotationCenterX: 66,
     rotationCenterY: 62
+  },
+  {
+    assetId: "c77e640f6e023e7ce1e376da0f26e1eb",
+    name: "heart red",
+    bitmapResolution: 1,
+    md5ext: "c77e640f6e023e7ce1e376da0f26e1eb.svg",
+    dataFormat: "svg",
+    rotationCenterX: 65,
+    rotationCenterY: 56
   }
 ];
+
+// Concentric Hearts backdrop (authentic Level 3 blue background)
+const HEARTS_BACKDROP_SVG = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="481" height="361" viewBox="-0.9 -0.3 481 361">
+  <g id="ID0.9136589458212256">
+    <path id="ID0.6814516433514655" fill="#66C5FF" d="M -0.400 0.200 L 479.600 0.200 L 479.600 360.200 L -0.400 360.200 L -0.400 0.200 Z " stroke-width="1"/>
+    <g id="ID0.17063987581059337">
+      <g id="layer1">
+        <path id="path2417" fill="#2FAFFF" d="M 224.200 336.500 C 215.800 327.100 194.700 308.600 177.400 295.600 C 126.200 256.900 119.200 251.300 98.400 232.200 C 60 196.800 43.800 161.300 43.800 113.200 C 43.800 89.700 45.400 80.700 52 66.800 C 63.200 43.300 79.600 25.900 100.600 15.200 C 115.500 7.600 122.800 4.300 147.700 4.100 C 173.700 4 179.200 7 194.500 15.400 C 213.100 25.600 232.300 47.500 236.200 63 L 238.600 72.600 L 244.600 59.400 C 278.700 -15.200 387.500 -14.100 425.400 61.300 C 437.400 85.200 438.700 136.200 428.100 165 C 414.200 202.500 388.100 231.100 327.800 274.900 C 288.200 303.600 243.400 347.100 240.300 353.200 C 236.700 360.300 240.100 354.400 224.200 336.500 Z " stroke-width="1"/>
+      </g>
+      <g id="layer1_1_">
+        <path id="path2417_1_" fill="#D4EEFF" d="M 226.500 302.600 C 219.400 295.200 201.600 280.800 187 270.500 C 143.700 240.200 137.800 235.800 120.200 220.800 C 87.800 193.100 74 165.300 74.100 127.600 C 74.100 109.200 75.500 102.100 81 91.300 C 90.400 72.900 104.300 59.200 122.100 50.900 C 134.700 45 140.900 42.300 161.900 42.200 C 183.900 42.100 188.500 44.500 201.400 51 C 217.100 59 233.300 76.100 236.700 88.300 L 238.800 95.800 L 243.900 85.500 C 272.700 27.100 364.600 28 396.600 87 C 406.800 105.700 407.900 145.700 398.900 168.300 C 387.200 197.700 365.100 220.100 314.100 254.400 C 280.700 276.900 242.800 311 240.200 315.800 C 237.100 321.400 240 316.700 226.500 302.600 Z " stroke-width="1"/>
+      </g>
+    </g>
+    <path id="ID0.184414304792881" fill="none" stroke="#FFFFFF" d="M 450 1 L 450 1 L 450 1 L 450 1 L 450 1 Z " stroke-width="1"/>
+  </g>
+</svg>`;
+const heartsBuf = Buffer.from(HEARTS_BACKDROP_SVG, 'utf8');
+const heartsHash = crypto.createHash('md5').update(heartsBuf).digest('hex');
+const heartsMd5 = `${heartsHash}.svg`;
+assetCache.set(heartsMd5, heartsBuf);
+const HEARTS_BACKDROP = {
+  assetId: heartsHash,
+  name: "Hearts",
+  bitmapResolution: 1,
+  md5ext: heartsMd5,
+  dataFormat: "svg",
+  rotationCenterX: 240,
+  rotationCenterY: 180
+};
 
 // Bear walking costumes
 const BEAR_WALK_COSTUMES = [
@@ -658,8 +749,7 @@ const LEVEL_8_DEMO_BLOCKS = {
   }
 };
 
-// Cache downloaded assets
-const assetCache = new Map();
+// Clock generator functions
 
 function buildClockSvg(hour) {
   const cx = 240;
@@ -837,18 +927,19 @@ async function main() {
   await buildSb3("level_1.sb3", lvl1Targets);
   await buildSb3("9097624.sb3", lvl1Targets);
 
-  // Level 2: Snake on Jurassic
+  // Level 2: Snake and Dinosaur on Jurassic
   const lvl2Targets = [
     makeStage([BACKDROP1, JURASSIC_BACKDROP]),
-    makeSprite("Snake", SNAKE_COSTUMES, -40, -40, 90)
+    makeSprite("Dinosaur4", DINOSAUR4_COSTUMES, -122, 20, 100),
+    makeSprite("Snake", SNAKE_COSTUMES, 7, -90, 70)
   ];
   await buildSb3("level_2.sb3", lvl2Targets);
   await buildSb3("9097811.sb3", lvl2Targets);
 
-  // Level 3: Heart
+  // Level 3: Heart on concentric Hearts backdrop
   const lvl3Targets = [
-    makeStage([BACKDROP1]),
-    makeSprite("Heart", HEART_COSTUMES, 0, 0, 100)
+    makeStage([BACKDROP1, HEARTS_BACKDROP]),
+    makeSprite("Heart", HEART_COSTUMES, -1, 0, 140)
   ];
   await buildSb3("level_3.sb3", lvl3Targets);
   await buildSb3("9098276.sb3", lvl3Targets);
@@ -896,15 +987,16 @@ async function main() {
   // Level 2 Demo: 10653299
   const lvl2DemoTargets = [
     makeStage([BACKDROP1, JURASSIC_BACKDROP], 1),
-    makeSprite("Snake", SNAKE_COSTUMES, -40, -40, 90, LEVEL_2_DEMO_BLOCKS)
+    makeSprite("Dinosaur4", DINOSAUR4_COSTUMES, -122, 20, 100),
+    makeSprite("Snake", SNAKE_COSTUMES, 7, -90, 70, LEVEL_2_DEMO_BLOCKS)
   ];
   await buildSb3("10653299.sb3", lvl2DemoTargets);
   await buildSb3("level_2_demo.sb3", lvl2DemoTargets);
 
   // Level 3 Demo: 2660241
   const lvl3DemoTargets = [
-    makeStage([BACKDROP1], 0),
-    makeSprite("Heart", HEART_COSTUMES, 0, 0, 100, LEVEL_3_DEMO_BLOCKS)
+    makeStage([BACKDROP1, HEARTS_BACKDROP], 1),
+    makeSprite("Heart", HEART_COSTUMES, -1, 0, 140, LEVEL_3_DEMO_BLOCKS)
   ];
   await buildSb3("2660241.sb3", lvl3DemoTargets);
   await buildSb3("level_3_demo.sb3", lvl3DemoTargets);

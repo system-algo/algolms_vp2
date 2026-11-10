@@ -58,6 +58,7 @@ export default function ScratchTask({
     return `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`;
   });
   const [isSaving, setIsSaving] = useState(false);
+  const [isTurboMode, setIsTurboMode] = useState(false);
 
   const handleSaveClick = () => {
     setIsSaving(true);
@@ -69,6 +70,16 @@ export default function ScratchTask({
       setIsSaving(false);
     }, 400);
   };
+
+  useEffect(() => {
+    const handleTurboMsg = (e) => {
+      if (e.data?.type === 'TURBO_MODE_CHANGED') {
+        setIsTurboMode(!!e.data.turboMode);
+      }
+    };
+    window.addEventListener('message', handleTurboMsg);
+    return () => window.removeEventListener('message', handleTurboMsg);
+  }, []);
 
   useEffect(() => {
     const closeMenus = () => {
@@ -456,24 +467,52 @@ export default function ScratchTask({
             >
               <span>File</span>
               {openFileMenu && (
-                <div className="scratch-task-dropdown-menu">
+                <div className="scratch-task-dropdown-menu" onClick={(e) => e.stopPropagation()}>
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {
-                      if (iframeRef.current) iframeRef.current.src = editorUrl;
+                      setOpenFileMenu(false);
+                      const win = iframeRef.current?.contentWindow;
+                      if (win?.loadProjectFromComputer) {
+                        win.loadProjectFromComputer();
+                      } else {
+                        win?.postMessage({ type: 'LOAD_FROM_COMPUTER' }, '*');
+                      }
                     }}
                   >
-                    New
+                    Load from your computer
                   </div>
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {
-                      if (iframeRef.current) {
-                        iframeRef.current.contentWindow?.postMessage({ type: 'SAVE_PROJECT_TO_FILE' }, '*');
+                      setOpenFileMenu(false);
+                      const win = iframeRef.current?.contentWindow;
+                      const title = currentTask?.title || 'project';
+                      if (win?.saveProjectToComputer) {
+                        win.saveProjectToComputer(title);
+                      } else {
+                        win?.postMessage({ type: 'SAVE_TO_COMPUTER', title }, '*');
                       }
                     }}
                   >
                     Save to your computer
+                  </div>
+                  <div
+                    className="scratch-task-dropdown-item"
+                    onClick={() => {
+                      setOpenFileMenu(false);
+                      const ok = window.confirm('Revert back to the draft project? Any unsaved changes will be lost.');
+                      if (ok) {
+                        const win = iframeRef.current?.contentWindow;
+                        if (win?.revertToDraftProject) {
+                          win.revertToDraftProject();
+                        } else {
+                          win?.postMessage({ type: 'REVERT_DRAFT_PROJECT' }, '*');
+                        }
+                      }
+                    }}
+                  >
+                    scratch.menuBar-Back to the draft project
                   </div>
                 </div>
               )}
@@ -483,22 +522,46 @@ export default function ScratchTask({
               className="scratch-task-menu-item"
               onClick={(e) => {
                 e.stopPropagation();
+                const win = iframeRef.current?.contentWindow;
+                if (win?.getTurboMode) {
+                  setIsTurboMode(win.getTurboMode());
+                }
                 setOpenEditMenu((v) => !v);
                 setOpenFileMenu(false);
               }}
             >
               <span>Edit</span>
               {openEditMenu && (
-                <div className="scratch-task-dropdown-menu">
+                <div className="scratch-task-dropdown-menu" onClick={(e) => e.stopPropagation()}>
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {
-                      if (iframeRef.current) {
-                        iframeRef.current.contentWindow?.postMessage({ type: 'RESTORE_SPRITE' }, '*');
+                      setOpenEditMenu(false);
+                      const win = iframeRef.current?.contentWindow;
+                      if (win?.restoreLastItem) {
+                        win.restoreLastItem();
+                      } else {
+                        win?.postMessage({ type: 'RESTORE_LAST_ITEM' }, '*');
                       }
                     }}
                   >
-                    Restore Sprite
+                    Restore
+                  </div>
+                  <div
+                    className="scratch-task-dropdown-item"
+                    onClick={() => {
+                      setOpenEditMenu(false);
+                      const win = iframeRef.current?.contentWindow;
+                      let next = !isTurboMode;
+                      if (win?.toggleTurboMode) {
+                        next = win.toggleTurboMode();
+                      } else {
+                        win?.postMessage({ type: 'TOGGLE_TURBO_MODE' }, '*');
+                      }
+                      setIsTurboMode(next);
+                    }}
+                  >
+                    {isTurboMode ? 'Turn off Turbo Mode' : 'Turn on Turbo Mode'}
                   </div>
                 </div>
               )}

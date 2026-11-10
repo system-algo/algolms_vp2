@@ -801,11 +801,144 @@
         }, 100);
       }
 
+      // Algo LMS Native File & Edit Actions Bridge
+      window.loadProjectFromComputer = function() {
+        if (window.__scratchProjectLoader && typeof window.__scratchProjectLoader.handleStartSelectingFileUpload === 'function') {
+          window.__scratchProjectLoader.handleStartSelectingFileUpload();
+          return;
+        }
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.sb,.sb2,.sb3';
+        input.style.display = 'none';
+        input.onchange = async (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          const arrayBuffer = await file.arrayBuffer();
+          const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+          if (vm) {
+            await vm.loadProject(arrayBuffer);
+            const title = file.name.replace(/\.sb[23]?$/i, '');
+            applyProjectTitle(title);
+            applyBlocklyToolbox();
+          }
+          input.remove();
+        };
+        document.body.appendChild(input);
+        input.click();
+      };
+
+      window.saveProjectToComputer = async function(customTitle) {
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (!vm) {
+          console.warn('[AlgoLMS] Scratch VM not ready for save');
+          return false;
+        }
+        try {
+          const blob = await vm.saveProjectSb3();
+          const stageInput = document.getElementById('algo-stage-title-input');
+          const finalTitle = customTitle || stageInput?.value?.trim() || expectedTitle || 'project';
+          const filename = finalTitle.endsWith('.sb3') ? finalTitle : (finalTitle + '.sb3');
+          const blobUrl = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = blobUrl;
+          link.download = filename;
+          document.body.appendChild(link);
+          link.click();
+          setTimeout(() => {
+            document.body.removeChild(link);
+            URL.revokeObjectURL(blobUrl);
+          }, 1000);
+          return true;
+        } catch (err) {
+          console.error('[AlgoLMS] Error saving project to computer:', err);
+          return false;
+        }
+      };
+
+      window.revertToDraftProject = async function() {
+        if (initialProjectUrl) {
+          await loadProjectFile(initialProjectUrl);
+        } else {
+          window.location.reload();
+        }
+      };
+
+      window.toggleTurboMode = function() {
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (vm && vm.runtime) {
+          const next = !vm.runtime.turboMode;
+          vm.setTurboMode(next);
+          try {
+            window.parent.postMessage({ type: 'TURBO_MODE_CHANGED', turboMode: next }, '*');
+          } catch (e) {}
+          return next;
+        }
+        return false;
+      };
+
+      window.getTurboMode = function() {
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        return !!(vm?.runtime?.turboMode);
+      };
+
+      window.restoreLastItem = function() {
+        if (window.__lastRestoreFun && typeof window.__lastRestoreFun === 'function') {
+          window.__lastRestoreFun();
+          window.__lastRestoreFun = null;
+          return true;
+        }
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (vm && typeof vm.restoreTarget === 'function') {
+          return vm.restoreTarget();
+        }
+        return false;
+      };
+
+      // Wrap delete methods to capture restore function for Edit -> Restore
+      const checkVmForRestore = setInterval(() => {
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (vm) {
+          clearInterval(checkVmForRestore);
+          const origDeleteCostume = vm.deleteCostume?.bind(vm);
+          if (origDeleteCostume) {
+            vm.deleteCostume = function(idx) {
+              const res = origDeleteCostume(idx);
+              window.__lastRestoreFun = res;
+              return res;
+            };
+          }
+          const origDeleteSound = vm.deleteSound?.bind(vm);
+          if (origDeleteSound) {
+            vm.deleteSound = function(idx) {
+              const res = origDeleteSound(idx);
+              window.__lastRestoreFun = res;
+              return res;
+            };
+          }
+        }
+      }, 200);
+
       // Listen for parent LMS postMessage
       window.addEventListener('message', async (e) => {
         if (!e.data) return;
         if (e.data.type === 'LOAD_SB3' && e.data.url) {
           await loadProjectFile(e.data.url);
+        }
+        if (e.data.type === 'LOAD_FROM_COMPUTER') {
+          window.loadProjectFromComputer();
+        }
+        if (e.data.type === 'SAVE_TO_COMPUTER') {
+          window.saveProjectToComputer(e.data.title);
+        }
+        if (e.data.type === 'REVERT_DRAFT_PROJECT') {
+          window.revertToDraftProject();
+        }
+        if (e.data.type === 'TOGGLE_TURBO_MODE') {
+          window.toggleTurboMode();
+        }
+        if (e.data.type === 'RESTORE_LAST_ITEM') {
+          window.restoreLastItem();
         }
         if (e.data.type === 'SET_PROJECT_TITLE' && e.data.title) {
           applyProjectTitle(e.data.title);

@@ -9,9 +9,11 @@
   user-select: none;
 }
 
-/* Left pane: Scratch Editor Frame (Full width & height, never squeezed) */
+/* Left pane: Scratch Editor Frame (flex-sized, never covered by drawer) */
 .scratch-task-editor-pane {
-  width: 100%;
+  flex: 1;
+  width: auto;
+  min-width: 0;
   height: 100%;
   position: relative;
   overflow: hidden;

@@ -67,6 +67,25 @@
           div[class*="gui_body-wrapper_"] {
             height: 100vh !important;
           }
+          /* Completely hide Backpack and its popups */
+          div[class*="backpack_backpack-container_"],
+          div[class*="backpack_backpack-header_"],
+          div[class*="backpack_status-message_"],
+          div[class*="backpack_backpack-list_"] {
+            display: none !important;
+          }
+          /* Stage Controls & Project title group */
+          .algo-stage-controls-group {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            flex-shrink: 0 !important;
+          }
+          .algo-stage-controls-group div[class*="controls_controls-container_"] {
+            display: flex !important;
+            align-items: center !important;
+            margin: 0 !important;
+          }
           /* Project title input inside stage header */
           .algo-stage-title-input {
             background: #ffffff;
@@ -76,11 +95,12 @@
             font-size: 13px;
             font-weight: 600;
             padding: 3px 10px;
-            margin-right: 12px;
+            margin: 0;
             height: 28px;
             outline: none;
             min-width: 170px;
             max-width: 280px;
+            box-sizing: border-box;
             box-shadow: inset 0 1px 2px rgba(27, 31, 36, 0.075);
             transition: border-color 0.15s, box-shadow 0.15s;
           }
@@ -669,6 +689,20 @@
           if (!isPlayerOnly) {
             const stageMenu = document.querySelector('div[class*="stage-header_stage-menu-wrapper_"]');
             if (stageMenu) {
+              const controls = stageMenu.querySelector('div[class*="controls_controls-container_"]');
+              let group = document.getElementById('algo-stage-controls-group');
+              if (!group) {
+                group = document.createElement('div');
+                group.id = 'algo-stage-controls-group';
+                group.className = 'algo-stage-controls-group';
+                if (controls && controls.parentNode === stageMenu) {
+                  stageMenu.insertBefore(group, controls);
+                  group.appendChild(controls);
+                } else {
+                  stageMenu.insertBefore(group, stageMenu.firstChild);
+                }
+              }
+
               let input = document.getElementById('algo-stage-title-input');
               if (!input) {
                 input = document.createElement('input');
@@ -680,7 +714,7 @@
                 input.addEventListener('change', (e) => {
                   applyProjectTitle(e.target.value);
                 });
-                stageMenu.insertBefore(input, stageMenu.firstChild);
+                group.insertBefore(input, group.firstChild);
               } else if (input.value !== title) {
                 input.value = title;
               }

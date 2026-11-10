@@ -441,9 +441,18 @@ export default function ScratchTask({
   }
 
   return (
-    <div className={`scratch-task-container ${isResizing ? 'is-resizing' : ''}`} ref={containerRef}>
-      {/* Left: Scratch Editor iframe (Full width background) */}
-      <div className="scratch-task-editor-pane">
+    <div
+      className={`scratch-task-container ${isResizing ? 'is-resizing' : ''} ${isDrawerOpen ? 'has-drawer-open' : 'has-drawer-closed'}`}
+      ref={containerRef}
+    >
+      {/* Left: Scratch Editor iframe (Responds cleanly to drawer width) */}
+      <div
+        className="scratch-task-editor-pane"
+        style={{
+          marginRight: isDrawerOpen ? `${drawerWidth}px` : '16px',
+          transition: isResizing ? 'none' : 'margin-right 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+        }}
+      >
         <div className="scratch-task-toolbar">
           <div className="scratch-task-toolbar-left">
             {onBackToCourses && (

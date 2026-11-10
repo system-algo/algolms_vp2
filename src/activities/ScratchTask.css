@@ -519,6 +519,370 @@
   font-weight: 500;
 }
 
+.scratch-task-checklist-item.selected {
+  background: #f5f3ff;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2);
+}
+
+.scratch-task-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scratch-task-item-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.scratch-task-checklist-item.completed .scratch-task-item-title {
+  color: #15803d;
+}
+
+.scratch-task-item-desc {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.scratch-task-checklist-item.completed .scratch-task-item-desc {
+  color: #166534;
+}
+
+.scratch-task-item-media-box {
+  margin-top: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  position: relative;
+  cursor: zoom-in;
+  max-width: 220px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.scratch-task-item-media-box:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  border-color: #8b5cf6;
+}
+
+.scratch-task-item-media-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scratch-task-item-media-overlay {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(15, 23, 42, 0.75);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.scratch-task-item-media-box:hover .scratch-task-item-media-overlay {
+  opacity: 1;
+  background: #6c2eb9;
+}
+
+/* Media Preview Containers */
+.scratch-task-preview-media-container,
+.scratch-task-preview-media-standalone {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.scratch-task-preview-media-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity 0.15s;
+}
+
+.scratch-task-preview-media-img:hover {
+  opacity: 0.95;
+}
+
+.scratch-task-media-caption {
+  padding: 6px 10px;
+  font-size: 11.5px;
+  color: #475569;
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.scratch-task-media-zoom-hint {
+  font-size: 11px;
+  color: #6366f1;
+}
+
+/* Demo Subtabs: Stage vs Code */
+.scratch-task-demo-subtabs {
+  display: flex;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 4px 6px;
+  gap: 6px;
+}
+
+.scratch-task-demo-subtab-btn {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scratch-task-demo-subtab-btn:hover {
+  color: #0f172a;
+}
+
+.scratch-task-demo-subtab-btn.active {
+  background: #ffffff;
+  color: #6c2eb9;
+  border-color: #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Demo Code View Box */
+.scratch-task-demo-code-box {
+  padding: 12px;
+  background: #ffffff;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scratch-task-demo-code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scratch-task-demo-target-badge {
+  font-weight: 600;
+  color: #475569;
+  background: #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11.5px;
+}
+
+.scratch-task-copy-xml-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scratch-task-copy-xml-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.scratch-task-demo-code-desc {
+  font-size: 12px;
+  color: #475569;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.scratch-task-demo-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.scratch-task-demo-steps-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.scratch-task-demo-step-pill {
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.scratch-task-demo-step-pill.event {
+  background: #fef3c7;
+  color: #92400e;
+  border-left: 3px solid #f59e0b;
+}
+
+.scratch-task-demo-step-pill.looks {
+  background: #ede9fe;
+  color: #5b21b6;
+  border-left: 3px solid #8b5cf6;
+}
+
+.scratch-task-demo-step-pill.control {
+  background: #ffedd5;
+  color: #9a3412;
+  border-left: 3px solid #f97316;
+}
+
+.scratch-task-demo-step-pill.motion {
+  background: #dbeafe;
+  color: #1e40af;
+  border-left: 3px solid #3b82f6;
+}
+
+.scratch-task-demo-xml-details {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.scratch-task-demo-xml-summary {
+  padding: 6px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #475569;
+  background: #f8fafc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.scratch-task-demo-xml-summary:hover {
+  color: #1e293b;
+}
+
+.scratch-task-demo-xml-pre {
+  margin: 0;
+  padding: 10px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 11px;
+  line-height: 1.4;
+  overflow-x: auto;
+  max-height: 160px;
+}
+
+.scratch-task-demo-code-empty {
+  font-size: 12px;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Lightbox Modal */
+.scratch-task-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: fadeIn 0.2s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.scratch-task-lightbox-card {
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scratch-task-lightbox-header {
+  padding: 12px 16px;
+  background: #1e293b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scratch-task-lightbox-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.scratch-task-lightbox-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.scratch-task-lightbox-close:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.scratch-task-lightbox-body {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background: #f8fafc;
+}
+
+.scratch-task-lightbox-img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* ==============================================================================
    RATING / VOTE SCREEN (Did you like the task?)
    ============================================================================== */

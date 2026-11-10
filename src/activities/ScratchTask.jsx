@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './ScratchTask.css';
+import { DEMO_SOURCE_CODE } from './demoSourceCode';
 
 export default function ScratchTask({
   task,
@@ -22,16 +23,16 @@ export default function ScratchTask({
     task?.projectId ||
     '';
 
-  // Flyout categories / command keys
-  const defaultCommandKeys = (levelPosition === 2 || levelPosition === 3)
-    ? ['looks', 'events']
-    : ['motion', 'looks', 'events', 'control'];
+  // Flyout categories / command keys: prioritize task definition, then state definition, then fall back
+  const taskCommandKeys =
+    (Array.isArray(task?.command_keys) && task.command_keys.length > 0 ? task.command_keys : null) ||
+    (Array.isArray(task?.commandKeys) && task.commandKeys.length > 0 ? task.commandKeys : null) ||
+    (Array.isArray(task?.states?.[0]?.command_keys) && task.states[0].command_keys.length > 0 ? task.states[0].command_keys : null) ||
+    (Array.isArray(state?.command_keys) && state.command_keys.length > 0 ? state.command_keys : null);
 
-  const categoriesQuery = Array.isArray(task?.command_keys) && task.command_keys.length > 0
-    ? task.command_keys.join(',')
-    : (levelPosition === 2 || levelPosition === 3)
-      ? 'looks,events'
-      : defaultCommandKeys.join(',');
+  const categoriesQuery = taskCommandKeys
+    ? taskCommandKeys.join(',')
+    : ['motion', 'looks', 'events', 'control'].join(',');
 
   const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
                            (Array.isArray(task?.media) && task.media.length > 0);
@@ -45,9 +46,26 @@ export default function ScratchTask({
   const [isAccordionOpen, setIsAccordionOpen] = useState(true);
   const [completedItems, setCompletedItems] = useState({});
 
-  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
+  const projectTitle =
+    task?.project_title ||
+    task?.projectName ||
+    '';
+
+  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}&level=${encodeURIComponent(levelPosition)}`;
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
+
+  // Selected requirement ID for highlighting and displaying its image/GIF
+  const [selectedReqId, setSelectedReqId] = useState(null);
+
+  // Sub-view in Demo tab: 'stage' (interactive Scratch output) or 'code' (Scratch block code & XML)
+  const [demoViewMode, setDemoViewMode] = useState('stage');
+
+  // Lightbox modal for enlarged image/GIF preview
+  const [modalImage, setModalImage] = useState(null);
+
+  // XML copy notification state
+  const [copiedXml, setCopiedXml] = useState(false);
 
   // Reset checklist checkboxes and update drawer state when task switches
   useEffect(() => {
@@ -55,6 +73,9 @@ export default function ScratchTask({
       task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
     );
     setCompletedItems({});
+    setSelectedReqId(null);
+    setDemoViewMode('stage');
+    setCopiedXml(false);
   }, [task?.activity_id, task?.id, task?.taskId, levelPosition, hasDrawerContent, task?.drawerOpen]);
 
   const lowerTitle = (taskTitle || '').toLowerCase();
@@ -96,8 +117,12 @@ export default function ScratchTask({
     ];
   }, [task?.requirements, lowerTitle]);
 
-  const previewMediaUrl = task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
-  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
+  const selectedReq = React.useMemo(() => {
+    return checklistItems.find((it) => it.id === selectedReqId) || null;
+  }, [checklistItems, selectedReqId]);
+
+  const previewMediaUrl = selectedReq?.url || task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
+  const previewMediaTitle = selectedReq?.title || task?.media?.[0]?.title || taskTitle;
 
   const demoProjectId =
     task?.demo_project_id ||
@@ -105,6 +130,8 @@ export default function ScratchTask({
     task?.config?.presentation?.projectId ||
     task?.config?.presentation?.project ||
     (levelPosition === 7 ? 'level_7_demo' : levelPosition === 8 ? 'level_8_demo' : '');
+
+  const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
 
   const [activeTab, setActiveTab] = useState(demoProjectId ? 'demo' : 'media');
 
@@ -117,6 +144,15 @@ export default function ScratchTask({
       ...prev,
       [id]: !prev[id],
     }));
+  };
+
+  const handleCopyXml = (xmlString) => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(xmlString).then(() => {
+        setCopiedXml(true);
+        setTimeout(() => setCopiedXml(false), 2000);
+      });
+    }
   };
 
   // Click Check: Open confirmation popup
@@ -390,7 +426,7 @@ export default function ScratchTask({
 
         <div className="scratch-task-iframe-wrapper">
           <iframe
-            key={`scratch-${levelPosition}-${projectId}`}
+            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${projectTitle}`}
             ref={iframeRef}
             src={editorUrl}
             className="scratch-task-iframe"
@@ -461,15 +497,15 @@ export default function ScratchTask({
                 {/* Scratch Demo Player / Media Preview */}
                 {demoProjectId ? (
                   <div className="scratch-task-demo-wrapper">
-                    {previewMediaUrl && (
-                      <div className="scratch-task-demo-tabs">
-                        <button
-                          type="button"
-                          className={`scratch-task-demo-tab-btn ${activeTab === 'demo' ? 'active' : ''}`}
-                          onClick={() => setActiveTab('demo')}
-                        >
-                          <span className="scratch-task-tab-icon">🎮</span> Xem Demo mẫu
-                        </button>
+                    <div className="scratch-task-demo-tabs">
+                      <button
+                        type="button"
+                        className={`scratch-task-demo-tab-btn ${activeTab === 'demo' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('demo')}
+                      >
+                        <span className="scratch-task-tab-icon">🎮</span> Xem Demo mẫu
+                      </button>
+                      {previewMediaUrl && (
                         <button
                           type="button"
                           className={`scratch-task-demo-tab-btn ${activeTab === 'media' ? 'active' : ''}`}
@@ -477,41 +513,113 @@ export default function ScratchTask({
                         >
                           <span className="scratch-task-tab-icon">🖼️</span> Hình minh họa
                         </button>
-                      </div>
-                    )}
+                      )}
+                    </div>
 
-                    {activeTab === 'demo' || !previewMediaUrl ? (
+                    {activeTab === 'demo' ? (
                       <div className="scratch-task-demo-player-box">
-                        <div className="scratch-task-demo-iframe-container">
-                          <iframe
-                            key={`demo-${demoProjectId}-${levelPosition}`}
-                            src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
-                            className="scratch-task-demo-iframe"
-                            title="Scratch Demo Preview"
-                            allow="autoplay"
-                          />
+                        {/* Subtabs for Demo: Stage vs Code */}
+                        <div className="scratch-task-demo-subtabs">
+                          <button
+                            type="button"
+                            className={`scratch-task-demo-subtab-btn ${demoViewMode === 'stage' ? 'active' : ''}`}
+                            onClick={() => setDemoViewMode('stage')}
+                          >
+                            ▶ Sân khấu chạy mẫu
+                          </button>
+                          <button
+                            type="button"
+                            className={`scratch-task-demo-subtab-btn ${demoViewMode === 'code' ? 'active' : ''}`}
+                            onClick={() => setDemoViewMode('code')}
+                          >
+                            🧩 Khối lệnh mẫu (XML)
+                          </button>
                         </div>
-                        <div className="scratch-task-demo-hint">
-                          <span className="scratch-task-demo-flag-icon">⚑</span> Bấm lá cờ xanh trong khung để xem hoạt động mẫu
-                        </div>
+
+                        {demoViewMode === 'stage' ? (
+                          <>
+                            <div className="scratch-task-demo-iframe-container">
+                              <iframe
+                                key={`demo-${demoProjectId}-${levelPosition}`}
+                                src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
+                                className="scratch-task-demo-iframe"
+                                title="Scratch Demo Preview"
+                                allow="autoplay"
+                              />
+                            </div>
+                            <div className="scratch-task-demo-hint">
+                              <span className="scratch-task-demo-flag-icon">⚑</span> Bấm lá cờ xanh trong khung để xem hoạt động mẫu
+                            </div>
+                          </>
+                        ) : (
+                          <div className="scratch-task-demo-code-box">
+                            {activeDemoCode ? (
+                              <>
+                                <div className="scratch-task-demo-code-header">
+                                  <span className="scratch-task-demo-target-badge">
+                                    Đối tượng: {activeDemoCode.spriteName}
+                                  </span>
+                                  <button
+                                    type="button"
+                                    className="scratch-task-copy-xml-btn"
+                                    onClick={() => handleCopyXml(activeDemoCode.xml)}
+                                  >
+                                    {copiedXml ? '✓ Đã chép XML' : '📋 Copy XML'}
+                                  </button>
+                                </div>
+                                <p className="scratch-task-demo-code-desc">{activeDemoCode.description}</p>
+
+                                <div className="scratch-task-demo-steps">
+                                  <div className="scratch-task-demo-steps-title">Cấu trúc khối lệnh Scratch:</div>
+                                  {activeDemoCode.steps.map((st, sIdx) => (
+                                    <div key={sIdx} className={`scratch-task-demo-step-pill ${st.type}`}>
+                                      {st.text}
+                                    </div>
+                                  ))}
+                                </div>
+
+                                <details className="scratch-task-demo-xml-details">
+                                  <summary className="scratch-task-demo-xml-summary">
+                                    Xem mã Scratch Blockly XML
+                                  </summary>
+                                  <pre className="scratch-task-demo-xml-pre">
+                                    <code>{activeDemoCode.xml}</code>
+                                  </pre>
+                                </details>
+                              </>
+                            ) : (
+                              <div className="scratch-task-demo-code-empty">
+                                Chưa có định nghĩa XML riêng cho bài này. Xem mô phỏng trực quan trên sân khấu Scratch.
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
                     ) : (
-                      <div style={{ padding: '8px', background: '#f8fafc' }}>
+                      <div className="scratch-task-preview-media-container">
                         <img
                           src={previewMediaUrl}
                           alt={previewMediaTitle}
-                          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '6px' }}
+                          className="scratch-task-preview-media-img"
+                          onClick={() => setModalImage({ url: previewMediaUrl, title: previewMediaTitle })}
                         />
+                        <div className="scratch-task-media-caption">
+                          {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
+                        </div>
                       </div>
                     )}
                   </div>
                 ) : previewMediaUrl ? (
-                  <div style={{ marginBottom: '16px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
+                  <div className="scratch-task-preview-media-standalone">
                     <img
                       src={previewMediaUrl}
                       alt={previewMediaTitle}
-                      style={{ width: '100%', height: 'auto', display: 'block' }}
+                      className="scratch-task-preview-media-img"
+                      onClick={() => setModalImage({ url: previewMediaUrl, title: previewMediaTitle })}
                     />
+                    <div className="scratch-task-media-caption">
+                      {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
+                    </div>
                   </div>
                 ) : (
                   <div className="scratch-task-preview-box">
@@ -535,20 +643,68 @@ export default function ScratchTask({
 
                   {checklistItems.map((item) => {
                     const isDone = !!completedItems[item.id];
+                    const isSelected = selectedReqId === item.id;
+                    const hasMedia = !!item.url;
+
                     return (
                       <div
                         key={item.id}
-                        className={`scratch-task-checklist-item ${isDone ? 'completed' : ''}`}
-                        onClick={() => toggleCheckItem(item.id)}
+                        className={`scratch-task-checklist-item ${isDone ? 'completed' : ''} ${isSelected ? 'selected' : ''}`}
+                        onClick={() => {
+                          setSelectedReqId((prev) => (prev === item.id ? null : item.id));
+                          if (item.url && activeTab !== 'media') {
+                            setActiveTab('media');
+                          }
+                        }}
                       >
-                        <div className="scratch-task-checkbox">
+                        <div
+                          className="scratch-task-checkbox"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleCheckItem(item.id);
+                          }}
+                          title={isDone ? 'Đánh dấu chưa xong' : 'Đánh dấu đã hoàn thành'}
+                        >
                           {isDone && (
                             <svg viewBox="0 0 24 24" fill="none">
                               <polyline points="20 6 9 17 4 12" />
                             </svg>
                           )}
                         </div>
-                        <span className="scratch-task-item-label">{item.text}</span>
+
+                        <div className="scratch-task-item-content">
+                          {item.title && (
+                            <h4 className="scratch-task-item-title">
+                              {item.title}
+                            </h4>
+                          )}
+                          {item.text && item.text !== item.title && (
+                            <p className="scratch-task-item-desc">
+                              {item.text}
+                            </p>
+                          )}
+
+                          {hasMedia && (
+                            <div
+                              className="scratch-task-item-media-box"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setModalImage({ url: item.url, title: item.title || item.text });
+                              }}
+                              title="Bấm để xem ảnh/GIF khối lệnh phóng to"
+                            >
+                              <img
+                                src={item.url}
+                                alt={item.title || 'Khối lệnh Scratch'}
+                                className="scratch-task-item-media-thumb"
+                                loading="lazy"
+                              />
+                              <div className="scratch-task-item-media-overlay">
+                                <span>🔍 Phóng to</span>
+                              </div>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     );
                   })}
@@ -674,6 +830,40 @@ export default function ScratchTask({
               >
                 {isSubmitting ? 'Đang lưu...' : 'Đã giống mẫu 🚀'}
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lightbox Modal for enlarged GIFs/images */}
+      {modalImage && (
+        <div
+          className="scratch-task-modal-backdrop"
+          onClick={() => setModalImage(null)}
+        >
+          <div
+            className="scratch-task-lightbox-card"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="scratch-task-lightbox-header">
+              <span className="scratch-task-lightbox-title">
+                {modalImage.title || 'Hình minh họa khối lệnh Scratch'}
+              </span>
+              <button
+                type="button"
+                className="scratch-task-lightbox-close"
+                onClick={() => setModalImage(null)}
+                title="Đóng (Esc)"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="scratch-task-lightbox-body">
+              <img
+                src={modalImage.url}
+                alt={modalImage.title || 'Hình minh họa khối lệnh'}
+                className="scratch-task-lightbox-img"
+              />
             </div>
           </div>
         </div>

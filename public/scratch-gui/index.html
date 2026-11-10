@@ -13,13 +13,7 @@
       const params = new URLSearchParams(window.location.search);
       const projectUrl = params.get('project') || '';
       const levelParam = params.get('level') || '1';
-      const categoriesParam = params.get('categories') || 'motion,looks,events,control';
-      const allowedCategories = categoriesParam.split(',').map(s => s.trim().toLowerCase());
-
-      const allCategories = [
-        'motion', 'looks', 'sound', 'events', 'control',
-        'sensing', 'operators', 'variables', 'myblocks', 'data'
-      ];
+      const titleParam = (params.get('title') || '').trim();
 
       const isPlayerOnly = params.get('isPlayerOnly') === 'true' || params.get('mode') === 'player';
       if (isPlayerOnly) {
@@ -65,40 +59,91 @@
         document.head.appendChild(style);
       }
 
-      // Task 19097 (M1L2) check
-      const isTask19097 = [
-        '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
-        '9098728', '2660096', '9099214', '2660244'
-      ].includes(String(projectUrl)) ||
-      String(projectUrl).includes('19097') ||
-      String(projectUrl).includes('demo') ||
-      window.location.search.includes('19097');
+      // 1. Dynamic category parsing & normalisation
+      const categoriesParam = (params.get('categories') || '').trim();
+      let allowedCategories = categoriesParam
+        ? categoriesParam.split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+        : ['motion', 'looks', 'events', 'control'];
 
-      // For M1L1 level 2 and 3, strictly only looks and events are allowed!
-      const isM1L1Level2Or3 = !isTask19097 && (levelParam === '2' || levelParam === '3');
-      const effectiveAllowed = isM1L1Level2Or3 ? ['looks', 'events'] : allowedCategories;
-      const disallowed = allCategories.filter(c => !effectiveAllowed.includes(c));
+      // Normalize category aliases between LMS manifests and Scratch 3.0 Blockly:
+      if (allowedCategories.includes('variables') && !allowedCategories.includes('data')) {
+        allowedCategories.push('data');
+      }
+      if (allowedCategories.includes('data') && !allowedCategories.includes('variables')) {
+        allowedCategories.push('variables');
+      }
+      if (allowedCategories.includes('myblocks') && !allowedCategories.includes('procedures')) {
+        allowedCategories.push('procedures');
+      }
+      if (allowedCategories.includes('procedures') && !allowedCategories.includes('myblocks')) {
+        allowedCategories.push('myblocks');
+      }
 
-      // Level 1 Authentic Algorithmics Toolbox XML
-      const LEVEL_1_XML = `<xml id="toolbox" style="display: none">
+      // Check whether this task allows the full/unrestricted Scratch toolbox (e.g. Free programming, Super cat)
+      const baseMainCategories = ['motion', 'looks', 'sound', 'events', 'control', 'sensing', 'operators', 'variables'];
+      const isFullToolbox = categoriesParam === 'all' ||
+                            baseMainCategories.every(cat => allowedCategories.includes(cat)) ||
+                            allowedCategories.length >= 8;
+
+      const allCategories = [
+        'motion', 'looks', 'sound', 'events', 'control',
+        'sensing', 'operators', 'variables', 'myblocks', 'data', 'procedures'
+      ];
+      const disallowed = isFullToolbox ? [] : allCategories.filter(c => !allowedCategories.includes(c));
+
+      // Category building blocks for dynamic XML generation
+      const MOTION_XML = `
   <category name="Motion" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
     <block type="motion_movesteps">
       <value name="STEPS">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">10</field></shadow>
+      </value>
+    </block>
+    <block type="motion_turnright">
+      <value name="DEGREES">
+        <shadow type="math_number"><field name="NUM">15</field></shadow>
+      </value>
+    </block>
+    <block type="motion_turnleft">
+      <value name="DEGREES">
+        <shadow type="math_number"><field name="NUM">15</field></shadow>
+      </value>
+    </block>
+    <block type="motion_goto">
+      <value name="TO">
+        <shadow type="motion_goto_menu"/>
       </value>
     </block>
     <block type="motion_gotoxy">
       <value name="X">
-        <shadow type="math_number">
-          <field name="NUM">0</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
       </value>
       <value name="Y">
-        <shadow type="math_number">
-          <field name="NUM">0</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+    </block>
+    <block type="motion_glideto">
+      <value name="SECS">
+        <shadow type="math_number"><field name="NUM">1</field></shadow>
+      </value>
+      <value name="TO">
+        <shadow type="motion_glideto_menu"/>
+      </value>
+    </block>
+    <block type="motion_glidesecstoxy">
+      <value name="SECS">
+        <shadow type="math_number"><field name="NUM">1</field></shadow>
+      </value>
+      <value name="X">
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+      <value name="Y">
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+    </block>
+    <block type="motion_pointindirection">
+      <value name="DIRECTION">
+        <shadow type="math_angle"><field name="NUM">90</field></shadow>
       </value>
     </block>
     <block type="motion_pointtowards">
@@ -108,177 +153,250 @@
         </shadow>
       </value>
     </block>
-  </category>
+    <block type="motion_changexby">
+      <value name="DX">
+        <shadow type="math_number"><field name="NUM">10</field></shadow>
+      </value>
+    </block>
+    <block type="motion_setx">
+      <value name="X">
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+    </block>
+    <block type="motion_changeyby">
+      <value name="DY">
+        <shadow type="math_number"><field name="NUM">10</field></shadow>
+      </value>
+    </block>
+    <block type="motion_sety">
+      <value name="Y">
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+    </block>
+    <block type="motion_ifonedgebounce"/>
+  </category>`;
+
+      const LOOKS_XML = `
   <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
     <block type="looks_sayforsecs">
       <value name="MESSAGE">
-        <shadow type="text">
-          <field name="TEXT">Hello!</field>
-        </shadow>
+        <shadow type="text"><field name="TEXT">Hello!</field></shadow>
       </value>
       <value name="SECS">
-        <shadow type="math_number">
-          <field name="NUM">2</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="looks_switchcostumeto">
-      <value name="COSTUME">
-        <shadow type="looks_costume">
-          <field name="COSTUME">costume1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="looks_switchbackdropto">
-      <value name="BACKDROP">
-        <shadow type="looks_backdrops">
-          <field name="BACKDROP">backdrop1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="looks_setsizeto">
-      <value name="SIZE">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">2</field></shadow>
       </value>
     </block>
     <block type="looks_say">
       <value name="MESSAGE">
-        <shadow type="text">
-          <field name="TEXT">Hello!</field>
-        </shadow>
+        <shadow type="text"><field name="TEXT">Hello!</field></shadow>
       </value>
     </block>
-    <block type="looks_show"/>
-    <block type="looks_hide"/>
-  </category>
-  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
-    <block type="event_whenflagclicked"/>
-  </category>
-  <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
-    <block type="control_wait">
-      <value name="DURATION">
-        <shadow type="math_positive_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="control_repeat">
-      <value name="TIMES">
-        <shadow type="math_whole_number">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="control_forever"/>
-  </category>
-</xml>`;
-
-      // Level 2 & 3 Authentic Algorithmics Toolbox XML (Looks & Events only)
-      const LEVEL_2_XML = `<xml id="toolbox" style="display: none">
-  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
-    <block type="looks_sayforsecs">
+    <block type="looks_thinkforsecs">
       <value name="MESSAGE">
-        <shadow type="text">
-          <field name="TEXT">Hello!</field>
-        </shadow>
+        <shadow type="text"><field name="TEXT">Hmm...</field></shadow>
       </value>
       <value name="SECS">
-        <shadow type="math_number">
-          <field name="NUM">2</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">2</field></shadow>
+      </value>
+    </block>
+    <block type="looks_think">
+      <value name="MESSAGE">
+        <shadow type="text"><field name="TEXT">Hmm...</field></shadow>
       </value>
     </block>
     <block type="looks_switchcostumeto">
       <value name="COSTUME">
-        <shadow type="looks_costume">
-          <field name="COSTUME">costume1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="looks_switchbackdropto">
-      <value name="BACKDROP">
-        <shadow type="looks_backdrops">
-          <field name="BACKDROP">backdrop1</field>
-        </shadow>
-      </value>
-    </block>
-  </category>
-  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
-    <block type="event_whenflagclicked"/>
-  </category>
-</xml>`;
-
-      // M1L2 Loops Toolbox XML (Looks, Events, Control - wait, repeat, forever, next costume, next backdrop)
-      const LEVEL_LOOPS_XML = `<xml id="toolbox" style="display: none">
-  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
-    <block type="looks_sayforsecs">
-      <value name="MESSAGE">
-        <shadow type="text">
-          <field name="TEXT">Hello!</field>
-        </shadow>
-      </value>
-      <value name="SECS">
-        <shadow type="math_number">
-          <field name="NUM">2</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="looks_switchcostumeto">
-      <value name="COSTUME">
-        <shadow type="looks_costume">
-          <field name="COSTUME">costume1</field>
-        </shadow>
+        <shadow type="looks_costume"><field name="COSTUME">costume1</field></shadow>
       </value>
     </block>
     <block type="looks_nextcostume"/>
     <block type="looks_switchbackdropto">
       <value name="BACKDROP">
-        <shadow type="looks_backdrops">
-          <field name="BACKDROP">backdrop1</field>
-        </shadow>
+        <shadow type="looks_backdrops"><field name="BACKDROP">backdrop1</field></shadow>
       </value>
     </block>
     <block type="looks_nextbackdrop"/>
     <block type="looks_changesizeby">
       <value name="CHANGE">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">10</field></shadow>
       </value>
     </block>
     <block type="looks_setsizeto">
       <value name="SIZE">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
+        <shadow type="math_number"><field name="NUM">100</field></shadow>
       </value>
     </block>
-  </category>
+    <block type="looks_changeeffectby">
+      <value name="CHANGE">
+        <shadow type="math_number"><field name="NUM">25</field></shadow>
+      </value>
+    </block>
+    <block type="looks_seteffectto">
+      <value name="VALUE">
+        <shadow type="math_number"><field name="NUM">0</field></shadow>
+      </value>
+    </block>
+    <block type="looks_cleargraphiceffects"/>
+    <block type="looks_show"/>
+    <block type="looks_hide"/>
+  </category>`;
+
+      const SOUND_XML = `
+  <category name="Sound" id="sound" colour="#D65CD6" secondaryColour="#BD42BD">
+    <block type="sound_playuntildone">
+      <value name="SOUND_MENU">
+        <shadow type="sound_sounds_menu"/>
+      </value>
+    </block>
+    <block type="sound_play">
+      <value name="SOUND_MENU">
+        <shadow type="sound_sounds_menu"/>
+      </value>
+    </block>
+    <block type="sound_stopallsounds"/>
+    <block type="sound_changevolumeby">
+      <value name="VOLUME">
+        <shadow type="math_number"><field name="NUM">-10</field></shadow>
+      </value>
+    </block>
+    <block type="sound_setvolumeto">
+      <value name="VOLUME">
+        <shadow type="math_number"><field name="NUM">100</field></shadow>
+      </value>
+    </block>
+  </category>`;
+
+      const EVENTS_XML = `
   <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
     <block type="event_whenflagclicked"/>
-  </category>
+    <block type="event_whenkeypressed"/>
+    <block type="event_whenthisspriteclicked"/>
+    <block type="event_whenbackdropswitchesto"/>
+    <block type="event_whengreaterthan">
+      <value name="VALUE">
+        <shadow type="math_number"><field name="NUM">10</field></shadow>
+      </value>
+    </block>
+    <block type="event_whenbroadcastreceived"/>
+    <block type="event_broadcast">
+      <value name="BROADCAST_INPUT">
+        <shadow type="event_broadcast_menu"/>
+      </value>
+    </block>
+    <block type="event_broadcastandwait">
+      <value name="BROADCAST_INPUT">
+        <shadow type="event_broadcast_menu"/>
+      </value>
+    </block>
+  </category>`;
+
+      const CONTROL_XML = `
   <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
     <block type="control_wait">
       <value name="DURATION">
-        <shadow type="math_positive_number">
-          <field name="NUM">1</field>
-        </shadow>
+        <shadow type="math_positive_number"><field name="NUM">1</field></shadow>
       </value>
     </block>
     <block type="control_repeat">
       <value name="TIMES">
-        <shadow type="math_whole_number">
-          <field name="NUM">10</field>
-        </shadow>
+        <shadow type="math_whole_number"><field name="NUM">10</field></shadow>
       </value>
     </block>
     <block type="control_forever"/>
-  </category>
-</xml>`;
+    <block type="control_if"/>
+    <block type="control_if_else"/>
+    <block type="control_wait_until"/>
+    <block type="control_repeat_until"/>
+    <block type="control_stop"/>
+  </category>`;
 
-      // 1. Inject targeted CSS rules to prevent flicker of disallowed categories
+      const SENSING_XML = `
+  <category name="Sensing" id="sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
+    <block type="sensing_touchingobject">
+      <value name="TOUCHINGOBJECTMENU">
+        <shadow type="sensing_touchingobjectmenu"/>
+      </value>
+    </block>
+    <block type="sensing_touchingcolor">
+      <value name="COLOR">
+        <shadow type="colour_picker"/>
+      </value>
+    </block>
+    <block type="sensing_askandwait">
+      <value name="QUESTION">
+        <shadow type="text"><field name="TEXT">What's your name?</field></shadow>
+      </value>
+    </block>
+    <block type="sensing_answer"/>
+    <block type="sensing_keypressed">
+      <value name="KEY_OPTION">
+        <shadow type="sensing_keyoptions"/>
+      </value>
+    </block>
+    <block type="sensing_mousedown"/>
+  </category>`;
+
+      const OPERATORS_XML = `
+  <category name="Operators" id="operators" colour="#40BF4A" secondaryColour="#389438">
+    <block type="operator_add">
+      <value name="NUM1"><shadow type="math_number"/></value>
+      <value name="NUM2"><shadow type="math_number"/></value>
+    </block>
+    <block type="operator_subtract">
+      <value name="NUM1"><shadow type="math_number"/></value>
+      <value name="NUM2"><shadow type="math_number"/></value>
+    </block>
+    <block type="operator_multiply">
+      <value name="NUM1"><shadow type="math_number"/></value>
+      <value name="NUM2"><shadow type="math_number"/></value>
+    </block>
+    <block type="operator_divide">
+      <value name="NUM1"><shadow type="math_number"/></value>
+      <value name="NUM2"><shadow type="math_number"/></value>
+    </block>
+    <block type="operator_random">
+      <value name="FROM"><shadow type="math_number"><field name="NUM">1</field></shadow></value>
+      <value name="TO"><shadow type="math_number"><field name="NUM">10</field></shadow></value>
+    </block>
+    <block type="operator_gt">
+      <value name="OPERAND1"><shadow type="text"/></value>
+      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
+    </block>
+    <block type="operator_lt">
+      <value name="OPERAND1"><shadow type="text"/></value>
+      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
+    </block>
+    <block type="operator_equals">
+      <value name="OPERAND1"><shadow type="text"/></value>
+      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
+    </block>
+    <block type="operator_and"/>
+    <block type="operator_or"/>
+    <block type="operator_not"/>
+  </category>`;
+
+      const VARIABLES_XML = `
+  <category name="Variables" id="data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE"/>`;
+
+      const MYBLOCKS_XML = `
+  <category name="My Blocks" id="myBlocks" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE"/>`;
+
+      function buildDynamicToolboxXml(allowed) {
+        let xml = '<xml id="toolbox" style="display: none">\n';
+        if (allowed.includes('motion')) xml += MOTION_XML + '\n';
+        if (allowed.includes('looks')) xml += LOOKS_XML + '\n';
+        if (allowed.includes('sound')) xml += SOUND_XML + '\n';
+        if (allowed.includes('events')) xml += EVENTS_XML + '\n';
+        if (allowed.includes('control')) xml += CONTROL_XML + '\n';
+        if (allowed.includes('sensing')) xml += SENSING_XML + '\n';
+        if (allowed.includes('operators')) xml += OPERATORS_XML + '\n';
+        if (allowed.includes('variables') || allowed.includes('data')) xml += VARIABLES_XML + '\n';
+        if (allowed.includes('myblocks') || allowed.includes('procedures')) xml += MYBLOCKS_XML + '\n';
+        xml += '</xml>';
+        return xml;
+      }
+
+      // Targeted CSS rules to prevent flicker of disallowed categories
       const categoryClassMap = {
         motion: '.scratchCategoryId-motion',
         looks: '.scratchCategoryId-looks',
@@ -288,8 +406,9 @@
         sensing: '.scratchCategoryId-sensing',
         operators: '.scratchCategoryId-operators',
         variables: '.scratchCategoryId-variables, .scratchCategoryId-data',
+        data: '.scratchCategoryId-variables, .scratchCategoryId-data',
         myblocks: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures',
-        data: '.scratchCategoryId-data'
+        procedures: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures'
       };
 
       const blockPrefixMap = {
@@ -301,28 +420,36 @@
         sensing: 'g[data-category="sensing"], g[data-id^="sensing_"], g[data-id="sensing_of"]',
         operators: 'g[data-category="operators"], g[data-id^="operator_"]',
         variables: 'g[data-category="data"], g[data-id^="data_"]',
-        myblocks: 'g[data-category="myBlocks"], g[data-id^="procedures_"]'
+        data: 'g[data-category="data"], g[data-id^="data_"]',
+        myblocks: 'g[data-category="myBlocks"], g[data-id^="procedures_"]',
+        procedures: 'g[data-category="myBlocks"], g[data-id^="procedures_"]'
       };
 
-      const style = document.createElement('style');
-      const cssRules = [];
+      const filterStyleElement = document.createElement('style');
+      filterStyleElement.id = 'algo-lms-toolbox-filter';
 
-      disallowed.forEach(cat => {
-        if (categoryClassMap[cat]) {
-          cssRules.push(`${categoryClassMap[cat]} { display: none !important; }`);
+      function updateCssFilter(disallowedList) {
+        if (isFullToolbox || disallowedList.length === 0) {
+          filterStyleElement.textContent = '';
+          return;
         }
-        if (blockPrefixMap[cat]) {
-          cssRules.push(`${blockPrefixMap[cat]} { display: none !important; }`);
+        const cssRules = [];
+        disallowedList.forEach(cat => {
+          if (categoryClassMap[cat]) {
+            cssRules.push(`${categoryClassMap[cat]} { display: none !important; }`);
+          }
+          if (blockPrefixMap[cat]) {
+            cssRules.push(`${blockPrefixMap[cat]} { display: none !important; }`);
+          }
+        });
+        if (disallowedList.includes('sensing')) {
+          cssRules.push('g[data-id="sensing_of"], g[data-id*="sensing"] { display: none !important; }');
         }
-      });
-
-      // Extra guarantee: hide sensing reporters & checkboxes in flyout if sensing is disallowed
-      if (disallowed.includes('sensing')) {
-        cssRules.push('g[data-id="sensing_of"], g[data-id*="sensing"] { display: none !important; }');
+        filterStyleElement.textContent = cssRules.join('\n');
       }
 
-      style.textContent = cssRules.join('\n');
-      document.head.appendChild(style);
+      updateCssFilter(disallowed);
+      document.head.appendChild(filterStyleElement);
 
       // 2. Native Blockly updateToolbox hook
       function applyBlocklyToolbox() {
@@ -333,30 +460,132 @@
         if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
 
         try {
-          if (disallowed.length === 0) {
-            // Full toolbox allowed (e.g. Free programming / Super cat)
+          if (isFullToolbox) {
+            // Full toolbox allowed (e.g. Free programming / Super cat) - keep native workspace intact
             return true;
           }
-          if (!effectiveAllowed.includes('motion') && effectiveAllowed.includes('control')) {
-            // M1L2 Loops Toolbox (Looks, Events, Control)
-            ws.updateToolbox(LEVEL_LOOPS_XML);
-            return true;
-          } else if (!effectiveAllowed.includes('motion') && !effectiveAllowed.includes('control')) {
-            // Looks and Events only
-            ws.updateToolbox(LEVEL_2_XML);
-            return true;
-          } else {
-            // M1 Basic Toolbox (Motion, Looks, Events, Control)
-            ws.updateToolbox(LEVEL_1_XML);
-            return true;
-          }
+          const customXml = buildDynamicToolboxXml(allowedCategories);
+          ws.updateToolbox(customXml);
+          return true;
         } catch (err) {
           console.warn('[AlgoLMS Bridge] updateToolbox error:', err);
         }
         return false;
       }
 
-      // 3. Resolve & Load Project natively into Scratch VM
+      // 3. Project Title Resolver & Application
+      const PROJECT_TITLE_MAP = {
+        // 18343 (M1L1)
+        '8908684': 'M1L1 – Free programming',
+        '8910738': 'M1L1 – add a backdrop',
+        '8910872': 'M1L1 – add a backdrop for a mermaid',
+        '8910976': 'M1L1 – add sprites in the space',
+        '8911069': 'M1L1 – add sprites in the refrigerator',
+        '8911193': 'M1L1 – Delete an extra sprite under the water',
+        '8911262': 'M1L1 – Delete an extra sprite in the space',
+        '25604355': 'M1L1 – Choose the right backdrop',
+        '8911485': 'M1L1 – Choose the costume for the dog',
+        '8911589': 'M1L1 – A snowman',
+        '8911655': 'M1L1 – Mars',
+        'level_1': 'M1L1 – Free programming',
+        'level_2': 'M1L1 – add a backdrop',
+        'level_3': 'M1L1 – add a backdrop for a mermaid',
+        'level_4': 'M1L1 – add sprites in the space',
+        'level_5': 'M1L1 – add sprites in the refrigerator',
+        'level_6': 'M1L1 – Delete an extra sprite under the water',
+        'level_7': 'M1L1 – Delete an extra sprite in the space',
+        'level_8': 'M1L1 – Choose the right backdrop',
+        'level_9': 'M1L1 – Choose the costume for the dog',
+        'level_10': 'M1L1 – A snowman',
+        'level_11': 'M1L1 – Mars',
+
+        // 19097 (M1L2)
+        '9097624': 'M1L2 – Bear',
+        '9097811': 'M1L2 – A dinosaur and a snake',
+        '9098276': 'M1L2 – A heart',
+        '9098728': 'M1L2 – A bear walks',
+        '9099214': 'M1L2 – A clock',
+        '9097732': 'M1L2 – Bear (Demo)',
+        '10653299': 'M1L2 – A dinosaur and a snake (Demo)',
+        '2660241': 'M1L2 – A heart (Demo)',
+        '2660096': 'M1L2 – A bear walks (Demo)',
+        '2660244': 'M1L2 – A clock (Demo)',
+        '19097_level_1': 'M1L2 – Bear',
+        '19097_level_2': 'M1L2 – A dinosaur and a snake',
+        '19097_level_3': 'M1L2 – A heart',
+        '19097_level_4': 'M1L2 – A bear walks',
+        '19097_level_5': 'M1L2 – A clock',
+        '19097_level_7': 'M1L2 – Super cat',
+        '19097_level_8': 'M1L2 – A star',
+        '19097_1': 'M1L2 – Bear',
+        '19097_2': 'M1L2 – A dinosaur and a snake',
+        '19097_3': 'M1L2 – A heart',
+        '19097_4': 'M1L2 – A bear walks',
+        '19097_5': 'M1L2 – A clock',
+        '19097_7': 'M1L2 – Super cat',
+        '19097_8': 'M1L2 – A star',
+        'level_7': 'M1L2 – Super cat',
+        'level_8': 'M1L2 – A star',
+        'level_1_demo': 'M1L2 – Bear (Demo)',
+        'level_2_demo': 'M1L2 – A dinosaur and a snake (Demo)',
+        'level_3_demo': 'M1L2 – A heart (Demo)',
+        'level_4_demo': 'M1L2 – A bear walks (Demo)',
+        'level_5_demo': 'M1L2 – A clock (Demo)',
+        'level_7_demo': 'M1L2 – Super cat (Demo)',
+        'level_8_demo': 'M1L2 – A star (Demo)'
+      };
+
+      function resolveProjectTitle(url, level, explicitTitle) {
+        if (explicitTitle && explicitTitle.trim()) {
+          return explicitTitle.trim();
+        }
+        const cleanKey = url ? url.split('/').pop().replace(/\.sb3?$/i, '') : '';
+        const is19097 = (url && url.includes('19097')) ||
+                        window.location.search.includes('19097') ||
+                        [
+                          '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',
+                          '9098728', '2660096', '9099214', '2660244'
+                        ].includes(cleanKey);
+
+        if (is19097) {
+          if (PROJECT_TITLE_MAP[`19097_${cleanKey}`]) return PROJECT_TITLE_MAP[`19097_${cleanKey}`];
+          if (PROJECT_TITLE_MAP[`19097_level_${level}`]) return PROJECT_TITLE_MAP[`19097_level_${level}`];
+          if (PROJECT_TITLE_MAP[`19097_${level}`]) return PROJECT_TITLE_MAP[`19097_${level}`];
+        }
+        if (PROJECT_TITLE_MAP[cleanKey]) {
+          return PROJECT_TITLE_MAP[cleanKey];
+        }
+        if (PROJECT_TITLE_MAP[`level_${level}`]) {
+          return PROJECT_TITLE_MAP[`level_${level}`];
+        }
+        return cleanKey || 'Scratch Project';
+      }
+
+      function applyProjectTitle(title) {
+        if (!title) return;
+        const loader = window.__scratchProjectLoader;
+        if (loader && loader.props && typeof loader.props.onSetProjectTitle === 'function') {
+          try {
+            loader.props.onSetProjectTitle(title);
+          } catch (err) {
+            console.warn('[AlgoLMS Bridge] Error setting project title on loader:', err);
+          }
+        }
+        try {
+          const titleInputs = document.querySelectorAll('input[class*="title-field"]');
+          titleInputs.forEach(input => {
+            if (input && input.value !== title) {
+              input.value = title;
+              input.dispatchEvent(new Event('input', { bubbles: true }));
+              input.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          });
+        } catch (err) {
+          console.warn('[AlgoLMS Bridge] Error updating title input field:', err);
+        }
+      }
+
+      // 4. Resolve & Load Project natively into Scratch VM
       function resolveProjectUrl(param, level) {
         const lvl = String(level || '1');
         if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
@@ -390,7 +619,6 @@
 
       async function loadProjectFile(url) {
         if (!url) return false;
-        const filename = url.split('/').pop() || 'project.sb3';
         console.log('[AlgoLMS Bridge] Fetching project:', url);
         try {
           const res = await fetch(url);
@@ -412,11 +640,10 @@
               vm.emitWorkspaceUpdate();
             }
             const loader = window.__scratchProjectLoader;
+            const finalTitle = resolveProjectTitle(url, levelParam, titleParam);
+            applyProjectTitle(finalTitle);
+
             if (loader && loader.props) {
-              if (loader.props.onSetProjectTitle) {
-                const title = filename.replace(/\.sb3?$/i, '');
-                loader.props.onSetProjectTitle(title);
-              }
               if (loader.props.onLoadingFinished) {
                 loader.props.onLoadingFinished(loader.props.loadingState, true);
               }
@@ -424,6 +651,8 @@
             setTimeout(applyBlocklyToolbox, 100);
             setTimeout(applyBlocklyToolbox, 400);
             setTimeout(applyBlocklyToolbox, 1000);
+            setTimeout(() => applyProjectTitle(finalTitle), 200);
+            setTimeout(() => applyProjectTitle(finalTitle), 800);
             return true;
           }
         } catch (e) {
@@ -433,14 +662,18 @@
       }
 
       const initialProjectUrl = resolveProjectUrl(projectUrl, levelParam);
+      const expectedTitle = resolveProjectTitle(initialProjectUrl, levelParam, titleParam);
 
       if (!initialProjectUrl) {
-        // Level 1: Default Cat. Wait for Blockly workspace to be ready then apply Level 1 toolbox
+        // Level 1: Default Cat. Wait for Blockly workspace to be ready then apply Level 1 toolbox & title
         let checks = 0;
         const blocklyInterval = setInterval(() => {
           checks++;
+          applyProjectTitle(expectedTitle);
           if (applyBlocklyToolbox()) {
             clearInterval(blocklyInterval);
+            setTimeout(() => applyProjectTitle(expectedTitle), 200);
+            setTimeout(() => applyProjectTitle(expectedTitle), 800);
           }
           if (checks > 100) {
             clearInterval(blocklyInterval);
@@ -469,6 +702,21 @@
         if (!e.data) return;
         if (e.data.type === 'LOAD_SB3' && e.data.url) {
           await loadProjectFile(e.data.url);
+        }
+        if (e.data.type === 'SET_PROJECT_TITLE' && e.data.title) {
+          applyProjectTitle(e.data.title);
+        }
+        if (e.data.type === 'UPDATE_CATEGORIES' && e.data.categories) {
+          const newCats = String(e.data.categories).split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+          allowedCategories = newCats;
+          if (allowedCategories.includes('variables') && !allowedCategories.includes('data')) allowedCategories.push('data');
+          if (allowedCategories.includes('data') && !allowedCategories.includes('variables')) allowedCategories.push('variables');
+          if (allowedCategories.includes('myblocks') && !allowedCategories.includes('procedures')) allowedCategories.push('procedures');
+          if (allowedCategories.includes('procedures') && !allowedCategories.includes('myblocks')) allowedCategories.push('myblocks');
+
+          const newDisallowed = isFullToolbox ? [] : allCategories.filter(c => !allowedCategories.includes(c));
+          updateCssFilter(newDisallowed);
+          applyBlocklyToolbox();
         }
       });
     })();

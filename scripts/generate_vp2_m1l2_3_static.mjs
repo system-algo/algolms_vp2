@@ -24,14 +24,14 @@ const tasks = [
         title: "Add a command to start the project",
         text: "The project should be run by clicking on the green flag.",
         type: "gif",
-        url: ""
+        url: "/vp-assets/19097/scratch2-1_1613627764.webp"
       },
       {
         id: "req_1_2",
         title: "Add a command for the bear to speak.",
         text: "The bear should say \"Hello!\" within 3 seconds.",
         type: "gif",
-        url: ""
+        url: "/vp-assets/18343/hello.webp"
       }
     ],
     media: [
@@ -219,7 +219,7 @@ const tasks = [
         type: "presentation",
         title: "Create a clock!",
         text: "Look, all the backgrounds you need are already there, you just need to change them every second.",
-        url: "/vp-assets/19097/М1У2 Внешность М1Т2 4 (1).PNG.webp"
+        url: "/vp-assets/19097/clock_presentation.webp"
       }
     ],
     starter_project_id: "9099214",
@@ -254,11 +254,19 @@ const tasks = [
     activityType: "scratch",
     isBonus: true,
     type: "bonus",
-    drawerOpen: false,
-    requirements: [],
+    drawerOpen: true,
+    requirements: [
+      {
+        id: "req_7_1",
+        title: "Super Cat speech & flight",
+        text: "Program the cat to say 'Super Cat!' for 2 seconds and fly by constantly changing costumes every 0.3 seconds.",
+        type: "gif",
+        url: ""
+      }
+    ],
     media: [],
     starter_project_id: "/starter-projects/19097/level_7.sb3",
-    demo_project_id: null,
+    demo_project_id: "level_7_demo",
     command_keys: [
       "motion",
       "looks",
@@ -283,7 +291,7 @@ const tasks = [
     activityType: "scratch",
     isBonus: true,
     type: "bonus",
-    drawerOpen: false,
+    drawerOpen: true,
     requirements: [
       {
         id: "req_8_1",
@@ -302,7 +310,7 @@ const tasks = [
       }
     ],
     starter_project_id: "/starter-projects/19097/level_8.sb3",
-    demo_project_id: null,
+    demo_project_id: "level_8_demo",
     command_keys: ["looks", "events", "control"]
   }
 ];

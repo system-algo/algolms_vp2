@@ -121,9 +121,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Free programming"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Free programming"
     },
     {
       "id": "VP2_M1L1_3_2",
@@ -146,9 +148,9 @@
         {
           "id": "11a1dac3-db24-4f8c-a423-7c9f053b1365",
           "title": "Save the project and go to the next level",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -204,9 +206,11 @@
           "command_keys": [
             "looks",
             "events"
-          ]
+          ],
+          "project_title": "M1L1 – add a backdrop"
         }
-      ]
+      ],
+      "project_title": "M1L1 – add a backdrop"
     },
     {
       "id": "VP2_M1L1_3_3",
@@ -229,9 +233,9 @@
         {
           "id": "4c4cf8cf-d284-4c54-b5fa-ec8dae440321",
           "title": "Save the project and go to the next level",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -287,9 +291,11 @@
           "command_keys": [
             "looks",
             "events"
-          ]
+          ],
+          "project_title": "M1L1 – add a backdrop for a mermaid"
         }
-      ]
+      ],
+      "project_title": "M1L1 – add a backdrop for a mermaid"
     },
     {
       "id": "VP2_M1L1_3_4",
@@ -312,16 +318,16 @@
         {
           "id": "0985aad7-7a86-476c-a609-6958114ac8b5",
           "title": "Move the sprites to suitable places using the mouse",
-          "text": "",
+          "text": "Drag the sprites to place them properly on the stage.",
           "type": "gif",
-          "url": "/vp-assets/18343/спрайт-3.webp"
+          "url": "/vp-assets/18343/sprite-3.webp"
         },
         {
           "id": "1652e363-274a-4958-bc16-450d3d45a435",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -388,9 +394,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – add sprites in the space"
         }
-      ]
+      ],
+      "project_title": "M1L1 – add sprites in the space"
     },
     {
       "id": "VP2_M1L1_3_5",
@@ -413,16 +421,16 @@
         {
           "id": "2f685368-fc3c-4e1c-9dbc-4a6cf1f041e1",
           "title": "Move the sprites to suitable places using the mouse",
-          "text": "",
+          "text": "Drag the sprites to place them properly on the stage.",
           "type": "gif",
           "url": "/vp-assets/18343/5.webp"
         },
         {
           "id": "230ced8a-68be-4679-a57e-4bd028afb080",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -489,9 +497,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – add sprites in the refrigerator"
         }
-      ]
+      ],
+      "project_title": "M1L1 – add sprites in the refrigerator"
     },
     {
       "id": "VP2_M1L1_3_6",
@@ -507,16 +517,16 @@
         {
           "id": "7781581d-be21-492b-a73e-5fbda9e97b0d",
           "title": "Delete the extra sprite",
-          "text": "",
+          "text": "Click on the x next to the extra sprite to delete it.",
           "type": "gif",
           "url": "/vp-assets/18343/delete sprite_1627554929.webp"
         },
         {
           "id": "f413649b-c78e-46b1-a87c-568c76277b1c",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -576,9 +586,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Delete an extra sprite under the water"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Delete an extra sprite under the water"
     },
     {
       "id": "VP2_M1L1_3_7",
@@ -594,16 +606,16 @@
         {
           "id": "fac769b5-e3b9-4495-8462-318b7ca37ce4",
           "title": "Delete the extra sprite",
-          "text": "",
+          "text": "Click on the x next to the extra sprite to delete it.",
           "type": "gif",
           "url": "/vp-assets/18343/delete sprite_1627554966.webp"
         },
         {
           "id": "1c53cf71-114f-47c1-bf23-27c7102bb683",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -663,9 +675,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Delete an extra sprite in the space"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Delete an extra sprite in the space"
     },
     {
       "id": "VP2_M1L1_3_8",
@@ -681,16 +695,16 @@
         {
           "id": "145cbe1f-d59a-4dba-b96b-7529b9cfd19f",
           "title": "Choose a background from those that are available in the project",
-          "text": "",
+          "text": "Select a suitable backdrop already loaded in the project.",
           "type": "gif",
           "url": "/vp-assets/18343/backdrop.webp"
         },
         {
           "id": "725e44fd-a994-4ee9-a901-0aea89e3f903",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -750,9 +764,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Choose the right backdrop"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Choose the right backdrop"
     },
     {
       "id": "VP2_M1L1_3_9",
@@ -768,16 +784,16 @@
         {
           "id": "dd9fe566-5bc5-4d7e-bc9c-3f0d18ab6ba4",
           "title": "Choose the costume you want",
-          "text": "",
+          "text": "Let the dog look at you. Choose the right costume in the Costumes tab.",
           "type": "gif",
           "url": "/vp-assets/18343/costumes.webp"
         },
         {
           "id": "0afc6983-7b3e-4a00-aa50-281235c2bfcb",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -837,9 +853,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Choose the costume for the dog"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Choose the costume for the dog"
     },
     {
       "id": "VP2_M1L1_3_10",
@@ -855,7 +873,7 @@
         {
           "id": "cb32916a-9bbe-49a3-b786-cb54fc415e05",
           "title": "What will your snowman say?",
-          "text": "",
+          "text": "Add a phrase for your snowman using the \"say...\" command.",
           "type": "gif",
           "url": "/vp-assets/18343/hello.webp"
         },
@@ -869,9 +887,9 @@
         {
           "id": "6b69d30b-792e-48af-9ea5-e1632065ec14",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [
@@ -938,9 +956,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – A snowman"
         }
-      ]
+      ],
+      "project_title": "M1L1 – A snowman"
     },
     {
       "id": "VP2_M1L1_3_11",
@@ -956,7 +976,7 @@
         {
           "id": "41edc7e4-49ff-486d-a05f-208dff1f8d5d",
           "title": "Change the background from Earth to Mars",
-          "text": "",
+          "text": "Switch the stage backdrop from Earth to Mars.",
           "type": "gif",
           "url": "/vp-assets/18343/switch backdrop space.webp"
         },
@@ -970,16 +990,16 @@
         {
           "id": "e7d4bbda-f117-4e9a-b130-31cf6636f52a",
           "title": "Finish the project at your own discretion",
-          "text": "",
+          "text": "Add creative commands or actions to make the project exciting!",
           "type": "gif",
           "url": ""
         },
         {
           "id": "3fe15b11-bdfb-42be-bc1e-83a473ff6977",
           "title": "Save the project",
-          "text": "",
+          "text": "Click the \"Save\" button to save all the latest changes to the project!",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/18343/saving a project.webp"
         }
       ],
       "media": [],
@@ -1039,9 +1059,11 @@
             "looks",
             "events",
             "control"
-          ]
+          ],
+          "project_title": "M1L1 – Mars"
         }
-      ]
+      ],
+      "project_title": "M1L1 – Mars"
     },
     {
       "id": "VP2_M1L1_3_12",

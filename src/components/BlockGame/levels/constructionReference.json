@@ -1,0 +1,5816 @@
+[
+  {
+    "number": 1,
+    "activityName": "Building a Marsbase",
+    "hint": "Building a Marsbase",
+    "type": "image",
+    "image": "/vp-assets/construction/comics1_1613552648.png"
+  },
+  {
+    "number": 2,
+    "activityName": "Building a Marsbase",
+    "hint": "We have a construction robot that we can use! He moves like a MarsBot, but he can build. However, he gets tired quickly!\nWe must build the first factory on Mars! Onward!",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 6,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 2,
+      "y": 3,
+      "direction": 90
+    }
+  },
+  {
+    "number": 3,
+    "activityName": "Building a Marsbase",
+    "hint": "The factory needs energy! Build wind turbines. You can put a few commands in a loop, remember?",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 4,
+        "y": 1,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 4,
+      "y": 5,
+      "direction": 270
+    }
+  },
+  {
+    "number": 4,
+    "activityName": "Building a Marsbase",
+    "hint": "Two streets!",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 6,
+      "y": 2,
+      "direction": 270
+    }
+  },
+  {
+    "number": 5,
+    "activityName": "Building a Marsbase",
+    "hint": "Production consists of loops. Let's build one of them.",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 5,
+      "y": 4,
+      "direction": 0
+    }
+  },
+  {
+    "number": 6,
+    "activityName": "Building a Marsbase",
+    "hint": "Now let's repeat it! Put the solution to the previous task inside a loop.",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 7,
+      "y": 3,
+      "direction": 0
+    }
+  },
+  {
+    "number": 7,
+    "activityName": "Building a Marsbase",
+    "hint": "Building-building-building!",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 0,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 6,
+      "y": 7,
+      "direction": 0
+    }
+  },
+  {
+    "number": 8,
+    "activityName": "Building a Marsbase",
+    "hint": "This is just factories!",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 9,
+    "activityName": "Building a Marsbase",
+    "hint": "Did you like the task?",
+    "type": "rating"
+  },
+  {
+    "number": 10,
+    "activityName": "Building a Marsbase",
+    "hint": "Building a Marsbase",
+    "type": "image",
+    "image": "/vp-assets/construction/comics2_1613552803.png"
+  },
+  {
+    "number": 11,
+    "activityName": "Building a Marsbase",
+    "hint": "Tricky task! Can you handle it?",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 12,
+    "activityName": "Building a Marsbase",
+    "hint": "And now?",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 13,
+    "activityName": "Building a Marsbase",
+    "hint": "Now that the main base is built, we will solve the more difficult tasks. The first, however, is easier...",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 14,
+    "activityName": "Building a Marsbase",
+    "hint": "And now THREE TIMES! Try inserting one loop into another one! (The solution to the previous task is a hint).",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 15,
+    "activityName": "Building a Marsbase",
+    "hint": "Waltz, 2, 3, waltz, 2, 3...",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    }
+  },
+  {
+    "number": 16,
+    "activityName": "Building a Marsbase",
+    "hint": "What about like this?",
+    "mode": "construction",
+    "viewBox": "0 0 408 408",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 2,
+        "y": 1,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 0,
+      "direction": 90
+    }
+  },
+  {
+    "number": 17,
+    "activityName": "Building a Marsbase",
+    "hint": "Wind turbines in the fields, production in the center!",
+    "mode": "construction",
+    "viewBox": "0 0 459 459",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 1,
+        "y": 0,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "kind": "factory",
+        "image": "/vp-assets/construction/factory.png"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "greenhouse",
+        "image": "/vp-assets/construction/greenhouse.png"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 0,
+      "y": 6,
+      "direction": 90
+    }
+  },
+  {
+    "number": 18,
+    "activityName": "Building a Marsbase",
+    "hint": "The future of green energy!",
+    "mode": "construction",
+    "viewBox": "0 0 357 357",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "blocked": false
+      }
+    ],
+    "buildings": [
+      {
+        "x": 2,
+        "y": 1,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "windmill",
+        "image": "/vp-assets/construction/windmill.png"
+      }
+    ],
+    "loops": true,
+    "repeatDefault": 2,
+    "pattern": "/vp-assets/construction/static_background.0f172b57ca56742f2612.png",
+    "stageColor": "#b74422",
+    "success": "Well done! All the buildings are complete.",
+    "start": {
+      "x": 3,
+      "y": 3,
+      "direction": 0
+    }
+  }
+]

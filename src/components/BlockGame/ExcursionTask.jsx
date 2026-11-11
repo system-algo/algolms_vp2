@@ -16,6 +16,11 @@ const COMMANDS = [
 function ReferenceBoard({ level, robot }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
+  if (level.buildings) return <svg className="excursion-board" viewBox={level.viewBox} role="img" aria-label={`Construction board, ${robot.built.length} buildings complete`}>
+    {level.cells.map(cell => <image key={`${cell.x},${cell.y}`} href="/vp-assets/construction/field.svg" x={cell.x * 51} y={cell.y * 51} width="51" height="51" />)}
+    {level.buildings.map((b,i) => <image key={i} href={b.image} x={b.x * 51 - 25} y={b.y * 51 - 25} width="100" height="100" opacity={robot.built.includes(i) ? 1 : 0.3} />)}
+    <svg x={robot.x * 51 - 25} y={robot.y * 51 - 25} width="100" height="100" viewBox={`${robot.direction / 90 * 100} 0 100 100`} overflow="hidden"><image href="/vp-assets/construction/iron_sprite.png" width="400" height="100" /></svg>
+  </svg>;
   return (
     <svg className="excursion-board" viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
       {level.background && <image href={level.background} width="400" height="400" />}
@@ -126,10 +131,10 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   return (
     <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
-        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: 4 } }] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
+        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
-      <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor } : undefined}>
+      <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
         <div className="excursion-world" style={level.scenery ? { backgroundImage: `url("${level.scenery}")` } : undefined}><ReferenceBoard level={level} robot={robot} /></div>
         <div className="excursion-controls">
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
@@ -145,11 +150,11 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
             {(guide === 'intro' || !guide) && <img className="excursion-mascot" src={`${ASSETS}mascot.svg`} alt="" />}
             {!guide && <h2>{status === 'completed' ? 'Congratulations!' : 'Try again'}</h2>}
             <p>{guide ? guideText : status === 'completed' ? level.success : message}</p>
-            {guide === 'intro' && level.number === 1 && !level.cargo && <img className="excursion-intro-diagram" src={`${ASSETS}intro.svg`} alt="Lead the robot to the marked station" />}
+            {guide === 'intro' && level.number === 1 && !level.cargo && !level.buildings && <img className="excursion-intro-diagram" src={`${ASSETS}intro.svg`} alt="Lead the robot to the marked station" />}
             {guide === "intro" && level.instructionImage && <img className="excursion-instruction-image" src={level.instructionImage} alt="Repeat six times: move forward" />}
             <div className="excursion-dialog-actions">
               <button type="button" onClick={() => {
-                if (guide) setGuide(guide === 'intro' && level.number === 1 && !level.cargo ? 'workspace' : guide === 'workspace' ? 'run' : null);
+                if (guide) setGuide(guide === 'intro' && level.number === 1 && !level.cargo && !level.buildings ? 'workspace' : guide === 'workspace' ? 'run' : null);
                 else if (status === 'completed') { onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }
                 else reset();
               }}>{guide || status === 'completed' ? 'Continue' : 'Try again'}</button>

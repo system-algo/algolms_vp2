@@ -36,6 +36,8 @@ export function compileProgram(blocks, maxSteps = 400) {
 
           traverse(children, depth + 1);
         }
+      } else if (blk.type.startsWith('build_')) {
+        steps.push({ blockId: blk.id, action: blk.type });
       } else if (blk.type === BLOCK_TYPES.MOVE_FORWARD) {
         steps.push({
           blockId: blk.id,

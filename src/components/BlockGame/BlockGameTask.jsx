@@ -9,6 +9,7 @@ import './BlockGameTask.css';
 import ExcursionTask from './ExcursionTask.jsx';
 import excursionReferences from './levels/excursionReference.json';
 import rocketReferences from './levels/rocketReference.json';
+import constructionReferences from './levels/constructionReference.json';
 
 function resolveInitialLevelId(task, initialLevelId) {
   if (initialLevelId) return initialLevelId;
@@ -71,8 +72,8 @@ function resolveInitialLevelId(task, initialLevelId) {
 
 export default function BlockGameTask(props) {
   const taskId = String(props.task?.id || props.task?.taskId || '');
-  const match = taskId.match(/^VP2?_M1L1_([12])_(\d+)$/);
-  const reference = match && (match[1] === "2" ? rocketReferences : excursionReferences).find(item => item.number === Number(match[2]));
+  const match = taskId.match(/^VP2?_M1L([12])_([12])_(\d+)$/);
+  const reference = match && (match[1] === "2" ? (match[2] === "1" ? constructionReferences : []) : match[2] === "2" ? rocketReferences : excursionReferences).find(item => item.number === Number(match[3]));
   if (reference) return <ExcursionTask key={taskId} {...props} level={reference} />;
   return <LegacyBlockGameTask {...props} />;
 }

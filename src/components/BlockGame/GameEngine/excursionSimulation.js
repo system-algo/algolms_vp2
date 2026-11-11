@@ -1,16 +1,24 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.buildings) return { ...level.start, built: [] };
   return level.cargo ? { ...level.start, boxes: level.cargo.map(box => ({ ...box })), carrying: false, delivered: 0 } : { ...level.start };
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.buildings) return robot.built.length === level.buildings.length;
   return level.cargo
     ? robot.boxes.length === 0 && !robot.carrying && robot.delivered === level.cargo.length
     : robot.x === level.target.x && robot.y === level.target.y;
 }
 
 export function stepExcursion(level, robot, step) {
+  if (step.action.startsWith('build_')) {
+    const target = level.buildings?.findIndex(b => b.x === robot.x && b.y === robot.y && b.kind === step.action.slice(6));
+    if (target === undefined || target < 0) throw new Error('Build the matching structure on its marked site.');
+    if (robot.built.includes(target)) throw new Error('This structure has already been built.');
+    return { ...robot, built: [...robot.built, target] };
+  }
   if (step.action === 'repeat_iteration') return robot;
   if (step.action === 'take_cargo') {
     if (!level.cargo) throw new Error('There is no cargo here to take.');

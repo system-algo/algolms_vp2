@@ -264,3 +264,8 @@ export function countCommands(blocks = []) {
   }
   return count;
 }
+
+Object.assign(BLOCK_TYPES, { BUILD_FACTORY: 'build_factory', BUILD_GREENHOUSE: 'build_greenhouse', BUILD_WINDMILL: 'build_windmill' });
+for (const [kind, label] of [['factory', 'factory'], ['greenhouse', 'greenhouse'], ['windmill', 'wind generator']]) {
+  BLOCK_DEFINITIONS[`build_${kind}`] = { type: `build_${kind}`, kind: 'statement', label, category: 'actions', color: '#995ba7', darkColor: '#6B4284', lightColor: '#B488CE' };
+}

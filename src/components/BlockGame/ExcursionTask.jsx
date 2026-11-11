@@ -119,9 +119,9 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     : guide === 'run' ? 'Create your own sequence of commands and click this button to start the program.' : level.hint;
 
   return (
-    <section className="excursion-task" ref={root} aria-label={`Excursion task ${level.number}`}>
+    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`Excursion task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
-        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [BLOCK_TYPES.REPEAT] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
+        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: 4 } }] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")` } : undefined}>

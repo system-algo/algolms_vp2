@@ -23,12 +23,13 @@ export default function BlockRenderer({
   // Measure content width dynamically
   useLayoutEffect(() => {
     if (contentRef.current) {
-      const measured = contentRef.current.scrollWidth || contentRef.current.offsetWidth;
+      const outerWidth = contentRef.current.scrollWidth || contentRef.current.offsetWidth;
+      const measured = compact ? Math.max(60, outerWidth - 24) : outerWidth;
       if (measured && Math.abs(measured - contentWidth) > 1) {
-        setContentWidth(Math.max(80, measured));
+        setContentWidth(Math.max(compact ? 60 : 80, measured));
       }
     }
-  }, [block.type, block.params, def.label]);
+  }, [block.type, block.params, def.label, compact]);
 
   // Drag start handler
   const handlePointerDown = (e) => {

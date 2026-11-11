@@ -147,8 +147,12 @@ export default function BlockWorkspace({
   // Dragging state
   const [draggingBlock, setDraggingBlock] = useState(null);
   const [dragPointerPos, setDragPointerPos] = useState({ x: 0, y: 0 });
-  const [dropTarget, setDropTarget] = useState(null); // { blockId, targetId, position: 'before' | 'after' | 'inside' | 'root_end' }
-  const [isOverTrash, setIsOverTrash] = useState(false);
+  const [dropTarget, setDropTargetState] = useState(null); // { blockId, targetId, position: 'before' | 'after' | 'inside' | 'root_end' }
+  const [isOverTrash, setIsOverTrashState] = useState(false);
+  const dropTargetRef = useRef(null);
+  const trashRef = useRef(false);
+  const setDropTarget = (target) => { dropTargetRef.current = target; setDropTargetState(target); };
+  const setIsOverTrash = (value) => { trashRef.current = value; setIsOverTrashState(value); };
 
   // Handle parameter changes (e.g. angle dropdown, repeat count)
   const handleParamChange = useCallback(
@@ -163,6 +167,8 @@ export default function BlockWorkspace({
   const handleStartDrag = (block, e) => {
     if (isExecuting) return; // cannot edit while running
 
+    setDropTarget(null);
+    setIsOverTrash(false);
     const isFromToolbox = String(block.id).startsWith('toolbox_');
     const blockToDrag = isFromToolbox
       ? {
@@ -288,8 +294,13 @@ export default function BlockWorkspace({
       setDropTarget(foundTarget);
     };
 
-    const handlePointerUp = () => {
+    const handlePointerUp = (event) => {
       if (!draggingBlock) return;
+      // Resolve the release coordinates synchronously. React may batch the final
+      // pointermove, so the rendered dropTarget can still describe an older point.
+      handlePointerMove(event);
+      const dropTarget = dropTargetRef.current;
+      const isOverTrash = trashRef.current;
 
       if (isOverTrash) {
         // Dragged to trash or toolbox: delete if it was already in workspace
@@ -338,7 +349,7 @@ export default function BlockWorkspace({
       window.removeEventListener('pointermove', handlePointerMove);
       window.removeEventListener('pointerup', handlePointerUp);
     };
-  }, [draggingBlock, dropTarget, isOverTrash, blocks, onChangeBlocks]);
+  }, [draggingBlock, blocks, onChangeBlocks]);
 
   const commandCount = countCommands(blocks);
   const isLimitReached = maxCommands !== null && commandCount >= maxCommands;

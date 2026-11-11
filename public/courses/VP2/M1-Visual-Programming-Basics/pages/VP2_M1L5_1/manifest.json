@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "id": "VP2_M1L5_1",
+  "title": "Project. Personal website",
+  "type": "scratch-task",
+  "level_type": "scratch",
+  "activityType": "scratch",
+  "taskCount": 2,
+  "metadata": {
+    "courseId": "VP2",
+    "moduleId": "M1-Visual-Programming-Basics",
+    "pageId": "VP2_M1L5_1",
+    "generatedAt": "2026-11-11T07:30:00.000Z"
+  },
+  "tasks": [
+    {
+      "id": "VP2_M1L5_1_1",
+      "taskId": "VP2_M1L5_1_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Project. Personal website - Task 1",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "8910738",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "looks_sayforsecs",
+        "looks_switchcostumeto",
+        "event_whenflagclicked",
+        "control_wait"
+      ],
+      "requirements": [
+        {
+          "id": "req_1_1",
+          "title": "Arrange your sprite & backdrop",
+          "text": "Set up the sprites and stage for Task 1 of \"Project. Personal website\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_2",
+          "title": "Assemble the code blocks",
+          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_3",
+          "title": "Save project and test",
+          "text": "Click the green flag to run your program, then save your project.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Project. Personal website - Task 1",
+          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L5_1_1_state_1",
+          "stateId": "VP2_M1L5_1_1_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "8910738",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control"
+          ],
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "looks_sayforsecs",
+            "looks_switchcostumeto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L5_1_2",
+      "taskId": "VP2_M1L5_1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Project. Personal website - Task 2",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "8910872",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "motion_movesteps",
+        "motion_gotoxy",
+        "looks_sayforsecs",
+        "looks_switchcostumeto",
+        "event_whenflagclicked",
+        "control_wait"
+      ],
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "Arrange your sprite & backdrop",
+          "text": "Set up the sprites and stage for Task 2 of \"Project. Personal website\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_2",
+          "title": "Assemble the code blocks",
+          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_3",
+          "title": "Save project and test",
+          "text": "Click the green flag to run your program, then save your project.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Project. Personal website - Task 2",
+          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L5_1_2_state_1",
+          "stateId": "VP2_M1L5_1_2_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "8910872",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control"
+          ],
+          "command_blocks": [
+            "motion_movesteps",
+            "motion_gotoxy",
+            "looks_sayforsecs",
+            "looks_switchcostumeto",
+            "event_whenflagclicked",
+            "control_wait"
+          ]
+        }
+      ]
+    }
+  ]
+}

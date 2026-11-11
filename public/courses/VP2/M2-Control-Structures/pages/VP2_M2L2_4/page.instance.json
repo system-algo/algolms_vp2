@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 2,
+  "id": "VP2_M2L2_4",
+  "title": "Test yourself. Directions",
+  "type": "scratch-task",
+  "level_type": "scratch",
+  "taskCount": 3,
+  "tasks": [
+    {
+      "id": "VP2_M2L2_4_1",
+      "taskId": "VP2_M2L2_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Test yourself. Directions - Question 1",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
+      "requirements": [
+        {
+          "id": "req_1_1",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_2",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Directions - Review 1",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M2L2_4_1_state_1",
+          "stateId": "VP2_M2L2_4_1_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_4_2",
+      "taskId": "VP2_M2L2_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Test yourself. Directions - Question 2",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_2",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Directions - Review 2",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M2L2_4_2_state_1",
+          "stateId": "VP2_M2L2_4_2_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_4_3",
+      "taskId": "VP2_M2L2_4_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Test yourself. Directions - Question 3",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_2",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Directions - Review 3",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M2L2_4_3_state_1",
+          "stateId": "VP2_M2L2_4_3_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch"
+        }
+      ]
+    }
+  ]
+}

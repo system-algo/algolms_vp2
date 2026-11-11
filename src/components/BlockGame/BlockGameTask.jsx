@@ -13,9 +13,15 @@ function resolveInitialLevelId(task, initialLevelId) {
   if (task?.metadata?.levelId) return task.metadata.levelId;
 
   const taskId = String(task?.id || task?.taskId || '');
+  const taskTitle = String(task?.title || '').toLowerCase();
+  const text = (String(task?.instruction || '') + ' ' + String(task?.bodyText || '') + ' ' + taskTitle).toLowerCase();
+
   const match = taskId.match(/task-(\d+)-/);
   if (match) {
     const taskNum = parseInt(match[1], 10);
+    if (taskNum === 1) {
+      return 'plant_level_1';
+    }
     // Task 2 -> plant_level_1 ... Task 8 -> plant_level_7
     if (taskNum >= 2 && taskNum <= 8) {
       return `plant_level_${taskNum - 1}`;
@@ -26,7 +32,22 @@ function resolveInitialLevelId(task, initialLevelId) {
     }
   }
 
-  const text = (String(task?.instruction || '') + ' ' + String(task?.bodyText || '') + ' ' + String(task?.title || '')).toLowerCase();
+  const posMatch = taskId.match(/_(\d+)$/);
+  const pos = posMatch ? parseInt(posMatch[1], 10) : Number(task?.position || task?.level_position || 1);
+
+  if (taskId.includes('M1L1_1') || taskTitle.includes('excursion')) {
+    return `mars_level_${Math.max(1, Math.min(14, pos))}`;
+  }
+  if (taskId.includes('M1L1_2') || taskTitle.includes('rocket')) {
+    return `mars_level_${Math.max(1, Math.min(14, pos + 6))}`;
+  }
+  if (taskId.includes('M1L2_1') || taskTitle.includes('marsbase')) {
+    return `mars_level_${Math.max(1, Math.min(14, pos))}`;
+  }
+  if (taskId.includes('M1L2_2') || taskTitle.includes('excavation')) {
+    return `mars_level_${Math.max(1, Math.min(14, pos + 5))}`;
+  }
+
   if (text.includes('destroy one pest plant and grow')) return 'plant_level_3';
   if (text.includes('find the small sprout')) return 'plant_level_2';
   if (text.includes('destroy one pest plant')) return 'plant_level_1';
@@ -39,7 +60,7 @@ function resolveInitialLevelId(task, initialLevelId) {
   if (text.includes('help with the greenhouse')) return 'plant_level_4';
 
   if (text.includes('mars') || text.includes('living compartment') || text.includes('cargo')) {
-    return 'mars_level_7';
+    return `mars_level_${Math.max(1, Math.min(14, pos))}`;
   }
 
   return getDefaultLevel('plants').id;

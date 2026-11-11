@@ -356,16 +356,35 @@ export default function GeneratedPageShell({
 
     async function loadPage() {
       try {
+        const candidateUrls = [manifestUrl];
+        if (manifestUrl.includes('/VP2_')) {
+          candidateUrls.push(manifestUrl.replace('/VP2_', '/VP_'));
+        } else if (manifestUrl.includes('/VP_')) {
+          candidateUrls.push(manifestUrl.replace('/VP_', '/VP2_'));
+        }
+        if (manifestUrl.includes('/VP2_M3L2_1/')) {
+          candidateUrls.push(manifestUrl.replace('/VP2_M3L2_1/', '/VP2_M3L2_1_track1/'));
+        }
+
         let nextManifest = null;
-        try {
-          const manifestResponse = await fetch(manifestUrl);
-          if (manifestResponse.ok) {
-            nextManifest = await manifestResponse.json();
-          } else {
-            console.warn(`Manifest not found at ${manifestUrl}: status ${manifestResponse.status}`);
+        let successfulManifestUrl = manifestUrl;
+        for (const url of candidateUrls) {
+          try {
+            const manifestResponse = await fetch(url);
+            if (manifestResponse.ok) {
+              const parsed = await manifestResponse.json();
+              if (parsed && Array.isArray(parsed.tasks) && parsed.tasks.length > 0) {
+                nextManifest = parsed;
+                successfulManifestUrl = url;
+                break;
+              } else if (!nextManifest) {
+                nextManifest = parsed;
+                successfulManifestUrl = url;
+              }
+            }
+          } catch (err) {
+            console.warn(`Failed to fetch manifest from ${url}:`, err);
           }
-        } catch (err) {
-          console.warn(`Failed to fetch manifest from ${manifestUrl}:`, err);
         }
 
         if (!nextManifest) {
@@ -386,13 +405,26 @@ export default function GeneratedPageShell({
           taskRenderers: {},
         };
 
-        try {
-          const pageInstanceResponse = await fetch(pageInstanceUrl);
-          if (pageInstanceResponse.ok) {
-            nextPageInstance = await pageInstanceResponse.json();
+        const candidateInstanceUrls = [pageInstanceUrl];
+        if (successfulManifestUrl) {
+          candidateInstanceUrls.unshift(successfulManifestUrl.replace('manifest.json', 'page.instance.json'));
+        }
+        if (pageInstanceUrl.includes('/VP2_')) {
+          candidateInstanceUrls.push(pageInstanceUrl.replace('/VP2_', '/VP_'));
+        } else if (pageInstanceUrl.includes('/VP_')) {
+          candidateInstanceUrls.push(pageInstanceUrl.replace('/VP_', '/VP2_'));
+        }
+
+        for (const instUrl of candidateInstanceUrls) {
+          try {
+            const pageInstanceResponse = await fetch(instUrl);
+            if (pageInstanceResponse.ok) {
+              nextPageInstance = await pageInstanceResponse.json();
+              break;
+            }
+          } catch {
+            // Default empty pageInstance is fine
           }
-        } catch {
-          // Default empty pageInstance is fine
         }
 
         if (isCancelled) return;

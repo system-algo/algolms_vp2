@@ -1,8 +1,125 @@
 {
   "schemaVersion": 2,
-  "id": "VP_M2L1_2",
-  "title": "VP Lesson 6 Summary",
-  "type": "h5p-standalone",
-  "taskCount": 1,
-  "h5pPlayUrl": "/courses/VP/M2-Control-Structures/pages/VP_M2L1_2/workspace"
+  "id": "VP2_M2L1_2",
+  "title": "Additional task: find the...",
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "taskCount": 5,
+  "tasks": [
+    {
+      "id": "VP2_M2L1_2_1",
+      "taskId": "VP2_M2L1_2_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Additional task: find the... - Level 1",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_9",
+      "instruction": "Complete level 1 of Additional task: find the.... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M2L1_2_1_state_1",
+          "stateId": "VP2_M2L1_2_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_9"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_2_2",
+      "taskId": "VP2_M2L1_2_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Additional task: find the... - Level 2",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_10",
+      "instruction": "Complete level 2 of Additional task: find the.... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M2L1_2_2_state_1",
+          "stateId": "VP2_M2L1_2_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_10"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_2_3",
+      "taskId": "VP2_M2L1_2_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Additional task: find the... - Level 3",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_11",
+      "instruction": "Complete level 3 of Additional task: find the.... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M2L1_2_3_state_1",
+          "stateId": "VP2_M2L1_2_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_11"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_2_4",
+      "taskId": "VP2_M2L1_2_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Additional task: find the... - Level 4",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_12",
+      "instruction": "Complete level 4 of Additional task: find the.... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M2L1_2_4_state_1",
+          "stateId": "VP2_M2L1_2_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_12"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_2_5",
+      "taskId": "VP2_M2L1_2_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Additional task: find the... - Level 5",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_13",
+      "instruction": "Complete level 5 of Additional task: find the.... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M2L1_2_5_state_1",
+          "stateId": "VP2_M2L1_2_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_13"
+        }
+      ]
+    }
+  ]
 }

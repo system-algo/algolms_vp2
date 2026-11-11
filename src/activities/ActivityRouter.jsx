@@ -310,8 +310,22 @@ function hasPlaceholderTypingShape(task, state, lines) {
 }
 
 function hasBlockGameShape(lines, task) {
+  const taskId = String(task?.id || task?.taskId || '').toLowerCase();
   const taskTitle = String(task?.title || '').toLowerCase();
-  if (taskTitle.includes('laser and plants') || taskTitle.includes('sorting cargo')) {
+  if (
+    taskTitle.includes('laser and plants') ||
+    taskTitle.includes('sorting cargo') ||
+    taskTitle.includes('excursion') ||
+    taskTitle.includes('help load the rocket') ||
+    taskTitle.includes('building a marsbase') ||
+    taskTitle.includes('excavations') ||
+    taskTitle.includes('collecting cargo') ||
+    taskTitle.includes('rocket flight') ||
+    taskId.includes('m1l1_1') ||
+    taskId.includes('m1l1_2') ||
+    taskId.includes('m1l2_1') ||
+    taskId.includes('m1l2_2')
+  ) {
     return true;
   }
   if (

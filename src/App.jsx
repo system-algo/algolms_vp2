@@ -131,7 +131,10 @@ export default function App() {
   const sessionRedirectStartedRef = useRef(false);
 
   const GeneratedPage = useMemo(() => {
-    const pageLoader = generatedPageRegistry?.[courseId]?.[lessonId]?.[pageId];
+    const pageLoader =
+      generatedPageRegistry?.[courseId]?.[lessonId]?.[pageId] ||
+      (pageId?.startsWith('VP2_') ? generatedPageRegistry?.[courseId]?.[lessonId]?.[pageId.replace('VP2_', 'VP_')] : null) ||
+      (pageId?.startsWith('VP_') ? generatedPageRegistry?.[courseId]?.[lessonId]?.[pageId.replace('VP_', 'VP2_')] : null);
     if (!pageLoader) return null;
     return lazy(pageLoader);
   }, [courseId, lessonId, pageId]);

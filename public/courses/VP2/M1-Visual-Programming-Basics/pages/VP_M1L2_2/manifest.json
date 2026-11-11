@@ -1,13 +1,339 @@
 {
   "version": 1,
-  "id": "VP_M1L2_2",
-  "title": "Match the Scratch vocabulary with the images",
-  "type": "h5p-standalone",
-  "taskCount": 1,
+  "id": "VP2_M1L2_2",
+  "title": "Bonus! Excavations....",
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "activityType": "block_game",
+  "taskCount": 14,
   "metadata": {
-    "courseId": "VP",
-    "lessonId": "M1-Visual-Programming-Basics",
-    "sourceH5p": "VP M1L2_2.h5p",
-    "importedAt": "2026-08-10T08:08:18.046Z"
-  }
+    "courseId": "VP2",
+    "moduleId": "M1-Visual-Programming-Basics",
+    "pageId": "VP2_M1L2_2",
+    "generatedAt": "2026-11-11T07:30:00.000Z"
+  },
+  "tasks": [
+    {
+      "id": "VP2_M1L2_2_1",
+      "taskId": "VP2_M1L2_2_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Bonus! Excavations.... - Level 1",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_10",
+      "instruction": "Complete level 1 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_1_state_1",
+          "stateId": "VP2_M1L2_2_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_10"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_2",
+      "taskId": "VP2_M1L2_2_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Bonus! Excavations.... - Level 2",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_11",
+      "instruction": "Complete level 2 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_2_state_1",
+          "stateId": "VP2_M1L2_2_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_11"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_3",
+      "taskId": "VP2_M1L2_2_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Bonus! Excavations.... - Level 3",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_12",
+      "instruction": "Complete level 3 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_3_state_1",
+          "stateId": "VP2_M1L2_2_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_12"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_4",
+      "taskId": "VP2_M1L2_2_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Bonus! Excavations.... - Level 4",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_13",
+      "instruction": "Complete level 4 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_4_state_1",
+          "stateId": "VP2_M1L2_2_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_13"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_5",
+      "taskId": "VP2_M1L2_2_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Bonus! Excavations.... - Level 5",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_14",
+      "instruction": "Complete level 5 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_5_state_1",
+          "stateId": "VP2_M1L2_2_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_14"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_6",
+      "taskId": "VP2_M1L2_2_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Bonus! Excavations.... - Level 6",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_1",
+      "instruction": "Complete level 6 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_6_state_1",
+          "stateId": "VP2_M1L2_2_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_1"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_7",
+      "taskId": "VP2_M1L2_2_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Bonus! Excavations.... - Level 7",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_2",
+      "instruction": "Complete level 7 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_7_state_1",
+          "stateId": "VP2_M1L2_2_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_2"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_8",
+      "taskId": "VP2_M1L2_2_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Bonus! Excavations.... - Level 8",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Complete level 8 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_8_state_1",
+          "stateId": "VP2_M1L2_2_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_3"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_9",
+      "taskId": "VP2_M1L2_2_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Bonus! Excavations.... - Level 9",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_4",
+      "instruction": "Complete level 9 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_9_state_1",
+          "stateId": "VP2_M1L2_2_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_4"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_10",
+      "taskId": "VP2_M1L2_2_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Bonus! Excavations.... - Level 10",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_5",
+      "instruction": "Complete level 10 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_10_state_1",
+          "stateId": "VP2_M1L2_2_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_5"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_11",
+      "taskId": "VP2_M1L2_2_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Bonus! Excavations.... - Level 11",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_6",
+      "instruction": "Complete level 11 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_11_state_1",
+          "stateId": "VP2_M1L2_2_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_6"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_12",
+      "taskId": "VP2_M1L2_2_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Bonus! Excavations.... - Level 12",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_7",
+      "instruction": "Complete level 12 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_12_state_1",
+          "stateId": "VP2_M1L2_2_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_7"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_13",
+      "taskId": "VP2_M1L2_2_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Bonus! Excavations.... - Level 13",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_8",
+      "instruction": "Complete level 13 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_13_state_1",
+          "stateId": "VP2_M1L2_2_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_8"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M1L2_2_14",
+      "taskId": "VP2_M1L2_2_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Bonus! Excavations.... - Level 14",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_9",
+      "instruction": "Complete level 14 of Bonus! Excavations..... Navigate the robot and achieve the mission goals!",
+      "states": [
+        {
+          "id": "VP2_M1L2_2_14_state_1",
+          "stateId": "VP2_M1L2_2_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game",
+          "levelId": "mars_level_9"
+        }
+      ]
+    }
+  ]
 }

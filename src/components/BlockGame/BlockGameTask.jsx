@@ -3,8 +3,47 @@ import BlockWorkspace from './BlockWorkspace/BlockWorkspace';
 import GameView from './GameEngine/GameView';
 import { compileProgram, getNextPosition } from './GameEngine/gameInterpreter.js';
 import { ALL_LEVELS, getLevelById, getDefaultLevel } from './levels/index.js';
+import { countCommands } from './BlockWorkspace/blockDefinitions.js';
 import { playLmsSound, LMS_SOUND_TYPES } from '../../utils/lmsSounds';
 import './BlockGameTask.css';
+
+function resolveInitialLevelId(task, initialLevelId) {
+  if (initialLevelId) return initialLevelId;
+  if (task?.levelId) return task.levelId;
+  if (task?.metadata?.levelId) return task.metadata.levelId;
+
+  const taskId = String(task?.id || task?.taskId || '');
+  const match = taskId.match(/task-(\d+)-/);
+  if (match) {
+    const taskNum = parseInt(match[1], 10);
+    // Task 2 -> plant_level_1 ... Task 8 -> plant_level_7
+    if (taskNum >= 2 && taskNum <= 8) {
+      return `plant_level_${taskNum - 1}`;
+    }
+    // Task 11 -> plant_level_8 ... Task 14 -> plant_level_11
+    if (taskNum >= 11 && taskNum <= 14) {
+      return `plant_level_${taskNum - 3}`;
+    }
+  }
+
+  const text = (String(task?.instruction || '') + ' ' + String(task?.bodyText || '') + ' ' + String(task?.title || '')).toLowerCase();
+  if (text.includes('destroy one pest plant and grow')) return 'plant_level_3';
+  if (text.includes('find the small sprout')) return 'plant_level_2';
+  if (text.includes('destroy one pest plant')) return 'plant_level_1';
+  if (text.includes('the greenhouse needs plants')) return 'plant_level_5';
+  if (text.includes('sprout all the plants')) return 'plant_level_7';
+  if (text.includes('the hordes are coming')) return 'plant_level_8';
+  if (text.includes('sometimes the long way is faster')) return 'plant_level_10';
+  if (text.includes('no more than 3 commands')) return 'plant_level_11';
+  if (text.includes('help with the plants')) return 'plant_level_9';
+  if (text.includes('help with the greenhouse')) return 'plant_level_4';
+
+  if (text.includes('mars') || text.includes('living compartment') || text.includes('cargo')) {
+    return 'mars_level_7';
+  }
+
+  return getDefaultLevel('plants').id;
+}
 
 export default function BlockGameTask({
   task,
@@ -15,15 +54,18 @@ export default function BlockGameTask({
   standalone = false,
   initialLevelId = null,
 }) {
-  // Determine starting level
-  const resolvedLevelId =
-    initialLevelId ||
-    task?.levelId ||
-    task?.metadata?.levelId ||
-    getDefaultLevel('plants').id;
+  const resolvedLevelId = resolveInitialLevelId(task, initialLevelId);
 
   const [currentLevelId, setCurrentLevelId] = useState(resolvedLevelId);
   const level = getLevelById(currentLevelId);
+
+  // Sync currentLevelId when task prop changes
+  useEffect(() => {
+    const nextLevelId = resolveInitialLevelId(task, initialLevelId);
+    if (nextLevelId && nextLevelId !== currentLevelId) {
+      setCurrentLevelId(nextLevelId);
+    }
+  }, [task?.id, task?.taskId, initialLevelId]);
 
   // Workspace blocks state
   const [blocks, setBlocks] = useState(() => level.initialBlocks || []);
@@ -159,6 +201,8 @@ export default function BlockGameTask({
         setIsExecuting(false);
         setActiveBlockId(null);
 
+        const usedCommands = countCommands(blocks);
+
         if (level.mode === 'radial') {
           const remainingEvil = simPlants.filter((p) => p.isEvil && !p.destroyed);
           const reqDestroy = level.targetDestroyedCount ?? 1;
@@ -166,7 +210,20 @@ export default function BlockGameTask({
           const destroyedEvil = simPlants.filter((p) => p.isEvil && p.destroyed).length;
           const wateredGood = simPlants.filter((p) => !p.isEvil && p.isWatered).length;
 
-          if (remainingEvil.length === 0 && destroyedEvil >= reqDestroy && wateredGood >= reqWater) {
+          const actionGoalsMet =
+            remainingEvil.length === 0 && destroyedEvil >= reqDestroy && wateredGood >= reqWater;
+
+          if (actionGoalsMet) {
+            // Strict command limit check
+            if (level.maxCommands && usedCommands > level.maxCommands) {
+              setExecutionStatus('failed');
+              playLmsSound(LMS_SOUND_TYPES.WRONG);
+              setStatusMessage(
+                `Số lệnh đã dùng: ${usedCommands} / ${level.maxCommands} (vượt quá giới hạn)! Dù hoàn thành mục tiêu nhưng bạn chưa đạt yêu cầu số lệnh. Hãy tối ưu bằng vòng lặp repeat!`
+              );
+              return;
+            }
+
             setExecutionStatus('completed');
             playLmsSound(LMS_SOUND_TYPES.CORRECT);
             onTaskCompleted?.({
@@ -174,7 +231,7 @@ export default function BlockGameTask({
               isCorrect: true,
               score: 1,
               maxScore: 1,
-              feedback: 'Great job! Destroyed pest plant and grew good plant.',
+              feedback: 'Great job! Destroyed pest plant and grew good plant within command limit.',
             });
           } else {
             setExecutionStatus('failed');
@@ -197,6 +254,16 @@ export default function BlockGameTask({
           const cargoCompleted = simCargos.length === 0;
 
           if (reachedTarget && cargoCompleted) {
+            // Strict command limit check
+            if (level.maxCommands && usedCommands > level.maxCommands) {
+              setExecutionStatus('failed');
+              playLmsSound(LMS_SOUND_TYPES.WRONG);
+              setStatusMessage(
+                `Số lệnh đã dùng: ${usedCommands} / ${level.maxCommands} (vượt quá giới hạn)! Hãy tối ưu đường đi bằng vòng lặp repeat!`
+              );
+              return;
+            }
+
             setExecutionStatus('completed');
             playLmsSound(LMS_SOUND_TYPES.CORRECT);
             onTaskCompleted?.({
@@ -204,7 +271,7 @@ export default function BlockGameTask({
               isCorrect: true,
               score: 1,
               maxScore: 1,
-              feedback: 'Success! Robot reached the living compartment.',
+              feedback: 'Success! Robot reached the living compartment within command limit.',
             });
           } else {
             setExecutionStatus('failed');
@@ -343,8 +410,8 @@ export default function BlockGameTask({
             </svg>
           </button>
 
-          {/* Sequence: (1) (2) (3) (4) (5) (6) (Smiley) (7) (8) (Gallery) (Star) (Star) */}
-          {[1, 2, 3, 4, 5, 6].map((num) => {
+          {/* Sequence of practice levels 1 to 7 */}
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => {
             const isCurrent = level.levelNumber === num;
             return (
               <button
@@ -371,25 +438,6 @@ export default function BlockGameTask({
             <span style={{ fontSize: '13px' }}>😊</span>
           </button>
 
-          {/* Levels 7, 8 */}
-          {[7, 8].map((num) => {
-            const isCurrent = level.levelNumber === num;
-            return (
-              <button
-                key={num}
-                type="button"
-                className={`level-pill-btn ${isCurrent ? 'active has-ring' : 'completed'}`}
-                onClick={() => {
-                  const targetLevel = ALL_LEVELS.find((l) => l.levelNumber === num && l.mode === level.mode);
-                  if (targetLevel) setCurrentLevelId(targetLevel.id);
-                }}
-                title={`Level ${num}`}
-              >
-                {num}
-              </button>
-            );
-          })}
-
           {/* Gallery image icon */}
           <button
             type="button"
@@ -401,17 +449,26 @@ export default function BlockGameTask({
             </svg>
           </button>
 
-          {/* Bonus Stars */}
-          <button type="button" className="level-pill-btn completed pill-icon-btn" title="Bonus 1">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-            </svg>
-          </button>
-          <button type="button" className="level-pill-btn completed pill-icon-btn" title="Bonus 2">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-            </svg>
-          </button>
+          {/* Bonus Levels 8 to 11 (Bonus 1, 2, 3, 4) */}
+          {[8, 9, 10, 11].map((bNum, idx) => {
+            const isCurrent = level.levelNumber === bNum;
+            return (
+              <button
+                key={bNum}
+                type="button"
+                className={`level-pill-btn ${isCurrent ? 'active has-ring' : 'completed'} pill-icon-btn`}
+                title={`Bonus ${idx + 1}`}
+                onClick={() => {
+                  const targetLevel = ALL_LEVELS.find((l) => l.levelNumber === bNum && l.mode === level.mode);
+                  if (targetLevel) setCurrentLevelId(targetLevel.id);
+                }}
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </button>
+            );
+          })}
         </div>
 
         {/* Right: User Profile Avatar */}
@@ -427,6 +484,47 @@ export default function BlockGameTask({
             <span style={{ fontSize: '10px', color: '#94a3b8' }}>Học sinh</span>
           </div>
           <span style={{ fontSize: '12px', color: '#94a3b8', marginLeft: '2px' }}>▾</span>
+        </div>
+      </div>
+
+      {/* Level Objective & Command Limit Banner */}
+      <div
+        className="block-game-instruction-banner"
+        style={{
+          background: isRadial ? '#1b0b13' : '#1e1124',
+          borderBottom: isRadial ? '1px solid #4a1926' : '1px solid #382046',
+          padding: '8px 20px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '10px',
+          zIndex: 10,
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#f8fafc', fontSize: '13.5px' }}>
+          <span style={{ fontSize: '16px' }}>🎯</span>
+          <span style={{ fontWeight: 700, color: '#fb923c' }}>{level.title}:</span>
+          <span style={{ color: '#e2e8f0' }}>{level.instruction || level.hint}</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          {level.maxCommands && (
+            <div
+              style={{
+                fontSize: '12.5px',
+                fontWeight: 600,
+                color: countCommands(blocks) > level.maxCommands ? '#f87171' : '#a7f3d0',
+                background: countCommands(blocks) > level.maxCommands ? 'rgba(239, 68, 68, 0.18)' : 'rgba(16, 185, 129, 0.12)',
+                border: `1px solid ${countCommands(blocks) > level.maxCommands ? '#ef4444' : 'rgba(16, 185, 129, 0.3)'}`,
+                borderRadius: '6px',
+                padding: '3px 10px',
+              }}
+            >
+              Lệnh dùng: <strong>{countCommands(blocks)} / {level.maxCommands}</strong>
+              {countCommands(blocks) > level.maxCommands && ' (Vượt quá giới hạn!)'}
+            </div>
+          )}
         </div>
       </div>
 

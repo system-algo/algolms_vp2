@@ -42,6 +42,26 @@ export default function RadialEngine({
         userSelect: 'none',
       }}
     >
+      {/* REAL CAPTURED GARDEN CIRCLE (VP2 Module 2 Lesson 3) */}
+      <img
+        src="/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_04_css.png"
+        alt="Garden Soil Patch"
+        style={{
+          position: 'absolute',
+          left: `${center - 190}px`,
+          top: `${center - 190}px`,
+          width: '380px',
+          height: '380px',
+          borderRadius: '50%',
+          pointerEvents: 'none',
+          zIndex: 1,
+          opacity: 0.85,
+        }}
+        onError={(e) => {
+          e.currentTarget.style.display = 'none';
+        }}
+      />
+
       {/* BACKGROUND DECORATION SVG (Foliage, Spider, Garden tools, Soil texture) */}
       <svg
         style={{

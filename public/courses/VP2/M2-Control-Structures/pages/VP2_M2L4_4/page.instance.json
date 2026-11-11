@@ -2,7 +2,8 @@
   "schemaVersion": 2,
   "id": "VP2_M2L4_4",
   "title": "Messages - Part 4",
-  "type": "generic-captured-page",
+  "type": "scratch-task",
+  "level_type": "scratch",
   "taskCount": 3,
   "tasks": [
     {
@@ -82,46 +83,106 @@
       ]
     },
     {
-      "id": "task-3-21661",
-      "taskId": "task-3-21661",
+      "id": "VP2_M2L4_4_3",
+      "taskId": "VP2_M2L4_4_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
       "title": "Test yourself. Messages",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nChoose a script\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\nANSWER",
-      "bodyText": "1\n2\n3\nChoose a script\n\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\n\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Choose a script",
-        "Choose the script where the sprite will rotate slightly 10 times when you run the above script.",
-        "ANSWER"
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Complete the programming task for \"Test yourself. Messages\".",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "images": [],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "Initial placement",
+          "text": "Arrange initial sprites and stage backdrop as required.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_2",
+          "title": "Programming script",
+          "text": "Create the code blocks for \"Test yourself. Messages\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_3",
+          "title": "Check with teacher",
+          "text": "Run the program and demonstrate the result to your teacher.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [],
+      "starter_project_id": "",
+      "demo_project_id": "",
       "states": [
         {
-          "id": "task-3-21661-state-1",
-          "stateId": "task-3-21661-state-1",
-          "name": "3",
-          "instruction": "1\n2\n3\nChoose a script\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\nANSWER",
-          "bodyText": "1\n2\n3\nChoose a script\n\nChoose the script where the sprite will rotate slightly 10 times when you run the above script.\n\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Choose a script",
-            "Choose the script where the sprite will rotate slightly 10 times when you run the above script.",
-            "ANSWER"
+          "id": "VP2_M2L4_4_3_state_1",
+          "stateId": "VP2_M2L4_4_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Complete the programming task for \"Test yourself. Messages\".",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "images": [],
-          "screenshot": ""
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_3_1",
+              "title": "Initial placement",
+              "text": "Arrange initial sprites and stage backdrop as required.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_2",
+              "title": "Programming script",
+              "text": "Create the code blocks for \"Test yourself. Messages\".",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_3",
+              "title": "Check with teacher",
+              "text": "Run the program and demonstrate the result to your teacher.",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": []
         }
       ]
     }
-  ],
-  "frameConfig": {
-    "showTopNavigation": true,
-    "showSideNavigation": true,
-    "showBottomControls": true,
-    "showNextButton": true
-  }
+  ]
 }

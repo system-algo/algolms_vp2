@@ -14,6 +14,7 @@ export default function TurretRobotSprite({
 }) {
   // Base sprite is drawn facing Left (270 degrees)
   const rotation = direction - 270;
+  const [useSvgFallback, setUseSvgFallback] = React.useState(false);
 
   return (
     <div
@@ -30,6 +31,20 @@ export default function TurretRobotSprite({
         filter: 'drop-shadow(0 6px 12px rgba(0, 0, 0, 0.45))',
       }}
     >
+      {!useSvgFallback ? (
+        <img
+          src="/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_05_css.png"
+          alt="Laser Turret"
+          onError={() => setUseSvgFallback(true)}
+          style={{
+            width: `${width}px`,
+            height: `${height}px`,
+            objectFit: 'contain',
+            mixBlendMode: 'screen',
+            pointerEvents: 'none',
+          }}
+        />
+      ) : (
       <svg
         viewBox="0 0 110 70"
         width={width}
@@ -131,6 +146,7 @@ export default function TurretRobotSprite({
         {/* Muzzle tip core spark */}
         <circle cx="2" cy="35" r="2.5" fill="#ffffff" filter="url(#neonLaserGlow)" />
       </svg>
+      )}
     </div>
   );
 }

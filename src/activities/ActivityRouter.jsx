@@ -309,7 +309,20 @@ function hasPlaceholderTypingShape(task, state, lines) {
   return codeLines.length >= 2;
 }
 
-function hasBlockGameShape(lines) {
+function hasBlockGameShape(lines, task) {
+  const taskTitle = String(task?.title || '').toLowerCase();
+  if (taskTitle.includes('laser and plants') || taskTitle.includes('sorting cargo')) {
+    return true;
+  }
+  if (
+    task?.activityType === 'block_game' ||
+    task?.activityType === 'block_game_task' ||
+    task?.selectedType === 'block_game' ||
+    task?.level_type === 'block_game'
+  ) {
+    return true;
+  }
+
   const joined = joinedText(lines);
   return (
     joined.includes('take the cargo') ||
@@ -324,6 +337,14 @@ function hasBlockGameShape(lines) {
 }
 
 function hasScratchTaskShape(lines, task) {
+  if (
+    task?.level_type === 'scratch' ||
+    task?.selectedType === 'scratch' ||
+    task?.activityType === 'scratch' ||
+    task?.activity_type === 'scratch'
+  ) {
+    return true;
+  }
   const title = String(task?.title || '').toLowerCase();
   if (title.includes('potion') || title.includes('knight') || title.includes('scratch.')) {
     return true;
@@ -345,7 +366,7 @@ function inferSubtype(task, state) {
     return 'scratch_task';
   }
 
-  if (hasBlockGameShape(lines)) {
+  if (hasBlockGameShape(lines, task)) {
     return 'block_game';
   }
 

@@ -198,12 +198,14 @@ export default function ScratchTask({
   const previewMediaUrl = selectedReq?.url || task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
   const previewMediaTitle = selectedReq?.title || task?.media?.[0]?.title || taskTitle;
 
+  const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
+                     String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
   const demoProjectId =
     task?.demo_project_id ||
     task?.demoProjectId ||
     task?.config?.presentation?.projectId ||
     task?.config?.presentation?.project ||
-    (levelPosition === 7 ? 'level_7_demo' : levelPosition === 8 ? 'level_8_demo' : '');
+    (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '');
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
 

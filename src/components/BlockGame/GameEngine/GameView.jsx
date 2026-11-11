@@ -220,7 +220,10 @@ export default function GameView({
 
       {/* TUTORIAL MODAL DIALOGS */}
       {isRadial && showTutorial && (
-        <PlantTutorialModal onClose={() => setShowTutorial(false)} />
+        <PlantTutorialModal
+          level={level}
+          onClose={() => setShowTutorial(false)}
+        />
       )}
       {!isRadial && showTutorial && (
         <MarsTutorialModal

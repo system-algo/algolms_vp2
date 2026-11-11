@@ -13,9 +13,31 @@ export default function PlantSprite({
   destroyed = false,
 }) {
   const actualType = isEvil ? 'pest' : type;
+  const [useSvgPest, setUseSvgPest] = React.useState(false);
 
   // 1. Harmful Plant: Venus Flytrap / Piranha Plant
   if (actualType === 'pest') {
+    if (!useSvgPest) {
+      return (
+        <img
+          src="/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_1/workspace/images/level_02_task_21714_actual_2_static_image_06_css.png"
+          alt="Harmful pest plant"
+          onError={() => setUseSvgPest(true)}
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+            objectFit: 'contain',
+            mixBlendMode: 'screen',
+            transition: 'transform 0.3s ease, opacity 0.3s ease',
+            transform: destroyed ? 'scale(0) rotate(45deg)' : 'scale(1)',
+            opacity: destroyed ? 0 : 1,
+            filter: 'drop-shadow(0 3px 4px rgba(0,0,0,0.4))',
+            pointerEvents: 'none',
+          }}
+        />
+      );
+    }
+
     return (
       <svg
         viewBox="0 0 64 64"

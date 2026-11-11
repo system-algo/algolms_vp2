@@ -2,14 +2,14 @@
   "version": 1,
   "id": "VP2_M3L2_4",
   "title": "Changing coordinates - Part 4",
-  "type": "generic-captured-page",
+  "type": "scratch-task",
+  "level_type": "scratch",
   "taskCount": 3,
   "metadata": {
     "courseId": "VP2",
-    "lessonId": "M3-Functions-and-Modules",
-    "sourceZip": "VP_M3L2_4.zip",
-    "format": "logika-crawler-capture",
-    "importedAt": "2026-10-24T08:51:30.311Z"
+    "moduleId": "M3-Functions-and-Modules",
+    "pageId": "VP2_M3L2_4",
+    "convertedAt": "2026-11-10T14:32:34.461Z"
   },
   "tasks": [
     {
@@ -47,70 +47,206 @@
       ]
     },
     {
-      "id": "task-2-22441",
-      "taskId": "task-2-22441",
+      "id": "VP2_M3L2_4_2",
+      "taskId": "VP2_M3L2_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
       "title": "Test yourself. Changing coordinates",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
-      "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Select all the commands that will move the sprite down",
-        "ANSWER"
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "images": [],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "Initial placement",
+          "text": "Arrange initial sprites and stage backdrop as required.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_2",
+          "title": "Programming script",
+          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_3",
+          "title": "Check with teacher",
+          "text": "Run the program and demonstrate the result to your teacher.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [],
+      "starter_project_id": "",
+      "demo_project_id": "",
       "states": [
         {
-          "id": "task-2-22441-state-1",
-          "stateId": "task-2-22441-state-1",
-          "name": "2",
-          "instruction": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
-          "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite down\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Select all the commands that will move the sprite down",
-            "ANSWER"
+          "id": "VP2_M3L2_4_2_state_1",
+          "stateId": "VP2_M3L2_4_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "images": [],
-          "screenshot": ""
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_2_1",
+              "title": "Initial placement",
+              "text": "Arrange initial sprites and stage backdrop as required.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_2",
+              "title": "Programming script",
+              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_3",
+              "title": "Check with teacher",
+              "text": "Run the program and demonstrate the result to your teacher.",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": []
         }
       ]
     },
     {
-      "id": "task-3-22441",
-      "taskId": "task-3-22441",
+      "id": "VP2_M3L2_4_3",
+      "taskId": "VP2_M3L2_4_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
       "title": "Test yourself. Changing coordinates",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
-      "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Select all the commands that will move the sprite to the right.",
-        "ANSWER"
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "images": [],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "Initial placement",
+          "text": "Arrange initial sprites and stage backdrop as required.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_2",
+          "title": "Programming script",
+          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_3",
+          "title": "Check with teacher",
+          "text": "Run the program and demonstrate the result to your teacher.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [],
+      "starter_project_id": "",
+      "demo_project_id": "",
       "states": [
         {
-          "id": "task-3-22441-state-1",
-          "stateId": "task-3-22441-state-1",
-          "name": "3",
-          "instruction": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
-          "bodyText": "1\n2\n3\nSelect all the commands that will move the sprite to the right.\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Select all the commands that will move the sprite to the right.",
-            "ANSWER"
+          "id": "VP2_M3L2_4_3_state_1",
+          "stateId": "VP2_M3L2_4_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "images": [],
-          "screenshot": ""
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_3_1",
+              "title": "Initial placement",
+              "text": "Arrange initial sprites and stage backdrop as required.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_2",
+              "title": "Programming script",
+              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_3",
+              "title": "Check with teacher",
+              "text": "Run the program and demonstrate the result to your teacher.",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": []
         }
       ]
     }

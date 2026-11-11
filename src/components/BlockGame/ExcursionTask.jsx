@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
 import { BLOCK_TYPES, createBlockInstance, countCommands } from './BlockWorkspace/blockDefinitions.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
-import { stepExcursion } from './GameEngine/excursionSimulation.js';
+import { stepExcursion, initialExcursionRobot, isExcursionComplete } from './GameEngine/excursionSimulation.js';
 import './ExcursionTask.css';
 
 const ASSETS = '/vp-assets/excursion/';
@@ -25,10 +25,13 @@ function ReferenceBoard({ level, robot }) {
           <image href={level.tiles || `${ASSETS}tiles.png`} width="250" height="200" x={(cell.x - cell.atlasX) * 50} y={(cell.y - cell.atlasY) * 50} clipPath={`url(#${id}-tile-${index})`} />
         </g>
       ))}
-      <image href={`${ASSETS}marker.png`} x={level.target.x * 50 + 0.5} y={level.target.y * 50 + 0.5} width="49" height="49" />
+      {level.target && <image href={`${ASSETS}marker.png`} x={level.target.x * 50 + 0.5} y={level.target.y * 50 + 0.5} width="49" height="49" />}
+      {level.portals?.map((portal, i) => <image key={`portal-${i}`} href={level.portalImage} x={portal.x * 50} y={portal.y * 50} width="49" height="49" />)}
+      {robot.boxes?.map((box, i) => <image key={`box-${i}`} href={level.boxImage} x={box.x * 50} y={box.y * 50} width="49" height="49" />)}
       <svg x={robot.x * 50 + 1} y={robot.y * 50 - 8} width="49" height="50" viewBox={`${frame * 49} 0 49 50`} overflow="hidden">
         <image href={`${ASSETS}robot.png`} width="980" height="50" />
       </svg>
+      {robot.carrying && <image href={level.boxImage} x={robot.x * 50 + 21} y={robot.y * 50 - 15} width="27" height="27" />}
     </svg>
   );
 }
@@ -39,7 +42,9 @@ export default function ExcursionTask(props) {
 }
 
 function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
-  return <section className="excursion-interlude" aria-label={`Excursion task ${level.number}`}>
+  const [rating, setRating] = useState(null);
+  if (level.type === 'rating' && rating === null) return <section className="excursion-rating" aria-label="Task feedback"><h2>{level.hint}</h2><div>{['Disliked', 'Neutral', 'Liked'].map((label, i) => <button type="button" aria-label={label} key={label} onClick={() => setRating(i)}><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="white" /><g fill="#101b26"><circle cx="39" cy="44" r="7" /><circle cx="81" cy="44" r="7" /></g><path d={i === 0 ? 'M33 83 Q60 48 87 83' : i === 1 ? 'M33 76 H87' : 'M33 70 Q60 105 87 70'} fill="none" stroke="#101b26" strokeWidth="9" strokeLinecap="round" /></svg></button>)}</div></section>;
+  return <section className="excursion-interlude" aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
     {level.image ? <img src={level.image} alt={level.hint} /> : <div><h2>Thanks!</h2><p>We love having cool lessons!</p></div>}
     <button type="button" onClick={() => { onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }}>Next</button>
   </section>;
@@ -47,7 +52,7 @@ function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
 
 function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   const [blocks, setBlocks] = useState(() => [createBlockInstance(BLOCK_TYPES.START_HAT)]);
-  const [robot, setRobot] = useState(level.start);
+  const [robot, setRobot] = useState(() => initialExcursionRobot(level));
   const [activeBlockId, setActiveBlockId] = useState(null);
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
@@ -64,7 +69,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
 
   function reset() {
     clearTimeout(timer.current);
-    setRobot(level.start);
+    setRobot(initialExcursionRobot(level));
     setActiveBlockId(null);
     setStatus('idle');
     setMessage('');
@@ -78,20 +83,20 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     catch (error) { setStatus('failed'); setMessage(error.message); return; }
     if (!steps.length) { setGuide('workspace'); return; }
     setStatus('running');
-    let current = { ...level.start };
+    let current = initialExcursionRobot(level);
     let index = 0;
     function advance() {
       if (index >= steps.length) {
         setActiveBlockId(null);
-        if (current.x === level.target.x && current.y === level.target.y) {
+        if (isExcursionComplete(level, current)) {
           setStatus('completed');
         } else {
           setStatus('failed');
-          setMessage('The robot has not reached the marked destination. Check your commands and try again.');
+          setMessage(level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
         }
         return;
       }
-      if (current.x === level.target.x && current.y === level.target.y) { setStatus('completed'); setActiveBlockId(null); return; }
+      if (isExcursionComplete(level, current)) { setStatus('completed'); setActiveBlockId(null); return; }
       const step = steps[index++];
       setActiveBlockId(step.blockId);
       try { current = stepExcursion(level, current, step); setRobot(current); }
@@ -119,18 +124,18 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     : guide === 'run' ? 'Create your own sequence of commands and click this button to start the program.' : level.hint;
 
   return (
-    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`Excursion task ${level.number}`}>
+    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
         <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: 4 } }] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
-      <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")` } : undefined}>
+      <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor } : undefined}>
         <div className="excursion-world" style={level.scenery ? { backgroundImage: `url("${level.scenery}")` } : undefined}><ReferenceBoard level={level} robot={robot} /></div>
         <div className="excursion-controls">
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>
-          <p>{level.hint}</p>
+          <p>{level.hint}</p>{level.cargo && <p className="excursion-cargo-count" aria-live="polite">Boxes delivered: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
           <button className="excursion-guide-link" type="button" onClick={() => setGuide('intro')}>Show instructions</button>
         </div>
       </div>

@@ -24,7 +24,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_7",
-      "instruction": "Complete level 1 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Now you can control a MarsBot on Earth. Let's go to the box, pick it up, and carry it to the portal!",
       "states": [
         {
           "id": "VP2_M1L1_2_1_state_1",
@@ -47,7 +47,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_8",
-      "instruction": "Complete level 2 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "You need to collect the boxes of rocket parts together. Loops will help with this.",
       "states": [
         {
           "id": "VP2_M1L1_2_2_state_1",
@@ -70,7 +70,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_9",
-      "instruction": "Complete level 3 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "You can use the loop command multiple times in the same program \u2014 that's very convenient!",
       "states": [
         {
           "id": "VP2_M1L1_2_3_state_1",
@@ -93,7 +93,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_10",
-      "instruction": "Complete level 4 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "A loop can be used two or three times. It's up to you!",
       "states": [
         {
           "id": "VP2_M1L1_2_4_state_1",
@@ -116,7 +116,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_11",
-      "instruction": "Complete level 5 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "More loops means less code. Amazing!",
       "states": [
         {
           "id": "VP2_M1L1_2_5_state_1",
@@ -139,7 +139,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_12",
-      "instruction": "Complete level 6 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Earth snake! Get past it and collect all the parts.",
       "states": [
         {
           "id": "VP2_M1L1_2_6_state_1",
@@ -162,7 +162,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_13",
-      "instruction": "Complete level 7 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "The boxes are not getting fewer. Hurry and collect them all!",
       "states": [
         {
           "id": "VP2_M1L1_2_7_state_1",
@@ -185,7 +185,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_14",
-      "instruction": "Complete level 8 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "For the rocket to take off, we need to collect all the parts!",
       "states": [
         {
           "id": "VP2_M1L1_2_8_state_1",
@@ -208,7 +208,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_1",
-      "instruction": "Complete level 9 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "More and more boxes!",
       "states": [
         {
           "id": "VP2_M1L1_2_9_state_1",
@@ -231,7 +231,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_2",
-      "instruction": "Complete level 10 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "There are more and more boxes... But the same number of commands. Loops are so convenient!",
       "states": [
         {
           "id": "VP2_M1L1_2_10_state_1",
@@ -254,7 +254,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_3",
-      "instruction": "Complete level 11 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Now you aren't afraid of anything. Loops are power! If only I knew what to put inside!",
       "states": [
         {
           "id": "VP2_M1L1_2_11_state_1",
@@ -277,7 +277,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_4",
-      "instruction": "Complete level 12 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Back and forth and always down (and boxes for a lifetime).",
       "states": [
         {
           "id": "VP2_M1L1_2_12_state_1",
@@ -300,7 +300,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_5",
-      "instruction": "Complete level 13 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Remember! A robot can only take one box at a time! But you can add as many as you like in one portal.",
       "states": [
         {
           "id": "VP2_M1L1_2_13_state_1",
@@ -323,7 +323,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_6",
-      "instruction": "Complete level 14 of Bonus! Help load the rocket!. Navigate the robot and achieve the mission goals!",
+      "instruction": "Did you like the task?",
       "states": [
         {
           "id": "VP2_M1L1_2_14_state_1",

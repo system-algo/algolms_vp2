@@ -17,7 +17,7 @@ function ReferenceBoard({ level, robot }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
   return (
-    <svg className="excursion-board" viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`Mars route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
+    <svg className="excursion-board" viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
       {level.background && <image href={level.background} width="400" height="400" />}
       {level.cells.map((cell, index) => (
         <g key={`${cell.x},${cell.y}`}>
@@ -145,11 +145,11 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
             {(guide === 'intro' || !guide) && <img className="excursion-mascot" src={`${ASSETS}mascot.svg`} alt="" />}
             {!guide && <h2>{status === 'completed' ? 'Congratulations!' : 'Try again'}</h2>}
             <p>{guide ? guideText : status === 'completed' ? level.success : message}</p>
-            {guide === 'intro' && level.number === 1 && <img className="excursion-intro-diagram" src={`${ASSETS}intro.svg`} alt="Lead the robot to the marked station" />}
+            {guide === 'intro' && level.number === 1 && !level.cargo && <img className="excursion-intro-diagram" src={`${ASSETS}intro.svg`} alt="Lead the robot to the marked station" />}
             {guide === "intro" && level.instructionImage && <img className="excursion-instruction-image" src={level.instructionImage} alt="Repeat six times: move forward" />}
             <div className="excursion-dialog-actions">
               <button type="button" onClick={() => {
-                if (guide) setGuide(guide === 'intro' && level.number === 1 ? 'workspace' : guide === 'workspace' ? 'run' : null);
+                if (guide) setGuide(guide === 'intro' && level.number === 1 && !level.cargo ? 'workspace' : guide === 'workspace' ? 'run' : null);
                 else if (status === 'completed') { onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }
                 else reset();
               }}>{guide || status === 'completed' ? 'Continue' : 'Try again'}</button>

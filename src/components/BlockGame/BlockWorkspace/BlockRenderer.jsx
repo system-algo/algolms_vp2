@@ -394,7 +394,7 @@ export default function BlockRenderer({
           width={totalWidth}
           height={blockHeight}
           type={shapeType}
-          color={compact && !isHat ? '#995ba7' : def.color || '#8A5BA7'}
+          color={compact && !isHat && !isCBlock ? '#995ba7' : def.color || '#8A5BA7'}
           darkColor={def.darkColor || '#6B4284'}
           isExecuting={isExecuting}
         />

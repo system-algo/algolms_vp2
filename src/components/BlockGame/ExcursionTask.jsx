@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
-import { BLOCK_TYPES, createBlockInstance } from './BlockWorkspace/blockDefinitions.js';
+import { BLOCK_TYPES, createBlockInstance, countCommands } from './BlockWorkspace/blockDefinitions.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
 import { stepExcursion } from './GameEngine/excursionSimulation.js';
 import './ExcursionTask.css';
@@ -72,6 +72,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
 
   function run() {
     reset();
+    if (level.maxCommands && countCommands(blocks) > level.maxCommands) { setStatus('failed'); setMessage(`Use no more than ${level.maxCommands} commands.`); return; }
     let steps;
     try { steps = compileProgram(blocks); }
     catch (error) { setStatus('failed'); setMessage(error.message); return; }

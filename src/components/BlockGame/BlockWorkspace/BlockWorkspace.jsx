@@ -136,6 +136,7 @@ export default function BlockWorkspace({
     BLOCK_TYPES.TAKE_CARGO,
     BLOCK_TYPES.REPEAT,
   ],
+  compact = false,
   maxCommands = null,
   activeBlockId = null,
   isExecuting = false,
@@ -364,7 +365,7 @@ export default function BlockWorkspace({
                 className="toolbox-item-wrapper"
                 onPointerDown={(e) => handleStartDrag(dummyBlock, e)}
               >
-                <BlockRenderer
+                <BlockRenderer compact={compact}
                   block={dummyBlock}
                   isToolbox
                   onStartDrag={(blk, e) => handleStartDrag(dummyBlock, e)}
@@ -392,7 +393,7 @@ export default function BlockWorkspace({
               <React.Fragment key={block.id}>
                 {isTargetBefore && <div className="block-drop-indicator" />}
                 <div style={{ display: 'block', marginTop: idx === 0 ? '0' : '-4px' }}>
-                  <BlockRenderer
+                  <BlockRenderer compact={compact}
                     block={block}
                     activeBlockId={activeBlockId}
                     onStartDrag={handleStartDrag}
@@ -416,7 +417,7 @@ export default function BlockWorkspace({
             top: `${dragPointerPos.y}px`,
           }}
         >
-          <BlockRenderer block={draggingBlock} isGhost />
+          <BlockRenderer compact={compact} block={draggingBlock} isGhost />
         </div>
       )}
 

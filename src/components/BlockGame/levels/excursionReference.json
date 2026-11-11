@@ -1,0 +1,176 @@
+[
+  {
+    "number": 1,
+    "hint": "Lead the robot to the living compartment of the station.",
+    "background": "/vp-assets/excursion/background1.png",
+    "cells": [
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 3,
+      "y": 4,
+      "direction": 180
+    },
+    "target": {
+      "x": 6,
+      "y": 4
+    },
+    "success": "Well done! You wrote your first lines of code! Now let\u2019s examine the living compartment."
+  },
+  {
+    "number": 2,
+    "hint": "Now we need to go to the greenhouse. Make sure you don't miss the turn.",
+    "background": "/vp-assets/excursion/background2.png",
+    "cells": [
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 1,
+      "y": 7,
+      "direction": 90
+    },
+    "target": {
+      "x": 6,
+      "y": 4
+    },
+    "success": "Well done! You reached the greenhouse."
+  }
+]

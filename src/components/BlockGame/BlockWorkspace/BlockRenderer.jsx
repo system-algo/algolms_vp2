@@ -4,6 +4,7 @@ import BlockSvgShape from './BlockSvgShape';
 
 export default function BlockRenderer({
   block,
+  compact = false,
   isToolbox = false,
   isGhost = false,
   activeBlockId = null,
@@ -171,7 +172,7 @@ export default function BlockRenderer({
     return <span>{def.label}</span>;
   };
 
-  const blockHeight = 34;
+  const blockHeight = compact ? 24 : 34;
   const totalWidth = contentWidth + 24;
 
   // C-Block (Repeat) Rendering
@@ -225,8 +226,8 @@ export default function BlockRenderer({
               display: 'inline-flex',
               alignItems: 'center',
               color: '#ffffff',
-              fontSize: '12.5px',
-              fontWeight: 700,
+              fontSize: compact ? '12px' : '12.5px',
+              fontWeight: compact ? 400 : 700,
               whiteSpace: 'nowrap',
             }}
           >
@@ -289,7 +290,7 @@ export default function BlockRenderer({
                     <React.Fragment key={childBlock.id}>
                       {isChildBefore && <div className="block-drop-indicator" />}
                       <div style={{ display: 'block', marginTop: cIdx === 0 ? '-4px' : '-4px' }}>
-                        <BlockRenderer
+                        <BlockRenderer compact={compact}
                           block={childBlock}
                           activeBlockId={activeBlockId}
                           onStartDrag={onStartDrag}
@@ -320,7 +321,7 @@ export default function BlockRenderer({
                   padding: '0 12px',
                   color: isTargetInside ? '#b45309' : '#047857',
                   fontSize: '11px',
-                  fontWeight: 700,
+                  fontWeight: compact ? 400 : 700,
                   background: isTargetInside ? '#fef3c7' : 'rgba(255, 255, 255, 0.45)',
                   cursor: 'pointer',
                   pointerEvents: 'auto',
@@ -392,7 +393,7 @@ export default function BlockRenderer({
           width={totalWidth}
           height={blockHeight}
           type={shapeType}
-          color={def.color || '#8A5BA7'}
+          color={compact && !isHat ? '#995ba7' : def.color || '#8A5BA7'}
           darkColor={def.darkColor || '#6B4284'}
           isExecuting={isExecuting}
         />
@@ -408,8 +409,8 @@ export default function BlockRenderer({
             display: 'inline-flex',
             alignItems: 'center',
             color: '#ffffff',
-            fontSize: '12.5px',
-            fontWeight: 700,
+            fontSize: compact ? '12px' : '12.5px',
+            fontWeight: compact ? 400 : 700,
             whiteSpace: 'nowrap',
           }}
         >

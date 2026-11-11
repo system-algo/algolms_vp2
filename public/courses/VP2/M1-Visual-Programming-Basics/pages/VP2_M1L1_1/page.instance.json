@@ -17,7 +17,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_1",
-      "instruction": "Complete level 1 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Lead the robot to the living compartment of the station.",
       "states": [
         {
           "id": "VP2_M1L1_1_1_state_1",
@@ -40,7 +40,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_2",
-      "instruction": "Complete level 2 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Now we need to go to the greenhouse. Make sure you don't miss the turn.",
       "states": [
         {
           "id": "VP2_M1L1_1_2_state_1",

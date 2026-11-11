@@ -172,5 +172,1203 @@
       "y": 4
     },
     "success": "Well done! You reached the greenhouse."
+  },
+  {
+    "number": 3,
+    "hint": "The path to the power plant will be more difficult. Get to work!",
+    "cells": [
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 4,
+      "y": 4
+    },
+    "viewBox": "0 0 400 400",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": false,
+    "cargoCommands": false,
+    "background": "/vp-assets/excursion/background3.png"
+  },
+  {
+    "number": 4,
+    "hint": "Let's continue our journey!",
+    "cells": [
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 2,
+      "y": 4,
+      "direction": 0
+    },
+    "target": {
+      "x": 5,
+      "y": 6
+    },
+    "viewBox": "0 0 400 400",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": false,
+    "cargoCommands": false,
+    "background": "/vp-assets/excursion/background4.png"
+  },
+  {
+    "number": 5,
+    "hint": "Our final target is the MarsBot Lab. The way there is more difficult, but you can handle it, right?",
+    "cells": [
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 6,
+      "y": 7,
+      "direction": 270
+    },
+    "target": {
+      "x": 1,
+      "y": 2
+    },
+    "viewBox": "0 0 400 400",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": false,
+    "cargoCommands": false,
+    "background": "/vp-assets/excursion/background5.png"
+  },
+  {
+    "number": 6,
+    "hint": "We have a new command \u2014 a loop! You can put other commands inside it so that they repeat! Don't forget to choose the number of steps you want.",
+    "cells": [
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 1,
+      "y": 6,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 6
+    },
+    "viewBox": "0 0 500 500",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": true,
+    "cargoCommands": true,
+    "tiles": "/vp-assets/excursion/tiles-forest.svg",
+    "pattern": "/vp-assets/excursion/pattern-leafs.svg",
+    "scenery": "/vp-assets/excursion/forest-straight.svg",
+    "instructionImage": "/vp-assets/excursion/instruction6.png"
+  },
+  {
+    "number": 7,
+    "type": "feedback",
+    "hint": "Thanks! We love having cool lessons!"
+  },
+  {
+    "number": 8,
+    "hint": "Here, loops will simplify the task as well.",
+    "cells": [
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 1,
+      "y": 4,
+      "direction": 90
+    },
+    "target": {
+      "x": 5,
+      "y": 8
+    },
+    "viewBox": "0 0 500 500",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": true,
+    "cargoCommands": false,
+    "tiles": "/vp-assets/excursion/tiles-forest.svg",
+    "pattern": "/vp-assets/excursion/pattern-leafs.svg",
+    "scenery": "/vp-assets/excursion/forest-turn.svg"
+  },
+  {
+    "number": 9,
+    "hint": "And here to the right, and down, and left!",
+    "cells": [
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 1,
+      "y": 4,
+      "direction": 90
+    },
+    "target": {
+      "x": 1,
+      "y": 8
+    },
+    "viewBox": "0 0 500 500",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": 8,
+    "loops": true,
+    "cargoCommands": false,
+    "tiles": "/vp-assets/excursion/tiles-forest.svg",
+    "pattern": "/vp-assets/excursion/pattern-leafs.svg",
+    "scenery": "/vp-assets/excursion/forest-u.svg"
+  },
+  {
+    "number": 10,
+    "type": "image",
+    "hint": "You are really cool! Then there will be bonuses!",
+    "image": "/vp-assets/excursion/bonus-intro.png"
+  },
+  {
+    "number": 11,
+    "hint": "Here, loops will simplify the task as well.",
+    "cells": [
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 8
+    },
+    "viewBox": "0 0 500 500",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": 12,
+    "loops": true,
+    "cargoCommands": false,
+    "tiles": "/vp-assets/excursion/tiles-forest.svg",
+    "pattern": "/vp-assets/excursion/pattern-leafs.svg",
+    "scenery": "/vp-assets/excursion/forest-turn.svg"
+  },
+  {
+    "number": 12,
+    "hint": "And here to the right, and down, and left!",
+    "cells": [
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "start": {
+      "x": 1,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 1,
+      "y": 9
+    },
+    "viewBox": "0 0 500 500",
+    "success": "Well done! You reached the destination.",
+    "maxCommands": null,
+    "loops": true,
+    "cargoCommands": false,
+    "tiles": "/vp-assets/excursion/tiles-forest.svg",
+    "pattern": "/vp-assets/excursion/pattern-leafs.svg",
+    "scenery": "/vp-assets/excursion/forest-u.svg"
   }
 ]

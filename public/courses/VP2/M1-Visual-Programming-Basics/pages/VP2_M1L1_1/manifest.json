@@ -70,7 +70,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_3",
-      "instruction": "Complete level 3 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "The path to the power plant will be more difficult. Get to work!",
       "states": [
         {
           "id": "VP2_M1L1_1_3_state_1",
@@ -93,7 +93,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_4",
-      "instruction": "Complete level 4 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Let's continue our journey!",
       "states": [
         {
           "id": "VP2_M1L1_1_4_state_1",
@@ -116,7 +116,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_5",
-      "instruction": "Complete level 5 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Our final target is the MarsBot Lab. The way there is more difficult, but you can handle it, right?",
       "states": [
         {
           "id": "VP2_M1L1_1_5_state_1",
@@ -139,7 +139,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_6",
-      "instruction": "Complete level 6 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "We have a new command \u2014 a loop! You can put other commands inside it so that they repeat! Don't forget to choose the number of steps you want.",
       "states": [
         {
           "id": "VP2_M1L1_1_6_state_1",
@@ -157,12 +157,12 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Excursion - Level 7",
+      "title": "Excursion - Feedback",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_7",
-      "instruction": "Complete level 7 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Thanks! We love having cool lessons!",
       "states": [
         {
           "id": "VP2_M1L1_1_7_state_1",
@@ -185,7 +185,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_8",
-      "instruction": "Complete level 8 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Here, loops will simplify the task as well.",
       "states": [
         {
           "id": "VP2_M1L1_1_8_state_1",
@@ -208,7 +208,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_9",
-      "instruction": "Complete level 9 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "And here to the right, and down, and left!",
       "states": [
         {
           "id": "VP2_M1L1_1_9_state_1",
@@ -226,12 +226,12 @@
       "position": 10,
       "level_position": 10,
       "levelPosition": 10,
-      "title": "Excursion - Level 10",
+      "title": "Excursion - Bonus introduction",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_10",
-      "instruction": "Complete level 10 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "You are really cool! Then there will be bonuses!",
       "states": [
         {
           "id": "VP2_M1L1_1_10_state_1",
@@ -254,7 +254,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_11",
-      "instruction": "Complete level 11 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "Here, loops will simplify the task as well.",
       "states": [
         {
           "id": "VP2_M1L1_1_11_state_1",
@@ -277,7 +277,7 @@
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_12",
-      "instruction": "Complete level 12 of Excursion. Navigate the robot and achieve the mission goals!",
+      "instruction": "And here to the right, and down, and left!",
       "states": [
         {
           "id": "VP2_M1L1_1_12_state_1",

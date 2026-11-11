@@ -1,6 +1,9 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function stepExcursion(level, robot, step) {
+  if (step.action === 'repeat_iteration') return robot;
+  if (step.action === 'take_cargo') throw new Error('There is no cargo here to take.');
+  if (step.action === 'put_cargo') throw new Error('The robot is not carrying cargo.');
   if (step.action === 'turn_direction') {
     return { ...robot, direction: (robot.direction + (step.direction === 'left' ? 270 : 90)) % 360 };
   }

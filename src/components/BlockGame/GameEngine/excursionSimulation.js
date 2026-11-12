@@ -2,10 +2,12 @@ import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
   if (level.buildings) return { ...level.start, built: [] };
+  if (level.rocks) return { ...level.start, rocks: level.rocks.map(r => ({ ...r })) };
   return level.cargo ? { ...level.start, boxes: level.cargo.map(box => ({ ...box })), carrying: false, delivered: 0 } : { ...level.start };
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.rocks) return robot.rocks.length === 0;
   if (level.buildings) return robot.built.length === level.buildings.length;
   return level.cargo
     ? robot.boxes.length === 0 && !robot.carrying && robot.delivered === level.cargo.length
@@ -18,6 +20,11 @@ export function stepExcursion(level, robot, step) {
     if (target === undefined || target < 0) throw new Error('Build the matching structure on its marked site.');
     if (robot.built.includes(target)) throw new Error('This structure has already been built.');
     return { ...robot, built: [...robot.built, target] };
+  }
+  if (step.action === 'destroy' && level.rocks) {
+    const index = robot.rocks.findIndex(r => r.x === robot.x && r.y === robot.y);
+    if (index < 0) throw new Error('Stand on a stone before using Destroy.');
+    return { ...robot, rocks: robot.rocks.filter((_, i) => i !== index) };
   }
   if (step.action === 'repeat_iteration') return robot;
   if (step.action === 'take_cargo') {

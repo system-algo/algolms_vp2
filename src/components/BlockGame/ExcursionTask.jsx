@@ -30,6 +30,7 @@ function ReferenceBoard({ level, robot }) {
           <image href={level.tiles || `${ASSETS}tiles.png`} width="250" height="200" x={(cell.x - cell.atlasX) * 50} y={(cell.y - cell.atlasY) * 50} clipPath={`url(#${id}-tile-${index})`} />
         </g>
       ))}
+      {robot.rocks?.map((rock, i) => <svg key={`rock-${i}`} x={rock.x * 50} y={rock.y * 50} width="50" height="50" viewBox="0 0 50 50" overflow="hidden"><image href="/vp-assets/excavation/rock.svg" width="300" height="50" /></svg>)}
       {level.target && <image href={`${ASSETS}marker.png`} x={level.target.x * 50 + 0.5} y={level.target.y * 50 + 0.5} width="49" height="49" />}
       {level.portals?.map((portal, i) => <image key={`portal-${i}`} href={level.portalImage} x={portal.x * 50} y={portal.y * 50} width="49" height="49" />)}
       {robot.boxes?.map((box, i) => <image key={`box-${i}`} href={level.boxImage} x={box.x * 50} y={box.y * 50} width="49" height="49" />)}
@@ -48,15 +49,21 @@ export default function ExcursionTask(props) {
 
 function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
   const [rating, setRating] = useState(null);
+  const [slide, setSlide] = useState(0);
+  const image = level.images?.[slide] || level.image;
   if (level.type === 'rating' && rating === null) return <section className="excursion-rating" aria-label="Task feedback"><h2>{level.hint}</h2><div>{['Disliked', 'Neutral', 'Liked'].map((label, i) => <button type="button" aria-label={label} key={label} onClick={() => setRating(i)}><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="white" /><g fill="#101b26"><circle cx="39" cy="44" r="7" /><circle cx="81" cy="44" r="7" /></g><path d={i === 0 ? 'M33 83 Q60 48 87 83' : i === 1 ? 'M33 76 H87' : 'M33 70 Q60 105 87 70'} fill="none" stroke="#101b26" strokeWidth="9" strokeLinecap="round" /></svg></button>)}</div></section>;
   return <section className="excursion-interlude" aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
-    {level.image ? <img src={level.image} alt={level.hint} /> : <div><h2>Thanks!</h2><p>We love having cool lessons!</p></div>}
-    <button type="button" onClick={() => { onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }}>Next</button>
+    {image ? <img src={image} alt={level.hint} /> : <div><h2>{level.type === 'finish' ? level.hint : 'Thanks!'}</h2>{level.type !== 'finish' && <p>We love having cool lessons!</p>}</div>}
+    <button type="button" onClick={() => { if (level.images && slide < level.images.length - 1) { setSlide(slide + 1); return; } onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }}>Next</button>
   </section>;
 }
 
 function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
-  const [blocks, setBlocks] = useState(() => [createBlockInstance(BLOCK_TYPES.START_HAT)]);
+  const [blocks, setBlocks] = useState(() => {
+    const make = b => ({ ...createBlockInstance(b.type), params: { ...createBlockInstance(b.type).params, ...b.params }, ...(b.children ? { children: b.children.map(make) } : {}) });
+    const hat = createBlockInstance(BLOCK_TYPES.START_HAT);
+    return [hat, ...(level.starter || []).map(make)];
+  });
   const [robot, setRobot] = useState(() => initialExcursionRobot(level));
   const [activeBlockId, setActiveBlockId] = useState(null);
   const [status, setStatus] = useState('idle');
@@ -131,7 +138,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   return (
     <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
-        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
+        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>

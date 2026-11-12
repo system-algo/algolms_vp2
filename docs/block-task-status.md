@@ -56,3 +56,9 @@ Remaining limits: Scratch/editor and quiz pages are outside the Block Task pass.
 Restored all eleven positions (nine mineral programs, introduction link and rating). Maps and initial mineral quantities were transcribed from rendered source SVGs. Added variable assignment/change, exact mineral collection, live counters and mineral sensors. Source question-mark counters stay hidden. Fixed condition editors accidentally placed in the pointer handler so conditional blocks can be edited and dragged.
 
 Validation: production build; all nine mineral routes with exact collection targets and live variable counts; Module 4 logic regression passed. Artwork remains on the original public asset host as requested. No Render deployment check.
+
+## Module 5 — Retro laboratory
+
+Restored fourteen positions: thirteen data-processing exercises and feedback. Supports A–D registers, crystal size/color, next crystal, addition/subtraction, nested numeric expressions, variable repeat counts and sending values. Sending validates both the result and the selected crystal/blue stop marker. The multiplication exercise uses repeated addition, not a multiplication operator.
+
+Source goals and available commands were inspected through the rendered UI. The original visualization is canvas; local crystal input sequences and simplified laboratory artwork are used, so this is a functional reconstruction rather than identical source animation or randomization. Validation: build; all thirteen programs against two input sequences; rejection of incorrect/premature sends; bounded loops and unsupported multiplication.

@@ -40,3 +40,14 @@
 .excursion-plants-task .block-toolbox{width:225px;min-width:225px}
 
 .reference-condition{display:inline-flex;align-items:center;gap:3px;background:#378646;padding:2px 5px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 50%,calc(100% - 6px) 100%,6px 100%,0 50%)}.reference-condition select{font:12px Arial;color:white;background:#378646;border:0;max-width:110px}.reference-if-else>.c-block-root+ .c-block-root{margin-top:-5px}
+
+.retro-laboratory { width:100%; max-width:620px; min-height:410px; padding:28px; box-sizing:border-box; background:radial-gradient(ellipse at center,#655b3b,#171e24); color:#f9e9bd; border-radius:18px; text-align:center; font-family:monospace; }
+.retro-laboratory h3 { margin:0 0 22px; font-size:22px; }
+.retro-monitors { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+.retro-monitors div { padding:10px; min-width:62px; background:#111b18; color:#a7e8ac; border:3px solid #9a8c5a; border-radius:6px; }
+.retro-machine { margin:24px auto 5px; padding:15px; max-width:230px; background:#292c27; border:5px solid #8d805e; border-radius:22px; }
+.retro-machine span { letter-spacing:18px; font-size:22px; }
+.retro-machine p { margin:8px; }.retro-machine output { display:block; font-size:32px; color:#a7e8ac; background:#111b18; }
+.retro-conveyor { display:flex; justify-content:center; gap:12px; align-items:flex-end; min-height:105px; border-bottom:12px solid #818463; padding:5px; }
+.retro-crystal { position:relative; opacity:.65; }.retro-current{ opacity:1;filter:drop-shadow(0 0 7px #f1d97d); }.retro-crystal b{ position:absolute;top:30px;left:22px;color:#111; }
+.reference-expression { display:inline-flex; align-items:center;gap:4px; }.reference-expression input,.reference-expression select{font:inherit;max-width:110px;}

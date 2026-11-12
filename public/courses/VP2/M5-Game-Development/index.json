@@ -54,9 +54,11 @@
     },
     {
       "id": "VP2_M5L2_3",
-      "title": "Data types and operators - Part 3",
+      "title": "Retro laboratory",
       "lessonId": "VP2_M5L2",
-      "taskCount": 14
+      "taskCount": 14,
+      "type": "block-game-task",
+      "level_type": "block_game"
     },
     {
       "id": "VP2_M5L2_4",

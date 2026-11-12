@@ -17,6 +17,12 @@ const COMMANDS = [
 function ReferenceBoard({ level, robot }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
+  if (level.mode === 'retro') return <div className="retro-laboratory" aria-label="Retro laboratory crystal conveyor">
+    <h3>Retro laboratory</h3><div className="retro-monitors">{['A','B','C','D'].map(name=><div key={name}>{name}: <output>{robot.variables[name] ?? '—'}</output></div>)}</div>
+    <div className="retro-machine"><span aria-hidden="true">◉ ▥ ◉</span><p>Crystal {robot.crystalIndex+1}</p><output aria-label="Current crystal size">{robot.crystals[robot.crystalIndex].size}</output></div>
+    <div className="retro-conveyor">{robot.crystals.slice(robot.crystalIndex,robot.crystalIndex+5).map((c,i)=><div className={`retro-crystal ${i===0?'retro-current':''}`} key={i} style={{'--crystal-color':c.color==='red'?'#f25879':c.color==='green'?'#5adba4':'#5eabf3'}}><svg width="55" height="75" viewBox="0 0 55 75" aria-label={`${c.color} crystal`}><path d="M27 2 48 20 53 53 27 73 3 53 8 20Z" fill="var(--crystal-color)" stroke="white" strokeWidth="2"/><path d="M27 2 16 24 18 54 27 73 38 54 39 24Z" fill="white" opacity=".25"/></svg><b>{c.size}</b></div>)}</div>
+    <p>{robot.sent===null?'Measure · calculate · send':`Value sent: ${robot.sent}`}</p>
+  </div>;
   if (level.mode === 'field') return <svg className="excursion-board" viewBox="0 0 600 460" role="img" aria-label="Soccer field coordinate regions">
     <rect x="20" y="20" width="560" height="420" rx="20" fill="#301d31" stroke="#518d74" strokeWidth="4" />
     {Array.from({length:17},(_,i)=>i*30-240).map(x=><g key={`x${x}`}><line x1={300+x} y1="30" x2={300+x} y2="430" stroke={x===0?'white':'#66525c'}/>{x%60===0&&x!==0&&<text x={300+x} y="246" fill="white" fontSize="11" textAnchor="middle">{x}</text>}</g>)}
@@ -154,7 +160,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           setStatus('completed');
         } else {
           setStatus('failed');
-          setMessage(level.mode === 'minerals' ? 'Collect the required minerals. Check your variable values, mine commands and loop conditions.' : level.mode === 'field' ? 'Process every point, remove all weeds and preserve the healthy plants.' : level.mode === 'chef' ? 'Process every ingredient using forever, if and the logical conditions.' : level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
+          setMessage(level.mode === 'retro' ? 'Send the correct value to the base using a variable.' : level.mode === 'minerals' ? 'Collect the required minerals. Check your variable values, mine commands and loop conditions.' : level.mode === 'field' ? 'Process every point, remove all weeds and preserve the healthy plants.' : level.mode === 'chef' ? 'Process every ingredient using forever, if and the logical conditions.' : level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
         }
         return;
       }

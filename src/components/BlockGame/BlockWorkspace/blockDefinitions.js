@@ -250,8 +250,8 @@ export function createBlockInstance(type, customParams = {}) {
   }
 
   if (type === 'if_else') { instance.children = [createBlockInstance('branch_if'), createBlockInstance('branch_else')]; }
-  if (['branch_if', 'if_condition'].includes(type)) instance.params.condition = {kind:'cargo_color',value:'green'};
-  if (type === 'repeat_until') instance.params.condition = {kind:'finish',value:'crossed'};
+  if (['branch_if', 'if_condition'].includes(type)) instance.params.condition ??= {kind:'cargo_color',value:'green'};
+  if (type === 'repeat_until') instance.params.condition ??= {kind:'finish',value:'crossed'};
   if (['set_variable','add_variable','send_variable'].includes(type)) instance.params = {name:'variable',value:0,...customParams};
   if (type==='repeat_variable') instance.params = {value:{kind:'variable',name:'variable'},...customParams};
   return instance;

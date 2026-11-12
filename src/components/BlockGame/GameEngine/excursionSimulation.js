@@ -1,6 +1,7 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.mode === 'retro') return {variables:{},crystalIndex:0,sent:null,crystals:level.crystals||[{size:2,color:'red'},{size:5,color:'green'},{size:4,color:'red'},{size:3,color:'green'},{size:1,color:'red'},{size:2,color:'green'},{size:1,color:'blue'}]};
   if (level.mode === 'minerals') return {...level.start,variables:{},minerals:level.minerals.map(m=>({...m})),collected:0};
   if (level.mode === 'training' || level.mode === 'dark') {
     const selected = new Map();
@@ -21,6 +22,7 @@ export function initialExcursionRobot(level) {
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.mode === 'retro') return robot.sent !== null;
   if (level.mode === 'minerals') return level.targetMinerals ? robot.collected === level.targetMinerals : robot.minerals.every(m=>m.amount===0) && (!level.target || (robot.x===level.target.x&&robot.y===level.target.y));
   if (level.mode === 'field') return robot.fruitIndex >= level.objects.length;
   if (level.mode === 'training' || level.mode === 'dark') return robot.tanks.length === 0 && (!level.target || (robot.x === level.target.x && robot.y === level.target.y));
@@ -36,6 +38,22 @@ export function isExcursionComplete(level, robot) {
 }
 
 export function stepExcursion(level, robot, step) {
+  if(level.mode==='retro') {
+    if(step.action==='repeat_iteration')return robot;
+    if(step.action==='next_crystal') {
+      if(robot.crystalIndex>=robot.crystals.length-1)throw new Error('No more crystals. Stop at the blue crystal.');
+      return {...robot,crystalIndex:robot.crystalIndex+1};
+    }
+    if(step.action==='send_variable') {
+      const value=robot.variables[step.name];
+      if(value===undefined)throw new Error('Assign a value to this variable before sending it.');
+      if(level.goal==='position' && robot.crystalIndex!==level.goalIndex)throw new Error(`Send the value of crystal ${level.goalIndex+1}.`);
+      if(level.goal!=='position' && robot.crystals[robot.crystalIndex].color!=='blue')throw new Error('Process the crystals until the blue one appears, then send the result.');
+      if(value!==retroExpectedValue(level,robot))throw new Error('The value sent is incorrect. Check the measurements, colors and calculation.');
+      return {...robot,sent:value};
+    }
+    if(!['set_variable','add_variable'].includes(step.action))throw new Error('Use the laboratory commands for this task.');
+  }
   if(['set_variable','add_variable'].includes(step.action)) {
     const value=step.action==='set_variable'?step.value:(robot.variables?.[step.name]||0)+step.value;
     if(!Number.isFinite(value)||Math.abs(value)>1e12)throw new Error('Choose a finite variable value.');
@@ -145,4 +163,20 @@ export function stepExcursion(level, robot, step) {
   if (!tile || tile.blocked) throw new Error(tile?.blocked ? 'There is an obstacle ahead. Try another route.' : 'The robot went off the path. Check your commands and try again.');
   if (level.items?.some(i => i.kind === 'dynamite' && i.x === next.x && i.y === next.y)) throw new Error('The robot stepped on dynamite. Check the sensor before moving.');
   return { ...robot, ...next, ...(robot.revealed ? { revealed: [...new Set([...robot.revealed, `${next.x},${next.y}`])] } : {}) };
+}
+
+export function retroExpectedValue(level,state) {
+  const before=state.crystals.slice(0,state.crystals.findIndex(c=>c.color==='blue'));
+  const sum=list=>list.reduce((n,c)=>n+c.size,0);
+  switch(level.goal){
+    case 'position':return state.crystals[level.goalIndex].size+(level.addAmount||0);
+    case 'sum':return sum(before);
+    case 'green_sum':return sum(before.filter(c=>c.color==='green'));
+    case 'large_sum':return sum(before.filter(c=>c.size>3));
+    case 'max_color_sum':return Math.max(sum(before.filter(c=>c.color==='red')),sum(before.filter(c=>c.color==='green')));
+    case 'red_count':return before.filter(c=>c.color==='red').length;
+    case 'price':return before.reduce((n,c)=>n+(c.color==='green'?5:3),0);
+    case 'product':return before.reduce((n,c)=>n*c.size,1);
+    default:throw new Error('Unknown laboratory goal.');
+  }
 }

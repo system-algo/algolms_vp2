@@ -1,0 +1,478 @@
+[
+  {
+    "number": 1,
+    "activityName": "Retro laboratory",
+    "hint": "Meet C1PO. He can measure crystals and record the values on the computer. Then he sends the information to the base. Let's send the size of the first crystal.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 0,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 2,
+    "activityName": "Retro laboratory",
+    "hint": "Now we need to find out the size of the second crystal.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 1,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 3,
+    "activityName": "Retro laboratory",
+    "hint": "Send the value of the 4th crystal! To keep within the command limits, use a loop.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      "repeat",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 3,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 4,
+    "activityName": "Retro laboratory",
+    "hint": "C1PO can work with data in addition to measuring crystals. Add 1 to the size of the crystal and send the information.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 0,
+    "addAmount": 1,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 5,
+    "activityName": "Retro laboratory",
+    "hint": "commands used",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 0,
+    "addAmount": 2,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 6,
+    "activityName": "Retro laboratory",
+    "hint": "Add 3 to the size of the second crystal and send the information!",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "position",
+    "goalIndex": 1,
+    "addAmount": 3,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 7,
+    "activityName": "Retro laboratory",
+    "hint": "Let's find the total size. To calculate this sum, the variable must be assigned its own value + the value of the number that was added. Let's see how it's done! Count until we get to the blue crystal.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "sum",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 8,
+    "type": "rating",
+    "hint": "Did you like the task?"
+  },
+  {
+    "number": 9,
+    "activityName": "Retro laboratory",
+    "hint": "And here find the total size of the green crystals. Let's stop at the blue one again.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "green_sum",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 10,
+    "activityName": "Retro laboratory",
+    "hint": "Calculate the sum of the sizes of the crystals that are bigger than 3. Stop at the blue one.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "large_sum",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 11,
+    "activityName": "Retro laboratory",
+    "hint": "Add the sizes of the red crystals and then add the sizes of the green ones. Send whichever amount is bigger. Stop counting if a blue crystal appears.",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      "if_else",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "max_color_sum",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 12,
+    "activityName": "Retro laboratory",
+    "hint": "Count how many red crystals there are. (Stop before getting to blue.)",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "red_count",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 13,
+    "activityName": "Retro laboratory",
+    "hint": "A green crystal costs 5 Mars, and a red crystal costs 3 Mars. How much do we get by selling all these crystals? (Stop at the blue crystal).",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      "if_else",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "price",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  },
+  {
+    "number": 14,
+    "activityName": "Retro laboratory",
+    "hint": "Multiply the sizes of the crystals by each other. Whoops... You don't have the multiplication operator!",
+    "mode": "retro",
+    "dynamic": true,
+    "toolbox": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "A",
+          "value": 0
+        }
+      },
+      "next_crystal",
+      "repeat",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "blue"
+          }
+        }
+      },
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "crystal_color",
+            "value": "green"
+          }
+        }
+      },
+      "if_else",
+      "repeat_variable",
+      {
+        "type": "send_variable",
+        "params": {
+          "name": "A"
+        }
+      }
+    ],
+    "goal": "product",
+    "goalIndex": null,
+    "addAmount": 0,
+    "dataNote": "Local crystal sequences are generated for these source-observed goals; original canvas randomization was not inspected."
+  }
+]

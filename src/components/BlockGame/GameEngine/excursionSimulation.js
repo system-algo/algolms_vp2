@@ -1,12 +1,14 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.plants) return { ...level.start, plants: level.plants.map(p => ({ ...p })), beam: null };
   if (level.buildings) return { ...level.start, built: [] };
   if (level.rocks) return { ...level.start, rocks: level.rocks.map(r => ({ ...r })) };
   return level.cargo ? { ...level.start, boxes: level.cargo.map(box => ({ ...box })), carrying: false, delivered: 0 } : { ...level.start };
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.plants) return robot.plants.every(p => p.kind === 'big' || p.removed);
   if (level.rocks) return robot.rocks.length === 0;
   if (level.collectOnly) return robot.boxes.length === 0;
   if (level.buildings) return robot.built.length === level.buildings.length;
@@ -16,6 +18,17 @@ export function isExcursionComplete(level, robot) {
 }
 
 export function stepExcursion(level, robot, step) {
+  if (level.plants) {
+    if (step.action === 'repeat_iteration') return robot;
+    if (step.action === 'turn_clockwise' || step.action === 'turn_counterclockwise') return { ...robot, beam: null, direction: ((robot.direction + (step.action === 'turn_clockwise' ? step.angle : -step.angle)) % 360 + 360) % 360 };
+    if (step.action !== 'destroy' && step.action !== 'water') throw new Error('Use the laser and watering commands.');
+    return { ...robot, beam: step.action, plants: robot.plants.map(p => {
+      if (p.removed || p.angle !== robot.direction) return p;
+      if (step.action === 'destroy' && p.kind === 'evil') return { ...p, removed: true };
+      if (step.action === 'water' && p.kind === 'small') return { ...p, kind: 'big', image: p.image.replace('small', 'big') };
+      return p;
+    }) };
+  }
   if (step.action.startsWith('build_')) {
     const target = level.buildings?.findIndex(b => b.x === robot.x && b.y === robot.y && b.kind === step.action.slice(6));
     if (target === undefined || target < 0) throw new Error('Build the matching structure on its marked site.');

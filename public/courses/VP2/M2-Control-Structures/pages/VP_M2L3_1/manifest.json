@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "id": "VP_M2L3_1",
+  "title": "Laser and plants",
+  "type": "block-game-task",
+  "taskCount": 14,
+  "metadata": {
+    "courseId": "VP2",
+    "lessonId": "M2-Control-Structures",
+    "sourceZip": "VP_M2L3_1.zip",
+    "format": "logika-crawler-capture",
+    "importedAt": "2026-10-24T08:51:29.756Z"
+  },
+  "tasks": [
+    {
+      "id": "VP_M2L3_1_1",
+      "taskId": "VP_M2L3_1_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Laser and plants - 1",
+      "instruction": "Laser and plants",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_1_state_1",
+          "stateId": "VP_M2L3_1_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_2",
+      "taskId": "VP_M2L3_1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Laser and plants - 2",
+      "instruction": "Destroy one pest plant",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_2_state_1",
+          "stateId": "VP_M2L3_1_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_3",
+      "taskId": "VP_M2L3_1_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Laser and plants - 3",
+      "instruction": "Find the small sprout and water it",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_3_state_1",
+          "stateId": "VP_M2L3_1_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_4",
+      "taskId": "VP_M2L3_1_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Laser and plants - 4",
+      "instruction": "Destroy one pest plant and grow one good one",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_4_state_1",
+          "stateId": "VP_M2L3_1_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_5",
+      "taskId": "VP_M2L3_1_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Laser and plants - 5",
+      "instruction": "Help with the greenhouse",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_5_state_1",
+          "stateId": "VP_M2L3_1_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_6",
+      "taskId": "VP_M2L3_1_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Laser and plants - 6",
+      "instruction": "The greenhouse needs plants",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_6_state_1",
+          "stateId": "VP_M2L3_1_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_7",
+      "taskId": "VP_M2L3_1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Laser and plants - 7",
+      "instruction": "Help with the greenhouse",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_7_state_1",
+          "stateId": "VP_M2L3_1_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_8",
+      "taskId": "VP_M2L3_1_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Laser and plants - 8",
+      "instruction": "Sprout all the plants",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_8_state_1",
+          "stateId": "VP_M2L3_1_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_9",
+      "taskId": "VP_M2L3_1_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Laser and plants - 9",
+      "instruction": "Did you like the tasks?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_9_state_1",
+          "stateId": "VP_M2L3_1_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_10",
+      "taskId": "VP_M2L3_1_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Laser and plants - 10",
+      "instruction": "Bonus tasks",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_10_state_1",
+          "stateId": "VP_M2L3_1_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_11",
+      "taskId": "VP_M2L3_1_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Laser and plants - 11",
+      "instruction": "The hordes are coming! Destroy the enemies and protect the little ones.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_11_state_1",
+          "stateId": "VP_M2L3_1_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_12",
+      "taskId": "VP_M2L3_1_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Laser and plants - 12",
+      "instruction": "Help with the plants",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_12_state_1",
+          "stateId": "VP_M2L3_1_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_13",
+      "taskId": "VP_M2L3_1_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Laser and plants - 13",
+      "instruction": "Sometimes the long way is faster than the shortcut",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_13_state_1",
+          "stateId": "VP_M2L3_1_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M2L3_1_14",
+      "taskId": "VP_M2L3_1_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Laser and plants - 14",
+      "instruction": "Build a loop. No more than 3 commands!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M2L3_1_14_state_1",
+          "stateId": "VP_M2L3_1_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ],
+  "level_type": "block_game",
+  "activityType": "block_game"
+}

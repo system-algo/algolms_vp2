@@ -1,6 +1,7 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.mode === 'sorting') return { ...level.start, boxes: level.cargo.map(b=>({...b, color: b.color === 'unknown' ? (Math.random()<.5?'green':'yellow') : b.color})), carrying:false, carriedBox:null, delivered:0 };
   if (level.mode === 'coordinates') return { ...level.start, visited: [] };
   if (level.plants) return { ...level.start, plants: level.plants.map(p => ({ ...p })), beam: null };
   if (level.buildings) return { ...level.start, built: [] };
@@ -62,13 +63,17 @@ export function stepExcursion(level, robot, step) {
     if (!level.collectOnly && robot.carrying) throw new Error('The robot can only carry one box at a time.');
     const index = robot.boxes.findIndex(box => box.x === robot.x && box.y === robot.y);
     if (index < 0) throw new Error('There is no cargo here to take.');
-    return { ...robot, carrying: !level.collectOnly, delivered: level.collectOnly ? robot.delivered + 1 : robot.delivered, boxes: robot.boxes.filter((_, i) => i !== index) };
+    return { ...robot, carriedBox: robot.boxes[index], carrying: !level.collectOnly, delivered: level.collectOnly ? robot.delivered + 1 : robot.delivered, boxes: robot.boxes.filter((_, i) => i !== index) };
   }
   if (step.action === 'put_cargo') {
     if (!robot.carrying) throw new Error('The robot is not carrying cargo.');
-    if (level.portals.some(portal => portal.x === robot.x && portal.y === robot.y)) return { ...robot, carrying: false, delivered: robot.delivered + 1 };
+    if (level.mode === 'sorting') {
+      const portal=level.portals.find(p=>p.x===robot.x&&p.y===robot.y);
+      if(portal&&portal.color!==robot.carriedBox.color) throw new Error('Check the cargo colour and choose the matching portal.');
+    }
+    if (level.portals.some(portal => portal.x === robot.x && portal.y === robot.y)) return { ...robot, carrying: false, carriedBox: null, delivered: robot.delivered + 1 };
     if (robot.boxes.some(box => box.x === robot.x && box.y === robot.y)) throw new Error('There is already a box here.');
-    return { ...robot, carrying: false, boxes: [...robot.boxes, { x: robot.x, y: robot.y }] };
+    return { ...robot, carrying: false, boxes: [...robot.boxes, { ...robot.carriedBox, x: robot.x, y: robot.y }] };
   }
   if (step.action === 'point_direction') return { ...robot, direction: ((step.direction % 360) + 360) % 360 };
   if (step.action === 'turn_direction') return { ...robot, direction: (robot.direction + (step.direction === 'left' ? 270 : 90)) % 360 };

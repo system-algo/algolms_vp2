@@ -9,6 +9,7 @@ import './BlockGameTask.css';
 import ExcursionTask from './ExcursionTask.jsx';
 import excursionReferences from './levels/excursionReference.json';
 import rocketReferences from './levels/rocketReference.json';
+import sortingReferences from './levels/sortingReference.json';
 import journeyReferences from './levels/journeyReference.json';
 import flightReferences from './levels/flightReference.json';
 import plantsReferences from './levels/plantsReference.json';
@@ -25,6 +26,8 @@ function resolveInitialLevelId(task, initialLevelId) {
   const taskTitle = String(task?.title || '').toLowerCase();
   const text = (String(task?.instruction || '') + ' ' + String(task?.bodyText || '') + ' ' + taskTitle).toLowerCase();
 
+  const sorting = taskId.match(/^VP2?_M3L1_1_(\d+)$/);
+  if (sorting) return <ExcursionTask key={taskId} {...props} level={sortingReferences.find(l => l.number === Number(sorting[1]))} />;
   const journey = taskId.match(/^VP2?_M3L2_1_(\d+)$/);
   if (journey) return <ExcursionTask key={taskId} {...props} level={journeyReferences.find(l => l.number === Number(journey[1]))} />;
   const match = taskId.match(/task-(\d+)-/);

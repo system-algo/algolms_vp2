@@ -38,3 +38,5 @@
 .excursion-coordinate-task .block-toolbox{width:210px;min-width:210px}.excursion-coordinate-task .excursion-stage{background:#48324e}.excursion-coordinate-task .excursion-coordinate-board{width:100%;max-width:none}.excursion-typing textarea{width:min(90%,800px);min-height:100px;font:24px monospace;padding:20px}.excursion-typing pre{font:24px monospace}.excursion-typing button:disabled{opacity:.4;cursor:default}
 
 .excursion-plants-task .block-toolbox{width:225px;min-width:225px}
+
+.reference-condition{display:inline-flex;align-items:center;gap:3px;background:#378646;padding:2px 5px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 50%,calc(100% - 6px) 100%,6px 100%,0 50%)}.reference-condition select{font:12px Arial;color:white;background:#378646;border:0;max-width:110px}.reference-if-else>.c-block-root+ .c-block-root{margin-top:-5px}

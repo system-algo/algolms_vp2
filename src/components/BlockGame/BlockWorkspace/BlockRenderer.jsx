@@ -1,5 +1,6 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
 import { BLOCK_DEFINITIONS, BLOCK_TYPES } from './blockDefinitions.js';
+import ConditionEditor from './ConditionEditor.jsx';
 import BlockSvgShape from './BlockSvgShape';
 
 export default function BlockRenderer({
@@ -36,6 +37,7 @@ export default function BlockRenderer({
     if (e.target.tagName === 'SELECT' || e.target.tagName === 'OPTION') {
       return; // allow select dropdown interaction
     }
+    if (['branch_if','if_condition','repeat_until'].includes(block.type)) return <span style={{display:'inline-flex',alignItems:'center',gap:6}}>{def.label}<ConditionEditor value={block.params?.condition} onChange={condition=>handleSelectChange('condition',condition)} disabled={isToolbox}/></span>;
     if (isHat) {
       return; // "When Start clicked" is fixed
     }
@@ -178,6 +180,7 @@ export default function BlockRenderer({
   const blockHeight = compact ? 24 : 34;
   const totalWidth = contentWidth + 24;
 
+  if (block.type === 'if_else' && !isToolbox) return <div className="reference-if-else" data-block-id={block.id}>{(block.children||[]).map(branch=><BlockRenderer key={branch.id} block={branch} compact={compact} activeBlockId={activeBlockId} onStartDrag={(b,e)=>onStartDrag?.(b.id===branch.id?block:b,e)} onParamChange={onParamChange} dropTarget={dropTarget}/>)}</div>;
   // C-Block (Repeat) Rendering
   if (isCBlock && !isToolbox) {
     const activeTargetId = dropTarget?.targetId || dropTarget?.blockId;

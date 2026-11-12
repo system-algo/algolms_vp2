@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
 import { BLOCK_TYPES, createBlockInstance, countCommands } from './BlockWorkspace/blockDefinitions.js';
+import { referenceProgram } from './GameEngine/referenceProgram.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
 import { stepExcursion, initialExcursionRobot, isExcursionComplete } from './GameEngine/excursionSimulation.js';
 import './ExcursionTask.css';
@@ -45,8 +46,8 @@ function ReferenceBoard({ level, robot }) {
       ))}
       {robot.rocks?.map((rock, i) => <svg key={`rock-${i}`} x={rock.x * 50} y={rock.y * 50} width="50" height="50" viewBox="0 0 50 50" overflow="hidden"><image href="/vp-assets/excavation/rock.svg" width="300" height="50" /></svg>)}
       {level.target && <image href={`${ASSETS}marker.png`} x={level.target.x * 50 + 0.5} y={level.target.y * 50 + 0.5} width="49" height="49" />}
-      {level.portals?.map((portal, i) => <image key={`portal-${i}`} href={level.portalImage} x={portal.x * 50} y={portal.y * 50} width="49" height="49" />)}
-      {robot.boxes?.map((box, i) => <image key={`box-${i}`} href={level.boxImage} x={box.x * 50} y={box.y * 50} width="49" height="49" />)}
+      {level.portals?.map((portal, i) => <image key={`portal-${i}`} href={portal.image || level.portalImage} x={portal.x * 50} y={portal.y * 50} width="49" height="49" />)}
+      {robot.boxes?.map((box, i) => <image key={`box-${i}`} href={box.image || level.boxImage} x={box.x * 50} y={box.y * 50} width="49" height="49" />)}
       <svg x={robot.x * 50 + 1} y={robot.y * 50 - 8} width="49" height="50" viewBox={`${frame * 49} 0 49 50`} overflow="hidden">
         <image href={`${ASSETS}robot.png`} width="980" height="50" />
       </svg>
@@ -112,14 +113,18 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     reset();
     if (level.maxCommands && countCommands(blocks) > level.maxCommands) { setStatus('failed'); setMessage(`Use no more than ${level.maxCommands} commands.`); return; }
     let steps;
-    try { steps = compileProgram(blocks); }
+    let iterator;
+    try { steps = level.dynamic ? [] : compileProgram(blocks); }
     catch (error) { setStatus('failed'); setMessage(error.message); return; }
-    if (!steps.length) { setGuide('workspace'); return; }
+    if (!level.dynamic && !steps.length) { setGuide('workspace'); return; }
     setStatus('running');
     let current = initialExcursionRobot(level);
+    if(level.dynamic) iterator = referenceProgram(blocks,level,()=>current);
     let index = 0;
     function advance() {
-      if (index >= steps.length) {
+      let next;
+      try { next = iterator ? iterator.next() : {done:index>=steps.length,value:steps[index++]}; } catch(error) {setStatus('failed');setMessage(error.message);return;}
+      if (next.done) {
         setActiveBlockId(null);
         if (isExcursionComplete(level, current)) {
           setStatus('completed');
@@ -130,7 +135,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
         return;
       }
       if (isExcursionComplete(level, current)) { setStatus('completed'); setActiveBlockId(null); return; }
-      const step = steps[index++];
+      const step = next.value;
       setActiveBlockId(step.blockId);
       try { current = stepExcursion(level, current, step); setRobot(current); }
       catch (error) { setStatus('failed'); setMessage(error.message); setActiveBlockId(null); return; }

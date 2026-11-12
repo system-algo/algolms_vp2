@@ -1,0 +1,5675 @@
+[
+  {
+    "number": 1,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 4.0,
+      "y": 2.0,
+      "direction": 180.0
+    },
+    "hint": "The yellow boxes are in good condition, but there are broken parts in the green ones. Check and sort them. Yellow boxes go to the yellow portal, and green to the green one.",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_yellow.svg",
+        "color": "yellow",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 1.0,
+      "y": 2.0,
+      "direction": 180.0
+    },
+    "hint": "And now in the other direction and with the green box.",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_green.svg",
+        "color": "green",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 2.0,
+      "y": 2.0,
+      "direction": 180.0
+    },
+    "hint": "Now you need to check which color box is hidden under the question mark and then move it to the correct portal.",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 2.0,
+      "y": 1.0,
+      "direction": 180.0
+    },
+    "hint": "The task is the same, but the route is a bit harder.",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 2.0,
+      "direction": 180.0
+    },
+    "hint": "Feels like everything is constantly rotating on Mars.",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "type": "rating",
+    "activityName": "Sorting cargo",
+    "hint": "Did you like the tasks?"
+  },
+  {
+    "number": 7,
+    "viewBox": "0 0 500 500",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 3.0,
+      "direction": 90.0
+    },
+    "hint": "A long way and these boxes again, onward!",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "viewBox": "0 0 500 500",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 3.0,
+      "direction": 90.0
+    },
+    "hint": "Maybe you'll be lucky and you won't have to go far...?",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "type": "image",
+    "activityName": "Sorting cargo",
+    "hint": "Bonus tasks",
+    "image": "/vp-assets/sorting/comic9.png"
+  },
+  {
+    "number": 10,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 1.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 2.0,
+      "y": 6.0,
+      "direction": 90.0
+    },
+    "hint": "Green or yellow? Yellow or green?",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 3.0,
+      "y": 4.0,
+      "direction": 0.0
+    },
+    "hint": "These boxes are like a Kinder Joy egg \u2014 you never know what you'll get inside!",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 1.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 1.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 3.0,
+      "direction": 90.0
+    },
+    "hint": "How many boxes did we bring from Earth?!",
+    "activityName": "Sorting cargo",
+    "mode": "sorting",
+    "dynamic": true,
+    "loops": true,
+    "cargoCommands": true,
+    "success": "Way to go! All the cargo is sorted.",
+    "pattern": "/vp-assets/excursion/cave.png",
+    "boxImage": "/vp-assets/sorting/box_yellow.svg",
+    "portalImage": "/vp-assets/sorting/repair_icon.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "if_else"
+    ],
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "image": "/vp-assets/sorting/box_white.svg",
+        "color": "unknown",
+        "shape": "cube"
+      }
+    ],
+    "portals": [
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "image": "/vp-assets/sorting/repair_icon.png",
+        "color": "yellow"
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "image": "/vp-assets/sorting/trash_icon.png",
+        "color": "green"
+      }
+    ]
+  }
+]

@@ -249,13 +249,16 @@ export function createBlockInstance(type, customParams = {}) {
     instance.children = [];
   }
 
+  if (type === 'if_else') { instance.children = [createBlockInstance('branch_if'), createBlockInstance('branch_else')]; }
+  if (['branch_if', 'if_condition'].includes(type)) instance.params.condition = {kind:'cargo_color',value:'green'};
+  if (type === 'repeat_until') instance.params.condition = {kind:'finish',value:'crossed'};
   return instance;
 }
 
 export function countCommands(blocks = []) {
   let count = 0;
   for (const block of blocks) {
-    if (block.type !== BLOCK_TYPES.START_HAT) {
+    if (![BLOCK_TYPES.START_HAT,'branch_if','branch_else'].includes(block.type)) {
       count += 1;
     }
     if (Array.isArray(block.children)) {
@@ -285,3 +288,5 @@ for (const unit of [1, 10, 30]) for (const axis of ['x', 'y']) {
   const type = `change_${axis}_${unit}`;
   BLOCK_DEFINITIONS[type] = { type, kind: 'statement', label: `change ${axis.toUpperCase()} by`, category: 'motion', color: '#995ba5', darkColor: '#7a4984', params: [{ name: 'amount', type: 'select', default: -8 * unit, options: Array.from({ length: 17 }, (_, n) => ({ value: (n - 8) * unit, label: String((n - 8) * unit) })) }] };
 }
+
+for (const [type,label,kind] of [['if_else','if / else','branch_block'],['branch_if','if','c_block'],['branch_else','else','c_block'],['if_condition','if','c_block'],['repeat_until','repeat until','c_block'],['forever','forever','c_block'],['cook','cook','statement']]) BLOCK_DEFINITIONS[type] = { type, label, kind, category: 'control', color: '#5ba55b', darkColor: '#498449', params: [] };

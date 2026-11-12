@@ -269,3 +269,12 @@ Object.assign(BLOCK_TYPES, { BUILD_FACTORY: 'build_factory', BUILD_GREENHOUSE: '
 for (const [kind, label] of [['factory', 'factory'], ['greenhouse', 'greenhouse'], ['windmill', 'wind generator']]) {
   BLOCK_DEFINITIONS[`build_${kind}`] = { type: `build_${kind}`, kind: 'statement', label, category: 'actions', color: '#995ba7', darkColor: '#6B4284', lightColor: '#B488CE' };
 }
+
+// The three coordinate scales used by the original Rocket flight tasks.
+for (const unit of [1, 10, 30]) {
+  const type = `go_to_${unit}`;
+  BLOCK_DEFINITIONS[type] = {
+    type, kind: 'statement', label: 'go to X', category: 'motion', color: '#995ba5', darkColor: '#7a4984',
+    params: ['x', 'y'].map((name, i) => ({ name, type: 'select', default: -(i ? 6 : 8) * unit, options: Array.from({ length: i ? 13 : 17 }, (_, n) => ({ value: (n - (i ? 6 : 8)) * unit, label: String((n - (i ? 6 : 8)) * unit) })) })),
+  };
+}

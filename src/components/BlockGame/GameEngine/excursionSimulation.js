@@ -1,6 +1,7 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.mode === 'coordinates') return { ...level.start, visited: [] };
   if (level.plants) return { ...level.start, plants: level.plants.map(p => ({ ...p })), beam: null };
   if (level.buildings) return { ...level.start, built: [] };
   if (level.rocks) return { ...level.start, rocks: level.rocks.map(r => ({ ...r })) };
@@ -8,6 +9,7 @@ export function initialExcursionRobot(level) {
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.mode === 'coordinates') return robot.visited.length === level.points.length;
   if (level.plants) return robot.plants.every(p => p.kind === 'big' || p.removed);
   if (level.rocks) return robot.rocks.length === 0;
   if (level.collectOnly) return robot.boxes.length === 0;
@@ -18,6 +20,12 @@ export function isExcursionComplete(level, robot) {
 }
 
 export function stepExcursion(level, robot, step) {
+  if (level.mode === 'coordinates') {
+    if (step.action !== 'go_to') throw new Error('Use the coordinate command.');
+    if (!Number.isFinite(step.x) || !Number.isFinite(step.y) || Math.abs(step.x) > 8 * level.unit || Math.abs(step.y) > 6 * level.unit) throw new Error('Choose coordinates within the tablet.');
+    const index = level.points.findIndex(p => p.x === step.x && p.y === step.y);
+    return { ...robot, x: step.x, y: step.y, visited: index >= 0 && !robot.visited.includes(index) ? [...robot.visited, index] : robot.visited };
+  }
   if (level.plants) {
     if (step.action === 'repeat_iteration') return robot;
     if (step.action === 'turn_clockwise' || step.action === 'turn_counterclockwise') return { ...robot, beam: null, direction: ((robot.direction + (step.action === 'turn_clockwise' ? step.angle : -step.angle)) % 360 + 360) % 360 };

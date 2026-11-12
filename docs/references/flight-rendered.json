@@ -1,0 +1,146 @@
+[
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(172.6828125,7) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-8 \u25be\nY\n-6 \u25be\nWhen\u00a0Start\u00a0clicked\n-8-6-4-22468\n642-2-4-6\nWe need to enter the correct coordinates for the rocket.\n\u2715\nWe need to enter the correct coordinates for the rocket.\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=5"
+    ],
+    "number": 5,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"250\" cy=\"50\" id=\"4_4\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(172.6828125,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-8 \u25be\nY\n-6 \u25be\nWhen\u00a0Start\u00a0clicked\n-8-6-4-22468\n642-2-4-6\nIt's already a little different here!\n\u2715\nIt's already a little different here!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=6"
+    ],
+    "number": 6,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"130\" cy=\"10\" id=\"-2_6\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(187.3359375,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-80 \u25be\nY\n-60 \u25be\nWhen\u00a0Start\u00a0clicked\n-80-60-40-2020406080\n604020-20-40-60\nLook \u2014 everything is the same, but now the coordinates are in the range of -80...80!\n\u2715\nLook \u2014 everything is the same, but now the coordinates are in the range of -80...80!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=7"
+    ],
+    "number": 7,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"90\" id=\"60_20\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(187.3359375,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-80 \u25be\nY\n-60 \u25be\nWhen\u00a0Start\u00a0clicked\n-80-60-40-2020406080\n604020-20-40-60\nThere's a zero coordinate here!\n\u2715\nThere's a zero coordinate here!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=8"
+    ],
+    "number": 8,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"330\" cy=\"130\" id=\"80_0\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(187.3359375,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-80 \u25be\nY\n-60 \u25be\nWhen\u00a0Start\u00a0clicked\n-80-60-40-2020406080\n604020-20-40-60\nAnd now two points...\n\u2715\nAnd now two points...\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=9"
+    ],
+    "number": 9,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"50\" cy=\"170\" id=\"-60_-20\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"210\" id=\"60_-40\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nAnd now the three-digit numbers. But you can handle it!\n\u2715\nAnd now the three-digit numbers. But you can handle it!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=10"
+    ],
+    "number": 10,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"210\" cy=\"50\" id=\"60_120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"10\" cy=\"210\" id=\"-240_-120\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nWhoa! More and more landing points!\n\u2715\nWhoa! More and more landing points!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=11"
+    ],
+    "number": 11,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"90\" cy=\"90\" id=\"-120_60\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"50\" cy=\"210\" id=\"-180_-120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"210\" cy=\"250\" id=\"60_-180\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nWe have to be careful here!\n\u2715\nWe have to be careful here!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=13"
+    ],
+    "number": 13,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"330\" cy=\"50\" id=\"240_120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"50\" cy=\"10\" id=\"-180_180\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"170\" cy=\"250\" id=\"0_-180\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nBonuses! Shall we practice a little more?\n\u2715\nBonuses! Shall we practice a little more?\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=14"
+    ],
+    "number": 14,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"170\" cy=\"50\" id=\"0_120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"50\" cy=\"130\" id=\"-180_0\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"130\" id=\"180_0\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nWhoa! 4 landing spots! Can you handle it?\n\u2715\nWhoa! 4 landing spots! Can you handle it?\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=15"
+    ],
+    "number": 15,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"50\" id=\"180_120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"90\" cy=\"50\" id=\"-120_120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"130\" cy=\"250\" id=\"-60_-180\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"250\" cy=\"170\" id=\"120_-60\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000043) scale(0.9)\"><g transform=\"translate(20,20)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nA little bit more!\n\u2715\nA little bit more!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=16"
+    ],
+    "number": 16,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"130\" id=\"180_0\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"90\" cy=\"130\" id=\"-120_0\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"170\" cy=\"250\" id=\"0_-180\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"170\" cy=\"90\" id=\"0_60\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  },
+  {
+    "blocks": [
+      "<g class=\"blocklyBlockCanvas\" transform=\"translate(202.0171875,7.000000000000028) scale(0.9)\"><g transform=\"translate(10,10)\"><path class=\"blocklyLegacyPathDark\" transform=\"translate(1,1)\" fill=\"#cc4f00\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPath\" fill=\"#ff6300\" d=\"m 0,8 A 8,8 0 0,1 8,0 H 142.15277099609375 v 24 H 29.5 l -6,4 -3,0 -6,-4 H 8 a 8,8 0 0,1 -8,-8 z\n\"></path><path class=\"blocklyLegacyPathLight\" stroke=\"#ff924d\" d=\"m 0.5,7.5 A 7.5,7.5 0 0,1 8,0.5 H 141.65277099609375 M 141.65277099609375,0.5 M 2.6966991411008934,21.303300858899107 A 7.5,7.5 0 0,1 0.5,16 V 8\n\"></path><text class=\"blocklyLegacyText\" y=\"12.5\" transform=\"translate(10,5)\">When&nbsp;Start&nbsp;clicked</text></g></g>"
+    ],
+    "body": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nsinh5\nhoc\ncommands used: 0 \ngo\u00a0to\u00a0X\n-240 \u25be\nY\n-180 \u25be\nWhen\u00a0Start\u00a0clicked\n-240-180-120-6060120180240\n18012060-60-120-180\nLast level! Five points!\n\u2715\nLast level! Five points!\nContinue",
+    "images": [
+      "https://learn.alg.academy/singlepage/root/avatarPlaceholder.4c13661b4dfa04cc.webp",
+      "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=17"
+    ],
+    "number": 17,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" id=\"coordinates-dynamic-content\" class=\"coordinates-dynamic-content\"><circle r=\"3\" fill=\"#ff6300\" cx=\"290\" cy=\"90\" id=\"180_60\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"330\" cy=\"10\" id=\"240_180\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"130\" cy=\"250\" id=\"-60_-180\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"90\" cy=\"210\" id=\"-120_-120\"></circle><circle r=\"3\" fill=\"#ff6300\" cx=\"170\" cy=\"130\" id=\"0_0\"></circle><image xlink:href=\"/img/games/coordinates/tablet_rocket.svg\" width=\"20\" height=\"20\" class=\"coordinates-rocket\" transform=\"translate(160, 120)\"></image></svg>"
+  }
+]

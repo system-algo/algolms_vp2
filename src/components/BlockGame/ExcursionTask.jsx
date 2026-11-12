@@ -16,6 +16,13 @@ const COMMANDS = [
 function ReferenceBoard({ level, robot }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
+  if (level.mode === 'coordinates') return <svg className="excursion-board excursion-coordinate-board" viewBox="0 0 798 704" role="img" aria-label={`Rocket at ${robot.x}, ${robot.y}`}>
+    <image href="/vp-assets/flight/tablet.png" width="798" height="704" />
+    {Array.from({ length: 9 }, (_, i) => i - 4).filter(n => n).map(n => <text key={`x${n}`} x={427 + n * 40} y="388" fill="white" fontSize="13" textAnchor="middle">{n * 2 * level.unit}</text>)}
+    {Array.from({ length: 7 }, (_, i) => i - 3).filter(n => n).map(n => <text key={`y${n}`} x="439" y={373 - n * 40} fill="white" fontSize="13">{n * 2 * level.unit}</text>)}
+    {level.points.map((p, i) => <circle key={i} cx={427 + p.x / level.unit * 20} cy={369 - p.y / level.unit * 20} r="3" fill={robot.visited.includes(i) ? '#fff' : '#ff6300'} />)}
+    <image href="/vp-assets/flight/rocket.svg" width="20" height="20" x={417 + robot.x / level.unit * 20} y={359 - robot.y / level.unit * 20} />
+  </svg>;
   if (level.plants) return <svg className="excursion-board" viewBox="0 0 540 540" role="img" aria-label={`Greenhouse laser pointing ${robot.direction} degrees`}>
     {level.decorations.map((d, i) => <image key={`deco-${i}`} href={d.image} x={d.x} y={d.y} width={d.width} height={d.height} />)}
     {robot.plants.filter(p => !p.removed).map(p => <image key={p.angle} href={p.image} x={p.x} y={p.y} width={p.width} height={p.height} />)}
@@ -49,11 +56,19 @@ function ReferenceBoard({ level, robot }) {
 }
 
 export default function ExcursionTask(props) {
+  if (props.level.type === 'typing') return <CoordinateTyping {...props} />;
   if (props.level.type) return <ExcursionInterlude {...props} />;
   return <ExcursionMaze {...props} />;
 }
 
+function CoordinateTyping({ level, onNextTask, onTaskCompleted }) {
+  const [text, setText] = useState('');
+  const correct = text.trim().replace(/\s+/g, ' ') === level.text;
+  return <section className="excursion-interlude excursion-typing"><h2>{level.hint}</h2><pre>{level.text}</pre><textarea aria-label="Type the negative numbers" autoComplete="off" spellCheck="false" value={text} onChange={e => setText(e.target.value)} /><button disabled={!correct} onClick={() => { onTaskCompleted?.({ isCorrect: true, score: 1, maxScore: 1 }); onNextTask?.(); }}>Continue</button></section>;
+}
+
 function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
+  if (level.type === 'source') return <section className="excursion-interlude"><h2>{level.hint}</h2><a href={level.sourceUrl} target="_blank" rel="noreferrer">Open original activity</a><button type="button" onClick={onNextTask}>Next</button></section>;
   const [rating, setRating] = useState(null);
   const [slide, setSlide] = useState(0);
   const image = level.images?.[slide] || level.image;
@@ -110,7 +125,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           setStatus('completed');
         } else {
           setStatus('failed');
-          setMessage(level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
+          setMessage(level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
         }
         return;
       }
@@ -142,9 +157,9 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     : guide === 'run' ? 'Create your own sequence of commands and click this button to start the program.' : level.hint;
 
   return (
-    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
+    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""} ${level.mode === "coordinates" ? "excursion-coordinate-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
-        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...(level.plants ? [BLOCK_TYPES.TURN_CLOCKWISE, BLOCK_TYPES.TURN_COUNTERCLOCKWISE] : level.collectOnly ? [BLOCK_TYPES.MOVE_FORWARD, BLOCK_TYPES.POINT_DIRECTION, BLOCK_TYPES.TAKE_CARGO] : COMMANDS), ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.plants ? [BLOCK_TYPES.DESTROY, BLOCK_TYPES.WATER] : level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
+        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...(level.mode === 'coordinates' ? [`go_to_${level.unit}`] : level.plants ? [BLOCK_TYPES.TURN_CLOCKWISE, BLOCK_TYPES.TURN_COUNTERCLOCKWISE] : level.collectOnly ? [BLOCK_TYPES.MOVE_FORWARD, BLOCK_TYPES.POINT_DIRECTION, BLOCK_TYPES.TAKE_CARGO] : COMMANDS), ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.plants ? [BLOCK_TYPES.DESTROY, BLOCK_TYPES.WATER] : level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>

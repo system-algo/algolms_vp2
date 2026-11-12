@@ -5,7 +5,7 @@
   "type": "block-game-task",
   "level_type": "block_game",
   "activityType": "block_game",
-  "taskCount": 5,
+  "taskCount": 17,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -19,20 +19,18 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Rocket flight - Level 1",
+      "title": "Rocket flight - 1",
+      "instruction": "Coordinates can be negative. So let's practice entering negative numbers! Type this text:",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_8",
-      "instruction": "Complete level 1 of Rocket flight. Navigate the robot and achieve the mission goals!",
       "states": [
         {
           "id": "VP2_M2L1_1_1_state_1",
           "stateId": "VP2_M2L1_1_1_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_8"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -42,20 +40,18 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Rocket flight - Level 2",
+      "title": "Rocket flight - 2",
+      "instruction": "Scratch game",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_9",
-      "instruction": "Complete level 2 of Rocket flight. Navigate the robot and achieve the mission goals!",
       "states": [
         {
           "id": "VP2_M2L1_1_2_state_1",
           "stateId": "VP2_M2L1_1_2_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_9"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -65,20 +61,18 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Rocket flight - Level 3",
+      "title": "Rocket flight - 3",
+      "instruction": "Scratch game",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_10",
-      "instruction": "Complete level 3 of Rocket flight. Navigate the robot and achieve the mission goals!",
       "states": [
         {
           "id": "VP2_M2L1_1_3_state_1",
           "stateId": "VP2_M2L1_1_3_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_10"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -88,20 +82,18 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Rocket flight - Level 4",
+      "title": "Rocket flight - 4",
+      "instruction": "Rocket flight",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_11",
-      "instruction": "Complete level 4 of Rocket flight. Navigate the robot and achieve the mission goals!",
       "states": [
         {
           "id": "VP2_M2L1_1_4_state_1",
           "stateId": "VP2_M2L1_1_4_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_11"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -111,20 +103,270 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Rocket flight - Level 5",
+      "title": "Rocket flight - 5",
+      "instruction": "We need to enter the correct coordinates for the rocket.",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_12",
-      "instruction": "Complete level 5 of Rocket flight. Navigate the robot and achieve the mission goals!",
       "states": [
         {
           "id": "VP2_M2L1_1_5_state_1",
           "stateId": "VP2_M2L1_1_5_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_12"
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_6",
+      "taskId": "VP2_M2L1_1_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Rocket flight - 6",
+      "instruction": "It's already a little different here!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_6_state_1",
+          "stateId": "VP2_M2L1_1_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_7",
+      "taskId": "VP2_M2L1_1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Rocket flight - 7",
+      "instruction": "Look \u2014 everything is the same, but now the coordinates are in the range of -80...80!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_7_state_1",
+          "stateId": "VP2_M2L1_1_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_8",
+      "taskId": "VP2_M2L1_1_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Rocket flight - 8",
+      "instruction": "There's a zero coordinate here!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_8_state_1",
+          "stateId": "VP2_M2L1_1_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_9",
+      "taskId": "VP2_M2L1_1_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Rocket flight - 9",
+      "instruction": "And now two points...",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_9_state_1",
+          "stateId": "VP2_M2L1_1_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_10",
+      "taskId": "VP2_M2L1_1_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Rocket flight - 10",
+      "instruction": "And now the three-digit numbers. But you can handle it!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_10_state_1",
+          "stateId": "VP2_M2L1_1_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_11",
+      "taskId": "VP2_M2L1_1_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Rocket flight - 11",
+      "instruction": "Whoa! More and more landing points!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_11_state_1",
+          "stateId": "VP2_M2L1_1_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_12",
+      "taskId": "VP2_M2L1_1_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Rocket flight - 12",
+      "instruction": "Rocket flight",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_12_state_1",
+          "stateId": "VP2_M2L1_1_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_13",
+      "taskId": "VP2_M2L1_1_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Rocket flight - 13",
+      "instruction": "We have to be careful here!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_13_state_1",
+          "stateId": "VP2_M2L1_1_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_14",
+      "taskId": "VP2_M2L1_1_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Rocket flight - 14",
+      "instruction": "Bonuses! Shall we practice a little more?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_14_state_1",
+          "stateId": "VP2_M2L1_1_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_15",
+      "taskId": "VP2_M2L1_1_15",
+      "position": 15,
+      "level_position": 15,
+      "levelPosition": 15,
+      "title": "Rocket flight - 15",
+      "instruction": "Whoa! 4 landing spots! Can you handle it?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_15_state_1",
+          "stateId": "VP2_M2L1_1_15_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_16",
+      "taskId": "VP2_M2L1_1_16",
+      "position": 16,
+      "level_position": 16,
+      "levelPosition": 16,
+      "title": "Rocket flight - 16",
+      "instruction": "A little bit more!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_16_state_1",
+          "stateId": "VP2_M2L1_1_16_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_1_17",
+      "taskId": "VP2_M2L1_1_17",
+      "position": 17,
+      "level_position": 17,
+      "levelPosition": 17,
+      "title": "Rocket flight - 17",
+      "instruction": "Last level! Five points!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP2_M2L1_1_17_state_1",
+          "stateId": "VP2_M2L1_1_17_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
         }
       ]
     }

@@ -1,28 +1,31 @@
-# VP2 original-platform block task status
+# VP2 original-platform Block Task status
 
-Working rule: finish a page, run a quick production build and push main immediately. Do not wait for Render or repeat frontend smoke tests for every page.
+Rule: finish a page, run a quick build and push main immediately. Do not inspect Render deployments.
 
-## Implemented pages
+## Implemented
 
-- M1 L1 page 1: Excursion — 12 positions.
-- M1 L1 page 2: Help load the rocket — 14 positions.
-- M1 L2 page 1: Building a Marsbase — 18 positions; original comic images, 15 construction boards, building sprites, three building actions and feedback. Source lesson 8750/task 19095. Commit 4900b35.
+| Page | Original task | Positions | Main commit |
+| --- | --- | --- | --- |
+| M1 L1 Excursion | 18341 | 12 | a152374 |
+| M1 L1 Help load the rocket | 18342 | 14 | 0a88703 |
+| M1 L2 Building a Marsbase | 19095 | 18 | 4900b35 |
+| M1 L2 Excavations | 19096 | 15 | 3ae3375 |
+| M2 L1 Rocket flight | 21608 | 12 coordinate Block Tasks, typing, four source links | b8d9f19 |
+| M2 L2 Collecting cargo | 21625 | 15 | 4919080 |
+| M2 L3 Laser and plants | 21714 | 14 | 524bb88 |
 
-## Source access blockers observed
+All previously closed positions are now accessible. Rendered geometry, instructions and image assets are saved alongside their reference JSON. VP2 and VP page aliases were updated where applicable.
 
-The authenticated original platform exposes the following navigation statuses. Closed links do not open when clicked; their content has not been invented.
+## Rocket flight exceptions
 
-| Page | Original task | Remaining source access needed |
-| --- | --- | --- |
-| M1 L2 page 2 Excavations | 19096 | Positions 3–15 closed; intro completed through its normal slideshow; position 2 open |
-| M2 L1 page 1 Rocket flight | 21608 | Positions 5–17 closed; 1 typing, 2–3 Scratch games, 4 comic |
-| M2 L2 page 1 Collecting cargo | 21625 | Positions 3–8 and 10–15 closed |
-| M2 L3 page 1 Laser and plants | 21714 | Positions 10 and 14 closed; rendered references saved for 2–8 and 11–13 |
+Positions 2 and 3 are original Scratch games. The original page displays its Go/Stop toolbar but no stage/canvas content in this browser, so the clone links to the original activity rather than inventing a game. Positions 4 and 12 are comics on userapi.com; browser security denied downloading that image host. Those positions also link to the original. These four links do not automatically mark the activities complete. This page is not a complete local restoration of all 17 positions.
 
-## Mapping gaps
+## Scope and validation
 
-The existing repository task counts/types are not sufficient evidence of original content. The original Rocket flight has 17 positions, Collecting cargo 15 and Excavations 15. Existing placeholders contain fewer.
+The request targets Block Tasks through Module 2. Other Scratch/editor/test pages are outside this pass. M2 L1 page 2 Find the coordinates is three original Scratch games; M2 L2 page 2 Pen is four Scratch tasks and a rating. Existing maze placeholders on those pages still need separate Scratch restoration.
 
-M2 L1 page 2 “Find the coordinates” is three original Scratch games, not five maze block tasks. M2 L2 page 2 “Pen” is four Scratch editor tasks plus rating, not five maze block tasks. Their placeholder metadata needs separate Scratch content restoration rather than replacing it with invented robot routes.
+Excavations command limits are copied from the displayed original counters (positions 2–13); position 14 has no displayed cap. All thirteen stone boards passed reachability/destroy checks.
 
-Raw rendered SVG references are kept in docs/references to avoid losing work when the browser session expires. These contain rendered lesson geometry and instructions, not authentication state. Construction build simulation uses the marked current cell and validates building type and duplicates; production build passed. No Render deployment check was performed, per user instruction.
+Quick production builds passed after each page. All 24 existing Excursion/cargo tests passed. Traversal checks passed for all 12 Collecting cargo routes, all 11 greenhouse tasks and all 12 coordinate programs. No Render verification was performed. Source exercise completion was not used as a shortcut to alter clone progress.
+
+Ratings are kept in session state. Construction uses the marked current cell; its original build execution has not been verified end to end. Greenhouse destroy/water commands affect the matching pest/sprout and leave mature plants untouched; source command semantics beyond visible layout and task goals have not been exhaustively checked.

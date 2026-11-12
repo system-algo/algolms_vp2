@@ -36,3 +36,5 @@
 .excursion-cargo-count{font-size:12px}.excursion-rating{flex:1;min-height:560px;background:#8134df;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:65px}.excursion-rating>div{display:flex;gap:50px}.excursion-rating button{width:120px;height:120px;border:0;padding:0;border-radius:50%;background:none;cursor:pointer}.excursion-rating button:focus-visible{outline:4px solid yellow;outline-offset:6px}
 
 .excursion-coordinate-task .block-toolbox{width:210px;min-width:210px}.excursion-coordinate-task .excursion-stage{background:#48324e}.excursion-coordinate-task .excursion-coordinate-board{width:100%;max-width:none}.excursion-typing textarea{width:min(90%,800px);min-height:100px;font:24px monospace;padding:20px}.excursion-typing pre{font:24px monospace}.excursion-typing button:disabled{opacity:.4;cursor:default}
+
+.excursion-plants-task .block-toolbox{width:225px;min-width:225px}

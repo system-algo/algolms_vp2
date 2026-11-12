@@ -45,7 +45,7 @@ export function compileProgram(blocks, maxSteps = 400) {
           blockId: blk.id,
           action: 'move_forward',
         });
-      } else if (blk.type === BLOCK_TYPES.POINT_DIRECTION) {
+      } else if ((blk.type === BLOCK_TYPES.POINT_DIRECTION || blk.type === 'collect_direction')) {
         const direction = Number(blk.params?.direction ?? 90);
         steps.push({
           blockId: blk.id,

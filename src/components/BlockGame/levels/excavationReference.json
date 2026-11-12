@@ -763,7 +763,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 4
   },
   {
     "number": 3,
@@ -1812,7 +1813,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 5
   },
   {
     "number": 4,
@@ -2545,7 +2547,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 5
   },
   {
     "number": 5,
@@ -3290,7 +3293,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 7
   },
   {
     "number": 6,
@@ -3959,7 +3963,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 6
   },
   {
     "number": 7,
@@ -5060,7 +5065,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 6
   },
   {
     "number": 8,
@@ -5560,7 +5566,8 @@
           }
         ]
       }
-    ]
+    ],
+    "maxCommands": 6
   },
   {
     "number": 9,
@@ -6597,7 +6604,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 12
   },
   {
     "number": 10,
@@ -7706,7 +7714,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 14
   },
   {
     "number": 11,
@@ -8783,7 +8792,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 9
   },
   {
     "number": 12,
@@ -9876,7 +9886,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 13
   },
   {
     "number": 13,
@@ -11025,7 +11036,8 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "maxCommands": 15
   },
   {
     "number": 14,

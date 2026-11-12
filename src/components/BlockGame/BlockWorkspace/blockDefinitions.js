@@ -278,3 +278,5 @@ for (const unit of [1, 10, 30]) {
     params: ['x', 'y'].map((name, i) => ({ name, type: 'select', default: -(i ? 6 : 8) * unit, options: Array.from({ length: i ? 13 : 17 }, (_, n) => ({ value: (n - (i ? 6 : 8)) * unit, label: String((n - (i ? 6 : 8)) * unit) })) })),
   };
 }
+
+BLOCK_DEFINITIONS.collect_direction = { ...BLOCK_DEFINITIONS.point_direction, type: 'collect_direction', params: [{ ...BLOCK_DEFINITIONS.point_direction.params[0], options: BLOCK_DEFINITIONS.point_direction.params[0].options.filter(o => [0, 90, 180, 270].includes(o.value)) }] };

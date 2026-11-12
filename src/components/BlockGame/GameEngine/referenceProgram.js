@@ -6,12 +6,24 @@ export function evaluateCondition(c, level, state) {
   if(c.kind==='not') return !evaluateCondition(c.a,level,state);
   if(c.kind==='cargo_color') return state.carriedBox?.color===c.value;
   if(c.kind==='cargo_shape') return state.carriedBox?.shape===c.value;
+  if(c.kind==='compare') {
+    const object=level.objects?.[state.fruitIndex];
+    if(!object)return false;
+    const left=object[c.axis || 'x'];
+    const right=c.rhsAxis ? object[c.rhsAxis] : Number(c.value);
+    return c.op === '<' ? left < right : left > right;
+  }
   const fruit=level.fruits?.[state.fruitIndex];
   if(['color','shape','size','fruit'].includes(c.kind)) return fruit?.[c.kind=== 'fruit'?'name':c.kind]===c.value;
   const direction=(state.direction+(c.value==='left'?270:c.value==='right'?90:0))%360;
   const next=getNextPosition(state.x,state.y,direction);
+  if(c.kind==='tank' || c.kind==='dynamite') {
+    const position = c.value === 'under' ? state : next;
+    const items = c.kind === 'tank' ? state.tanks || [] : (level.items || []).filter(i=>i.kind==='dynamite');
+    return items.some(i=>i.x===position.x&&i.y===position.y);
+  }
   if(c.kind==='path') return level.cells.some(cell=>!cell.blocked&&cell.x===next.x&&cell.y===next.y);
-  if(c.kind==='finish') return c.value==='crossed' ? state.x===level.target.x&&state.y===level.target.y : next.x===level.target.x&&next.y===level.target.y;
+  if(c.kind==='finish') return !!level.target && (c.value==='crossed' ? state.x===level.target.x&&state.y===level.target.y : next.x===level.target.x&&next.y===level.target.y);
   if(c.kind==='region') return state.x>=c.minX&&state.x<=c.maxX&&state.y>=c.minY&&state.y<=c.maxY;
   return false;
 }
@@ -35,7 +47,7 @@ export function* referenceProgram(blocks, level, readState) {
           if(++operations>3000)throw new Error('The loop did not finish. Check its condition.');
           yield {action:'repeat_iteration',blockId:b.id};
           yield* walk(b.children||[],depth+1);
-          if(b.type==='forever'&&level.mode==='chef')yield {action:'advance_item',blockId:b.id};
+          if(b.type==='forever'&&['chef','field'].includes(level.mode))yield {action:'advance_item',blockId:b.id};
           i++;
         }
       }else if(b.type==='cook')yield {action:'cook',blockId:b.id};

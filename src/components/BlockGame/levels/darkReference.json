@@ -1,0 +1,2604 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Maze in the dark \u2014 introduction comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10800&task=24123&level=1"
+  },
+  {
+    "number": 2,
+    "mode": "dark",
+    "dynamic": true,
+    "activityName": "Maze in the dark",
+    "hint": "Darkness has fallen. Tanks are somewhere in the middle of our path. Take them and reach the finish line. Remember If-Else!",
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_lesson2.svg",
+    "start": {
+      "x": 0,
+      "y": 4,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 4
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "items": [
+      {
+        "x": 2,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "tank"
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "repeat",
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 3,
+    "mode": "dark",
+    "dynamic": true,
+    "activityName": "Maze in the dark",
+    "hint": "Lots of tanks along the path. You need to take them and reach the finish line.",
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_lesson2.svg",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 7
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      }
+    ],
+    "items": [
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "kind": "tank"
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "repeat",
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 4,
+    "mode": "dark",
+    "dynamic": true,
+    "activityName": "Maze in the dark",
+    "hint": "Even more turns. Even more tanks along the path. You need to take them and reach the finish line.",
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_lesson2.svg",
+    "start": {
+      "x": 0,
+      "y": 0,
+      "direction": 90
+    },
+    "target": {
+      "x": 2,
+      "y": 4
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "items": [
+      {
+        "x": 2,
+        "y": 0,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "kind": "tank"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "kind": "tank"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "kind": "tank"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "kind": "tank"
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "kind": "tank"
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "kind": "tank"
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "kind": "tank"
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "repeat",
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 5,
+    "mode": "dark",
+    "dynamic": true,
+    "activityName": "Maze in the dark",
+    "hint": "There is a tank somewhere in the middle of the path. Right under it, at an unknown distance, are 2 or 3 tanks. Take all tanks and reach the finish line!",
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_lesson2.svg",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    },
+    "target": {
+      "x": 4,
+      "y": 7
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "items": [
+      {
+        "x": 4,
+        "y": 2,
+        "kind": "tank"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "kind": "tank"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "kind": "tank"
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "repeat",
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 6,
+    "mode": "dark",
+    "dynamic": true,
+    "activityName": "Maze in the dark",
+    "hint": "There are now a lot of tanks in the alcoves to the right of the robot path. Take them and reach the finish line.",
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_lesson2.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 3
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "items": [
+      {
+        "x": 1,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "kind": "tank"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "kind": "tank"
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "repeat",
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 7,
+    "type": "rating",
+    "hint": "How did you like the task?",
+    "sourceLevel": 8
+  }
+]

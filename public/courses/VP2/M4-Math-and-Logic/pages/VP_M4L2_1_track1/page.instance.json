@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L2_1_track1",
+  "title": "Unknown maze",
+  "taskCount": 11,
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "activityType": "block_game",
+  "tasks": [
+    {
+      "id": "VP_M4L2_1_track1_1",
+      "taskId": "VP_M4L2_1_track1_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Unknown maze - 1",
+      "instruction": "Unknown maze \u2014 introduction comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_1_state_1",
+          "stateId": "VP_M4L2_1_track1_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_2",
+      "taskId": "VP_M4L2_1_track1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Unknown maze - 2",
+      "instruction": "Use repeat until the robot crosses the finish line.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_2_state_1",
+          "stateId": "VP_M4L2_1_track1_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_3",
+      "taskId": "VP_M4L2_1_track1_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Unknown maze - 3",
+      "instruction": "Check whether there is a path ahead; turn when it ends.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_3_state_1",
+          "stateId": "VP_M4L2_1_track1_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_4",
+      "taskId": "VP_M4L2_1_track1_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Unknown maze - 4",
+      "instruction": "Now there are two turns. And both times you turn only when the road in front of you ends.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_4_state_1",
+          "stateId": "VP_M4L2_1_track1_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_5",
+      "taskId": "VP_M4L2_1_track1_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Unknown maze - 5",
+      "instruction": "Your entire program should fit into the \"Repeat until...\" command.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_5_state_1",
+          "stateId": "VP_M4L2_1_track1_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_6",
+      "taskId": "VP_M4L2_1_track1_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Unknown maze - 6",
+      "instruction": "Nested conditions are when another condition is inserted into the else section of the first condition.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_6_state_1",
+          "stateId": "VP_M4L2_1_track1_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_7",
+      "taskId": "VP_M4L2_1_track1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Unknown maze - 7",
+      "instruction": "This program will be very similar to the previous one, you can even take a peek :)",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_7_state_1",
+          "stateId": "VP_M4L2_1_track1_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_8",
+      "taskId": "VP_M4L2_1_track1_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Unknown maze - 8",
+      "instruction": "Check at every step whether there is a road to your left. As soon as you find it, turn and walk!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_8_state_1",
+          "stateId": "VP_M4L2_1_track1_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_9",
+      "taskId": "VP_M4L2_1_track1_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Unknown maze - 9",
+      "instruction": "How did you like the task?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_9_state_1",
+          "stateId": "VP_M4L2_1_track1_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_10",
+      "taskId": "VP_M4L2_1_track1_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Unknown maze - 10",
+      "instruction": "Look for the road that will be on your right. Don't forget that the goal is to reach the finish line.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_10_state_1",
+          "stateId": "VP_M4L2_1_track1_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_1_track1_11",
+      "taskId": "VP_M4L2_1_track1_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Unknown maze - 11",
+      "instruction": "If there's a path to the right, feel free to turn right!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_1_track1_11_state_1",
+          "stateId": "VP_M4L2_1_track1_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

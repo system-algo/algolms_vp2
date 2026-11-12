@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L2_2",
+  "title": "Bonus: Training base",
+  "taskCount": 15,
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "activityType": "block_game",
+  "tasks": [
+    {
+      "id": "VP_M4L2_2_1",
+      "taskId": "VP_M4L2_2_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Bonus: Training base - 1",
+      "instruction": "Training base \u2014 introduction comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_1_state_1",
+          "stateId": "VP_M4L2_2_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_2",
+      "taskId": "VP_M4L2_2_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Bonus: Training base - 2",
+      "instruction": "Use the command \"Execute until the tank is under the robot\"",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_2_state_1",
+          "stateId": "VP_M4L2_2_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_3",
+      "taskId": "VP_M4L2_2_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Bonus: Training base - 3",
+      "instruction": "Two tanks \u2014 one in each group. Deal with the green group first, and then deal with the red one.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_3_state_1",
+          "stateId": "VP_M4L2_2_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_4",
+      "taskId": "VP_M4L2_2_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Bonus: Training base - 4",
+      "instruction": "Wow, is that dynamite? You cannot step on it! Use repeat until dynamite is ahead.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_4_state_1",
+          "stateId": "VP_M4L2_2_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_5",
+      "taskId": "VP_M4L2_2_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Bonus: Training base - 5",
+      "instruction": "Dynamite again! And one more hidden tank.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_5_state_1",
+          "stateId": "VP_M4L2_2_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_6",
+      "taskId": "VP_M4L2_2_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Bonus: Training base - 6",
+      "instruction": "You have two hidden tanks again, and a trap, too. Be careful!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_6_state_1",
+          "stateId": "VP_M4L2_2_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_7",
+      "taskId": "VP_M4L2_2_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Bonus: Training base - 7",
+      "instruction": "Sometimes the tank is visible right away, but another one is still hidden behind a question mark. You need to collect both!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_7_state_1",
+          "stateId": "VP_M4L2_2_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_8",
+      "taskId": "VP_M4L2_2_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Bonus: Training base - 8",
+      "instruction": "Wow, there are now 4 color groups, and each of them has one tank. Maybe a repeat loop will solve the task quickly?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_8_state_1",
+          "stateId": "VP_M4L2_2_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_9",
+      "taskId": "VP_M4L2_2_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Bonus: Training base - 9",
+      "instruction": "How did you like the task?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_9_state_1",
+          "stateId": "VP_M4L2_2_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_10",
+      "taskId": "VP_M4L2_2_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Bonus: Training base - 10",
+      "instruction": "Seems simple! But there is a restriction on the number of blocks...",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_10_state_1",
+          "stateId": "VP_M4L2_2_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_11",
+      "taskId": "VP_M4L2_2_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Bonus: Training base - 11",
+      "instruction": "How could there not be Martian snakes?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_11_state_1",
+          "stateId": "VP_M4L2_2_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_12",
+      "taskId": "VP_M4L2_2_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Bonus: Training base - 12",
+      "instruction": "Wow! Now with turns!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_12_state_1",
+          "stateId": "VP_M4L2_2_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_13",
+      "taskId": "VP_M4L2_2_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Bonus: Training base - 13",
+      "instruction": "Difficult task: find 4 tanks and do not step on the dynamite, which is scattered all over the place.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_13_state_1",
+          "stateId": "VP_M4L2_2_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_14",
+      "taskId": "VP_M4L2_2_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Bonus: Training base - 14",
+      "instruction": "Oh no, everything is hidden again! Oh well, let us go!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_14_state_1",
+          "stateId": "VP_M4L2_2_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_2_15",
+      "taskId": "VP_M4L2_2_15",
+      "position": 15,
+      "level_position": 15,
+      "levelPosition": 15,
+      "title": "Bonus: Training base - 15",
+      "instruction": "A tricky task for the last one. You do not have the repeat times command; write the program without it.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_2_15_state_1",
+          "stateId": "VP_M4L2_2_15_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

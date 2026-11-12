@@ -438,15 +438,15 @@
         },
         {
           "id": "VP2_M4L1_3_track1",
-          "title": "Logical operators - Track 1",
+          "title": "Martian Chef",
           "lessonId": "VP2_M4L1",
-          "taskCount": 16
+          "taskCount": 17
         },
         {
           "id": "VP2_M4L1_3_track2",
-          "title": "Logical operators - Track 2",
+          "title": "Martian Chef",
           "lessonId": "VP2_M4L1",
-          "taskCount": 14
+          "taskCount": 17
         },
         {
           "id": "VP2_M4L1_4",
@@ -456,9 +456,9 @@
         },
         {
           "id": "VP2_M4L2_1_track1",
-          "title": "Conditional loop - Track 1",
+          "title": "Unknown maze",
           "lessonId": "VP2_M4L2",
-          "taskCount": 16
+          "taskCount": 11
         },
         {
           "id": "VP2_M4L2_1_track2",
@@ -468,9 +468,15 @@
         },
         {
           "id": "VP2_M4L2_2",
-          "title": "Additional task \u2014 Conditional loop",
+          "title": "Bonus: Training base",
           "lessonId": "VP2_M4L2",
           "taskCount": 15
+        },
+        {
+          "id": "VP2_M4L2_4",
+          "title": "Bonus: Maze in the dark",
+          "lessonId": "VP2_M4L2",
+          "taskCount": 7
         },
         {
           "id": "VP2_M4L2_3",
@@ -522,9 +528,9 @@
         },
         {
           "id": "VP2_M4L4_2",
-          "title": "Coordinate areas - Part 2",
+          "title": "Getting the soccer field ready",
           "lessonId": "VP2_M4L4",
-          "taskCount": 16
+          "taskCount": 15
         },
         {
           "id": "VP2_M4L4_3",

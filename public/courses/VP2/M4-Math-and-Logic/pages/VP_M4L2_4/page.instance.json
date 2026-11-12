@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L2_4",
+  "title": "Bonus: Maze in the dark",
+  "taskCount": 7,
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "activityType": "block_game",
+  "tasks": [
+    {
+      "id": "VP_M4L2_4_1",
+      "taskId": "VP_M4L2_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Bonus: Maze in the dark - 1",
+      "instruction": "Maze in the dark \u2014 introduction comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_1_state_1",
+          "stateId": "VP_M4L2_4_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_2",
+      "taskId": "VP_M4L2_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Bonus: Maze in the dark - 2",
+      "instruction": "Darkness has fallen. Tanks are somewhere in the middle of our path. Take them and reach the finish line. Remember If-Else!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_2_state_1",
+          "stateId": "VP_M4L2_4_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_3",
+      "taskId": "VP_M4L2_4_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Bonus: Maze in the dark - 3",
+      "instruction": "Lots of tanks along the path. You need to take them and reach the finish line.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_3_state_1",
+          "stateId": "VP_M4L2_4_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_4",
+      "taskId": "VP_M4L2_4_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Bonus: Maze in the dark - 4",
+      "instruction": "Even more turns. Even more tanks along the path. You need to take them and reach the finish line.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_4_state_1",
+          "stateId": "VP_M4L2_4_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_5",
+      "taskId": "VP_M4L2_4_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Bonus: Maze in the dark - 5",
+      "instruction": "There is a tank somewhere in the middle of the path. Right under it, at an unknown distance, are 2 or 3 tanks. Take all tanks and reach the finish line!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_5_state_1",
+          "stateId": "VP_M4L2_4_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_6",
+      "taskId": "VP_M4L2_4_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Bonus: Maze in the dark - 6",
+      "instruction": "There are now a lot of tanks in the alcoves to the right of the robot path. Take them and reach the finish line.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_6_state_1",
+          "stateId": "VP_M4L2_4_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L2_4_7",
+      "taskId": "VP_M4L2_4_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Bonus: Maze in the dark - 7",
+      "instruction": "How did you like the task?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L2_4_7_state_1",
+          "stateId": "VP_M4L2_4_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

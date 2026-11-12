@@ -9,6 +9,11 @@ import './BlockGameTask.css';
 import ExcursionTask from './ExcursionTask.jsx';
 import excursionReferences from './levels/excursionReference.json';
 import rocketReferences from './levels/rocketReference.json';
+import fieldReferences from './levels/fieldReference.json';
+import darkReferences from './levels/darkReference.json';
+import trainingReferences from './levels/trainingReference.json';
+import chefReferences from './levels/chefReference.json';
+import unknownReferences from './levels/unknownReference.json';
 import sortingReferences from './levels/sortingReference.json';
 import journeyReferences from './levels/journeyReference.json';
 import flightReferences from './levels/flightReference.json';
@@ -26,10 +31,6 @@ function resolveInitialLevelId(task, initialLevelId) {
   const taskTitle = String(task?.title || '').toLowerCase();
   const text = (String(task?.instruction || '') + ' ' + String(task?.bodyText || '') + ' ' + taskTitle).toLowerCase();
 
-  const sorting = taskId.match(/^VP2?_M3L1_1_(\d+)$/);
-  if (sorting) return <ExcursionTask key={taskId} {...props} level={sortingReferences.find(l => l.number === Number(sorting[1]))} />;
-  const journey = taskId.match(/^VP2?_M3L2_1_(\d+)$/);
-  if (journey) return <ExcursionTask key={taskId} {...props} level={journeyReferences.find(l => l.number === Number(journey[1]))} />;
   const match = taskId.match(/task-(\d+)-/);
   if (match) {
     const taskNum = parseInt(match[1], 10);
@@ -82,6 +83,20 @@ function resolveInitialLevelId(task, initialLevelId) {
 
 export default function BlockGameTask(props) {
   const taskId = String(props.task?.id || props.task?.taskId || '');
+  const field = taskId.match(/^VP2?_M4L4_2_(\d+)$/);
+  if (field) return <ExcursionTask key={taskId} {...props} level={fieldReferences.find(l => l.number === Number(field[1]))} />;
+  const dark = taskId.match(/^VP2?_M4L2_4_(\d+)$/);
+  if (dark) return <ExcursionTask key={taskId} {...props} level={darkReferences.find(l => l.number === Number(dark[1]))} />;
+  const training = taskId.match(/^VP2?_M4L2_2_(\d+)$/);
+  if (training) return <ExcursionTask key={taskId} {...props} level={trainingReferences.find(l => l.number === Number(training[1]))} />;
+  const chef = taskId.match(/^VP2?_M4L1_3_track[12]_(\d+)$/);
+  if (chef) return <ExcursionTask key={taskId} {...props} level={chefReferences.find(l => l.number === Number(chef[1]))} />;
+  const unknown = taskId.match(/^VP2?_M4L2_1_track1_(\d+)$/);
+  if (unknown) return <ExcursionTask key={taskId} {...props} level={unknownReferences.find(l => l.number === Number(unknown[1]))} />;
+  const sorting = taskId.match(/^VP2?_M3L1_1_(\d+)$/);
+  if (sorting) return <ExcursionTask key={taskId} {...props} level={sortingReferences.find(l => l.number === Number(sorting[1]))} />;
+  const journey = taskId.match(/^VP2?_M3L2_1_(\d+)$/);
+  if (journey) return <ExcursionTask key={taskId} {...props} level={journeyReferences.find(l => l.number === Number(journey[1]))} />;
   const match = taskId.match(/^VP2?_M1L([12])_([12])_(\d+)$/);
   const flight = taskId.match(/^VP2?_M2L1_1_(\d+)$/);
   if (flight) return <ExcursionTask key={taskId} {...props} level={flightReferences.find(l => l.number === Number(flight[1]))} />;

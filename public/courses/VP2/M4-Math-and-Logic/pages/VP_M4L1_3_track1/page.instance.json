@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 2,
+  "id": "VP_M4L1_3_track1",
+  "title": "Martian Chef",
+  "taskCount": 17,
+  "type": "block-game-task",
+  "level_type": "block_game",
+  "activityType": "block_game",
+  "tasks": [
+    {
+      "id": "VP_M4L1_3_track1_1",
+      "taskId": "VP_M4L1_3_track1_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Martian Chef - 1",
+      "instruction": "Martian Chef \u2014 comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_1_state_1",
+          "stateId": "VP_M4L1_3_track1_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_2",
+      "taskId": "VP_M4L1_3_track1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Martian Chef - 2",
+      "instruction": "What do we need for pumpkin pie? Pumpkin, of course! But how will the robot distinguish it from the watermelon and zucchini?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_2_state_1",
+          "stateId": "VP_M4L1_3_track1_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_3",
+      "taskId": "VP_M4L1_3_track1_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Martian Chef - 3",
+      "instruction": "We need to pick the zucchini. I wonder if there's a grill on Mars?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_3_state_1",
+          "stateId": "VP_M4L1_3_track1_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_4",
+      "taskId": "VP_M4L1_3_track1_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Martian Chef - 4",
+      "instruction": "What can we make with zucchini and carrots? That's exactly what we need for lunch!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_4_state_1",
+          "stateId": "VP_M4L1_3_track1_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_5",
+      "taskId": "VP_M4L1_3_track1_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Martian Chef - 5",
+      "instruction": "Martian melon! Let's put aside the watermelons and pumpkins.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_5_state_1",
+          "stateId": "VP_M4L1_3_track1_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_6",
+      "taskId": "VP_M4L1_3_track1_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Martian Chef - 6",
+      "instruction": "Tomatoes and carrots are perfect for the soup!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_6_state_1",
+          "stateId": "VP_M4L1_3_track1_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_7",
+      "taskId": "VP_M4L1_3_track1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Martian Chef - 7",
+      "instruction": "Put the zucchini and cucumbers in the pot.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_7_state_1",
+          "stateId": "VP_M4L1_3_track1_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_8",
+      "taskId": "VP_M4L1_3_track1_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Martian Chef - 8",
+      "instruction": "Mmm... Let's pick apples! Maybe it's for apple compote?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_8_state_1",
+          "stateId": "VP_M4L1_3_track1_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_9",
+      "taskId": "VP_M4L1_3_track1_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Martian Chef - 9",
+      "instruction": "Which dish has pumpkin, cucumbers, and peppers in it? Interesting... Use a separate \"if __\" construction for each vegetable.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_9_state_1",
+          "stateId": "VP_M4L1_3_track1_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_10",
+      "taskId": "VP_M4L1_3_track1_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Martian Chef - 10",
+      "instruction": "How did you like the task?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_10_state_1",
+          "stateId": "VP_M4L1_3_track1_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_11",
+      "taskId": "VP_M4L1_3_track1_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Martian Chef - 11",
+      "instruction": "Martian Chef \u2014 comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_11_state_1",
+          "stateId": "VP_M4L1_3_track1_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_12",
+      "taskId": "VP_M4L1_3_track1_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Martian Chef - 12",
+      "instruction": "Let's make a salad of tomatoes and cucumbers!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_12_state_1",
+          "stateId": "VP_M4L1_3_track1_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_13",
+      "taskId": "VP_M4L1_3_track1_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Martian Chef - 13",
+      "instruction": "Strange dish... Let's pick watermelons, carrots, and tomatoes!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_13_state_1",
+          "stateId": "VP_M4L1_3_track1_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_14",
+      "taskId": "VP_M4L1_3_track1_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Martian Chef - 14",
+      "instruction": "Set aside carrots and peppers for a spicy salad! How many criteria do we need?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_14_state_1",
+          "stateId": "VP_M4L1_3_track1_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_15",
+      "taskId": "VP_M4L1_3_track1_15",
+      "position": 15,
+      "level_position": 15,
+      "levelPosition": 15,
+      "title": "Martian Chef - 15",
+      "instruction": "We're getting pumpkins, oranges, and tomatoes for the second course. Surprising Martian recipes...",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_15_state_1",
+          "stateId": "VP_M4L1_3_track1_15_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_16",
+      "taskId": "VP_M4L1_3_track1_16",
+      "position": 16,
+      "level_position": 16,
+      "levelPosition": 16,
+      "title": "Martian Chef - 16",
+      "instruction": "For the stew, we will need tomatoes, carrots, zucchini, peppers, and pumpkin.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_16_state_1",
+          "stateId": "VP_M4L1_3_track1_16_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M4L1_3_track1_17",
+      "taskId": "VP_M4L1_3_track1_17",
+      "position": 17,
+      "level_position": 17,
+      "levelPosition": 17,
+      "title": "Martian Chef - 17",
+      "instruction": "Let's pick oranges and apples. It will make a great salad! And if you add some ice cream...",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M4L1_3_track1_17_state_1",
+          "stateId": "VP_M4L1_3_track1_17_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

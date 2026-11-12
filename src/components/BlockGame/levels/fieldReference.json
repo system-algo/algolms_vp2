@@ -1,0 +1,896 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Getting the soccer field ready \u2014 comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10870&task=24491&level=1"
+  },
+  {
+    "number": 2,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Get the soccer field ready for the game! The code has already been written, you just need to set the borders correctly.",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -180,
+        "y": 60,
+        "kind": "good"
+      },
+      {
+        "x": 0,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 210,
+        "y": 90,
+        "kind": "bad"
+      },
+      {
+        "x": 120,
+        "y": -30,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ],
+    "starter": [
+      {
+        "type": "forever",
+        "children": [
+          {
+            "type": "if_condition",
+            "params": {
+              "condition": {
+                "kind": "compare",
+                "axis": "x",
+                "op": ">",
+                "value": 0
+              }
+            },
+            "children": [
+              {
+                "type": "destroy"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "maxCommands": 6
+  },
+  {
+    "number": 3,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "And now you!",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -180,
+        "y": 60,
+        "kind": "good"
+      },
+      {
+        "x": 0,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 210,
+        "y": 90,
+        "kind": "bad"
+      },
+      {
+        "x": 120,
+        "y": -30,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 4,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Now the y coordinate comes to play!",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -150,
+        "y": 30,
+        "kind": "good"
+      },
+      {
+        "x": 0,
+        "y": 30,
+        "kind": "good"
+      },
+      {
+        "x": 120,
+        "y": 0,
+        "kind": "good"
+      },
+      {
+        "x": -150,
+        "y": 120,
+        "kind": "bad"
+      },
+      {
+        "x": 120,
+        "y": 90,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 5,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "-100 > -200 - it is the opposite for negative numbers...",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -210,
+        "y": 90,
+        "kind": "good"
+      },
+      {
+        "x": -150,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": -90,
+        "y": 150,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": 0,
+        "kind": "bad"
+      },
+      {
+        "x": 210,
+        "y": -60,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 6,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Up, down, right, left...",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -150,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": 240,
+        "y": 60,
+        "kind": "good"
+      },
+      {
+        "x": -210,
+        "y": -150,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": -120,
+        "kind": "bad"
+      },
+      {
+        "x": 210,
+        "y": -150,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 7,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "The area is delimited by two lines. Watch how it is done.",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -150,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": 240,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 90,
+        "y": 150,
+        "kind": "good"
+      },
+      {
+        "x": 120,
+        "y": 90,
+        "kind": "bad"
+      },
+      {
+        "x": 180,
+        "y": 120,
+        "kind": "bad"
+      },
+      {
+        "x": 210,
+        "y": 150,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ],
+    "starter": [
+      {
+        "type": "forever",
+        "children": [
+          {
+            "type": "if_condition",
+            "params": {
+              "condition": {
+                "kind": "and",
+                "a": {
+                  "kind": "compare",
+                  "axis": "x",
+                  "op": ">",
+                  "value": 100
+                },
+                "b": {
+                  "kind": "compare",
+                  "axis": "y",
+                  "op": ">",
+                  "value": 60
+                }
+              }
+            },
+            "children": [
+              {
+                "type": "destroy"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Now you!",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": 150,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": -60,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": -240,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": -90,
+        "y": 150,
+        "kind": "good"
+      },
+      {
+        "x": -120,
+        "y": 90,
+        "kind": "bad"
+      },
+      {
+        "x": -180,
+        "y": 120,
+        "kind": "bad"
+      },
+      {
+        "x": -210,
+        "y": 150,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 9,
+    "type": "rating",
+    "hint": "How did you like the task?"
+  },
+  {
+    "number": 10,
+    "type": "source",
+    "hint": "Getting the soccer field ready \u2014 comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10870&task=24491&level=10"
+  },
+  {
+    "number": 11,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "To join multiple zones, use multiple \"if\" operators.",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -210,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": -60,
+        "y": 30,
+        "kind": "good"
+      },
+      {
+        "x": 90,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 150,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": -180,
+        "y": 150,
+        "kind": "bad"
+      },
+      {
+        "x": 60,
+        "y": 180,
+        "kind": "bad"
+      },
+      {
+        "x": 150,
+        "y": 150,
+        "kind": "bad"
+      },
+      {
+        "x": 150,
+        "y": -120,
+        "kind": "bad"
+      },
+      {
+        "x": 30,
+        "y": -150,
+        "kind": "bad"
+      },
+      {
+        "x": -120,
+        "y": -150,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 12,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "The enemy is in the center!",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -210,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": -120,
+        "y": 30,
+        "kind": "good"
+      },
+      {
+        "x": 90,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 150,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": 0,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": -30,
+        "y": -120,
+        "kind": "good"
+      },
+      {
+        "x": -30,
+        "y": 60,
+        "kind": "bad"
+      },
+      {
+        "x": 60,
+        "y": 30,
+        "kind": "bad"
+      },
+      {
+        "x": -60,
+        "y": -30,
+        "kind": "bad"
+      },
+      {
+        "x": 30,
+        "y": -60,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 13,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Intersecting... and joining...",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": -210,
+        "y": -90,
+        "kind": "good"
+      },
+      {
+        "x": -120,
+        "y": 30,
+        "kind": "good"
+      },
+      {
+        "x": 180,
+        "y": -60,
+        "kind": "good"
+      },
+      {
+        "x": 150,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": 0,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": -30,
+        "y": -120,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -150,
+        "kind": "good"
+      },
+      {
+        "x": 30,
+        "y": 30,
+        "kind": "bad"
+      },
+      {
+        "x": 120,
+        "y": 0,
+        "kind": "bad"
+      },
+      {
+        "x": 0,
+        "y": -60,
+        "kind": "bad"
+      },
+      {
+        "x": 90,
+        "y": -90,
+        "kind": "bad"
+      },
+      {
+        "x": -180,
+        "y": -150,
+        "kind": "bad"
+      },
+      {
+        "x": -150,
+        "y": -120,
+        "kind": "bad"
+      },
+      {
+        "x": -180,
+        "y": -30,
+        "kind": "bad"
+      },
+      {
+        "x": -150,
+        "y": -90,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 14,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "He did not think about it, he did not guess it, he did not expect it at all...",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": 0,
+        "y": 0,
+        "kind": "good"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "kind": "bad"
+      },
+      {
+        "x": 30,
+        "y": 30,
+        "kind": "bad"
+      },
+      {
+        "x": 30,
+        "y": -30,
+        "kind": "bad"
+      },
+      {
+        "x": 0,
+        "y": 30,
+        "kind": "bad"
+      },
+      {
+        "x": 0,
+        "y": -30,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": -30,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": 0,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": 30,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  },
+  {
+    "number": 15,
+    "activityName": "Getting the soccer field ready",
+    "mode": "field",
+    "dynamic": true,
+    "hint": "Not just numbers, but letters, too.",
+    "start": {
+      "fruitIndex": 0,
+      "destroyed": []
+    },
+    "objects": [
+      {
+        "x": 0,
+        "y": -30,
+        "kind": "good"
+      },
+      {
+        "x": 60,
+        "y": -150,
+        "kind": "good"
+      },
+      {
+        "x": -150,
+        "y": -180,
+        "kind": "good"
+      },
+      {
+        "x": -60,
+        "y": -120,
+        "kind": "good"
+      },
+      {
+        "x": 240,
+        "y": 120,
+        "kind": "good"
+      },
+      {
+        "x": -150,
+        "y": -90,
+        "kind": "bad"
+      },
+      {
+        "x": 30,
+        "y": 60,
+        "kind": "bad"
+      },
+      {
+        "x": 120,
+        "y": 150,
+        "kind": "bad"
+      },
+      {
+        "x": 0,
+        "y": 30,
+        "kind": "bad"
+      },
+      {
+        "x": -90,
+        "y": -60,
+        "kind": "bad"
+      },
+      {
+        "x": -90,
+        "y": 180,
+        "kind": "bad"
+      },
+      {
+        "x": -240,
+        "y": -180,
+        "kind": "bad"
+      },
+      {
+        "x": -30,
+        "y": 30,
+        "kind": "bad"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "compare",
+            "axis": "x",
+            "op": ">",
+            "value": 0
+          }
+        }
+      },
+      "destroy"
+    ]
+  }
+]

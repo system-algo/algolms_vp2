@@ -1,6 +1,16 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.mode === 'training' || level.mode === 'dark') {
+    const selected = new Map();
+    for (const group of new Set((level.items || []).filter(i => i.kind === 'hidden').map(i => i.group))) {
+      const candidates = level.items.filter(i => i.group === group);
+      selected.set(group, candidates[Math.floor(Math.random() * candidates.length)]);
+    }
+    return { ...level.start, tanks: level.items.filter(i => i.kind === 'tank' || (i.kind === 'hidden' && selected.get(i.group) === i)).map(i => ({ ...i })), collected: 0, revealed: [] };
+  }
+  if (level.mode === 'chef') return { fruitIndex: 0, cooked: [] };
+  if (level.mode === 'field') return { fruitIndex: 0, destroyed: [] };
   if (level.mode === 'sorting') return { ...level.start, boxes: level.cargo.map(b=>({...b, color: b.color === 'unknown' ? (Math.random()<.5?'green':'yellow') : b.color})), carrying:false, carriedBox:null, delivered:0 };
   if (level.mode === 'coordinates') return { ...level.start, visited: [] };
   if (level.plants) return { ...level.start, plants: level.plants.map(p => ({ ...p })), beam: null };
@@ -10,6 +20,9 @@ export function initialExcursionRobot(level) {
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.mode === 'field') return robot.fruitIndex >= level.objects.length;
+  if (level.mode === 'training' || level.mode === 'dark') return robot.tanks.length === 0 && (!level.target || (robot.x === level.target.x && robot.y === level.target.y));
+  if (level.mode === 'chef') return robot.fruitIndex >= level.fruits.length;
   if (level.mode === 'coordinates') return robot.visited.length === level.points.length;
   if (level.plants) return robot.plants.every(p => p.kind === 'big' || p.removed);
   if (level.rocks) return robot.rocks.length === 0;
@@ -21,6 +34,41 @@ export function isExcursionComplete(level, robot) {
 }
 
 export function stepExcursion(level, robot, step) {
+  if (level.mode === 'field') {
+    if (step.action === 'repeat_iteration') return robot;
+    const object=level.objects[robot.fruitIndex];
+    if (!object) return robot;
+    if (step.action === 'destroy') {
+      if (object.kind !== 'bad') throw new Error('This is a healthy plant. Change the coordinate boundaries.');
+      if (robot.destroyed.includes(robot.fruitIndex)) throw new Error('This weed has already been removed.');
+      return { ...robot, destroyed: [...robot.destroyed, robot.fruitIndex] };
+    }
+    if (step.action === 'advance_item') {
+      if (object.kind === 'bad' && !robot.destroyed.includes(robot.fruitIndex)) throw new Error('A weed was left on the field. Change the coordinate boundaries.');
+      return { ...robot, fruitIndex: robot.fruitIndex + 1 };
+    }
+    throw new Error('Use the destroy command inside the coordinate condition.');
+  }
+  if ((level.mode === 'training' || level.mode === 'dark') && step.action === 'take_cargo') {
+    const tank = robot.tanks.findIndex(i => i.x === robot.x && i.y === robot.y);
+    if (tank < 0) throw new Error('There is no gas tank under the robot. Check the sensor.');
+    return { ...robot, tanks: robot.tanks.filter((_,i) => i !== tank), collected: robot.collected + 1 };
+  }
+  if (level.mode === 'chef') {
+    if (step.action === 'repeat_iteration') return robot;
+    const fruit = level.fruits[robot.fruitIndex];
+    if (!fruit) return robot;
+    if (step.action === 'cook') {
+      if (!level.targets.includes(fruit.name)) throw new Error('This ingredient is not in the recipe. Check your condition.');
+      if (robot.cooked.includes(robot.fruitIndex)) throw new Error('This ingredient has already been cooked.');
+      return { ...robot, cooked: [...robot.cooked, robot.fruitIndex] };
+    }
+    if (step.action === 'advance_item') {
+      if (level.targets.includes(fruit.name) && !robot.cooked.includes(robot.fruitIndex)) throw new Error('You missed an ingredient needed for the recipe. Check your condition.');
+      return { ...robot, fruitIndex: robot.fruitIndex + 1 };
+    }
+    throw new Error('Use the cooking commands provided for this task.');
+  }
   if (level.mode === 'coordinates') {
     if (step.action === 'repeat_iteration') return robot;
     if (step.action === 'change_coordinate') {
@@ -81,5 +129,6 @@ export function stepExcursion(level, robot, step) {
   const next = getNextPosition(robot.x, robot.y, robot.direction);
   const tile = level.cells.find(cell => cell.x === next.x && cell.y === next.y);
   if (!tile || tile.blocked) throw new Error(tile?.blocked ? 'There is an obstacle ahead. Try another route.' : 'The robot went off the path. Check your commands and try again.');
-  return { ...robot, ...next };
+  if (level.items?.some(i => i.kind === 'dynamite' && i.x === next.x && i.y === next.y)) throw new Error('The robot stepped on dynamite. Check the sensor before moving.');
+  return { ...robot, ...next, ...(robot.revealed ? { revealed: [...new Set([...robot.revealed, `${next.x},${next.y}`])] } : {}) };
 }

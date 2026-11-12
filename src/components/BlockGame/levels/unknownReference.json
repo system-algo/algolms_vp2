@@ -1,0 +1,4621 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Unknown maze \u2014 introduction comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10800&task=24121&level=1"
+  },
+  {
+    "number": 2,
+    "activityName": "Unknown maze",
+    "hint": "Use repeat until the robot crosses the finish line.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 4,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 4
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 3,
+    "activityName": "Unknown maze",
+    "hint": "Check whether there is a path ahead; turn when it ends.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 2,
+      "y": 7,
+      "direction": 90
+    },
+    "target": {
+      "x": 6,
+      "y": 4
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 4,
+    "activityName": "Unknown maze",
+    "hint": "Now there are two turns. And both times you turn only when the road in front of you ends.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 1,
+      "y": 1
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 5,
+    "activityName": "Unknown maze",
+    "hint": "Your entire program should fit into the \"Repeat until...\" command.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 3,
+      "y": 5,
+      "direction": 90
+    },
+    "target": {
+      "x": 6,
+      "y": 3
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 6,
+    "activityName": "Unknown maze",
+    "hint": "Nested conditions are when another condition is inserted into the else section of the first condition.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 3,
+      "direction": 90
+    },
+    "target": {
+      "x": 7,
+      "y": 1
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 7,
+    "activityName": "Unknown maze",
+    "hint": "This program will be very similar to the previous one, you can even take a peek :)",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 7,
+      "direction": 90
+    },
+    "target": {
+      "x": 4,
+      "y": 2
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 8,
+    "activityName": "Unknown maze",
+    "hint": "Check at every step whether there is a road to your left. As soon as you find it, turn and walk!",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 7,
+      "direction": 90
+    },
+    "target": {
+      "x": 3,
+      "y": 4
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 9,
+    "type": "rating",
+    "hint": "How did you like the task?"
+  },
+  {
+    "number": 10,
+    "activityName": "Unknown maze",
+    "hint": "Look for the road that will be on your right. Don't forget that the goal is to reach the finish line.",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 4,
+      "direction": 90
+    },
+    "target": {
+      "x": 3,
+      "y": 7
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  },
+  {
+    "number": 11,
+    "activityName": "Unknown maze",
+    "hint": "If there's a path to the right, feel free to turn right!",
+    "dynamic": true,
+    "viewBox": "0 0 500 500",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 5,
+      "direction": 90
+    },
+    "target": {
+      "x": 8,
+      "y": 6
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until"
+    ]
+  }
+]

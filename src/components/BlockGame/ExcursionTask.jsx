@@ -17,6 +17,22 @@ const COMMANDS = [
 function ReferenceBoard({ level, robot }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
+  if (level.mode === 'field') return <svg className="excursion-board" viewBox="0 0 600 460" role="img" aria-label="Soccer field coordinate regions">
+    <rect x="20" y="20" width="560" height="420" rx="20" fill="#301d31" stroke="#518d74" strokeWidth="4" />
+    {Array.from({length:17},(_,i)=>i*30-240).map(x=><g key={`x${x}`}><line x1={300+x} y1="30" x2={300+x} y2="430" stroke={x===0?'white':'#66525c'}/>{x%60===0&&x!==0&&<text x={300+x} y="246" fill="white" fontSize="11" textAnchor="middle">{x}</text>}</g>)}
+    {Array.from({length:13},(_,i)=>i*30-180).map(y=><g key={`y${y}`}><line x1="30" y1={230-y} x2="570" y2={230-y} stroke={y===0?'white':'#66525c'}/>{y%60===0&&y!==0&&<text x="306" y={234-y} fill="white" fontSize="11">{y}</text>}</g>)}
+    {level.objects.map((o,i)=>!robot.destroyed.includes(i)&&<g key={i}><image href={`https://learn.alg.academy/img/games/weed/${o.kind}_object.png`} x={300+o.x-15} y={230-o.y-15} width="30" height="30"/>{i===robot.fruitIndex&&<circle cx={300+o.x} cy={230-o.y} r="23" fill="none" stroke="#ffcf32" strokeWidth="3"/>}</g>)}
+  </svg>;
+  if (level.mode === 'chef') return <div className="chef-stage">
+    <svg className="excursion-board" viewBox="0 0 600 560" role="img" aria-label={`Martian Chef, ingredient ${Math.min(robot.fruitIndex + 1, level.fruits.length)} of ${level.fruits.length}`}>
+      <image href="https://learn.alg.academy/img/games/fruits/holodilnik.png" x="377" y="192" width="200" height="288" />
+      <image href="https://learn.alg.academy/img/games/fruits/povar.png" x="264" y="166" width="139" height="217" />
+      <image href="https://learn.alg.academy/img/games/fruits/table.png" x="113" y="355" width="285" height="137" />
+      <image href="https://learn.alg.academy/img/games/fruits/borsch.png" x="180" y="429" width="173" height="121" />
+      <image href="https://learn.alg.academy/img/games/fruits/tube.png" width="429" height="362" />
+      {level.fruits.slice(robot.fruitIndex, robot.fruitIndex + 7).map((fruit, i) => <image key={i} href={`https://learn.alg.academy/img/games/fruits/${fruit.name}.png`} width="75" height="75" x={i < 3 ? 20 : 20 + (i - 2) * 75} y={i < 3 ? 277 - i * 75 : 52} />)}
+    </svg><p>Ingredients processed: {robot.fruitIndex} / {level.fruits.length} · Cooked: {robot.cooked.length}</p>
+  </div>;
   if (level.mode === 'coordinates') return <svg className="excursion-board excursion-coordinate-board" viewBox="0 0 798 704" role="img" aria-label={`Rocket at ${robot.x}, ${robot.y}`}>
     <image href="/vp-assets/flight/tablet.png" width="798" height="704" />
     {Array.from({ length: 9 }, (_, i) => i - 4).filter(n => n).map(n => <text key={`x${n}`} x={427 + n * 40} y="388" fill="white" fontSize="13" textAnchor="middle">{n * 2 * level.unit}</text>)}
@@ -45,6 +61,13 @@ function ReferenceBoard({ level, robot }) {
         </g>
       ))}
       {robot.rocks?.map((rock, i) => <svg key={`rock-${i}`} x={rock.x * 50} y={rock.y * 50} width="50" height="50" viewBox="0 0 50 50" overflow="hidden"><image href="/vp-assets/excavation/rock.svg" width="300" height="50" /></svg>)}
+      {level.items?.map((item,i) => {
+        const present = robot.tanks?.some(t=>t.x===item.x&&t.y===item.y);
+        const hidden = item.kind === 'hidden' && !robot.revealed?.includes(`${item.x},${item.y}`);
+        if (item.kind !== 'dynamite' && !present && !hidden) return null;
+        const frame = hidden ? item.group - 68 : item.kind === 'dynamite' ? 1 : 14;
+        return <svg key={`item-${i}`} x={item.x*50} y={item.y*50} width="50" height="50" viewBox={`${frame*50} 0 50 50`} overflow="hidden"><image href="https://learn.alg.academy/img/games/maze/lesson6/objects.svg" width="750" height="50" /></svg>;
+      })}
       {level.target && <image href={`${ASSETS}marker.png`} x={level.target.x * 50 + 0.5} y={level.target.y * 50 + 0.5} width="49" height="49" />}
       {level.portals?.map((portal, i) => <image key={`portal-${i}`} href={portal.image || level.portalImage} x={portal.x * 50} y={portal.y * 50} width="49" height="49" />)}
       {robot.boxes?.map((box, i) => <image key={`box-${i}`} href={box.image || level.boxImage} x={box.x * 50} y={box.y * 50} width="49" height="49" />)}
@@ -130,7 +153,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           setStatus('completed');
         } else {
           setStatus('failed');
-          setMessage(level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
+          setMessage(level.mode === 'field' ? 'Process every point, remove all weeds and preserve the healthy plants.' : level.mode === 'chef' ? 'Process every ingredient using forever, if and the logical conditions.' : level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
         }
         return;
       }
@@ -182,7 +205,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           <div className="excursion-dialog" role="dialog" aria-modal="true" aria-label={guide ? 'Task instructions' : status === 'completed' ? 'Congratulations!' : 'Try again'}>
             {(guide === 'intro' || !guide) && <img className="excursion-mascot" src={`${ASSETS}mascot.svg`} alt="" />}
             {!guide && <h2>{status === 'completed' ? 'Congratulations!' : 'Try again'}</h2>}
-            <p>{guide ? guideText : status === 'completed' ? level.success : message}</p>
+            <p>{guide ? guideText : status === 'completed' ? (level.success || 'Task completed!') : message}</p>
             {guide === 'intro' && level.number === 1 && !level.cargo && !level.buildings && <img className="excursion-intro-diagram" src={`${ASSETS}intro.svg`} alt="Lead the robot to the marked station" />}
             {guide === "intro" && level.instructionImage && <img className="excursion-instruction-image" src={level.instructionImage} alt="Repeat six times: move forward" />}
             <div className="excursion-dialog-actions">

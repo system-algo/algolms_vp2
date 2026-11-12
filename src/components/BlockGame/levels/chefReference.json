@@ -1,0 +1,2122 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Martian Chef \u2014 comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10664&task=23815&level=1"
+  },
+  {
+    "number": 2,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "What do we need for pumpkin pie? Pumpkin, of course! But how will the robot distinguish it from the watermelon and zucchini?",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "pumpkin"
+    ],
+    "fruits": [
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 3,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "We need to pick the zucchini. I wonder if there's a grill on Mars?",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "zucchini"
+    ],
+    "fruits": [
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 4,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "What can we make with zucchini and carrots? That's exactly what we need for lunch!",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "zucchini",
+      "carrot"
+    ],
+    "fruits": [
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 5,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Martian melon! Let's put aside the watermelons and pumpkins.",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "watermelon",
+      "pumpkin"
+    ],
+    "fruits": [
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 6,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Tomatoes and carrots are perfect for the soup!",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "tomato",
+      "carrot"
+    ],
+    "fruits": [
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 7,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Put the zucchini and cucumbers in the pot.",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "zucchini",
+      "cucumber"
+    ],
+    "fruits": [
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 8,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Mmm... Let's pick apples! Maybe it's for apple compote?",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "apple"
+    ],
+    "fruits": [
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 9,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Which dish has pumpkin, cucumbers, and peppers in it? Interesting... Use a separate \"if __\" construction for each vegetable.",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "pumpkin",
+      "cucumber",
+      "pepper"
+    ],
+    "fruits": [
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 10,
+    "type": "rating",
+    "hint": "How did you like the task?"
+  },
+  {
+    "number": 11,
+    "type": "source",
+    "hint": "Martian Chef \u2014 comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10664&task=23815&level=11"
+  },
+  {
+    "number": 12,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Let's make a salad of tomatoes and cucumbers!",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "tomato",
+      "cucumber"
+    ],
+    "fruits": [
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 13,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Strange dish... Let's pick watermelons, carrots, and tomatoes!",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "watermelon",
+      "carrot",
+      "tomato"
+    ],
+    "fruits": [
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 14,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Set aside carrots and peppers for a spicy salad! How many criteria do we need?",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "carrot",
+      "pepper"
+    ],
+    "fruits": [
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 15,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "We're getting pumpkins, oranges, and tomatoes for the second course. Surprising Martian recipes...",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "pumpkin",
+      "orange",
+      "tomato"
+    ],
+    "fruits": [
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 16,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "For the stew, we will need tomatoes, carrots, zucchini, peppers, and pumpkin.",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "tomato",
+      "carrot",
+      "zucchini",
+      "pepper",
+      "pumpkin"
+    ],
+    "fruits": [
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pumpkin",
+        "color": "orange",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "zucchini",
+        "color": "green",
+        "shape": "long",
+        "size": "large"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "watermelon",
+        "color": "green",
+        "shape": "round",
+        "size": "large"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  },
+  {
+    "number": 17,
+    "mode": "chef",
+    "activityName": "Martian Chef",
+    "hint": "Let's pick oranges and apples. It will make a great salad! And if you add some ice cream...",
+    "dynamic": true,
+    "start": {
+      "fruitIndex": 0,
+      "cooked": []
+    },
+    "targets": [
+      "orange",
+      "apple"
+    ],
+    "fruits": [
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "tomato",
+        "color": "red",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "pepper",
+        "color": "red",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "carrot",
+        "color": "orange",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "apple",
+        "color": "green",
+        "shape": "round",
+        "size": "small"
+      },
+      {
+        "name": "cucumber",
+        "color": "green",
+        "shape": "long",
+        "size": "small"
+      },
+      {
+        "name": "orange",
+        "color": "orange",
+        "shape": "round",
+        "size": "small"
+      }
+    ],
+    "toolbox": [
+      "forever",
+      {
+        "type": "if_condition",
+        "params": {
+          "condition": {
+            "kind": "color",
+            "value": "red"
+          }
+        }
+      },
+      "cook"
+    ]
+  }
+]

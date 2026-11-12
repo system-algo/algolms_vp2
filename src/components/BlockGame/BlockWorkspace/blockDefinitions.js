@@ -252,6 +252,8 @@ export function createBlockInstance(type, customParams = {}) {
   if (type === 'if_else') { instance.children = [createBlockInstance('branch_if'), createBlockInstance('branch_else')]; }
   if (['branch_if', 'if_condition'].includes(type)) instance.params.condition = {kind:'cargo_color',value:'green'};
   if (type === 'repeat_until') instance.params.condition = {kind:'finish',value:'crossed'};
+  if (['set_variable','add_variable','send_variable'].includes(type)) instance.params = {name:'variable',value:0,...customParams};
+  if (type==='repeat_variable') instance.params = {value:{kind:'variable',name:'variable'},...customParams};
   return instance;
 }
 
@@ -290,3 +292,7 @@ for (const unit of [1, 10, 30]) for (const axis of ['x', 'y']) {
 }
 
 for (const [type,label,kind] of [['if_else','if / else','branch_block'],['branch_if','if','c_block'],['branch_else','else','c_block'],['if_condition','if','c_block'],['repeat_until','repeat until','c_block'],['forever','forever','c_block'],['cook','cook','statement']]) BLOCK_DEFINITIONS[type] = { type, label, kind, category: 'control', color: '#5ba55b', darkColor: '#498449', params: [] };
+
+for (const [type,label,kind] of [['mine','mine','statement'],['set_variable','set','statement'],['add_variable','change by','statement'],['send_variable','send value','statement'],['next_crystal','next crystal','statement'],['repeat_variable','repeat times','c_block']]) {
+  BLOCK_DEFINITIONS[type] = {type,label,kind,category:'variables',color:type==='mine'?'#995ba7':'#dd8b23',darkColor:'#98601d',params:[]};
+}

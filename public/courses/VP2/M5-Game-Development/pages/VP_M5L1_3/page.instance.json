@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "VP_M5L1_3",
+  "title": "Land of minerals",
+  "type": "block-game-task",
+  "taskCount": 11,
+  "metadata": {
+    "courseId": "VP2",
+    "source": "learn.alg.academy rendered UI",
+    "sourceInspectedAt": "2026-11-13"
+  },
+  "tasks": [
+    {
+      "id": "VP_M5L1_3_1",
+      "taskId": "VP_M5L1_3_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Land of minerals - 1",
+      "instruction": "Land of minerals \u2014 introduction comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_1_state_1",
+          "stateId": "VP_M5L1_3_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_2",
+      "taskId": "VP_M5L1_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Land of minerals - 2",
+      "instruction": "In all the following tasks, you need to collect an exact number of minerals. To do that, you can ask the robot to perform an action until the variable is equal to the number you need. Remember to increase the variable when collecting minerals. In this task, you need to collect 5 minerals.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_2_state_1",
+          "stateId": "VP_M5L1_3_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_3",
+      "taskId": "VP_M5L1_3_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Land of minerals - 3",
+      "instruction": "Now you need to collect 10 minerals from all the cells. You can collect minerals until the cage under the robot is empty.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_3_state_1",
+          "stateId": "VP_M5L1_3_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_4",
+      "taskId": "VP_M5L1_3_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Land of minerals - 4",
+      "instruction": "Now we need to collect 20 minerals, and again we don't know how many of them are in the cells.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_4_state_1",
+          "stateId": "VP_M5L1_3_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_5",
+      "taskId": "VP_M5L1_3_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Land of minerals - 5",
+      "instruction": "A very tricky task! And your goal is to collect 15 minerals.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_5_state_1",
+          "stateId": "VP_M5L1_3_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_6",
+      "taskId": "VP_M5L1_3_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Land of minerals - 6",
+      "instruction": "Need to collect 15 minerals again, moving along the Martian ladder!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_6_state_1",
+          "stateId": "VP_M5L1_3_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_7",
+      "taskId": "VP_M5L1_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Land of minerals - 7",
+      "instruction": "commands used",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_7_state_1",
+          "stateId": "VP_M5L1_3_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_8",
+      "taskId": "VP_M5L1_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Land of minerals - 8",
+      "instruction": "Did you like the task?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_8_state_1",
+          "stateId": "VP_M5L1_3_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_9",
+      "taskId": "VP_M5L1_3_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Land of minerals - 9",
+      "instruction": "commands used",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_9_state_1",
+          "stateId": "VP_M5L1_3_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_10",
+      "taskId": "VP_M5L1_3_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Land of minerals - 10",
+      "instruction": "Some kind of gold key... Collect 30 minerals!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_10_state_1",
+          "stateId": "VP_M5L1_3_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L1_3_11",
+      "taskId": "VP_M5L1_3_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Land of minerals - 11",
+      "instruction": "commands used",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L1_3_11_state_1",
+          "stateId": "VP_M5L1_3_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

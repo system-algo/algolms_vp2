@@ -1,6 +1,7 @@
 import { getNextPosition } from './gameInterpreter.js';
 
 export function initialExcursionRobot(level) {
+  if (level.mode === 'minerals') return {...level.start,variables:{},minerals:level.minerals.map(m=>({...m})),collected:0};
   if (level.mode === 'training' || level.mode === 'dark') {
     const selected = new Map();
     for (const group of new Set((level.items || []).filter(i => i.kind === 'hidden').map(i => i.group))) {
@@ -20,6 +21,7 @@ export function initialExcursionRobot(level) {
 }
 
 export function isExcursionComplete(level, robot) {
+  if (level.mode === 'minerals') return level.targetMinerals ? robot.collected === level.targetMinerals : robot.minerals.every(m=>m.amount===0) && (!level.target || (robot.x===level.target.x&&robot.y===level.target.y));
   if (level.mode === 'field') return robot.fruitIndex >= level.objects.length;
   if (level.mode === 'training' || level.mode === 'dark') return robot.tanks.length === 0 && (!level.target || (robot.x === level.target.x && robot.y === level.target.y));
   if (level.mode === 'chef') return robot.fruitIndex >= level.fruits.length;
@@ -34,6 +36,18 @@ export function isExcursionComplete(level, robot) {
 }
 
 export function stepExcursion(level, robot, step) {
+  if(['set_variable','add_variable'].includes(step.action)) {
+    const value=step.action==='set_variable'?step.value:(robot.variables?.[step.name]||0)+step.value;
+    if(!Number.isFinite(value)||Math.abs(value)>1e12)throw new Error('Choose a finite variable value.');
+    return {...robot,variables:{...robot.variables,[step.name]:value}};
+  }
+  if(level.mode==='minerals'&&step.action==='mine') {
+    const index=robot.minerals.findIndex(m=>m.x===robot.x&&m.y===robot.y&&m.amount>0);
+    if(index<0)throw new Error('There is no mineral under the robot.');
+    const collected=robot.collected+1;
+    if(level.targetMinerals&&collected>level.targetMinerals)throw new Error('Too many minerals! Check the counter and repeat-until condition.');
+    return {...robot,collected,minerals:robot.minerals.map((m,i)=>i===index?{...m,amount:m.amount-1}:m)};
+  }
   if (level.mode === 'field') {
     if (step.action === 'repeat_iteration') return robot;
     const object=level.objects[robot.fruitIndex];

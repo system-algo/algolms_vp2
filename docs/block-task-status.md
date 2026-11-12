@@ -50,3 +50,9 @@ Module 3 Sorting cargo and rocket journey reference routing was moved out of the
 Validation: production build; 24 existing Excursion/cargo tests; 14 Chef completion/incorrect-recipe checks; 12 field completion/healthy-plant checks; reachability of all 27 maze/tank boards; cross-coordinate comparisons. This is logic/build validation, not a full browser end-to-end validation of the clone. No Render deployment check was run.
 
 Remaining limits: Scratch/editor and quiz pages are outside the Block Task pass. New artwork currently references the original public asset URLs; local image bundling is deferred as requested. Chef/field use the shared clone workspace rather than an exact copy of the original Blockly UI. Training hidden-group randomization implements the observed one-tank-per-color goal; its underlying original randomization was not inspected. Dark-mode fog and the original field harvester animation have not been reproduced. Source comics are linked, not falsely marked complete. Automatic approval review blocked the first default-branch push; commits are local pending explicit push confirmation.
+
+## Module 5 — Land of minerals
+
+Restored all eleven positions (nine mineral programs, introduction link and rating). Maps and initial mineral quantities were transcribed from rendered source SVGs. Added variable assignment/change, exact mineral collection, live counters and mineral sensors. Source question-mark counters stay hidden. Fixed condition editors accidentally placed in the pointer handler so conditional blocks can be edited and dragged.
+
+Validation: production build; all nine mineral routes with exact collection targets and live variable counts; Module 4 logic regression passed. Artwork remains on the original public asset host as requested. No Render deployment check.

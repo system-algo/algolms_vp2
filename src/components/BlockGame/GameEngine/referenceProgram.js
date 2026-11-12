@@ -1,6 +1,21 @@
 import { compileProgram, getNextPosition } from './gameInterpreter.js';
+export function evaluateValue(value, level, state) {
+  if(typeof value==='number') {if(!Number.isFinite(value))throw new Error('Use a finite number.');return value;}
+  if(value?.kind==='variable')return state.variables?.[value.name] ?? 0;
+  if(value?.kind==='crystal_size')return state.crystals?.[state.crystalIndex]?.size ?? 0;
+  if(value?.kind==='arithmetic'){
+    const a=evaluateValue(value.a,level,state),b=evaluateValue(value.b,level,state);
+    if(!['+','-'].includes(value.op))throw new Error('Choose addition or subtraction.');
+    const result=value.op==='+'?a+b:a-b;
+    if(!Number.isFinite(result)||Math.abs(result)>1e12)throw new Error('The calculated value is too large.');
+    return result;
+  }
+  throw new Error('Choose a value for this command.');
+}
 export function evaluateCondition(c, level, state) {
   if (!c) return false;
+  if(c.kind==='value_compare'){const a=evaluateValue(c.a,level,state),b=evaluateValue(c.b,level,state);return c.op==='='?a===b:c.op==='<'?a<b:a>b;}
+  if(c.kind==='crystal_color')return state.crystals?.[state.crystalIndex]?.color===c.value;
   if(c.kind==='and') return evaluateCondition(c.a,level,state)&&evaluateCondition(c.b,level,state);
   if(c.kind==='or') return evaluateCondition(c.a,level,state)||evaluateCondition(c.b,level,state);
   if(c.kind==='not') return !evaluateCondition(c.a,level,state);
@@ -17,6 +32,7 @@ export function evaluateCondition(c, level, state) {
   if(['color','shape','size','fruit'].includes(c.kind)) return fruit?.[c.kind=== 'fruit'?'name':c.kind]===c.value;
   const direction=(state.direction+(c.value==='left'?270:c.value==='right'?90:0))%360;
   const next=getNextPosition(state.x,state.y,direction);
+  if(c.kind==='mineral') {const p=c.value==='under'?state:next;return state.minerals?.some(m=>m.x===p.x&&m.y===p.y&&m.amount>0);}
   if(c.kind==='tank' || c.kind==='dynamite') {
     const position = c.value === 'under' ? state : next;
     const items = c.kind === 'tank' ? state.tanks || [] : (level.items || []).filter(i=>i.kind==='dynamite');
@@ -41,15 +57,19 @@ export function* referenceProgram(blocks, level, readState) {
       }else if(b.type==='if_condition'||b.type==='branch_if'){
         yield {action:'repeat_iteration',blockId:b.id};
         if(evaluateCondition(b.params?.condition,level,readState()))yield* walk(b.children||[],depth+1);
-      }else if(['repeat_until','forever','repeat'].includes(b.type)){
+      }else if(['repeat_until','forever','repeat','repeat_variable'].includes(b.type)){
+        const times=b.type==='repeat_variable'?evaluateValue(b.params?.value,level,readState()):Number(b.params?.times ?? 2);
+        if(['repeat','repeat_variable'].includes(b.type)&&(!Number.isInteger(times)||times<0||times>1000))throw new Error('Repeat needs a whole number from 0 to 1000.');
         let i=0;
-        while(b.type==='repeat'?i<Number(b.params?.times||2):b.type==='forever'||!evaluateCondition(b.params?.condition,level,readState())){
+        while(['repeat','repeat_variable'].includes(b.type)?i<times:b.type==='forever'||!evaluateCondition(b.params?.condition,level,readState())){
           if(++operations>3000)throw new Error('The loop did not finish. Check its condition.');
           yield {action:'repeat_iteration',blockId:b.id};
           yield* walk(b.children||[],depth+1);
           if(b.type==='forever'&&['chef','field'].includes(level.mode))yield {action:'advance_item',blockId:b.id};
           i++;
         }
+      }else if(['set_variable','add_variable','send_variable','mine','next_crystal'].includes(b.type)){
+        yield {action:b.type,name:b.params?.name||'variable',value:b.type==='set_variable'||b.type==='add_variable'?evaluateValue(b.params?.value ?? 0,level,readState()):undefined,blockId:b.id};
       }else if(b.type==='cook')yield {action:'cook',blockId:b.id};
       else for(const step of compileProgram([b]))yield step;
     }

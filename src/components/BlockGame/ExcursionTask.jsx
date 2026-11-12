@@ -61,6 +61,7 @@ function ReferenceBoard({ level, robot }) {
         </g>
       ))}
       {robot.rocks?.map((rock, i) => <svg key={`rock-${i}`} x={rock.x * 50} y={rock.y * 50} width="50" height="50" viewBox="0 0 50 50" overflow="hidden"><image href="/vp-assets/excavation/rock.svg" width="300" height="50" /></svg>)}
+      {robot.minerals?.filter(m=>m.amount>0).map((m,i)=><g key={`mineral-${i}`}><svg x={m.x*50} y={m.y*50-10} width="50" height="50" viewBox="0 0 50 50" overflow="hidden"><image href="https://learn.alg.academy/img/games/maze/lesson11/crystall.svg" width="200" height="50" /></svg><ellipse cx={m.x*50+27} cy={m.y*50+27} rx="12" ry="10" fill="white"/><text x={m.x*50+27} y={m.y*50+32} textAnchor="middle" fontSize="14" fontWeight="bold">{level.hideMineralCounts?'?':m.amount}</text></g>)}
       {level.items?.map((item,i) => {
         const present = robot.tanks?.some(t=>t.x===item.x&&t.y===item.y);
         const hidden = item.kind === 'hidden' && !robot.revealed?.includes(`${item.x},${item.y}`);
@@ -153,7 +154,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           setStatus('completed');
         } else {
           setStatus('failed');
-          setMessage(level.mode === 'field' ? 'Process every point, remove all weeds and preserve the healthy plants.' : level.mode === 'chef' ? 'Process every ingredient using forever, if and the logical conditions.' : level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
+          setMessage(level.mode === 'minerals' ? 'Collect the required minerals. Check your variable values, mine commands and loop conditions.' : level.mode === 'field' ? 'Process every point, remove all weeds and preserve the healthy plants.' : level.mode === 'chef' ? 'Process every ingredient using forever, if and the logical conditions.' : level.mode === 'coordinates' ? 'Visit every orange landing point. Check the X and Y coordinates.' : level.plants ? 'Destroy the pest plants and water every small sprout. Check the direction of the laser.' : level.cargo ? 'Deliver all the boxes to the portals. Check your commands and try again.' : 'The robot has not reached the marked destination. Check your commands and try again.');
         }
         return;
       }
@@ -196,7 +197,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>
-          <p>{level.hint}</p>{level.cargo && <p className="excursion-cargo-count" aria-live="polite">{level.collectOnly ? 'Boxes collected' : 'Boxes delivered'}: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
+          <p>{level.hint}</p>{robot.variables&&<p aria-live="polite">{Object.entries(robot.variables).map(([name,value])=>`${name} = ${value}`).join(' · ')}{level.mode==='minerals'&&` · Minerals collected: ${robot.collected}${level.targetMinerals?` / ${level.targetMinerals}`:''}`}</p>}{level.cargo && <p className="excursion-cargo-count" aria-live="polite">{level.collectOnly ? 'Boxes collected' : 'Boxes delivered'}: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
           <button className="excursion-guide-link" type="button" onClick={() => setGuide('intro')}>Show instructions</button>
         </div>
       </div>

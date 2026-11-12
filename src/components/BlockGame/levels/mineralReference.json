@@ -1,0 +1,4941 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Land of minerals \u2014 introduction comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=5&lesson=10985&task=24870&level=1"
+  },
+  {
+    "number": 2,
+    "activityName": "Land of minerals",
+    "hint": "In all the following tasks, you need to collect an exact number of minerals. To do that, you can ask the robot to perform an action until the variable is equal to the number you need. Remember to increase the variable when collecting minerals. In this task, you need to collect 5 minerals.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 2,
+        "y": 3,
+        "amount": 9
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 5,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "activityName": "Land of minerals",
+    "hint": "Now you need to collect 10 minerals from all the cells. You can collect minerals until the cage under the robot is empty.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 2,
+        "y": 3,
+        "amount": 5
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "amount": 4
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "amount": 7
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 10,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "activityName": "Land of minerals",
+    "hint": "Now we need to collect 20 minerals, and again we don't know how many of them are in the cells.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 270
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 4,
+        "y": 0,
+        "amount": 6
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "amount": 7
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "amount": 2
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 20,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "activityName": "Land of minerals",
+    "hint": "A very tricky task! And your goal is to collect 15 minerals.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 500 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 7,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      }
+    ],
+    "minerals": [
+      {
+        "x": 1,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "amount": 9
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 15,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "activityName": "Land of minerals",
+    "hint": "Need to collect 15 minerals again, moving along the Martian ladder!",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 450",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 1,
+        "y": 3,
+        "amount": 9
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "amount": 9
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "amount": 9
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "amount": 9
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "amount": 9
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 15,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "activityName": "Land of minerals",
+    "hint": "commands used",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 1,
+        "y": 1,
+        "amount": 10
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "amount": 10
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "amount": 10
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "amount": 10
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 30,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "type": "rating",
+    "hint": "Did you like the task?"
+  },
+  {
+    "number": 9,
+    "activityName": "Land of minerals",
+    "hint": "commands used",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 450 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 4,
+        "y": 0,
+        "amount": 5
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "amount": 9
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "amount": 9
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 20,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "activityName": "Land of minerals",
+    "hint": "Some kind of gold key... Collect 30 minerals!",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 450",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 4,
+      "y": 7,
+      "direction": 270
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 0,
+        "y": 0,
+        "amount": 10
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "amount": 8
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "amount": 9
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "amount": 5
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 30,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "activityName": "Land of minerals",
+    "hint": "commands used",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 3,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 1,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 5,
+        "y": 0,
+        "amount": 5
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "amount": 2
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "amount": 2
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "amount": 10
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "if_else",
+      "repeat_until",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "targetMinerals": 20,
+    "hideMineralCounts": true,
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      }
+    ]
+  }
+]

@@ -7,6 +7,7 @@ import { countCommands } from './BlockWorkspace/blockDefinitions.js';
 import { playLmsSound, LMS_SOUND_TYPES } from '../../utils/lmsSounds';
 import './BlockGameTask.css';
 import ExcursionTask from './ExcursionTask.jsx';
+import mineralReferences from './levels/mineralReference.json';
 import excursionReferences from './levels/excursionReference.json';
 import rocketReferences from './levels/rocketReference.json';
 import fieldReferences from './levels/fieldReference.json';
@@ -83,6 +84,8 @@ function resolveInitialLevelId(task, initialLevelId) {
 
 export default function BlockGameTask(props) {
   const taskId = String(props.task?.id || props.task?.taskId || '');
+  const mineral=taskId.match(/^VP2?_M5L1_3_(\d+)$/);
+  if(mineral)return <ExcursionTask key={taskId} {...props} level={mineralReferences.find(l=>l.number===Number(mineral[1]))}/>;
   const field = taskId.match(/^VP2?_M4L4_2_(\d+)$/);
   if (field) return <ExcursionTask key={taskId} {...props} level={fieldReferences.find(l => l.number === Number(field[1]))} />;
   const dark = taskId.match(/^VP2?_M4L2_4_(\d+)$/);

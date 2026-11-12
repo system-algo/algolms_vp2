@@ -22,9 +22,11 @@
     },
     {
       "id": "VP2_M5L1_3",
-      "title": "Variables in loops - Part 3",
+      "title": "Land of minerals",
       "lessonId": "VP2_M5L1",
-      "taskCount": 11
+      "taskCount": 11,
+      "type": "block-game-task",
+      "level_type": "block_game"
     },
     {
       "id": "VP2_M5L1_4",

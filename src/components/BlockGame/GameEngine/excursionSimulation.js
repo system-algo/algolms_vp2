@@ -8,6 +8,7 @@ export function initialExcursionRobot(level) {
 
 export function isExcursionComplete(level, robot) {
   if (level.rocks) return robot.rocks.length === 0;
+  if (level.collectOnly) return robot.boxes.length === 0;
   if (level.buildings) return robot.built.length === level.buildings.length;
   return level.cargo
     ? robot.boxes.length === 0 && !robot.carrying && robot.delivered === level.cargo.length
@@ -29,10 +30,10 @@ export function stepExcursion(level, robot, step) {
   if (step.action === 'repeat_iteration') return robot;
   if (step.action === 'take_cargo') {
     if (!level.cargo) throw new Error('There is no cargo here to take.');
-    if (robot.carrying) throw new Error('The robot can only carry one box at a time.');
+    if (!level.collectOnly && robot.carrying) throw new Error('The robot can only carry one box at a time.');
     const index = robot.boxes.findIndex(box => box.x === robot.x && box.y === robot.y);
     if (index < 0) throw new Error('There is no cargo here to take.');
-    return { ...robot, carrying: true, boxes: robot.boxes.filter((_, i) => i !== index) };
+    return { ...robot, carrying: !level.collectOnly, delivered: level.collectOnly ? robot.delivered + 1 : robot.delivered, boxes: robot.boxes.filter((_, i) => i !== index) };
   }
   if (step.action === 'put_cargo') {
     if (!robot.carrying) throw new Error('The robot is not carrying cargo.');
@@ -40,6 +41,7 @@ export function stepExcursion(level, robot, step) {
     if (robot.boxes.some(box => box.x === robot.x && box.y === robot.y)) throw new Error('There is already a box here.');
     return { ...robot, carrying: false, boxes: [...robot.boxes, { x: robot.x, y: robot.y }] };
   }
+  if (step.action === 'point_direction') return { ...robot, direction: ((step.direction % 360) + 360) % 360 };
   if (step.action === 'turn_direction') return { ...robot, direction: (robot.direction + (step.direction === 'left' ? 270 : 90)) % 360 };
   if (step.action !== 'move_forward') throw new Error('Use the commands provided for this task.');
   const next = getNextPosition(robot.x, robot.y, robot.direction);

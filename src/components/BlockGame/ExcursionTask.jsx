@@ -138,7 +138,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   return (
     <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
-        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...COMMANDS, ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
+        <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={[...(level.collectOnly ? [BLOCK_TYPES.MOVE_FORWARD, BLOCK_TYPES.POINT_DIRECTION, BLOCK_TYPES.TAKE_CARGO] : COMMANDS), ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
@@ -147,7 +147,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>
-          <p>{level.hint}</p>{level.cargo && <p className="excursion-cargo-count" aria-live="polite">Boxes delivered: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
+          <p>{level.hint}</p>{level.cargo && <p className="excursion-cargo-count" aria-live="polite">{level.collectOnly ? 'Boxes collected' : 'Boxes delivered'}: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
           <button className="excursion-guide-link" type="button" onClick={() => setGuide('intro')}>Show instructions</button>
         </div>
       </div>

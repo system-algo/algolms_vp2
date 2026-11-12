@@ -1,0 +1,6073 @@
+[
+  {
+    "number": 1,
+    "type": "image",
+    "activityName": "Collecting cargo",
+    "hint": "Collecting cargo",
+    "image": "/vp-assets/collecting/comic1.png"
+  },
+  {
+    "number": 2,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 1.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 1.0,
+      "y": 4.0,
+      "direction": 90.0
+    },
+    "cargo": [
+      {
+        "x": 5.0,
+        "y": 5.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "You need to turn to pick up the cargo!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 3,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 2.0,
+      "y": 2.0,
+      "direction": 90.0
+    },
+    "cargo": [
+      {
+        "x": 3.0,
+        "y": 6.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "Here we turn, and then we go down!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 4,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 4.0,
+      "y": 6.0,
+      "direction": 90.0
+    },
+    "cargo": [
+      {
+        "x": 5.0,
+        "y": 2.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "And here we go up!!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 5,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 1.0,
+      "y": 1.0,
+      "direction": 180.0
+    },
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 5.0
+      },
+      {
+        "x": 4.0,
+        "y": 5.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "Two boxes already!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 6,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 6.0,
+      "y": 0.0,
+      "direction": 180.0
+    },
+    "cargo": [
+      {
+        "x": 3.0,
+        "y": 3.0
+      },
+      {
+        "x": 3.0,
+        "y": 6.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "There are important documents in these boxes!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!",
+    "starter": [
+      {
+        "type": "point_direction",
+        "params": {
+          "direction": 270
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 3
+        },
+        "children": [
+          {
+            "type": "move_forward"
+          }
+        ]
+      },
+      {
+        "type": "point_direction",
+        "params": {
+          "direction": 180
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        },
+        "children": [
+          {
+            "type": "repeat",
+            "params": {
+              "times": 3
+            },
+            "children": [
+              {
+                "type": "move_forward"
+              }
+            ]
+          },
+          {
+            "type": "take_cargo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 1.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 1.0,
+      "y": 5.0,
+      "direction": 90.0
+    },
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 1.0
+      },
+      {
+        "x": 5.0,
+        "y": 1.0
+      },
+      {
+        "x": 5.0,
+        "y": 5.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "I wonder which way you will lead the robot...",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 8,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 6.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "x": 4.0,
+        "y": 2.0
+      },
+      {
+        "x": 4.0,
+        "y": 4.0
+      },
+      {
+        "x": 6.0,
+        "y": 4.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "Wow! Four boxes at once with groceries!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 9,
+    "type": "rating",
+    "activityName": "Collecting cargo",
+    "hint": "Did you like the tasks?"
+  },
+  {
+    "number": 10,
+    "type": "image",
+    "activityName": "Collecting cargo",
+    "hint": "Bonus tasks",
+    "image": "/vp-assets/collecting/comic10.png"
+  },
+  {
+    "number": 11,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 6.0,
+      "y": 1.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 1.0,
+        "y": 3.0
+      },
+      {
+        "x": 3.0,
+        "y": 3.0
+      },
+      {
+        "x": 3.0,
+        "y": 5.0
+      },
+      {
+        "x": 6.0,
+        "y": 5.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "Difficult level! So first, let's deploy the robot!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 12,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 500 500",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 0.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 1.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 9.0,
+        "y": 3.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 2.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 1.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 8.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 8.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 8.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 9.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 8.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 9.0,
+        "y": 9.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 7.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 3.0
+      },
+      {
+        "x": 7.0,
+        "y": 3.0
+      },
+      {
+        "x": 4.0,
+        "y": 6.0
+      },
+      {
+        "x": 7.0,
+        "y": 6.0
+      },
+      {
+        "x": 2.0,
+        "y": 7.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "Bonus levels! More and more difficult!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 13,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 4.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 4.0
+      },
+      {
+        "x": 4.0,
+        "y": 4.0
+      },
+      {
+        "x": 6.0,
+        "y": 4.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "This task is easy to solve using loops!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 14,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 3.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 4.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 3.0,
+        "y": 4.0
+      },
+      {
+        "x": 6.0,
+        "y": 4.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "May the loops be with you!!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  },
+  {
+    "number": 15,
+    "activityName": "Collecting cargo",
+    "viewBox": "0 0 400 400",
+    "cells": [
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 0.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 1.0,
+        "atlasX": 0.0,
+        "atlasY": 2.0,
+        "blocked": false
+      },
+      {
+        "x": 2.0,
+        "y": 1.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 1.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 3.0,
+        "y": 2.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 2.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 3.0,
+        "blocked": false
+      },
+      {
+        "x": 4.0,
+        "y": 3.0,
+        "atlasX": 2.0,
+        "atlasY": 0.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 3.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 4.0,
+        "atlasX": 0.0,
+        "atlasY": 1.0,
+        "blocked": false
+      },
+      {
+        "x": 5.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 4.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 5.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 6.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 0.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 1.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 2.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 3.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 4.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 5.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 6.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      },
+      {
+        "x": 7.0,
+        "y": 7.0,
+        "atlasX": 4.0,
+        "atlasY": 3.0,
+        "blocked": true
+      }
+    ],
+    "start": {
+      "x": 1.0,
+      "y": 1.0,
+      "direction": 0.0
+    },
+    "cargo": [
+      {
+        "x": 2.0,
+        "y": 2.0
+      },
+      {
+        "x": 3.0,
+        "y": 3.0
+      },
+      {
+        "x": 4.0,
+        "y": 4.0
+      }
+    ],
+    "collectOnly": true,
+    "loops": true,
+    "hint": "This task is easy to solve with loops!",
+    "tiles": "/vp-assets/excursion/tiles.png",
+    "pattern": "/vp-assets/collecting/background.png",
+    "boxImage": "/vp-assets/collecting/box.svg",
+    "success": "Way to go! You collected all the cargo!"
+  }
+]

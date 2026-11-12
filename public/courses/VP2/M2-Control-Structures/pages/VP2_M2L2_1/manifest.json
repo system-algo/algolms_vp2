@@ -5,7 +5,7 @@
   "type": "block-game-task",
   "level_type": "block_game",
   "activityType": "block_game",
-  "taskCount": 5,
+  "taskCount": 15,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -19,20 +19,19 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Collecting cargo - Level 1",
+      "title": "Collecting cargo - 1",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
       "levelId": "mars_level_3",
-      "instruction": "Complete level 1 of Collecting cargo. Navigate the robot and achieve the mission goals!",
+      "instruction": "Collecting cargo",
       "states": [
         {
           "id": "VP2_M2L2_1_1_state_1",
           "stateId": "VP2_M2L2_1_1_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_3"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -42,20 +41,19 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Collecting cargo - Level 2",
+      "title": "Collecting cargo - 2",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_4",
-      "instruction": "Complete level 2 of Collecting cargo. Navigate the robot and achieve the mission goals!",
+      "levelId": "mars_level_3",
+      "instruction": "You need to turn to pick up the cargo!",
       "states": [
         {
           "id": "VP2_M2L2_1_2_state_1",
           "stateId": "VP2_M2L2_1_2_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_4"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -65,20 +63,19 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Collecting cargo - Level 3",
+      "title": "Collecting cargo - 3",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_5",
-      "instruction": "Complete level 3 of Collecting cargo. Navigate the robot and achieve the mission goals!",
+      "levelId": "mars_level_3",
+      "instruction": "Here we turn, and then we go down!",
       "states": [
         {
           "id": "VP2_M2L2_1_3_state_1",
           "stateId": "VP2_M2L2_1_3_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_5"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -88,20 +85,19 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Collecting cargo - Level 4",
+      "title": "Collecting cargo - 4",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_6",
-      "instruction": "Complete level 4 of Collecting cargo. Navigate the robot and achieve the mission goals!",
+      "levelId": "mars_level_3",
+      "instruction": "And here we go up!!",
       "states": [
         {
           "id": "VP2_M2L2_1_4_state_1",
           "stateId": "VP2_M2L2_1_4_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_6"
+          "selectedType": "block_game"
         }
       ]
     },
@@ -111,20 +107,239 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Collecting cargo - Level 5",
+      "title": "Collecting cargo - 5",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
-      "levelId": "mars_level_7",
-      "instruction": "Complete level 5 of Collecting cargo. Navigate the robot and achieve the mission goals!",
+      "levelId": "mars_level_3",
+      "instruction": "Two boxes already!",
       "states": [
         {
           "id": "VP2_M2L2_1_5_state_1",
           "stateId": "VP2_M2L2_1_5_state_1",
           "position": 1,
           "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_7"
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_6",
+      "taskId": "VP2_M2L2_1_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Collecting cargo - 6",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "There are important documents in these boxes!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_6_state_1",
+          "stateId": "VP2_M2L2_1_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_7",
+      "taskId": "VP2_M2L2_1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Collecting cargo - 7",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "I wonder which way you will lead the robot...",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_7_state_1",
+          "stateId": "VP2_M2L2_1_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_8",
+      "taskId": "VP2_M2L2_1_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Collecting cargo - 8",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Wow! Four boxes at once with groceries!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_8_state_1",
+          "stateId": "VP2_M2L2_1_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_9",
+      "taskId": "VP2_M2L2_1_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Collecting cargo - 9",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Did you like the tasks?",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_9_state_1",
+          "stateId": "VP2_M2L2_1_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_10",
+      "taskId": "VP2_M2L2_1_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Collecting cargo - 10",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Bonus tasks",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_10_state_1",
+          "stateId": "VP2_M2L2_1_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_11",
+      "taskId": "VP2_M2L2_1_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Collecting cargo - 11",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Difficult level! So first, let's deploy the robot!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_11_state_1",
+          "stateId": "VP2_M2L2_1_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_12",
+      "taskId": "VP2_M2L2_1_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Collecting cargo - 12",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "Bonus levels! More and more difficult!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_12_state_1",
+          "stateId": "VP2_M2L2_1_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_13",
+      "taskId": "VP2_M2L2_1_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Collecting cargo - 13",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "This task is easy to solve using loops!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_13_state_1",
+          "stateId": "VP2_M2L2_1_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_14",
+      "taskId": "VP2_M2L2_1_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Collecting cargo - 14",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "May the loops be with you!!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_14_state_1",
+          "stateId": "VP2_M2L2_1_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L2_1_15",
+      "taskId": "VP2_M2L2_1_15",
+      "position": 15,
+      "level_position": 15,
+      "levelPosition": 15,
+      "title": "Collecting cargo - 15",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "levelId": "mars_level_3",
+      "instruction": "This task is easy to solve with loops!",
+      "states": [
+        {
+          "id": "VP2_M2L2_1_15_state_1",
+          "stateId": "VP2_M2L2_1_15_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
         }
       ]
     }

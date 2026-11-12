@@ -57,6 +57,7 @@ export default function BlockRenderer({
       );
     }
 
+    if (block.type.startsWith('change_')) return <span style={{display:'inline-flex',alignItems:'center',gap:5}}><span>{def.label}</span><span className="block-dropdown-pill" style={{position:'relative'}}><span>{block.params?.amount ?? def.params[0].default} ▾</span><select aria-label={def.label} className="block-select-input" value={block.params?.amount ?? def.params[0].default} onChange={e=>handleSelectChange('amount',Number(e.target.value))} disabled={isToolbox}>{def.params[0].options.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select></span></span>;
     if (block.type.startsWith('go_to_')) return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}><span>go to X</span>{def.params.map((param, i) => <React.Fragment key={param.name}>{i === 1 && <span>Y</span>}<span className="block-dropdown-pill" style={{ position: 'relative' }}><span>{block.params?.[param.name] ?? param.default} ▾</span><select aria-label={`Coordinate ${param.name.toUpperCase()}`} className="block-select-input" value={block.params?.[param.name] ?? param.default} onChange={e => handleSelectChange(param.name, Number(e.target.value))} disabled={isToolbox}>{param.options.map(opt => <option key={opt.value} value={opt.value}>{opt.label}</option>)}</select></span></React.Fragment>)}</span>;
     if ((block.type === BLOCK_TYPES.POINT_DIRECTION || block.type === 'collect_direction')) {
       const currentDir = block.params?.direction ?? 90;

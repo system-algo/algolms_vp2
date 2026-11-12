@@ -1,0 +1,919 @@
+[
+  {
+    "number": 1,
+    "type": "image",
+    "hint": "The rocket's journey",
+    "activityName": "The rocket's journey",
+    "image": "/vp-assets/journey/comic1.png"
+  },
+  {
+    "number": 2,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 1,
+    "points": [
+      {
+        "x": 8,
+        "y": 2
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 2.0
+    },
+    "toolbox": [
+      "change_x_1",
+      "change_y_1"
+    ],
+    "loops": false,
+    "hint": "Let's start flying!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 3,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 1,
+    "points": [
+      {
+        "x": -4,
+        "y": 6
+      }
+    ],
+    "start": {
+      "x": -4.0,
+      "y": 0.0
+    },
+    "toolbox": [
+      "change_x_1",
+      "change_y_1"
+    ],
+    "loops": false,
+    "hint": "And now we're moving up!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 4,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 1,
+    "points": [
+      {
+        "x": -2,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 4
+      }
+    ],
+    "start": {
+      "x": -2.0,
+      "y": 2.0
+    },
+    "toolbox": [
+      "change_x_1",
+      "change_y_1"
+    ],
+    "loops": false,
+    "hint": "The last training task! You need to fly through two points!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 5,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 10,
+    "points": [
+      {
+        "x": 40,
+        "y": -40
+      },
+      {
+        "x": -20,
+        "y": -40
+      }
+    ],
+    "start": {
+      "x": 40.0,
+      "y": 40.0
+    },
+    "toolbox": [
+      "change_x_10",
+      "change_y_10"
+    ],
+    "loops": false,
+    "hint": "The task got a little harder! Can you handle it?",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 6,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 10,
+    "points": [
+      {
+        "x": 0,
+        "y": 40
+      },
+      {
+        "x": 0,
+        "y": -20
+      },
+      {
+        "x": -60,
+        "y": -20
+      }
+    ],
+    "start": {
+      "x": -60.0,
+      "y": 40.0
+    },
+    "toolbox": [
+      "change_x_10",
+      "change_y_10"
+    ],
+    "loops": false,
+    "hint": "And there are three points you need to go through!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 7,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 10,
+    "points": [
+      {
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "start": {
+      "x": 80.0,
+      "y": -20.0
+    },
+    "toolbox": [
+      "change_x_10",
+      "change_y_10"
+    ],
+    "loops": false,
+    "hint": "It's getting harder!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 8,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": -180,
+        "y": 0
+      },
+      {
+        "x": -180,
+        "y": 60
+      },
+      {
+        "x": -180,
+        "y": 120
+      },
+      {
+        "x": -180,
+        "y": 180
+      }
+    ],
+    "start": {
+      "x": -180.0,
+      "y": -60.0
+    },
+    "toolbox": [
+      "change_x_30",
+      "change_y_30"
+    ],
+    "loops": false,
+    "hint": "We're flying north! Oh, more precisely, up!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 9,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": 180,
+        "y": -60
+      },
+      {
+        "x": 120,
+        "y": -60
+      },
+      {
+        "x": 60,
+        "y": -60
+      },
+      {
+        "x": 0,
+        "y": -60
+      },
+      {
+        "x": -60,
+        "y": -60
+      },
+      {
+        "x": 180,
+        "y": 0
+      },
+      {
+        "x": 180,
+        "y": 60
+      },
+      {
+        "x": 180,
+        "y": 120
+      },
+      {
+        "x": 180,
+        "y": 180
+      }
+    ],
+    "start": {
+      "x": -120.0,
+      "y": -60.0
+    },
+    "toolbox": [
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Now it's time for loops!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 10,
+    "type": "rating",
+    "hint": "Did you like the tasks?",
+    "activityName": "The rocket's journey"
+  },
+  {
+    "number": 11,
+    "type": "image",
+    "hint": "The rocket's journey",
+    "activityName": "The rocket's journey",
+    "image": "/vp-assets/journey/comic11.png"
+  },
+  {
+    "number": 12,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": 120,
+        "y": -120
+      },
+      {
+        "x": 60,
+        "y": -120
+      },
+      {
+        "x": 0,
+        "y": -120
+      },
+      {
+        "x": -60,
+        "y": -120
+      },
+      {
+        "x": -120,
+        "y": -120
+      },
+      {
+        "x": -120,
+        "y": -60
+      },
+      {
+        "x": -120,
+        "y": 0
+      },
+      {
+        "x": -120,
+        "y": 60
+      },
+      {
+        "x": -120,
+        "y": 120
+      },
+      {
+        "x": -60,
+        "y": 120
+      },
+      {
+        "x": 0,
+        "y": 120
+      },
+      {
+        "x": 60,
+        "y": 120
+      },
+      {
+        "x": 120,
+        "y": 120
+      }
+    ],
+    "start": {
+      "x": 180.0,
+      "y": -120.0
+    },
+    "toolbox": [
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Three loops! Can you handle it?",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 13,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": 0
+      },
+      {
+        "x": 120,
+        "y": 0
+      },
+      {
+        "x": 180,
+        "y": 0
+      },
+      {
+        "x": 180,
+        "y": 60
+      },
+      {
+        "x": 180,
+        "y": 120
+      },
+      {
+        "x": 180,
+        "y": 180
+      },
+      {
+        "x": 120,
+        "y": 180
+      },
+      {
+        "x": 60,
+        "y": 180
+      },
+      {
+        "x": 0,
+        "y": 180
+      },
+      {
+        "x": 0,
+        "y": 120
+      },
+      {
+        "x": 0,
+        "y": 60
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "toolbox": [
+      "go_to_30",
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Start with the square.",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 14,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": -120,
+        "y": -180
+      },
+      {
+        "x": -120,
+        "y": -120
+      },
+      {
+        "x": -60,
+        "y": -120
+      },
+      {
+        "x": -60,
+        "y": -60
+      },
+      {
+        "x": 0,
+        "y": -60
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": 60
+      },
+      {
+        "x": 120,
+        "y": 60
+      },
+      {
+        "x": 120,
+        "y": 120
+      },
+      {
+        "x": 180,
+        "y": 120
+      },
+      {
+        "x": 180,
+        "y": 180
+      }
+    ],
+    "start": {
+      "x": -180.0,
+      "y": -180.0
+    },
+    "toolbox": [
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Right, up, north, and east!",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 15,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": -120,
+        "y": 180
+      },
+      {
+        "x": -120,
+        "y": 120
+      },
+      {
+        "x": -60,
+        "y": 120
+      },
+      {
+        "x": -60,
+        "y": 60
+      },
+      {
+        "x": 0,
+        "y": 60
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": -60
+      },
+      {
+        "x": 120,
+        "y": -60
+      },
+      {
+        "x": 120,
+        "y": -120
+      },
+      {
+        "x": 180,
+        "y": -120
+      },
+      {
+        "x": 180,
+        "y": -180
+      }
+    ],
+    "start": {
+      "x": -180.0,
+      "y": 180.0
+    },
+    "toolbox": [
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Also a ladder, but in the other direction.",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 16,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": 180,
+        "y": 0
+      },
+      {
+        "x": 120,
+        "y": 60
+      },
+      {
+        "x": 60,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 60
+      },
+      {
+        "x": -60,
+        "y": 0
+      },
+      {
+        "x": -120,
+        "y": 60
+      },
+      {
+        "x": -180,
+        "y": 0
+      },
+      {
+        "x": -240,
+        "y": 60
+      }
+    ],
+    "start": {
+      "x": 240.0,
+      "y": 60.0
+    },
+    "toolbox": [
+      "go_to_30",
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Hurdle race.",
+    "success": "Way to go! You visited every point!"
+  },
+  {
+    "number": 17,
+    "activityName": "The rocket's journey",
+    "mode": "coordinates",
+    "relative": true,
+    "unit": 30,
+    "points": [
+      {
+        "x": -240,
+        "y": -180
+      },
+      {
+        "x": -240,
+        "y": -120
+      },
+      {
+        "x": -240,
+        "y": -60
+      },
+      {
+        "x": -240,
+        "y": 0
+      },
+      {
+        "x": -240,
+        "y": 60
+      },
+      {
+        "x": -240,
+        "y": 120
+      },
+      {
+        "x": -240,
+        "y": 180
+      },
+      {
+        "x": -180,
+        "y": -180
+      },
+      {
+        "x": -180,
+        "y": -120
+      },
+      {
+        "x": -180,
+        "y": -60
+      },
+      {
+        "x": -180,
+        "y": 0
+      },
+      {
+        "x": -180,
+        "y": 60
+      },
+      {
+        "x": -180,
+        "y": 120
+      },
+      {
+        "x": -180,
+        "y": 180
+      },
+      {
+        "x": -120,
+        "y": -180
+      },
+      {
+        "x": -120,
+        "y": -120
+      },
+      {
+        "x": -120,
+        "y": -60
+      },
+      {
+        "x": -120,
+        "y": 0
+      },
+      {
+        "x": -120,
+        "y": 60
+      },
+      {
+        "x": -120,
+        "y": 120
+      },
+      {
+        "x": -120,
+        "y": 180
+      },
+      {
+        "x": -60,
+        "y": -180
+      },
+      {
+        "x": -60,
+        "y": -120
+      },
+      {
+        "x": -60,
+        "y": -60
+      },
+      {
+        "x": -60,
+        "y": 0
+      },
+      {
+        "x": -60,
+        "y": 60
+      },
+      {
+        "x": -60,
+        "y": 120
+      },
+      {
+        "x": -60,
+        "y": 180
+      },
+      {
+        "x": 0,
+        "y": -180
+      },
+      {
+        "x": 0,
+        "y": -120
+      },
+      {
+        "x": 0,
+        "y": -60
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 60
+      },
+      {
+        "x": 0,
+        "y": 120
+      },
+      {
+        "x": 0,
+        "y": 180
+      },
+      {
+        "x": 60,
+        "y": -180
+      },
+      {
+        "x": 60,
+        "y": -120
+      },
+      {
+        "x": 60,
+        "y": -60
+      },
+      {
+        "x": 60,
+        "y": 0
+      },
+      {
+        "x": 60,
+        "y": 60
+      },
+      {
+        "x": 60,
+        "y": 120
+      },
+      {
+        "x": 60,
+        "y": 180
+      },
+      {
+        "x": 120,
+        "y": -180
+      },
+      {
+        "x": 120,
+        "y": -120
+      },
+      {
+        "x": 120,
+        "y": -60
+      },
+      {
+        "x": 120,
+        "y": 0
+      },
+      {
+        "x": 120,
+        "y": 60
+      },
+      {
+        "x": 120,
+        "y": 120
+      },
+      {
+        "x": 120,
+        "y": 180
+      },
+      {
+        "x": 180,
+        "y": -180
+      },
+      {
+        "x": 180,
+        "y": -120
+      },
+      {
+        "x": 180,
+        "y": -60
+      },
+      {
+        "x": 180,
+        "y": 0
+      },
+      {
+        "x": 180,
+        "y": 60
+      },
+      {
+        "x": 180,
+        "y": 120
+      },
+      {
+        "x": 180,
+        "y": 180
+      },
+      {
+        "x": 240,
+        "y": -180
+      },
+      {
+        "x": 240,
+        "y": -120
+      },
+      {
+        "x": 240,
+        "y": -60
+      },
+      {
+        "x": 240,
+        "y": 0
+      },
+      {
+        "x": 240,
+        "y": 60
+      },
+      {
+        "x": 240,
+        "y": 120
+      },
+      {
+        "x": 240,
+        "y": 180
+      }
+    ],
+    "start": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "toolbox": [
+      "go_to_30",
+      "change_x_30",
+      "change_y_30",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      }
+    ],
+    "loops": true,
+    "hint": "Scanning the area.",
+    "success": "Way to go! You visited every point!"
+  }
+]

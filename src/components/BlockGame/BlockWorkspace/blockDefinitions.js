@@ -280,3 +280,8 @@ for (const unit of [1, 10, 30]) {
 }
 
 BLOCK_DEFINITIONS.collect_direction = { ...BLOCK_DEFINITIONS.point_direction, type: 'collect_direction', params: [{ ...BLOCK_DEFINITIONS.point_direction.params[0], options: BLOCK_DEFINITIONS.point_direction.params[0].options.filter(o => [0, 90, 180, 270].includes(o.value)) }] };
+
+for (const unit of [1, 10, 30]) for (const axis of ['x', 'y']) {
+  const type = `change_${axis}_${unit}`;
+  BLOCK_DEFINITIONS[type] = { type, kind: 'statement', label: `change ${axis.toUpperCase()} by`, category: 'motion', color: '#995ba5', darkColor: '#7a4984', params: [{ name: 'amount', type: 'select', default: -8 * unit, options: Array.from({ length: 17 }, (_, n) => ({ value: (n - 8) * unit, label: String((n - 8) * unit) })) }] };
+}

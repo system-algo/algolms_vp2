@@ -36,6 +36,8 @@ export function compileProgram(blocks, maxSteps = 400) {
 
           traverse(children, depth + 1);
         }
+      } else if (blk.type.startsWith('change_')) {
+        steps.push({ blockId: blk.id, action: 'change_coordinate', axis: blk.type.split('_')[1], amount: Number(blk.params?.amount) });
       } else if (blk.type.startsWith('go_to_')) {
         steps.push({ blockId: blk.id, action: 'go_to', x: Number(blk.params?.x), y: Number(blk.params?.y) });
       } else if (blk.type.startsWith('build_')) {

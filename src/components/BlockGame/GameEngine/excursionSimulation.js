@@ -21,6 +21,14 @@ export function isExcursionComplete(level, robot) {
 
 export function stepExcursion(level, robot, step) {
   if (level.mode === 'coordinates') {
+    if (step.action === 'repeat_iteration') return robot;
+    if (step.action === 'change_coordinate') {
+      const x = robot.x + (step.axis === 'x' ? step.amount : 0), y = robot.y + (step.axis === 'y' ? step.amount : 0);
+      if (!Number.isFinite(x) || !Number.isFinite(y) || Math.abs(x) > 8 * level.unit || Math.abs(y) > 6 * level.unit) throw new Error('The rocket went outside the tablet. Check your coordinate changes.');
+      const visited = new Set(robot.visited);
+      level.points.forEach((p, i) => { if (Math.abs((p.x - robot.x) * (y - robot.y) - (p.y - robot.y) * (x - robot.x)) < 1e-7 && p.x >= Math.min(x, robot.x) && p.x <= Math.max(x, robot.x) && p.y >= Math.min(y, robot.y) && p.y <= Math.max(y, robot.y)) visited.add(i); });
+      return { ...robot, x, y, visited: [...visited] };
+    }
     if (step.action !== 'go_to') throw new Error('Use the coordinate command.');
     if (!Number.isFinite(step.x) || !Number.isFinite(step.y) || Math.abs(step.x) > 8 * level.unit || Math.abs(step.y) > 6 * level.unit) throw new Error('Choose coordinates within the tablet.');
     const index = level.points.findIndex(p => p.x === step.x && p.y === step.y);

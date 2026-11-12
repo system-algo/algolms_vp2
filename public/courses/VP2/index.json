@@ -656,7 +656,9 @@
           "id": "VP2_M5L4_3",
           "title": "Martian variables",
           "lessonId": "VP2_M5L4",
-          "taskCount": 16
+          "taskCount": 16,
+          "type": "block-game-task",
+          "level_type": "block_game"
         },
         {
           "id": "VP2_M5L4_4",

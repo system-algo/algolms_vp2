@@ -62,3 +62,13 @@ Validation: production build; all nine mineral routes with exact collection targ
 Restored fourteen positions: thirteen data-processing exercises and feedback. Supports A–D registers, crystal size/color, next crystal, addition/subtraction, nested numeric expressions, variable repeat counts and sending values. Sending validates both the result and the selected crystal/blue stop marker. The multiplication exercise uses repeated addition, not a multiplication operator.
 
 Source goals and available commands were inspected through the rendered UI. The original visualization is canvas; local crystal input sequences and simplified laboratory artwork are used, so this is a functional reconstruction rather than identical source animation or randomization. Validation: build; all thirteen programs against two input sequences; rejection of incorrect/premature sends; bounded loops and unsupported multiplication.
+
+## Module 5 — Martian variables; Module 6–7 scope
+
+Restored all sixteen source positions: thirteen programming boards, introduction comic link, rating and completion screen. Preserved the incomplete starter programs, variable repeat counts, visible mineral quantities and the 7/8/14 block limits. Position 3 has no minerals and requires the robot to reach the actual source finish marker at (0,5); it is not immediately complete. Positions 8 and 11 had been incorrectly classified as Scratch in the old capture and are now Block Tasks.
+
+Validation: production build; all thirteen Martian boards completed; nine exact-count mineral routes; all thirteen laboratory exercises against two inputs; three constrained programs under source limits; starter repair/failure; 24 existing route/cargo tests. Toolbox dragging now preserves command defaults, including variable values and conditions. Full browser verification of the clone was unavailable because the cloud browser could not connect to the local preview.
+
+Module 6 captured activities are Scratch/editor/quiz pages; its later source lessons remain locked for vasgh05. Module 7 graduation captured activities use Scratch (MarsBots Programmer confirmed in the source UI). Those Scratch and quiz pages remain outside the authorized Block Task pass; no new Block Task pages were identified in Modules 6–7. Images/comics remain deferred. The Retro visualization/input sequence is a functional reconstruction; it is not identical source canvas animation/randomization.
+
+Published Land of minerals: 8af2c46. Published Retro laboratory: 412cebd. Module 4 was published in ee632ca following explicit confirmation; the earlier pending-push note above is historical.

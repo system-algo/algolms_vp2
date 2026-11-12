@@ -171,10 +171,7 @@ export default function BlockWorkspace({
     setIsOverTrash(false);
     const isFromToolbox = String(block.id).startsWith('toolbox_');
     const blockToDrag = isFromToolbox
-      ? {
-          ...createBlockInstance(block.type),
-          params: { ...block.params },
-        }
+      ? createBlockInstance(block.type, block.params)
       : block;
 
     setDraggingBlock({
@@ -366,9 +363,8 @@ export default function BlockWorkspace({
             const def = BLOCK_DEFINITIONS[type];
             if (!def) return null;
             const dummyBlock = {
+              ...createBlockInstance(type, customParams),
               id: `toolbox_${type}_${idx}`,
-              type,
-              params: { ...customParams },
             };
             return (
               <div

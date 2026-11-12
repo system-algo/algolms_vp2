@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "id": "VP_M5L4_3",
+  "title": "Martian variables",
+  "type": "block-game-task",
+  "taskCount": 16,
+  "metadata": {
+    "courseId": "VP2",
+    "source": "learn.alg.academy rendered UI",
+    "sourceInspectedAt": "2026-11-13"
+  },
+  "tasks": [
+    {
+      "id": "VP_M5L4_3_1",
+      "taskId": "VP_M5L4_3_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Martian variables - 1",
+      "instruction": "Martian variables \u2014 introduction comic",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_1_state_1",
+          "stateId": "VP_M5L4_3_1_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_2",
+      "taskId": "VP_M5L4_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Martian variables - 2",
+      "instruction": "The task is almost complete! But the programmer forgot to set the initial value of the variable. Help them!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_2_state_1",
+          "stateId": "VP_M5L4_3_2_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_3",
+      "taskId": "VP_M5L4_3_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Martian variables - 3",
+      "instruction": "Three turns, but the number of steps is different...",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_3_state_1",
+          "stateId": "VP_M5L4_3_3_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_4",
+      "taskId": "VP_M5L4_3_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Martian variables - 4",
+      "instruction": "The sloppy programmer forgot to put the right values in as many as three places! Finish the program!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_4_state_1",
+          "stateId": "VP_M5L4_3_4_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_5",
+      "taskId": "VP_M5L4_3_5",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Martian variables - 5",
+      "instruction": "Use a variable to record the number of steps.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_5_state_1",
+          "stateId": "VP_M5L4_3_5_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_6",
+      "taskId": "VP_M5L4_3_6",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Martian variables - 6",
+      "instruction": "Each time you have to take one step more than before. How do we do that?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_6_state_1",
+          "stateId": "VP_M5L4_3_6_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_7",
+      "taskId": "VP_M5L4_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Martian variables - 7",
+      "instruction": "You walk the same way, but you need to collect in a different way. The lord of the variables will definitely be able to handle it. If not, he could always take a peek at the previous tasks.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_7_state_1",
+          "stateId": "VP_M5L4_3_7_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_8",
+      "taskId": "VP_M5L4_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Martian variables - 8",
+      "instruction": "And now from scratch. And, yeah, the number of crystals is growing by more than one.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_8_state_1",
+          "stateId": "VP_M5L4_3_8_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_9",
+      "taskId": "VP_M5L4_3_9",
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
+      "title": "Martian variables - 9",
+      "instruction": "Did you like the lesson?",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_9_state_1",
+          "stateId": "VP_M5L4_3_9_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_10",
+      "taskId": "VP_M5L4_3_10",
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
+      "title": "Martian variables - 10",
+      "instruction": "A brush with diamonds on the ends. Why diamonds on a brush? Collect them.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_10_state_1",
+          "stateId": "VP_M5L4_3_10_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_11",
+      "taskId": "VP_M5L4_3_11",
+      "position": 11,
+      "level_position": 11,
+      "levelPosition": 11,
+      "title": "Martian variables - 11",
+      "instruction": "It's a similar task, but now you have to write it from scratch. You can handle it!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_11_state_1",
+          "stateId": "VP_M5L4_3_11_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_12",
+      "taskId": "VP_M5L4_3_12",
+      "position": 12,
+      "level_position": 12,
+      "levelPosition": 12,
+      "title": "Martian variables - 12",
+      "instruction": "Just like before, a loop and a variable will help you here.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_12_state_1",
+          "stateId": "VP_M5L4_3_12_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_13",
+      "taskId": "VP_M5L4_3_13",
+      "position": 13,
+      "level_position": 13,
+      "levelPosition": 13,
+      "title": "Martian variables - 13",
+      "instruction": "A diamond ladder. Yes, like a hairbrush, a ladder doesn't need diamonds either. Correct this misunderstanding.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_13_state_1",
+          "stateId": "VP_M5L4_3_13_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_14",
+      "taskId": "VP_M5L4_3_14",
+      "position": 14,
+      "level_position": 14,
+      "levelPosition": 14,
+      "title": "Martian variables - 14",
+      "instruction": "Careful! When using the variable for walking on roads, keep in mind that the road doesn't change by 1 cell, but by 2. (This means that the variable should change by 2). And in each cell, there is 1 mineral.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_14_state_1",
+          "stateId": "VP_M5L4_3_14_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_15",
+      "taskId": "VP_M5L4_3_15",
+      "position": 15,
+      "level_position": 15,
+      "levelPosition": 15,
+      "title": "Martian variables - 15",
+      "instruction": "Last but not least for today! Use one variable to count both the steps and the minerals.",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_15_state_1",
+          "stateId": "VP_M5L4_3_15_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    },
+    {
+      "id": "VP_M5L4_3_16",
+      "taskId": "VP_M5L4_3_16",
+      "position": 16,
+      "level_position": 16,
+      "levelPosition": 16,
+      "title": "Martian variables - 16",
+      "instruction": "Way to go! You finished the task!",
+      "activityType": "block_game",
+      "level_type": "block_game",
+      "selectedType": "block_game",
+      "states": [
+        {
+          "id": "VP_M5L4_3_16_state_1",
+          "stateId": "VP_M5L4_3_16_state_1",
+          "position": 1,
+          "type": "block_game",
+          "selectedType": "block_game"
+        }
+      ]
+    }
+  ]
+}

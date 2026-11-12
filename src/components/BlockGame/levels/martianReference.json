@@ -1,0 +1,7707 @@
+[
+  {
+    "number": 1,
+    "type": "source",
+    "hint": "Martian variables \u2014 introduction comic",
+    "sourceUrl": "https://learn.alg.academy/lesson?module=5&lesson=11475&task=26033&level=1"
+  },
+  {
+    "number": 2,
+    "activityName": "Martian variables",
+    "hint": "The task is almost complete! But the programmer forgot to set the initial value of the variable. Help them!",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 2,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "amount": 1
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat_variable",
+        "params": {
+          "value": {
+            "kind": "variable",
+            "name": "variable"
+          }
+        },
+        "children": [
+          {
+            "type": "move_forward",
+            "params": {}
+          },
+          {
+            "type": "mine",
+            "params": {}
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable",
+      "if_else"
+    ]
+  },
+  {
+    "number": 3,
+    "activityName": "Martian variables",
+    "hint": "Three turns, but the number of steps is different...",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 2,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 3
+        },
+        "children": [
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "move_forward",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "turn_direction",
+            "params": {
+              "direction": "right"
+            }
+          },
+          {
+            "type": "add_variable",
+            "params": {
+              "name": "variable",
+              "value": 1
+            }
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable",
+      "if_else"
+    ],
+    "target": {
+      "x": 0,
+      "y": 5
+    }
+  },
+  {
+    "number": 4,
+    "activityName": "Martian variables",
+    "hint": "The sloppy programmer forgot to put the right values in as many as three places! Finish the program!",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 2,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 2,
+        "amount": 2
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "amount": 3
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "amount": 4
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "amount": 5
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        },
+        "children": [
+          {
+            "type": "move_forward",
+            "params": {}
+          },
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "mine",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "add_variable",
+            "params": {
+              "name": "variable",
+              "value": 0
+            }
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable",
+      "if_else"
+    ]
+  },
+  {
+    "number": 5,
+    "activityName": "Martian variables",
+    "hint": "Use a variable to record the number of steps.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 6,
+      "y": 3,
+      "direction": 270
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 0,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "amount": 1
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 10
+        },
+        "children": [
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "move_forward",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "mine",
+            "params": {}
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable",
+      "if_else"
+    ]
+  },
+  {
+    "number": 6,
+    "activityName": "Martian variables",
+    "hint": "Each time you have to take one step more than before. How do we do that?",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 550 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 4,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 1,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "amount": 1
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 3
+        },
+        "children": [
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "move_forward",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "mine",
+            "params": {}
+          },
+          {
+            "type": "add_variable",
+            "params": {
+              "name": "variable",
+              "value": 0
+            }
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "maxCommands": 7
+  },
+  {
+    "number": 7,
+    "activityName": "Martian variables",
+    "hint": "You walk the same way, but you need to collect in a different way. The lord of the variables will definitely be able to handle it. If not, he could always take a peek at the previous tasks.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "amount": 2
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "amount": 3
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 3
+        },
+        "children": []
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "maxCommands": 8
+  },
+  {
+    "number": 8,
+    "activityName": "Martian variables",
+    "hint": "And now from scratch. And, yeah, the number of crystals is growing by more than one.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 2,
+        "amount": 2
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "amount": 4
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "amount": 6
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 9,
+    "type": "rating",
+    "hint": "Did you like the lesson?"
+  },
+  {
+    "number": 10,
+    "activityName": "Martian variables",
+    "hint": "A brush with diamonds on the ends. Why diamonds on a brush? Collect them.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "amount": 1
+      }
+    ],
+    "starter": [
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "variable",
+          "value": 0
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 10
+        },
+        "children": [
+          {
+            "type": "move_forward",
+            "params": {}
+          },
+          {
+            "type": "move_forward",
+            "params": {}
+          },
+          {
+            "type": "turn_direction",
+            "params": {
+              "direction": "right"
+            }
+          },
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "move_forward",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "mine",
+            "params": {}
+          },
+          {
+            "type": "turn_direction",
+            "params": {
+              "direction": "right"
+            }
+          },
+          {
+            "type": "turn_direction",
+            "params": {
+              "direction": "right"
+            }
+          },
+          {
+            "type": "repeat_variable",
+            "params": {
+              "value": {
+                "kind": "variable",
+                "name": "variable"
+              }
+            },
+            "children": [
+              {
+                "type": "move_forward",
+                "params": {}
+              }
+            ]
+          },
+          {
+            "type": "turn_direction",
+            "params": {
+              "direction": "right"
+            }
+          }
+        ]
+      }
+    ],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ],
+    "maxCommands": 14
+  },
+  {
+    "number": 11,
+    "activityName": "Martian variables",
+    "hint": "It's a similar task, but now you have to write it from scratch. You can handle it!",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 1,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 0,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "amount": 1
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 12,
+    "activityName": "Martian variables",
+    "hint": "Just like before, a loop and a variable will help you here.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 550 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 0,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "atlasX": 3,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 10,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 1,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "amount": 1
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 13,
+    "activityName": "Martian variables",
+    "hint": "A diamond ladder. Yes, like a hairbrush, a ladder doesn't need diamonds either. Correct this misunderstanding.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 400",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 2,
+      "y": 2,
+      "direction": 90
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 0,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "amount": 1
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 14,
+    "activityName": "Martian variables",
+    "hint": "Careful! When using the variable for walking on roads, keep in mind that the road doesn't change by 1 cell, but by 2. (This means that the variable should change by 2). And in each cell, there is 1 mineral.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 450 500",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 3,
+      "y": 0,
+      "direction": 180
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 0,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 1,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "atlasX": 3,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 2,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 1,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 3,
+        "blocked": false
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 2,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 8,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 3,
+        "y": 1,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "amount": 1
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "amount": 1
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "amount": 1
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "amount": 1
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "amount": 1
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 15,
+    "activityName": "Martian variables",
+    "hint": "Last but not least for today! Use one variable to count both the steps and the minerals.",
+    "mode": "minerals",
+    "dynamic": true,
+    "viewBox": "0 0 400 550",
+    "tiles": "https://learn.alg.academy/img/games/maze/tiles_pegman-noborder.svg",
+    "start": {
+      "x": 4,
+      "y": 10,
+      "direction": 0
+    },
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 0,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 0,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 1,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 2,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 3,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 4,
+        "y": 10,
+        "atlasX": 0,
+        "atlasY": 1,
+        "blocked": false
+      },
+      {
+        "x": 5,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 6,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      },
+      {
+        "x": 7,
+        "y": 10,
+        "atlasX": 4,
+        "atlasY": 3,
+        "blocked": true
+      }
+    ],
+    "minerals": [
+      {
+        "x": 4,
+        "y": 0,
+        "amount": 4
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "amount": 3
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "amount": 2
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "amount": 1
+      }
+    ],
+    "starter": [],
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "repeat",
+      "repeat_variable",
+      "mine",
+      "set_variable",
+      "add_variable"
+    ]
+  },
+  {
+    "number": 16,
+    "type": "finish",
+    "hint": "Way to go! You finished the task!"
+  }
+]

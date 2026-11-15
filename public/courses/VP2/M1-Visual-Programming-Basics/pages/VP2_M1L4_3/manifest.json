@@ -19,22 +19,18 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Script management - Task 1",
+      "title": "A rocketship",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_Dialog.sb3",
+      "starter_project_id": "M1L4_A_rocketship.sb3",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
         "events",
         "control"
       ],
       "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
         "looks_sayforsecs",
         "looks_switchcostumeto",
         "event_whenflagclicked",
@@ -44,7 +40,7 @@
         {
           "id": "req_1_1",
           "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 1 of \"Scratch. Script management\".",
+          "text": "Set up the Rocketship sprite and space background.",
           "type": "gif",
           "url": ""
         },
@@ -66,7 +62,7 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Script management - Task 1",
+          "title": "A rocketship",
           "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
         }
       ],
@@ -78,17 +74,13 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_Dialog.sb3",
+          "starter_project_id": "M1L4_A_rocketship.sb3",
           "command_keys": [
-            "motion",
             "looks",
-            "sound",
             "events",
             "control"
           ],
           "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
             "looks_sayforsecs",
             "looks_switchcostumeto",
             "event_whenflagclicked",
@@ -103,22 +95,18 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Script management - Task 2",
+      "title": "Hen",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_A_rocketship.sb3",
+      "starter_project_id": "M1L4_hen.sb3",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
         "events",
         "control"
       ],
       "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
         "looks_sayforsecs",
         "looks_switchcostumeto",
         "event_whenflagclicked",
@@ -128,7 +116,7 @@
         {
           "id": "req_2_1",
           "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 2 of \"Scratch. Script management\".",
+          "text": "Set up the Hen sprite and farm stage.",
           "type": "gif",
           "url": ""
         },
@@ -150,7 +138,7 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Script management - Task 2",
+          "title": "Hen",
           "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
         }
       ],
@@ -162,17 +150,13 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_A_rocketship.sb3",
+          "starter_project_id": "M1L4_hen.sb3",
           "command_keys": [
-            "motion",
             "looks",
-            "sound",
             "events",
             "control"
           ],
           "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
             "looks_sayforsecs",
             "looks_switchcostumeto",
             "event_whenflagclicked",
@@ -187,22 +171,18 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Script management - Task 3",
+      "title": "Skeleton",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_hen.sb3",
+      "starter_project_id": "M1L4_Sceleton.sb3",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
         "events",
         "control"
       ],
       "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
         "looks_sayforsecs",
         "looks_switchcostumeto",
         "event_whenflagclicked",
@@ -212,7 +192,7 @@
         {
           "id": "req_3_1",
           "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 3 of \"Scratch. Script management\".",
+          "text": "Set up the Skeleton and Ghost sprites on the castle stage.",
           "type": "gif",
           "url": ""
         },
@@ -234,7 +214,7 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Script management - Task 3",
+          "title": "Skeleton",
           "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
         }
       ],
@@ -246,17 +226,13 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_hen.sb3",
+          "starter_project_id": "M1L4_Sceleton.sb3",
           "command_keys": [
-            "motion",
             "looks",
-            "sound",
             "events",
             "control"
           ],
           "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
             "looks_sayforsecs",
             "looks_switchcostumeto",
             "event_whenflagclicked",

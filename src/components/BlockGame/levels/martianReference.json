@@ -527,12 +527,25 @@
           "direction": "right"
         }
       },
-      "repeat",
       "repeat_variable",
+      "if_else",
       "mine",
       "set_variable",
       "add_variable",
-      "if_else"
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -1058,12 +1071,31 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
+      "if_else",
       "mine",
       "set_variable",
       "add_variable",
-      "if_else"
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "target": {
       "x": 0,
@@ -1612,12 +1644,31 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
+      "if_else",
       "mine",
       "set_variable",
       "add_variable",
-      "if_else"
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -2150,12 +2201,31 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
+      "if_else",
       "mine",
       "set_variable",
       "add_variable",
-      "if_else"
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -2868,11 +2938,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "maxCommands": 7
   },
@@ -3386,11 +3475,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "maxCommands": 8
   },
@@ -3889,11 +3997,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -4478,11 +4605,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "maxCommands": 14
   },
@@ -4981,11 +5127,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -5686,11 +5851,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -6223,11 +6407,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -7017,11 +7220,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {
@@ -7692,11 +7914,30 @@
           "direction": "right"
         }
       },
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "repeat_variable",
       "mine",
       "set_variable",
-      "add_variable"
+      "add_variable",
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "variable"
+            },
+            "b": 0
+          }
+        }
+      }
     ]
   },
   {

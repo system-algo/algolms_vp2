@@ -66,7 +66,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_0.svg"
+    "scenery": "/vp-assets/rocket/map2_2_0.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 2,
@@ -184,7 +208,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_0.svg"
+    "scenery": "/vp-assets/rocket/map2_2_0.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 3,
@@ -323,7 +371,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_1.svg"
+    "scenery": "/vp-assets/rocket/map2_2_1.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 4,
@@ -462,7 +534,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_2.svg"
+    "scenery": "/vp-assets/rocket/map2_2_2.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 5,
@@ -643,7 +739,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_3.svg"
+    "scenery": "/vp-assets/rocket/map2_2_3.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 6,
@@ -824,7 +944,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_5.svg"
+    "scenery": "/vp-assets/rocket/map2_2_5.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 7,
@@ -974,7 +1118,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_6.svg"
+    "scenery": "/vp-assets/rocket/map2_2_6.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 8,
@@ -1128,7 +1296,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_6.svg"
+    "scenery": "/vp-assets/rocket/map2_2_6.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 9,
@@ -1249,7 +1441,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_7.svg"
+    "scenery": "/vp-assets/rocket/map2_2_7.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 10,
@@ -1436,7 +1652,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_7.svg"
+    "scenery": "/vp-assets/rocket/map2_2_7.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 11,
@@ -1600,7 +1840,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_8.svg"
+    "scenery": "/vp-assets/rocket/map2_2_8.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 12,
@@ -1842,7 +2106,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_9.svg"
+    "scenery": "/vp-assets/rocket/map2_2_9.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 13,
@@ -2147,7 +2435,31 @@
     "success": "Well done! All the boxes have reached the portals.",
     "stageColor": "#e1ebf0",
     "pattern": "/vp-assets/rocket/pattern_snow.9c7cadf5782b0ba452cf.svg",
-    "scenery": "/vp-assets/rocket/map2_2_2.svg"
+    "scenery": "/vp-assets/rocket/map2_2_2.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 14,

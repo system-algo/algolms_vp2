@@ -12,56 +12,57 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Show solution",
+      "title": "Frank in the swamp",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
       "command_keys": [
         "motion",
+        "looks",
+        "sound",
+        "events",
         "control",
+        "sensing",
         "operators",
         "variables",
-        "myblocks",
-        "events"
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "The Frank sprite got stuck in the swamp",
+          "text": "The Frank sprite got stuck in the swamp",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Tips",
+          "text": "Tips",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Less than symbol",
+          "text": "Less than symbol",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L4_Swamp_1.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -74,49 +75,54 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
           "command_keys": [
             "motion",
+            "looks",
+            "sound",
+            "events",
             "control",
+            "sensing",
             "operators",
             "variables",
-            "myblocks",
-            "events"
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "The Frank sprite got stuck in the swamp",
+              "text": "The Frank sprite got stuck in the swamp",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Tips",
+              "text": "Tips",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Less than symbol",
+              "text": "Less than symbol",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Frank in the swamp",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L4_Swamp_1.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -132,7 +138,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -144,22 +150,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -197,7 +188,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -209,22 +200,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
@@ -248,7 +224,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -258,53 +236,44 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Show solution",
+      "title": "The Goalkeeper",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "The Goalkeeper sprite moves left and right in front of the goal, without going past it. It also starts moving from wherever it stopped last. Run it several times to check.",
       "command_keys": [
         "motion",
         "looks",
+        "sound",
         "events",
         "control",
-        "operators"
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_changexby",
-        "motion_changeyby",
-        "event_whenflagclicked",
-        "looks_switchcostumeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_wait",
-        "control_repeat",
-        "control_forever",
-        "control_if",
-        "control_stop",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Left movement",
+          "text": "Left movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
+          "title": "Right movement",
+          "text": "Right movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Repeat forever",
+          "text": "Repeat forever",
           "type": "gif",
           "url": ""
         }
@@ -317,7 +286,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/workspace/assets/task-43-wv1xft/initial/asset-3aejnc.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M4L4_The_Goalkeeper.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -330,47 +299,38 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "The Goalkeeper sprite moves left and right in front of the goal, without going past it. It also starts moving from wherever it stopped last. Run it several times to check.",
           "command_keys": [
             "motion",
             "looks",
+            "sound",
             "events",
             "control",
-            "operators"
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_changexby",
-            "motion_changeyby",
-            "event_whenflagclicked",
-            "looks_switchcostumeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_wait",
-            "control_repeat",
-            "control_forever",
-            "control_if",
-            "control_stop",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Left movement",
+              "text": "Left movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
+              "title": "Right movement",
+              "text": "Right movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Repeat forever",
+              "text": "Repeat forever",
               "type": "gif",
               "url": ""
             }
@@ -382,7 +342,11 @@
               "text": "Complete the programming task for \"Show solution\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/workspace/assets/task-43-wv1xft/initial/asset-3aejnc.png"
             }
-          ]
+          ],
+          "title": "The Goalkeeper",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L4_The_Goalkeeper.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -421,13 +385,13 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Last save by student August 9 at 9:28 PM",
+      "title": "Frank in the swamp",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 9 at 9:28 PM\".",
+      "description": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
       "command_keys": [
         "motion",
         "looks",
@@ -439,45 +403,25 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changexby",
-        "motion_changeyby",
-        "event_whenflagclicked",
-        "looks_switchcostumeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_repeat",
-        "control_forever",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Run the program on the flag",
+          "text": "Run the program on the flag",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 9 at 9:28 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Left and right control",
+          "text": "Left and right control",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L4_Swamp.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -490,7 +434,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 9 at 9:28 PM\".",
+          "description": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
           "command_keys": [
             "motion",
             "looks",
@@ -502,44 +446,28 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changexby",
-            "motion_changeyby",
-            "event_whenflagclicked",
-            "looks_switchcostumeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_repeat",
-            "control_forever",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Run the program on the flag",
+              "text": "Run the program on the flag",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 9 at 9:28 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Left and right control",
+              "text": "Left and right control",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Frank in the swamp",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L4_Swamp.sb3",
+          "demo_project_id": ""
         }
       ]
     },

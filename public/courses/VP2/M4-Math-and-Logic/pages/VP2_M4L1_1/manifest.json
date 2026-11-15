@@ -18,7 +18,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Cat task 0",
+      "title": "The Cat sprite",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -27,22 +27,16 @@
       "description": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse.",
       "command_keys": [
         "motion",
+        "looks",
+        "sound",
         "events",
         "control",
         "sensing",
-        "variables"
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "sensing_touchingobject",
-        "sensing_mousedown",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
@@ -60,7 +54,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Cat_task_0.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -76,22 +70,16 @@
           "description": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse.",
           "command_keys": [
             "motion",
+            "looks",
+            "sound",
             "events",
             "control",
             "sensing",
-            "variables"
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "sensing_touchingobject",
-            "sensing_mousedown",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
@@ -108,7 +96,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "The Cat sprite",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L1_Cat_task_0.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -118,13 +110,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Cat task",
+      "title": "The Cat sprite (AND)",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Let's solve the same task but in a different way, using one condition (using the logical operator \"AND\").",
+      "description": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Let's solve the same task but in a different way, using one condition (using the logical operator 'AND').",
       "command_keys": [
         "motion",
         "looks",
@@ -136,11 +128,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -158,7 +146,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Cat_task.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -171,7 +159,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Let's solve the same task but in a different way, using one condition (using the logical operator \"AND\").",
+          "description": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Let's solve the same task but in a different way, using one condition (using the logical operator 'AND').",
           "command_keys": [
             "motion",
             "looks",
@@ -183,11 +171,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
@@ -204,7 +188,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "The Cat sprite (AND)",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L1_Cat_task.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -214,29 +202,25 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Creative Project (Level 3)",
+      "title": "Call the elevator",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
+      "description": "The elevator call button will work if any of the Girl sprites goes up to it! Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
         "control",
         "sensing",
-        "operators"
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_switchcostumeto",
-        "looks_show",
-        "control_wait",
-        "control_if",
-        "sensing_touchingobject",
-        "operator_and",
-        "operator_or"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
@@ -261,7 +245,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "New_project_(3).sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -274,23 +258,19 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
+          "description": "The elevator call button will work if any of the Girl sprites goes up to it! Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
             "control",
             "sensing",
-            "operators"
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_switchcostumeto",
-            "looks_show",
-            "control_wait",
-            "control_if",
-            "sensing_touchingobject",
-            "operator_and",
-            "operator_or"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
@@ -314,7 +294,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Call the elevator",
+          "isAutoCheck": true,
+          "starter_project_id": "New_project_(3).sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -324,7 +308,7 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Button",
+      "title": "Teamwork",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -342,13 +326,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "looks_nextcostume",
-        "looks_sayforsecs",
-        "looks_show",
-        "sensing_touchingobject",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_4_1",
@@ -387,7 +365,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Button.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -412,13 +390,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "looks_nextcostume",
-            "looks_sayforsecs",
-            "looks_show",
-            "sensing_touchingobject",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_4_1",
@@ -456,7 +428,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Teamwork",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L1_Button.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -472,7 +448,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Study the example and we'll create something similar.",
+      "description": "The Cat sprite dodges the hedgehogs! The rule for controlling the Cat sprite: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Study the example and we'll create something similar.",
       "command_keys": [
         "motion",
         "looks",
@@ -484,14 +460,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "event_whenthisspriteclicked",
-        "looks_show",
-        "control_if",
-        "sensing_touchingcolor",
-        "sensing_touchingobject",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_5_1",
@@ -523,7 +492,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -536,7 +505,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Study the example and we'll create something similar.",
+          "description": "The Cat sprite dodges the hedgehogs! The rule for controlling the Cat sprite: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Study the example and we'll create something similar.",
           "command_keys": [
             "motion",
             "looks",
@@ -548,14 +517,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "event_whenthisspriteclicked",
-            "looks_show",
-            "control_if",
-            "sensing_touchingcolor",
-            "sensing_touchingobject",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_5_1",
@@ -586,7 +548,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Cat and Hedgehog",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -614,14 +580,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "control_wait",
-        "control_if",
-        "sensing_touchingcolor",
-        "sensing_touchingobject",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_6_1",
@@ -667,7 +626,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Open_the_elevator.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -692,14 +651,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "control_wait",
-            "control_if",
-            "sensing_touchingcolor",
-            "sensing_touchingobject",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_6_1",
@@ -744,7 +696,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Open the elevator",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Open_the_elevator.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -760,7 +716,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Study the example and let's create the code!",
+      "description": "The sprites Giga and Pico need to run the Algorithmics bus from the portal. To do this, they need to touch a button together. Study the example and let's create the code!",
       "command_keys": [
         "motion",
         "looks",
@@ -772,10 +728,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_7_1",
@@ -800,7 +753,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -813,7 +766,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Study the example and let's create the code!",
+          "description": "The sprites Giga and Pico need to run the Algorithmics bus from the portal. To do this, they need to touch a button together. Study the example and let's create the code!",
           "command_keys": [
             "motion",
             "looks",
@@ -825,10 +778,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_7_1",
@@ -852,7 +802,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Start the Algorithmics bus",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -880,21 +834,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "event_whenkeypressed",
-        "looks_setsizeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "sensing_touchingcolor",
-        "sensing_touchingobject",
-        "sensing_keypressed",
-        "sensing_mousedown",
-        "operator_and",
-        "operator_or"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_8_1",
@@ -926,7 +866,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -951,21 +891,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "event_whenkeypressed",
-            "looks_setsizeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "sensing_touchingcolor",
-            "sensing_touchingobject",
-            "sensing_keypressed",
-            "sensing_mousedown",
-            "operator_and",
-            "operator_or"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_8_1",
@@ -996,7 +922,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "The Crab and Coral",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -1006,26 +936,25 @@
       "position": 9,
       "level_position": 9,
       "levelPosition": 9,
-      "title": "М4Т1 Growth apple",
+      "title": "Growth apple",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "To do that, it needs to touch the magic apple!",
+      "description": "The Cat sprite isn't allowing the Triceratops sprite to reach the volcano. The dinosaur will only leave if the Cat sprite becomes large enough. To do that, it needs to touch the magic apple!",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
         "control",
         "sensing",
-        "operators"
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "control_if",
-        "sensing_touchingcolor",
-        "sensing_touchingobject"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_9_1",
@@ -1043,7 +972,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Growth_apple.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -1056,20 +985,19 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "To do that, it needs to touch the magic apple!",
+          "description": "The Cat sprite isn't allowing the Triceratops sprite to reach the volcano. The dinosaur will only leave if the Cat sprite becomes large enough. To do that, it needs to touch the magic apple!",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
             "control",
             "sensing",
-            "operators"
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "control_if",
-            "sensing_touchingcolor",
-            "sensing_touchingobject"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_9_1",
@@ -1086,7 +1014,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Growth apple",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Growth_apple.sb3",
+          "demo_project_id": ""
         }
       ]
     }

@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 9 at 9:59 PM",
+      "title": "Group project",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 9 at 9:59 PM\".",
+      "description": "Program your part of the group project here so you can combine them later!",
       "command_keys": [
         "motion",
         "looks",
@@ -30,47 +30,67 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Planning",
+          "text": "Planning",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 9 at 9:59 PM\".",
+          "title": "Create!",
+          "text": "Create!",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Combine",
+          "text": "Combine",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Tips",
+          "text": "Tips",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_5",
+          "title": "Download the sprite",
+          "text": "Download the sprite",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_6",
+          "title": "Upload the sprite",
+          "text": "Upload the sprite",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_7",
+          "title": "Download the background",
+          "text": "Download the background",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_8",
+          "title": "Upload the background",
+          "text": "Upload the background",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L5_Group_project.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -83,7 +103,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 9 at 9:59 PM\".",
+          "description": "Program your part of the group project here so you can combine them later!",
           "command_keys": [
             "motion",
             "looks",
@@ -95,46 +115,70 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Planning",
+              "text": "Planning",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 9 at 9:59 PM\".",
+              "title": "Create!",
+              "text": "Create!",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Combine",
+              "text": "Combine",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Tips",
+              "text": "Tips",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_5",
+              "title": "Download the sprite",
+              "text": "Download the sprite",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_6",
+              "title": "Upload the sprite",
+              "text": "Upload the sprite",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_7",
+              "title": "Download the background",
+              "text": "Download the background",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_8",
+              "title": "Upload the background",
+              "text": "Upload the background",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Group project",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L5_Group_project.sb3",
+          "demo_project_id": ""
         }
       ]
     },

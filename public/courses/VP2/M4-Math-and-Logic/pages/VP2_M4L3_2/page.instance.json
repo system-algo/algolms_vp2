@@ -13210,13 +13210,13 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Show solution",
+      "title": "The Dice sprite",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "If you don't happen to have a dice - you can program one! Click on it.",
       "command_keys": [
         "motion",
         "looks",
@@ -13228,42 +13228,19 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenthisspriteclicked",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "control_wait",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_6_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Random number of repetitions",
+          "text": "Random number of repetitions",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Invisibility and visibility",
+          "text": "Invisibility and visibility",
           "type": "gif",
           "url": ""
         }
@@ -13276,7 +13253,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-39-6jkjcj/initial/asset-1gwz70s.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Dice.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -13289,7 +13266,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "If you don't happen to have a dice - you can program one! Click on it.",
           "command_keys": [
             "motion",
             "looks",
@@ -13301,42 +13278,19 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenthisspriteclicked",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "control_wait",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_6_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Random number of repetitions",
+              "text": "Random number of repetitions",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Invisibility and visibility",
+              "text": "Invisibility and visibility",
               "type": "gif",
               "url": ""
             }
@@ -13348,7 +13302,11 @@
               "text": "Complete the programming task for \"Show solution\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-39-6jkjcj/initial/asset-1gwz70s.png"
             }
-          ]
+          ],
+          "title": "The Dice sprite",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L3_Dice.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -13364,7 +13322,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -13376,22 +13334,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_7_1",
@@ -13429,7 +13372,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -13441,22 +13384,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_7_1",
@@ -13480,7 +13408,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -13496,7 +13426,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -13508,22 +13438,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_8_1",
@@ -13561,7 +13476,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -13573,22 +13488,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_8_1",
@@ -13612,7 +13512,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -13622,13 +13524,13 @@
       "position": 9,
       "level_position": 9,
       "levelPosition": 9,
-      "title": "Show solution",
+      "title": "Catch the ball",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "Drag the platform with your mouse. Program the Ball sprite so that when it collides with the platform, the sprite flies in different directions. Use only the commands available on the canvas.",
       "command_keys": [
         "motion",
         "looks",
@@ -13640,47 +13542,32 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_ifonedgebounce",
-        "event_whenflagclicked",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "control_stop",
-        "sensing_touchingcolor",
-        "sensing_touchingobject",
-        "operator_random"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_9_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
+          "title": "The Ball sprite starts to move in random directions",
+          "text": "The Ball sprite starts to move in random directions",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Ball bouncing",
+          "text": "Ball bouncing",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Tennis.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -13693,7 +13580,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "Drag the platform with your mouse. Program the Ball sprite so that when it collides with the platform, the sprite flies in different directions. Use only the commands available on the canvas.",
           "command_keys": [
             "motion",
             "looks",
@@ -13705,46 +13592,35 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_ifonedgebounce",
-            "event_whenflagclicked",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "control_stop",
-            "sensing_touchingcolor",
-            "sensing_touchingobject",
-            "operator_random"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_9_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
+              "title": "The Ball sprite starts to move in random directions",
+              "text": "The Ball sprite starts to move in random directions",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Ball bouncing",
+              "text": "Ball bouncing",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Catch the ball",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L3_Tennis.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -13783,13 +13659,13 @@
       "position": 11,
       "level_position": 11,
       "levelPosition": 11,
-      "title": "Last save by student June 16 at 8:32 PM",
+      "title": "Tennis",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 16 at 8:32 PM\".",
+      "description": "Use the left and right arrows to control the platform, hit the Ball sprite, and don't let it fly to the bottom edge! Look, after it's hit, the sprite rotates at different angles!",
       "command_keys": [
         "motion",
         "looks",
@@ -13801,48 +13677,32 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_11_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Controlling the platform",
+          "text": "Controlling the platform",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_11_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 16 at 8:32 PM\".",
+          "title": "The Ball sprite starts to move in random directions",
+          "text": "The Ball sprite starts to move in random directions",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_11_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Continuous movement of the Ball sprite",
+          "text": "Continuous movement of the Ball sprite",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Tennis_2.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -13855,7 +13715,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 16 at 8:32 PM\".",
+          "description": "Use the left and right arrows to control the platform, hit the Ball sprite, and don't let it fly to the bottom edge! Look, after it's hit, the sprite rotates at different angles!",
           "command_keys": [
             "motion",
             "looks",
@@ -13867,47 +13727,35 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_11_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Controlling the platform",
+              "text": "Controlling the platform",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_11_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 16 at 8:32 PM\".",
+              "title": "The Ball sprite starts to move in random directions",
+              "text": "The Ball sprite starts to move in random directions",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_11_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Continuous movement of the Ball sprite",
+              "text": "Continuous movement of the Ball sprite",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Tennis",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L3_Tennis_2.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -13923,7 +13771,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -13935,22 +13783,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_12_1",
@@ -13988,7 +13821,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -14000,22 +13833,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_12_1",
@@ -14039,7 +13857,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -14049,13 +13869,13 @@
       "position": 13,
       "level_position": 13,
       "levelPosition": 13,
-      "title": "Last save by student June 16 at 8:38 PM",
+      "title": "Rockfall",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 16 at 8:38 PM\".",
+      "description": "When you click on the green flag, all the sprites take their starting positions. The MarsBot is keyboard controlled. Rocks appear randomly at the top of the stage and move downward.",
       "command_keys": [
         "motion",
         "looks",
@@ -14067,41 +13887,33 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_pointindirection",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changexby",
-        "motion_changeyby",
-        "event_whenflagclicked",
-        "event_whenbroadcastreceived",
-        "event_broadcast",
-        "looks_switchcostumeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "sensing_touchingobject",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_13_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "When you click on the green flag, all the sprites take their starting positions",
+          "text": "When you click on the green flag, all the sprites take their starting positions",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_13_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 16 at 8:38 PM\".",
+          "title": "The MarsBot is keyboard controlled",
+          "text": "The MarsBot is keyboard controlled",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_13_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Rocks appear randomly at the top of the stage and move downward",
+          "text": "Rocks appear randomly at the top of the stage and move downward",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_13_4",
+          "title": "After touching the edge, the rock disappears and reappears at a random point at the top",
+          "text": "After touching the edge, the rock disappears and reappears at a random point at the top",
           "type": "gif",
           "url": ""
         }
@@ -14114,7 +13926,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-158-ht1z5t/initial/asset-1r6nlc6.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Rockfall.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -14127,7 +13939,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 16 at 8:38 PM\".",
+          "description": "When you click on the green flag, all the sprites take their starting positions. The MarsBot is keyboard controlled. Rocks appear randomly at the top of the stage and move downward.",
           "command_keys": [
             "motion",
             "looks",
@@ -14139,41 +13951,33 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_pointindirection",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changexby",
-            "motion_changeyby",
-            "event_whenflagclicked",
-            "event_whenbroadcastreceived",
-            "event_broadcast",
-            "looks_switchcostumeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "sensing_touchingobject",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_13_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "When you click on the green flag, all the sprites take their starting positions",
+              "text": "When you click on the green flag, all the sprites take their starting positions",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_13_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 16 at 8:38 PM\".",
+              "title": "The MarsBot is keyboard controlled",
+              "text": "The MarsBot is keyboard controlled",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_13_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Rocks appear randomly at the top of the stage and move downward",
+              "text": "Rocks appear randomly at the top of the stage and move downward",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_13_4",
+              "title": "After touching the edge, the rock disappears and reappears at a random point at the top",
+              "text": "After touching the edge, the rock disappears and reappears at a random point at the top",
               "type": "gif",
               "url": ""
             }
@@ -14185,7 +13989,11 @@
               "text": "Complete the programming task for \"Last save by student June 16 at 8:38 PM\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-158-ht1z5t/initial/asset-1r6nlc6.png"
             }
-          ]
+          ],
+          "title": "Rockfall",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L3_Rockfall.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -14195,13 +14003,13 @@
       "position": 14,
       "level_position": 14,
       "levelPosition": 14,
-      "title": "Show solution",
+      "title": "Rain",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "Click on the green flag to start the rain simulation. A Raindrop sprite appears at a random position at the top of the stage and moves down.",
       "command_keys": [
         "motion",
         "looks",
@@ -14213,38 +14021,33 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changeyby",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenthisspriteclicked",
-        "looks_show",
-        "looks_hide",
-        "control_wait",
-        "control_repeat",
-        "control_forever"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_14_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "A Raindrop sprite appears at a random position at the top of the stage",
+          "text": "A Raindrop sprite appears at a random position at the top of the stage",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_14_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
+          "title": "The Raindrop sprite is moving down",
+          "text": "The Raindrop sprite is moving down",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_14_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The Raindrop sprite falls until...",
+          "text": "The Raindrop sprite falls until...",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_14_4",
+          "title": "Repeat forever",
+          "text": "Repeat forever",
           "type": "gif",
           "url": ""
         }
@@ -14257,7 +14060,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-216-1iigys7/initial/asset-1glgbkz.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Rain.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -14270,7 +14073,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "Click on the green flag to start the rain simulation. A Raindrop sprite appears at a random position at the top of the stage and moves down.",
           "command_keys": [
             "motion",
             "looks",
@@ -14282,38 +14085,33 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changeyby",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenthisspriteclicked",
-            "looks_show",
-            "looks_hide",
-            "control_wait",
-            "control_repeat",
-            "control_forever"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_14_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "A Raindrop sprite appears at a random position at the top of the stage",
+              "text": "A Raindrop sprite appears at a random position at the top of the stage",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_14_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
+              "title": "The Raindrop sprite is moving down",
+              "text": "The Raindrop sprite is moving down",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_14_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The Raindrop sprite falls until...",
+              "text": "The Raindrop sprite falls until...",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_14_4",
+              "title": "Repeat forever",
+              "text": "Repeat forever",
               "type": "gif",
               "url": ""
             }
@@ -14325,7 +14123,11 @@
               "text": "Complete the programming task for \"Show solution\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_2/workspace/assets/task-216-1iigys7/initial/asset-1glgbkz.png"
             }
-          ]
+          ],
+          "title": "Rain",
+          "isAutoCheck": true,
+          "starter_project_id": "M4L3_Rain.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -14335,13 +14137,13 @@
       "position": 15,
       "level_position": 15,
       "levelPosition": 15,
-      "title": "Last save by student June 16 at 8:42 PM",
+      "title": "Geometric shapes",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 16 at 8:42 PM\".",
+      "description": "The balloon moves by itself and jumps when you press the space bar. The rules are the same for each level, only the background changes.",
       "command_keys": [
         "motion",
         "looks",
@@ -14353,48 +14155,18 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_switchcostumeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_15_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_15_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 16 at 8:42 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_15_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Tasks will be checked by the teacher",
+          "text": "Tasks will be checked by the teacher",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L3_Geometric_Shapes.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -14407,7 +14179,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 16 at 8:42 PM\".",
+          "description": "The balloon moves by itself and jumps when you press the space bar. The rules are the same for each level, only the background changes.",
           "command_keys": [
             "motion",
             "looks",
@@ -14419,47 +14191,21 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_switchcostumeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_15_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_15_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 16 at 8:42 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_15_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Tasks will be checked by the teacher",
+              "text": "Tasks will be checked by the teacher",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Geometric shapes",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L3_Geometric_Shapes.sb3",
+          "demo_project_id": ""
         }
       ]
     },

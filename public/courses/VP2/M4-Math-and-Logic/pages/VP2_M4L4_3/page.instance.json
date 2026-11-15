@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student June 4 at 3:02 PM",
+      "title": "Platformer",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 4 at 3:02 PM\".",
+      "description": "This is a real platformer game! Here gravity affects the player and you can only jump by pushing off the platform. You need to reach the goal by jumping over obstacles.",
       "command_keys": [
         "motion",
         "looks",
@@ -30,53 +30,26 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenbroadcastreceived",
-        "looks_nextcostume",
-        "looks_setsizeto",
-        "looks_show",
-        "looks_hide",
-        "control_forever",
-        "control_if",
-        "sensing_touchingcolor",
-        "sensing_touchingobject",
-        "sensing_keypressed",
-        "operator_and",
-        "operator_not"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Rule: if the player is at the bottom of the stage, you lose",
+          "text": "Rule: if the player is at the bottom of the stage, you lose",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 4 at 3:02 PM\".",
+          "title": "Other rules",
+          "text": "Other rules",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Enemy movement in levels 1 and 2",
+          "text": "Enemy movement in levels 1 and 2",
           "type": "gif",
           "url": ""
         }
@@ -89,7 +62,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_3/workspace/assets/task-1-1o7bfu4/initial/asset-1o5vivw.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M4L4_Platformer.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -102,7 +75,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 4 at 3:02 PM\".",
+          "description": "This is a real platformer game! Here gravity affects the player and you can only jump by pushing off the platform. You need to reach the goal by jumping over obstacles.",
           "command_keys": [
             "motion",
             "looks",
@@ -114,53 +87,26 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenbroadcastreceived",
-            "looks_nextcostume",
-            "looks_setsizeto",
-            "looks_show",
-            "looks_hide",
-            "control_forever",
-            "control_if",
-            "sensing_touchingcolor",
-            "sensing_touchingobject",
-            "sensing_keypressed",
-            "operator_and",
-            "operator_not"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Rule: if the player is at the bottom of the stage, you lose",
+              "text": "Rule: if the player is at the bottom of the stage, you lose",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 4 at 3:02 PM\".",
+              "title": "Other rules",
+              "text": "Other rules",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Enemy movement in levels 1 and 2",
+              "text": "Enemy movement in levels 1 and 2",
               "type": "gif",
               "url": ""
             }
@@ -172,7 +118,11 @@
               "text": "Complete the programming task for \"Last save by student June 4 at 3:02 PM\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_3/workspace/assets/task-1-1o7bfu4/initial/asset-1o5vivw.png"
             }
-          ]
+          ],
+          "title": "Platformer",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L4_Platformer.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -188,7 +138,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -238,7 +188,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -274,7 +224,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },

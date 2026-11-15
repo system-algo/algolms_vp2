@@ -681,7 +681,22 @@
           },
           "id": "task-1-1ytxva6-1389xpd",
           "name": "initial",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0001-task-1-1ytxva6-initial.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0001-task-1-1ytxva6-initial.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-1d7ac0b",
@@ -929,7 +944,22 @@
           },
           "id": "task-1-1ytxva6-1d7ac0b",
           "name": "after-1-Go",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0002-task-1-1ytxva6-after-1-Go.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0002-task-1-1ytxva6-after-1-Go.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-jq3jeg",
@@ -1173,7 +1203,22 @@
           },
           "id": "task-1-1ytxva6-jq3jeg",
           "name": "after-2-Stop",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0003-task-1-1ytxva6-after-2-Stop.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0003-task-1-1ytxva6-after-2-Stop.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-1kby7tv",
@@ -1421,7 +1466,22 @@
           },
           "id": "task-1-1ytxva6-1kby7tv",
           "name": "after-4-top-toolbar-button",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0004-task-1-1ytxva6-after-4-top-toolbar-button.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0004-task-1-1ytxva6-after-4-top-toolbar-button.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-1ruyh0h",
@@ -1669,7 +1729,22 @@
           },
           "id": "task-1-1ytxva6-1ruyh0h",
           "name": "after-5-Completed",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0005-task-1-1ytxva6-after-5-Completed.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0005-task-1-1ytxva6-after-5-Completed.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-mxvi78",
@@ -1917,7 +1992,22 @@
           },
           "id": "task-1-1ytxva6-mxvi78",
           "name": "after-6-top-toolbar-button",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0006-task-1-1ytxva6-after-6-top-toolbar-button.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0006-task-1-1ytxva6-after-6-top-toolbar-button.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-qei2o4",
@@ -2165,7 +2255,22 @@
           },
           "id": "task-1-1ytxva6-qei2o4",
           "name": "after-7-Not completed",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0007-task-1-1ytxva6-after-7-Not completed.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0007-task-1-1ytxva6-after-7-Not completed.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-1w6vm62",
@@ -2377,7 +2482,22 @@
           },
           "id": "task-1-1ytxva6-1w6vm62",
           "name": "after-8-splitter-collapse-handle",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0008-task-1-1ytxva6-after-8-splitter-collapse-handle.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0008-task-1-1ytxva6-after-8-splitter-collapse-handle.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-coqnwf",
@@ -2625,7 +2745,22 @@
           },
           "id": "task-1-1ytxva6-coqnwf",
           "name": "after-9-splitter-collapse-handle",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0009-task-1-1ytxva6-after-9-splitter-collapse-handle.png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0009-task-1-1ytxva6-after-9-splitter-collapse-handle.png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-h5xwk4",
@@ -2871,7 +3006,22 @@
           },
           "id": "task-1-1ytxva6-h5xwk4",
           "name": "after-10-[object SVGAnimatedString]",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0010-task-1-1ytxva6-after-10-[object SVGAnimatedString].png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0010-task-1-1ytxva6-after-10-[object SVGAnimatedString].png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         },
         {
           "stateId": "task-1-1ytxva6-1ql0kkr",
@@ -3117,7 +3267,22 @@
           },
           "id": "task-1-1ytxva6-1ql0kkr",
           "name": "after-11-[object SVGAnimatedString]",
-          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0011-task-1-1ytxva6-after-11-[object SVGAnimatedString].png"
+          "screenshot": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/screenshots/0011-task-1-1ytxva6-after-11-[object SVGAnimatedString].png",
+          "description": "Game from the Martiad (presentation/demo)",
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": []
         }
       ],
       "id": "task-1-1ytxva6",
@@ -3128,7 +3293,22 @@
         "Not completed",
         "Game from the Martiad"
       ],
-      "images": []
+      "images": [],
+      "description": "Game from the Martiad (presentation/demo)",
+      "starter_project_id": "",
+      "demo_project_id": "",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": []
     },
     {
       "id": "VP2_M4L5_2_2",
@@ -3142,7 +3322,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -3192,7 +3372,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -3228,7 +3408,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -3244,7 +3426,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -3256,22 +3438,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
@@ -3309,7 +3476,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -3321,22 +3488,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
@@ -3360,7 +3512,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -3370,40 +3524,30 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Last save by student June 28 at 6:07 PM",
+      "title": "Flight to Mars",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
+      "description": "Work on your Flight to Mars project.",
       "command_keys": [
+        "motion",
+        "looks",
         "sound",
-        "events"
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "operator_not"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 28 at 6:07 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Flight to Mars",
+          "text": "Flight to Mars",
           "type": "gif",
           "url": ""
         }
@@ -3416,7 +3560,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/assets/task-37-un203g/initial/asset-1726sxp.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "FLIGHT_TO_MARS.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -3429,34 +3573,24 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
+          "description": "Work on your Flight to Mars project.",
           "command_keys": [
+            "motion",
+            "looks",
             "sound",
-            "events"
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "operator_not"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_4_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 28 at 6:07 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Flight to Mars",
+              "text": "Flight to Mars",
               "type": "gif",
               "url": ""
             }
@@ -3468,7 +3602,11 @@
               "text": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/assets/task-37-un203g/initial/asset-1726sxp.png"
             }
-          ]
+          ],
+          "title": "Flight to Mars",
+          "isAutoCheck": false,
+          "starter_project_id": "FLIGHT_TO_MARS.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -3478,13 +3616,13 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Last save by student June 28 at 6:07 PM",
+      "title": "Flight to Mars",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
+      "description": "Complete the Flight to Mars project.",
       "command_keys": [
         "motion",
         "looks",
@@ -3496,29 +3634,12 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "looks_show",
-        "operator_not"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 28 at 6:07 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Flight to Mars",
+          "text": "Flight to Mars",
           "type": "gif",
           "url": ""
         }
@@ -3531,7 +3652,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/assets/task-58-zfjnak/initial/asset-1726sxp.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "FLIGHT_TO_MARS.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -3544,7 +3665,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
+          "description": "Complete the Flight to Mars project.",
           "command_keys": [
             "motion",
             "looks",
@@ -3556,29 +3677,12 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "looks_show",
-            "operator_not"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 28 at 6:07 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Flight to Mars",
+              "text": "Flight to Mars",
               "type": "gif",
               "url": ""
             }
@@ -3590,7 +3694,11 @@
               "text": "Complete the programming task for \"Last save by student June 28 at 6:07 PM\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_2/workspace/assets/task-58-zfjnak/initial/asset-1726sxp.png"
             }
-          ]
+          ],
+          "title": "Flight to Mars",
+          "isAutoCheck": false,
+          "starter_project_id": "FLIGHT_TO_MARS.sb3",
+          "demo_project_id": ""
         }
       ]
     }

@@ -18,7 +18,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "М4Т1 Bear in space",
+      "title": "Bear in space",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -26,25 +26,17 @@
       "isAutoCheck": false,
       "description": "The bear really wants to go to space! Only there will he be able to move to the right and to the left and up and down. In order to send the bear into space, change the background using numbers.",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
         "operators",
-        "events"
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_pointindirection",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_changexby",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "sensing_keypressed",
-        "operator_and",
-        "operator_or"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
@@ -62,7 +54,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Bear_in_space.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -77,25 +69,17 @@
           "drawerOpen": true,
           "description": "The bear really wants to go to space! Only there will he be able to move to the right and to the left and up and down. In order to send the bear into space, change the background using numbers.",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
             "operators",
-            "events"
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_pointindirection",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_changexby",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "sensing_keypressed",
-            "operator_and",
-            "operator_or"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
@@ -112,7 +96,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Bear in space",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Bear_in_space.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -122,7 +110,7 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "М4Т1 Potion Making",
+      "title": "Potion",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -130,21 +118,17 @@
       "isAutoCheck": false,
       "description": "You need to drag the ingredients into the cauldron to help the sorceress brew the potion. But be careful because if you mix up the ingredients, you won't be able to make the potion!",
       "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
         "sensing",
         "operators",
-        "events"
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "looks_switchcostumeto",
-        "looks_show",
-        "control_if",
-        "sensing_touchingobject",
-        "operator_and",
-        "operator_or"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -155,7 +139,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Potion_Making.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -170,21 +154,17 @@
           "drawerOpen": true,
           "description": "You need to drag the ingredients into the cauldron to help the sorceress brew the potion. But be careful because if you mix up the ingredients, you won't be able to make the potion!",
           "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
             "sensing",
             "operators",
-            "events"
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "looks_switchcostumeto",
-            "looks_show",
-            "control_if",
-            "sensing_touchingobject",
-            "operator_and",
-            "operator_or"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
@@ -194,7 +174,11 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Potion",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Potion_Making.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -210,7 +194,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Run the project!",
+      "description": "Run the project! Add rules and conditions for winning to the procedure.",
       "command_keys": [
         "motion",
         "looks",
@@ -222,9 +206,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
@@ -246,31 +228,10 @@
           "text": "The rockets push Kepler to the left",
           "type": "gif",
           "url": ""
-        },
-        {
-          "id": "req_3_4",
-          "title": "BONUS TASKS",
-          "text": "BONUS TASKS",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_5",
-          "title": "* Make the game more difficult: add sprites and change their movement",
-          "text": "* Make the game more difficult: add sprites and change their movement",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_6",
-          "title": "* Add a sprite to freeze",
-          "text": "* Add a sprite to freeze",
-          "type": "gif",
-          "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L1_Robot_charges.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -283,7 +244,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the project!",
+          "description": "Run the project! Add rules and conditions for winning to the procedure.",
           "command_keys": [
             "motion",
             "looks",
@@ -295,9 +256,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
@@ -319,30 +278,13 @@
               "text": "The rockets push Kepler to the left",
               "type": "gif",
               "url": ""
-            },
-            {
-              "id": "req_3_4",
-              "title": "BONUS TASKS",
-              "text": "BONUS TASKS",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_5",
-              "title": "* Make the game more difficult: add sprites and change their movement",
-              "text": "* Make the game more difficult: add sprites and change their movement",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_6",
-              "title": "* Add a sprite to freeze",
-              "text": "* Add a sprite to freeze",
-              "type": "gif",
-              "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Robot charges",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L1_Robot_charges.sb3",
+          "demo_project_id": ""
         }
       ]
     }

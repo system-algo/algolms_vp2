@@ -78,3 +78,5 @@ Published Land of minerals: 8af2c46. Published Retro laboratory: 412cebd. Module
 Martian Chef: all fourteen source programming positions inspected. Restored nine separate palette blocks in source order: forever, if, and, or, not, color, shape, size, cook. Boolean/numeric expression blocks can be dragged into typed input sockets, nested, edited, detached and removed. Incompatible drops preserve the original expression; incomplete inputs fail with an actionable error. C-shaped toolbox blocks now display their statement slot. Regression coverage includes nested predicate execution, expression moves, numeric expressions, wrong-type/cycle rejection and empty inputs. Production build passed. Remaining page palettes are being audited individually.
 
 Command palette audit: unknown — all source programming positions checked; separate predicate blocks restored with typed sockets.
+
+Command palette audit: training — all source programming positions checked; separate predicate blocks restored with typed sockets.

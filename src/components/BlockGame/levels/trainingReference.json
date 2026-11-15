@@ -764,13 +764,18 @@
       {
         "type": "repeat_until",
         "params": {
-          "condition": {
-            "kind": "tank",
-            "value": "under"
-          }
+          "condition": null
         }
       },
-      "repeat"
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -1850,15 +1855,26 @@
       },
       "take_cargo",
       {
-        "type": "repeat_until",
+        "type": "repeat",
         "params": {
-          "condition": {
-            "kind": "tank",
-            "value": "under"
-          }
+          "times": 4
         }
       },
-      "repeat"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -2606,15 +2622,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -3380,15 +3408,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -4166,15 +4206,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -4934,15 +4986,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -6209,15 +6273,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -7284,15 +7360,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -8088,15 +8176,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -8850,15 +8950,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -9660,15 +9772,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -10536,15 +10660,27 @@
       },
       "take_cargo",
       {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
       },
-      "repeat"
+      "dynamite_sensor"
     ]
   },
   {
@@ -11330,12 +11466,19 @@
       {
         "type": "repeat_until",
         "params": {
-          "condition": {
+          "condition": null
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
             "kind": "tank",
-            "value": "under"
+            "value": "ahead"
           }
         }
-      }
+      },
+      "dynamite_sensor"
     ]
   }
 ]

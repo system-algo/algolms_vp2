@@ -158,7 +158,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 3,
@@ -312,7 +325,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 4,
@@ -466,7 +492,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 5,
@@ -620,7 +659,19 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 6,
@@ -774,7 +825,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 7,
@@ -928,7 +992,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 8,
@@ -1082,7 +1159,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 9,
@@ -1249,7 +1339,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 12,
@@ -1403,7 +1506,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 13,
@@ -1557,7 +1673,20 @@
     "loops": true,
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
-    "success": "Way to go! You helped with the greenhouse!"
+    "success": "Way to go! You helped with the greenhouse!",
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 14,
@@ -1712,6 +1841,19 @@
     "repeatDefault": 2,
     "pattern": "/vp-assets/plants/back.bdccf7100984d83ea5ce.png",
     "success": "Way to go! You helped with the greenhouse!",
-    "maxCommands": 3
+    "maxCommands": 3,
+    "toolbox": [
+      "turn_clockwise",
+      "turn_counterclockwise",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "destroy",
+      "water"
+    ],
+    "sourceToolboxCount": 5
   }
 ]

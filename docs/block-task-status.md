@@ -98,3 +98,5 @@ Command palette audit: journey — all source programming positions checked; pal
 Command palette audit: flight — all source programming positions checked; palette order, count and executable command mapping verified.
 
 Command palette audit: collecting — all source programming positions checked; palette order, count and executable command mapping verified.
+
+Command palette audit: plants — all source programming positions checked; palette order, count and executable command mapping verified.

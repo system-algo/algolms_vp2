@@ -46,7 +46,11 @@
       "y": 0
     },
     "hint": "We need to enter the correct coordinates for the rocket.",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_1"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 6,
@@ -64,7 +68,11 @@
       "y": 0
     },
     "hint": "It's already a little different here!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_1"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 7,
@@ -82,7 +90,11 @@
       "y": 0
     },
     "hint": "Look \u2014 everything is the same, but now the coordinates are in the range of -80...80!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_10"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 8,
@@ -100,7 +112,11 @@
       "y": 0
     },
     "hint": "There's a zero coordinate here!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_10"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 9,
@@ -122,7 +138,11 @@
       "y": 0
     },
     "hint": "And now two points...",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_10"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 10,
@@ -144,7 +164,11 @@
       "y": 0
     },
     "hint": "And now the three-digit numbers. But you can handle it!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 11,
@@ -170,7 +194,11 @@
       "y": 0
     },
     "hint": "Whoa! More and more landing points!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 12,
@@ -204,7 +232,11 @@
       "y": 0
     },
     "hint": "We have to be careful here!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 14,
@@ -230,7 +262,11 @@
       "y": 0
     },
     "hint": "Bonuses! Shall we practice a little more?",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 15,
@@ -260,7 +296,11 @@
       "y": 0
     },
     "hint": "Whoa! 4 landing spots! Can you handle it?",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 16,
@@ -290,7 +330,11 @@
       "y": 0
     },
     "hint": "A little bit more!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   },
   {
     "number": 17,
@@ -324,6 +368,10 @@
       "y": 0
     },
     "hint": "Last level! Five points!",
-    "success": "Way to go! You visited all the landing points!"
+    "success": "Way to go! You visited all the landing points!",
+    "toolbox": [
+      "go_to_30"
+    ],
+    "sourceToolboxCount": 1
   }
 ]

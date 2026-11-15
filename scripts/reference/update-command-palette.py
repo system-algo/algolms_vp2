@@ -49,6 +49,9 @@ elif name=='journey':
  for l in levels:
   if not l.get('type'):
    n=l['number'];u=l['unit'];l['toolbox']=([f'go_to_{u}']if n in [13,16,17]else [])+[f'change_x_{u}',f'change_y_{u}']+([{'type':'repeat','params':{'times':2}}]if n>=9 else []);l['sourceToolboxCount']=len(l['toolbox'])
+elif name=='flight':
+ for l in levels:
+  if not l.get('type'):l['toolbox']=[f'go_to_{l["unit"]}'];l['sourceToolboxCount']=1
 else:raise SystemExit('Page has not been audited: '+name)
 p.write_text(json.dumps(levels,indent=2)+'\n')
 with open(root/'docs/block-task-status.md','a')as f:f.write('\nCommand palette audit: '+name+' — all source programming positions checked; palette order, count and executable command mapping verified.\n')

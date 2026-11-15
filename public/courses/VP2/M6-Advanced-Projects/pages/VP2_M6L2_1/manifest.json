@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project! Look: the snowflakes are rotating in different directions.",
       "command_keys": [
         "motion",
@@ -169,9 +169,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_1/workspace/assets/task-1-cf5a97/after-17-Costumes/asset-1bh7bew.png"
             }
           ],
-          "title": "Snowfall (with rotation)"
+          "title": "Snowfall (with rotation)",
+          "project_title": "M6L2 Snowfall"
         }
-      ]
+      ],
+      "project_title": "M6L2 Snowfall",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-22-tjerkh",

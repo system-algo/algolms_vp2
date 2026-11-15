@@ -232,7 +232,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Think over the rocket launching from Mars. The rocket should reach the Earth. A cloud of Martian dust is moving around the planet. It is necessary to calculate the flight so as not to get into the cloud.",
       "command_keys": [
         "motion",
@@ -364,9 +364,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_12/workspace/screenshots/0005-task-2-1o8w8ns-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Meteorologist"
+          "title": "Meteorologist",
+          "project_title": "Meteorologist"
         }
-      ]
+      ],
+      "project_title": "Meteorologist",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1mq5tk1",

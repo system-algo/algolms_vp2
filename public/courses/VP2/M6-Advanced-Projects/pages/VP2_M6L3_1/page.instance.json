@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Let's create a simple menu with one button",
       "command_keys": [
         "motion",
@@ -209,9 +209,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_1/workspace/assets/task-1-rtiaeh/after-10-top-toolbar-button/asset-18bolsm.gif"
             }
           ],
-          "title": "Adding an interface"
+          "title": "Adding an interface",
+          "project_title": "Adding an interface"
         }
-      ]
+      ],
+      "project_title": "Adding an interface",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M6L3_1_2",

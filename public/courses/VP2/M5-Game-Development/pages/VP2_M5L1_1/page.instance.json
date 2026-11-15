@@ -94,9 +94,12 @@
           "title": "Cat bot 1",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_1.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L1 Cat bot 1"
         }
-      ]
+      ],
+      "project_title": "M5L1 Cat bot 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L1_1_2",
@@ -186,9 +189,12 @@
           "title": "Cat bot 2",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_2.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L1 Cat bot 2"
         }
-      ]
+      ],
+      "project_title": "M5L1 Cat bot 2",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L1_1_3",
@@ -201,7 +207,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project and answer the questions.",
       "command_keys": [
         "motion",
@@ -278,9 +284,12 @@
           "title": "Greeting",
           "isAutoCheck": false,
           "starter_project_id": "M5L1_Greeting.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L1 Greeting"
         }
-      ]
+      ],
+      "project_title": "M5L1 Greeting",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

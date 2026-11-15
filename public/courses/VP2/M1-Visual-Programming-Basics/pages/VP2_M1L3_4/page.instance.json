@@ -58,9 +58,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Initial placement - Question 1"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Initial placement - Question 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L3_4_2",
@@ -114,9 +118,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Initial placement - Question 2"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Initial placement - Question 2",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L3_4_3",
@@ -170,9 +178,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Initial placement - Question 3"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Initial placement - Question 3",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ]
 }

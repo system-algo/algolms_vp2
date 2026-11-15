@@ -3327,7 +3327,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -3416,9 +3416,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L5_2_3",
@@ -3431,7 +3434,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -3520,9 +3523,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L5_2_4",
@@ -3535,7 +3541,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Work on your Flight to Mars project.",
       "command_keys": [
         "motion",
@@ -3612,9 +3618,12 @@
           "title": "Flight to Mars",
           "isAutoCheck": false,
           "starter_project_id": "FLIGHT_TO_MARS.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "FLIGHT TO MARS"
         }
-      ]
+      ],
+      "project_title": "FLIGHT TO MARS",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L5_2_5",
@@ -3627,7 +3636,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the Flight to Mars project.",
       "command_keys": [
         "motion",
@@ -3704,9 +3713,12 @@
           "title": "Flight to Mars",
           "isAutoCheck": false,
           "starter_project_id": "FLIGHT_TO_MARS.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "FLIGHT TO MARS"
         }
-      ]
+      ],
+      "project_title": "FLIGHT TO MARS",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

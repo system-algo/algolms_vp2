@@ -232,7 +232,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Think over the rocket route. The rocket should reach the Earth. Try not to get caught in a black hole.",
       "command_keys": [
         "motion",
@@ -364,9 +364,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_9/workspace/screenshots/0005-task-2-eh1zcq-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Navigation Systems Engineer"
+          "title": "Navigation Systems Engineer",
+          "project_title": "Navigation Systems Engineer"
         }
-      ]
+      ],
+      "project_title": "Navigation Systems Engineer",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1ruuaap",

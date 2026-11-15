@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project and answer the questions.",
       "command_keys": [
         "motion",
@@ -94,9 +94,12 @@
           "title": "Password",
           "isAutoCheck": false,
           "starter_project_id": "M5L1_Password.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L1 Password"
         }
-      ]
+      ],
+      "project_title": "M5L1 Password",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L1_2_2",

@@ -238,7 +238,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Use the MarsBot to find 7 purple crystals for making fuel. The crystals are not moving along the conveyor; it means that something may have been broken. Help MarsBot fix the conveyor and find 7 purple crystals.",
       "command_keys": [
         "motion",
@@ -370,9 +370,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_7/workspace/screenshots/0005-task-2-wc8k5y-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "MarsBots Engineer"
+          "title": "MarsBots Engineer",
+          "project_title": "MarsBots Engineer"
         }
-      ]
+      ],
+      "project_title": "MarsBots Engineer",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-v8bmdw",

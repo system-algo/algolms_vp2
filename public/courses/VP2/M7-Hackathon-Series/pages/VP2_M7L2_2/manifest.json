@@ -238,7 +238,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Send the robot to load things into the rocket. Your task is to program the robot so that it would bring things to the rocket perfectly safe. Mars is still a treacherous planet.",
       "command_keys": [
         "motion",
@@ -370,9 +370,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_2/workspace/screenshots/0005-task-2-5s8l5i-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Captain's mate 1"
+          "title": "Captain's mate 1",
+          "project_title": "Captains mate 1"
         }
-      ]
+      ],
+      "project_title": "Captains mate 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1lz3vxk",

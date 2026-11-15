@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 220" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#cbd5e1" opacity="0.6"/>
+    </pattern>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc" rx="8" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect width="100%" height="100%" fill="url(#grid)" rx="8"/>
+
+  <g transform="translate(40, 25)" filter="url(#shadow)">
+    <path d="M 0,4 A 4,4 0 0,1 4,0 L 20,0 L 24,4 L 36,4 L 40,0 L 130,0 A 4,4 0 0,1 134,4 L 134,40 A 4,4 0 0,1 130,44 L 60,44 L 56,48 L 44,48 L 40,44 L 24,44 A 4,4 0 0,0 20,48 L 20,116 A 4,4 0 0,0 24,120 L 130,120 A 4,4 0 0,1 134,124 L 134,146 A 4,4 0 0,1 130,150 L 40,150 L 36,154 L 24,154 L 20,150 L 4,150 A 4,4 0 0,1 0,146 Z" fill="#FFAB19" stroke="#CF8B17" stroke-width="1.5"/>
+    <text x="20" y="29" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="bold">forever</text>
+
+    <g transform="translate(32, 44)">
+      <path d="M 0,4 A 4,4 0 0,1 4,0 L 16,0 L 20,4 L 32,4 L 36,0 L 330,0 A 4,4 0 0,1 334,4 L 334,68 A 4,4 0 0,1 330,72 L 36,72 L 32,76 L 20,76 L 16,72 L 4,72 A 4,4 0 0,1 0,68 Z" fill="#9966FF" stroke="#774DCB" stroke-width="1.5"/>
+      <text x="20" y="44" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold">change size by</text>
+      <g transform="translate(240, 16)">
+        <rect x="0" y="0" width="70" height="40" rx="20" fill="#ffffff" stroke="#774DCB" stroke-width="1"/>
+        <text x="35" y="27" fill="#333333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">-5</text>
+      </g>
+    </g>
+
+    <path d="M 112,130 L 122,130 L 122,126 L 128,133 L 122,140 L 122,136 L 112,136 Z" fill="#CF8B17"/>
+  </g>
+</svg>

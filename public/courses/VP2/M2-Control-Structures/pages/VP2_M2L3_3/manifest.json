@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Open the door\".",
       "command_keys": [
         "motion",
@@ -111,9 +111,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_Open_the_door.sb3"
+          "starter_project_id": "M2L3_Open_the_door.sb3",
+          "project_title": "M2L3 Open the door"
         }
-      ]
+      ],
+      "project_title": "M2L3 Open the door",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L3_3_2",
@@ -126,7 +129,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Knight\".",
       "command_keys": [
         "motion",
@@ -214,9 +217,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_Knight.sb3"
+          "starter_project_id": "M2L3_Knight.sb3",
+          "project_title": "M2L3 Knight"
         }
-      ]
+      ],
+      "project_title": "M2L3 Knight",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L3_3_3",
@@ -229,7 +235,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Egg\".",
       "command_keys": [
         "motion",
@@ -317,9 +323,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_Egg.sb3"
+          "starter_project_id": "M2L3_Egg.sb3",
+          "project_title": "M2L3 Egg"
         }
-      ]
+      ],
+      "project_title": "M2L3 Egg",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L3_3_4",
@@ -332,7 +341,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"The ball is spinning\".",
       "command_keys": [
         "motion",
@@ -420,9 +429,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_The_ball_is_spinning.sb3"
+          "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
+          "project_title": "M2L3 The ball is spinning"
         }
-      ]
+      ],
+      "project_title": "M2L3 The ball is spinning",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L3_3_5",
@@ -435,7 +447,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Butterfly\".",
       "command_keys": [
         "motion",
@@ -523,9 +535,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_Butterfly.sb3"
+          "starter_project_id": "M2L3_Butterfly.sb3",
+          "project_title": "M2L3 Butterfly"
         }
-      ]
+      ],
+      "project_title": "M2L3 Butterfly",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L3_3_6",
@@ -538,7 +553,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Clock\".",
       "command_keys": [
         "motion",
@@ -626,9 +641,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L3_Clock.sb3"
+          "starter_project_id": "M2L3_Clock.sb3",
+          "project_title": "M2L3 Clock"
         }
-      ]
+      ],
+      "project_title": "M2L3 Clock",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

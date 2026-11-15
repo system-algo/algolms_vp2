@@ -129,9 +129,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-1-emzfh6/after-9-Motion/asset-10t1jwk.png"
             }
           ],
-          "title": "Leaf fall"
+          "title": "Leaf fall",
+          "project_title": "M6L1 Leaf fall"
         }
-      ]
+      ],
+      "project_title": "M6L1 Leaf fall",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M6L1_1_2",
@@ -144,7 +147,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project! Snowflakes stop like in the example.",
       "command_keys": [
         "motion",
@@ -292,9 +295,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-22-rbmrdc/initial/asset-1bh7bew.png"
             }
           ],
-          "title": "Snowfall"
+          "title": "Snowfall",
+          "project_title": "M6P1 Snowfall"
         }
-      ]
+      ],
+      "project_title": "M6P1 Snowfall",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

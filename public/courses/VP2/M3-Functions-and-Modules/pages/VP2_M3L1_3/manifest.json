@@ -127,9 +127,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Colored_ball.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Colored ball"
         }
-      ]
+      ],
+      "project_title": "M3L1 Colored ball",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_2",
@@ -246,9 +249,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Stars.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Stars"
         }
-      ]
+      ],
+      "project_title": "M3L1 Stars",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_3",
@@ -351,9 +357,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Jellyfish.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Jellyfish"
         }
-      ]
+      ],
+      "project_title": "M3L1 Jellyfish",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_4",
@@ -442,9 +451,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Bat.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Bat"
         }
-      ]
+      ],
+      "project_title": "M3L1 Bat",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_5",
@@ -561,9 +573,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Three_balls.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Three balls"
         }
-      ]
+      ],
+      "project_title": "M3L1 Three balls",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_6",
@@ -652,9 +667,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Three_balls_(collision).sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Three balls (collision)"
         }
-      ]
+      ],
+      "project_title": "M3L1 Three balls (collision)",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_7",
@@ -667,7 +685,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "After clicking on the green flag, the balls begin to move chaotically. Watch how the balls move: when they touch, they bounce off each other! Let's do the same!",
       "command_keys": [
         "motion",
@@ -785,9 +803,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Three_balls_(1).sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Three balls (1)"
         }
-      ]
+      ],
+      "project_title": "M3L1 Three balls (1)",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_8",
@@ -800,7 +821,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The balloons are coming out of the box! Use the mouse cursor to keep the balloons away from the edge!",
       "command_keys": [
         "motion",
@@ -876,9 +897,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_Balls.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 Balls"
         }
-      ]
+      ],
+      "project_title": "M3L1 Balls",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L1_3_9",
@@ -891,7 +915,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
       "command_keys": [
         "motion",
@@ -995,9 +1019,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L1_hedgehog_and_crabs.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L1 hedgehog and crabs"
         }
-      ]
+      ],
+      "project_title": "M3L1 hedgehog and crabs",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

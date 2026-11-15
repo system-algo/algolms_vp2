@@ -128,9 +128,12 @@
           "title": "Frank in the swamp",
           "isAutoCheck": true,
           "starter_project_id": "M4L4_Swamp_1.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L4 Swamp 1"
         }
-      ]
+      ],
+      "project_title": "M4L4 Swamp 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_1_2",
@@ -143,7 +146,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -232,9 +235,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_1_3",
@@ -352,9 +358,12 @@
           "title": "The Goalkeeper",
           "isAutoCheck": true,
           "starter_project_id": "M4L4_The_Goalkeeper.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L4 The Goalkeeper"
         }
-      ]
+      ],
+      "project_title": "M4L4 The Goalkeeper",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_1_4",
@@ -396,7 +405,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
       "command_keys": [
         "motion",
@@ -473,9 +482,12 @@
           "title": "Frank in the swamp",
           "isAutoCheck": false,
           "starter_project_id": "M4L4_Swamp.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L4 Swamp"
         }
-      ]
+      ],
+      "project_title": "M4L4 Swamp",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_1_6",

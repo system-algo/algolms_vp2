@@ -12,7 +12,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Events - Task 1",
+      "title": "Choosing a dress",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -35,24 +35,24 @@
       ],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 1 of \"Scratch. Events\".",
-          "type": "gif",
+          "id": "req_dress_1",
+          "title": "Change shorts",
+          "text": "Program the shorts sprite to switch to the next costume when clicked.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "id": "req_dress_2",
+          "title": "Change shirt",
+          "text": "Program the shirt sprite to switch to the next costume when clicked.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_1_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_dress_3",
+          "title": "Initial placement",
+          "text": "Set initial position and costumes for Harper and clothes when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -86,9 +86,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 Choosing a dress"
         }
-      ]
+      ],
+      "project_title": "M1L4 Choosing a dress",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Help Harper choose an outfit! Click on the clothes to change costumes."
     },
     {
       "id": "VP2_M1L4_1_2",
@@ -96,7 +101,7 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Events - Task 2",
+      "title": "Pop the balloon",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -119,24 +124,31 @@
       ],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 2 of \"Scratch. Events\".",
-          "type": "gif",
+          "id": "req_balloon_1",
+          "title": "Pop balloon 1",
+          "text": "When Balloon 1 is clicked, switch costume to pop or hide the sprite.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_2_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "id": "req_balloon_2",
+          "title": "Pop balloon 2",
+          "text": "When Balloon 2 is clicked, switch costume to pop or hide the sprite.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_2_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_balloon_3",
+          "title": "Pop balloon 3",
+          "text": "When Balloon 3 is clicked, switch costume to pop or hide the sprite.",
+          "type": "svg",
+          "url": ""
+        },
+        {
+          "id": "req_balloon_4",
+          "title": "Initial placement",
+          "text": "Show all balloons and reset their initial costumes when the green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -170,9 +182,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 Pop the balloon"
         }
-      ]
+      ],
+      "project_title": "M1L4 Pop the balloon",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Click the balloons to pop them and clear the stage!"
     },
     {
       "id": "VP2_M1L4_1_3",
@@ -180,7 +197,7 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Events - Task 3",
+      "title": "The bell",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -203,24 +220,17 @@
       ],
       "requirements": [
         {
-          "id": "req_3_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 3 of \"Scratch. Events\".",
-          "type": "gif",
+          "id": "req_bell_1",
+          "title": "Ring the bell",
+          "text": "When the bell sprite is clicked, animate the bell and play the bell sound.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_3_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_bell_2",
+          "title": "Initial placement",
+          "text": "Position the bell in the witch house when the green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -254,9 +264,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 The bell"
         }
-      ]
+      ],
+      "project_title": "M1L4 The bell",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Ring the bell in the witch house by clicking on it!"
     },
     {
       "id": "VP2_M1L4_1_4",
@@ -264,7 +279,7 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Scratch. Events - Task 4",
+      "title": "Seasons",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -287,24 +302,38 @@
       ],
       "requirements": [
         {
-          "id": "req_4_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 4 of \"Scratch. Events\".",
-          "type": "gif",
+          "id": "req_season_1",
+          "title": "Winter button",
+          "text": "When the Winter button is clicked, switch the stage backdrop to winter.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_4_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "id": "req_season_2",
+          "title": "Spring button",
+          "text": "When the Spring button is clicked, switch the stage backdrop to spring.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_4_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_season_3",
+          "title": "Summer button",
+          "text": "When the Summer button is clicked, switch the stage backdrop to summer.",
+          "type": "svg",
+          "url": ""
+        },
+        {
+          "id": "req_season_4",
+          "title": "Autumn button",
+          "text": "When the Autumn button is clicked, switch the stage backdrop to autumn.",
+          "type": "svg",
+          "url": ""
+        },
+        {
+          "id": "req_season_5",
+          "title": "Initial placement",
+          "text": "Position all 4 season buttons and set the starting backdrop when the green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -338,9 +367,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 Seasons"
         }
-      ]
+      ],
+      "project_title": "M1L4 Seasons",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Click on the season buttons to change the backdrop to winter, spring, summer, or autumn!"
     },
     {
       "id": "VP2_M1L4_1_5",
@@ -372,23 +406,23 @@
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 5 of \"Scratch. Events\".",
-          "type": "gif",
+          "title": "Program Scratch. Events - Task 5",
+          "text": "Program the sprites and animations for \"Scratch. Events - Task 5\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_5_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_5_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -422,9 +456,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 hen"
         }
-      ]
+      ],
+      "project_title": "M1L4 hen",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L4_1_6",
@@ -456,23 +494,23 @@
       "requirements": [
         {
           "id": "req_6_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 6 of \"Scratch. Events\".",
-          "type": "gif",
+          "title": "Program Scratch. Events - Task 6",
+          "text": "Program the sprites and animations for \"Scratch. Events - Task 6\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_6_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_6_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -506,9 +544,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 A rocketship"
         }
-      ]
+      ],
+      "project_title": "M1L4 A rocketship",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L4_1_7",
@@ -540,23 +582,23 @@
       "requirements": [
         {
           "id": "req_7_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 7 of \"Scratch. Events\".",
-          "type": "gif",
+          "title": "Program Scratch. Events - Task 7",
+          "text": "Program the sprites and animations for \"Scratch. Events - Task 7\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_7_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_7_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -590,9 +632,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L4 Stars"
         }
-      ]
+      ],
+      "project_title": "M1L4 Stars",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ]
 }

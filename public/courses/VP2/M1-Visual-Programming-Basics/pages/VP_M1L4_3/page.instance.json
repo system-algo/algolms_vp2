@@ -12,12 +12,15 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "A rocketship",
+      "title": "The rocket approaches and recedes",
+      "project_title": "M1L4 A rocketship",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
       "starter_project_id": "M1L4_A_rocketship.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "looks",
         "events",
@@ -25,40 +28,43 @@
       ],
       "command_blocks": [
         "looks_sayforsecs",
+        "looks_say",
         "looks_switchcostumeto",
+        "looks_nextcostume",
+        "looks_changesizeby",
+        "looks_setsizeto",
+        "looks_gotofrontback",
         "event_whenflagclicked",
-        "control_wait"
+        "event_whenkeypressed",
+        "event_whenthisspriteclicked",
+        "control_wait",
+        "control_repeat",
+        "control_forever"
       ],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the Rocketship sprite and space background.",
-          "type": "gif",
-          "url": ""
+          "title": "Approaching",
+          "text": "Pressing the up arrow changes the costume and increases the size.",
+          "type": "svg",
+          "url": "/vp-assets/m1l4/approaching_hint.svg"
         },
         {
           "id": "req_1_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
+          "title": "Receding",
+          "text": "Pressing the down arrow changes the costume and decreases the size.",
+          "type": "svg",
+          "url": "/vp-assets/m1l4/receding_hint.svg"
         },
         {
           "id": "req_1_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "When the green flag is clicked, set the rocket's initial position, costume, and size to 100%.",
+          "type": "svg",
           "url": ""
         }
       ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "A rocketship",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
+      "media": [],
       "states": [
         {
           "id": "VP2_M1L4_3_1_state_1",
@@ -68,6 +74,9 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_A_rocketship.sb3",
+          "project_title": "M1L4 A rocketship",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "looks",
             "events",
@@ -75,9 +84,18 @@
           ],
           "command_blocks": [
             "looks_sayforsecs",
+            "looks_say",
             "looks_switchcostumeto",
+            "looks_nextcostume",
+            "looks_changesizeby",
+            "looks_setsizeto",
+            "looks_gotofrontback",
             "event_whenflagclicked",
-            "control_wait"
+            "event_whenkeypressed",
+            "event_whenthisspriteclicked",
+            "control_wait",
+            "control_repeat",
+            "control_forever"
           ]
         }
       ]
@@ -89,11 +107,14 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Hen",
+      "project_title": "M1L4 hen",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
       "starter_project_id": "M1L4_hen.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "looks",
         "events",
@@ -102,37 +123,54 @@
       "command_blocks": [
         "looks_sayforsecs",
         "looks_switchcostumeto",
+        "looks_nextcostume",
+        "looks_changesizeby",
+        "looks_setsizeto",
+        "looks_show",
+        "looks_hide",
         "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the Hen sprite and farm stage.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
-          "url": ""
-        }
+        "event_whenkeypressed",
+        "event_whenthisspriteclicked",
+        "control_wait",
+        "control_repeat",
+        "control_forever"
       ],
       "media": [
         {
           "type": "presentation",
           "title": "Hen",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "text": "The hen walks, eats, or turns its head when the keys \"1\", \"2\", and \"3\" are pressed. These actions do not happen at the same time.",
+          "url": "/vp-assets/m1l4/hen_demo.svg"
+        }
+      ],
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "The hen walks when the \"1\" key is pressed",
+          "text": "Pressing key 1 switches costume to walking.",
+          "type": "svg",
+          "url": "/vp-assets/m1l4/hen_walk_hint.svg"
+        },
+        {
+          "id": "req_2_2",
+          "title": "The hen eats when the \"2\" key is pressed",
+          "text": "Pressing key 2 switches costume to pecking/eating.",
+          "type": "svg",
+          "url": "/vp-assets/m1l4/hen_eat_hint.svg"
+        },
+        {
+          "id": "req_2_3",
+          "title": "The hen turns its head when the \"3\" key is pressed",
+          "text": "Pressing key 3 switches costume to turning head.",
+          "type": "svg",
+          "url": "/vp-assets/m1l4/hen_head_hint.svg"
+        },
+        {
+          "id": "req_2_4",
+          "title": "Initial placement",
+          "text": "Set initial costume and position when the green flag is clicked.",
+          "type": "svg",
+          "url": ""
         }
       ],
       "states": [
@@ -144,6 +182,9 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_hen.sb3",
+          "project_title": "M1L4 hen",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "looks",
             "events",
@@ -152,8 +193,17 @@
           "command_blocks": [
             "looks_sayforsecs",
             "looks_switchcostumeto",
+            "looks_nextcostume",
+            "looks_changesizeby",
+            "looks_setsizeto",
+            "looks_show",
+            "looks_hide",
             "event_whenflagclicked",
-            "control_wait"
+            "event_whenkeypressed",
+            "event_whenthisspriteclicked",
+            "control_wait",
+            "control_repeat",
+            "control_forever"
           ]
         }
       ]
@@ -165,11 +215,14 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Skeleton",
+      "project_title": "M1L4 Sceleton",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
       "starter_project_id": "M1L4_Sceleton.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "looks",
         "events",
@@ -178,37 +231,32 @@
       "command_blocks": [
         "looks_sayforsecs",
         "looks_switchcostumeto",
+        "looks_nextcostume",
         "event_whenflagclicked",
+        "event_whenkeypressed",
         "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the Skeleton and Ghost sprites on the castle stage.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
-          "url": ""
-        }
       ],
       "media": [
         {
           "type": "presentation",
           "title": "Skeleton",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "text": "Program the skeleton to dance and switch costumes when control keys are pressed."
+        }
+      ],
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "The skeleton moves when keys are pressed",
+          "text": "Switch costumes to make the skeleton dance when keys are pressed.",
+          "type": "svg",
+          "url": ""
+        },
+        {
+          "id": "req_3_2",
+          "title": "Initial placement",
+          "text": "Set the skeleton and ghost initial positions and costumes.",
+          "type": "svg",
+          "url": ""
         }
       ],
       "states": [
@@ -220,6 +268,9 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_Sceleton.sb3",
+          "project_title": "M1L4 Sceleton",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "looks",
             "events",
@@ -228,7 +279,9 @@
           "command_blocks": [
             "looks_sayforsecs",
             "looks_switchcostumeto",
+            "looks_nextcostume",
             "event_whenflagclicked",
+            "event_whenkeypressed",
             "control_wait"
           ]
         }
@@ -270,12 +323,15 @@
       "level_position": 5,
       "levelPosition": 5,
       "title": "Bonus! Stars",
+      "project_title": "M1L4 Stars",
       "isBonus": true,
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
       "starter_project_id": "M1L4_Stars.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -291,34 +347,27 @@
         "event_whenflagclicked",
         "control_wait"
       ],
-      "requirements": [
-        {
-          "id": "req_5_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 5 of \"Scratch. Script management\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
       "media": [
         {
           "type": "presentation",
           "title": "Bonus! Stars",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "text": "Program the stars to twinkle and shine across the night sky."
+        }
+      ],
+      "requirements": [
+        {
+          "id": "req_5_1",
+          "title": "Twinkling stars",
+          "text": "Program the star to switch costumes and change size.",
+          "type": "svg",
+          "url": ""
+        },
+        {
+          "id": "req_5_2",
+          "title": "Initial placement",
+          "text": "Set initial position and size for the star.",
+          "type": "svg",
+          "url": ""
         }
       ],
       "states": [
@@ -330,6 +379,9 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_Stars.sb3",
+          "project_title": "M1L4 Stars",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",

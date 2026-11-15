@@ -113,9 +113,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Beetle_on_a_tree.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Beetle on a tree"
         }
-      ]
+      ],
+      "project_title": "M3L2 Beetle on a tree",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_2",
@@ -218,9 +221,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Snowflake_1.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Snowflake 1"
         }
-      ]
+      ],
+      "project_title": "M3L2 Snowflake 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_3",
@@ -351,9 +357,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_The_dragon_guards_the_castle.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 The dragon guards the castle"
         }
-      ]
+      ],
+      "project_title": "M3L2 The dragon guards the castle",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_4",
@@ -470,9 +479,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Goalkeeper control"
         }
-      ]
+      ],
+      "project_title": "M3L2 Goalkeeper control",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_5",
@@ -589,9 +601,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Goalkeeper control"
         }
-      ]
+      ],
+      "project_title": "M3L2 Goalkeeper control",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_6",
@@ -604,7 +619,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
       "command_keys": [
         "motion",
@@ -680,9 +695,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Snowflakes.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Snowflakes"
         }
-      ]
+      ],
+      "project_title": "M3L2 Snowflakes",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_7",
@@ -695,7 +713,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Create a game in which the goalkeeper has to protect their goal. Use the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
       "command_keys": [
         "motion",
@@ -771,9 +789,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Soccer_(task).sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Soccer (task)"
         }
-      ]
+      ],
+      "project_title": "M3L2 Soccer (task)",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_8",
@@ -786,7 +807,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The Cat sprite jumps. Press the space bar!",
       "command_keys": [
         "motion",
@@ -876,9 +897,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Jump.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Jump"
         }
-      ]
+      ],
+      "project_title": "M3L2 Jump",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L2_3_9",
@@ -891,7 +915,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Use the arrows to control the Car sprite and reach the finish line!",
       "command_keys": [
         "motion",
@@ -981,9 +1005,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L2_Race.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L2 Race"
         }
-      ]
+      ],
+      "project_title": "M3L2 Race",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

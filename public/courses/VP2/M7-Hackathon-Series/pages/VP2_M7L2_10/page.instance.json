@@ -232,7 +232,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Fix the conveyor. The crystals are not moving along the conveyor; it means that something may have been broken. Fix the conveyor and find 5 green crystals.",
       "command_keys": [
         "motion",
@@ -364,9 +364,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_10/workspace/screenshots/0005-task-2-l431n4-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Astromech"
+          "title": "Astromech",
+          "project_title": "Astromech"
         }
-      ]
+      ],
+      "project_title": "Astromech",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1hk0o24",

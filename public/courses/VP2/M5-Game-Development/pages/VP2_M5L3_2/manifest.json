@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Define the questions procedure. Define the story procedure",
       "command_keys": [
         "motion",
@@ -114,9 +114,12 @@
           "title": "Quest",
           "isAutoCheck": false,
           "starter_project_id": "Quest.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Quest"
         }
-      ]
+      ],
+      "project_title": "Quest",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L3_2_2",
@@ -129,7 +132,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -218,9 +221,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L3_2_3",
@@ -233,7 +239,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
       "command_keys": [
         "motion",
@@ -310,9 +316,12 @@
           "title": "Colored keys",
           "isAutoCheck": false,
           "starter_project_id": "Colored_keys.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Colored keys"
         }
-      ]
+      ],
+      "project_title": "Colored keys",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L3_2_4",

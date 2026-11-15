@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Control the robot using the arrows. Collect the keys and go into the store!",
       "command_keys": [
         "motion",
@@ -128,9 +128,12 @@
           "title": "Store",
           "isAutoCheck": false,
           "starter_project_id": "store.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "store"
         }
-      ]
+      ],
+      "project_title": "store",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-22-1o56n27",

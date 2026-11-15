@@ -154,12 +154,17 @@ export default function ScratchTask({
     }));
   };
 
-  const projectTitle =
+  const derivedProjectTitle = (
     task?.project_title ||
     task?.projectName ||
-    '';
+    (projectId && typeof projectId === 'string' && projectId.toLowerCase().endsWith('.sb3')
+      ? projectId.replace(/\.sb3$/i, '').replace(/[_]+/g, ' ').trim()
+      : '') ||
+    task?.title ||
+    ''
+  );
 
-  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
+  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -235,8 +240,9 @@ export default function ScratchTask({
     return checklistItems.find((it) => it.id === selectedReqId) || null;
   }, [checklistItems, selectedReqId]);
 
-  const previewMediaUrl = selectedReq?.url || task?.media?.[0]?.url || checklistItems.find((it) => it.url)?.url || '';
-  const previewMediaTitle = selectedReq?.title || task?.media?.[0]?.title || taskTitle;
+  const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
+  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
+  const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
 
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
@@ -687,7 +693,7 @@ export default function ScratchTask({
 
         <div className="scratch-task-iframe-wrapper">
           <iframe
-            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${projectTitle}`}
+            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${derivedProjectTitle}`}
             ref={iframeRef}
             src={editorUrl}
             className="scratch-task-iframe"
@@ -759,13 +765,20 @@ export default function ScratchTask({
                   onClick={() => setModalImage({ url: previewMediaUrl, title: previewMediaTitle })}
                   loading="lazy"
                 />
-                <div className="scratch-task-media-caption">
-                  {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
-                </div>
+                {previewMediaTitle && previewMediaTitle !== taskTitle && (
+                  <div className="scratch-task-media-caption">
+                    {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
+                  </div>
+                )}
+                {demoInstructionText && (
+                  <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
+                )}
               </div>
+            ) : demoInstructionText ? (
+              <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
             ) : null}
 
-            {task?.description && (
+            {task?.description && task.description !== demoInstructionText && (
               <p className="scratch-task-description">
                 {task.description}
               </p>
@@ -775,7 +788,8 @@ export default function ScratchTask({
             {checklistItems.length > 0 && (
               <div className="scratch-task-checklist-section">
                 <div className="scratch-task-checklist-heading">
-                  {isAutoCheck ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER'}
+                  <span>{task?.checklist_heading || (task?.isAutoCheck !== false ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER')}</span>
+                  <span className="scratch-task-info-icon" title="Automatic check validation">ⓘ</span>
                 </div>
 
                 <div className="scratch-task-req-accordion-list">
@@ -819,12 +833,6 @@ export default function ScratchTask({
 
                         {isOpen && (
                           <div className="scratch-task-req-body">
-                            {item.text && item.text !== item.title && (
-                              <p className="scratch-task-req-desc">
-                                {item.text}
-                              </p>
-                            )}
-
                             {hasMedia && (
                               <div
                                 className="scratch-task-req-media-box"
@@ -841,6 +849,12 @@ export default function ScratchTask({
                                   <span>🔍 Phóng to</span>
                                 </div>
                               </div>
+                            )}
+
+                            {item.text && item.text !== item.title && (
+                              <p className="scratch-task-req-desc">
+                                {item.text}
+                              </p>
                             )}
                           </div>
                         )}

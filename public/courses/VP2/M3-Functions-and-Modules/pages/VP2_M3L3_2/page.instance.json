@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Start the project with the green flag. Move the broom with your mouse and hit the ball. Note that after you touch the ball once, it no longer responds to the touch of the broom.",
       "command_keys": [
         "motion",
@@ -79,9 +79,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Broom_and_ball.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Broom and ball"
         }
-      ]
+      ],
+      "project_title": "M3L3 Broom and ball",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_2_2",
@@ -94,7 +97,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Hide the bunny in the house! Key controls. Note that when the bunny is hiding, the foxes stop!",
       "command_keys": [
         "motion",
@@ -156,9 +159,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Rabbit_and_fox.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Rabbit and fox"
         }
-      ]
+      ],
+      "project_title": "M3L3 Rabbit and fox",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_2_3",
@@ -171,7 +177,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Check where the character returns when it touches the wall.",
       "command_keys": [
         "motion",
@@ -233,9 +239,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_maze_find_an_error.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 maze find an error"
         }
-      ]
+      ],
+      "project_title": "M3L3 maze find an error",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

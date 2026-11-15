@@ -238,7 +238,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Bring the robot to the antenna. Your task is to program the robot so that it would reach the antenna and destroy the rubble. You can only walk along the path. Mars is still a treacherous planet.",
       "command_keys": [
         "motion",
@@ -370,9 +370,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_4/workspace/screenshots/0005-task-2-oka4eg-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Communication man"
+          "title": "Communication man",
+          "project_title": "Communication man"
         }
-      ]
+      ],
+      "project_title": "Communication man",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1ymq6y",

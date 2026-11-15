@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 140" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#cbd5e1" opacity="0.6"/>
+    </pattern>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc" rx="8" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect width="100%" height="100%" fill="url(#grid)" rx="8"/>
+
+  <g transform="translate(30, 20)" filter="url(#shadow)">
+    <!-- Event block: when key pressed -->
+    <path d="M 0,24 C 20,4 40,4 60,24 L 280,24 A 4,4 0 0,1 284,28 L 284,60 A 4,4 0 0,1 280,64 L 40,64 L 36,68 L 24,68 L 20,64 L 4,64 A 4,4 0 0,1 0,60 Z" fill="#FFBF00" stroke="#CC9900" stroke-width="1.5"/>
+    <text x="16" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="bold">when</text>
+    <rect x="65" y="32" width="30" height="24" rx="4" fill="#E6AC00"/>
+    <text x="80" y="49" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">3</text>
+    <text x="105" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="bold">key pressed</text>
+
+    <!-- Looks block: switch costume -->
+    <g transform="translate(0, 64)">
+      <path d="M 0,4 A 4,4 0 0,1 4,0 L 16,0 L 20,4 L 32,4 L 36,0 L 280,0 A 4,4 0 0,1 284,4 L 284,40 A 4,4 0 0,1 280,44 L 36,44 L 32,48 L 20,48 L 16,44 L 4,44 A 4,4 0 0,1 0,40 Z" fill="#9966FF" stroke="#774DCB" stroke-width="1.5"/>
+      <text x="16" y="27" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="bold">switch costume to</text>
+      <rect x="145" y="12" width="95" height="24" rx="12" fill="#855CD6"/>
+      <text x="192" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">hen-d</text>
+    </g>
+  </g>
+</svg>

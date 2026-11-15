@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Program your part of the group project here so you can combine them later!",
       "command_keys": [
         "motion",
@@ -184,9 +184,12 @@
           "title": "Group project",
           "isAutoCheck": false,
           "starter_project_id": "M4L5_Group_project.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L5 Group project"
         }
-      ]
+      ],
+      "project_title": "M4L5 Group project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-22-8xy5tl",

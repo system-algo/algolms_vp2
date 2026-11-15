@@ -13306,9 +13306,12 @@
           "title": "The Dice sprite",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Dice.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L3 Dice"
         }
-      ]
+      ],
+      "project_title": "M4L3 Dice",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_7",
@@ -13321,7 +13324,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -13410,9 +13413,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_8",
@@ -13425,7 +13431,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -13514,9 +13520,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_9",
@@ -13620,9 +13629,12 @@
           "title": "Catch the ball",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Tennis.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L3 Tennis"
         }
-      ]
+      ],
+      "project_title": "M4L3 Tennis",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_10",
@@ -13664,7 +13676,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Use the left and right arrows to control the platform, hit the Ball sprite, and don't let it fly to the bottom edge! Look, after it's hit, the sprite rotates at different angles!",
       "command_keys": [
         "motion",
@@ -13755,9 +13767,12 @@
           "title": "Tennis",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Tennis_2.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L3 Tennis 2"
         }
-      ]
+      ],
+      "project_title": "M4L3 Tennis 2",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_12",
@@ -13770,7 +13785,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -13859,9 +13874,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_13",
@@ -13874,7 +13892,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "When you click on the green flag, all the sprites take their starting positions. The MarsBot is keyboard controlled. Rocks appear randomly at the top of the stage and move downward.",
       "command_keys": [
         "motion",
@@ -13993,9 +14011,12 @@
           "title": "Rockfall",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Rockfall.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L3 Rockfall"
         }
-      ]
+      ],
+      "project_title": "M4L3 Rockfall",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L3_1_14",
@@ -14127,9 +14148,12 @@
           "title": "Rain",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Rain.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L3 Rain"
         }
-      ]
+      ],
+      "project_title": "M4L3 Rain",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

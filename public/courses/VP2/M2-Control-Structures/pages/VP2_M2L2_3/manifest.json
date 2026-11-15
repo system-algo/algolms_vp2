@@ -43,23 +43,23 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 1 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 1",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 1\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -93,9 +93,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Penguin"
         }
-      ]
+      ],
+      "project_title": "M2L2 Penguin",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_2",
@@ -127,23 +131,23 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 2 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 2",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 2\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -177,9 +181,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Bug"
         }
-      ]
+      ],
+      "project_title": "M2L2 Bug",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_3",
@@ -211,23 +219,23 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 3 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 3",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 3\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -261,9 +269,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Mouse"
         }
-      ]
+      ],
+      "project_title": "M2L2 Mouse",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_4",
@@ -295,23 +307,23 @@
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 4 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 4",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 4\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_4_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_4_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -345,9 +357,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Mouse in the maze"
         }
-      ]
+      ],
+      "project_title": "M2L2 Mouse in the maze",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_5",
@@ -379,23 +395,23 @@
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 5 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 5",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 5\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_5_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_5_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -429,9 +445,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Cat"
         }
-      ]
+      ],
+      "project_title": "M2L2 Cat",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_6",
@@ -463,23 +483,23 @@
       "requirements": [
         {
           "id": "req_6_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 6 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 6",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 6\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_6_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_6_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -513,9 +533,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L2 Marsobot on Mars"
         }
-      ]
+      ],
+      "project_title": "M2L2 Marsobot on Mars",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_3_7",
@@ -547,23 +571,23 @@
       "requirements": [
         {
           "id": "req_7_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 7 of \"Scratch. Pointing in different...\".",
-          "type": "gif",
+          "title": "Program Scratch. Pointing in different... - Task 7",
+          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 7\".",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_7_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "title": "Add interactions",
+          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
+          "type": "svg",
           "url": ""
         },
         {
           "id": "req_7_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "title": "Initial placement",
+          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -597,9 +621,13 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M2L1 Teleport"
         }
-      ]
+      ],
+      "project_title": "M2L1 Teleport",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ]
 }

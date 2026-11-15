@@ -93,9 +93,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Jump.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Jump"
         }
-      ]
+      ],
+      "project_title": "M3L3 Jump",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_1_2",
@@ -184,9 +187,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Flip.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Flip"
         }
-      ]
+      ],
+      "project_title": "M3L3 Flip",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_1_3",
@@ -317,9 +323,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Flip_(1).sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Flip (1)"
         }
-      ]
+      ],
+      "project_title": "M3L3 Flip (1)",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_1_4",
@@ -332,7 +341,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Click on 1 and 2 and watch the example!",
       "command_keys": [
         "motion",
@@ -464,9 +473,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Flip_and_walk.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Flip and walk"
         }
-      ]
+      ],
+      "project_title": "M3L3 Flip and walk",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L3_1_5",
@@ -479,7 +491,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project, and press 2 and 1. What is the error?",
       "command_keys": [
         "motion",
@@ -541,9 +553,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Find_the_error.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Find the error"
         }
-      ]
+      ],
+      "project_title": "M3L3 Find the error",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

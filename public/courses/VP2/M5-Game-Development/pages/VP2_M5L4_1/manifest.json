@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project. When you press the space bar, a new drawing appears. Let's program it",
       "command_keys": [
         "motion",
@@ -128,9 +128,12 @@
           "title": "Kaleidoscope",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Kaleidoscope.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L4 Kaleidoscope"
         }
-      ]
+      ],
+      "project_title": "M5L4 Kaleidoscope",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L4_1_2",
@@ -143,7 +146,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
       "command_keys": [
         "motion",
@@ -248,9 +251,12 @@
           "title": "Flower generation",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Flower_generation.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L4 Flower generation"
         }
-      ]
+      ],
+      "project_title": "M5L4 Flower generation",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

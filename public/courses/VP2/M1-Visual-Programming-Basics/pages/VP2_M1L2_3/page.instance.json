@@ -87,13 +87,17 @@
           "command_blocks": [
             "event_whenflagclicked",
             "looks_sayforsecs"
-          ]
+          ],
+          "project_title": "M1L2 A bear walks"
         }
       ],
       "command_blocks": [
         "event_whenflagclicked",
         "looks_sayforsecs"
-      ]
+      ],
+      "project_title": "M1L2 A bear walks",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_2",
@@ -195,14 +199,18 @@
             "event_whenflagclicked",
             "looks_switchcostumeto",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L2 A dinosaur and a snake"
         }
       ],
       "command_blocks": [
         "event_whenflagclicked",
         "looks_switchcostumeto",
         "control_wait"
-      ]
+      ],
+      "project_title": "M1L2 A dinosaur and a snake",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_3",
@@ -319,7 +327,8 @@
             "looks_nextcostume",
             "control_repeat",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L2 A heart"
         }
       ],
       "command_blocks": [
@@ -327,7 +336,10 @@
         "looks_nextcostume",
         "control_repeat",
         "control_wait"
-      ]
+      ],
+      "project_title": "M1L2 A heart",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_4",
@@ -416,7 +428,8 @@
             "looks_nextcostume",
             "control_forever",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L2 A bear walks"
         }
       ],
       "command_blocks": [
@@ -424,7 +437,10 @@
         "looks_nextcostume",
         "control_forever",
         "control_wait"
-      ]
+      ],
+      "project_title": "M1L2 A bear walks",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_5",
@@ -529,7 +545,8 @@
             "control_repeat",
             "control_forever",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L2 A clock"
         }
       ],
       "command_blocks": [
@@ -539,7 +556,10 @@
         "control_repeat",
         "control_forever",
         "control_wait"
-      ]
+      ],
+      "project_title": "M1L2 A clock",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_6",
@@ -645,10 +665,14 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": []
+          "command_blocks": [],
+          "project_title": "M1L2 Super cat"
         }
       ],
-      "command_blocks": []
+      "command_blocks": [],
+      "project_title": "M1L2 Super cat",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M1L2_3_8",
@@ -729,7 +753,8 @@
             "control_repeat",
             "control_forever",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L2 A star"
         }
       ],
       "command_blocks": [
@@ -738,7 +763,10 @@
         "control_repeat",
         "control_forever",
         "control_wait"
-      ]
+      ],
+      "project_title": "M1L2 A star",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ],
   "id": "VP2_M1L2_3",

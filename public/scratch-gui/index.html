@@ -700,10 +700,16 @@
           if (!raw && PROJECT_TITLE_MAP[cleanKey]) {
             raw = PROJECT_TITLE_MAP[cleanKey];
           }
-          if (!raw && PROJECT_TITLE_MAP[`level_${level}`]) {
+          // If cleanKey has a readable name (e.g. M1L4_A_rocketship, Clicker), derive from it!
+          if (!raw && cleanKey && !cleanKey.match(/^\d+$/)) {
+            raw = cleanKey.replace(/[_]+/g, ' ').trim();
+          }
+          // Only fallback to level_1..level_11 if this is explicitly M1L1 (18343)
+          const is18343 = (url && url.includes('18343')) || window.location.search.includes('18343');
+          if (!raw && is18343 && PROJECT_TITLE_MAP[`level_${level}`]) {
             raw = PROJECT_TITLE_MAP[`level_${level}`];
           }
-          if (!raw) raw = cleanKey || 'Scratch Project';
+          if (!raw) raw = cleanKey ? cleanKey.replace(/[_]+/g, ' ').trim() : 'Scratch Project';
         }
 
         // Remove en-dash / em-dash to match Image 2 (e.g. "M1L1 add a backdrop for a mermaid")

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" rx="8" fill="url(#skyGrad)"/>
+  <circle cx="370" cy="90" r="14" fill="#fbbf24"/>
+
+  <path d="M0,180 Q100,100 200,180 L200,280 L0,280 Z" fill="#9a3412" opacity="0.7"/>
+  <path d="M150,180 Q260,90 380,180 L380,280 L150,280 Z" fill="#c2410c" opacity="0.6"/>
+
+  <path d="M0,170 Q250,140 500,180 L500,280 L0,280 Z" fill="#eab308"/>
+  <path d="M0,195 Q250,165 500,205 L500,280 L0,280 Z" fill="#ca8a04"/>
+
+  <g transform="translate(40, 110)">
+    <polygon points="50,0 120,0 150,45 20,45" fill="#7f1d1d"/>
+    <rect x="25" y="45" width="115" height="85" fill="#991b1b"/>
+    <path d="M 50,75 A 30,30 0 0,1 115,75 L 115,130 L 50,130 Z" fill="#1e293b"/>
+  </g>
+
+  <g transform="translate(350, 160)">
+    <line x1="30" y1="55" x2="25" y2="75" stroke="#ea580c" stroke-width="3"/>
+    <line x1="45" y1="55" x2="48" y2="75" stroke="#ea580c" stroke-width="3"/>
+    <line x1="25" y1="75" x2="15" y2="78" stroke="#ea580c" stroke-width="3"/>
+    <line x1="48" y1="75" x2="58" y2="78" stroke="#ea580c" stroke-width="3"/>
+    <ellipse cx="35" cy="40" rx="30" ry="22" fill="#f1f5f9"/>
+    <path d="M10,35 Q-10,15 5,10 Q15,25 20,30 Z" fill="#cbd5e1"/>
+    <circle cx="55" cy="20" r="14" fill="#f1f5f9"/>
+    <polygon points="68,18 78,22 68,26" fill="#f97316"/>
+    <path d="M50,8 Q54,0 58,8 Q62,0 66,10" stroke="#dc2626" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <circle cx="60" cy="18" r="3" fill="#1e293b"/>
+  </g>
+
+  <g transform="translate(250, 140)">
+    <circle cx="0" cy="0" r="34" fill="rgba(255, 255, 255, 0.7)" filter="url(#cardShadow)"/>
+    <path d="M-8,-14 L14,-14 Q8,-6 14,0 L-8,0 Z" fill="#22c55e"/>
+    <line x1="-8" y1="-16" x2="-8" y2="16" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(15, 15)">
+    <rect width="70" height="28" rx="14" fill="rgba(255, 255, 255, 0.85)" stroke="#e2e8f0"/>
+    <path d="M12,9 L24,9 Q20,13 24,17 L12,17 Z" fill="#22c55e"/>
+    <line x1="12" y1="8" x2="12" y2="21" stroke="#475569" stroke-width="2"/>
+    <polygon points="46,10 52,10 56,14 56,20 52,24 46,24 42,20 42,14" fill="#ef4444"/>
+  </g>
+</svg>

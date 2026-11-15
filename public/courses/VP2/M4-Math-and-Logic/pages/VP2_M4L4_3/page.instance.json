@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "This is a real platformer game! Here gravity affects the player and you can only jump by pushing off the platform. You need to reach the goal by jumping over obstacles.",
       "command_keys": [
         "motion",
@@ -122,9 +122,12 @@
           "title": "Platformer",
           "isAutoCheck": false,
           "starter_project_id": "M4L4_Platformer.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L4 Platformer"
         }
-      ]
+      ],
+      "project_title": "M4L4 Platformer",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_3_2",
@@ -137,7 +140,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Preview example project",
       "command_keys": [
         "motion",
@@ -226,9 +229,12 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "Loading Project"
         }
-      ]
+      ],
+      "project_title": "Loading Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L4_3_3",

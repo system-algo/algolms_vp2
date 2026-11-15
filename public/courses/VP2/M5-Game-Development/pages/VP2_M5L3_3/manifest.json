@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
       "command_keys": [
         "motion",
@@ -114,9 +114,12 @@
           "title": "Ping Pong",
           "isAutoCheck": false,
           "starter_project_id": "M5L3_Ping_Pong.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L3 Ping Pong"
         }
-      ]
+      ],
+      "project_title": "M5L3 Ping Pong",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L3_3_2",

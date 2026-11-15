@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Collect the crystals!",
       "command_keys": [
         "motion",
@@ -149,9 +149,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L3_Dog_in_the_labyrinth.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L3 Dog in the labyrinth"
         }
-      ]
+      ],
+      "project_title": "M3L3 Dog in the labyrinth",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

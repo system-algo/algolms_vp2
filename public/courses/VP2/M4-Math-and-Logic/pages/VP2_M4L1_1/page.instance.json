@@ -94,9 +94,12 @@
           "title": "The Cat sprite",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task_0.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Cat task 0"
         }
-      ]
+      ],
+      "project_title": "M4L1 Cat task 0",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_2",
@@ -186,9 +189,12 @@
           "title": "The Cat sprite (AND)",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Cat task"
         }
-      ]
+      ],
+      "project_title": "M4L1 Cat task",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_3",
@@ -292,9 +298,12 @@
           "title": "Call the elevator",
           "isAutoCheck": true,
           "starter_project_id": "New_project_(3).sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "New project (3)"
         }
-      ]
+      ],
+      "project_title": "New project (3)",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_4",
@@ -426,9 +435,12 @@
           "title": "Teamwork",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Button.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Button"
         }
-      ]
+      ],
+      "project_title": "M4L1 Button",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_5",
@@ -441,7 +453,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The Cat sprite dodges the hedgehogs! The rule for controlling the Cat sprite: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Study the example and we'll create something similar.",
       "command_keys": [
         "motion",
@@ -546,9 +558,12 @@
           "title": "Cat and Hedgehog",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Cat and Hedgehog"
         }
-      ]
+      ],
+      "project_title": "M4L1 Cat and Hedgehog",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_6",
@@ -561,7 +576,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Program the elevator so that the door will open if any of the Girl sprites come up and touch the button!",
       "command_keys": [
         "motion",
@@ -694,9 +709,12 @@
           "title": "Open the elevator",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Open_the_elevator.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Open the elevator"
         }
-      ]
+      ],
+      "project_title": "M4L1 Open the elevator",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_7",
@@ -709,7 +727,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The sprites Giga and Pico need to run the Algorithmics bus from the portal. To do this, they need to touch a button together. Study the example and let's create the code!",
       "command_keys": [
         "motion",
@@ -800,9 +818,12 @@
           "title": "Start the Algorithmics bus",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Start the Algorithmics bus"
         }
-      ]
+      ],
+      "project_title": "M4L1 Start the Algorithmics bus",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_8",
@@ -815,7 +836,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The Crab sprite needs to hide behind the coral! Click on the area of the stage where it needs to move to.",
       "command_keys": [
         "motion",
@@ -920,9 +941,12 @@
           "title": "The Crab and Coral",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 The Crab and Coral"
         }
-      ]
+      ],
+      "project_title": "M4L1 The Crab and Coral",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_1_9",
@@ -935,7 +959,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The Cat sprite isn't allowing the Triceratops sprite to reach the volcano. The dinosaur will only leave if the Cat sprite becomes large enough. To do that, it needs to touch the magic apple!",
       "command_keys": [
         "motion",
@@ -1012,9 +1036,12 @@
           "title": "Growth apple",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Growth_apple.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Growth apple"
         }
-      ]
+      ],
+      "project_title": "M4L1 Growth apple",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

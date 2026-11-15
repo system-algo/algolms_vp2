@@ -86,9 +86,12 @@
           "title": "Apple picking season",
           "isAutoCheck": true,
           "starter_project_id": "M5L3_Apple_picking_season.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L3 Apple picking season"
         }
-      ]
+      ],
+      "project_title": "M5L3 Apple picking season",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L3_1_2",
@@ -101,7 +104,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Catch the ball 5 times. To do that, control the basket using the arrows on the keyboard.",
       "command_keys": [
         "motion",
@@ -178,9 +181,12 @@
           "title": "Catch the balls",
           "isAutoCheck": false,
           "starter_project_id": "M5L3_Catch_the_balls.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L3 Catch the balls"
         }
-      ]
+      ],
+      "project_title": "M5L3 Catch the balls",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

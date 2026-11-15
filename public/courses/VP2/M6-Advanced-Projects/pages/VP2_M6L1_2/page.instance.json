@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the program and see how it works. Change it so that you get a different snowflake.",
       "command_keys": [
         "motion",
@@ -171,9 +171,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/after-10-top-toolbar-button/asset-1gwz70s.png"
             }
           ],
-          "title": "Draw snowflakes!"
+          "title": "Draw snowflakes!",
+          "project_title": "M6L1 Draw snowflakes-bonus"
         }
-      ]
+      ],
+      "project_title": "M6L1 Draw snowflakes-bonus",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

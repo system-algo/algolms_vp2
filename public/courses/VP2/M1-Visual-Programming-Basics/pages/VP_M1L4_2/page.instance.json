@@ -12,7 +12,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Additional task: Clicker - Task 1",
+      "title": "Clicker",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -35,24 +35,17 @@
       ],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 1 of \"Additional task: Clicker\".",
-          "type": "gif",
+          "id": "req_clicker_1",
+          "title": "Click the balloon",
+          "text": "When the balloon sprite is clicked, move to a random position and switch costume.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_clicker_2",
+          "title": "Initial placement",
+          "text": "Reset the score and position when the green flag is clicked.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -86,9 +79,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "Clicker"
         }
-      ]
+      ],
+      "project_title": "Clicker",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Create an interactive clicker game with balloons and changing backdrops!"
     }
   ]
 }

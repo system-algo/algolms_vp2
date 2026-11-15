@@ -238,7 +238,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Think over the rocket route. The rocket should reach the Earth. Try not to get caught in the space vortex.",
       "command_keys": [
         "motion",
@@ -370,9 +370,12 @@
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_3/workspace/screenshots/0005-task-2-ax3ay6-after-3-purple-toolbar-button-6.png"
             }
           ],
-          "title": "Navigation man"
+          "title": "Navigation man",
+          "project_title": "Navigation man"
         }
-      ]
+      ],
+      "project_title": "Navigation man",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "taskId": "task-23-1b6m4rw",

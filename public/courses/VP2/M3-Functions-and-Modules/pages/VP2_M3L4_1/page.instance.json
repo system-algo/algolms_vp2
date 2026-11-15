@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Create your own game with a main character, prize, obstacles or enemies, and program it!",
       "command_keys": [
         "motion",
@@ -149,9 +149,12 @@
           ],
           "media": [],
           "starter_project_id": "M3L4_Game.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M3L4 Game"
         }
-      ]
+      ],
+      "project_title": "M3L4 Game",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M3L4_1_2",

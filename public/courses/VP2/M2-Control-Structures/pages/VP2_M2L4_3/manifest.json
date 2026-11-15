@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Meeting\".",
       "command_keys": [
         "motion",
@@ -111,9 +111,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_Meeting.sb3"
+          "starter_project_id": "M2L4_Meeting.sb3",
+          "project_title": "M2L4 Meeting"
         }
-      ]
+      ],
+      "project_title": "M2L4 Meeting",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

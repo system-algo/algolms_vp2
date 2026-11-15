@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Potion\".",
       "command_keys": [
         "motion",
@@ -111,9 +111,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_Potion.sb3"
+          "starter_project_id": "M2L4_Potion.sb3",
+          "project_title": "M2L4 Potion"
         }
-      ]
+      ],
+      "project_title": "M2L4 Potion",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L4_1_2",
@@ -126,7 +129,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Shop\".",
       "command_keys": [
         "motion",
@@ -214,9 +217,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_Shop.sb3"
+          "starter_project_id": "M2L4_Shop.sb3",
+          "project_title": "M2L4 Shop"
         }
-      ]
+      ],
+      "project_title": "M2L4 Shop",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L4_1_3",
@@ -229,7 +235,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Research\".",
       "command_keys": [
         "motion",
@@ -317,9 +323,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_Research.sb3"
+          "starter_project_id": "M2L4_Research.sb3",
+          "project_title": "M2L4 Research"
         }
-      ]
+      ],
+      "project_title": "M2L4 Research",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L4_1_4",
@@ -332,7 +341,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Choose a piece of fruit\".",
       "command_keys": [
         "motion",
@@ -420,9 +429,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3"
+          "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
+          "project_title": "M2L4 Choose a piece of fruit"
         }
-      ]
+      ],
+      "project_title": "M2L4 Choose a piece of fruit",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L4_1_5",
@@ -435,7 +447,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Complete the programming task for \"Button for dancing\".",
       "command_keys": [
         "motion",
@@ -523,9 +535,12 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M2L4_button_for_dancing.sb3"
+          "starter_project_id": "M2L4_button_for_dancing.sb3",
+          "project_title": "M2L4 button for dancing"
         }
-      ]
+      ],
+      "project_title": "M2L4 button for dancing",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M2L4_1_6",

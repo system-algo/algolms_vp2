@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Save the world from zombies!",
       "command_keys": [
         "motion",
@@ -165,9 +165,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/after-10-top-toolbar-button/asset-w6zrr4.png"
             }
           ],
-          "title": "Zombie Shooter"
+          "title": "Zombie Shooter",
+          "project_title": "Zombie Shooter"
         }
-      ]
+      ],
+      "project_title": "Zombie Shooter",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

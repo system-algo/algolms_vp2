@@ -65,9 +65,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Directions - Question 1"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Directions - Question 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_4_2",
@@ -121,9 +125,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Directions - Question 2"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Directions - Question 2",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L2_4_3",
@@ -177,9 +185,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "level_type": "scratch"
+          "level_type": "scratch",
+          "project_title": "Test yourself. Directions - Question 3"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Directions - Question 3",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ]
 }

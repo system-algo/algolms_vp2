@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "See what the project looks like!",
       "command_keys": [
         "motion",
@@ -169,9 +169,12 @@
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_3/workspace/assets/task-1-au69n5/after-10-top-toolbar-button/asset-m2bss.png"
             }
           ],
-          "title": "Scrolling bird"
+          "title": "Scrolling bird",
+          "project_title": "Scrolling bird"
         }
-      ]
+      ],
+      "project_title": "Scrolling bird",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

@@ -23,7 +23,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "The bear really wants to go to space! Only there will he be able to move to the right and to the left and up and down. In order to send the bear into space, change the background using numbers.",
       "command_keys": [
         "motion",
@@ -100,9 +100,12 @@
           "title": "Bear in space",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Bear_in_space.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Bear in space"
         }
-      ]
+      ],
+      "project_title": "M4L1 Bear in space",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_2_2",
@@ -115,7 +118,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "You need to drag the ingredients into the cauldron to help the sorceress brew the potion. But be careful because if you mix up the ingredients, you won't be able to make the potion!",
       "command_keys": [
         "motion",
@@ -178,9 +181,12 @@
           "title": "Potion",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Potion_Making.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Potion Making"
         }
-      ]
+      ],
+      "project_title": "M4L1 Potion Making",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M4L1_2_3",
@@ -193,7 +199,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Run the project! Add rules and conditions for winning to the procedure.",
       "command_keys": [
         "motion",
@@ -284,9 +290,12 @@
           "title": "Robot charges",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Robot_charges.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M4L1 Robot charges"
         }
-      ]
+      ],
+      "project_title": "M4L1 Robot charges",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     }
   ]
 }

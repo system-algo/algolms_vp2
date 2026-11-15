@@ -17,7 +17,7 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
+      "isAutoCheck": true,
       "description": "Chat with the Cat-bot! Plan and build your own chatbot.",
       "command_keys": [
         "motion",
@@ -122,9 +122,12 @@
           "title": "Chatbot",
           "isAutoCheck": false,
           "starter_project_id": "M5L5_Chatbot.sb3",
-          "demo_project_id": ""
+          "demo_project_id": "",
+          "project_title": "M5L5 Chatbot"
         }
-      ]
+      ],
+      "project_title": "M5L5 Chatbot",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
       "id": "VP2_M5L5_1_2",

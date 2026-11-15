@@ -19,7 +19,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Project. Personal website - Task 1",
+      "title": "Personal website",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -42,24 +42,24 @@
       ],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 1 of \"Project. Personal website\".",
-          "type": "gif",
+          "id": "req_website_1",
+          "title": "Create avatar and icons",
+          "text": "Design and customize your avatar sprite and navigation buttons.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
+          "id": "req_website_2",
+          "title": "Interactive buttons",
+          "text": "Program the buttons to animate and speak information when clicked.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_1_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_website_3",
+          "title": "Initial placement",
+          "text": "Arrange all website elements neatly on the homepage backdrop.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -93,9 +93,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "M1L5 Personal website"
         }
-      ]
+      ],
+      "project_title": "M1L5 Personal website",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Build your own personal interactive website project in Scratch!"
     },
     {
       "id": "VP2_M1L5_1_2",
@@ -103,7 +108,7 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Project. Personal website - Task 2",
+      "title": "Summercode Project",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -126,24 +131,17 @@
       ],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Arrange your sprite & backdrop",
-          "text": "Set up the sprites and stage for Task 2 of \"Project. Personal website\".",
-          "type": "gif",
+          "id": "req_summer_1",
+          "title": "Program sprite animations",
+          "text": "Animate sprites using loops, costume changes, and motion blocks.",
+          "type": "svg",
           "url": ""
         },
         {
-          "id": "req_2_2",
-          "title": "Assemble the code blocks",
-          "text": "Drag the required command blocks from the toolbox and connect them under \"When green flag clicked\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Save project and test",
-          "text": "Click the green flag to run your program, then save your project.",
-          "type": "gif",
+          "id": "req_summer_2",
+          "title": "Initial placement",
+          "text": "Set initial stage backdrop, sprite positions, and reset variables.",
+          "type": "svg",
           "url": ""
         }
       ],
@@ -177,9 +175,14 @@
             "looks_switchcostumeto",
             "event_whenflagclicked",
             "control_wait"
-          ]
+          ],
+          "project_title": "Summercode Project"
         }
-      ]
+      ],
+      "project_title": "Summercode Project",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Showcase your creative programming project with animations and sound!"
     }
   ]
 }

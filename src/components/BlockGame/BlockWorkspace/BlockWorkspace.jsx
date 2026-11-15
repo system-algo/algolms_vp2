@@ -390,6 +390,8 @@ export default function BlockWorkspace({
               ...createBlockInstance(type, customParams),
               id: `toolbox_${type}_${idx}`,
             };
+            const markToolboxChild=child=>({...child,id:`toolbox_${child.id}`,...(child.children?{children:child.children.map(markToolboxChild)}:{})});
+            if(dummyBlock.children)dummyBlock.children=dummyBlock.children.map(markToolboxChild);
             return (
               <div
                 key={`${type}_${idx}`}

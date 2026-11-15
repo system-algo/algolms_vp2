@@ -56,3 +56,26 @@ test('detached reporters do not execute as movement commands',()=>{
  assert.deepEqual([...referenceProgram([createBlockInstance('color_sensor')],{},()=>({}))],[]);
  assert.equal(reporterValue(createBlockInstance('number_value',{expression:0})),0);
 });
+const expectedCounts={
+ chef:()=>9,unknown:()=>7,training:n=>n===2?6:n===3||n===15?7:8,dark:()=>10,field:()=>9,mineral:()=>11,
+ retro:n=>({1:3,2:4,3:5,4:5,5:5,6:6,7:9,9:10,10:12,11:12,12:10,13:10,14:17}[n]),
+ martian:n=>n>=3&&n<=5?10:9,sorting:n=>n===12?9:8,journey:n=>[13,16,17].includes(n)?4:n>=9?3:2,
+ flight:()=>1,collecting:()=>4,plants:n=>n===5?4:5,excursion:n=>n<6?3:n===6?6:4,rocket:()=>6,construction:n=>n===2?5:n===3?6:7,excavation:()=>7,
+};
+test('every source-observed programming position has the correct palette count and registered commands',()=>{
+ let pages=0,positions=0;
+ for(const [name,expected] of Object.entries(expectedCounts)){
+  const levels=JSON.parse(fs.readFileSync(`src/components/BlockGame/levels/${name}Reference.json`));pages++;
+  for(const level of levels.filter(l=>!l.type)){
+   assert.equal(level.toolbox.length,expected(level.number),`${name} ${level.number}`);
+   for(const item of level.toolbox){const type=typeof item==='string'?item:item.type;assert.doesNotThrow(()=>createBlockInstance(type,item.params||{}),`${name} ${level.number}: ${type}`);}positions++;
+  }
+ }
+ assert.equal(pages,17);assert.equal(positions,198);
+});
+test('all sensor and operator families return their live values',()=>{
+ const state={x:0,y:0,direction:90,tanks:[{x:1,y:0}],minerals:[{x:1,y:0,amount:1}],carriedBox:{color:'yellow',shape:'cube'},variables:{A:7},fruitIndex:0,crystalIndex:0,crystals:[{color:'green',size:4}]};
+ const level={cells:[{x:1,y:0}],target:{x:1,y:0},items:[{x:0,y:1,kind:'dynamite'}],objects:[{x:-30,y:60}],fruits:[{color:'red',shape:'round',size:'large'}]};
+ for(const condition of [{kind:'path',value:'ahead'},{kind:'finish',value:'ahead'},{kind:'tank',value:'ahead'},{kind:'mineral',value:'ahead'},{kind:'dynamite',value:'right'},{kind:'cargo_color',value:'yellow'},{kind:'cargo_shape',value:'cube'},{kind:'color',value:'red'},{kind:'shape',value:'round'},{kind:'size',value:'large'},{kind:'crystal_color',value:'green'},{kind:'or',a:{kind:'color',value:'green'},b:{kind:'size',value:'large'}},{kind:'value_compare',op:'=',a:7,b:{kind:'variable',name:'A'}},{kind:'value_compare',op:'<',a:{kind:'coordinate',axis:'x'},b:0},{kind:'value_compare',op:'>',a:{kind:'coordinate',axis:'y'},b:0}])assert.equal(evaluateCondition(condition,level,state),true,JSON.stringify(condition));
+ assert.equal(evaluateValue({kind:'arithmetic',op:'-',a:{kind:'variable',name:'A'},b:{kind:'crystal_size'}},level,state),3);
+});

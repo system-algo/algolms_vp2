@@ -215,3 +215,6 @@
 .reporter-clear {border:0;border-radius:4px;background:#ffffff33;color:inherit;cursor:pointer;padding:0 3px;font-size:12px;}
 .reporter-grip {cursor:grab;opacity:.7;padding:0 2px;}.reporter-grip:hover{opacity:1;}
 .block-toolbox {overflow:hidden;}.toolbox-blocks-list {overflow:auto;min-width:0;}
+
+.reporter-block {position:relative;margin-left:7px;}
+.reporter-block::before {content:'';position:absolute;left:-8px;top:50%;transform:translateY(-50%);width:9px;height:13px;border-radius:4px 0 0 4px;background:inherit;border-left:1px solid #486782;}

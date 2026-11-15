@@ -29,7 +29,7 @@ REPORTERS.condition_expression={label:'condition',output:'boolean',value:null};
 REPORTERS.number_expression={label:'value',output:'number',value:null};
 export const isReporter = block => !!REPORTERS[block?.type];
 export const reporterOutput = value => typeof value==='number'||['variable','crystal_size','coordinate','arithmetic'].includes(value?.kind)?'number':'boolean';
-export function reporterValue(block){return structuredClone(block.params?.expression ?? REPORTERS[block.type]?.value ?? null);}
+export function reporterValue(block){return structuredClone(Object.hasOwn(block.params||{},'expression')?block.params.expression:REPORTERS[block.type]?.value ?? null);}
 export function inputAt(value,path=[]){return path.reduce((v,key)=>v?.[key],value);}
 export function replaceInput(value,path,replacement){
  if(!path.length)return structuredClone(replacement);

@@ -1,7 +1,10 @@
+import {isReporter} from '../BlockWorkspace/reporterBlocks.js';
 import { compileProgram, getNextPosition } from './gameInterpreter.js';
 export function evaluateValue(value, level, state) {
+  validateValue(value);
   if(typeof value==='number') {if(!Number.isFinite(value))throw new Error('Use a finite number.');return value;}
   if(value?.kind==='variable')return state.variables?.[value.name] ?? 0;
+  if(value?.kind==='coordinate')return level.objects?.[state.fruitIndex]?.[value.axis] ?? state[value.axis] ?? 0;
   if(value?.kind==='crystal_size')return state.crystals?.[state.crystalIndex]?.size ?? 0;
   if(value?.kind==='arithmetic'){
     const a=evaluateValue(value.a,level,state),b=evaluateValue(value.b,level,state);
@@ -12,8 +15,19 @@ export function evaluateValue(value, level, state) {
   }
   throw new Error('Choose a value for this command.');
 }
+export function validateCondition(c,depth=0){
+  if(!c)throw new Error('Fill every condition socket before running the program.');
+  if(depth>12)throw new Error('Too many nested expressions.');
+  if(['and','or','not'].includes(c.kind)){validateCondition(c.a,depth+1);if(c.kind!=='not')validateCondition(c.b,depth+1);}
+  if(c.kind==='value_compare'){validateValue(c.a,depth+1);validateValue(c.b,depth+1);}
+}
+export function validateValue(v,depth=0){
+  if(v===null||v===undefined)throw new Error('Fill every value socket before running the program.');
+  if(depth>12)throw new Error('Too many nested expressions.');
+  if(v?.kind==='arithmetic'){validateValue(v.a,depth+1);validateValue(v.b,depth+1);}
+}
 export function evaluateCondition(c, level, state) {
-  if (!c) return false;
+  validateCondition(c);
   if(c.kind==='value_compare'){const a=evaluateValue(c.a,level,state),b=evaluateValue(c.b,level,state);return c.op==='='?a===b:c.op==='<'?a<b:a>b;}
   if(c.kind==='crystal_color')return state.crystals?.[state.crystalIndex]?.color===c.value;
   if(c.kind==='and') return evaluateCondition(c.a,level,state)&&evaluateCondition(c.b,level,state);
@@ -49,7 +63,7 @@ export function* referenceProgram(blocks, level, readState) {
     if(depth>12)throw new Error('Too many nested blocks.');
     for(const b of list){
       if(++operations>3000)throw new Error('The program did not finish. Check your loop conditions.');
-      if(b.type==='start_hat')continue;
+      if(b.type==='start_hat'||isReporter(b))continue;
       if(b.type==='if_else'){
         yield {action:'repeat_iteration',blockId:b.id};
         const [yes,no]=b.children||[];
@@ -69,7 +83,7 @@ export function* referenceProgram(blocks, level, readState) {
           i++;
         }
       }else if(['set_variable','add_variable','send_variable','mine','next_crystal'].includes(b.type)){
-        yield {action:b.type,name:b.params?.name||'variable',value:b.type==='set_variable'||b.type==='add_variable'?evaluateValue(b.params?.value ?? 0,level,readState()):undefined,blockId:b.id};
+        yield {action:b.type,name:b.params?.name||'variable',value:b.type==='set_variable'||b.type==='add_variable'?evaluateValue(b.params?.value===undefined?0:b.params.value,level,readState()):undefined,blockId:b.id};
       }else if(b.type==='cook')yield {action:'cook',blockId:b.id};
       else for(const step of compileProgram([b]))yield step;
     }

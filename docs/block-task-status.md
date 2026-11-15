@@ -72,3 +72,7 @@ Validation: production build; all thirteen Martian boards completed; nine exact-
 Module 6 captured activities are Scratch/editor/quiz pages; its later source lessons remain locked for vasgh05. Module 7 graduation captured activities use Scratch (MarsBots Programmer confirmed in the source UI). Those Scratch and quiz pages remain outside the authorized Block Task pass; no new Block Task pages were identified in Modules 6–7. Images/comics remain deferred. The Retro visualization/input sequence is a functional reconstruction; it is not identical source canvas animation/randomization.
 
 Published Land of minerals: 8af2c46. Published Retro laboratory: 412cebd. Module 4 was published in ee632ca following explicit confirmation; the earlier pending-push note above is historical.
+
+## Command palette audit — 16 November 2026
+
+Martian Chef: all fourteen source programming positions inspected. Restored nine separate palette blocks in source order: forever, if, and, or, not, color, shape, size, cook. Boolean/numeric expression blocks can be dragged into typed input sockets, nested, edited, detached and removed. Incompatible drops preserve the original expression; incomplete inputs fail with an actionable error. C-shaped toolbox blocks now display their statement slot. Regression coverage includes nested predicate execution, expression moves, numeric expressions, wrong-type/cycle rejection and empty inputs. Production build passed. Remaining page palettes are being audited individually.

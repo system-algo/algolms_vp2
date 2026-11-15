@@ -204,3 +204,14 @@
   background: #dc2626;
   box-shadow: 0 6px 18px rgba(220, 38, 38, 0.5);
 }
+
+/* Boolean and numeric reporters use side connectors rather than statement stacks. */
+.reporter-block {display:inline-flex;align-items:center;padding:8px 12px;border-radius:8px;cursor:grab;color:white;min-height:20px;border:1px solid #486782;box-shadow:inset 0 1px 1px #ffffff50;}
+.reporter-input {display:inline-flex;gap:5px;align-items:center;position:relative;padding:3px 7px;border-radius:5px;background:#ffffff20;min-height:19px;white-space:nowrap;color:inherit;vertical-align:middle;}
+.reporter-input .reporter-input {background:#27425555;}
+.reporter-input input {width:54px;}.reporter-input select,.reporter-input input{font:inherit;max-width:130px;min-width:32px;color:#152532;background:#ddebf5;border:0;border-radius:4px;padding:1px 3px;}
+.reporter-empty {min-width:45px;background:#223a4666;outline:1px dashed #cce6eb;font-size:11px;}
+.reporter-drop-active {outline:3px solid #ffd32a!important;background:#e2b72b66!important;}
+.reporter-clear {border:0;border-radius:4px;background:#ffffff33;color:inherit;cursor:pointer;padding:0 3px;font-size:12px;}
+.reporter-grip {cursor:grab;opacity:.7;padding:0 2px;}.reporter-grip:hover{opacity:1;}
+.block-toolbox {overflow:hidden;}.toolbox-blocks-list {overflow:auto;min-width:0;}

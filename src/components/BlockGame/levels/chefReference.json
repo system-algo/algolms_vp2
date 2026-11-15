@@ -145,12 +145,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -294,12 +297,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -444,12 +450,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -594,12 +603,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -744,12 +756,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -894,12 +909,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1043,12 +1061,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1194,12 +1215,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1355,12 +1379,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1506,12 +1533,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1656,12 +1686,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1807,12 +1840,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -1960,12 +1996,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   },
@@ -2110,12 +2149,15 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "color",
-            "value": "red"
-          }
+          "condition": null
         }
       },
+      "logic_and",
+      "logic_or",
+      "logic_not",
+      "color_sensor",
+      "shape_sensor",
+      "size_sensor",
       "cook"
     ]
   }

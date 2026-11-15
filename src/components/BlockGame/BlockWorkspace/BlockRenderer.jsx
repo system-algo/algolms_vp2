@@ -2,6 +2,8 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 import { BLOCK_DEFINITIONS, BLOCK_TYPES } from './blockDefinitions.js';
 import ExpressionEditor from './ExpressionEditor.jsx';
 import ConditionEditor from './ConditionEditor.jsx';
+import {isReporter,reporterValue} from './reporterBlocks.js';
+import ReporterInput from './ReporterInput.jsx';
 import BlockSvgShape from './BlockSvgShape';
 
 export default function BlockRenderer({
@@ -59,8 +61,8 @@ export default function BlockRenderer({
       );
     }
 
-    if (['branch_if','if_condition','repeat_until'].includes(block.type)) return <span style={{display:'inline-flex',alignItems:'center',gap:6}}>{def.label}<ConditionEditor value={block.params?.condition} onChange={condition=>handleSelectChange('condition',condition)} disabled={isToolbox}/></span>;
-    if (['set_variable','add_variable','send_variable','repeat_variable'].includes(block.type)) return <span style={{display:'inline-flex',alignItems:'center',gap:5}}>{def.label}{block.type!=='repeat_variable'&&<select aria-label="Variable name" value={block.params?.name || 'variable'} disabled={isToolbox} onPointerDown={e=>e.stopPropagation()} onChange={e=>handleSelectChange('name',e.target.value)}>{['variable','minerals','A','B','C','D'].map(v=><option key={v}>{v}</option>)}</select>}{!['send_variable'].includes(block.type)&&<ExpressionEditor value={block.params?.value ?? 0} onChange={value=>handleSelectChange('value',value)} disabled={isToolbox}/>}</span>;
+    if (['branch_if','if_condition','repeat_until'].includes(block.type)) return <span style={{display:'inline-flex',alignItems:'center',gap:6}}>{def.label}<ConditionEditor value={block.params?.condition} onChange={condition=>handleSelectChange('condition',condition)} target={{blockId:block.id,param:'condition',path:[]}} onStartDrag={onStartDrag} dropTarget={dropTarget} disabled={isToolbox||isExecuting}/></span>;
+    if (['set_variable','add_variable','send_variable','repeat_variable'].includes(block.type)) return <span style={{display:'inline-flex',alignItems:'center',gap:5}}>{def.label}{block.type!=='repeat_variable'&&<select aria-label="Variable name" value={block.params?.name || 'variable'} disabled={isToolbox} onPointerDown={e=>e.stopPropagation()} onChange={e=>handleSelectChange('name',e.target.value)}>{['variable','minerals','A','B','C','D'].map(v=><option key={v}>{v}</option>)}</select>}{!['send_variable'].includes(block.type)&&<ExpressionEditor target={{blockId:block.id,param:'value',path:[]}} onStartDrag={onStartDrag} dropTarget={dropTarget} value={block.params?.value} onChange={value=>handleSelectChange('value',value)} disabled={isToolbox}/>}</span>;
     if (block.type.startsWith('change_')) return <span style={{display:'inline-flex',alignItems:'center',gap:5}}><span>{def.label}</span><span className="block-dropdown-pill" style={{position:'relative'}}><span>{block.params?.amount ?? def.params[0].default} ▾</span><select aria-label={def.label} className="block-select-input" value={block.params?.amount ?? def.params[0].default} onChange={e=>handleSelectChange('amount',Number(e.target.value))} disabled={isToolbox}>{def.params[0].options.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select></span></span>;
     if (block.type.startsWith('go_to_')) return <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}><span>go to X</span>{def.params.map((param, i) => <React.Fragment key={param.name}>{i === 1 && <span>Y</span>}<span className="block-dropdown-pill" style={{ position: 'relative' }}><span>{block.params?.[param.name] ?? param.default} ▾</span><select aria-label={`Coordinate ${param.name.toUpperCase()}`} className="block-select-input" value={block.params?.[param.name] ?? param.default} onChange={e => handleSelectChange(param.name, Number(e.target.value))} disabled={isToolbox}>{param.options.map(opt => <option key={opt.value} value={opt.value}>{opt.label}</option>)}</select></span></React.Fragment>)}</span>;
     if ((block.type === BLOCK_TYPES.POINT_DIRECTION || block.type === 'collect_direction')) {
@@ -179,12 +181,13 @@ export default function BlockRenderer({
     return <span>{def.label}</span>;
   };
 
+  if(isReporter(block)) return <div className="reporter-block" data-block-id={block.id} data-block-type={block.type} style={{background:def.color}} onPointerDown={handlePointerDown}><ReporterInput value={reporterValue(block)} accept={def.output} target={isToolbox||isGhost?undefined:{blockId:block.id,param:'expression',path:[]}} onChange={expression=>handleSelectChange('expression',expression)} onStartDrag={onStartDrag} dropTarget={dropTarget} disabled={isExecuting||isGhost} toolbox={isToolbox}/></div>;
   const blockHeight = compact ? 24 : 34;
   const totalWidth = contentWidth + 24;
 
-  if (block.type === 'if_else' && !isToolbox) return <div className="reference-if-else" data-block-id={block.id}>{(block.children||[]).map(branch=><BlockRenderer key={branch.id} block={branch} compact={compact} activeBlockId={activeBlockId} onStartDrag={(b,e)=>onStartDrag?.(b.id===branch.id?block:b,e)} onParamChange={onParamChange} dropTarget={dropTarget}/>)}</div>;
+  if (block.type === 'if_else') return <div className="reference-if-else" data-block-id={block.id}>{(block.children||[]).map(branch=><BlockRenderer key={branch.id} block={branch} compact={compact} isToolbox={isToolbox} isGhost={isGhost} activeBlockId={activeBlockId} onStartDrag={(b,e)=>onStartDrag?.(b.id===branch.id?block:b,e)} onParamChange={onParamChange} dropTarget={dropTarget}/>)}</div>;
   // C-Block (Repeat) Rendering
-  if (isCBlock && !isToolbox) {
+  if (isCBlock) {
     const activeTargetId = dropTarget?.targetId || dropTarget?.blockId;
     const isTargetInside = activeTargetId === block.id && dropTarget?.position === 'inside';
     const bottomBracketWidth = Math.max(72, Math.min(100, totalWidth * 0.65));

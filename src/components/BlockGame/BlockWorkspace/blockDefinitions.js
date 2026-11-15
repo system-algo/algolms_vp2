@@ -1,3 +1,4 @@
+import {REPORTERS} from './reporterBlocks.js';
 /**
  * Block definitions for Algo LMS Block Programming Game
  * Styles, colors, and connectors match Scratch / Google Blockly as used in Algo LMS.
@@ -249,11 +250,12 @@ export function createBlockInstance(type, customParams = {}) {
     instance.children = [];
   }
 
-  if (type === 'if_else') { instance.children = [createBlockInstance('branch_if'), createBlockInstance('branch_else')]; }
-  if (['branch_if', 'if_condition'].includes(type)) instance.params.condition ??= {kind:'cargo_color',value:'green'};
-  if (type === 'repeat_until') instance.params.condition ??= {kind:'finish',value:'crossed'};
+  if (type === 'if_else') { instance.children = [createBlockInstance('branch_if',{condition:null}), createBlockInstance('branch_else')]; }
+  if (['branch_if', 'if_condition'].includes(type)) instance.params.condition = Object.hasOwn(customParams,'condition')?customParams.condition:{kind:'cargo_color',value:'green'};
+  if (type === 'repeat_until') instance.params.condition = Object.hasOwn(customParams,'condition')?customParams.condition:{kind:'finish',value:'crossed'};
   if (['set_variable','add_variable','send_variable'].includes(type)) instance.params = {name:'variable',value:0,...customParams};
   if (type==='repeat_variable') instance.params = {value:{kind:'variable',name:'variable'},...customParams};
+  if(REPORTERS[type])instance.params.expression=structuredClone(customParams.expression ?? REPORTERS[type].value);
   return instance;
 }
 
@@ -296,3 +298,5 @@ for (const [type,label,kind] of [['if_else','if / else','branch_block'],['branch
 for (const [type,label,kind] of [['mine','mine','statement'],['set_variable','set','statement'],['add_variable','change by','statement'],['send_variable','send value','statement'],['next_crystal','next crystal','statement'],['repeat_variable','repeat times','c_block']]) {
   BLOCK_DEFINITIONS[type] = {type,label,kind,category:'variables',color:type==='mine'?'#995ba7':'#dd8b23',darkColor:'#98601d',params:[]};
 }
+
+for(const [type,reporter] of Object.entries(REPORTERS))BLOCK_DEFINITIONS[type]={type,kind:'reporter',label:reporter.label,output:reporter.output,color:reporter.color||'#5b80a5',darkColor:'#42617e',params:[]};

@@ -7,6 +7,8 @@ import {
   countCommands,
 } from './blockDefinitions.js';
 import './BlockWorkspace.css';
+import {isReporter} from './reporterBlocks.js';
+import {canConnect,connectReporter,updateInputTree} from './reporterTree.js';
 
 /**
  * Check if targetId is the source block itself or any descendant of source
@@ -141,6 +143,7 @@ export default function BlockWorkspace({
   activeBlockId = null,
   isExecuting = false,
 }) {
+  const [toolboxParams,setToolboxParams]=useState({});
   const workspaceRef = useRef(null);
   const toolboxRef = useRef(null);
 
@@ -170,7 +173,7 @@ export default function BlockWorkspace({
     setDropTarget(null);
     setIsOverTrash(false);
     const isFromToolbox = String(block.id).startsWith('toolbox_');
-    const blockToDrag = isFromToolbox
+    const blockToDrag = block.sourceInput ? {...createBlockInstance(block.type,block.params),sourceInput:block.sourceInput} : isFromToolbox
       ? createBlockInstance(block.type, block.params)
       : block;
 
@@ -211,6 +214,18 @@ export default function BlockWorkspace({
       const elements = document.elementsFromPoint(e.clientX, e.clientY);
       let foundTarget = null;
 
+      if(isReporter(draggingBlock)) {
+        const targets=elements.filter(el=>el.hasAttribute('data-reporter-target'));
+        for(const el of targets){
+          const input=JSON.parse(el.getAttribute('data-reporter-target'));
+          if(canConnect(blocks,draggingBlock,input)){setDropTarget({position:'input',input});return;}
+        }
+        // Incompatible expression holes reject the drop, preserving the source.
+        if(targets.length){setDropTarget(null);return;}
+        const rect=workspaceRef.current?.getBoundingClientRect();
+        setDropTarget(rect&&e.clientX>=rect.left&&e.clientX<=rect.right&&e.clientY>=rect.top&&e.clientY<=rect.bottom?{position:'reporter_end'}:null);
+        return;
+      }
       // Pass A: Check if hovering directly inside a C-Block's slot / placeholder
       for (const el of elements) {
         if (el.hasAttribute('data-slot-for') || el.hasAttribute('data-slot-placeholder-for')) {
@@ -228,6 +243,7 @@ export default function BlockWorkspace({
           if (el.hasAttribute('data-block-id')) {
             const tid = el.getAttribute('data-block-id');
             const bType = el.getAttribute('data-block-type');
+            if(isReporter({type:bType}))continue;
 
             // Skip if target is the dragging block itself, or one of its descendants, or a toolbox block
             if (isDescendantOrSelf(draggingBlock, tid) || tid.startsWith('toolbox_')) {
@@ -302,9 +318,15 @@ export default function BlockWorkspace({
       if (isOverTrash) {
         // Dragged to trash or toolbox: delete if it was already in workspace
         if (!draggingBlock.isFromToolbox) {
-          const { blocks: updated } = removeBlockFromTree(blocks, draggingBlock.id);
+          const updated=draggingBlock.sourceInput?updateInputTree(blocks,draggingBlock.sourceInput,null):removeBlockFromTree(blocks, draggingBlock.id).blocks;
           onChangeBlocks?.(updated);
         }
+      } else if(dropTarget?.position==='input') {
+        onChangeBlocks?.(connectReporter(blocks,draggingBlock,dropTarget.input));
+      } else if(dropTarget?.position==='reporter_end') {
+        let updated=draggingBlock.sourceInput?updateInputTree(blocks,draggingBlock.sourceInput,null):draggingBlock.isFromToolbox?blocks:removeBlockFromTree(blocks,draggingBlock.id).blocks;
+        const {sourceInput,isFromToolbox,sourceId,...detached}=draggingBlock;
+        onChangeBlocks?.([...updated,detached]);
       } else if (dropTarget) {
         // Remove block from current position if it was already in the workspace
         let cleanBlocks = blocks;
@@ -359,7 +381,7 @@ export default function BlockWorkspace({
         <div className="toolbox-blocks-list">
           {toolboxBlockTypes.map((item, idx) => {
             const type = typeof item === 'string' ? item : item.type;
-            const customParams = typeof item === 'object' && item.params ? item.params : {};
+            const customParams = {...(typeof item === 'object' && item.params ? item.params : {}),...toolboxParams[idx]};
             const def = BLOCK_DEFINITIONS[type];
             if (!def) return null;
             const dummyBlock = {
@@ -370,11 +392,12 @@ export default function BlockWorkspace({
               <div
                 key={`${type}_${idx}`}
                 className="toolbox-item-wrapper"
-                onPointerDown={(e) => handleStartDrag(dummyBlock, e)}
+                onPointerDown={(e) => {if(!e.target.closest('select,input,button'))handleStartDrag(dummyBlock, e)}}
               >
                 <BlockRenderer compact={compact}
                   block={dummyBlock}
                   isToolbox
+                  onParamChange={(_,name,value)=>setToolboxParams(p=>({...p,[idx]:{...p[idx],[name]:value}}))}
                   onStartDrag={(blk, e) => handleStartDrag(dummyBlock, e)}
                 />
               </div>

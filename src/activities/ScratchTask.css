@@ -904,33 +904,48 @@
   background: #6c2eb9;
 }
 
-/* Media Preview Containers */
+/* Media Preview Containers - Compact Thumbnails with Zoom */
 .scratch-task-preview-media-container,
 .scratch-task-preview-media-standalone {
   border-radius: 8px;
   overflow: hidden;
-  background: #f8fafc;
+  background: #ffffff;
   border: 1px solid #e2e8f0;
-  margin-bottom: 8px;
+  margin: 0 auto 12px auto;
+  max-width: 260px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.scratch-task-preview-media-standalone:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-color: #8b5cf6;
 }
 
 .scratch-task-preview-media-img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 140px;
+  width: auto;
   height: auto;
+  margin: 0 auto;
   display: block;
+  object-fit: contain;
   cursor: zoom-in;
-  transition: opacity 0.15s;
+  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 .scratch-task-preview-media-img:hover {
   opacity: 0.95;
+  transform: scale(1.02);
 }
 
 .scratch-task-media-caption {
-  padding: 6px 10px;
-  font-size: 11.5px;
+  padding: 5px 8px;
+  font-size: 11px;
   color: #475569;
-  background: #f1f5f9;
+  background: #f8fafc;
   border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: space-between;
@@ -939,8 +954,61 @@
 }
 
 .scratch-task-media-zoom-hint {
-  font-size: 11px;
+  font-size: 10.5px;
   color: #6366f1;
+  font-weight: 600;
+}
+
+/* Requirement Accordion Item Media Box */
+.scratch-task-req-media-box {
+  margin-top: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  position: relative;
+  cursor: zoom-in;
+  max-width: 240px;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.scratch-task-req-media-box:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  border-color: #8b5cf6;
+}
+
+.scratch-task-req-media-thumb {
+  max-width: 100%;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.scratch-task-req-media-overlay {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(15, 23, 42, 0.75);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+  opacity: 0.85;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  pointer-events: none;
+}
+
+.scratch-task-req-media-box:hover .scratch-task-req-media-overlay {
+  opacity: 1;
+  background: #6c2eb9;
 }
 
 /* Demo Subtabs: Stage vs Code */

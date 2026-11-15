@@ -55,7 +55,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_Meeting.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -104,7 +104,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_Meeting.sb3"
         }
       ]
     }

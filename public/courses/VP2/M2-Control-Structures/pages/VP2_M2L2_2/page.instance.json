@@ -25,9 +25,11 @@
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game",
-          "levelId": "mars_level_4"
+          "levelId": "mars_level_4",
+          "starter_project_id": "draw_a_square.sb3"
         }
-      ]
+      ],
+      "starter_project_id": "draw_a_square.sb3"
     },
     {
       "id": "VP2_M2L2_2_2",
@@ -48,9 +50,11 @@
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game",
-          "levelId": "mars_level_5"
+          "levelId": "mars_level_5",
+          "starter_project_id": "put_a_stamp.sb3"
         }
-      ]
+      ],
+      "starter_project_id": "put_a_stamp.sb3"
     },
     {
       "id": "VP2_M2L2_2_3",
@@ -71,9 +75,11 @@
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game",
-          "levelId": "mars_level_6"
+          "levelId": "mars_level_6",
+          "starter_project_id": "ornament2.sb3"
         }
-      ]
+      ],
+      "starter_project_id": "ornament2.sb3"
     },
     {
       "id": "VP2_M2L2_2_4",
@@ -94,9 +100,11 @@
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game",
-          "levelId": "mars_level_7"
+          "levelId": "mars_level_7",
+          "starter_project_id": "delete_all.sb3"
         }
-      ]
+      ],
+      "starter_project_id": "delete_all.sb3"
     },
     {
       "id": "VP2_M2L2_2_5",
@@ -117,9 +125,11 @@
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game",
-          "levelId": "mars_level_8"
+          "levelId": "mars_level_8",
+          "starter_project_id": "draw_a_square.sb3"
         }
-      ]
+      ],
+      "starter_project_id": "draw_a_square.sb3"
     }
   ]
 }

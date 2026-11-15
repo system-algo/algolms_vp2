@@ -141,9 +141,7 @@
 
       // Check whether this task allows the full/unrestricted Scratch toolbox (e.g. Free programming, Super cat)
       const baseMainCategories = ['motion', 'looks', 'sound', 'events', 'control', 'sensing', 'operators', 'variables'];
-      const isFullToolbox = categoriesParam === 'all' ||
-                            baseMainCategories.every(cat => allowedCategories.includes(cat)) ||
-                            allowedCategories.length >= 8;
+      const isFullToolbox = true; // Always allow full toolbox per user instruction
 
       const allCategories = [
         'motion', 'looks', 'sound', 'events', 'control',
@@ -783,6 +781,10 @@
       function resolveProjectUrl(param, level) {
         const lvl = String(level || '1');
         if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
+        if (param && param.includes('.sb3')) {
+          const cleanName = param.replace(/^.*[\\\/]/, '');
+          return `/starter-projects/${cleanName}`;
+        }
 
         const is19097 = [
           '9097624', '9097732', '9097811', '10653299', '9098276', '2660241',

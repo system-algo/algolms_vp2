@@ -55,7 +55,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_Potion.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -104,7 +104,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_Potion.sb3"
         }
       ]
     },
@@ -157,7 +158,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_Shop.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -206,7 +207,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_Shop.sb3"
         }
       ]
     },
@@ -259,7 +261,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_Research.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -308,7 +310,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_Research.sb3"
         }
       ]
     },
@@ -361,7 +364,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -410,7 +413,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3"
         }
       ]
     },
@@ -463,7 +467,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L4_button_for_dancing.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -512,7 +516,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L4_button_for_dancing.sb3"
         }
       ]
     },
@@ -565,7 +570,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M1L4_Dialog.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -614,7 +619,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M1L4_Dialog.sb3"
         }
       ]
     }

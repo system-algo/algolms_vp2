@@ -42,11 +42,9 @@ export default function ScratchTask({
     (Array.isArray(task?.states?.[0]?.command_blocks) && task.states[0].command_blocks.length > 0 ? task.states[0].command_blocks : null) ||
     (Array.isArray(state?.command_blocks) && state.command_blocks.length > 0 ? state.command_blocks : null);
 
-  const categoriesQuery = taskCommandKeys
-    ? taskCommandKeys.join(',')
-    : ['motion', 'looks', 'events', 'control'].join(',');
-
-  const blocksQuery = taskCommandBlocks ? taskCommandBlocks.join(',') : '';
+  // User request: Always show full block commands in the flyout without restriction
+  const categoriesQuery = 'all';
+  const blocksQuery = '';
 
   const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
                            (Array.isArray(task?.media) && task.media.length > 0);

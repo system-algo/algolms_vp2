@@ -61,7 +61,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_Open_the_door.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -110,7 +110,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_Open_the_door.sb3"
         }
       ]
     },
@@ -163,7 +164,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_Knight.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -212,7 +213,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_Knight.sb3"
         }
       ]
     },
@@ -265,7 +267,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_Egg.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -314,7 +316,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_Egg.sb3"
         }
       ]
     },
@@ -367,7 +370,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -416,7 +419,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_The_ball_is_spinning.sb3"
         }
       ]
     },
@@ -469,7 +473,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_Butterfly.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -518,7 +522,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_Butterfly.sb3"
         }
       ]
     },
@@ -571,7 +576,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L3_Clock.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -620,7 +625,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L3_Clock.sb3"
         }
       ]
     }

@@ -61,7 +61,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M2L6-add_example.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -110,7 +110,8 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M2L6-add_example.sb3"
         }
       ]
     }

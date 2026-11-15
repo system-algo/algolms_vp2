@@ -490,10 +490,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 5,
     "hideMineralCounts": true,
@@ -1002,10 +1035,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 10,
     "hideMineralCounts": true,
@@ -1519,10 +1585,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 20,
     "hideMineralCounts": true,
@@ -2148,10 +2247,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 15,
     "hideMineralCounts": true,
@@ -2731,10 +2863,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 15,
     "hideMineralCounts": true,
@@ -3248,10 +3413,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 30,
     "hideMineralCounts": true,
@@ -3821,10 +4019,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 20,
     "hideMineralCounts": true,
@@ -4394,10 +4625,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 30,
     "hideMineralCounts": true,
@@ -4921,10 +5185,43 @@
         }
       },
       "if_else",
-      "repeat_until",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      "mineral_sensor",
       "mine",
-      "set_variable",
-      "add_variable"
+      {
+        "type": "set_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "add_variable",
+        "params": {
+          "name": "minerals",
+          "value": 0
+        }
+      },
+      {
+        "type": "compare_values",
+        "params": {
+          "expression": {
+            "kind": "value_compare",
+            "op": "=",
+            "a": {
+              "kind": "variable",
+              "name": "minerals"
+            },
+            "b": 0
+          }
+        }
+      }
     ],
     "targetMinerals": 20,
     "hideMineralCounts": true,

@@ -18,7 +18,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Take the apple\".",
+      "description": "Control Kepler so that he finds the apple!",
       "command_keys": [
         "motion",
         "looks",
@@ -35,27 +35,34 @@
         {
           "id": "req_1_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Take the apple\".",
+          "title": "The apple moves on its own",
+          "text": "The apple moves on its own",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Controlling Kepler",
+          "text": "Controlling Kepler",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Kepler and the apple touching",
+          "text": "Kepler and the apple touching",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Take_the_apple.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -68,7 +75,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Take the apple\".",
+          "isAutoCheck": false,
+          "description": "Control Kepler so that he finds the apple!",
           "command_keys": [
             "motion",
             "looks",
@@ -85,26 +93,35 @@
             {
               "id": "req_1_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Take the apple\".",
+              "title": "The apple moves on its own",
+              "text": "The apple moves on its own",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Controlling Kepler",
+              "text": "Controlling Kepler",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Kepler and the apple touching",
+              "text": "Kepler and the apple touching",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Take_the_apple.sb3",
+          "demo_project_id": ""
         }
       ]
     }

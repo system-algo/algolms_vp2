@@ -18,13 +18,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Dog in the labyrinth",
+      "title": "Dog in the maze",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Dog in the labyrinth\".",
+      "description": "Collect the crystals!",
       "command_keys": [
         "motion",
         "looks",
@@ -40,28 +40,49 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create a project plan",
+          "text": "Create a project plan",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Dog in the labyrinth\".",
+          "title": "Controlling the Dog sprite",
+          "text": "Controlling the Dog sprite",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Touching obstacles",
+          "text": "Touching obstacles",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Level 1",
+          "text": "Level 1",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_5",
+          "title": "Level 2",
+          "text": "Level 2",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_6",
+          "title": "Touching the target",
+          "text": "Touching the target",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Dog_in_the_labyrinth.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -74,7 +95,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Dog in the labyrinth\".",
+          "isAutoCheck": false,
+          "description": "Collect the crystals!",
           "command_keys": [
             "motion",
             "looks",
@@ -90,27 +112,50 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create a project plan",
+              "text": "Create a project plan",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Dog in the labyrinth\".",
+              "title": "Controlling the Dog sprite",
+              "text": "Controlling the Dog sprite",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Touching obstacles",
+              "text": "Touching obstacles",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Level 1",
+              "text": "Level 1",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_5",
+              "title": "Level 2",
+              "text": "Level 2",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_6",
+              "title": "Touching the target",
+              "text": "Touching the target",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Dog_in_the_labyrinth.sb3",
+          "demo_project_id": ""
         }
       ]
     }

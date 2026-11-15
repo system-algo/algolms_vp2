@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Jump",
+      "title": "MarsBot jumping",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Jump\".",
+      "isAutoCheck": true,
+      "description": "Press the space bar and watch: the MarsBot jumps two times. Create the same project!",
       "command_keys": [
         "motion",
         "looks",
@@ -34,28 +34,21 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create a new \"Jump\" command",
+          "text": "Create a new \"Jump\" command",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Jump\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Double jump when pressing the space bar",
+          "text": "Double jump when pressing the space bar",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Jump.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -68,7 +61,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Jump\".",
+          "isAutoCheck": true,
+          "description": "Press the space bar and watch: the MarsBot jumps two times. Create the same project!",
           "command_keys": [
             "motion",
             "looks",
@@ -84,27 +78,22 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create a new \"Jump\" command",
+              "text": "Create a new \"Jump\" command",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Jump\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Double jump when pressing the space bar",
+              "text": "Double jump when pressing the space bar",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Jump.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -114,13 +103,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Flip",
+      "title": "The MarsBot does flips!",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Flip\".",
+      "isAutoCheck": true,
+      "description": "Press the space bar and watch! The initial placement and the appearance of the robot can also be done with a separate command. Look at how it's done.",
       "command_keys": [
         "motion",
         "looks",
@@ -136,28 +125,21 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create the \"Flip\" procedure",
+          "text": "Create the \"Flip\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Flip\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Double flip when pressing the space bar",
+          "text": "Double flip when pressing the space bar",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Flip.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -170,7 +152,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Flip\".",
+          "isAutoCheck": true,
+          "description": "Press the space bar and watch! The initial placement and the appearance of the robot can also be done with a separate command. Look at how it's done.",
           "command_keys": [
             "motion",
             "looks",
@@ -186,27 +169,22 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create the \"Flip\" procedure",
+              "text": "Create the \"Flip\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Flip\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Double flip when pressing the space bar",
+              "text": "Double flip when pressing the space bar",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Flip.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -216,13 +194,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Flip",
+      "title": "The sprite does somersaults forward and backward",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Flip\".",
+      "isAutoCheck": true,
+      "description": "To control the MarsBot, use the space bar and numbers 1 and 2.",
       "command_keys": [
         "motion",
         "looks",
@@ -238,28 +216,42 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "The \"Start\" procedure",
+          "text": "The \"Start\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Flip\".",
+          "title": "The \"backward somersault\" procedure",
+          "text": "The \"backward somersault\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Pressing the space bar",
+          "text": "Pressing the space bar",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_4",
+          "title": "Pressing the number 1",
+          "text": "Pressing the number 1",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_5",
+          "title": "Pressing the number 2",
+          "text": "Pressing the number 2",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Flip_(1).sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -272,7 +264,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Flip\".",
+          "isAutoCheck": true,
+          "description": "To control the MarsBot, use the space bar and numbers 1 and 2.",
           "command_keys": [
             "motion",
             "looks",
@@ -288,27 +281,43 @@
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "The \"Start\" procedure",
+              "text": "The \"Start\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Flip\".",
+              "title": "The \"backward somersault\" procedure",
+              "text": "The \"backward somersault\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Pressing the space bar",
+              "text": "Pressing the space bar",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_4",
+              "title": "Pressing the number 1",
+              "text": "Pressing the number 1",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_5",
+              "title": "Pressing the number 2",
+              "text": "Pressing the number 2",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Flip_(1).sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -318,13 +327,13 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Flip and walk",
+      "title": "The MarsBot walks or does flips all the time",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Flip and walk\".",
+      "description": "Click on 1 and 2 and watch the example!",
       "command_keys": [
         "motion",
         "looks",
@@ -340,28 +349,49 @@
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Define the \"Start\" procedure",
+          "text": "Define the \"Start\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Flip and walk\".",
+          "title": "Define the \"Walk\" procedure",
+          "text": "Define the \"Walk\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Define the \"Flip\" procedure",
+          "text": "Define the \"Flip\" procedure",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_4_4",
+          "title": "When you press 1, the MarsBot is constantly walking",
+          "text": "When you press 1, the MarsBot is constantly walking",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_4_5",
+          "title": "When you press 2, the MarsBot is constantly doing flips",
+          "text": "When you press 2, the MarsBot is constantly doing flips",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_4_6",
+          "title": "Stop the previous script",
+          "text": "Stop the previous script",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Flip_and_walk.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -374,7 +404,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Flip and walk\".",
+          "isAutoCheck": false,
+          "description": "Click on 1 and 2 and watch the example!",
           "command_keys": [
             "motion",
             "looks",
@@ -390,27 +421,50 @@
           "requirements": [
             {
               "id": "req_4_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Define the \"Start\" procedure",
+              "text": "Define the \"Start\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Flip and walk\".",
+              "title": "Define the \"Walk\" procedure",
+              "text": "Define the \"Walk\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Define the \"Flip\" procedure",
+              "text": "Define the \"Flip\" procedure",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_4_4",
+              "title": "When you press 1, the MarsBot is constantly walking",
+              "text": "When you press 1, the MarsBot is constantly walking",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_4_5",
+              "title": "When you press 2, the MarsBot is constantly doing flips",
+              "text": "When you press 2, the MarsBot is constantly doing flips",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_4_6",
+              "title": "Stop the previous script",
+              "text": "Stop the previous script",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Flip_and_walk.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -426,7 +480,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Find the error\".",
+      "description": "Run the project, and press 2 and 1. What is the error?",
       "command_keys": [
         "motion",
         "looks",
@@ -442,28 +496,14 @@
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Find the error\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Correct the error",
+          "text": "Correct the error",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Find_the_error.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -476,7 +516,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Find the error\".",
+          "isAutoCheck": false,
+          "description": "Run the project, and press 2 and 1. What is the error?",
           "command_keys": [
             "motion",
             "looks",
@@ -492,27 +533,15 @@
           "requirements": [
             {
               "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Find the error\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Correct the error",
+              "text": "Correct the error",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Find_the_error.sb3",
+          "demo_project_id": ""
         }
       ]
     }

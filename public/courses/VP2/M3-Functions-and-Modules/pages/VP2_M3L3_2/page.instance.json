@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Broom and ball",
+      "title": "Hit the ball!",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Broom and ball\".",
+      "description": "Start the project with the green flag. Move the broom with your mouse and hit the ball. Note that after you touch the ball once, it no longer responds to the touch of the broom.",
       "command_keys": [
         "motion",
         "looks",
@@ -34,28 +34,14 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Broom and ball\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Study the code and put the command in the right place.",
+          "text": "Study the code and put the command in the right place.",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Broom_and_ball.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -68,7 +54,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Broom and ball\".",
+          "isAutoCheck": false,
+          "description": "Start the project with the green flag. Move the broom with your mouse and hit the ball. Note that after you touch the ball once, it no longer responds to the touch of the broom.",
           "command_keys": [
             "motion",
             "looks",
@@ -84,27 +71,15 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Broom and ball\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Study the code and put the command in the right place.",
+              "text": "Study the code and put the command in the right place.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Broom_and_ball.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -114,13 +89,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Rabbit and fox",
+      "title": "Hide the bunny!",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Rabbit and fox\".",
+      "description": "Hide the bunny in the house! Key controls. Note that when the bunny is hiding, the foxes stop!",
       "command_keys": [
         "motion",
         "looks",
@@ -136,28 +111,14 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Rabbit and fox\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Fix the error",
+          "text": "Fix the error",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_Rabbit_and_fox.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -170,7 +131,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Rabbit and fox\".",
+          "isAutoCheck": false,
+          "description": "Hide the bunny in the house! Key controls. Note that when the bunny is hiding, the foxes stop!",
           "command_keys": [
             "motion",
             "looks",
@@ -186,27 +148,15 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Rabbit and fox\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Fix the error",
+              "text": "Fix the error",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_Rabbit_and_fox.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -216,13 +166,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Maze - find an error",
+      "title": "Complete two levels of the maze!",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Maze - find an error\".",
+      "description": "Check where the character returns when it touches the wall.",
       "command_keys": [
         "motion",
         "looks",
@@ -238,28 +188,14 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Maze - find an error\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
+          "text": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L3_maze_find_an_error.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -272,7 +208,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Maze - find an error\".",
+          "isAutoCheck": false,
+          "description": "Check where the character returns when it touches the wall.",
           "command_keys": [
             "motion",
             "looks",
@@ -288,27 +225,15 @@
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Maze - find an error\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
+              "text": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L3_maze_find_an_error.sb3",
+          "demo_project_id": ""
         }
       ]
     }

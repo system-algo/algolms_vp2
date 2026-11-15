@@ -14,6 +14,7 @@
       const projectUrl = params.get('project') || '';
       const levelParam = params.get('level') || '1';
       const titleParam = (params.get('title') || '').trim();
+      const storageKeyParam = params.get('storageKey') || (projectUrl.includes('M3L4_Game') ? 'M3L4_Shared_Game' : '');
 
       const isPlayerOnly = params.get('isPlayerOnly') === 'true' || params.get('mode') === 'player';
       if (isPlayerOnly) {
@@ -854,7 +855,76 @@
       const initialProjectUrl = resolveProjectUrl(projectUrl, levelParam);
       const expectedTitle = resolveProjectTitle(initialProjectUrl, levelParam, titleParam);
 
-      if (!initialProjectUrl) {
+      // IndexedDB Storage Helpers for Project Persistence across lessons/weeks
+      const DB_NAME = 'AlgoLMS_ScratchProjects';
+      const STORE_NAME = 'projects';
+
+      function openProjectDb() {
+        return new Promise((resolve) => {
+          if (!window.indexedDB) return resolve(null);
+          const req = indexedDB.open(DB_NAME, 1);
+          req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains(STORE_NAME)) {
+              db.createObjectStore(STORE_NAME);
+            }
+          };
+          req.onsuccess = () => resolve(req.result);
+          req.onerror = () => resolve(null);
+        });
+      }
+
+      async function getSavedProject(key) {
+        if (!key) return null;
+        try {
+          const db = await openProjectDb();
+          if (!db) return null;
+          return new Promise((resolve) => {
+            const tx = db.transaction(STORE_NAME, 'readonly');
+            const req = tx.objectStore(STORE_NAME).get(key);
+            req.onsuccess = () => resolve(req.result || null);
+            req.onerror = () => resolve(null);
+          });
+        } catch (e) {
+          return null;
+        }
+      }
+
+      window.saveProjectToStorage = async function(key) {
+        const k = key || storageKeyParam;
+        if (!k) return false;
+        const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+        if (!vm || typeof vm.saveProjectSb3 !== 'function') return false;
+        try {
+          const blob = await vm.saveProjectSb3();
+          const buffer = await blob.arrayBuffer();
+          const db = await openProjectDb();
+          if (!db) return false;
+          await new Promise((resolve) => {
+            const tx = db.transaction(STORE_NAME, 'readwrite');
+            tx.objectStore(STORE_NAME).put(buffer, k);
+            tx.oncomplete = () => resolve(true);
+            tx.onerror = () => resolve(false);
+          });
+          console.log('[AlgoLMS] Saved project to storage for key:', k);
+          window.parent.postMessage({ type: 'PROJECT_SAVED_SUCCESS', storageKey: k, timestamp: Date.now() }, '*');
+          return true;
+        } catch (err) {
+          console.error('[AlgoLMS] Failed to save project to storage:', err);
+          return false;
+        }
+      };
+
+      if (storageKeyParam) {
+        setInterval(() => {
+          window.saveProjectToStorage(storageKeyParam);
+        }, 30000);
+        window.addEventListener('beforeunload', () => {
+          window.saveProjectToStorage(storageKeyParam);
+        });
+      }
+
+      if (!initialProjectUrl && !storageKeyParam) {
         // Level 1: Default Cat. Wait for Blockly workspace to be ready then apply Level 1 toolbox & title
         let checks = 0;
         const blocklyInterval = setInterval(() => {
@@ -870,7 +940,7 @@
           }
         }, 150);
       } else {
-        // Levels 2+: Wait for Scratch VM to complete its initial boot, then load the starter .sb3
+        // Levels 2+ or Shared Projects: Wait for Scratch VM to complete its initial boot
         let attempts = 0;
         let projectLoaded = false;
         const loaderCheck = setInterval(async () => {
@@ -879,7 +949,29 @@
           if (vm && vm.runtime && Array.isArray(vm.runtime.targets) && vm.runtime.targets.length > 0 && !projectLoaded) {
             projectLoaded = true;
             clearInterval(loaderCheck);
-            await loadProjectFile(initialProjectUrl);
+
+            // First check if a saved project exists in IndexedDB for this storageKey
+            let loadedFromStorage = false;
+            if (storageKeyParam) {
+              const savedBuffer = await getSavedProject(storageKeyParam);
+              if (savedBuffer) {
+                console.log('[AlgoLMS Bridge] Restoring saved project for key:', storageKeyParam);
+                try {
+                  await vm.loadProject(savedBuffer);
+                  if (typeof vm.emitTargetsUpdate === 'function') vm.emitTargetsUpdate();
+                  if (typeof vm.emitWorkspaceUpdate === 'function') vm.emitWorkspaceUpdate();
+                  loadedFromStorage = true;
+                  setTimeout(applyBlocklyToolbox, 100);
+                  setTimeout(applyBlocklyToolbox, 500);
+                } catch (loadErr) {
+                  console.warn('[AlgoLMS Bridge] Could not restore saved project, falling back to starter:', loadErr);
+                }
+              }
+            }
+
+            if (!loadedFromStorage && initialProjectUrl) {
+              await loadProjectFile(initialProjectUrl);
+            }
           }
           if (attempts > 300) {
             clearInterval(loaderCheck);
@@ -1022,6 +1114,9 @@
         }
         if (e.data.type === 'SAVE_TO_COMPUTER') {
           window.saveProjectToComputer(e.data.title);
+        }
+        if (e.data.type === 'SAVE_TO_STORAGE') {
+          await window.saveProjectToStorage(e.data.storageKey || storageKeyParam);
         }
         if (e.data.type === 'REVERT_DRAFT_PROJECT') {
           window.revertToDraftProject();

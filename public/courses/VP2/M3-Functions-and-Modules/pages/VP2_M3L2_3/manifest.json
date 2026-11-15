@@ -23,8 +23,8 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Beetle on a tree\".",
+      "isAutoCheck": true,
+      "description": "Let's program it: the sprite Beetle moves up the tree!",
       "command_keys": [
         "motion",
         "looks",
@@ -40,28 +40,28 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Upward movement",
+          "text": "Upward movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Beetle on a tree\".",
+          "title": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
+          "text": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Beetle_on_a_tree.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -74,7 +74,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Beetle on a tree\".",
+          "isAutoCheck": true,
+          "description": "Let's program it: the sprite Beetle moves up the tree!",
           "command_keys": [
             "motion",
             "looks",
@@ -90,27 +91,29 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Upward movement",
+              "text": "Upward movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Beetle on a tree\".",
+              "title": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
+              "text": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Beetle_on_a_tree.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -125,8 +128,8 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Snowflake 1\".",
+      "isAutoCheck": true,
+      "description": "The Snowflake sprite appears at the top of the stage and falls down.",
       "command_keys": [
         "motion",
         "looks",
@@ -143,27 +146,27 @@
         {
           "id": "req_2_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Snowflake 1\".",
+          "title": "Falling",
+          "text": "Falling",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The snowflake falls constantly",
+          "text": "The snowflake falls constantly",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Snowflake_1.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -176,7 +179,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Snowflake 1\".",
+          "isAutoCheck": true,
+          "description": "The Snowflake sprite appears at the top of the stage and falls down.",
           "command_keys": [
             "motion",
             "looks",
@@ -193,26 +197,28 @@
             {
               "id": "req_2_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Snowflake 1\".",
+              "title": "Falling",
+              "text": "Falling",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The snowflake falls constantly",
+              "text": "The snowflake falls constantly",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Snowflake_1.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -227,8 +233,8 @@
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"The dragon guards the castle\".",
+      "isAutoCheck": true,
+      "description": "The sprite Dragon flies left and right!",
       "command_keys": [
         "motion",
         "looks",
@@ -244,28 +250,42 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "The dragon moves to the right",
+          "text": "The dragon moves to the right",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"The dragon guards the castle\".",
+          "title": "The dragon moves to the left",
+          "text": "The dragon moves to the left",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The dragon turns",
+          "text": "The dragon turns",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_4",
+          "title": "The dragon moves constantly",
+          "text": "The dragon moves constantly",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_3_5",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_The_dragon_guards_the_castle.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -278,7 +298,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"The dragon guards the castle\".",
+          "isAutoCheck": true,
+          "description": "The sprite Dragon flies left and right!",
           "command_keys": [
             "motion",
             "looks",
@@ -294,27 +315,43 @@
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "The dragon moves to the right",
+              "text": "The dragon moves to the right",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"The dragon guards the castle\".",
+              "title": "The dragon moves to the left",
+              "text": "The dragon moves to the left",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The dragon turns",
+              "text": "The dragon turns",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_4",
+              "title": "The dragon moves constantly",
+              "text": "The dragon moves constantly",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_3_5",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_The_dragon_guards_the_castle.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -324,13 +361,13 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Goalkeeper control",
+      "title": "Goalkeeper control right and left",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Goalkeeper control\".",
+      "isAutoCheck": true,
+      "description": "Use the right arrow key to move the goalkeeper to the right and the left arrow key to move the goalkeeper to the left.",
       "command_keys": [
         "motion",
         "looks",
@@ -346,28 +383,35 @@
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Movement to the right",
+          "text": "Movement to the right",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Goalkeeper control\".",
+          "title": "Movement to the left",
+          "text": "Movement to the left",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Constantly checking keystrokes",
+          "text": "Constantly checking keystrokes",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_4_4",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Goalkeeper_control.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -380,7 +424,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Goalkeeper control\".",
+          "isAutoCheck": true,
+          "description": "Use the right arrow key to move the goalkeeper to the right and the left arrow key to move the goalkeeper to the left.",
           "command_keys": [
             "motion",
             "looks",
@@ -396,27 +441,36 @@
           "requirements": [
             {
               "id": "req_4_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Movement to the right",
+              "text": "Movement to the right",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Goalkeeper control\".",
+              "title": "Movement to the left",
+              "text": "Movement to the left",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Constantly checking keystrokes",
+              "text": "Constantly checking keystrokes",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_4_4",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Goalkeeper_control.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -426,13 +480,13 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Creative Project (Level 5)",
+      "title": "Goalkeeper control up and down",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Creative Project (Level 5)\".",
+      "isAutoCheck": true,
+      "description": "Use the up arrow key to move the goalkeeper up and the down arrow key to move the goalkeeper down.",
       "command_keys": [
         "motion",
         "looks",
@@ -448,28 +502,35 @@
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Upward movement",
+          "text": "Upward movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Creative Project (Level 5)\".",
+          "title": "Downward movement",
+          "text": "Downward movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Constantly checking keystrokes",
+          "text": "Constantly checking keystrokes",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_5_4",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Goalkeeper_control.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -482,7 +543,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Creative Project (Level 5)\".",
+          "isAutoCheck": true,
+          "description": "Use the up arrow key to move the goalkeeper up and the down arrow key to move the goalkeeper down.",
           "command_keys": [
             "motion",
             "looks",
@@ -498,27 +560,36 @@
           "requirements": [
             {
               "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Upward movement",
+              "text": "Upward movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Creative Project (Level 5)\".",
+              "title": "Downward movement",
+              "text": "Downward movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Constantly checking keystrokes",
+              "text": "Constantly checking keystrokes",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_5_4",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Goalkeeper_control.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -534,7 +605,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Snowflakes\".",
+      "description": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
       "command_keys": [
         "motion",
         "looks",
@@ -550,28 +621,21 @@
       "requirements": [
         {
           "id": "req_6_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Falling snowflakes",
+          "text": "Falling snowflakes",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Snowflakes\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The snowflakes fall at different speeds",
+          "text": "The snowflakes fall at different speeds",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Snowflakes.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -584,7 +648,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Snowflakes\".",
+          "isAutoCheck": false,
+          "description": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
           "command_keys": [
             "motion",
             "looks",
@@ -600,27 +665,22 @@
           "requirements": [
             {
               "id": "req_6_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Falling snowflakes",
+              "text": "Falling snowflakes",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Snowflakes\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The snowflakes fall at different speeds",
+              "text": "The snowflakes fall at different speeds",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Snowflakes.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -630,13 +690,13 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Soccer (task)",
+      "title": "Soccer",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Soccer (task)\".",
+      "description": "Create a game in which the goalkeeper has to protect their goal. Use the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
       "command_keys": [
         "motion",
         "looks",
@@ -652,28 +712,21 @@
       "requirements": [
         {
           "id": "req_7_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Goalkeeper control",
+          "text": "Goalkeeper control",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_7_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Soccer (task)\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_7_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Ball movement",
+          "text": "Ball movement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Soccer_(task).sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -686,7 +739,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Soccer (task)\".",
+          "isAutoCheck": false,
+          "description": "Create a game in which the goalkeeper has to protect their goal. Use the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
           "command_keys": [
             "motion",
             "looks",
@@ -702,27 +756,22 @@
           "requirements": [
             {
               "id": "req_7_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Goalkeeper control",
+              "text": "Goalkeeper control",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_7_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Soccer (task)\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_7_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Ball movement",
+              "text": "Ball movement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Soccer_(task).sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -738,7 +787,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Jump\".",
+      "description": "The Cat sprite jumps. Press the space bar!",
       "command_keys": [
         "motion",
         "looks",
@@ -754,28 +803,28 @@
       "requirements": [
         {
           "id": "req_8_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Upward movement",
+          "text": "Upward movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_8_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Jump\".",
+          "title": "Downward movement",
+          "text": "Downward movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_8_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Jump.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -788,7 +837,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Jump\".",
+          "isAutoCheck": false,
+          "description": "The Cat sprite jumps. Press the space bar!",
           "command_keys": [
             "motion",
             "looks",
@@ -804,27 +854,29 @@
           "requirements": [
             {
               "id": "req_8_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Upward movement",
+              "text": "Upward movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_8_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Jump\".",
+              "title": "Downward movement",
+              "text": "Downward movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_8_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Jump.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -840,7 +892,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Race\".",
+      "description": "Use the arrows to control the Car sprite and reach the finish line!",
       "command_keys": [
         "motion",
         "looks",
@@ -856,28 +908,28 @@
       "requirements": [
         {
           "id": "req_9_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Car control",
+          "text": "Car control",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Race\".",
+          "title": "Touching the grass",
+          "text": "Touching the grass",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Touching the finish line sprite",
+          "text": "Touching the finish line sprite",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L2_Race.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -890,7 +942,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Race\".",
+          "isAutoCheck": false,
+          "description": "Use the arrows to control the Car sprite and reach the finish line!",
           "command_keys": [
             "motion",
             "looks",
@@ -906,27 +959,29 @@
           "requirements": [
             {
               "id": "req_9_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Car control",
+              "text": "Car control",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Race\".",
+              "title": "Touching the grass",
+              "text": "Touching the grass",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Touching the finish line sprite",
+              "text": "Touching the finish line sprite",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L2_Race.sb3",
+          "demo_project_id": ""
         }
       ]
     }

@@ -4,7 +4,7 @@
   "title": "Game planning",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "tasks": [
     {
       "id": "VP2_M3L4_1_1",
@@ -18,7 +18,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Game\".",
+      "description": "Create your own game with a main character, prize, obstacles or enemies, and program it!",
       "command_keys": [
         "motion",
         "looks",
@@ -34,22 +34,43 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Planning",
+          "text": "Planning",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Game\".",
+          "title": "Controlling the main character",
+          "text": "Controlling the main character",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Level 1",
+          "text": "Level 1",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Level 2",
+          "text": "Level 2",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_5",
+          "title": "Victory",
+          "text": "Victory",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_6",
+          "title": "Create!",
+          "text": "Create!",
           "type": "gif",
           "url": ""
         }
@@ -68,7 +89,8 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Game\".",
+          "isAutoCheck": false,
+          "description": "Create your own game with a main character, prize, obstacles or enemies, and program it!",
           "command_keys": [
             "motion",
             "looks",
@@ -84,28 +106,79 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Planning",
+              "text": "Planning",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Game\".",
+              "title": "Controlling the main character",
+              "text": "Controlling the main character",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Level 1",
+              "text": "Level 1",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Level 2",
+              "text": "Level 2",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_5",
+              "title": "Victory",
+              "text": "Victory",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_6",
+              "title": "Create!",
+              "text": "Create!",
               "type": "gif",
               "url": ""
             }
           ],
           "media": [],
-          "starter_project_id": "M3L4_Game.sb3"
+          "starter_project_id": "M3L4_Game.sb3",
+          "demo_project_id": ""
+        }
+      ]
+    },
+    {
+      "id": "VP2_M3L4_1_2",
+      "taskId": "VP2_M3L4_1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
+      "states": [
+        {
+          "id": "VP2_M3L4_1_2_state_1",
+          "stateId": "VP2_M3L4_1_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": []
         }
       ]
     }

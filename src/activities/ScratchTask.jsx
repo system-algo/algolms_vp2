@@ -72,8 +72,24 @@ export default function ScratchTask({
   const [isSaving, setIsSaving] = useState(false);
   const [isTurboMode, setIsTurboMode] = useState(false);
 
+  // Shared storage key for projects that span multiple weeks/lessons (such as M3L4, M3L5, M3L6)
+  const isM3L4_L6 =
+    ['VP2_M3L4_1', 'VP2_M3L5_1', 'VP2_M3L6_1'].includes(String(task?.page_id || task?.pageId || '')) ||
+    String(task?.activity_id || task?.id || task?.taskId || '').includes('M3L4') ||
+    String(task?.activity_id || task?.id || task?.taskId || '').includes('M3L5') ||
+    String(task?.activity_id || task?.id || task?.taskId || '').includes('M3L6') ||
+    (task?.title || '').toLowerCase().includes('game planning') ||
+    (task?.title || '').toLowerCase().includes('game testing') ||
+    (task?.title || '').toLowerCase().includes('hackathon game');
+
+  const storageKey = isM3L4_L6 ? 'M3L4_Shared_Game' : (projectId || task?.id || task?.taskId || '');
+
   const handleSaveClick = () => {
     setIsSaving(true);
+    const win = iframeRef.current?.contentWindow;
+    if (win) {
+      win.postMessage({ type: 'SAVE_TO_STORAGE', storageKey }, '*');
+    }
     setTimeout(() => {
       const d = new Date();
       setLastSaveTime(
@@ -82,6 +98,20 @@ export default function ScratchTask({
       setIsSaving(false);
     }, 400);
   };
+
+  useEffect(() => {
+    const handleSavedMsg = (e) => {
+      if (e.data?.type === 'PROJECT_SAVED_SUCCESS') {
+        const d = new Date();
+        setLastSaveTime(
+          `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`
+        );
+        setIsSaving(false);
+      }
+    };
+    window.addEventListener('message', handleSavedMsg);
+    return () => window.removeEventListener('message', handleSavedMsg);
+  }, []);
 
   useEffect(() => {
     const handleTurboMsg = (e) => {
@@ -117,7 +147,7 @@ export default function ScratchTask({
     task?.projectName ||
     '';
 
-  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}`;
+  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${projectTitle ? `title=${encodeURIComponent(projectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
   const iframeRef = useRef(null);
   const containerRef = useRef(null);
 

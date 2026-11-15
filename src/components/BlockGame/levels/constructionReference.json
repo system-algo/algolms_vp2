@@ -351,7 +351,30 @@
       "x": 2,
       "y": 3,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_factory"
+    ],
+    "sourceToolboxCount": 5
   },
   {
     "number": 3,
@@ -716,7 +739,31 @@
       "x": 4,
       "y": 5,
       "direction": 270
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 4,
@@ -1099,7 +1146,32 @@
       "x": 6,
       "y": 2,
       "direction": 270
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 5,
@@ -1458,7 +1530,32 @@
       "x": 5,
       "y": 4,
       "direction": 0
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 6,
@@ -1835,7 +1932,32 @@
       "x": 7,
       "y": 3,
       "direction": 0
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 7,
@@ -2230,7 +2352,32 @@
       "x": 6,
       "y": 7,
       "direction": 0
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 8,
@@ -2595,7 +2742,32 @@
       "x": 1,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 9,
@@ -2967,7 +3139,32 @@
       "x": 0,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 12,
@@ -3326,7 +3523,32 @@
       "x": 0,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 13,
@@ -3715,7 +3937,32 @@
       "x": 0,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 14,
@@ -4200,7 +4447,32 @@
       "x": 0,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 15,
@@ -4565,7 +4837,32 @@
       "x": 1,
       "y": 2,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 16,
@@ -4996,7 +5293,32 @@
       "x": 0,
       "y": 0,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 17,
@@ -5449,7 +5771,32 @@
       "x": 0,
       "y": 6,
       "direction": 90
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 18,
@@ -5811,6 +6158,31 @@
       "x": 3,
       "y": 3,
       "direction": 0
-    }
+    },
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      "build_greenhouse",
+      "build_factory",
+      "build_windmill"
+    ],
+    "sourceToolboxCount": 7
   }
 ]

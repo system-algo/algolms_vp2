@@ -64,6 +64,12 @@ elif name=='excursion':
 elif name=='rocket':
  for l in levels:
   if not l.get('type'):l['toolbox']=turns+['take_cargo','put_cargo',{'type':'repeat','params':{'times':4}}];l['sourceToolboxCount']=6
+elif name=='construction':
+ for l in levels:
+  if not l.get('type'):l['toolbox']=turns+[{'type':'repeat','params':{'times':2}}]+(['build_factory']if l['number']==2 else ['build_factory','build_windmill']if l['number']==3 else ['build_greenhouse','build_factory','build_windmill']);l['sourceToolboxCount']=len(l['toolbox'])
+elif name=='excavation':
+ for l in levels:
+  if not l.get('type'):l['toolbox']=turns+['take_cargo','put_cargo',{'type':'repeat','params':{'times':4}},'destroy'];l['sourceToolboxCount']=7
 else:raise SystemExit('Page has not been audited: '+name)
 p.write_text(json.dumps(levels,indent=2)+'\n')
 with open(root/'docs/block-task-status.md','a')as f:f.write('\nCommand palette audit: '+name+' — all source programming positions checked; palette order, count and executable command mapping verified.\n')

@@ -14,7 +14,7 @@
       const projectUrl = params.get('project') || '';
       const levelParam = params.get('level') || '1';
       const titleParam = (params.get('title') || '').trim();
-      const storageKeyParam = params.get('storageKey') || (projectUrl.includes('M3L4_Game') ? 'M3L4_Shared_Game' : '');
+      const storageKeyParam = params.get('storageKey') || (projectUrl.includes('M3L4_Game') ? 'M3L4_Shared_Game' : (projectUrl.includes('M5L5_Chatbot') ? 'M5L5_Shared_Chatbot' : ''));
 
       const isPlayerOnly = params.get('isPlayerOnly') === 'true' || params.get('mode') === 'player';
       if (isPlayerOnly) {

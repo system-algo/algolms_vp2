@@ -18,45 +18,30 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Show solution",
+      "title": "Cat bot 1",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "Study the project. The cat asks for the username and greets them. Let's program it.",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
+        "control",
         "sensing",
-        "variables"
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_wait",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The cat asks for a name and remembers it.",
+          "text": "The cat asks for a name and remembers it.",
           "type": "gif",
           "url": ""
         }
@@ -69,7 +54,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-1-1y16kmo/initial/asset-3aejnc.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L1_Cat_bot_1.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -82,39 +67,24 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "Study the project. The cat asks for the username and greets them. Let's program it.",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
+            "control",
             "sensing",
-            "variables"
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "event_whenflagclicked",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_wait",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The cat asks for a name and remembers it.",
+              "text": "The cat asks for a name and remembers it.",
               "type": "gif",
               "url": ""
             }
@@ -126,7 +96,11 @@
               "text": "Complete the programming task for \"Show solution\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-1-1y16kmo/initial/asset-3aejnc.png"
             }
-          ]
+          ],
+          "title": "Cat bot 1",
+          "isAutoCheck": true,
+          "starter_project_id": "M5L1_Cat_bot_1.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -136,45 +110,30 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Show solution",
+      "title": "Cat bot 2",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
+        "control",
         "sensing",
-        "variables"
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_wait",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The cat asks for an age",
+          "text": "The cat asks for an age",
           "type": "gif",
           "url": ""
         }
@@ -187,7 +146,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-22-ssu41u/initial/asset-3aejnc.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L1_Cat_bot_2.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -200,39 +159,24 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
+            "control",
             "sensing",
-            "variables"
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "event_whenflagclicked",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_wait",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The cat asks for an age",
+              "text": "The cat asks for an age",
               "type": "gif",
               "url": ""
             }
@@ -244,7 +188,11 @@
               "text": "Complete the programming task for \"Show solution\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-22-ssu41u/initial/asset-3aejnc.png"
             }
-          ]
+          ],
+          "title": "Cat bot 2",
+          "isAutoCheck": true,
+          "starter_project_id": "M5L1_Cat_bot_2.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -254,13 +202,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Last save by student August 9 at 10:15 PM",
+      "title": "Greeting",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 9 at 10:15 PM\".",
+      "description": "Run the project and answer the questions.",
       "command_keys": [
         "motion",
         "looks",
@@ -272,36 +220,12 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "looks_sayforsecs",
-        "looks_show",
-        "control_wait",
-        "control_repeat",
-        "control_forever",
-        "control_if",
-        "control_if_else",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 9 at 10:15 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Create variables",
+          "text": "Create variables",
           "type": "gif",
           "url": ""
         }
@@ -314,7 +238,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-43-prdb1n/initial/asset-3aejnc.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L1_Greeting.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -327,7 +251,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 9 at 10:15 PM\".",
+          "description": "Run the project and answer the questions.",
           "command_keys": [
             "motion",
             "looks",
@@ -339,36 +263,12 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "event_whenflagclicked",
-            "looks_sayforsecs",
-            "looks_show",
-            "control_wait",
-            "control_repeat",
-            "control_forever",
-            "control_if",
-            "control_if_else",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 9 at 10:15 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Create variables",
+              "text": "Create variables",
               "type": "gif",
               "url": ""
             }
@@ -380,7 +280,11 @@
               "text": "Complete the programming task for \"Last save by student August 9 at 10:15 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-43-prdb1n/initial/asset-3aejnc.png"
             }
-          ]
+          ],
+          "title": "Greeting",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L1_Greeting.sb3",
+          "demo_project_id": ""
         }
       ]
     }

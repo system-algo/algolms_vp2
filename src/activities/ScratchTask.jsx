@@ -72,7 +72,7 @@ export default function ScratchTask({
   const [isSaving, setIsSaving] = useState(false);
   const [isTurboMode, setIsTurboMode] = useState(false);
 
-  // Shared storage key for projects that span multiple weeks/lessons (such as M3L4, M3L5, M3L6)
+  // Shared storage key for projects that span multiple weeks/lessons (such as M3L4, M3L5, M3L6 and M5L5, M5L6)
   const isM3L4_L6 =
     ['VP2_M3L4_1', 'VP2_M3L5_1', 'VP2_M3L6_1'].includes(String(task?.page_id || task?.pageId || '')) ||
     String(task?.activity_id || task?.id || task?.taskId || '').includes('M3L4') ||
@@ -82,7 +82,19 @@ export default function ScratchTask({
     (task?.title || '').toLowerCase().includes('game testing') ||
     (task?.title || '').toLowerCase().includes('hackathon game');
 
-  const storageKey = isM3L4_L6 ? 'M3L4_Shared_Game' : (projectId || task?.id || task?.taskId || '');
+  const isM5L5_L6 =
+    ['VP2_M5L5_1', 'VP2_M5L6_1'].includes(String(task?.page_id || task?.pageId || '')) ||
+    String(task?.activity_id || task?.id || task?.taskId || '').includes('M5L5') ||
+    String(task?.activity_id || task?.id || task?.taskId || '').includes('M5L6') ||
+    (task?.title || '').toLowerCase().includes('chatbot') ||
+    (task?.title || '').toLowerCase().includes('chatbot. planning') ||
+    (task?.title || '').toLowerCase().includes('project. presentation');
+
+  const storageKey = isM3L4_L6
+    ? 'M3L4_Shared_Game'
+    : isM5L5_L6
+    ? 'M5L5_Shared_Chatbot'
+    : (projectId || task?.id || task?.taskId || '');
 
   const handleSaveClick = () => {
     setIsSaving(true);

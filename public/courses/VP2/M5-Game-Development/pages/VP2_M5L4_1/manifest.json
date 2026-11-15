@@ -18,49 +18,44 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 10 at 4:08 PM",
+      "title": "Kaleidoscope",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 10 at 4:08 PM\".",
+      "description": "Run the project. When you press the space bar, a new drawing appears. Let's program it",
       "command_keys": [
-        "myblocks",
-        "events"
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "looks_nextcostume",
-        "looks_show",
-        "looks_hide",
-        "control_repeat",
-        "operator_random"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Procedure with a parameter",
+          "text": "Procedure with a parameter",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 10 at 4:08 PM\".",
+          "title": "Number of petals",
+          "text": "Number of petals",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Pressing the space bar",
+          "text": "Pressing the space bar",
           "type": "gif",
           "url": ""
         }
@@ -73,7 +68,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-1-1p2tuhd/initial/asset-15t4blx.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L4_Kaleidoscope.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -86,43 +81,38 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 10 at 4:08 PM\".",
+          "description": "Run the project. When you press the space bar, a new drawing appears. Let's program it",
           "command_keys": [
-            "myblocks",
-            "events"
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "looks_nextcostume",
-            "looks_show",
-            "looks_hide",
-            "control_repeat",
-            "operator_random"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Procedure with a parameter",
+              "text": "Procedure with a parameter",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 10 at 4:08 PM\".",
+              "title": "Number of petals",
+              "text": "Number of petals",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Pressing the space bar",
+              "text": "Pressing the space bar",
               "type": "gif",
               "url": ""
             }
@@ -134,7 +124,11 @@
               "text": "Complete the programming task for \"Last save by student August 10 at 4:08 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-1-1p2tuhd/initial/asset-15t4blx.png"
             }
-          ]
+          ],
+          "title": "Kaleidoscope",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L4_Kaleidoscope.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -144,13 +138,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Last save by student August 10 at 4:18 PM",
+      "title": "Flower generation",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 10 at 4:18 PM\".",
+      "description": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
       "command_keys": [
         "motion",
         "looks",
@@ -162,42 +156,26 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Add the Pen extension",
+          "text": "Add the Pen extension",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 10 at 4:18 PM\".",
+          "title": "Create a procedure with a parameter for drawing a flower",
+          "text": "Create a procedure with a parameter for drawing a flower",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Program the drawing of the flower",
+          "text": "Program the drawing of the flower",
           "type": "gif",
           "url": ""
         }
@@ -210,7 +188,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-22-pkxncp/initial/asset-15t4blx.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L4_Flower_generation.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -223,7 +201,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 10 at 4:18 PM\".",
+          "description": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
           "command_keys": [
             "motion",
             "looks",
@@ -235,42 +213,26 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Add the Pen extension",
+              "text": "Add the Pen extension",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 10 at 4:18 PM\".",
+              "title": "Create a procedure with a parameter for drawing a flower",
+              "text": "Create a procedure with a parameter for drawing a flower",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Program the drawing of the flower",
+              "text": "Program the drawing of the flower",
               "type": "gif",
               "url": ""
             }
@@ -282,7 +244,11 @@
               "text": "Complete the programming task for \"Last save by student August 10 at 4:18 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-22-pkxncp/initial/asset-15t4blx.png"
             }
-          ]
+          ],
+          "title": "Flower generation",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L4_Flower_generation.sb3",
+          "demo_project_id": ""
         }
       ]
     }

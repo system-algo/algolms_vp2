@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student April 8 at 7:23 PM",
+      "title": "Chatbot",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student April 8 at 7:23 PM\".",
+      "description": "Chat with the Cat-bot! Plan and build your own chatbot.",
       "command_keys": [
         "motion",
         "looks",
@@ -30,42 +30,26 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Add your bot that will perform actions",
+          "text": "Add your bot that will perform actions",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student April 8 at 7:23 PM\".",
+          "title": "At startup, the bot asks for a name and age",
+          "text": "At startup, the bot asks for a name and age",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Choose at least 2 functions for your bot and program them!",
+          "text": "Choose at least 2 functions for your bot and program them!",
           "type": "gif",
           "url": ""
         }
@@ -78,7 +62,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/workspace/assets/task-1-f9jxiu/initial/asset-1gwz70s.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M5L5_Chatbot.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -91,7 +75,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student April 8 at 7:23 PM\".",
+          "description": "Chat with the Cat-bot! Plan and build your own chatbot.",
           "command_keys": [
             "motion",
             "looks",
@@ -103,42 +87,26 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Add your bot that will perform actions",
+              "text": "Add your bot that will perform actions",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student April 8 at 7:23 PM\".",
+              "title": "At startup, the bot asks for a name and age",
+              "text": "At startup, the bot asks for a name and age",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Choose at least 2 functions for your bot and program them!",
+              "text": "Choose at least 2 functions for your bot and program them!",
               "type": "gif",
               "url": ""
             }
@@ -150,7 +118,11 @@
               "text": "Complete the programming task for \"Last save by student April 8 at 7:23 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/workspace/assets/task-1-f9jxiu/initial/asset-1gwz70s.png"
             }
-          ]
+          ],
+          "title": "Chatbot",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L5_Chatbot.sb3",
+          "demo_project_id": ""
         }
       ]
     },

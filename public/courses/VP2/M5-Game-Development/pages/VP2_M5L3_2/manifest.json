@@ -18,13 +18,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student September 19 at 3:57 PM",
+      "title": "Quest",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student September 19 at 3:57 PM\".",
+      "description": "Define the questions procedure. Define the story procedure",
       "command_keys": [
         "motion",
         "looks",
@@ -36,41 +36,19 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_gotoxy",
-        "motion_goto",
-        "event_whenflagclicked",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_changesizeby",
-        "looks_setsizeto",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "control_repeat"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Define the \"questions\" procedure",
+          "text": "Define the \"questions\" procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student September 19 at 3:57 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Define the \"story\" procedure",
+          "text": "Define the \"story\" procedure",
           "type": "gif",
           "url": ""
         }
@@ -83,7 +61,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-1-193qcd8/initial/asset-15kmfa1.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "Quest.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -96,7 +74,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student September 19 at 3:57 PM\".",
+          "description": "Define the questions procedure. Define the story procedure",
           "command_keys": [
             "motion",
             "looks",
@@ -108,41 +86,19 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_gotoxy",
-            "motion_goto",
-            "event_whenflagclicked",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_changesizeby",
-            "looks_setsizeto",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "control_repeat"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Define the \"questions\" procedure",
+              "text": "Define the \"questions\" procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student September 19 at 3:57 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Define the \"story\" procedure",
+              "text": "Define the \"story\" procedure",
               "type": "gif",
               "url": ""
             }
@@ -154,7 +110,11 @@
               "text": "Complete the programming task for \"Last save by student September 19 at 3:57 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-1-193qcd8/initial/asset-15kmfa1.png"
             }
-          ]
+          ],
+          "title": "Quest",
+          "isAutoCheck": false,
+          "starter_project_id": "Quest.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -170,7 +130,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -182,22 +142,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -235,7 +180,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -247,22 +192,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
@@ -286,7 +216,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -296,13 +228,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Last save by student September 19 at 3:58 PM",
+      "title": "Colored keys",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student September 19 at 3:58 PM\".",
+      "description": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
       "command_keys": [
         "motion",
         "looks",
@@ -314,39 +246,12 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "control_wait",
-        "control_forever",
-        "control_if",
-        "sensing_touchingobject",
-        "sensing_keypressed",
-        "operator_and",
-        "operator_or"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student September 19 at 3:58 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Key touching",
+          "text": "Key touching",
           "type": "gif",
           "url": ""
         }
@@ -359,7 +264,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-43-7rn4fv/initial/asset-xbcvh3.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "Colored_keys.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -372,7 +277,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student September 19 at 3:58 PM\".",
+          "description": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
           "command_keys": [
             "motion",
             "looks",
@@ -384,39 +289,12 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "control_wait",
-            "control_forever",
-            "control_if",
-            "sensing_touchingobject",
-            "sensing_keypressed",
-            "operator_and",
-            "operator_or"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student September 19 at 3:58 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Key touching",
+              "text": "Key touching",
               "type": "gif",
               "url": ""
             }
@@ -428,7 +306,11 @@
               "text": "Complete the programming task for \"Last save by student September 19 at 3:58 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-43-7rn4fv/initial/asset-xbcvh3.png"
             }
-          ]
+          ],
+          "title": "Colored keys",
+          "isAutoCheck": false,
+          "starter_project_id": "Colored_keys.sb3",
+          "demo_project_id": ""
         }
       ]
     },

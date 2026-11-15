@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 10 at 4:32 PM",
+      "title": "Store",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 10 at 4:32 PM\".",
+      "description": "Control the robot using the arrows. Collect the keys and go into the store!",
       "command_keys": [
         "motion",
         "looks",
@@ -30,48 +30,26 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenbroadcastreceived",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "sensing_touchingobject",
-        "sound_play",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create variables for the red key, blue key, and gold.",
+          "text": "Create variables for the red key, blue key, and gold.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 10 at 4:32 PM\".",
+          "title": "Program the taking of the red key",
+          "text": "Program the taking of the red key",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Program going through the red circle",
+          "text": "Program going through the red circle",
           "type": "gif",
           "url": ""
         }
@@ -84,7 +62,7 @@
           "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_2/workspace/assets/task-1-blamdv/initial/asset-1n9mfen.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "store.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -97,7 +75,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 10 at 4:32 PM\".",
+          "description": "Control the robot using the arrows. Collect the keys and go into the store!",
           "command_keys": [
             "motion",
             "looks",
@@ -109,48 +87,26 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenbroadcastreceived",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "sensing_touchingobject",
-            "sound_play",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create variables for the red key, blue key, and gold.",
+              "text": "Create variables for the red key, blue key, and gold.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 10 at 4:32 PM\".",
+              "title": "Program the taking of the red key",
+              "text": "Program the taking of the red key",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Program going through the red circle",
+              "text": "Program going through the red circle",
               "type": "gif",
               "url": ""
             }
@@ -162,7 +118,11 @@
               "text": "Complete the programming task for \"Last save by student August 10 at 4:32 PM\".",
               "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_2/workspace/assets/task-1-blamdv/initial/asset-1n9mfen.png"
             }
-          ]
+          ],
+          "title": "Store",
+          "isAutoCheck": false,
+          "starter_project_id": "store.sb3",
+          "demo_project_id": ""
         }
       ]
     },

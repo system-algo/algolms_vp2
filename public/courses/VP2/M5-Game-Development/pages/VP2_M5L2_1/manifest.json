@@ -18,52 +18,43 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Show solution",
+      "title": "Octopus 1",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "The score is set to zero. Controlling the octopus",
       "command_keys": [
+        "motion",
+        "looks",
+        "sound",
         "events",
         "control",
         "sensing",
+        "operators",
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "looks_show",
-        "control_forever",
-        "control_if",
-        "sensing_touchingobject"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "The score is set to zero",
+          "text": "The score is set to zero",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Controlling the octopus",
+          "text": "Controlling the octopus",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M5L2_Octopus_1.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -76,45 +67,40 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "The score is set to zero. Controlling the octopus",
           "command_keys": [
+            "motion",
+            "looks",
+            "sound",
             "events",
             "control",
             "sensing",
+            "operators",
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "event_whenflagclicked",
-            "looks_show",
-            "control_forever",
-            "control_if",
-            "sensing_touchingobject"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "The score is set to zero",
+              "text": "The score is set to zero",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Controlling the octopus",
+              "text": "Controlling the octopus",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Octopus 1",
+          "isAutoCheck": true,
+          "starter_project_id": "M5L2_Octopus_1.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -130,7 +116,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Preview example project",
       "command_keys": [
         "motion",
         "looks",
@@ -142,22 +128,7 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -195,7 +166,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Preview example project",
           "command_keys": [
             "motion",
             "looks",
@@ -207,22 +178,7 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_2_1",
@@ -246,7 +202,9 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "",
+          "demo_project_id": ""
         }
       ]
     },
@@ -256,13 +214,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Last save by student May 29 at 4:19 PM",
+      "title": "Guess the number",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student May 29 at 4:19 PM\".",
+      "description": "Play the game. Write the same!",
       "command_keys": [
         "motion",
         "looks",
@@ -274,47 +232,18 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenthisspriteclicked",
-        "event_whenbroadcastreceived",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_sayforsecs",
-        "looks_show",
-        "looks_hide",
-        "sound_play",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student May 29 at 4:19 PM\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Rules of the game",
+          "text": "Rules of the game",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M5L2_Guess_the_number.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -327,7 +256,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student May 29 at 4:19 PM\".",
+          "description": "Play the game. Write the same!",
           "command_keys": [
             "motion",
             "looks",
@@ -339,53 +268,28 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenthisspriteclicked",
-            "event_whenbroadcastreceived",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_sayforsecs",
-            "looks_show",
-            "looks_hide",
-            "sound_play",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student May 29 at 4:19 PM\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Rules of the game",
+              "text": "Rules of the game",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Guess the number",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L2_Guess_the_number.sb3",
+          "demo_project_id": ""
         }
       ]
     },
     {
       "taskId": "task-64-omn1ls",
       "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-      "title": "M3T2.1 Demo 2",
+      "title": "Guess the number (1)",
       "activityType": "fill_blank_task",
       "documentTitle": "Scratch. Guess the number",
       "firstCapturedAt": "2026-05-29T03:33:39.213Z",
@@ -682,7 +586,33 @@
           },
           "id": "task-64-omn1ls-zvc8ld",
           "name": "initial",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0064-task-64-omn1ls-initial.png"
+          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0064-task-64-omn1ls-initial.png",
+          "title": "Guess the number (1)",
+          "isAutoCheck": true,
+          "description": "Play the game. Write the same!",
+          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Play the game. Write the same!",
+              "text": "Play the game. Write the same!",
+              "type": "gif",
+              "url": ""
+            }
+          ]
         },
         {
           "stateId": "task-64-omn1ls-1hmfwlq",
@@ -917,7 +847,33 @@
           },
           "id": "task-64-omn1ls-1hmfwlq",
           "name": "after-1-Go",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0065-task-64-omn1ls-after-1-Go.png"
+          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0065-task-64-omn1ls-after-1-Go.png",
+          "title": "Guess the number (1)",
+          "isAutoCheck": true,
+          "description": "Play the game. Write the same!",
+          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Play the game. Write the same!",
+              "text": "Play the game. Write the same!",
+              "type": "gif",
+              "url": ""
+            }
+          ]
         },
         {
           "stateId": "task-64-omn1ls-3mo0lt",
@@ -1148,7 +1104,33 @@
           },
           "id": "task-64-omn1ls-3mo0lt",
           "name": "after-2-Stop",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0066-task-64-omn1ls-after-2-Stop.png"
+          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0066-task-64-omn1ls-after-2-Stop.png",
+          "title": "Guess the number (1)",
+          "isAutoCheck": true,
+          "description": "Play the game. Write the same!",
+          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Play the game. Write the same!",
+              "text": "Play the game. Write the same!",
+              "type": "gif",
+              "url": ""
+            }
+          ]
         },
         {
           "stateId": "task-64-omn1ls-m6llw3",
@@ -1391,7 +1373,33 @@
           },
           "id": "task-64-omn1ls-m6llw3",
           "name": "after-4-splitter-collapse-handle",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0067-task-64-omn1ls-after-4-splitter-collapse-handle.png"
+          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0067-task-64-omn1ls-after-4-splitter-collapse-handle.png",
+          "title": "Guess the number (1)",
+          "isAutoCheck": true,
+          "description": "Play the game. Write the same!",
+          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
+          "demo_project_id": "",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Play the game. Write the same!",
+              "text": "Play the game. Write the same!",
+              "type": "gif",
+              "url": ""
+            }
+          ]
         }
       ],
       "id": "task-64-omn1ls",
@@ -1402,7 +1410,32 @@
         "Tasks with automatic check",
         "Play the game. Write the same!"
       ],
-      "images": []
+      "images": [],
+      "isAutoCheck": true,
+      "description": "Play the game. Write the same!",
+      "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
+      "demo_project_id": "",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_4_1",
+          "title": "Play the game. Write the same!",
+          "text": "Play the game. Write the same!",
+          "type": "gif",
+          "url": ""
+        }
+      ]
     }
   ]
 }

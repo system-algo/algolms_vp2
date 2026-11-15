@@ -4,7 +4,7 @@
   "title": "Variables in games - Part 3",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M5-Game-Development",
@@ -18,13 +18,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 10 at 2:32 PM",
+      "title": "Ping Pong",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 10 at 2:32 PM\".",
+      "description": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
       "command_keys": [
         "motion",
         "looks",
@@ -36,52 +36,32 @@
         "variables",
         "myblocks"
       ],
-      "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "event_whenflagclicked",
-        "event_whenbroadcastreceived",
-        "looks_show",
-        "looks_hide",
-        "control_if",
-        "control_stop",
-        "operator_and"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Program the greeting and introduction with the referee",
+          "text": "Program the greeting and introduction with the referee",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 10 at 2:32 PM\".",
+          "title": "Program the racket controls",
+          "text": "Program the racket controls",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Counting missed balls",
+          "text": "Counting missed balls",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M5L3_Ping_Pong.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -94,7 +74,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 10 at 2:32 PM\".",
+          "description": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
           "command_keys": [
             "motion",
             "looks",
@@ -106,51 +86,64 @@
             "variables",
             "myblocks"
           ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "event_whenflagclicked",
-            "event_whenbroadcastreceived",
-            "looks_show",
-            "looks_hide",
-            "control_if",
-            "control_stop",
-            "operator_and"
-          ],
+          "command_blocks": [],
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Program the greeting and introduction with the referee",
+              "text": "Program the greeting and introduction with the referee",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 10 at 2:32 PM\".",
+              "title": "Program the racket controls",
+              "text": "Program the racket controls",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Counting missed balls",
+              "text": "Counting missed balls",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "title": "Ping Pong",
+          "isAutoCheck": false,
+          "starter_project_id": "M5L3_Ping_Pong.sb3",
+          "demo_project_id": ""
+        }
+      ]
+    },
+    {
+      "id": "VP2_M5L3_3_2",
+      "taskId": "VP2_M5L3_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
+      "states": [
+        {
+          "id": "VP2_M5L3_3_2_state_1",
+          "stateId": "VP2_M5L3_3_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": []
         }
       ]
     }

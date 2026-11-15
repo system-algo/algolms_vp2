@@ -300,12 +300,12 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Bonus! Scratch. Script management - Task 5",
+      "title": "Bonus! Stars",
       "isBonus": true,
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_Sceleton.sb3",
+      "starter_project_id": "M1L4_Stars.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -348,7 +348,7 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Script management - Task 5",
+          "title": "Bonus! Stars",
           "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
         }
       ],
@@ -360,7 +360,7 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_Sceleton.sb3",
+          "starter_project_id": "M1L4_Stars.sb3",
           "command_keys": [
             "motion",
             "looks",

@@ -233,13 +233,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Meteorologist",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Think over the rocket launching from Mars. The rocket should reach the Earth. A cloud of Martian dust is moving around the planet. It is necessary to calculate the flight so as not to get into the cloud.",
       "command_keys": [
         "motion",
         "looks",
@@ -270,28 +270,35 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "I think I've seen it somewhere before",
+          "text": "I think I've seen it somewhere before",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
+          "title": "Examine the code of the Flying Right procedure",
+          "text": "Examine the code of the Flying Right procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Write the Flying down script",
+          "text": "Write the Flying down script",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Meteorologist",
+          "text": "Think over the rocket launching from Mars",
+          "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_12/workspace/screenshots/0005-task-2-1o8w8ns-after-3-purple-toolbar-button-6.png"
+        }
+      ],
+      "starter_project_id": "Meteorologist.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -304,7 +311,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Think over the rocket launching from Mars. The rocket should reach the Earth. A cloud of Martian dust is moving around the planet. It is necessary to calculate the flight so as not to get into the cloud.",
           "command_keys": [
             "motion",
             "looks",
@@ -335,27 +342,35 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "I think I've seen it somewhere before",
+              "text": "I think I've seen it somewhere before",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
+              "title": "Examine the code of the Flying Right procedure",
+              "text": "Examine the code of the Flying Right procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Write the Flying down script",
+              "text": "Write the Flying down script",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Meteorologist",
+              "text": "Think over the rocket launching from Mars",
+              "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_12/workspace/screenshots/0005-task-2-1o8w8ns-after-3-purple-toolbar-button-6.png"
+            }
+          ],
+          "title": "Meteorologist"
         }
       ]
     },

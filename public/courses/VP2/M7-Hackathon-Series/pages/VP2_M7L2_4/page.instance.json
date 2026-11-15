@@ -227,13 +227,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Communication man",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Bring the robot to the antenna. Your task is to program the robot so that it would reach the antenna and destroy the rubble. You can only walk along the path. Mars is still a treacherous planet.",
       "command_keys": [
         "motion",
         "looks",
@@ -264,28 +264,35 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "I think I've seen it somewhere before",
+          "text": "I think I've seen it somewhere before",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
+          "title": "Examine the code of the Stepping Right procedure",
+          "text": "Examine the code of the Stepping Right procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Write a script for the Stepping Up procedure",
+          "text": "Write a script for the Stepping Up procedure",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Communication man",
+          "text": "Bring the robot to the antenna",
+          "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_4/workspace/screenshots/0005-task-2-oka4eg-after-3-purple-toolbar-button-6.png"
+        }
+      ],
+      "starter_project_id": "Communication_man.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -298,7 +305,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Bring the robot to the antenna. Your task is to program the robot so that it would reach the antenna and destroy the rubble. You can only walk along the path. Mars is still a treacherous planet.",
           "command_keys": [
             "motion",
             "looks",
@@ -329,27 +336,35 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "I think I've seen it somewhere before",
+              "text": "I think I've seen it somewhere before",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
+              "title": "Examine the code of the Stepping Right procedure",
+              "text": "Examine the code of the Stepping Right procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Write a script for the Stepping Up procedure",
+              "text": "Write a script for the Stepping Up procedure",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Communication man",
+              "text": "Bring the robot to the antenna",
+              "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_4/workspace/screenshots/0005-task-2-oka4eg-after-3-purple-toolbar-button-6.png"
+            }
+          ],
+          "title": "Communication man"
         }
       ]
     },

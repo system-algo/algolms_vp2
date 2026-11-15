@@ -233,13 +233,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Last save by student September 23 at 3:49 PM",
+      "title": "Research Scientist",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student September 23 at 3:49 PM\".",
+      "description": "Send the robot to mine crystals. The highly valued crystals were found in one of the tunnels. We have to mine them and take them to Earth. You should mine the crystals carefully because the tunnel walls are very hot and the MarsBot may fail to function.",
       "command_keys": [
         "motion",
         "looks",
@@ -282,22 +282,22 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "I think I've seen it somewhere before",
+          "text": "I think I've seen it somewhere before",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student September 23 at 3:49 PM\".",
+          "title": "Examine the code of the Stepping Left procedure",
+          "text": "Examine the code of the Stepping Left procedure",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Write a script for the Stepping Up procedure",
+          "text": "Write a script for the Stepping Up procedure",
           "type": "gif",
           "url": ""
         }
@@ -305,12 +305,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student September 23 at 3:49 PM",
-          "text": "Complete the programming task for \"Last save by student September 23 at 3:49 PM\".",
-          "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_5/workspace/assets/task-2-1kgo8ef/initial/asset-tnmnn6.png"
+          "title": "Research Scientist",
+          "text": "Send the robot to mine crystals",
+          "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_5/workspace/screenshots/0005-task-2-1kgo8ef-after-3-purple-toolbar-button-6.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "Research_Scientist.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -323,7 +323,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student September 23 at 3:49 PM\".",
+          "description": "Send the robot to mine crystals. The highly valued crystals were found in one of the tunnels. We have to mine them and take them to Earth. You should mine the crystals carefully because the tunnel walls are very hot and the MarsBot may fail to function.",
           "command_keys": [
             "motion",
             "looks",
@@ -366,22 +366,22 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "I think I've seen it somewhere before",
+              "text": "I think I've seen it somewhere before",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student September 23 at 3:49 PM\".",
+              "title": "Examine the code of the Stepping Left procedure",
+              "text": "Examine the code of the Stepping Left procedure",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Write a script for the Stepping Up procedure",
+              "text": "Write a script for the Stepping Up procedure",
               "type": "gif",
               "url": ""
             }
@@ -389,11 +389,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student September 23 at 3:49 PM",
-              "text": "Complete the programming task for \"Last save by student September 23 at 3:49 PM\".",
-              "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_5/workspace/assets/task-2-1kgo8ef/initial/asset-tnmnn6.png"
+              "title": "Research Scientist",
+              "text": "Send the robot to mine crystals",
+              "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_5/workspace/screenshots/0005-task-2-1kgo8ef-after-3-purple-toolbar-button-6.png"
             }
-          ]
+          ],
+          "title": "Research Scientist"
         }
       ]
     },

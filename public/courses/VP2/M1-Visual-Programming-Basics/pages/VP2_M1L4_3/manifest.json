@@ -275,7 +275,7 @@
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_Stars.sb3",
+      "starter_project_id": "",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -330,7 +330,7 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_Stars.sb3",
+          "starter_project_id": "",
           "command_keys": [
             "motion",
             "looks",

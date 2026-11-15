@@ -576,7 +576,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "M1L4_Dialog.sb3",
+      "starter_project_id": "",
       "demo_project_id": "",
       "states": [
         {
@@ -626,7 +626,7 @@
             }
           ],
           "media": [],
-          "starter_project_id": "M1L4_Dialog.sb3"
+          "starter_project_id": ""
         }
       ]
     }

@@ -126,10 +126,10 @@
           "type": "block_game",
           "selectedType": "block_game",
           "levelId": "mars_level_8",
-          "starter_project_id": "draw_a_square.sb3"
+          "starter_project_id": ""
         }
       ],
-      "starter_project_id": "draw_a_square.sb3"
+      "starter_project_id": ""
     }
   ]
 }

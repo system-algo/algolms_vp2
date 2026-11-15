@@ -779,9 +779,9 @@
 
       // 4. Resolve & Load Project natively into Scratch VM
       function resolveProjectUrl(param, level) {
-        const lvl = String(level || '1');
-        if (param && (param.startsWith('/') || param.startsWith('http'))) return param;
-        if (param && param.includes('.sb3')) {
+        if (!param || !String(param).trim()) return null;
+        if (param.startsWith('/') || param.startsWith('http')) return param;
+        if (param.includes('.sb3')) {
           const cleanName = param.replace(/^.*[\\\/]/, '');
           return `/starter-projects/${cleanName}`;
         }
@@ -798,17 +798,11 @@
           if (param && (/^\d+$/.test(param) || param.includes('demo'))) {
             return `/starter-projects/19097/${param}.sb3`;
           }
-          if (lvl !== '6') {
-            return `/starter-projects/19097/level_${lvl}.sb3`;
-          }
           return null;
         }
 
         if (param && /^\d+$/.test(param) && param !== '8908684') {
           return `/starter-projects/18343/${param}.sb3`;
-        }
-        if (lvl !== '1' && lvl !== '12') {
-          return `/starter-projects/18343/level_${lvl}.sb3`;
         }
         return null;
       }

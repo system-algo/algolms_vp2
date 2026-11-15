@@ -486,7 +486,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -970,7 +985,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -1454,7 +1484,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -1938,7 +1983,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -2422,7 +2482,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -2906,7 +2981,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -3390,7 +3480,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -3879,7 +3984,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -4615,7 +4735,22 @@
         }
       },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   }
 ]

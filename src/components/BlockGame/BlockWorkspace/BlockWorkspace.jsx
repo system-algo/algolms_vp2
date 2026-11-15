@@ -250,6 +250,8 @@ export default function BlockWorkspace({
               continue;
             }
 
+            if(['branch_if','branch_else'].includes(bType)){foundTarget={blockId:tid,targetId:tid,position:'inside'};break;}
+
             // Bottom bracket of a C-block -> always insert AFTER the whole C-block
             if (el.hasAttribute('data-c-bottom')) {
               foundTarget = { blockId: tid, targetId: tid, position: 'after' };

@@ -42,6 +42,9 @@ elif name=='martian':
  for l in levels:
   if l.get('type'):continue
   n=l['number'];l['toolbox']=turns+([{'type':'repeat','params':{'times':4}}]if n!=2 else [])+['repeat_variable']+(['if_else']if n<=5 else [])+['mine','set_variable','add_variable',{'type':'compare_values','params':{'expression':{'kind':'value_compare','op':'=','a':{'kind':'variable','name':'variable'},'b':0}}}]
+elif name=='sorting':
+ for l in levels:
+  if not l.get('type'):l['toolbox']=turns+['take_cargo','put_cargo',{'type':'repeat','params':{'times':4}},'if_else','cargo_color_sensor']+(['cargo_shape_sensor']if l['number']==12 else [])
 else:raise SystemExit('Page has not been audited: '+name)
 p.write_text(json.dumps(levels,indent=2)+'\n')
 with open(root/'docs/block-task-status.md','a')as f:f.write('\nCommand palette audit: '+name+' — all source programming positions checked; separate predicate blocks restored with typed sockets.\n')

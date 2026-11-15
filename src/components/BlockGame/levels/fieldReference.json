@@ -47,14 +47,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ],
     "starter": [
@@ -124,14 +141,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -177,14 +211,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -230,14 +281,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -288,14 +356,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -351,14 +436,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ],
     "starter": [
@@ -446,14 +548,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -535,14 +654,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -613,14 +749,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -716,14 +869,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -789,14 +959,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   },
@@ -882,14 +1069,31 @@
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "compare",
-            "axis": "x",
-            "op": ">",
-            "value": 0
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "logic_and",
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "x"
           }
         }
       },
+      {
+        "type": "coordinate_value",
+        "params": {
+          "expression": {
+            "kind": "coordinate",
+            "axis": "y"
+          }
+        }
+      },
+      "number_value",
       "destroy"
     ]
   }

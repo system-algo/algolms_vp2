@@ -82,3 +82,5 @@ Command palette audit: unknown — all source programming positions checked; sep
 Command palette audit: training — all source programming positions checked; separate predicate blocks restored with typed sockets.
 
 Command palette audit: dark — all source programming positions checked; separate predicate blocks restored with typed sockets.
+
+Command palette audit: field — all source programming positions checked; separate predicate blocks restored with typed sockets.

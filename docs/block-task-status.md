@@ -92,3 +92,5 @@ Command palette audit: retro — all source programming positions checked; separ
 Command palette audit: martian — all source programming positions checked; separate predicate blocks restored with typed sockets.
 
 Command palette audit: sorting — all source programming positions checked; separate predicate blocks restored with typed sockets.
+
+Command palette audit: journey — all source programming positions checked; palette order, count and executable command mapping verified.

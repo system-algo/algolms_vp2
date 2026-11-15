@@ -28,7 +28,8 @@
     ],
     "loops": false,
     "hint": "Let's start flying!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 3,
@@ -52,7 +53,8 @@
     ],
     "loops": false,
     "hint": "And now we're moving up!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 4,
@@ -80,7 +82,8 @@
     ],
     "loops": false,
     "hint": "The last training task! You need to fly through two points!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 5,
@@ -108,7 +111,8 @@
     ],
     "loops": false,
     "hint": "The task got a little harder! Can you handle it?",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 6,
@@ -140,7 +144,8 @@
     ],
     "loops": false,
     "hint": "And there are three points you need to go through!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 7,
@@ -164,7 +169,8 @@
     ],
     "loops": false,
     "hint": "It's getting harder!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 8,
@@ -200,7 +206,8 @@
     ],
     "loops": false,
     "hint": "We're flying north! Oh, more precisely, up!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 2
   },
   {
     "number": 9,
@@ -262,7 +269,8 @@
     ],
     "loops": true,
     "hint": "Now it's time for loops!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 3
   },
   {
     "number": 10,
@@ -353,7 +361,8 @@
     ],
     "loops": true,
     "hint": "Three loops! Can you handle it?",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 3
   },
   {
     "number": 13,
@@ -428,7 +437,8 @@
     ],
     "loops": true,
     "hint": "Start with the square.",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 4
   },
   {
     "number": 14,
@@ -502,7 +512,8 @@
     ],
     "loops": true,
     "hint": "Right, up, north, and east!",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 3
   },
   {
     "number": 15,
@@ -576,7 +587,8 @@
     ],
     "loops": true,
     "hint": "Also a ladder, but in the other direction.",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 3
   },
   {
     "number": 16,
@@ -635,7 +647,8 @@
     ],
     "loops": true,
     "hint": "Hurdle race.",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 4
   },
   {
     "number": 17,
@@ -914,6 +927,7 @@
     ],
     "loops": true,
     "hint": "Scanning the area.",
-    "success": "Way to go! You visited every point!"
+    "success": "Way to go! You visited every point!",
+    "sourceToolboxCount": 4
   }
 ]

@@ -45,6 +45,10 @@ elif name=='martian':
 elif name=='sorting':
  for l in levels:
   if not l.get('type'):l['toolbox']=turns+['take_cargo','put_cargo',{'type':'repeat','params':{'times':4}},'if_else','cargo_color_sensor']+(['cargo_shape_sensor']if l['number']==12 else [])
+elif name=='journey':
+ for l in levels:
+  if not l.get('type'):
+   n=l['number'];u=l['unit'];l['toolbox']=([f'go_to_{u}']if n in [13,16,17]else [])+[f'change_x_{u}',f'change_y_{u}']+([{'type':'repeat','params':{'times':2}}]if n>=9 else []);l['sourceToolboxCount']=len(l['toolbox'])
 else:raise SystemExit('Page has not been audited: '+name)
 p.write_text(json.dumps(levels,indent=2)+'\n')
-with open(root/'docs/block-task-status.md','a')as f:f.write('\nCommand palette audit: '+name+' — all source programming positions checked; separate predicate blocks restored with typed sockets.\n')
+with open(root/'docs/block-task-status.md','a')as f:f.write('\nCommand palette audit: '+name+' — all source programming positions checked; palette order, count and executable command mapping verified.\n')

@@ -504,9 +504,38 @@
         }
       },
       "take_cargo",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -1023,9 +1052,38 @@
         }
       },
       "take_cargo",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -1582,9 +1640,38 @@
         }
       },
       "take_cargo",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -2086,9 +2173,38 @@
         }
       },
       "take_cargo",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {
@@ -2590,9 +2706,38 @@
         }
       },
       "take_cargo",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
       "if_else",
-      "repeat_until"
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "path_sensor",
+      {
+        "type": "finish_sensor",
+        "params": {
+          "expression": {
+            "kind": "finish",
+            "value": "ahead"
+          }
+        }
+      },
+      {
+        "type": "tank_sensor",
+        "params": {
+          "expression": {
+            "kind": "tank",
+            "value": "ahead"
+          }
+        }
+      }
     ]
   },
   {

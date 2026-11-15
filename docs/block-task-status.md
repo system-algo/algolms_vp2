@@ -80,3 +80,5 @@ Martian Chef: all fourteen source programming positions inspected. Restored nine
 Command palette audit: unknown — all source programming positions checked; separate predicate blocks restored with typed sockets.
 
 Command palette audit: training — all source programming positions checked; separate predicate blocks restored with typed sockets.
+
+Command palette audit: dark — all source programming positions checked; separate predicate blocks restored with typed sockets.

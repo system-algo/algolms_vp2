@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 18 at 10:48 PM",
+      "title": "Zombie Shooter",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 18 at 10:48 PM\".",
+      "description": "Save the world from zombies!",
       "command_keys": [
         "motion",
         "looks",
@@ -50,22 +50,29 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "The character is controlled by arrows",
+          "text": "The character is controlled by arrows",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 18 at 10:48 PM\".",
+          "title": "The character knows how to shoot",
+          "text": "The character knows how to shoot",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The zombies burst into tiny pieces from the bullets",
+          "text": "The zombies burst into tiny pieces from the bullets",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "The zombies appear and appear",
+          "text": "The zombies appear and appear",
           "type": "gif",
           "url": ""
         }
@@ -73,12 +80,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 18 at 10:48 PM",
-          "text": "Complete the programming task for \"Last save by student August 18 at 10:48 PM\".",
-          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/initial/asset-1etjxsu.png"
+          "title": "Zombie Shooter",
+          "text": "Save the world from zombies!",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/after-10-top-toolbar-button/asset-w6zrr4.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "Zombie_Shooter.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -91,7 +98,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 18 at 10:48 PM\".",
+          "description": "Save the world from zombies!",
           "command_keys": [
             "motion",
             "looks",
@@ -123,22 +130,29 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "The character is controlled by arrows",
+              "text": "The character is controlled by arrows",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 18 at 10:48 PM\".",
+              "title": "The character knows how to shoot",
+              "text": "The character knows how to shoot",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The zombies burst into tiny pieces from the bullets",
+              "text": "The zombies burst into tiny pieces from the bullets",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "The zombies appear and appear",
+              "text": "The zombies appear and appear",
               "type": "gif",
               "url": ""
             }
@@ -146,11 +160,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 18 at 10:48 PM",
-              "text": "Complete the programming task for \"Last save by student August 18 at 10:48 PM\".",
-              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/initial/asset-1etjxsu.png"
+              "title": "Zombie Shooter",
+              "text": "Save the world from zombies!",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/after-10-top-toolbar-button/asset-w6zrr4.png"
             }
-          ]
+          ],
+          "title": "Zombie Shooter"
         }
       ]
     }

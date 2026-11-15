@@ -18,13 +18,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Show solution",
+      "title": "Leaf fall",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Show solution\".",
+      "isAutoCheck": true,
+      "description": "When you click on the green flag, leaves begin to fall. The more time has passed, the more leaves there are. Let's program it.",
       "command_keys": [
         "motion",
         "looks",
@@ -49,22 +49,15 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "When you click on the green flag, clones of the leaf appear",
+          "text": "When you click on the green flag, clones of the leaf appear",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Show solution\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Leaves falling",
+          "text": "Leaves falling",
           "type": "gif",
           "url": ""
         }
@@ -72,12 +65,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
-          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-1-emzfh6/initial/asset-j9fchr.png"
+          "title": "Leaf fall",
+          "text": "When you click on the green flag, leaves begin to fall.",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-1-emzfh6/after-9-Motion/asset-10t1jwk.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M6L1_Leaf_fall.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -90,7 +83,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Show solution\".",
+          "description": "When you click on the green flag, leaves begin to fall. The more time has passed, the more leaves there are. Let's program it.",
           "command_keys": [
             "motion",
             "looks",
@@ -115,22 +108,15 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "When you click on the green flag, clones of the leaf appear",
+              "text": "When you click on the green flag, clones of the leaf appear",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Show solution\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Leaves falling",
+              "text": "Leaves falling",
               "type": "gif",
               "url": ""
             }
@@ -138,11 +124,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
-              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-1-emzfh6/initial/asset-j9fchr.png"
+              "title": "Leaf fall",
+              "text": "When you click on the green flag, leaves begin to fall.",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-1-emzfh6/after-9-Motion/asset-10t1jwk.png"
             }
-          ]
+          ],
+          "title": "Leaf fall"
         }
       ]
     },
@@ -152,13 +139,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Last save by student September 19 at 3:35 PM",
+      "title": "Snowfall",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student September 19 at 3:35 PM\".",
+      "description": "Run the project! Snowflakes stop like in the example.",
       "command_keys": [
         "motion",
         "looks",
@@ -191,21 +178,28 @@
         {
           "id": "req_2_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student September 19 at 3:35 PM\".",
+          "title": "When you click on the green flag, clones of snowflakes appear",
+          "text": "When you click on the green flag, clones of snowflakes appear",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The snowflakes fly down, then stop",
+          "text": "The snowflakes fly down, then stop",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_4",
+          "title": "Snowflakes stop like in the example.",
+          "text": "Snowflakes stop like in the example.",
           "type": "gif",
           "url": ""
         }
@@ -213,12 +207,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student September 19 at 3:35 PM",
-          "text": "Complete the programming task for \"Last save by student September 19 at 3:35 PM\".",
+          "title": "Snowfall",
+          "text": "Run the project! Snowflakes stop like in the example.",
           "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-22-rbmrdc/initial/asset-1bh7bew.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M6P1_Snowfall.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -231,7 +225,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student September 19 at 3:35 PM\".",
+          "description": "Run the project! Snowflakes stop like in the example.",
           "command_keys": [
             "motion",
             "looks",
@@ -264,21 +258,28 @@
             {
               "id": "req_2_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student September 19 at 3:35 PM\".",
+              "title": "When you click on the green flag, clones of snowflakes appear",
+              "text": "When you click on the green flag, clones of snowflakes appear",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The snowflakes fly down, then stop",
+              "text": "The snowflakes fly down, then stop",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_4",
+              "title": "Snowflakes stop like in the example.",
+              "text": "Snowflakes stop like in the example.",
               "type": "gif",
               "url": ""
             }
@@ -286,11 +287,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student September 19 at 3:35 PM",
-              "text": "Complete the programming task for \"Last save by student September 19 at 3:35 PM\".",
+              "title": "Snowfall",
+              "text": "Run the project! Snowflakes stop like in the example.",
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-22-rbmrdc/initial/asset-1bh7bew.png"
             }
-          ]
+          ],
+          "title": "Snowfall"
         }
       ]
     }

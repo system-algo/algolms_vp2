@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student August 10 at 6:32 PM",
+      "title": "Draw snowflakes!",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student August 10 at 6:32 PM\".",
+      "description": "Run the program and see how it works. Change it so that you get a different snowflake.",
       "command_keys": [
         "motion",
         "looks",
@@ -53,22 +53,29 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create!",
+          "text": "Create!",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student August 10 at 6:32 PM\".",
+          "title": "Tips",
+          "text": "Tips",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Snowflake 1",
+          "text": "Snowflake 1",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Snowflake 2",
+          "text": "Snowflake 2",
           "type": "gif",
           "url": ""
         }
@@ -76,12 +83,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 10 at 6:32 PM",
-          "text": "Complete the programming task for \"Last save by student August 10 at 6:32 PM\".",
-          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/initial/asset-1gwz70s.png"
+          "title": "Draw snowflakes!",
+          "text": "Run the program and see how it works.",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/after-10-top-toolbar-button/asset-1gwz70s.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "M6L1_Draw_snowflakes-bonus.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -94,7 +101,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student August 10 at 6:32 PM\".",
+          "description": "Run the program and see how it works. Change it so that you get a different snowflake.",
           "command_keys": [
             "motion",
             "looks",
@@ -129,22 +136,29 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create!",
+              "text": "Create!",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student August 10 at 6:32 PM\".",
+              "title": "Tips",
+              "text": "Tips",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Snowflake 1",
+              "text": "Snowflake 1",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Snowflake 2",
+              "text": "Snowflake 2",
               "type": "gif",
               "url": ""
             }
@@ -152,11 +166,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 10 at 6:32 PM",
-              "text": "Complete the programming task for \"Last save by student August 10 at 6:32 PM\".",
-              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/initial/asset-1gwz70s.png"
+              "title": "Draw snowflakes!",
+              "text": "Run the program and see how it works.",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/after-10-top-toolbar-button/asset-1gwz70s.png"
             }
-          ]
+          ],
+          "title": "Draw snowflakes!"
         }
       ]
     }

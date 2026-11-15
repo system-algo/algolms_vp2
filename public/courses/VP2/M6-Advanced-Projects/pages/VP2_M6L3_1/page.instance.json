@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Last save by student June 11 at 10:19 PM",
+      "title": "Adding an interface",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Last save by student June 11 at 10:19 PM\".",
+      "description": "Let's create a simple menu with one button",
       "command_keys": [
         "motion",
         "looks",
@@ -58,22 +58,43 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Create a background for the main menu",
+          "text": "Create a background for the main menu",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Last save by student June 11 at 10:19 PM\".",
+          "title": "Change the blue chicken and green chicken scripts",
+          "text": "Change the blue chicken and green chicken scripts",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Change the scripts for hens",
+          "text": "Change the scripts for hens",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Change the scripts for the pencil",
+          "text": "Change the scripts for the pencil",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_5",
+          "title": "Create the \"New Game\" button",
+          "text": "Create the \"New Game\" button",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_6",
+          "title": "Create the \"How to play?\" button and a sprite with rules",
+          "text": "Create the \"How to play?\" button and a sprite with rules",
           "type": "gif",
           "url": ""
         }
@@ -81,12 +102,12 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student June 11 at 10:19 PM",
-          "text": "Complete the programming task for \"Last save by student June 11 at 10:19 PM\".",
-          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_1/workspace/assets/task-1-rtiaeh/initial/asset-gpi9cd.png"
+          "title": "Adding an interface",
+          "text": "Let's create a simple menu with one button",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_1/workspace/assets/task-1-rtiaeh/after-10-top-toolbar-button/asset-18bolsm.gif"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": "Adding_an_interface.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -99,7 +120,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Last save by student June 11 at 10:19 PM\".",
+          "description": "Let's create a simple menu with one button",
           "command_keys": [
             "motion",
             "looks",
@@ -139,22 +160,43 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Create a background for the main menu",
+              "text": "Create a background for the main menu",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Last save by student June 11 at 10:19 PM\".",
+              "title": "Change the blue chicken and green chicken scripts",
+              "text": "Change the blue chicken and green chicken scripts",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Change the scripts for hens",
+              "text": "Change the scripts for hens",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Change the scripts for the pencil",
+              "text": "Change the scripts for the pencil",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_5",
+              "title": "Create the \"New Game\" button",
+              "text": "Create the \"New Game\" button",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_6",
+              "title": "Create the \"How to play?\" button and a sprite with rules",
+              "text": "Create the \"How to play?\" button and a sprite with rules",
               "type": "gif",
               "url": ""
             }
@@ -162,11 +204,12 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student June 11 at 10:19 PM",
-              "text": "Complete the programming task for \"Last save by student June 11 at 10:19 PM\".",
-              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_1/workspace/assets/task-1-rtiaeh/initial/asset-gpi9cd.png"
+              "title": "Adding an interface",
+              "text": "Let's create a simple menu with one button",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_1/workspace/assets/task-1-rtiaeh/after-10-top-toolbar-button/asset-18bolsm.gif"
             }
-          ]
+          ],
+          "title": "Adding an interface"
         }
       ]
     },

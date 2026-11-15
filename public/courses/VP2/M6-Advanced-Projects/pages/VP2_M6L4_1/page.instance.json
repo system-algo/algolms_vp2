@@ -3669,13 +3669,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Creating the Mirrors game",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Loading Project\".",
+      "description": "Create the Mirrors game",
       "command_keys": [
         "motion",
         "looks",
@@ -3706,28 +3706,42 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Day 1. Create a menu with two buttons",
+          "text": "Day 1. Create a menu with two buttons",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
+          "title": "Day 1. Create a script for the cursor",
+          "text": "Day 1. Create a script for the cursor",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Day 1. Create a script for the glare and mirror",
+          "text": "Day 1. Create a script for the glare and mirror",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_4",
+          "title": "Day 1. Create a script for the rays",
+          "text": "Day 1. Create a script for the rays",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Create the Mirrors game",
+          "text": "Create the Mirrors game",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L4_1/workspace/assets/menu.svg"
+        }
+      ],
+      "starter_project_id": "Creating_the_Mirrors_game.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -3740,7 +3754,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Loading Project\".",
+          "description": "Create the Mirrors game",
           "command_keys": [
             "motion",
             "looks",
@@ -3771,27 +3785,42 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Day 1. Create a menu with two buttons",
+              "text": "Day 1. Create a menu with two buttons",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
+              "title": "Day 1. Create a script for the cursor",
+              "text": "Day 1. Create a script for the cursor",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Day 1. Create a script for the glare and mirror",
+              "text": "Day 1. Create a script for the glare and mirror",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_4",
+              "title": "Day 1. Create a script for the rays",
+              "text": "Day 1. Create a script for the rays",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Create the Mirrors game",
+              "text": "Create the Mirrors game",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L4_1/workspace/assets/menu.svg"
+            }
+          ],
+          "title": "Creating the Mirrors game"
         }
       ]
     },

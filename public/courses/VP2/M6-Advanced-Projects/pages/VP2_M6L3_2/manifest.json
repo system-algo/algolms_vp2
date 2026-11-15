@@ -8639,9 +8639,9 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Part 1.",
-      "level_type": "scratch",
+      "level_type": "mcq_checkbox_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "mcq_checkbox_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Part 1.\".",
@@ -8691,7 +8691,7 @@
           "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_2/workspace/assets/task-31-3677xq/initial/asset-q3vndg.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -8752,7 +8752,8 @@
             }
           ]
         }
-      ]
+      ],
+      "type": "mcq_checkbox_task"
     }
   ]
 }

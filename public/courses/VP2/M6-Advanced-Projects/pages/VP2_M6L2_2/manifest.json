@@ -2802,9 +2802,9 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "The sprite is programmed to create a clone and change the color of the clone. Which animations show when the \"color\" variable is local?",
-      "level_type": "scratch",
+      "level_type": "code_typing_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "code_typing_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"The sprite is programmed to create a clone and change the color of the clone. Which animations show when the \"color\" variable is local?\".",
@@ -2847,7 +2847,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -2901,7 +2901,8 @@
           ],
           "media": []
         }
-      ]
+      ],
+      "type": "code_typing_task"
     }
   ]
 }

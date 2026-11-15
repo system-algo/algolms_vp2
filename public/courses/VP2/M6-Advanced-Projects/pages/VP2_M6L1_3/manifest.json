@@ -3293,9 +3293,9 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Match the event with the object it is run for.",
-      "level_type": "scratch",
+      "level_type": "matching_dragdrop_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "matching_dragdrop_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Match the event with the object it is run for.\".",
@@ -3335,7 +3335,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -3386,7 +3386,8 @@
           ],
           "media": []
         }
-      ]
+      ],
+      "type": "matching_dragdrop_task"
     },
     {
       "taskId": "task-21-1m08ih",

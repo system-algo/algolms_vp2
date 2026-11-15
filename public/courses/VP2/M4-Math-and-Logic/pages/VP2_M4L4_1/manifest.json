@@ -484,24 +484,12 @@
       "level_position": 6,
       "levelPosition": 6,
       "title": "Scratch. Coordinate areas",
-      "level_type": "scratch",
+      "level_type": "intro_or_modal_state",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "intro_or_modal_state",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Scratch. Coordinate areas\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_6_1",
@@ -526,7 +514,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -535,9 +523,9 @@
           "position": 6,
           "level_position": 6,
           "levelPosition": 6,
-          "type": "scratch",
+          "type": "intro_or_modal_state",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "intro_or_modal_state",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Scratch. Coordinate areas\".",
           "command_keys": [
@@ -575,9 +563,12 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "activityType": "intro_or_modal_state",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "intro_or_modal_state"
     }
   ]
 }

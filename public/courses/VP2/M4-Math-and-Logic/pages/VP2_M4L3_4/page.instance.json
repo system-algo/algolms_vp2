@@ -3560,24 +3560,12 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Coordinate range",
-      "level_type": "scratch",
+      "level_type": "code_typing_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "code_typing_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Coordinate range\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -3609,7 +3597,7 @@
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_4/workspace/assets/task-14-hfsno2/initial/asset-6oj6kr.png"
         }
       ],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -3618,9 +3606,9 @@
           "position": 2,
           "level_position": 2,
           "levelPosition": 2,
-          "type": "scratch",
+          "type": "code_typing_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "code_typing_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Coordinate range\".",
           "command_keys": [
@@ -3665,9 +3653,12 @@
               "text": "Complete the programming task for \"Coordinate range\".",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_4/workspace/assets/task-14-hfsno2/initial/asset-6oj6kr.png"
             }
-          ]
+          ],
+          "activityType": "code_typing_task",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "code_typing_task"
     },
     {
       "taskId": "task-21-17e0csj",

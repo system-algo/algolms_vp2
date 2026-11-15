@@ -528,24 +528,12 @@
       "level_position": 6,
       "levelPosition": 6,
       "title": "Dialog",
-      "level_type": "scratch",
+      "level_type": "generic_captured_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "generic_captured_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Dialog\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_6_1",
@@ -570,7 +558,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -579,9 +567,9 @@
           "position": 6,
           "level_position": 6,
           "levelPosition": 6,
-          "type": "scratch",
+          "type": "generic_captured_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "generic_captured_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Dialog\".",
           "command_keys": [
@@ -620,9 +608,11 @@
             }
           ],
           "media": [],
-          "starter_project_id": ""
+          "starter_project_id": null,
+          "activityType": "generic_captured_task"
         }
-      ]
+      ],
+      "type": "generic_captured_task"
     }
   ]
 }

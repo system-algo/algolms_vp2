@@ -47,24 +47,12 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Test yourself. Changing coordinates",
-      "level_type": "scratch",
+      "level_type": "generic_captured_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "generic_captured_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
@@ -89,7 +77,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -98,9 +86,9 @@
           "position": 2,
           "level_position": 2,
           "levelPosition": 2,
-          "type": "scratch",
+          "type": "generic_captured_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "generic_captured_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
           "command_keys": [
@@ -138,9 +126,12 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "activityType": "generic_captured_task",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "generic_captured_task"
     },
     {
       "id": "VP2_M3L2_4_3",
@@ -149,24 +140,12 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Test yourself. Changing coordinates",
-      "level_type": "scratch",
+      "level_type": "generic_captured_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "generic_captured_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_3_1",
@@ -191,7 +170,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -200,9 +179,9 @@
           "position": 3,
           "level_position": 3,
           "levelPosition": 3,
-          "type": "scratch",
+          "type": "generic_captured_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "generic_captured_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
           "command_keys": [
@@ -240,9 +219,12 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "activityType": "generic_captured_task",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "generic_captured_task"
     }
   ]
 }

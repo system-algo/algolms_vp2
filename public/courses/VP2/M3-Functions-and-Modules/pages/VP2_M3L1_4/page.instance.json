@@ -13,24 +13,12 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "Test yourself. Conditions",
-      "level_type": "scratch",
+      "level_type": "generic_captured_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "generic_captured_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Test yourself. Conditions\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
       "requirements": [
         {
           "id": "req_1_1",
@@ -55,7 +43,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -64,9 +52,9 @@
           "position": 1,
           "level_position": 1,
           "levelPosition": 1,
-          "type": "scratch",
+          "type": "generic_captured_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "generic_captured_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Test yourself. Conditions\".",
           "command_keys": [
@@ -104,9 +92,12 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "activityType": "generic_captured_task",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "generic_captured_task"
     },
     {
       "id": "task-2-22224",
@@ -159,28 +150,12 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Test yourself. Conditions",
-      "level_type": "scratch",
+      "level_type": "generic_captured_task",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "activityType": "generic_captured_task",
       "drawerOpen": true,
       "isAutoCheck": false,
       "description": "Complete the programming task for \"Test yourself. Conditions\".",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "operator_and"
-      ],
       "requirements": [
         {
           "id": "req_3_1",
@@ -205,7 +180,7 @@
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": null,
       "demo_project_id": "",
       "states": [
         {
@@ -214,9 +189,9 @@
           "position": 3,
           "level_position": 3,
           "levelPosition": 3,
-          "type": "scratch",
+          "type": "generic_captured_task",
           "selectedType": "scratch",
-          "level_type": "scratch",
+          "level_type": "generic_captured_task",
           "drawerOpen": true,
           "description": "Complete the programming task for \"Test yourself. Conditions\".",
           "command_keys": [
@@ -258,9 +233,12 @@
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "activityType": "generic_captured_task",
+          "starter_project_id": null
         }
-      ]
+      ],
+      "type": "generic_captured_task"
     }
   ]
 }

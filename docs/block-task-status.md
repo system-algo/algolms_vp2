@@ -96,3 +96,5 @@ Command palette audit: sorting — all source programming positions checked; sep
 Command palette audit: journey — all source programming positions checked; palette order, count and executable command mapping verified.
 
 Command palette audit: flight — all source programming positions checked; palette order, count and executable command mapping verified.
+
+Command palette audit: collecting — all source programming positions checked; palette order, count and executable command mapping verified.

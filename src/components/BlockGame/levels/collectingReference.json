@@ -477,7 +477,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 3,
@@ -950,7 +962,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 4,
@@ -1423,7 +1447,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 5,
@@ -1900,7 +1936,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 6,
@@ -2424,7 +2472,19 @@
           }
         ]
       }
-    ]
+    ],
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 7,
@@ -2905,7 +2965,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 8,
@@ -3390,7 +3462,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 9,
@@ -3888,7 +3972,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 12,
@@ -4629,7 +4725,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 13,
@@ -5110,7 +5218,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 14,
@@ -5587,7 +5707,19 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 15,
@@ -6068,6 +6200,18 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/collecting/background.png",
     "boxImage": "/vp-assets/collecting/box.svg",
-    "success": "Way to go! You collected all the cargo!"
+    "success": "Way to go! You collected all the cargo!",
+    "toolbox": [
+      "move_forward",
+      "collect_direction",
+      "take_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   }
 ]

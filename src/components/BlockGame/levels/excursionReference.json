@@ -63,7 +63,23 @@
       "x": 6,
       "y": 4
     },
-    "success": "Well done! You wrote your first lines of code! Now let\u2019s examine the living compartment."
+    "success": "Well done! You wrote your first lines of code! Now let\u2019s examine the living compartment.",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      }
+    ],
+    "sourceToolboxCount": 3
   },
   {
     "number": 2,
@@ -171,7 +187,23 @@
       "x": 6,
       "y": 4
     },
-    "success": "Well done! You reached the greenhouse."
+    "success": "Well done! You reached the greenhouse.",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      }
+    ],
+    "sourceToolboxCount": 3
   },
   {
     "number": 3,
@@ -276,7 +308,23 @@
     "maxCommands": null,
     "loops": false,
     "cargoCommands": false,
-    "background": "/vp-assets/excursion/background3.png"
+    "background": "/vp-assets/excursion/background3.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      }
+    ],
+    "sourceToolboxCount": 3
   },
   {
     "number": 4,
@@ -339,7 +387,23 @@
     "maxCommands": null,
     "loops": false,
     "cargoCommands": false,
-    "background": "/vp-assets/excursion/background4.png"
+    "background": "/vp-assets/excursion/background4.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      }
+    ],
+    "sourceToolboxCount": 3
   },
   {
     "number": 5,
@@ -640,7 +704,23 @@
     "maxCommands": null,
     "loops": false,
     "cargoCommands": false,
-    "background": "/vp-assets/excursion/background5.png"
+    "background": "/vp-assets/excursion/background5.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      }
+    ],
+    "sourceToolboxCount": 3
   },
   {
     "number": 6,
@@ -713,7 +793,31 @@
     "tiles": "/vp-assets/excursion/tiles-forest.svg",
     "pattern": "/vp-assets/excursion/pattern-leafs.svg",
     "scenery": "/vp-assets/excursion/forest-straight.svg",
-    "instructionImage": "/vp-assets/excursion/instruction6.png"
+    "instructionImage": "/vp-assets/excursion/instruction6.png",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 6
   },
   {
     "number": 7,
@@ -804,7 +908,29 @@
     "cargoCommands": false,
     "tiles": "/vp-assets/excursion/tiles-forest.svg",
     "pattern": "/vp-assets/excursion/pattern-leafs.svg",
-    "scenery": "/vp-assets/excursion/forest-turn.svg"
+    "scenery": "/vp-assets/excursion/forest-turn.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 9,
@@ -918,7 +1044,29 @@
     "cargoCommands": false,
     "tiles": "/vp-assets/excursion/tiles-forest.svg",
     "pattern": "/vp-assets/excursion/pattern-leafs.svg",
-    "scenery": "/vp-assets/excursion/forest-u.svg"
+    "scenery": "/vp-assets/excursion/forest-u.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 10,
@@ -1185,7 +1333,29 @@
     "cargoCommands": false,
     "tiles": "/vp-assets/excursion/tiles-forest.svg",
     "pattern": "/vp-assets/excursion/pattern-leafs.svg",
-    "scenery": "/vp-assets/excursion/forest-turn.svg"
+    "scenery": "/vp-assets/excursion/forest-turn.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   },
   {
     "number": 12,
@@ -1369,6 +1539,28 @@
     "cargoCommands": false,
     "tiles": "/vp-assets/excursion/tiles-forest.svg",
     "pattern": "/vp-assets/excursion/pattern-leafs.svg",
-    "scenery": "/vp-assets/excursion/forest-u.svg"
+    "scenery": "/vp-assets/excursion/forest-u.svg",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      }
+    ],
+    "sourceToolboxCount": 4
   }
 ]

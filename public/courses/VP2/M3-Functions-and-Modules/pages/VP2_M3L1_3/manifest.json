@@ -16,15 +16,15 @@
       "id": "VP2_M3L1_3_1",
       "taskId": "VP2_M3L1_3_1",
       "position": 1,
-      "level_position": 1,
-      "levelPosition": 1,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Colored ball",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Colored ball\".",
+      "isAutoCheck": true,
+      "description": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
       "command_keys": [
         "motion",
         "looks",
@@ -40,41 +40,49 @@
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Program the ball sprite to move constantly",
+          "text": "Program the ball sprite to move constantly",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Colored ball\".",
+          "title": "Program the ball so that it does not fly out of bounds",
+          "text": "Program the ball so that it does not fly out of bounds",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Program the condition \"if the ball touches the edge, it changes color\"",
+          "text": "Program the condition \"if the ball touches the edge, it changes color\"",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_4",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Colored_ball.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_1_state_1",
           "stateId": "VP2_M3L1_3_1_state_1",
           "position": 1,
-          "level_position": 1,
-          "levelPosition": 1,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Colored ball\".",
+          "isAutoCheck": true,
+          "description": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
           "command_keys": [
             "motion",
             "looks",
@@ -90,27 +98,36 @@
           "requirements": [
             {
               "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Program the ball sprite to move constantly",
+              "text": "Program the ball sprite to move constantly",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Colored ball\".",
+              "title": "Program the ball so that it does not fly out of bounds",
+              "text": "Program the ball so that it does not fly out of bounds",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Program the condition \"if the ball touches the edge, it changes color\"",
+              "text": "Program the condition \"if the ball touches the edge, it changes color\"",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_1_4",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Colored_ball.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -118,15 +135,15 @@
       "id": "VP2_M3L1_3_2",
       "taskId": "VP2_M3L1_3_2",
       "position": 2,
-      "level_position": 2,
-      "levelPosition": 2,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Stars",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Stars\".",
+      "isAutoCheck": true,
+      "description": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
       "command_keys": [
         "motion",
         "looks",
@@ -142,41 +159,49 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "A star is hiding",
+          "text": "A star is hiding",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Stars\".",
+          "title": "A star appears",
+          "text": "A star appears",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Initial placement",
+          "text": "Initial placement",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_4",
+          "title": "Let's program the remaining stars",
+          "text": "Let's program the remaining stars",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Stars.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_2_state_1",
           "stateId": "VP2_M3L1_3_2_state_1",
           "position": 2,
-          "level_position": 2,
-          "levelPosition": 2,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Stars\".",
+          "isAutoCheck": true,
+          "description": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
           "command_keys": [
             "motion",
             "looks",
@@ -192,27 +217,36 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "A star is hiding",
+              "text": "A star is hiding",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Stars\".",
+              "title": "A star appears",
+              "text": "A star appears",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Initial placement",
+              "text": "Initial placement",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_4",
+              "title": "Let's program the remaining stars",
+              "text": "Let's program the remaining stars",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Stars.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -220,15 +254,15 @@
       "id": "VP2_M3L1_3_3",
       "taskId": "VP2_M3L1_3_3",
       "position": 3,
-      "level_position": 3,
-      "levelPosition": 3,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Jellyfish",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Jellyfish\".",
+      "isAutoCheck": true,
+      "description": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
       "command_keys": [
         "motion",
         "looks",
@@ -244,41 +278,42 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "When you click on the mouse, the sprite changes its costume",
+          "text": "When you click on the mouse, the sprite changes its costume",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Jellyfish\".",
+          "title": "Always check if the mouse is clicked",
+          "text": "Always check if the mouse is clicked",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Initial placement",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Jellyfish.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_3_state_1",
           "stateId": "VP2_M3L1_3_3_state_1",
           "position": 3,
-          "level_position": 3,
-          "levelPosition": 3,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Jellyfish\".",
+          "isAutoCheck": true,
+          "description": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
           "command_keys": [
             "motion",
             "looks",
@@ -294,27 +329,29 @@
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "When you click on the mouse, the sprite changes its costume",
+              "text": "When you click on the mouse, the sprite changes its costume",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Jellyfish\".",
+              "title": "Always check if the mouse is clicked",
+              "text": "Always check if the mouse is clicked",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Initial placement",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Jellyfish.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -322,15 +359,15 @@
       "id": "VP2_M3L1_3_4",
       "taskId": "VP2_M3L1_3_4",
       "position": 4,
-      "level_position": 4,
-      "levelPosition": 4,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Bat",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Bat\".",
+      "isAutoCheck": true,
+      "description": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
       "command_keys": [
         "motion",
         "looks",
@@ -346,41 +383,35 @@
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Program the condition \"if the mouse is clicked, glide...\"",
+          "text": "Program the condition \"if the mouse is clicked, glide...\"",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Bat\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Always check if the mouse is clicked",
+          "text": "Always check if the mouse is clicked",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Bat.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_4_state_1",
           "stateId": "VP2_M3L1_3_4_state_1",
           "position": 4,
-          "level_position": 4,
-          "levelPosition": 4,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Bat\".",
+          "isAutoCheck": true,
+          "description": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
           "command_keys": [
             "motion",
             "looks",
@@ -396,27 +427,22 @@
           "requirements": [
             {
               "id": "req_4_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Program the condition \"if the mouse is clicked, glide...\"",
+              "text": "Program the condition \"if the mouse is clicked, glide...\"",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Bat\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Always check if the mouse is clicked",
+              "text": "Always check if the mouse is clicked",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Bat.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -424,15 +450,15 @@
       "id": "VP2_M3L1_3_5",
       "taskId": "VP2_M3L1_3_5",
       "position": 5,
-      "level_position": 5,
-      "levelPosition": 5,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Three balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Three balls\".",
+      "isAutoCheck": true,
+      "description": "After clicking on the green flag, the balls begin to move chaotically.",
       "command_keys": [
         "motion",
         "looks",
@@ -449,40 +475,48 @@
         {
           "id": "req_5_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Three balls\".",
+          "title": "Chaotic ball movement",
+          "text": "Chaotic ball movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Change of direction",
+          "text": "Change of direction",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_5_4",
+          "title": "Program 2 more balls",
+          "text": "Program 2 more balls",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Three_balls.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_5_state_1",
           "stateId": "VP2_M3L1_3_5_state_1",
           "position": 5,
-          "level_position": 5,
-          "levelPosition": 5,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Three balls\".",
+          "isAutoCheck": true,
+          "description": "After clicking on the green flag, the balls begin to move chaotically.",
           "command_keys": [
             "motion",
             "looks",
@@ -499,26 +533,35 @@
             {
               "id": "req_5_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Three balls\".",
+              "title": "Chaotic ball movement",
+              "text": "Chaotic ball movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Change of direction",
+              "text": "Change of direction",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_5_4",
+              "title": "Program 2 more balls",
+              "text": "Program 2 more balls",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Three_balls.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -526,15 +569,15 @@
       "id": "VP2_M3L1_3_6",
       "taskId": "VP2_M3L1_3_6",
       "position": 6,
-      "level_position": 6,
-      "levelPosition": 6,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Three balls (collision)",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Three balls (collision)\".",
+      "isAutoCheck": true,
+      "description": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
       "command_keys": [
         "motion",
         "looks",
@@ -550,41 +593,35 @@
       "requirements": [
         {
           "id": "req_6_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Checking if touching",
+          "text": "Checking if touching",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Three balls (collision)\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Bouncing",
+          "text": "Bouncing",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Three_balls_(collision).sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_6_state_1",
           "stateId": "VP2_M3L1_3_6_state_1",
           "position": 6,
-          "level_position": 6,
-          "levelPosition": 6,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Three balls (collision)\".",
+          "isAutoCheck": true,
+          "description": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
           "command_keys": [
             "motion",
             "looks",
@@ -600,27 +637,22 @@
           "requirements": [
             {
               "id": "req_6_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Checking if touching",
+              "text": "Checking if touching",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Three balls (collision)\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Bouncing",
+              "text": "Bouncing",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Three_balls_(collision).sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -628,15 +660,15 @@
       "id": "VP2_M3L1_3_7",
       "taskId": "VP2_M3L1_3_7",
       "position": 7,
-      "level_position": 7,
-      "levelPosition": 7,
+      "level_position": 1,
+      "levelPosition": 1,
       "title": "Three balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Three balls\".",
+      "description": "After clicking on the green flag, the balls begin to move chaotically. Watch how the balls move: when they touch, they bounce off each other! Let's do the same!",
       "command_keys": [
         "motion",
         "looks",
@@ -653,40 +685,55 @@
         {
           "id": "req_7_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_7_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Three balls\".",
+          "title": "Chaotic ball movement",
+          "text": "Chaotic ball movement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_7_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Checking if touching and bouncing",
+          "text": "Checking if touching and bouncing",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_7_4",
+          "title": "Checking if both balls are touching",
+          "text": "Checking if both balls are touching",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_7_5",
+          "title": "Move the script",
+          "text": "Move the script",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Three_balls_(1).sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_7_state_1",
           "stateId": "VP2_M3L1_3_7_state_1",
           "position": 7,
-          "level_position": 7,
-          "levelPosition": 7,
+          "level_position": 1,
+          "levelPosition": 1,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Three balls\".",
+          "isAutoCheck": false,
+          "description": "After clicking on the green flag, the balls begin to move chaotically. Watch how the balls move: when they touch, they bounce off each other! Let's do the same!",
           "command_keys": [
             "motion",
             "looks",
@@ -703,26 +750,42 @@
             {
               "id": "req_7_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_7_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Three balls\".",
+              "title": "Chaotic ball movement",
+              "text": "Chaotic ball movement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_7_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Checking if touching and bouncing",
+              "text": "Checking if touching and bouncing",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_7_4",
+              "title": "Checking if both balls are touching",
+              "text": "Checking if both balls are touching",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_7_5",
+              "title": "Move the script",
+              "text": "Move the script",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Three_balls_(1).sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -730,15 +793,15 @@
       "id": "VP2_M3L1_3_8",
       "taskId": "VP2_M3L1_3_8",
       "position": 8,
-      "level_position": 8,
-      "levelPosition": 8,
+      "level_position": 1,
+      "levelPosition": 1,
       "title": "Balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Balls\".",
+      "description": "The balloons are coming out of the box! Use the mouse cursor to keep the balloons away from the edge!",
       "command_keys": [
         "motion",
         "looks",
@@ -754,41 +817,35 @@
       "requirements": [
         {
           "id": "req_8_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Program touching the edge",
+          "text": "Program touching the edge",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_8_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Balls\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_8_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The balloons touch the mouse cursor",
+          "text": "The balloons touch the mouse cursor",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_Balls.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_8_state_1",
           "stateId": "VP2_M3L1_3_8_state_1",
           "position": 8,
-          "level_position": 8,
-          "levelPosition": 8,
+          "level_position": 1,
+          "levelPosition": 1,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Balls\".",
+          "isAutoCheck": false,
+          "description": "The balloons are coming out of the box! Use the mouse cursor to keep the balloons away from the edge!",
           "command_keys": [
             "motion",
             "looks",
@@ -804,27 +861,22 @@
           "requirements": [
             {
               "id": "req_8_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Program touching the edge",
+              "text": "Program touching the edge",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_8_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Balls\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_8_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The balloons touch the mouse cursor",
+              "text": "The balloons touch the mouse cursor",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_Balls.sb3",
+          "demo_project_id": ""
         }
       ]
     },
@@ -832,15 +884,15 @@
       "id": "VP2_M3L1_3_9",
       "taskId": "VP2_M3L1_3_9",
       "position": 9,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 1,
+      "levelPosition": 1,
       "title": "Hedgehog and crabs",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Hedgehog and crabs\".",
+      "description": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
       "command_keys": [
         "motion",
         "looks",
@@ -857,40 +909,48 @@
         {
           "id": "req_9_1",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Initial placement",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Hedgehog and crabs\".",
+          "title": "Use the \"if... then...\" command at least 2 times.",
+          "text": "Use the \"if... then...\" command at least 2 times.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Use the \"repeat forever\" command at least 2 times.",
+          "text": "Use the \"repeat forever\" command at least 2 times.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_9_4",
+          "title": "Use the \"stop other sprite scripts\" command at least 2 times.",
+          "text": "Use the \"stop other sprite scripts\" command at least 2 times.",
           "type": "gif",
           "url": ""
         }
       ],
       "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M3L1_hedgehog_and_crabs.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M3L1_3_9_state_1",
           "stateId": "VP2_M3L1_3_9_state_1",
           "position": 9,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 1,
+          "levelPosition": 1,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Hedgehog and crabs\".",
+          "isAutoCheck": false,
+          "description": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
           "command_keys": [
             "motion",
             "looks",
@@ -907,26 +967,35 @@
             {
               "id": "req_9_1",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Initial placement",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Hedgehog and crabs\".",
+              "title": "Use the \"if... then...\" command at least 2 times.",
+              "text": "Use the \"if... then...\" command at least 2 times.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "Use the \"repeat forever\" command at least 2 times.",
+              "text": "Use the \"repeat forever\" command at least 2 times.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_9_4",
+              "title": "Use the \"stop other sprite scripts\" command at least 2 times.",
+              "text": "Use the \"stop other sprite scripts\" command at least 2 times.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": []
+          "media": [],
+          "starter_project_id": "M3L1_hedgehog_and_crabs.sb3",
+          "demo_project_id": ""
         }
       ]
     }

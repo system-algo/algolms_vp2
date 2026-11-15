@@ -764,7 +764,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 4
+    "maxCommands": 4,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 3,
@@ -1814,7 +1839,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 5
+    "maxCommands": 5,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 4,
@@ -2548,7 +2598,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 5
+    "maxCommands": 5,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 5,
@@ -3294,7 +3369,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 7
+    "maxCommands": 7,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 6,
@@ -3964,7 +4064,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 6
+    "maxCommands": 6,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 7,
@@ -5066,7 +5191,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 6
+    "maxCommands": 6,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 8,
@@ -5567,7 +5717,32 @@
         ]
       }
     ],
-    "maxCommands": 6
+    "maxCommands": 6,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 9,
@@ -6605,7 +6780,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 12
+    "maxCommands": 12,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 10,
@@ -7715,7 +7915,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 14
+    "maxCommands": 14,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 11,
@@ -8793,7 +9018,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 9
+    "maxCommands": 9,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 12,
@@ -9887,7 +10137,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 13
+    "maxCommands": 13,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 13,
@@ -11037,7 +11312,32 @@
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
     "success": "Way to go! You destroyed all the stones!",
-    "maxCommands": 15
+    "maxCommands": 15,
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 14,
@@ -12146,7 +12446,32 @@
     "tiles": "/vp-assets/excursion/tiles.png",
     "pattern": "/vp-assets/excursion/cave.png",
     "stageColor": "#dd7431",
-    "success": "Way to go! You destroyed all the stones!"
+    "success": "Way to go! You destroyed all the stones!",
+    "toolbox": [
+      "move_forward",
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "left"
+        }
+      },
+      {
+        "type": "turn_direction",
+        "params": {
+          "direction": "right"
+        }
+      },
+      "take_cargo",
+      "put_cargo",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 4
+        }
+      },
+      "destroy"
+    ],
+    "sourceToolboxCount": 7
   },
   {
     "number": 15,

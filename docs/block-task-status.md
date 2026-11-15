@@ -106,3 +106,5 @@ Command palette audit: excursion — all source programming positions checked; p
 Command palette audit: rocket — all source programming positions checked; palette order, count and executable command mapping verified.
 
 Command palette audit: construction — all source programming positions checked; palette order, count and executable command mapping verified.
+
+Command palette audit: excavation — all source programming positions checked; palette order, count and executable command mapping verified.

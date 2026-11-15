@@ -10,9 +10,10 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "crystal_size_value",
       {
         "type": "send_variable",
         "params": {
@@ -36,9 +37,10 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "crystal_size_value",
       "next_crystal",
       {
         "type": "send_variable",
@@ -63,11 +65,17 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "crystal_size_value",
       "next_crystal",
-      "repeat",
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
       {
         "type": "send_variable",
         "params": {
@@ -91,9 +99,12 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "number_value",
+      "crystal_size_value",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -117,9 +128,12 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "number_value",
+      "crystal_size_value",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -143,10 +157,13 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "number_value",
+      "crystal_size_value",
       "next_crystal",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -170,19 +187,29 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
-      "next_crystal",
+      "number_value",
       {
-        "type": "repeat_until",
+        "type": "variable_value",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
+          "expression": {
+            "kind": "variable",
+            "name": "A"
           }
         }
       },
+      "crystal_size_value",
+      "next_crystal",
+      "crystal_color_sensor",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -211,28 +238,35 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
-      "next_crystal",
+      "number_value",
       {
-        "type": "repeat_until",
+        "type": "variable_value",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
+          "expression": {
+            "kind": "variable",
+            "name": "A"
           }
         }
       },
+      "crystal_size_value",
+      "next_crystal",
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
+          "condition": null
         }
       },
+      "crystal_color_sensor",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -256,28 +290,37 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
-      "next_crystal",
+      "number_value",
       {
-        "type": "repeat_until",
+        "type": "variable_value",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
+          "expression": {
+            "kind": "variable",
+            "name": "A"
           }
         }
       },
+      "crystal_size_value",
+      "next_crystal",
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
+          "condition": null
         }
       },
+      "crystal_color_sensor",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "greater_than",
+      "less_than",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -301,29 +344,32 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "number_value",
+      {
+        "type": "variable_value",
+        "params": {
+          "expression": {
+            "kind": "variable",
+            "name": "A"
+          }
+        }
+      },
+      "crystal_size_value",
       "next_crystal",
+      "if_else",
+      "crystal_color_sensor",
       {
         "type": "repeat_until",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
-          }
+          "condition": null
         }
       },
-      {
-        "type": "if_condition",
-        "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
-        }
-      },
-      "if_else",
+      "greater_than",
+      "less_than",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -347,28 +393,35 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
-      "next_crystal",
+      "number_value",
       {
-        "type": "repeat_until",
+        "type": "variable_value",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
+          "expression": {
+            "kind": "variable",
+            "name": "A"
           }
         }
       },
+      "crystal_size_value",
+      "next_crystal",
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
+          "condition": null
         }
       },
+      "crystal_color_sensor",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -392,29 +445,30 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
+      "number_value",
+      {
+        "type": "variable_value",
+        "params": {
+          "expression": {
+            "kind": "variable",
+            "name": "A"
+          }
+        }
+      },
+      "crystal_size_value",
       "next_crystal",
+      "if_else",
+      "crystal_color_sensor",
       {
         "type": "repeat_until",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
-          }
+          "condition": null
         }
       },
-      {
-        "type": "if_condition",
-        "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
-        }
-      },
-      "if_else",
+      "add_values",
       {
         "type": "send_variable",
         "params": {
@@ -438,31 +492,55 @@
         "type": "set_variable",
         "params": {
           "name": "A",
-          "value": 0
+          "value": null
         }
       },
-      "next_crystal",
-      "repeat",
+      "number_value",
       {
-        "type": "repeat_until",
+        "type": "variable_value",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "blue"
+          "expression": {
+            "kind": "variable",
+            "name": "A"
           }
         }
       },
+      "crystal_size_value",
+      "next_crystal",
       {
         "type": "if_condition",
         "params": {
-          "condition": {
-            "kind": "crystal_color",
-            "value": "green"
-          }
+          "condition": null
         }
       },
       "if_else",
-      "repeat_variable",
+      "crystal_color_sensor",
+      {
+        "type": "repeat_until",
+        "params": {
+          "condition": null
+        }
+      },
+      {
+        "type": "repeat",
+        "params": {
+          "times": 2
+        }
+      },
+      {
+        "type": "repeat_variable",
+        "params": {
+          "value": {
+            "kind": "variable",
+            "name": "A"
+          }
+        }
+      },
+      "greater_than",
+      "less_than",
+      "compare_values",
+      "add_values",
+      "subtract_values",
       {
         "type": "send_variable",
         "params": {

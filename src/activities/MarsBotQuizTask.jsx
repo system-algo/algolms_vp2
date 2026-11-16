@@ -3,6 +3,42 @@ import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './MarsBotQuizTask.css';
 
+function getBackendUrl() {
+  return String(
+    sessionStorage.getItem('lms_backend_url') ||
+    localStorage.getItem('lms_backend_url') ||
+    import.meta.env.VITE_API_BASE_URL ||
+    import.meta.env.VITE_API_URL ||
+    'https://algo-lms-backend.onrender.com'
+  ).replace(/\/+$/, '');
+}
+
+function getSessionId() {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('sessionId') || params.get('session');
+  if (query) return query;
+  const studentEmail =
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email');
+  if (studentEmail) return `user:${studentEmail.trim().toLowerCase()}`;
+  return (
+    sessionStorage.getItem('lms-session-id') ||
+    localStorage.getItem('lms-session-id') ||
+    'session-marsbot'
+  );
+}
+
+function getUserId() {
+  const params = new URLSearchParams(window.location.search);
+  return (
+    params.get('userId') ||
+    params.get('studentEmail') ||
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email') ||
+    'student@algo.edu.vn'
+  );
+}
+
 const QUIZ_QUESTIONS = {
   1: {
     prompt: 'Which script will help the MarsBot get to the x?',
@@ -148,18 +184,75 @@ export default function MarsBotQuizTask(props) {
     setFeedbackText('');
   };
 
-  // Nộp bài & Lưu tiến độ (Supabase activity_progress + LocalStorage)
-  const submitTaskAttempt = async (isCorrect) => {
+  // Nộp bài & Chấm điểm qua Backend /api/activity-attempts (chuẩn LMS Algorithmics)
+  const submitTaskAttempt = async (chosenOptionId) => {
     setIsSubmitting(true);
 
-    if (isCorrect) {
-      // Đọc context từ URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const courseId = urlParams.get('course') || 'VP2';
-      const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
-      const pageId = urlParams.get('page') || 'VP2_M1L1_4';
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseId = urlParams.get('course') || 'VP2';
+    const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
+    const pageId = urlParams.get('page') || 'VP2_M1L1_4';
 
-      // --- Ghi vào Supabase activity_progress chuẩn LMS (đồng bộ với ptsy1) ---
+    const payload = {
+      sessionId: getSessionId(),
+      userId: getUserId(),
+      courseId,
+      lessonId,
+      pageId,
+      taskId: currentTaskId,
+      activityType: 'mcq-checkbox',
+      answer: {
+        selectedOptionIds: [String(chosenOptionId)],
+        selectedOptionId: chosenOptionId,
+      },
+    };
+
+    let isCorrect = chosenOptionId === questionData.correctOptionId;
+    let feedback = isCorrect
+      ? 'Correct! MarsBot reached the target successfully.'
+      : 'Not quite right. Check the turns and moves again!';
+
+    const backendUrl = getBackendUrl();
+    const endpoint = `${backendUrl}/api/activity-attempts`;
+
+    try {
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = {
+        'Content-Type': 'application/json',
+      };
+      if (accessToken) {
+        headers.Authorization = `Bearer ${accessToken}`;
+      }
+
+      // Gọi endpoint /api/activity-attempts của backend (GeneratedPageShell tự động theo dõi qua trackedFetch)
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        const gradingResult = data?.result || data?.attempt?.result;
+        if (gradingResult && typeof gradingResult.isCorrect === 'boolean') {
+          isCorrect = gradingResult.isCorrect;
+          if (gradingResult.feedback) {
+            feedback = gradingResult.feedback;
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('[MarsBotQuizTask] Backend attempt call fallback:', err);
+    }
+
+    if (isCorrect) {
+      setSubmissionStatus('correct');
+      setFeedbackText(feedback || 'Correct! MarsBot reached the target successfully.');
+      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
+
+      // Lưu Supabase activity_progress chuẩn LMS
       await saveTaskCompletionToSupabase({
         courseId,
         lessonId,
@@ -168,12 +261,10 @@ export default function MarsBotQuizTask(props) {
         activityType: 'marsbot-quiz',
       });
 
-      // --- LocalStorage ---
       try {
         localStorage.setItem(`marsbot_completed_${currentTaskId}`, 'true');
       } catch {}
 
-      // Báo cho GeneratedPageShell & TopNavigation cập nhật tiến độ (dấu tích xanh ✓ & tăng %)
       if (typeof onTaskCompleted === 'function') {
         onTaskCompleted({
           taskId: currentTaskId,
@@ -185,6 +276,9 @@ export default function MarsBotQuizTask(props) {
           autoTransition: true,
         });
       }
+    } else {
+      setSubmissionStatus('incorrect');
+      setFeedbackText(feedback || 'Not quite right. Check the turns and moves again!');
     }
 
     setIsSubmitting(false);
@@ -201,17 +295,7 @@ export default function MarsBotQuizTask(props) {
 
     if (!selectedOption || isSubmitting) return;
 
-    if (selectedOption === questionData.correctOptionId) {
-      setSubmissionStatus('correct');
-      setFeedbackText('Correct! MarsBot reached the target successfully.');
-      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
-
-      submitTaskAttempt(true);
-    } else {
-      setSubmissionStatus('incorrect');
-      setFeedbackText('Not quite right. Check the turns and moves again!');
-      submitTaskAttempt(false);
-    }
+    submitTaskAttempt(selectedOption);
   };
 
   const isLastTask = taskIndex >= (tasks.length - 1);

@@ -2,8 +2,8 @@
   "version": 1,
   "id": "VP2_M3L2_4",
   "title": "Changing coordinates - Part 4",
-  "type": "scratch-task",
-  "level_type": "scratch",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
   "taskCount": 3,
   "metadata": {
     "courseId": "VP2",
@@ -13,38 +13,64 @@
   },
   "tasks": [
     {
-      "id": "task-1-22441",
-      "taskId": "task-1-22441",
-      "title": "Test yourself. Changing coordinates",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
-      "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Which script will move the smiley face to the red dot?",
-        "ANSWER"
+      "id": "VP2_M3L2_4_1",
+      "taskId": "VP2_M3L2_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Test yourself. Changing... - Question 1",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
       ],
-      "images": [],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
+      "requirements": [
+        {
+          "id": "req_1_1",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Changing...\" and complete the interactive test task.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_1_2",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
+          "type": "gif",
+          "url": ""
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Changing... - Review 1",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
       "states": [
         {
-          "id": "task-1-22441-state-1",
-          "stateId": "task-1-22441-state-1",
-          "name": "1",
-          "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
-          "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Which script will move the smiley face to the red dot?",
-            "ANSWER"
-          ],
-          "images": [],
-          "screenshot": ""
+          "id": "VP2_M3L2_4_1_state_1",
+          "stateId": "VP2_M3L2_4_1_state_1",
+          "position": 1,
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
+          "project_title": "Test yourself. Changing... - Question 1"
         }
-      ]
+      ],
+      "project_title": "Test yourself. Changing... - Question 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M3L2_4_2",
@@ -52,92 +78,59 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Changing coordinates",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
+      "title": "Test yourself. Changing... - Question 2",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Changing...\" and complete the interactive test task.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Changing... - Review 2",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
       "states": [
         {
           "id": "VP2_M3L2_4_2_state_1",
           "stateId": "VP2_M3L2_4_2_state_1",
-          "position": 2,
-          "level_position": 2,
-          "levelPosition": 2,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
+          "project_title": "Test yourself. Changing... - Question 2"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "Test yourself. Changing... - Question 2",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M3L2_4_3",
@@ -145,92 +138,60 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Changing coordinates",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
+      "title": "Test yourself. Changing... - Question 3",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control"
+      ],
+      "command_blocks": [
+        "event_whenflagclicked",
+        "motion_movesteps"
+      ],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Changing...\" and complete the interactive test task.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Test yourself. Changing... - Review 3",
+          "text": "Test your knowledge and apply what you learned in this lesson."
+        }
+      ],
       "states": [
         {
           "id": "VP2_M3L2_4_3_state_1",
           "stateId": "VP2_M3L2_4_3_state_1",
-          "position": 3,
-          "level_position": 3,
-          "levelPosition": 3,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
+          "project_title": "Test yourself. Changing... - Question 3"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "Test yourself. Changing... - Question 3",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
-  ]
+  ],
+  "activityType": "marsbot-quiz"
 }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
   "id": "VP2_M6L2_6",
-  "title": "Local and global variables - Part 6",
-  "type": "scratch-task",
-  "level_type": "scratch",
+  "title": "Test yourself. Clones",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
   "taskCount": 1,
   "tasks": [
     {
@@ -12,67 +12,34 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Zombie Shooter",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "activityType": "scratch",
+      "title": "Test yourself. Clones - Question 1",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Save the world from zombies!",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
+        "control"
       ],
       "command_blocks": [
-        "motion_turnright",
-        "motion_turnleft",
-        "motion_pointindirection",
-        "motion_pointtowards",
-        "motion_gotoxy",
-        "motion_goto",
-        "motion_glideto",
-        "motion_glidesecstoxy",
-        "motion_changexby",
-        "motion_changeyby",
-        "motion_ifonedgebounce",
-        "motion_setrotationstyle",
-        "looks_show",
-        "control_if",
-        "operator_and"
+        "event_whenflagclicked",
+        "motion_movesteps"
       ],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "The character is controlled by arrows",
-          "text": "The character is controlled by arrows",
+          "title": "Read the question carefully",
+          "text": "Review the concepts of \"Test yourself. Clones\" and complete the interactive test task.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "The character knows how to shoot",
-          "text": "The character knows how to shoot",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "The zombies burst into tiny pieces from the bullets",
-          "text": "The zombies burst into tiny pieces from the bullets",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_4",
-          "title": "The zombies appear and appear",
-          "text": "The zombies appear and appear",
+          "title": "Verify and save",
+          "text": "Run your solution to verify correctness, then save.",
           "type": "gif",
           "url": ""
         }
@@ -80,97 +47,24 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Zombie Shooter",
-          "text": "Save the world from zombies!",
-          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/after-10-top-toolbar-button/asset-w6zrr4.png"
+          "title": "Test yourself. Clones - Review 1",
+          "text": "Test your knowledge and apply what you learned in this lesson."
         }
       ],
-      "starter_project_id": "Zombie_Shooter.sb3",
-      "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M6L2_6_1_state_1",
           "stateId": "VP2_M6L2_6_1_state_1",
           "position": 1,
-          "level_position": 1,
-          "levelPosition": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "drawerOpen": true,
-          "description": "Save the world from zombies!",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [
-            "motion_turnright",
-            "motion_turnleft",
-            "motion_pointindirection",
-            "motion_pointtowards",
-            "motion_gotoxy",
-            "motion_goto",
-            "motion_glideto",
-            "motion_glidesecstoxy",
-            "motion_changexby",
-            "motion_changeyby",
-            "motion_ifonedgebounce",
-            "motion_setrotationstyle",
-            "looks_show",
-            "control_if",
-            "operator_and"
-          ],
-          "requirements": [
-            {
-              "id": "req_1_1",
-              "title": "The character is controlled by arrows",
-              "text": "The character is controlled by arrows",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "The character knows how to shoot",
-              "text": "The character knows how to shoot",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "The zombies burst into tiny pieces from the bullets",
-              "text": "The zombies burst into tiny pieces from the bullets",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_4",
-              "title": "The zombies appear and appear",
-              "text": "The zombies appear and appear",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [
-            {
-              "type": "presentation",
-              "title": "Zombie Shooter",
-              "text": "Save the world from zombies!",
-              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L2_6/workspace/assets/task-1-15awf16/after-10-top-toolbar-button/asset-w6zrr4.png"
-            }
-          ],
-          "title": "Zombie Shooter",
-          "project_title": "Zombie Shooter"
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
+          "project_title": "Test yourself. Clones - Question 1"
         }
       ],
-      "project_title": "Zombie Shooter",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "Test yourself. Clones - Question 1",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
   ]
 }

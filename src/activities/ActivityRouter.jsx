@@ -696,18 +696,25 @@ function resolveRendererType(props) {
     return 'scratch-interface-label';
   }
 
-  if (
-    taskId.includes('VP2_M1L1_4') ||
-    pageId === 'VP2_M1L1_4' ||
-    taskId.includes('VP2_M1L2_4') ||
-    pageId === 'VP2_M1L2_4' ||
-    taskId.includes('VP2_M1L3_4') ||
-    pageId === 'VP2_M1L3_4' ||
-    taskId.includes('VP2_M1L4_4') ||
-    pageId === 'VP2_M1L4_4' ||
-    task?.id === 'VP2_M1L1_4' ||
-    task?.pageId === 'VP2_M1L1_4'
-  ) {
+  const isTestYourself =
+    /test\s*yourself/i.test(task?.title || '') ||
+    /test\s*yourself/i.test(pageInstance?.title || '') ||
+    /test\s*yourself/i.test(props?.pageTitle || '') ||
+    /M\d+L\d+_4/i.test(taskId) ||
+    /M\d+L\d+_4/i.test(pageId) ||
+    taskId.includes('VP2_M6L1_3') ||
+    pageId === 'VP2_M6L1_3' ||
+    taskId.includes('VP2_M6L2_6') ||
+    pageId === 'VP2_M6L2_6' ||
+    taskId.includes('VP2_M6L3_2') ||
+    pageId === 'VP2_M6L3_2' ||
+    taskId.includes('VP2_M7L2_4') ||
+    pageId === 'VP2_M7L2_4' ||
+    task?.activityType === 'marsbot-quiz' ||
+    task?.selectedType === 'marsbot-quiz' ||
+    pageInstance?.type === 'marsbot-quiz';
+
+  if (isTestYourself) {
     if (task?.activityType && task.activityType !== 'scratch' && task.activityType !== 'scratch-task') {
       return normalizeRendererType(task.activityType);
     }

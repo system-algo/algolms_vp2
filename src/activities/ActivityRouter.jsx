@@ -18,6 +18,7 @@ import FeedbackRatingTask from './FeedbackRatingTask';
 import SequenceOrderTask from './SequenceOrderTask.jsx';
 import BlockGameTask from '../components/BlockGame/BlockGameTask.jsx';
 import ScratchTask from './ScratchTask.jsx';
+import MarsBotQuizTask from './MarsBotQuizTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -533,6 +534,9 @@ function normalizeRendererType(value) {
     'block-game-task': 'block-game-task',
     'block-programming': 'block-game-task',
     block_programming: 'block-game-task',
+    'marsbot-quiz': 'marsbot-quiz',
+    marsbot_quiz: 'marsbot-quiz',
+    marsbot: 'marsbot-quiz',
     scratch: 'scratch-task',
     scratch_task: 'scratch-task',
     'scratch-task': 'scratch-task',
@@ -667,6 +671,17 @@ function resolveRendererType(props) {
   const { pageInstance, task, state } = props;
 
   const taskId = getTaskIdFromProps(props);
+  const pageId = props?.pageInstance?.id || props?.pageId || '';
+
+  if (
+    taskId.includes('VP2_M1L1_4') ||
+    pageId === 'VP2_M1L1_4' ||
+    task?.id === 'VP2_M1L1_4' ||
+    task?.pageId === 'VP2_M1L1_4'
+  ) {
+    return 'marsbot-quiz';
+  }
+
   const stateId = getStateId(state);
 
   const manualTask = getManualTaskFromSources(props, taskId);
@@ -1013,6 +1028,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'teacher-checklist-task') {
     return <TeacherChecklistTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'marsbot-quiz') {
+    return <MarsBotQuizTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

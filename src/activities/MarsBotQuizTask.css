@@ -1,0 +1,256 @@
+.marsbot-quiz-page {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background: #6a1b9a;
+  background: linear-gradient(135deg, #6c1f93 0%, #4a1068 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.marsbot-quiz-container {
+  width: min(1060px, 100%);
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Left Question Panel */
+.marsbot-question-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.marsbot-banner {
+  background: #cf5228;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.marsbot-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.marsbot-question-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.marsbot-prompt {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.marsbot-feedback {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.marsbot-feedback.correct {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+.marsbot-feedback.incorrect {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+
+.marsbot-action-bar {
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+}
+
+.marsbot-reset-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: #b39ddb;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.marsbot-reset-btn:hover {
+  background: #9575cd;
+}
+
+.marsbot-answer-btn {
+  flex: 1;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.marsbot-answer-btn.disabled {
+  background: #c5b3e6;
+  color: #7e57c2;
+  cursor: not-allowed;
+}
+
+.marsbot-answer-btn.active {
+  background: #7c22d4;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(124, 34, 212, 0.35);
+}
+
+.marsbot-answer-btn.active:hover {
+  background: #6a1b9a;
+  transform: translateY(-1px);
+}
+
+.marsbot-answer-btn.next {
+  background: #16a34a;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
+}
+
+.marsbot-answer-btn.next:hover {
+  background: #15803d;
+}
+
+/* Right Options Grid */
+.marsbot-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.marsbot-option-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 14px 18px 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 215px;
+}
+
+.marsbot-option-card:hover {
+  border-color: #a855f7;
+  transform: translateY(-2px);
+}
+
+.marsbot-option-card.selected {
+  border-color: #7c22d4;
+  box-shadow: 0 0 0 3px rgba(124, 34, 212, 0.25);
+}
+
+.marsbot-option-card.is-correct {
+  border-color: #16a34a !important;
+  background: #f0fdf4 !important;
+}
+
+.marsbot-option-card.is-wrong {
+  border-color: #dc2626 !important;
+  background: #fef2f2 !important;
+}
+
+.marsbot-radio-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.marsbot-radio-btn.checked {
+  border-color: #7c22d4;
+}
+
+.marsbot-radio-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #7c22d4;
+}
+
+.marsbot-radio-btn.correct-dot .marsbot-radio-dot {
+  background: #16a34a;
+}
+
+.marsbot-script-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.marsbot-script-wrapper img {
+  width: 140px;
+  height: 155px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 820px) {
+  .marsbot-quiz-container {
+    grid-template-columns: 1fr;
+  }
+  .marsbot-options-grid {
+    grid-template-columns: 1fr;
+  }
+}

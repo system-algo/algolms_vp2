@@ -178,103 +178,7 @@
   gap: 16px;
 }
 
-/* Top Bank Card */
-.sprite-instruction-bank-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 16px 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
-
-.sprite-instruction-bank-card:hover {
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-}
-
-.sprite-instruction-bank-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  width: 100%;
-}
-
-.sprite-instruction-bank-slot {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  height: 96px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: grab;
-  transition: all 0.2s;
-  padding: 4px;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.sprite-instruction-bank-slot:active:not(.is-placed) {
-  cursor: grabbing;
-}
-
-.sprite-instruction-bank-slot:hover:not(.is-placed):not(.is-empty-placeholder) {
-  border-color: #facc15;
-  background: #fefce8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.25);
-}
-
-.sprite-instruction-bank-slot.is-selected {
-  border-color: #facc15;
-  background: #fef08a;
-  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.4);
-}
-
-.sprite-instruction-bank-slot.is-placed {
-  opacity: 0.3;
-  filter: grayscale(1);
-  cursor: pointer;
-  border-style: dashed;
-  border-color: #cbd5e1;
-  background: #f1f5f9;
-}
-
-.sprite-instruction-bank-slot.is-placed:hover {
-  opacity: 0.6;
-  border-color: #94a3b8;
-}
-
-.sprite-instruction-bank-slot.is-empty-placeholder {
-  border-style: dashed;
-  border-color: #e2e8f0;
-  background: transparent;
-  cursor: default;
-  opacity: 0.4;
-}
-
-.sprite-instruction-card-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.sprite-instruction-card-content img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Bottom 3 Sequence Columns */
+/* Top 3 Sequence Columns */
 .sprite-instruction-columns-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -375,6 +279,102 @@
   text-align: center;
   pointer-events: none;
   user-select: none;
+}
+
+/* Bottom Card Bank */
+.sprite-instruction-bank-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.sprite-instruction-bank-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.sprite-instruction-bank-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.sprite-instruction-bank-slot {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  transition: all 0.2s;
+  padding: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sprite-instruction-bank-slot:active:not(.is-placed) {
+  cursor: grabbing;
+}
+
+.sprite-instruction-bank-slot:hover:not(.is-placed):not(.is-empty-placeholder) {
+  border-color: #facc15;
+  background: #fefce8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.25);
+}
+
+.sprite-instruction-bank-slot.is-selected {
+  border-color: #facc15;
+  background: #fef08a;
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.4);
+}
+
+.sprite-instruction-bank-slot.is-placed {
+  opacity: 0.3;
+  filter: grayscale(1);
+  cursor: pointer;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.sprite-instruction-bank-slot.is-placed:hover {
+  opacity: 0.6;
+  border-color: #94a3b8;
+}
+
+.sprite-instruction-bank-slot.is-empty-placeholder {
+  border-style: dashed;
+  border-color: #e2e8f0;
+  background: transparent;
+  cursor: default;
+  opacity: 0.4;
+}
+
+.sprite-instruction-card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sprite-instruction-card-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 @keyframes fadeIn {

@@ -480,9 +480,50 @@ export default function SpriteInstructionOrderTask(props) {
           </div>
         </div>
 
-        {/* Right Panel: Top Bank & Bottom Sequence Columns */}
+        {/* Right Panel: Top 3 Sequence Columns & Bottom Card Bank */}
         <div className="sprite-instruction-right-panel">
-          {/* Top Card Bank */}
+          {/* Top 3 Sequence Columns (Target dropzones on top, drag up from bank) */}
+          <div className="sprite-instruction-columns-grid">
+            {[1, 2, 3].map((colNum) => {
+              const cardId = columns[colNum];
+              const card = INSTRUCTION_CARDS.find((c) => c.id === cardId);
+              const colStatus = getColumnStatus(colNum);
+
+              return (
+                <div key={colNum} className="sprite-instruction-column">
+                  <div className="sprite-instruction-column-header">{colNum}</div>
+
+                  <div
+                    className={`sprite-instruction-column-dropzone ${
+                      card ? 'has-card' : 'empty'
+                    } ${colStatus}`}
+                    onClick={() => handleColumnClick(colNum)}
+                    onDragOver={handleDragOver}
+                    onDragEnter={handleDragEnter}
+                    onDrop={(e) => handleDropOnColumn(e, colNum)}
+                    title={card ? 'Drag to another column, or drag down to bank to return' : `Drop step ${colNum} here`}
+                  >
+                    {card ? (
+                      <div
+                        className="sprite-instruction-placed-card"
+                        draggable={!isSubmitting}
+                        onDragStart={(e) => handleDragStartFromColumn(e, card.id, colNum)}
+                        onDragEnd={handleDragEnd}
+                      >
+                        <img src={card.image} alt={card.label} draggable={false} />
+                      </div>
+                    ) : (
+                      <div className="sprite-instruction-placeholder">
+                        <span>Place step {colNum}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Bottom Card Bank */}
           <div
             className="sprite-instruction-bank-card"
             onDragOver={handleDragOver}
@@ -504,7 +545,7 @@ export default function SpriteInstructionOrderTask(props) {
                     draggable={!isPlaced && !isSubmitting}
                     onDragStart={(e) => handleDragStartFromBank(e, card.id)}
                     onDragEnd={handleDragEnd}
-                    title={isPlaced ? 'Card is in a column (drag or click to return)' : 'Drag or click to place'}
+                    title={isPlaced ? 'Card is in a column (drag or click to return)' : 'Drag up to place in column'}
                   >
                     <div className="sprite-instruction-card-content">
                       <img src={card.image} alt={card.label} draggable={false} />
@@ -515,47 +556,6 @@ export default function SpriteInstructionOrderTask(props) {
               {/* 6th Slot Placeholder matching Algorithmics LMS 2x3 grid */}
               <div className="sprite-instruction-bank-slot is-empty-placeholder" />
             </div>
-          </div>
-
-          {/* Bottom 3 Sequence Columns */}
-          <div className="sprite-instruction-columns-grid">
-            {[1, 2, 3].map((colNum) => {
-              const cardId = columns[colNum];
-              const card = INSTRUCTION_CARDS.find((c) => c.id === cardId);
-              const colStatus = getColumnStatus(colNum);
-
-              return (
-                <div key={colNum} className="sprite-instruction-column">
-                  <div className="sprite-instruction-column-header">{colNum}</div>
-
-                  <div
-                    className={`sprite-instruction-column-dropzone ${
-                      card ? 'has-card' : 'empty'
-                    } ${colStatus}`}
-                    onClick={() => handleColumnClick(colNum)}
-                    onDragOver={handleDragOver}
-                    onDragEnter={handleDragEnter}
-                    onDrop={(e) => handleDropOnColumn(e, colNum)}
-                    title={card ? 'Drag to another column, or drag up to bank to return' : `Drop step ${colNum} here`}
-                  >
-                    {card ? (
-                      <div
-                        className="sprite-instruction-placed-card"
-                        draggable={!isSubmitting}
-                        onDragStart={(e) => handleDragStartFromColumn(e, card.id, colNum)}
-                        onDragEnd={handleDragEnd}
-                      >
-                        <img src={card.image} alt={card.label} draggable={false} />
-                      </div>
-                    ) : (
-                      <div className="sprite-instruction-placeholder">
-                        <span>Place step {colNum}</span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </div>

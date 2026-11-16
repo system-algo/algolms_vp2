@@ -1,0 +1,475 @@
+.scratch-label-page {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background: #4c1d95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.scratch-label-container {
+  max-width: 1060px;
+  width: 100%;
+  position: relative;
+}
+
+/* Main Card */
+.scratch-label-card-shell {
+  position: relative;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 32px 28px 32px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  color: #1e1b4b;
+}
+
+/* Card Header */
+.scratch-label-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.scratch-label-solution-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scratch-label-check-icon {
+  flex-shrink: 0;
+}
+
+.scratch-label-solution-text {
+  font-size: 17px;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.scratch-label-prompt-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scratch-label-info-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.scratch-label-prompt-text {
+  font-size: 17px;
+  font-weight: 800;
+  color: #7c3aed;
+}
+
+.scratch-label-attempt-badge {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Card Body */
+.scratch-label-body {
+  display: flex;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Left Diagram Panel */
+.scratch-label-diagram-panel {
+  flex: 1.35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.scratch-label-diagram-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  aspect-ratio: 270 / 228;
+  margin: 0 auto;
+}
+
+.scratch-label-base-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Target Slots Overlay */
+.scratch-label-slot {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.scratch-label-slot.empty {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1.5px dashed #cbd5e1;
+}
+
+.scratch-label-slot.empty:hover {
+  background: #fefce8;
+  border-color: #facc15;
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.35);
+}
+
+.scratch-label-slot.has-label {
+  border: none;
+  background: transparent;
+}
+
+.scratch-label-slot.is-correct {
+  outline: 2.5px solid #22c55e !important;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+.scratch-label-slot.is-wrong {
+  outline: 2.5px solid #ef4444 !important;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+}
+
+.scratch-label-slot-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.scratch-label-slot-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+
+/* Badges / Chips */
+.scratch-label-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.scratch-label-badge.purple {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.scratch-label-badge.teal {
+  background: #0891b2;
+  color: #ffffff;
+}
+
+.scratch-label-badge.placed {
+  width: 100%;
+  height: 100%;
+  font-size: 10.5px;
+  padding: 2px 4px;
+  cursor: grab;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.scratch-label-badge.placed:active {
+  cursor: grabbing;
+}
+
+.scratch-label-badge.placed:hover {
+  filter: brightness(1.08);
+}
+
+.scratch-label-badge-text {
+  white-space: normal;
+  word-break: break-word;
+  pointer-events: none;
+}
+
+/* Right Pool Panel */
+.scratch-label-pool-panel {
+  flex: 1;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scratch-label-pool-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.scratch-label-pool-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e1b4b;
+}
+
+.scratch-label-pool-hint {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+.scratch-label-pool-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  max-height: 380px;
+  padding-right: 4px;
+}
+
+.scratch-label-badge.pool {
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.scratch-label-badge.pool:active:not(.is-placed) {
+  cursor: grabbing;
+}
+
+.scratch-label-badge.pool:hover:not(.is-placed) {
+  transform: translateX(3px);
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+}
+
+.scratch-label-badge.pool.is-selected {
+  outline: 3px solid #facc15;
+  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.35);
+  background: #6d28d9;
+}
+
+.scratch-label-badge.pool.is-placed {
+  opacity: 0.28;
+  filter: grayscale(0.85);
+  cursor: default;
+  border: 1px dashed #cbd5e1;
+  background: #e2e8f0;
+  color: #64748b;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Feedback */
+.scratch-label-feedback {
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.scratch-label-feedback.correct {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.scratch-label-feedback.incorrect {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* Actions */
+.scratch-label-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.scratch-label-reset-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: #facc15;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.35);
+}
+
+.scratch-label-reset-btn:hover:not(:disabled) {
+  background: #eab308;
+  transform: translateY(-1px);
+}
+
+.scratch-label-reset-icon {
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.scratch-label-reset-icon.spin,
+.spin {
+  animation: spinReload 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scratch-label-reset-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scratch-label-answer-btn {
+  flex: 1;
+  height: 46px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.scratch-label-answer-btn.disabled {
+  background: #fde68a;
+  color: #a16207;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.scratch-label-answer-btn.active {
+  background: #facc15;
+  color: #1e1b4b;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(250, 204, 21, 0.4);
+}
+
+.scratch-label-answer-btn.active:hover {
+  background: #eab308;
+  transform: translateY(-1px);
+}
+
+.scratch-label-answer-btn.next {
+  background: #16a34a;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
+}
+
+.scratch-label-answer-btn.next:hover {
+  background: #15803d;
+}
+
+/* Side Tab Buttons (Matching LMS floating side controls) */
+.scratch-label-side-tabs {
+  position: absolute;
+  right: -44px;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scratch-label-tab-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 0 8px 8px 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.scratch-label-tab-btn.check.ready {
+  background: #facc15;
+  color: #1e1b4b;
+}
+
+.scratch-label-tab-btn.check.checked {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+.scratch-label-tab-btn.reload:hover {
+  background: #f1f5f9;
+  color: #1e1b4b;
+}
+
+@keyframes spinReload {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 860px) {
+  .scratch-label-body {
+    flex-direction: column;
+  }
+  .scratch-label-side-tabs {
+    display: none;
+  }
+  .scratch-label-pool-list {
+    max-height: 240px;
+  }
+}

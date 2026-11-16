@@ -20,6 +20,7 @@ import BlockGameTask from '../components/BlockGame/BlockGameTask.jsx';
 import ScratchTask from './ScratchTask.jsx';
 import MarsBotQuizTask from './MarsBotQuizTask.jsx';
 import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
+import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -687,6 +688,15 @@ function resolveRendererType(props) {
   }
 
   if (
+    taskId === 'VP2_M1L1_4_3' ||
+    task?.activityType === 'scratch-interface-label' ||
+    task?.selectedType === 'scratch-interface-label' ||
+    ((taskId.includes('VP2_M1L1_4') || pageId === 'VP2_M1L1_4') && (props?.taskIndex === 2 || task?.position === 3 || task?.level_position === 3))
+  ) {
+    return 'scratch-interface-label';
+  }
+
+  if (
     taskId.includes('VP2_M1L1_4') ||
     pageId === 'VP2_M1L1_4' ||
     task?.id === 'VP2_M1L1_4' ||
@@ -1049,6 +1059,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'sprite-instruction-order') {
     return <SpriteInstructionOrderTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'scratch-interface-label') {
+    return <ScratchInterfaceLabelTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

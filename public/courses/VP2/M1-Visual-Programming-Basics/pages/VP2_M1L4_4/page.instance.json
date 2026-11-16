@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "id": "VP2_M1L4_4",
   "title": "Test yourself. Events",
-  "type": "scratch-task",
-  "level_type": "scratch",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
   "taskCount": 3,
   "tasks": [
     {
@@ -13,9 +13,9 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "Test yourself. Events - Question 1",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -56,9 +56,9 @@
           "id": "VP2_M1L4_4_1_state_1",
           "stateId": "VP2_M1L4_4_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
           "project_title": "Test yourself. Events - Question 1"
         }
       ],
@@ -73,9 +73,9 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Test yourself. Events - Question 2",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -116,9 +116,9 @@
           "id": "VP2_M1L4_4_2_state_1",
           "stateId": "VP2_M1L4_4_2_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
           "project_title": "Test yourself. Events - Question 2"
         }
       ],
@@ -133,9 +133,9 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Test yourself. Events - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -176,9 +176,9 @@
           "id": "VP2_M1L4_4_3_state_1",
           "stateId": "VP2_M1L4_4_3_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
           "project_title": "Test yourself. Events - Question 3"
         }
       ],

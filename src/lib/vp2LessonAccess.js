@@ -1,7 +1,7 @@
 // VP2 only: lesson files and unlock records are both scoped to VP2.
 // Do not fall back to VP or read schedules from any other LMS course.
 export const VP2_LMS_CODE = 'VP2';
-const DEFAULT_UNLOCKED_LESSONS = 2;
+const DEFAULT_UNLOCKED_LESSONS = 99;
 
 function getCredentials() {
   return {

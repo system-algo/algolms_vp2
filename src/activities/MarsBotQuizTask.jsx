@@ -120,6 +120,33 @@ const QUIZ_QUESTIONS = {
       }
     ],
     correctOptionId: 3
+  },
+  4: {
+    prompt: 'Which script will help the MarsBot get to the x?',
+    gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
+    options: [
+      {
+        id: 1,
+        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
+        label: 'Script Option 1'
+      },
+      {
+        id: 2,
+        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
+        label: 'Script Option 2'
+      },
+      {
+        id: 3,
+        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
+        label: 'Script Option 3'
+      },
+      {
+        id: 4,
+        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
+        label: 'Script Option 4'
+      }
+    ],
+    correctOptionId: 3
   }
 };
 

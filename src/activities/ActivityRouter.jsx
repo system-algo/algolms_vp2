@@ -699,9 +699,18 @@ function resolveRendererType(props) {
   if (
     taskId.includes('VP2_M1L1_4') ||
     pageId === 'VP2_M1L1_4' ||
+    taskId.includes('VP2_M1L2_4') ||
+    pageId === 'VP2_M1L2_4' ||
+    taskId.includes('VP2_M1L3_4') ||
+    pageId === 'VP2_M1L3_4' ||
+    taskId.includes('VP2_M1L4_4') ||
+    pageId === 'VP2_M1L4_4' ||
     task?.id === 'VP2_M1L1_4' ||
     task?.pageId === 'VP2_M1L1_4'
   ) {
+    if (task?.activityType && task.activityType !== 'scratch' && task.activityType !== 'scratch-task') {
+      return normalizeRendererType(task.activityType);
+    }
     return 'marsbot-quiz';
   }
 

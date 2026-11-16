@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
-import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
+import { saveTaskAttemptToSupabase, saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './MarsBotQuizTask.css';
 
 const QUIZ_QUESTIONS = {
@@ -148,18 +148,37 @@ export default function MarsBotQuizTask(props) {
     setFeedbackText('');
   };
 
-  // Nộp bài & Lưu tiến độ (Supabase activity_progress + LocalStorage)
-  const submitTaskAttempt = async (isCorrect) => {
+  // Nộp bài & Lưu tiến độ (Supabase activity_attempts + activity_progress + LocalStorage)
+  const submitTaskAttempt = async (isCorrect, chosenOptionId) => {
     setIsSubmitting(true);
 
-    if (isCorrect) {
-      // Đọc context từ URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const courseId = urlParams.get('course') || 'VP2';
-      const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
-      const pageId = urlParams.get('page') || 'VP2_M1L1_4';
+    // Đọc context từ URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseId = urlParams.get('course') || 'VP2';
+    const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
+    const pageId = urlParams.get('page') || 'VP2_M1L1_4';
 
-      // --- Ghi vào Supabase activity_progress chuẩn LMS ---
+    // 1. Lưu lần nộp bài (attempt) vào bảng activity_attempts
+    await saveTaskAttemptToSupabase({
+      courseId,
+      lessonId,
+      pageId,
+      taskId: currentTaskId,
+      activityType: 'marsbot-quiz',
+      submittedAnswer: {
+        selectedOptionId: chosenOptionId,
+        question: questionData.prompt,
+      },
+      isCorrect,
+      score: isCorrect ? 1 : 0,
+      maxScore: 1,
+      feedback: isCorrect
+        ? 'Correct! MarsBot reached the target successfully.'
+        : 'Not quite right. Check the turns and moves again!',
+    });
+
+    if (isCorrect) {
+      // 2. Ghi tiến độ hoàn thành vào bảng activity_progress (để cập nhật thanh progress và dấu tích xanh)
       await saveTaskCompletionToSupabase({
         courseId,
         lessonId,
@@ -206,11 +225,11 @@ export default function MarsBotQuizTask(props) {
       setFeedbackText('Correct! MarsBot reached the target successfully.');
       playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
-      submitTaskAttempt(true);
+      submitTaskAttempt(true, selectedOption);
     } else {
       setSubmissionStatus('incorrect');
       setFeedbackText('Not quite right. Check the turns and moves again!');
-      submitTaskAttempt(false);
+      submitTaskAttempt(false, selectedOption);
     }
   };
 

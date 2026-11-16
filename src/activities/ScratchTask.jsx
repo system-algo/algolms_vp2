@@ -243,6 +243,8 @@ export default function ScratchTask({
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
   const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
+  const hasMediaInReqs = checklistItems.some((it) => !!it.url);
+  const showStandalonePreview = !demoProjectId && !!previewMediaUrl && !hasMediaInReqs;
 
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
@@ -755,7 +757,7 @@ export default function ScratchTask({
                   </div>
                 </div>
               </div>
-            ) : previewMediaUrl ? (
+            ) : showStandalonePreview ? (
               /* Standalone GIF / Media image preview */
               <div className="scratch-task-preview-media-standalone">
                 <img
@@ -774,7 +776,7 @@ export default function ScratchTask({
                   <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
                 )}
               </div>
-            ) : demoInstructionText ? (
+            ) : (!hasMediaInReqs && demoInstructionText) ? (
               <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
             ) : null}
 

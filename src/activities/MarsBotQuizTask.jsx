@@ -132,9 +132,9 @@ export default function MarsBotQuizTask(props) {
   }, [currentTaskId, completedTaskIds, questionNum]);
 
   const handleSelectOption = (optionId) => {
-    if (submissionStatus === 'correct' || isSubmitting) return; // Khóa sau khi đã làm đúng
+    if (isSubmitting) return;
     setSelectedOption(optionId);
-    if (submissionStatus === 'incorrect') {
+    if (submissionStatus) {
       setSubmissionStatus(null);
       setFeedbackText('');
     }
@@ -263,7 +263,7 @@ export default function MarsBotQuizTask(props) {
               type="button"
               className="marsbot-reset-btn"
               onClick={handleReset}
-              disabled={isSubmitting || submissionStatus === 'correct'}
+              disabled={isSubmitting}
               title="Reset choice"
               aria-label="Reset choice"
             >

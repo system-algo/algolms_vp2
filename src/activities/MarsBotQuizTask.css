@@ -105,8 +105,13 @@
   transition: all 0.2s;
 }
 
-.marsbot-reset-btn:hover {
+.marsbot-reset-btn:hover:not(:disabled) {
   background: #9575cd;
+}
+
+.marsbot-reset-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .marsbot-answer-btn {

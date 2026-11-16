@@ -81,6 +81,9 @@ function getUserId() {
   );
 }
 
+let activeDragCardId = null;
+let activeDragFromCol = null;
+
 export default function SpriteInstructionOrderTask(props) {
   const { task, completedTaskIds = [], onTaskCompleted, onNextTask, tasks = [], taskIndex = 1 } = props;
 
@@ -91,6 +94,7 @@ export default function SpriteInstructionOrderTask(props) {
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [feedbackText, setFeedbackText] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isResetSpinning, setIsResetSpinning] = useState(false);
 
   const draggedCardRef = useRef(null);
 
@@ -110,22 +114,15 @@ export default function SpriteInstructionOrderTask(props) {
       return;
     }
 
-    // If already selected, deselect
-    if (selectedCardId === cardId) {
-      setSelectedCardId(null);
-      return;
-    }
-
-    // Select this card to place into a column
-    setSelectedCardId(cardId);
-
-    // Auto-place into first available empty column if any
+    // Auto-place into first available empty column (1, 2, or 3)
     const firstEmptyCol = [1, 2, 3].find((col) => !columns[col]);
     if (firstEmptyCol) {
       setColumns((prev) => ({ ...prev, [firstEmptyCol]: cardId }));
       setSelectedCardId(null);
       setSubmissionStatus(null);
       setFeedbackText('');
+    } else {
+      setSelectedCardId((prev) => (prev === cardId ? null : cardId));
     }
   };
 
@@ -135,12 +132,14 @@ export default function SpriteInstructionOrderTask(props) {
 
     // If a bank card is currently selected, place it here
     if (selectedCardId) {
-      const updated = { ...columns };
-      Object.keys(updated).forEach((k) => {
-        if (updated[k] === selectedCardId) updated[k] = null;
+      setColumns((prev) => {
+        const updated = { ...prev };
+        Object.keys(updated).forEach((k) => {
+          if (updated[k] === selectedCardId) updated[k] = null;
+        });
+        updated[colNum] = selectedCardId;
+        return updated;
       });
-      updated[colNum] = selectedCardId;
-      setColumns(updated);
       setSelectedCardId(null);
       setSubmissionStatus(null);
       setFeedbackText('');
@@ -157,9 +156,10 @@ export default function SpriteInstructionOrderTask(props) {
 
   // Drag and drop handlers
   const handleDragStartFromBank = (e, cardId) => {
+    activeDragCardId = cardId;
+    activeDragFromCol = null;
     draggedCardRef.current = { cardId, source: 'bank' };
     e.dataTransfer.setData('text/plain', cardId);
-    e.dataTransfer.setData('application/x-lms-card', cardId);
     e.dataTransfer.effectAllowed = 'move';
     if (submissionStatus) {
       setSubmissionStatus(null);
@@ -168,9 +168,10 @@ export default function SpriteInstructionOrderTask(props) {
   };
 
   const handleDragStartFromColumn = (e, cardId, colNum) => {
+    activeDragCardId = cardId;
+    activeDragFromCol = colNum;
     draggedCardRef.current = { cardId, source: 'column', fromCol: colNum };
     e.dataTransfer.setData('text/plain', cardId);
-    e.dataTransfer.setData('application/x-lms-card', cardId);
     e.dataTransfer.effectAllowed = 'move';
     if (submissionStatus) {
       setSubmissionStatus(null);
@@ -179,31 +180,37 @@ export default function SpriteInstructionOrderTask(props) {
   };
 
   const handleDragEnd = () => {
-    draggedCardRef.current = null;
+    setTimeout(() => {
+      activeDragCardId = null;
+      activeDragFromCol = null;
+      draggedCardRef.current = null;
+    }, 150);
   };
 
   const handleDragOver = (e) => {
     e.preventDefault();
+    e.stopPropagation();
     e.dataTransfer.dropEffect = 'move';
   };
 
   const handleDragEnter = (e) => {
     e.preventDefault();
+    e.stopPropagation();
   };
 
   const handleDropOnColumn = (e, targetCol) => {
     e.preventDefault();
+    e.stopPropagation();
     if (isSubmitting) return;
 
-    const info = draggedCardRef.current;
     const cardId =
-      info?.cardId ||
-      e.dataTransfer.getData('application/x-lms-card') ||
+      activeDragCardId ||
+      draggedCardRef.current?.cardId ||
       e.dataTransfer.getData('text/plain');
 
     if (!cardId) return;
 
-    const fromCol = info?.fromCol;
+    const fromCol = activeDragFromCol || draggedCardRef.current?.fromCol;
 
     setColumns((prev) => {
       const updated = { ...prev };
@@ -223,6 +230,8 @@ export default function SpriteInstructionOrderTask(props) {
       return updated;
     });
 
+    activeDragCardId = null;
+    activeDragFromCol = null;
     draggedCardRef.current = null;
     setSelectedCardId(null);
     setSubmissionStatus(null);
@@ -232,12 +241,12 @@ export default function SpriteInstructionOrderTask(props) {
   // Drop back to bank ("kéo lên trả lại kho")
   const handleDropOnBank = (e) => {
     e.preventDefault();
+    e.stopPropagation();
     if (isSubmitting) return;
 
-    const info = draggedCardRef.current;
     const cardId =
-      info?.cardId ||
-      e.dataTransfer.getData('application/x-lms-card') ||
+      activeDragCardId ||
+      draggedCardRef.current?.cardId ||
       e.dataTransfer.getData('text/plain');
 
     if (!cardId) return;
@@ -250,6 +259,8 @@ export default function SpriteInstructionOrderTask(props) {
       return updated;
     });
 
+    activeDragCardId = null;
+    activeDragFromCol = null;
     draggedCardRef.current = null;
     setSelectedCardId(null);
     setSubmissionStatus(null);
@@ -258,11 +269,18 @@ export default function SpriteInstructionOrderTask(props) {
 
   const handleReset = () => {
     if (isSubmitting) return;
+
+    setIsResetSpinning(true);
+    setTimeout(() => setIsResetSpinning(false), 500);
+
     setColumns({ 1: null, 2: null, 3: null });
     setSelectedCardId(null);
     setSubmissionStatus(null);
     setFeedbackText('');
+    activeDragCardId = null;
+    activeDragFromCol = null;
     draggedCardRef.current = null;
+
     try {
       localStorage.removeItem(`sprite_instruction_completed_${currentTaskId}`);
     } catch {}
@@ -424,6 +442,7 @@ export default function SpriteInstructionOrderTask(props) {
               aria-label="Reset order"
             >
               <svg
+                className={`sprite-instruction-reset-icon ${isResetSpinning ? 'spin' : ''}`}
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"

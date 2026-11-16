@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import './MarsBotQuizTask.css';
 
-const API_BASE_URL = String(import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
-
 const QUIZ_QUESTIONS = {
   1: {
     prompt: 'Which script will help the MarsBot get to the x?',
@@ -149,82 +147,16 @@ export default function MarsBotQuizTask(props) {
     setFeedbackText('');
   };
 
-  // Nộp bài & Lưu tiến độ (LMS Handoff, Supabase, LocalStorage)
-  const submitTaskAttempt = async (isCorrect) => {
+  // Nộp bài & Lưu tiến độ (LMS Handoff & LocalStorage)
+  const submitTaskAttempt = (isCorrect) => {
     setIsSubmitting(true);
 
-    const studentEmail = localStorage.getItem('lms_student_email') || '';
-    const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL;
-    const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY;
-    const courseId = 'VP2';
-    const lessonId = 'M1-Visual-Programming-Basics';
-    const pageId = 'VP2_M1L1_4';
-
-    // 1. Lưu kết quả vào Supabase activity_progress
-    if (supabaseUrl && supabaseKey && studentEmail && isCorrect) {
-      try {
-        await fetch(`${supabaseUrl}/rest/v1/activity_progress`, {
-          method: 'POST',
-          headers: {
-            apikey: supabaseKey,
-            Authorization: `Bearer ${supabaseKey}`,
-            'Content-Type': 'application/json',
-            Prefer: 'resolution=merge-duplicates',
-          },
-          body: JSON.stringify({
-            user_id: studentEmail,
-            course_id: courseId,
-            lesson_id: lessonId,
-            page_id: pageId,
-            task_id: currentTaskId,
-            activity_type: 'marsbot-quiz',
-            status: 'completed',
-            is_completed: true,
-            updated_at: new Date().toISOString(),
-          }),
-        });
-      } catch (err) {
-        console.warn('[MarsBotQuizTask] Lỗi lưu activity_progress Supabase:', err);
-      }
-    }
-
-    // 2. Gửi attempt tới endpoint /api/activity-attempts (cho LMS backend & PageShell trackedFetch)
-    try {
-      const endpoint = `${API_BASE_URL}/api/activity-attempts`;
-      await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          sessionId: localStorage.getItem('lms-session-id') || `session-${Date.now()}`,
-          userId: studentEmail || 'student',
-          courseId,
-          lessonId,
-          pageId,
-          taskId: currentTaskId,
-          activityType: 'marsbot-quiz',
-          answer: {
-            selectedOptionId: selectedOption,
-          },
-          result: {
-            isCorrect,
-            score: isCorrect ? 1 : 0,
-            maxScore: 1,
-          },
-        }),
-      });
-    } catch (err) {
-      console.warn('[MarsBotQuizTask] Attempt submission warning:', err);
-    }
-
-    // 3. Đánh dấu hoàn thành trong localStorage để trạng thái không bị mất khi F5
     if (isCorrect) {
       try {
         localStorage.setItem(`marsbot_completed_${currentTaskId}`, 'true');
       } catch {}
 
-      // 4. Báo cho GeneratedPageShell & TopNavigation cập nhật tiến độ (dấu tích xanh ✓ & tăng %)
+      // Báo cho GeneratedPageShell & TopNavigation cập nhật tiến độ (dấu tích xanh ✓ & tăng %)
       if (typeof onTaskCompleted === 'function') {
         onTaskCompleted({
           taskId: currentTaskId,
@@ -241,7 +173,7 @@ export default function MarsBotQuizTask(props) {
     setIsSubmitting(false);
   };
 
-  const handleAnswerOrNext = async () => {
+  const handleAnswerOrNext = () => {
     // Nếu đã hoàn thành bài đúng và ấn nút -> chuyển bài tiếp theo
     if (submissionStatus === 'correct') {
       if (typeof onNextTask === 'function') {
@@ -257,11 +189,11 @@ export default function MarsBotQuizTask(props) {
       setFeedbackText('Correct! MarsBot reached the target successfully.');
       playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
-      await submitTaskAttempt(true);
+      submitTaskAttempt(true);
     } else {
       setSubmissionStatus('incorrect');
       setFeedbackText('Not quite right. Check the turns and moves again!');
-      await submitTaskAttempt(false);
+      submitTaskAttempt(false);
     }
   };
 

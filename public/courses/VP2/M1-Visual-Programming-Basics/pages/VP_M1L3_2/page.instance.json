@@ -41,6 +41,18 @@
           "url": "/vp-assets/19847/g1.webp",
           "text": "Open the Costumes tab and use the Fill tool to turn the apple from red to green."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_1_state_1",
+          "stateId": "VP2_M1L3_2_1_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9639729",
+          "project_title": "M1L5 graphic arts"
+        }
       ]
     },
     {
@@ -77,6 +89,18 @@
           "title": "Change the shape of the flag according to the example",
           "url": "/vp-assets/19847/g2.webp",
           "text": "Use the Reshape tool to click and pull the edge of the green flag into a triangular notch like in the example."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_2_state_1",
+          "stateId": "VP2_M1L3_2_2_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9639743",
+          "project_title": "M1L5 graphic arts1"
         }
       ]
     },
@@ -129,6 +153,18 @@
           "url": "/vp-assets/19847/g3.webp",
           "text": "Create your snowman character from scratch using circles for body, reshape on rectangle for hat, and brush for face and arms."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_3_state_1",
+          "stateId": "VP2_M1L3_2_3_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9639758",
+          "project_title": "M1L5 graphic arts2"
+        }
       ]
     },
     {
@@ -180,6 +216,18 @@
           "url": "/vp-assets/19847/g4.webp",
           "text": "Draw the yellow center circle, use reshape to sculpt a petal, and copy-paste-rotate to arrange 5 petals around the center."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_4_state_1",
+          "stateId": "VP2_M1L3_2_4_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9639774",
+          "project_title": "M1L5 graphic arts3"
+        }
       ]
     },
     {
@@ -217,6 +265,18 @@
           "url": "/vp-assets/19847/g5.webp",
           "text": "Ungroup the beetle, change colors, and reshape legs and head according to the example."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_5_state_1",
+          "stateId": "VP2_M1L3_2_5_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9639793",
+          "project_title": "M1L5 graphic arts 4"
+        }
       ]
     },
     {
@@ -234,7 +294,18 @@
       "starter_project_id": null,
       "demo_project_id": null,
       "requirements": [],
-      "media": []
+      "media": [],
+      "states": [
+        {
+          "id": "VP2_M1L3_2_6_state_1",
+          "stateId": "VP2_M1L3_2_6_state_1",
+          "position": 1,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "starter_project_id": null
+        }
+      ]
     }
   ]
 }

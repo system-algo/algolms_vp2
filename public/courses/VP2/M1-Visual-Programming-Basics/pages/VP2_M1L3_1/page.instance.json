@@ -1,17 +1,10 @@
 {
-  "version": 1,
+  "schemaVersion": 2,
   "id": "VP2_M1L3_1",
   "title": "Scratch. Where to start?",
   "type": "scratch-task",
   "level_type": "scratch",
-  "activityType": "scratch",
   "taskCount": 8,
-  "metadata": {
-    "courseId": "VP2",
-    "moduleId": "M1-Visual-Programming-Basics",
-    "pageId": "VP2_M1L3_1",
-    "generatedAt": "2026-11-16T03:38:49.029Z"
-  },
   "tasks": [
     {
       "id": "VP2_M1L3_1_1",
@@ -53,6 +46,18 @@
           "type": "presentation",
           "title": "Draw a picture",
           "text": "The picture should start on a clean page. And only then does it change costumes when adding a drawing."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_1_state_1",
+          "stateId": "VP2_M1L3_1_1_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9633775",
+          "project_title": "Draw a picture"
         }
       ]
     },
@@ -96,6 +101,18 @@
           "type": "presentation",
           "title": "Penguin coming from Antarctica",
           "text": "The penguin is going on a journey! And it's beginning its journey from its native Antarctica."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_2_state_1",
+          "stateId": "VP2_M1L3_1_2_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9633799",
+          "project_title": "Penguin coming from Antarctica"
         }
       ]
     },
@@ -146,6 +163,18 @@
           "title": "Disappearing potion",
           "text": "The sorceress appears, drinks the potion, and disappears."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_3_state_1",
+          "stateId": "VP2_M1L3_1_3_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9633847",
+          "project_title": "Disappearing potion"
+        }
       ]
     },
     {
@@ -195,6 +224,18 @@
           "title": "Sorceress and teacher",
           "text": "The wizard shrank under the influence of the potion. But if you run the project again, the wizard returns to his normal size!"
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_4_state_1",
+          "stateId": "VP2_M1L3_1_4_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9633998",
+          "project_title": "Sorceress and teacher"
+        }
       ]
     },
     {
@@ -238,6 +279,18 @@
           "title": "Balloon",
           "text": "The balloon is large at first and is in a warm room. And then it's outside in the cold and becomes smaller."
         }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_5_state_1",
+          "stateId": "VP2_M1L3_1_5_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9634062",
+          "project_title": "Balloon"
+        }
       ]
     },
     {
@@ -255,7 +308,18 @@
       "starter_project_id": null,
       "demo_project_id": null,
       "requirements": [],
-      "media": []
+      "media": [],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_6_state_1",
+          "stateId": "VP2_M1L3_1_6_state_1",
+          "position": 1,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "starter_project_id": null
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_1_7",
@@ -297,6 +361,18 @@
           "type": "presentation",
           "title": "Pterodactyl",
           "text": "It seems like the pterodactyl is flying right here! It is growing in size and flapping its wings. But in the beginning, it is still far away, small in size and with its wings spread."
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_7_state_1",
+          "stateId": "VP2_M1L3_1_7_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9634094",
+          "project_title": "Pterodactyl"
         }
       ]
     },
@@ -354,6 +430,18 @@
           "type": "presentation",
           "title": "Wizard and dog",
           "text": "Look, the wizard accidentally enlarged the dog and made himself invisible in order to hide from it!"
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L3_1_8_state_1",
+          "stateId": "VP2_M1L3_1_8_state_1",
+          "position": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "9634128",
+          "project_title": "Wizard and dog"
         }
       ]
     }

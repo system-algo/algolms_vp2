@@ -4,7 +4,10 @@ import ActivityRouter from '../activities/ActivityRouter.jsx';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 
 function getStates(task) {
-  return Array.isArray(task?.states) ? task.states : [];
+  if (Array.isArray(task?.states) && task.states.length > 0) {
+    return task.states;
+  }
+  return task ? [task] : [];
 }
 
 function getTaskId(task) {

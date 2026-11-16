@@ -50,6 +50,8 @@ export default function ScratchTask({
                            (Array.isArray(task?.media) && task.media.length > 0);
 
   // Drawer open/collapse state
+  const iframeRef = useRef(null);
+  const containerRef = useRef(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(
     task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
   );
@@ -165,8 +167,6 @@ export default function ScratchTask({
   );
 
   const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
-  const iframeRef = useRef(null);
-  const containerRef = useRef(null);
 
   // Selected requirement ID for highlighting and displaying its image/GIF
   const [selectedReqId, setSelectedReqId] = useState(null);
@@ -240,12 +240,6 @@ export default function ScratchTask({
     return checklistItems.find((it) => it.id === selectedReqId) || null;
   }, [checklistItems, selectedReqId]);
 
-  const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
-  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
-  const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
-  const hasMediaInReqs = checklistItems.some((it) => !!it.url);
-  const showStandalonePreview = !demoProjectId && !!previewMediaUrl && !hasMediaInReqs;
-
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
   const demoProjectId =
@@ -254,6 +248,12 @@ export default function ScratchTask({
     task?.config?.presentation?.projectId ||
     task?.config?.presentation?.project ||
     (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '');
+
+  const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
+  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
+  const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
+  const hasMediaInReqs = checklistItems.some((it) => !!it.url);
+  const showStandalonePreview = !demoProjectId && !!previewMediaUrl && !hasMediaInReqs;
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
 

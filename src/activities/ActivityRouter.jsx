@@ -19,6 +19,7 @@ import SequenceOrderTask from './SequenceOrderTask.jsx';
 import BlockGameTask from '../components/BlockGame/BlockGameTask.jsx';
 import ScratchTask from './ScratchTask.jsx';
 import MarsBotQuizTask from './MarsBotQuizTask.jsx';
+import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -537,6 +538,9 @@ function normalizeRendererType(value) {
     'marsbot-quiz': 'marsbot-quiz',
     marsbot_quiz: 'marsbot-quiz',
     marsbot: 'marsbot-quiz',
+    'sprite-instruction-order': 'sprite-instruction-order',
+    sprite_instruction_order: 'sprite-instruction-order',
+    'instruction-order': 'sprite-instruction-order',
     scratch: 'scratch-task',
     scratch_task: 'scratch-task',
     'scratch-task': 'scratch-task',
@@ -672,6 +676,15 @@ function resolveRendererType(props) {
 
   const taskId = getTaskIdFromProps(props);
   const pageId = props?.pageInstance?.id || props?.pageId || '';
+
+  if (
+    taskId === 'VP2_M1L1_4_2' ||
+    task?.activityType === 'sprite-instruction-order' ||
+    task?.selectedType === 'sprite-instruction-order' ||
+    ((taskId.includes('VP2_M1L1_4') || pageId === 'VP2_M1L1_4') && (props?.taskIndex === 1 || task?.position === 2 || task?.level_position === 2))
+  ) {
+    return 'sprite-instruction-order';
+  }
 
   if (
     taskId.includes('VP2_M1L1_4') ||
@@ -1032,6 +1045,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'marsbot-quiz') {
     return <MarsBotQuizTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'sprite-instruction-order') {
+    return <SpriteInstructionOrderTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

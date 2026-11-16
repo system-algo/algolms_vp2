@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TopNavigation from '../components/TopNavigation.jsx';
 import ActivityRouter from '../activities/ActivityRouter.jsx';
+import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 
 function getStates(task) {
   return Array.isArray(task?.states) ? task.states : [];
@@ -246,7 +247,60 @@ export default function GeneratedPageShell({
     setCompletedTaskIds(
       loadCompletedTaskIds(completedTasksStorageKey),
     );
-  }, [completedTasksStorageKey]);
+
+    const studentEmail =
+      sessionStorage.getItem('lms_student_email') ||
+      localStorage.getItem('lms_student_email') ||
+      '';
+    const supabaseUrl =
+      sessionStorage.getItem('lms_supabase_url') ||
+      localStorage.getItem('lms_supabase_url');
+    const supabaseKey =
+      sessionStorage.getItem('lms_supabase_key') ||
+      localStorage.getItem('lms_supabase_key');
+
+    if (supabaseUrl && supabaseKey && studentEmail && pageId) {
+      const url = `${supabaseUrl}/rest/v1/activity_progress?user_id=eq.${encodeURIComponent(studentEmail)}&page_id=eq.${encodeURIComponent(pageId)}&select=task_id,status,is_completed`;
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = {
+        apikey: supabaseKey,
+      };
+      if (accessToken && accessToken.split('.').length === 3) {
+        headers.Authorization = `Bearer ${accessToken}`;
+      }
+
+      fetch(url, { headers })
+        .then((res) => (res.ok ? res.json() : []))
+        .then((data) => {
+          if (Array.isArray(data)) {
+            const dbCompletedIds = data
+              .filter(
+                (r) =>
+                  r.is_completed === true ||
+                  String(r.is_completed) === 'true' ||
+                  r.status === 'completed' ||
+                  r.status === 'correct' ||
+                  r.status === 'passed',
+              )
+              .map((r) => String(r.task_id))
+              .filter(Boolean);
+
+            if (dbCompletedIds.length > 0) {
+              setCompletedTaskIds((currentIds) => {
+                const merged = Array.from(new Set([...currentIds, ...dbCompletedIds]));
+                try {
+                  localStorage.setItem(completedTasksStorageKey, JSON.stringify(merged));
+                } catch (e) {}
+                return merged;
+              });
+            }
+          }
+        })
+        .catch((err) => console.warn('[GeneratedPageShell] Failed to load Supabase page progress:', err));
+    }
+  }, [completedTasksStorageKey, pageId]);
 
   useEffect(() => {
     const originalFetch = window.fetch.bind(window);
@@ -289,6 +343,13 @@ export default function GeneratedPageShell({
               ).trim();
 
               if (submittedTaskId) {
+                saveTaskCompletionToSupabase({
+                  courseId,
+                  lessonId,
+                  pageId,
+                  taskId: submittedTaskId,
+                });
+
                 const wasAlreadyCompleted = completedTaskIds.includes(submittedTaskId);
 
                 setCompletedTaskIds((currentIds) => {
@@ -527,6 +588,14 @@ export default function GeneratedPageShell({
     if (!submittedTaskId) return;
 
     const wasAlreadyCompleted = completedTaskIds.includes(submittedTaskId);
+
+    saveTaskCompletionToSupabase({
+      courseId,
+      lessonId,
+      pageId,
+      taskId: submittedTaskId,
+      activityType: completion?.activityType || 'completion-sync',
+    });
 
     setCompletedTaskIds((currentIds) => {
       if (currentIds.includes(submittedTaskId)) {

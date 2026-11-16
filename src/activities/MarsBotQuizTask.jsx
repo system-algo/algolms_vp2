@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
+import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './MarsBotQuizTask.css';
 
 const QUIZ_QUESTIONS = {
@@ -152,41 +153,20 @@ export default function MarsBotQuizTask(props) {
     setIsSubmitting(true);
 
     if (isCorrect) {
-      // --- Ghi vào Supabase activity_progress (giống ScratchTask) ---
-      const studentEmail = localStorage.getItem('lms_student_email') || '';
-      const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL || '';
-      const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-      const supabaseToken = localStorage.getItem('lms_access_token') || supabaseKey;
+      // Đọc context từ URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const courseId = urlParams.get('course') || 'VP2';
+      const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
+      const pageId = urlParams.get('page') || 'VP2_M1L1_4';
 
-      if (supabaseUrl && supabaseKey && studentEmail) {
-        try {
-          const res = await fetch(`${supabaseUrl}/rest/v1/activity_progress`, {
-            method: 'POST',
-            headers: {
-              apikey: supabaseKey,
-              Authorization: `Bearer ${supabaseToken}`,
-              'Content-Type': 'application/json',
-              Prefer: 'resolution=merge-duplicates',
-            },
-            body: JSON.stringify({
-              user_id: studentEmail,
-              course_id: 'VP2',
-              lesson_id: 'M1-Visual-Programming-Basics',
-              page_id: 'VP2_M1L1_4',
-              task_id: currentTaskId,
-              activity_type: 'marsbot-quiz',
-              status: 'completed',
-              is_completed: true,
-              updated_at: new Date().toISOString(),
-            }),
-          });
-          if (!res.ok) {
-            console.warn('[MarsBotQuizTask] activity_progress status:', res.status);
-          }
-        } catch (err) {
-          console.warn('[MarsBotQuizTask] Lỗi lưu activity_progress:', err);
-        }
-      }
+      // --- Ghi vào Supabase activity_progress chuẩn LMS ---
+      await saveTaskCompletionToSupabase({
+        courseId,
+        lessonId,
+        pageId,
+        taskId: currentTaskId,
+        activityType: 'marsbot-quiz',
+      });
 
       // --- LocalStorage ---
       try {

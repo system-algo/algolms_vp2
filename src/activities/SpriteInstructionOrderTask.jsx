@@ -189,33 +189,83 @@ export default function SpriteInstructionOrderTask(props) {
   };
 
   // Drag and drop handlers
-  const handleDragStart = (e, cardId) => {
+  const handleDragStartFromBank = (e, cardId) => {
     if (submissionStatus === 'correct' || isSubmitting) return;
     e.dataTransfer.setData('text/plain', cardId);
+    e.dataTransfer.setData('source-type', 'bank');
+  };
+
+  const handleDragStartFromColumn = (e, cardId, colNum) => {
+    if (submissionStatus === 'correct' || isSubmitting) return;
+    e.dataTransfer.setData('text/plain', cardId);
+    e.dataTransfer.setData('source-type', 'column');
+    e.dataTransfer.setData('from-column', String(colNum));
   };
 
   const handleDragOver = (e) => {
     e.preventDefault();
   };
 
-  const handleDropOnColumn = (e, colNum) => {
+  const handleDropOnColumn = (e, targetCol) => {
     e.preventDefault();
     if (submissionStatus === 'correct' || isSubmitting) return;
 
     const cardId = e.dataTransfer.getData('text/plain');
+    const sourceType = e.dataTransfer.getData('source-type');
+    const fromCol = e.dataTransfer.getData('from-column');
     if (!cardId) return;
 
     const updated = { ...columns };
-    Object.keys(updated).forEach((k) => {
-      if (updated[k] === cardId) updated[k] = null;
-    });
-    updated[colNum] = cardId;
+
+    if (sourceType === 'column' && fromCol) {
+      const fromColNum = parseInt(fromCol, 10);
+      if (fromColNum !== targetCol) {
+        // Swap or move from another column
+        const existingInTarget = updated[targetCol];
+        updated[fromColNum] = existingInTarget || null;
+        updated[targetCol] = cardId;
+      }
+    } else {
+      // Coming from bank: remove cardId from any other column first
+      Object.keys(updated).forEach((k) => {
+        if (updated[k] === cardId) updated[k] = null;
+      });
+      updated[targetCol] = cardId;
+    }
+
     setColumns(updated);
     setSelectedCardId(null);
 
     if (submissionStatus) {
       setSubmissionStatus(null);
       setFeedbackText('');
+    }
+  };
+
+  // Drop back to bank ("kéo lên trả lại kho")
+  const handleDropOnBank = (e) => {
+    e.preventDefault();
+    if (submissionStatus === 'correct' || isSubmitting) return;
+
+    const sourceType = e.dataTransfer.getData('source-type');
+    const fromCol = e.dataTransfer.getData('from-column');
+    const cardId = e.dataTransfer.getData('text/plain');
+
+    if (sourceType === 'column' && fromCol) {
+      setColumns((prev) => ({ ...prev, [fromCol]: null }));
+      if (submissionStatus) {
+        setSubmissionStatus(null);
+        setFeedbackText('');
+      }
+    } else if (cardId) {
+      const existingCol = Object.keys(columns).find((col) => columns[col] === cardId);
+      if (existingCol) {
+        setColumns((prev) => ({ ...prev, [existingCol]: null }));
+        if (submissionStatus) {
+          setSubmissionStatus(null);
+          setFeedbackText('');
+        }
+      }
     }
   };
 
@@ -343,6 +393,14 @@ export default function SpriteInstructionOrderTask(props) {
   const isAllFilled = Boolean(columns[1] && columns[2] && columns[3]);
   const isLastTask = taskIndex >= tasks.length - 1;
 
+  const getColumnStatus = (colNum) => {
+    if (submissionStatus === 'correct') return 'is-correct';
+    if (submissionStatus === 'incorrect' && isAllFilled) {
+      return columns[colNum] === CORRECT_ORDER[colNum] ? 'is-correct' : 'is-wrong';
+    }
+    return '';
+  };
+
   return (
     <div className="sprite-instruction-page">
       <div className="sprite-instruction-container">
@@ -415,7 +473,11 @@ export default function SpriteInstructionOrderTask(props) {
         {/* Right Panel: Top Bank & Bottom Sequence Columns */}
         <div className="sprite-instruction-right-panel">
           {/* Top Card Bank */}
-          <div className="sprite-instruction-bank-card">
+          <div
+            className="sprite-instruction-bank-card"
+            onDragOver={handleDragOver}
+            onDrop={handleDropOnBank}
+          >
             <div className="sprite-instruction-bank-grid">
               {INSTRUCTION_CARDS.map((card) => {
                 const isPlaced = placedCardIds.includes(card.id);
@@ -428,8 +490,9 @@ export default function SpriteInstructionOrderTask(props) {
                       isPlaced ? 'is-placed' : ''
                     } ${isSelected ? 'is-selected' : ''}`}
                     onClick={() => handleBankCardClick(card.id)}
-                    draggable={!isPlaced && submissionStatus !== 'correct'}
-                    onDragStart={(e) => handleDragStart(e, card.id)}
+                    draggable={!isPlaced && submissionStatus !== 'correct' && !isSubmitting}
+                    onDragStart={(e) => handleDragStartFromBank(e, card.id)}
+                    title={isPlaced ? 'Card is in a column (drag or click to return)' : 'Drag or click to place'}
                   >
                     <div className="sprite-instruction-card-content">
                       <img src={card.image} alt={card.label} />
@@ -437,6 +500,8 @@ export default function SpriteInstructionOrderTask(props) {
                   </div>
                 );
               })}
+              {/* 6th Slot Placeholder matching Algorithmics LMS 2x3 grid */}
+              <div className="sprite-instruction-bank-slot is-empty-placeholder" />
             </div>
           </div>
 
@@ -445,6 +510,7 @@ export default function SpriteInstructionOrderTask(props) {
             {[1, 2, 3].map((colNum) => {
               const cardId = columns[colNum];
               const card = INSTRUCTION_CARDS.find((c) => c.id === cardId);
+              const colStatus = getColumnStatus(colNum);
 
               return (
                 <div key={colNum} className="sprite-instruction-column">
@@ -453,13 +519,18 @@ export default function SpriteInstructionOrderTask(props) {
                   <div
                     className={`sprite-instruction-column-dropzone ${
                       card ? 'has-card' : 'empty'
-                    } ${submissionStatus === 'correct' ? 'is-correct' : ''}`}
+                    } ${colStatus}`}
                     onClick={() => handleColumnClick(colNum)}
                     onDragOver={handleDragOver}
                     onDrop={(e) => handleDropOnColumn(e, colNum)}
+                    title={card ? 'Drag to another column, or drag up to bank to return' : `Drop step ${colNum} here`}
                   >
                     {card ? (
-                      <div className="sprite-instruction-placed-card">
+                      <div
+                        className="sprite-instruction-placed-card"
+                        draggable={submissionStatus !== 'correct' && !isSubmitting}
+                        onDragStart={(e) => handleDragStartFromColumn(e, card.id, colNum)}
+                      >
                         <img src={card.image} alt={card.label} />
                       </div>
                     ) : (

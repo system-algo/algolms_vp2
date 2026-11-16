@@ -1,0 +1,3278 @@
+{
+    "status": "success",
+    "data": {
+        "id": 19846,
+        "title": "Scratch. Where to start?",
+        "content": "Расстановки спрайтов в Scratch",
+        "lessonId": 8918,
+        "type": "regular",
+        "display_type": null,
+        "isBonus": false,
+        "lesson": {
+            "id": 8918,
+            "title": "M1L3. Initial placement ENG",
+            "isMso": false,
+            "lockedAt": null,
+            "msoSecondsLeft": null
+        },
+        "levelPosition": null,
+        "levels": [
+            {
+                "id": 206636,
+                "position": 1,
+                "taskLevelId": 151100,
+                "taskLevelType": "regular",
+                "type": "scratch",
+                "title": "Where to start 1 (with autocheck Scratch)",
+                "levelScore": 1,
+                "isAllowFail": false,
+                "comics": [
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 1 (2)_1596701031.PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/1_1598338635.PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/2_1598338643.PNG",
+                        "type": "image"
+                    }
+                ],
+                "hide": false,
+                "skillV2Ids": [],
+                "config": {
+                    "fail": "",
+                    "hint": "",
+                    "math": null,
+                    "msgs": "",
+                    "tips": [
+                        {
+                            "id": "1563210062703-5",
+                            "tip": {
+                                "id": "1563210062703-5",
+                                "image": {
+                                    "id": 22943,
+                                    "uid": 1563210400515,
+                                    "url": "/uploads/2019/07/Снимок-3.JPG",
+                                    "name": "Снимок-3.JPG",
+                                    "status": "success"
+                                },
+                                "title": "В каком порядке меняются костюмы?",
+                                "videoUrl": "",
+                                "description": "Костюмы меняются в том порядке, в котором стоят в списке.",
+                                "errorsRequired": 1
+                            },
+                            "image": {
+                                "id": 22943,
+                                "uid": 1563210400515,
+                                "url": "/uploads/2019/07/Снимок-3.JPG",
+                                "name": "Снимок-3.JPG",
+                                "status": "success"
+                            },
+                            "title": "In what order do the costumes change?",
+                            "videoUrl": "",
+                            "description": "The costumes are changed in the order in which they appear in the list.",
+                            "errorsRequired": 0
+                        }
+                    ],
+                    "type": "scratch",
+                    "user": 170903,
+                    "hints": [
+                        {
+                            "id": "f84caba5-8274-4519-8cc9-c69c6bcc935a",
+                            "url": "",
+                            "text": "So that the picture always starts on a clean page, after the start command, set the costume with a blank canvas.",
+                            "type": "gif",
+                            "title": "Set the right costume at the beginning",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "28f7d0a7-41d2-46e6-9649-dc82d0451166",
+                            "url": "",
+                            "text": "The first 4 costumes change every second, and it seems like a drawing appears on the canvas. Think about how to do it.",
+                            "type": "gif",
+                            "title": "Changing costumes every second",
+                            "evaluationType": "markCompleted"
+                        }
+                    ],
+                    "title": "",
+                    "comics": [
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 1 (2)_1596701031.PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/1_1598338635.PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/2_1598338643.PNG",
+                            "type": "image"
+                        }
+                    ],
+                    "popups": [],
+                    "congrat": "",
+                    "project": 9633775,
+                    "language": "eng-ENG",
+                    "question": "",
+                    "quizData": {
+                        "items": [
+                            {
+                                "id": "1549347472268-4",
+                                "text": "",
+                                "image": null,
+                                "categories": []
+                            }
+                        ],
+                        "choices": [
+                            {
+                                "id": "1549347472268-1",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            },
+                            {
+                                "id": "1549347472268-2",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            }
+                        ],
+                        "comment": "",
+                        "question": "",
+                        "taskType": "multiple-choice",
+                        "allowFail": false,
+                        "categories": [
+                            {
+                                "id": "1549347472268-3",
+                                "text": "",
+                                "image": null
+                            }
+                        ],
+                        "explanation": "",
+                        "questionImage": null
+                    },
+                    "roleTips": [],
+                    "template": "scratch",
+                    "tutorial": [
+                        {
+                            "text": "Add an appropriate background and delete the one that is currently in place.",
+                            "image": "",
+                            "video": "",
+                            "popupCorner": "topLeft",
+                            "highlightType": "element",
+                            "highlightCorner": "topLeft",
+                            "highlightElement": null,
+                            "highlightElementId": ""
+                        }
+                    ],
+                    "description": "",
+                    "presentation": {
+                        "text": "The picture should start on a clean page. And only then does it change costumes when adding a drawing.",
+                        "type": "scratch",
+                        "image": null,
+                        "title": "Draw a picture",
+                        "video": null,
+                        "projectId": "9633740"
+                    },
+                    "force_enabled": true,
+                    "congrat_repeat": "",
+                    "autoCheckConfig": [
+                        [
+                            "f84caba5-8274-4519-8cc9-c69c6bcc935a",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 846.074074074074,
+                                                "y": 81.33333333333348,
+                                                "id": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "next": "IPouK!=#$?unsi}YpARV",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "426",
+                                                "id": "IPouK!=#$?unsi}YpARV",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "block": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                        "shadow": "JI(_Z4AaSk]Mzf,S/Jw~"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchcostumeto",
+                                                "parent": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                "next": null,
+                                                "fields": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "value": "Easel-a"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_costume",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Easel"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-358",
+                                                "y": "426",
+                                                "id": "IPouK!=#$?unsi}YpARV",
+                                                "next": "JDYK=gwqBr`Wod-xHjy:",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "block": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                        "shadow": "JI(_Z4AaSk]Mzf,S/Jw~"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchcostumeto",
+                                                "parent": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                "next": null,
+                                                "fields": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "value": "Easel-a"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_costume",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 846.074074074074,
+                                                "y": 81.33333333333348,
+                                                "id": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "next": "IPouK!=#$?unsi}YpARV",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "325",
+                                                "id": "JDYK=gwqBr`Wod-xHjy:",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "i^VbenU){/jiJV-${ST0",
+                                                        "shadow": "i^VbenU){/jiJV-${ST0"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "x/X1r7xW0Z[=[R9hc)M{",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "i^VbenU){/jiJV-${ST0",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "233",
+                                                "id": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "next": "ccTaRh3A@p$|rk(auaZx",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "DURATION": {
+                                                        "name": "DURATION",
+                                                        "block": "VHWY,MRmCaKp1j6$mYs7",
+                                                        "shadow": "VHWY,MRmCaKp1j6$mYs7"
+                                                    }
+                                                },
+                                                "opcode": "control_wait",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VHWY,MRmCaKp1j6$mYs7",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "1"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_positive_number",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "271",
+                                                "id": "ccTaRh3A@p$|rk(auaZx",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextcostume",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Easel"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "274",
+                                                "y": "325",
+                                                "id": "JDYK=gwqBr`Wod-xHjy:",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "i^VbenU){/jiJV-${ST0",
+                                                        "shadow": "i^VbenU){/jiJV-${ST0"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "ccTaRh3A@p$|rk(auaZx",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "i^VbenU){/jiJV-${ST0",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 862.074074074074,
+                                                "y": 273.3333333333335,
+                                                "id": "ccTaRh3A@p$|rk(auaZx",
+                                                "next": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextcostume",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "233",
+                                                "id": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "DURATION": {
+                                                        "name": "DURATION",
+                                                        "block": "VHWY,MRmCaKp1j6$mYs7",
+                                                        "shadow": "VHWY,MRmCaKp1j6$mYs7"
+                                                    }
+                                                },
+                                                "opcode": "control_wait",
+                                                "parent": "ccTaRh3A@p$|rk(auaZx",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VHWY,MRmCaKp1j6$mYs7",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "1"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_positive_number",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "426",
+                                                "id": "IPouK!=#$?unsi}YpARV",
+                                                "next": "JDYK=gwqBr`Wod-xHjy:",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "block": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                        "shadow": "JI(_Z4AaSk]Mzf,S/Jw~"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchcostumeto",
+                                                "parent": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                "next": null,
+                                                "fields": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "value": "Easel-a"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_costume",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 846.074074074074,
+                                                "y": 81.33333333333348,
+                                                "id": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "next": "IPouK!=#$?unsi}YpARV",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            }
+                                        ],
+                                        "sprite": "Easel"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "28f7d0a7-41d2-46e6-9649-dc82d0451166",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-358",
+                                                "y": "426",
+                                                "id": "IPouK!=#$?unsi}YpARV",
+                                                "next": "JDYK=gwqBr`Wod-xHjy:",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "block": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                        "shadow": "JI(_Z4AaSk]Mzf,S/Jw~"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchcostumeto",
+                                                "parent": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                "next": null,
+                                                "fields": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "value": "Easel-a"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_costume",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 846.074074074074,
+                                                "y": 81.33333333333348,
+                                                "id": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "next": "IPouK!=#$?unsi}YpARV",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "325",
+                                                "id": "JDYK=gwqBr`Wod-xHjy:",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "i^VbenU){/jiJV-${ST0",
+                                                        "shadow": "i^VbenU){/jiJV-${ST0"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "x/X1r7xW0Z[=[R9hc)M{",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "i^VbenU){/jiJV-${ST0",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "233",
+                                                "id": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "next": "ccTaRh3A@p$|rk(auaZx",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "DURATION": {
+                                                        "name": "DURATION",
+                                                        "block": "VHWY,MRmCaKp1j6$mYs7",
+                                                        "shadow": "VHWY,MRmCaKp1j6$mYs7"
+                                                    }
+                                                },
+                                                "opcode": "control_wait",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VHWY,MRmCaKp1j6$mYs7",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "1"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_positive_number",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "271",
+                                                "id": "ccTaRh3A@p$|rk(auaZx",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextcostume",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Easel"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "274",
+                                                "y": "325",
+                                                "id": "JDYK=gwqBr`Wod-xHjy:",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "i^VbenU){/jiJV-${ST0",
+                                                        "shadow": "i^VbenU){/jiJV-${ST0"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "ccTaRh3A@p$|rk(auaZx",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "i^VbenU){/jiJV-${ST0",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 862.074074074074,
+                                                "y": 273.3333333333335,
+                                                "id": "ccTaRh3A@p$|rk(auaZx",
+                                                "next": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextcostume",
+                                                "parent": "JDYK=gwqBr`Wod-xHjy:",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "274",
+                                                "y": "233",
+                                                "id": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "DURATION": {
+                                                        "name": "DURATION",
+                                                        "block": "VHWY,MRmCaKp1j6$mYs7",
+                                                        "shadow": "VHWY,MRmCaKp1j6$mYs7"
+                                                    }
+                                                },
+                                                "opcode": "control_wait",
+                                                "parent": "ccTaRh3A@p$|rk(auaZx",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VHWY,MRmCaKp1j6$mYs7",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "1"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_positive_number",
+                                                "parent": "x/X1r7xW0Z[=[R9hc)M{",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "426",
+                                                "id": "IPouK!=#$?unsi}YpARV",
+                                                "next": "JDYK=gwqBr`Wod-xHjy:",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "block": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                        "shadow": "JI(_Z4AaSk]Mzf,S/Jw~"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchcostumeto",
+                                                "parent": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "JI(_Z4AaSk]Mzf,S/Jw~",
+                                                "next": null,
+                                                "fields": {
+                                                    "COSTUME": {
+                                                        "name": "COSTUME",
+                                                        "value": "Easel-a"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_costume",
+                                                "parent": "IPouK!=#$?unsi}YpARV",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 846.074074074074,
+                                                "y": 81.33333333333348,
+                                                "id": "Z3I.xAGJu+yJPMYMl~0c",
+                                                "next": "IPouK!=#$?unsi}YpARV",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            }
+                                        ],
+                                        "sprite": "Easel"
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    "presentation_only": 0
+                },
+                "quiz3Data": [],
+                "timerType": null,
+                "timerSeconds": null
+            },
+            {
+                "id": 206637,
+                "position": 2,
+                "taskLevelId": 151101,
+                "taskLevelType": "regular",
+                "type": "scratch",
+                "title": "Where to start 2 (with autocheck Scratch)",
+                "levelScore": 1,
+                "isAllowFail": false,
+                "comics": [
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 2 (2).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/1_1598338879.PNG",
+                        "type": "image"
+                    }
+                ],
+                "hide": false,
+                "skillV2Ids": [],
+                "config": {
+                    "fail": "",
+                    "hint": "",
+                    "math": null,
+                    "msgs": "",
+                    "tips": [
+                        {
+                            "id": "1563210446986-5",
+                            "tip": {
+                                "id": "1563210446986-5",
+                                "image": null,
+                                "title": "В каком порядке меняются фоны?",
+                                "videoUrl": "",
+                                "description": "Фоны меняются в том порядке, в котором стоят в списке.",
+                                "errorsRequired": 0
+                            },
+                            "image": {
+                                "id": 22944,
+                                "uid": 1563210511444,
+                                "url": "/uploads/2019/07/Снимок1-1.JPG",
+                                "name": "Снимок1-1.JPG",
+                                "status": "success"
+                            },
+                            "title": "In what order do the backgrounds change?",
+                            "videoUrl": "",
+                            "description": "The backgrounds change in the order in which they appear in the list.",
+                            "errorsRequired": 0
+                        }
+                    ],
+                    "type": "scratch",
+                    "user": 170903,
+                    "hints": [
+                        {
+                            "id": "38cd4959-21d6-46e0-abdc-6c60b825f753",
+                            "url": "/uploads/2021/03/bo2_1616072433.png",
+                            "text": "The penguin begins its journey from Antarctica — this particular background should be the first.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125747,
+                                "uid": 1616072433458,
+                                "url": "/uploads/2021/03/bo2_1616072433.png",
+                                "name": "bo2.png",
+                                "status": "success",
+                                "createdAt": 1616072433,
+                                "updatedAt": 1616072433
+                            },
+                            "title": "The first background - \"Antarctica\"",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "67be01f2-a891-4396-9d7f-6d9c134d97e0",
+                            "url": "/uploads/2021/03/bo2-2.png",
+                            "text": "While the \"Antarctica\" background is on, the penguin takes \"steps,\" meaning it changes its costume. After several costume changes, the background changes.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125749,
+                                "uid": 1616072459286,
+                                "url": "/uploads/2021/03/bo2-2.png",
+                                "name": "bo2-2.png",
+                                "status": "success",
+                                "createdAt": 1616072458,
+                                "updatedAt": 1616072458
+                            },
+                            "title": "Change of costume and background",
+                            "evaluationType": "markCompleted"
+                        }
+                    ],
+                    "title": "",
+                    "comics": [
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 2 (2).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/1_1598338879.PNG",
+                            "type": "image"
+                        }
+                    ],
+                    "popups": [],
+                    "congrat": "",
+                    "project": 9633799,
+                    "language": "eng-ENG",
+                    "question": "",
+                    "quizData": {
+                        "items": [
+                            {
+                                "id": "1549347472268-4",
+                                "text": "",
+                                "image": null,
+                                "categories": []
+                            }
+                        ],
+                        "choices": [
+                            {
+                                "id": "1549347472268-1",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            },
+                            {
+                                "id": "1549347472268-2",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            }
+                        ],
+                        "comment": "",
+                        "question": "",
+                        "taskType": "multiple-choice",
+                        "allowFail": false,
+                        "categories": [
+                            {
+                                "id": "1549347472268-3",
+                                "text": "",
+                                "image": null
+                            }
+                        ],
+                        "explanation": "",
+                        "questionImage": null
+                    },
+                    "roleTips": [],
+                    "template": "scratch",
+                    "tutorial": [
+                        {
+                            "text": "Add an appropriate background and delete the one that is currently in place.",
+                            "image": "",
+                            "video": "",
+                            "popupCorner": "topLeft",
+                            "highlightType": "element",
+                            "highlightCorner": "topLeft",
+                            "highlightElement": null,
+                            "highlightElementId": ""
+                        }
+                    ],
+                    "description": "",
+                    "presentation": {
+                        "text": "The penguin is going on a journey! And it's beginning its journey from its native Antarctica.",
+                        "type": "scratch",
+                        "image": null,
+                        "title": "Penguin coming from Antarctica",
+                        "video": null,
+                        "projectId": "10661509"
+                    },
+                    "force_enabled": true,
+                    "congrat_repeat": "",
+                    "autoCheckConfig": [
+                        [
+                            "38cd4959-21d6-46e0-abdc-6c60b825f753",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 373.48148148148147,
+                                                "y": 78.37037037037388,
+                                                "id": "=Z4kP26O9)UDuHHaYlg^",
+                                                "next": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "117",
+                                                "id": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "BACKDROP": {
+                                                        "name": "BACKDROP",
+                                                        "block": "Q%=gncnEPVJPDWa0QdQq",
+                                                        "shadow": "Q%=gncnEPVJPDWa0QdQq"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchbackdropto",
+                                                "parent": "=Z4kP26O9)UDuHHaYlg^",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "Q%=gncnEPVJPDWa0QdQq",
+                                                "next": null,
+                                                "fields": {
+                                                    "BACKDROP": {
+                                                        "name": "BACKDROP",
+                                                        "value": "Antarctica"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_backdrops",
+                                                "parent": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Penguin"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-308",
+                                                "y": "325",
+                                                "id": "d+!?`+/(`Tt-zYLxeTwF",
+                                                "next": "mF~Omt(7JKeqfGR0+`?h",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "J5]=H.wEAj+Quu=QX1/0",
+                                                        "shadow": "J5]=H.wEAj+Quu=QX1/0"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "37VyEV1RRKM0M`VLyvBI",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "aA3sJuMpPUSb`e7164YM",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "J5]=H.wEAj+Quu=QX1/0",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-308",
+                                                "y": "233",
+                                                "id": "37VyEV1RRKM0M`VLyvBI",
+                                                "next": ")KY|mH{wa50Y;A1Drc$w",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "DURATION": {
+                                                        "name": "DURATION",
+                                                        "block": "t+*EQ6tMO[%}GU,[]DIh",
+                                                        "shadow": "t+*EQ6tMO[%}GU,[]DIh"
+                                                    }
+                                                },
+                                                "opcode": "control_wait",
+                                                "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "t+*EQ6tMO[%}GU,[]DIh",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "0.5"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_positive_number",
+                                                "parent": "37VyEV1RRKM0M`VLyvBI",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-308",
+                                                "y": "494",
+                                                "id": ")KY|mH{wa50Y;A1Drc$w",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextcostume",
+                                                "parent": "37VyEV1RRKM0M`VLyvBI",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-308",
+                                                "y": "325",
+                                                "id": "aA3sJuMpPUSb`e7164YM",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "]9@Rp$g;5o!;cJN;5er2",
+                                                        "shadow": "]9@Rp$g;5o!;cJN;5er2"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "d+!?`+/(`Tt-zYLxeTwF",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "]9@Rp$g;5o!;cJN;5er2",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "3"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "aA3sJuMpPUSb`e7164YM",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-308",
+                                                "y": "630",
+                                                "id": "mF~Omt(7JKeqfGR0+`?h",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_nextbackdrop",
+                                                "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "117",
+                                                "id": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "next": "aA3sJuMpPUSb`e7164YM",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "BACKDROP": {
+                                                        "name": "BACKDROP",
+                                                        "block": "Q%=gncnEPVJPDWa0QdQq",
+                                                        "shadow": "Q%=gncnEPVJPDWa0QdQq"
+                                                    }
+                                                },
+                                                "opcode": "looks_switchbackdropto",
+                                                "parent": "=Z4kP26O9)UDuHHaYlg^",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "Q%=gncnEPVJPDWa0QdQq",
+                                                "next": null,
+                                                "fields": {
+                                                    "BACKDROP": {
+                                                        "name": "BACKDROP",
+                                                        "value": "Antarctica"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "looks_backdrops",
+                                                "parent": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": 373.48148148148147,
+                                                "y": 78.37037037037388,
+                                                "id": "=Z4kP26O9)UDuHHaYlg^",
+                                                "next": "/|$Jf5FfS%G3/.$:cx?S",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            }
+                                        ],
+                                        "sprite": "Penguin"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "67be01f2-a891-4396-9d7f-6d9c134d97e0",
+                            [
+                                {
+                                    "blocks": [
+                                        {
+                                            "x": "-308",
+                                            "y": "325",
+                                            "id": "d+!?`+/(`Tt-zYLxeTwF",
+                                            "next": "mF~Omt(7JKeqfGR0+`?h",
+                                            "fields": [],
+                                            "inputs": {
+                                                "TIMES": {
+                                                    "name": "TIMES",
+                                                    "block": "J5]=H.wEAj+Quu=QX1/0",
+                                                    "shadow": "J5]=H.wEAj+Quu=QX1/0"
+                                                },
+                                                "SUBSTACK": {
+                                                    "name": "SUBSTACK",
+                                                    "block": "37VyEV1RRKM0M`VLyvBI",
+                                                    "shadow": null
+                                                }
+                                            },
+                                            "opcode": "control_repeat",
+                                            "parent": "aA3sJuMpPUSb`e7164YM",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "id": "J5]=H.wEAj+Quu=QX1/0",
+                                            "next": null,
+                                            "fields": {
+                                                "NUM": {
+                                                    "name": "NUM",
+                                                    "value": "3"
+                                                }
+                                            },
+                                            "inputs": [],
+                                            "opcode": "math_whole_number",
+                                            "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                            "shadow": true,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "x": "-308",
+                                            "y": "233",
+                                            "id": "37VyEV1RRKM0M`VLyvBI",
+                                            "next": ")KY|mH{wa50Y;A1Drc$w",
+                                            "fields": [],
+                                            "inputs": {
+                                                "DURATION": {
+                                                    "name": "DURATION",
+                                                    "block": "t+*EQ6tMO[%}GU,[]DIh",
+                                                    "shadow": "t+*EQ6tMO[%}GU,[]DIh"
+                                                }
+                                            },
+                                            "opcode": "control_wait",
+                                            "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "id": "t+*EQ6tMO[%}GU,[]DIh",
+                                            "next": null,
+                                            "fields": {
+                                                "NUM": {
+                                                    "name": "NUM",
+                                                    "value": "0.5"
+                                                }
+                                            },
+                                            "inputs": [],
+                                            "opcode": "math_positive_number",
+                                            "parent": "37VyEV1RRKM0M`VLyvBI",
+                                            "shadow": true,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "x": "-308",
+                                            "y": "494",
+                                            "id": ")KY|mH{wa50Y;A1Drc$w",
+                                            "next": null,
+                                            "fields": [],
+                                            "inputs": [],
+                                            "opcode": "looks_nextcostume",
+                                            "parent": "37VyEV1RRKM0M`VLyvBI",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "x": "-308",
+                                            "y": "325",
+                                            "id": "aA3sJuMpPUSb`e7164YM",
+                                            "next": null,
+                                            "fields": [],
+                                            "inputs": {
+                                                "TIMES": {
+                                                    "name": "TIMES",
+                                                    "block": "]9@Rp$g;5o!;cJN;5er2",
+                                                    "shadow": "]9@Rp$g;5o!;cJN;5er2"
+                                                },
+                                                "SUBSTACK": {
+                                                    "name": "SUBSTACK",
+                                                    "block": "d+!?`+/(`Tt-zYLxeTwF",
+                                                    "shadow": null
+                                                }
+                                            },
+                                            "opcode": "control_repeat",
+                                            "parent": "/|$Jf5FfS%G3/.$:cx?S",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "id": "]9@Rp$g;5o!;cJN;5er2",
+                                            "next": null,
+                                            "fields": {
+                                                "NUM": {
+                                                    "name": "NUM",
+                                                    "value": "3"
+                                                }
+                                            },
+                                            "inputs": [],
+                                            "opcode": "math_whole_number",
+                                            "parent": "aA3sJuMpPUSb`e7164YM",
+                                            "shadow": true,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "x": "-308",
+                                            "y": "630",
+                                            "id": "mF~Omt(7JKeqfGR0+`?h",
+                                            "next": null,
+                                            "fields": [],
+                                            "inputs": [],
+                                            "opcode": "looks_nextbackdrop",
+                                            "parent": "d+!?`+/(`Tt-zYLxeTwF",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "x": "-358",
+                                            "y": "117",
+                                            "id": "/|$Jf5FfS%G3/.$:cx?S",
+                                            "next": "aA3sJuMpPUSb`e7164YM",
+                                            "fields": [],
+                                            "inputs": {
+                                                "BACKDROP": {
+                                                    "name": "BACKDROP",
+                                                    "block": "Q%=gncnEPVJPDWa0QdQq",
+                                                    "shadow": "Q%=gncnEPVJPDWa0QdQq"
+                                                }
+                                            },
+                                            "opcode": "looks_switchbackdropto",
+                                            "parent": "=Z4kP26O9)UDuHHaYlg^",
+                                            "shadow": false,
+                                            "topLevel": false
+                                        },
+                                        {
+                                            "id": "Q%=gncnEPVJPDWa0QdQq",
+                                            "next": null,
+                                            "fields": {
+                                                "BACKDROP": {
+                                                    "name": "BACKDROP",
+                                                    "value": "Antarctica"
+                                                }
+                                            },
+                                            "inputs": [],
+                                            "opcode": "looks_backdrops",
+                                            "parent": "/|$Jf5FfS%G3/.$:cx?S",
+                                            "shadow": true,
+                                            "topLevel": false,
+                                            "strictAutocheck": true
+                                        },
+                                        {
+                                            "x": 373.48148148148147,
+                                            "y": 78.37037037037388,
+                                            "id": "=Z4kP26O9)UDuHHaYlg^",
+                                            "next": "/|$Jf5FfS%G3/.$:cx?S",
+                                            "fields": [],
+                                            "inputs": [],
+                                            "opcode": "event_whenflagclicked",
+                                            "parent": null,
+                                            "shadow": false,
+                                            "topLevel": true
+                                        }
+                                    ],
+                                    "sprite": "Penguin"
+                                }
+                            ]
+                        ]
+                    ],
+                    "presentation_only": 0,
+                    "isTaskSequenceEnabled": false
+                },
+                "quiz3Data": [],
+                "timerType": null,
+                "timerSeconds": null
+            },
+            {
+                "id": 206638,
+                "position": 3,
+                "taskLevelId": 151102,
+                "taskLevelType": "regular",
+                "type": "scratch",
+                "title": "Where to start 3 (with autocheck Scratch)",
+                "levelScore": 1,
+                "isAllowFail": false,
+                "comics": [
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 3 (1).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 3 (2).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 3 (3).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/1_1598340402.PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/2_1598340433.PNG",
+                        "type": "image"
+                    }
+                ],
+                "hide": false,
+                "skillV2Ids": [],
+                "config": {
+                    "fail": "",
+                    "hint": "",
+                    "math": null,
+                    "msgs": "",
+                    "tips": [
+                        {
+                            "id": "1563211225752-5",
+                            "tip": {
+                                "id": "1563211225752-5",
+                                "image": {
+                                    "id": 22947,
+                                    "uid": 1563211230789,
+                                    "url": "/uploads/2019/07/tempsnip1.png",
+                                    "name": "tempsnip1.png",
+                                    "status": "success"
+                                },
+                                "title": "Спрятан ли спрайт?",
+                                "videoUrl": "",
+                                "description": "Вот здесь можно посмотреть, спрятан ли спрайт, и вручную его спрятать или показать.",
+                                "errorsRequired": 0
+                            },
+                            "image": {
+                                "id": 125754,
+                                "uid": 1616072616491,
+                                "url": "/uploads/2021/03/bo3-2.png",
+                                "name": "bo3-2.png",
+                                "status": "success",
+                                "createdAt": 1616072616,
+                                "updatedAt": 1616072616
+                            },
+                            "title": "Is the sprite hidden?",
+                            "videoUrl": "",
+                            "description": "Here you can see if the sprite is hidden and manually hide or show it.",
+                            "errorsRequired": 0
+                        }
+                    ],
+                    "type": "scratch",
+                    "user": 170903,
+                    "hints": [
+                        {
+                            "id": "c052e395-d5e5-4285-81aa-857f6794a478",
+                            "url": "/uploads/2021/03/bo3_1616072587.png",
+                            "text": "The Show command makes the sprite visible.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125752,
+                                "uid": 1616072587948,
+                                "url": "/uploads/2021/03/bo3_1616072587.png",
+                                "name": "bo3.png",
+                                "status": "success",
+                                "createdAt": 1616072587,
+                                "updatedAt": 1616072587
+                            },
+                            "title": "Emerging",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "a592701c-93c0-41f5-ab73-234329f5700c",
+                            "url": "",
+                            "text": "Before disappearing, the sorceress says that she wants to drink the potion.",
+                            "type": "gif",
+                            "title": "The sorceress drinks the potion",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "35f7e0ae-605b-46d2-aa18-6225f7d4a5f1",
+                            "url": "/uploads/2021/03/bo3-1.png",
+                            "text": "The Hide command makes the sprite invisible.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125753,
+                                "uid": 1616072608876,
+                                "url": "/uploads/2021/03/bo3-1.png",
+                                "name": "bo3-1.png",
+                                "status": "success",
+                                "createdAt": 1616072608,
+                                "updatedAt": 1616072608
+                            },
+                            "title": "Disappearing",
+                            "evaluationType": "markCompleted"
+                        }
+                    ],
+                    "title": "",
+                    "comics": [
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 3 (1).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 3 (2).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 3 (3).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/1_1598340402.PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/2_1598340433.PNG",
+                            "type": "image"
+                        }
+                    ],
+                    "popups": [],
+                    "congrat": "",
+                    "project": 9633847,
+                    "language": "eng-ENG",
+                    "question": "",
+                    "quizData": {
+                        "items": [
+                            {
+                                "id": "1549347472268-4",
+                                "text": "",
+                                "image": null,
+                                "categories": []
+                            }
+                        ],
+                        "choices": [
+                            {
+                                "id": "1549347472268-1",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            },
+                            {
+                                "id": "1549347472268-2",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            }
+                        ],
+                        "comment": "",
+                        "question": "",
+                        "taskType": "multiple-choice",
+                        "allowFail": false,
+                        "categories": [
+                            {
+                                "id": "1549347472268-3",
+                                "text": "",
+                                "image": null
+                            }
+                        ],
+                        "explanation": "",
+                        "questionImage": null
+                    },
+                    "roleTips": [],
+                    "template": "scratch",
+                    "tutorial": [
+                        {
+                            "text": "Add an appropriate background and delete the one that is currently in place.",
+                            "image": "",
+                            "video": "",
+                            "popupCorner": "topLeft",
+                            "highlightType": "element",
+                            "highlightCorner": "topLeft",
+                            "highlightElement": null,
+                            "highlightElementId": ""
+                        }
+                    ],
+                    "description": "",
+                    "presentation": {
+                        "text": "The sorceress appears, drinks the potion, and disappears.",
+                        "type": "scratch",
+                        "image": null,
+                        "title": "Disappearing potion",
+                        "video": null,
+                        "projectId": "10661520"
+                    },
+                    "force_enabled": true,
+                    "congrat_repeat": "",
+                    "autoCheckConfig": [
+                        [
+                            "c052e395-d5e5-4285-81aa-857f6794a478",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 97.62962962963246,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "665",
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 145.62962962963246,
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": "/-P%4*sxHlq;,*E#;th-",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440,
+                                                "y": 98,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "130",
+                                                "id": "/-P%4*sxHlq;,*E#;th-",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "=COS{Hcii(iR#,l7,)aU",
+                                                        "shadow": "=COS{Hcii(iR#,l7,)aU"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "5o6a,_f9Pv[6vHhCfUAw",
+                                                        "shadow": "5o6a,_f9Pv[6vHhCfUAw"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "7lt:k}D5g){~%-!8ogQ$",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "5o6a,_f9Pv[6vHhCfUAw",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Hello!"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "=COS{Hcii(iR#,l7,)aU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-358",
+                                                "y": "130",
+                                                "id": "/-P%4*sxHlq;,*E#;th-",
+                                                "next": "y]21Bw4S*EwE52y1@auy",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "=COS{Hcii(iR#,l7,)aU",
+                                                        "shadow": "=COS{Hcii(iR#,l7,)aU"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "5o6a,_f9Pv[6vHhCfUAw",
+                                                        "shadow": "5o6a,_f9Pv[6vHhCfUAw"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "7lt:k}D5g){~%-!8ogQ$",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "5o6a,_f9Pv[6vHhCfUAw",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Hello!"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "=COS{Hcii(iR#,l7,)aU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 145.62962962963246,
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": "/-P%4*sxHlq;,*E#;th-",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440,
+                                                "y": 98,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-267",
+                                                "y": "511",
+                                                "id": "y]21Bw4S*EwE52y1@auy",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_hide",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "a592701c-93c0-41f5-ab73-234329f5700c",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 145.62962962963246,
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": "/-P%4*sxHlq;,*E#;th-",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440,
+                                                "y": 98,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "130",
+                                                "id": "/-P%4*sxHlq;,*E#;th-",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "=COS{Hcii(iR#,l7,)aU",
+                                                        "shadow": "=COS{Hcii(iR#,l7,)aU"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "5o6a,_f9Pv[6vHhCfUAw",
+                                                        "shadow": "5o6a,_f9Pv[6vHhCfUAw"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "7lt:k}D5g){~%-!8ogQ$",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "5o6a,_f9Pv[6vHhCfUAw",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Hello!"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "=COS{Hcii(iR#,l7,)aU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-358",
+                                                "y": "130",
+                                                "id": "/-P%4*sxHlq;,*E#;th-",
+                                                "next": "y]21Bw4S*EwE52y1@auy",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "=COS{Hcii(iR#,l7,)aU",
+                                                        "shadow": "=COS{Hcii(iR#,l7,)aU"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "5o6a,_f9Pv[6vHhCfUAw",
+                                                        "shadow": "5o6a,_f9Pv[6vHhCfUAw"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "7lt:k}D5g){~%-!8ogQ$",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "5o6a,_f9Pv[6vHhCfUAw",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Hello!"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "=COS{Hcii(iR#,l7,)aU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 145.62962962963246,
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": "/-P%4*sxHlq;,*E#;th-",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440,
+                                                "y": 98,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-267",
+                                                "y": "511",
+                                                "id": "y]21Bw4S*EwE52y1@auy",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_hide",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "35f7e0ae-605b-46d2-aa18-6225f7d4a5f1",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-358",
+                                                "y": "130",
+                                                "id": "/-P%4*sxHlq;,*E#;th-",
+                                                "next": "y]21Bw4S*EwE52y1@auy",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "=COS{Hcii(iR#,l7,)aU",
+                                                        "shadow": "=COS{Hcii(iR#,l7,)aU"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "5o6a,_f9Pv[6vHhCfUAw",
+                                                        "shadow": "5o6a,_f9Pv[6vHhCfUAw"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "7lt:k}D5g){~%-!8ogQ$",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "5o6a,_f9Pv[6vHhCfUAw",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Hello!"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "=COS{Hcii(iR#,l7,)aU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440.1481481481481,
+                                                "y": 145.62962962963246,
+                                                "id": "7lt:k}D5g){~%-!8ogQ$",
+                                                "next": "/-P%4*sxHlq;,*E#;th-",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_show",
+                                                "parent": "4^E8r^`*8JhEFY9qxGe#",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 440,
+                                                "y": 98,
+                                                "id": "4^E8r^`*8JhEFY9qxGe#",
+                                                "next": "7lt:k}D5g){~%-!8ogQ$",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-267",
+                                                "y": "511",
+                                                "id": "y]21Bw4S*EwE52y1@auy",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "looks_hide",
+                                                "parent": "/-P%4*sxHlq;,*E#;th-",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Witch"
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    "presentation_only": 0,
+                    "isTaskSequenceEnabled": false
+                },
+                "quiz3Data": [],
+                "timerType": null,
+                "timerSeconds": null
+            },
+            {
+                "id": 206639,
+                "position": 4,
+                "taskLevelId": 151103,
+                "taskLevelType": "regular",
+                "type": "scratch",
+                "title": "Where to start 4 (with autocheck Scratch)",
+                "levelScore": 1,
+                "isAllowFail": false,
+                "comics": [
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 4 (1).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 4 (2).PNG",
+                        "type": "image"
+                    },
+                    {
+                        "url": "/uploads/2020/08/М1У3 С чего начать 4 (3).PNG",
+                        "type": "image"
+                    }
+                ],
+                "hide": false,
+                "skillV2Ids": [],
+                "config": {
+                    "fail": "",
+                    "hint": "",
+                    "math": null,
+                    "msgs": "",
+                    "tips": [
+                        {
+                            "id": "1563212067866-5",
+                            "tip": {
+                                "id": "1563212067866-5",
+                                "image": {
+                                    "id": 22949,
+                                    "uid": 1563212078518,
+                                    "url": "/uploads/2019/07/tempsnip-2.png",
+                                    "name": "tempsnip-2.png",
+                                    "status": "success"
+                                },
+                                "title": "Размер спрайта",
+                                "videoUrl": "",
+                                "description": "Здесь можно узнать, какой размер спрайта сейчас, а также изменить его вручную.",
+                                "errorsRequired": 0
+                            },
+                            "image": {
+                                "id": 125757,
+                                "uid": 1616072751390,
+                                "url": "/uploads/2021/03/bo4-1.png",
+                                "name": "bo4-1.png",
+                                "status": "success",
+                                "createdAt": 1616072751,
+                                "updatedAt": 1616072751
+                            },
+                            "title": "Sprite size",
+                            "videoUrl": "",
+                            "description": "Here you can find out what size the sprite is now and also manually change it.",
+                            "errorsRequired": 0
+                        }
+                    ],
+                    "type": "scratch",
+                    "user": 170903,
+                    "hints": [
+                        {
+                            "id": "658625de-cb41-4833-9dc0-0f8d8e393437",
+                            "url": "",
+                            "text": "Before shrinking, the wizard says he will drink the potion.",
+                            "type": "gif",
+                            "title": "Drinking the potion",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "b8927f25-f3a0-4fbe-b9d6-f4067c1191ac",
+                            "url": "/uploads/2021/03/bo4_1616072739.png",
+                            "text": "Use this command to abruptly resize something.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125756,
+                                "uid": 1616072739998,
+                                "url": "/uploads/2021/03/bo4_1616072739.png",
+                                "name": "bo4.png",
+                                "status": "success",
+                                "createdAt": 1616072739,
+                                "updatedAt": 1616072739
+                            },
+                            "title": "Abrupt resizing"
+                        },
+                        {
+                            "id": "3f2075c1-7cbf-4887-bc81-a4619fce54e6",
+                            "url": "",
+                            "text": "Set the desired size of the wizard at the beginning of the script",
+                            "type": "gif",
+                            "title": "At the beginning, the wizard is his normal height again!"
+                        }
+                    ],
+                    "title": "",
+                    "comics": [
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 4 (1).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 4 (2).PNG",
+                            "type": "image"
+                        },
+                        {
+                            "url": "/uploads/2020/08/М1У3 С чего начать 4 (3).PNG",
+                            "type": "image"
+                        }
+                    ],
+                    "popups": [],
+                    "congrat": "",
+                    "project": 9633998,
+                    "language": "eng-ENG",
+                    "question": "",
+                    "quizData": {
+                        "items": [
+                            {
+                                "id": "1562351840397-4",
+                                "text": "",
+                                "image": null,
+                                "categories": []
+                            }
+                        ],
+                        "choices": [
+                            {
+                                "id": "1562351840397-1",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            },
+                            {
+                                "id": "1562351840397-2",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            }
+                        ],
+                        "comment": "",
+                        "question": "",
+                        "taskType": "multiple-choice",
+                        "allowFail": false,
+                        "categories": [
+                            {
+                                "id": "1562351840397-3",
+                                "text": "",
+                                "image": null
+                            }
+                        ],
+                        "explanation": "",
+                        "questionImage": null
+                    },
+                    "roleTips": [],
+                    "template": "scratch",
+                    "tutorial": [],
+                    "description": "",
+                    "presentation": {
+                        "text": "The wizard shrank under the influence of the potion. But if you run the project again, the wizard returns to his normal size!",
+                        "type": "scratch",
+                        "image": null,
+                        "title": "Sorceress and teacher",
+                        "video": null,
+                        "projectId": "10661531"
+                    },
+                    "force_enabled": true,
+                    "congrat_repeat": "",
+                    "autoCheckConfig": [
+                        [
+                            "658625de-cb41-4833-9dc0-0f8d8e393437",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-233",
+                                                "y": "600",
+                                                "id": "oWHLfunuNY{Ut0/sk$T.",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "ehxeF8z/#mMu+U7d#Eel",
+                                                        "shadow": "ehxeF8z/#mMu+U7d#Eel"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "ehxeF8z/#mMu+U7d#Eel",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "30"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "oWHLfunuNY{Ut0/sk$T.",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": "oWHLfunuNY{Ut0/sk$T.",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "P@S]-pIImscG]1fLugE!",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-234",
+                                                "y": "600",
+                                                "id": "P@S]-pIImscG]1fLugE!",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "VH~)icstM0+?WWD~6KB$",
+                                                        "shadow": "VH~)icstM0+?WWD~6KB$"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VH~)icstM0+?WWD~6KB$",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "100"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": "oWHLfunuNY{Ut0/sk$T.",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-233",
+                                                "y": "600",
+                                                "id": "oWHLfunuNY{Ut0/sk$T.",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "ehxeF8z/#mMu+U7d#Eel",
+                                                        "shadow": "ehxeF8z/#mMu+U7d#Eel"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "ehxeF8z/#mMu+U7d#Eel",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "30"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "oWHLfunuNY{Ut0/sk$T.",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "b8927f25-f3a0-4fbe-b9d6-f4067c1191ac",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-233",
+                                                "y": "600",
+                                                "id": "oWHLfunuNY{Ut0/sk$T.",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "ehxeF8z/#mMu+U7d#Eel",
+                                                        "shadow": "ehxeF8z/#mMu+U7d#Eel"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "ehxeF8z/#mMu+U7d#Eel",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "30"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "oWHLfunuNY{Ut0/sk$T.",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": "oWHLfunuNY{Ut0/sk$T.",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "P@S]-pIImscG]1fLugE!",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-234",
+                                                "y": "600",
+                                                "id": "P@S]-pIImscG]1fLugE!",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "VH~)icstM0+?WWD~6KB$",
+                                                        "shadow": "VH~)icstM0+?WWD~6KB$"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VH~)icstM0+?WWD~6KB$",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "100"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": "oWHLfunuNY{Ut0/sk$T.",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-233",
+                                                "y": "600",
+                                                "id": "oWHLfunuNY{Ut0/sk$T.",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "ehxeF8z/#mMu+U7d#Eel",
+                                                        "shadow": "ehxeF8z/#mMu+U7d#Eel"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "ehxeF8z/#mMu+U7d#Eel",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "30"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "oWHLfunuNY{Ut0/sk$T.",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            "3f2075c1-7cbf-4887-bc81-a4619fce54e6",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 72.74074074074072,
+                                                "y": 93.18518518518464,
+                                                "id": "X#fMF}o7LR1jksI`T$Sv",
+                                                "next": "P@S]-pIImscG]1fLugE!",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-234",
+                                                "y": "600",
+                                                "id": "P@S]-pIImscG]1fLugE!",
+                                                "next": "+[wds*o=M}J0(u,XuQU@",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "VH~)icstM0+?WWD~6KB$",
+                                                        "shadow": "VH~)icstM0+?WWD~6KB$"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "X#fMF}o7LR1jksI`T$Sv",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "VH~)icstM0+?WWD~6KB$",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "100"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "55",
+                                                "id": "+[wds*o=M}J0(u,XuQU@",
+                                                "next": "oWHLfunuNY{Ut0/sk$T.",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SECS": {
+                                                        "name": "SECS",
+                                                        "block": "-~RpVpAbje{Q_@z`cx84",
+                                                        "shadow": "-~RpVpAbje{Q_@z`cx84"
+                                                    },
+                                                    "MESSAGE": {
+                                                        "name": "MESSAGE",
+                                                        "block": "{b_Pw]f[|!3_v+l:ArkH",
+                                                        "shadow": "{b_Pw]f[|!3_v+l:ArkH"
+                                                    }
+                                                },
+                                                "opcode": "looks_sayforsecs",
+                                                "parent": "P@S]-pIImscG]1fLugE!",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "{b_Pw]f[|!3_v+l:ArkH",
+                                                "next": null,
+                                                "fields": {
+                                                    "TEXT": {
+                                                        "name": "TEXT",
+                                                        "value": "Come on, let's try your shrinking potion."
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "text",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "-~RpVpAbje{Q_@z`cx84",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "2"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": true,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "x": "-233",
+                                                "y": "600",
+                                                "id": "oWHLfunuNY{Ut0/sk$T.",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": "ehxeF8z/#mMu+U7d#Eel",
+                                                        "shadow": "ehxeF8z/#mMu+U7d#Eel"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "+[wds*o=M}J0(u,XuQU@",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "ehxeF8z/#mMu+U7d#Eel",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "30"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "oWHLfunuNY{Ut0/sk$T.",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Wizard"
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    "presentation_only": 0
+                },
+                "quiz3Data": [],
+                "timerType": null,
+                "timerSeconds": null
+            },
+            {
+                "id": 206640,
+                "position": 5,
+                "taskLevelId": 151104,
+                "taskLevelType": "regular",
+                "type": "scratch",
+                "title": "Where to start 5 (with autocheck Scratch)",
+                "levelScore": 1,
+                "isAllowFail": false,
+                "comics": [],
+                "hide": false,
+                "skillV2Ids": [],
+                "config": {
+                    "fail": "",
+                    "hint": "",
+                    "math": null,
+                    "msgs": "",
+                    "tips": [],
+                    "type": "scratch",
+                    "user": 170903,
+                    "hints": [
+                        {
+                            "id": "fa680d5e-0308-491e-bbe4-5a25940df311",
+                            "url": "/uploads/2021/03/bo5_1616072838.png",
+                            "text": "Set the size at startup to 200%.",
+                            "type": "gif",
+                            "image": {
+                                "id": 125758,
+                                "uid": 1616072838920,
+                                "url": "/uploads/2021/03/bo5_1616072838.png",
+                                "name": "bo5.png",
+                                "status": "success",
+                                "createdAt": 1616072838,
+                                "updatedAt": 1616072838
+                            },
+                            "title": "Initial size",
+                            "evaluationType": "markCompleted"
+                        },
+                        {
+                            "id": "46bfcee8-a1df-425a-9fcb-181cdc8c3054",
+                            "url": "/uploads/2021/03/bo5-1.png",
+                            "text": "To reduce the size, we need to specify a value with a minus sign: \"-10\".",
+                            "type": "gif",
+                            "image": {
+                                "id": 125759,
+                                "uid": 1616072845772,
+                                "url": "/uploads/2021/03/bo5-1.png",
+                                "name": "bo5-1.png",
+                                "status": "success",
+                                "createdAt": 1616072845,
+                                "updatedAt": 1616072845
+                            },
+                            "title": "Smooth reduction in size",
+                            "evaluationType": "markCompleted"
+                        }
+                    ],
+                    "title": "",
+                    "comics": [],
+                    "popups": [],
+                    "congrat": "",
+                    "project": 9634062,
+                    "language": "eng-ENG",
+                    "question": "",
+                    "quizData": {
+                        "items": [
+                            {
+                                "id": "1549347472268-4",
+                                "text": "",
+                                "image": null,
+                                "categories": []
+                            }
+                        ],
+                        "choices": [
+                            {
+                                "id": "1549347472268-1",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            },
+                            {
+                                "id": "1549347472268-2",
+                                "text": "",
+                                "image": null,
+                                "correct": false
+                            }
+                        ],
+                        "comment": "",
+                        "question": "",
+                        "taskType": "multiple-choice",
+                        "allowFail": false,
+                        "categories": [
+                            {
+                                "id": "1549347472268-3",
+                                "text": "",
+                                "image": null
+                            }
+                        ],
+                        "explanation": "",
+                        "questionImage": null
+                    },
+                    "roleTips": [],
+                    "template": "scratch",
+                    "tutorial": [
+                        {
+                            "text": "Add an appropriate background and delete the one that is currently in place.",
+                            "image": "",
+                            "video": "",
+                            "popupCorner": "topLeft",
+                            "highlightType": "element",
+                            "highlightCorner": "topLeft",
+                            "highlightElement": null,
+                            "highlightElementId": ""
+                        }
+                    ],
+                    "description": "",
+                    "presentation": {
+                        "text": "The balloon is large at first and is in a warm room. And then it's outside in the cold and becomes smaller.",
+                        "type": "scratch",
+                        "image": null,
+                        "title": "Balloon",
+                        "video": null,
+                        "projectId": "6112716"
+                    },
+                    "force_enabled": true,
+                    "congrat_repeat": "",
+                    "autoCheckConfig": [
+                        [
+                            "fa680d5e-0308-491e-bbe4-5a25940df311",
+                            [
+                                [
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": 120.1481481481481,
+                                                "y": 136.1481481481476,
+                                                "id": "3N{[6j~l^wn8RReERK4X",
+                                                "next": "jcR8K^,LmzDg(Z,y9e~?",
+                                                "fields": [],
+                                                "inputs": [],
+                                                "opcode": "event_whenflagclicked",
+                                                "parent": null,
+                                                "shadow": false,
+                                                "topLevel": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "715",
+                                                "id": "jcR8K^,LmzDg(Z,y9e~?",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": ".A+?aYzXp=#`3jCn-#cU",
+                                                        "shadow": ".A+?aYzXp=#`3jCn-#cU"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "3N{[6j~l^wn8RReERK4X",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": ".A+?aYzXp=#`3jCn-#cU",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "200"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "jcR8K^,LmzDg(Z,y9e~?",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            }
+                                        ],
+                                        "sprite": "Balloon1"
+                                    },
+                                    {
+                                        "blocks": [
+                                            {
+                                                "x": "-226",
+                                                "y": "127",
+                                                "id": "bXerj]Ts1sSx,5gS^+!`",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "TIMES": {
+                                                        "name": "TIMES",
+                                                        "block": "SDT-Ew:cU`(V`I6dOTrG",
+                                                        "shadow": "SDT-Ew:cU`(V`I6dOTrG"
+                                                    },
+                                                    "SUBSTACK": {
+                                                        "name": "SUBSTACK",
+                                                        "block": "e)Ai98/ax5d)x4H|UMI1",
+                                                        "shadow": null
+                                                    }
+                                                },
+                                                "opcode": "control_repeat",
+                                                "parent": "jcR8K^,LmzDg(Z,y9e~?",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "SDT-Ew:cU`(V`I6dOTrG",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "10"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_whole_number",
+                                                "parent": "bXerj]Ts1sSx,5gS^+!`",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-226",
+                                                "y": "416",
+                                                "id": "e)Ai98/ax5d)x4H|UMI1",
+                                                "next": null,
+                                                "fields": [],
+                                                "inputs": {
+                                                    "CHANGE": {
+                                                        "name": "CHANGE",
+                                                        "block": "gz4a{Tc%.kHZ98;.ePRP",
+                                                        "shadow": "gz4a{Tc%.kHZ98;.ePRP"
+                                                    }
+                                                },
+                                                "opcode": "looks_changesizeby",
+                                                "parent": "bXerj]Ts1sSx,5gS^+!`",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            },
+                                            {
+                                                "id": "gz4a{Tc%.kHZ98;.ePRP",
+                                                "next": null,
+                                                "fields": {
+                                                    "NUM": {
+                                                        "name": "NUM",
+                                                        "value": "-10"
+                                                    }
+                                                },
+                                                "inputs": [],
+                                                "opcode": "math_number",
+                                                "parent": "e)Ai98/ax5d)x4H|UMI1",
+                                                "shadow": true,
+                                                "topLevel": false,
+                                                "strictAutocheck": true
+                                            },
+                                            {
+                                                "x": "-358",
+                                                "y": "715",
+                                                "id": "jcR8K^,LmzDg(Z,y9e~?",
+                                                "next": "bXerj]Ts1sSx,5gS^+!`",
+                                                "fields": [],
+                                                "inputs": {
+                                                    "SIZE": {
+                                                        "name": "SIZE",
+                                                        "block": ".A+?aYzXp=#`3jCn-#cU",
+                                                        "shadow": ".A+?aYzXp=#`3jCn-#cU"
+                                                    }
+                                                },
+                                                "opcode": "looks_setsizeto",
+                                                "parent": "3N{[6j~l^wn8RReERK4X",
+                                                "shadow": false,
+                                                "topLevel": false
+                                            }

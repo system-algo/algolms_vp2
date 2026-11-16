@@ -12,87 +12,36 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Extra task: Graphic editor - Task 1",
-      "activityType": "scratch",
+      "title": "Graphic editor — Fill",
+      "project_title": "M1L5 graphic arts",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9639729",
+      "demo_project_id": null,
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Program Extra task: Graphic editor - Task 1",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 1\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Change the color of the apple from red to green",
+          "text": "Open the Costumes tab, select the Fill tool, choose green color, and click on the apple.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g1.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Change the color of the apple from red to green",
+          "url": "/vp-assets/19847/g1.webp",
+          "text": "Open the Costumes tab and use the Fill tool to turn the apple from red to green."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_1_state_1",
-          "stateId": "VP2_M1L3_2_1_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Trying on a dress"
-        }
-      ],
-      "project_title": "M1L3 Trying on a dress",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_2_2",
@@ -100,87 +49,36 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Extra task: Graphic editor - Task 2",
-      "activityType": "scratch",
+      "title": "Graphic editor — Reshape",
+      "project_title": "M1L5 graphic arts1",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9639743",
+      "demo_project_id": null,
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Program Extra task: Graphic editor - Task 2",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 2\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Change the shape of the flag according to the example",
+          "text": "Select the Reshape tool, click on the right edge of the flag to create a point, and pull it inward.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g2.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Change the shape of the flag according to the example",
+          "url": "/vp-assets/19847/g2.webp",
+          "text": "Use the Reshape tool to click and pull the edge of the green flag into a triangular notch like in the example."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_2_state_1",
-          "stateId": "VP2_M1L3_2_2_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3"
-        }
-      ],
-      "project_title": "M1L3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_2_3",
@@ -188,87 +86,50 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Extra task: Graphic editor - Task 3",
-      "activityType": "scratch",
+      "title": "Graphic editor — Character creation",
+      "project_title": "M1L5 graphic arts2",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Girls_in_the_castle.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9639758",
+      "demo_project_id": null,
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Program Extra task: Graphic editor - Task 3",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 3\".",
-          "type": "svg",
-          "url": ""
+          "title": "Draw 3 circles of different sizes",
+          "text": "Using the Circle tool, draw 3 circles of different sizes as shown in the example.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g3.webp"
         },
         {
           "id": "req_3_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "title": "Draw the snowman's hat",
+          "text": "Use the Rectangle and Reshape tools, draw the snowman's hat.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g3-1.webp"
         },
         {
           "id": "req_3_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Add details with Brush",
+          "text": "Use the Brush tool to add details (eyes, smile, buttons, stick arms).",
+          "type": "gif",
+          "url": "/vp-assets/19847/g3-2.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Draw a snowman character",
+          "url": "/vp-assets/19847/g3.webp",
+          "text": "Create your snowman character from scratch using circles for body, reshape on rectangle for hat, and brush for face and arms."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_3_state_1",
-          "stateId": "VP2_M1L3_2_3_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Girls_in_the_castle.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Girls in the castle"
-        }
-      ],
-      "project_title": "M1L3 Girls in the castle",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_2_4",
@@ -276,87 +137,50 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Extra task: Graphic editor - Task 4",
-      "activityType": "scratch",
+      "title": "Graphic editor — Working with tools",
+      "project_title": "M1L5 graphic arts3",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Before_takeoff.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9639774",
+      "demo_project_id": null,
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Program Extra task: Graphic editor - Task 4",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 4\".",
-          "type": "svg",
-          "url": ""
+          "title": "Draw the middle of the flower",
+          "text": "Use the Circle tool to draw the middle of the flower.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g4.webp"
         },
         {
           "id": "req_4_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "title": "Draw a petal",
+          "text": "Use the Circle and Reshape tools to draw a petal.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g4-1.webp"
         },
         {
           "id": "req_4_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Duplicate and rotate petals",
+          "text": "Use the Copy and Rotate functions to draw the right number of petals.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g4-2.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Draw a flower with tools",
+          "url": "/vp-assets/19847/g4.webp",
+          "text": "Draw the yellow center circle, use reshape to sculpt a petal, and copy-paste-rotate to arrange 5 petals around the center."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_4_state_1",
-          "stateId": "VP2_M1L3_2_4_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Before_takeoff.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Before takeoff"
-        }
-      ],
-      "project_title": "M1L3 Before takeoff",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_2_5",
@@ -364,87 +188,36 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Extra task: Graphic editor - Task 5",
-      "activityType": "scratch",
+      "title": "Graphic editor — Costume change",
+      "project_title": "M1L5 graphic arts 4",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Drawing_a_picture.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9639793",
+      "demo_project_id": null,
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Program Extra task: Graphic editor - Task 5",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 5\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Change sprite's costume",
+          "text": "Use the graphic tools to change the sprite's costume according to the example.",
+          "type": "gif",
+          "url": "/vp-assets/19847/g5.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Modify beetle costume",
+          "url": "/vp-assets/19847/g5.webp",
+          "text": "Ungroup the beetle, change colors, and reshape legs and head according to the example."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_5_state_1",
-          "stateId": "VP2_M1L3_2_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Drawing_a_picture.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Drawing a picture"
-        }
-      ],
-      "project_title": "M1L3 Drawing a picture",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_2_6",
@@ -452,87 +225,16 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Extra task: Graphic editor - Task 6",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "M1L3_Penguin.sb3",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_6_1",
-          "title": "Program Extra task: Graphic editor - Task 6",
-          "text": "Program the sprites and animations for \"Extra task: Graphic editor - Task 6\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Extra task: Graphic editor - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_2_6_state_1",
-          "stateId": "VP2_M1L3_2_6_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Penguin.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Penguin"
-        }
-      ],
-      "project_title": "M1L3 Penguin",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "title": "Rating",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "rating",
+      "question": "Did you like the task?",
+      "label": "😊",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "media": []
     }
   ]
 }

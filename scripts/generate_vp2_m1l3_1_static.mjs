@@ -1,0 +1,351 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+const courseId = 'VP2';
+const moduleId = 'M1-Visual-Programming-Basics';
+const pageId = 'VP2_M1L3_1';
+const outDir = path.resolve(`public/courses/${courseId}/${moduleId}/pages/${pageId}`);
+fs.mkdirSync(outDir, { recursive: true });
+
+const tasks = [
+  {
+    id: `${pageId}_1`,
+    taskId: `${pageId}_1`,
+    position: 1,
+    level_position: 1,
+    levelPosition: 1,
+    title: "Where to start 1 (with autocheck Scratch)",
+    project_title: "Draw a picture",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9633775",
+    demo_project_id: "9633740",
+    drawerOpen: true,
+    command_keys: ["looks", "control", "events"],
+    requirements: [
+      {
+        id: "req_1_1",
+        title: "Set the right costume at the beginning",
+        text: "So that the picture always starts on a clean page, after the start command, set the costume with a blank canvas.",
+        type: "gif",
+        url: ""
+      },
+      {
+        id: "req_1_2",
+        title: "Changing costumes every second",
+        text: "The first 4 costumes change every second, and it seems like a drawing appears on the canvas. Think about how to do it.",
+        type: "gif",
+        url: ""
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Draw a picture",
+        text: "The picture should start on a clean page. And only then does it change costumes when adding a drawing."
+      }
+    ]
+  },
+  {
+    id: `${pageId}_2`,
+    taskId: `${pageId}_2`,
+    position: 2,
+    level_position: 2,
+    levelPosition: 2,
+    title: "Where to start 2 (with autocheck Scratch)",
+    project_title: "Penguin coming from Antarctica",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9633799",
+    demo_project_id: "10661509",
+    drawerOpen: true,
+    command_keys: ["looks", "control", "events"],
+    requirements: [
+      {
+        id: "req_2_1",
+        title: "The first background - \"Antarctica\"",
+        text: "The penguin begins its journey from Antarctica — this particular background should be the first.",
+        type: "gif",
+        url: "/vp-assets/19846/bo2_1616072433.webp"
+      },
+      {
+        id: "req_2_2",
+        title: "Change of costume and background",
+        text: "While the \"Antarctica\" background is on, the penguin takes \"steps,\" meaning it changes its costume. After several costume changes, the background changes.",
+        type: "gif",
+        url: "/vp-assets/19846/bo2-2.webp"
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Penguin coming from Antarctica",
+        text: "The penguin is going on a journey! And it's beginning its journey from its native Antarctica."
+      }
+    ]
+  },
+  {
+    id: `${pageId}_3`,
+    taskId: `${pageId}_3`,
+    position: 3,
+    level_position: 3,
+    levelPosition: 3,
+    title: "Where to start 3 (with autocheck Scratch)",
+    project_title: "Disappearing potion",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9633847",
+    demo_project_id: "10661520",
+    drawerOpen: true,
+    command_keys: ["looks", "events"],
+    requirements: [
+      {
+        id: "req_3_1",
+        title: "Emerging",
+        text: "The Show command makes the sprite visible.",
+        type: "gif",
+        url: "/vp-assets/19846/bo3_1616072587.webp"
+      },
+      {
+        id: "req_3_2",
+        title: "The sorceress drinks the potion",
+        text: "Before disappearing, the sorceress says that she wants to drink the potion.",
+        type: "gif",
+        url: ""
+      },
+      {
+        id: "req_3_3",
+        title: "Disappearing",
+        text: "The Hide command makes the sprite invisible.",
+        type: "gif",
+        url: "/vp-assets/19846/bo3-1.webp"
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Disappearing potion",
+        text: "The sorceress appears, drinks the potion, and disappears."
+      }
+    ]
+  },
+  {
+    id: `${pageId}_4`,
+    taskId: `${pageId}_4`,
+    position: 4,
+    level_position: 4,
+    levelPosition: 4,
+    title: "Where to start 4 (with autocheck Scratch)",
+    project_title: "Sorceress and teacher",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9633998",
+    demo_project_id: "10661531",
+    drawerOpen: true,
+    command_keys: ["looks", "events"],
+    requirements: [
+      {
+        id: "req_4_1",
+        title: "Drinking the potion",
+        text: "Before shrinking, the wizard says he will drink the potion.",
+        type: "gif",
+        url: ""
+      },
+      {
+        id: "req_4_2",
+        title: "Abrupt resizing",
+        text: "Use this command to abruptly resize something.",
+        type: "gif",
+        url: "/vp-assets/19846/bo4_1616072739.webp"
+      },
+      {
+        id: "req_4_3",
+        title: "At the beginning, the wizard is his normal height again!",
+        text: "Set the desired size of the wizard at the beginning of the script",
+        type: "gif",
+        url: ""
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Sorceress and teacher",
+        text: "The wizard shrank under the influence of the potion. But if you run the project again, the wizard returns to his normal size!"
+      }
+    ]
+  },
+  {
+    id: `${pageId}_5`,
+    taskId: `${pageId}_5`,
+    position: 5,
+    level_position: 5,
+    levelPosition: 5,
+    title: "Where to start 5 (with autocheck Scratch)",
+    project_title: "Balloon",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9634062",
+    demo_project_id: "6112716",
+    drawerOpen: true,
+    command_keys: ["looks", "control", "events"],
+    requirements: [
+      {
+        id: "req_5_1",
+        title: "Initial size",
+        text: "Set the size at startup to 200%.",
+        type: "gif",
+        url: "/vp-assets/19846/bo5_1616072838.webp"
+      },
+      {
+        id: "req_5_2",
+        title: "Smooth reduction in size",
+        text: "To reduce the size, we need to specify a value with a minus sign: \"-10\".",
+        type: "gif",
+        url: "/vp-assets/19846/bo5-1.webp"
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Balloon",
+        text: "The balloon is large at first and is in a warm room. And then it's outside in the cold and becomes smaller."
+      }
+    ]
+  },
+  {
+    id: `${pageId}_6`,
+    taskId: `${pageId}_6`,
+    position: 6,
+    level_position: 6,
+    levelPosition: 6,
+    title: "Rating",
+    level_type: "rating",
+    selectedType: "rating",
+    activityType: "rating",
+    question: "Did you like the task?",
+    label: "😊",
+    starter_project_id: null,
+    demo_project_id: null,
+    requirements: [],
+    media: []
+  },
+  {
+    id: `${pageId}_7`,
+    taskId: `${pageId}_7`,
+    position: 7,
+    level_position: 7,
+    levelPosition: 7,
+    title: "Where to start 6 (Bonus: Pterodactyl)",
+    project_title: "Pterodactyl",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9634094",
+    demo_project_id: "9634110",
+    drawerOpen: true,
+    command_keys: ["looks", "control", "events"],
+    requirements: [
+      {
+        id: "req_7_1",
+        title: "Approaching",
+        text: "To make it seem like the pterodactyl is flying closer, we need to increase its size and change the costume. And we need to repeat that several times. Add a command that will repeat these steps.",
+        type: "gif",
+        url: "/vp-assets/19846/bo7_1616072917.webp"
+      },
+      {
+        id: "req_7_2",
+        title: "Initial placement",
+        text: "Think about what properties change for the pterodactyl. They need to be set at startup. For example, set the initial size to 25%.",
+        type: "gif",
+        url: ""
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Pterodactyl",
+        text: "It seems like the pterodactyl is flying right here! It is growing in size and flapping its wings. But in the beginning, it is still far away, small in size and with its wings spread."
+      }
+    ]
+  },
+  {
+    id: `${pageId}_8`,
+    taskId: `${pageId}_8`,
+    position: 8,
+    level_position: 8,
+    levelPosition: 8,
+    title: "Where to start 7 (Bonus: Wizard and dog)",
+    project_title: "Wizard and dog",
+    level_type: "scratch",
+    selectedType: "scratch",
+    activityType: "scratch",
+    starter_project_id: "9634128",
+    demo_project_id: "10661609",
+    drawerOpen: true,
+    command_keys: ["looks", "control", "events"],
+    requirements: [
+      {
+        id: "req_8_1",
+        title: "What the dog does",
+        text: "The dog changes size smoothly. How do we do that?",
+        type: "gif",
+        url: "/vp-assets/19846/bonus-2.webp"
+      },
+      {
+        id: "req_8_2",
+        title: "What the wizard does",
+        text: "The wizard says two phrases, between each of which he is silent for 1 second. And then he disappears.",
+        type: "gif",
+        url: "/vp-assets/19846/BONUS_21.webp"
+      },
+      {
+        id: "req_8_3",
+        title: "What changes about the wizard?",
+        text: "The wizard becomes invisible. So you need to make it visible at startup.",
+        type: "gif",
+        url: "/vp-assets/19846/BONUS_22.webp"
+      },
+      {
+        id: "req_8_4",
+        title: "What changes about the dog?",
+        text: "The dog changes its size. But at startup it becomes normal again.",
+        type: "gif",
+        url: "/vp-assets/19846/BONUS_23.webp"
+      }
+    ],
+    media: [
+      {
+        type: "presentation",
+        title: "Wizard and dog",
+        text: "Look, the wizard accidentally enlarged the dog and made himself invisible in order to hide from it!"
+      }
+    ]
+  }
+];
+
+const manifest = {
+  version: 1,
+  id: pageId,
+  title: "Scratch. Where to start?",
+  type: "scratch-task",
+  level_type: "scratch",
+  activityType: "scratch",
+  taskCount: tasks.length,
+  metadata: {
+    courseId,
+    moduleId,
+    pageId,
+    generatedAt: new Date().toISOString()
+  },
+  tasks
+};
+
+fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf8');
+fs.writeFileSync(path.join(outDir, 'page.instance.json'), JSON.stringify(manifest, null, 2), 'utf8');
+
+console.log(`Successfully generated ${pageId} manifest.json and page.instance.json with ${tasks.length} tasks!`);

@@ -338,6 +338,105 @@ export const DEMO_SOURCE_CODE = {
     </next>
   </block>
 </xml>`
+  },
+
+  // === Task 19846 (M1L3: Where to start?) ===
+  '9633740': {
+    projectId: '9633740',
+    level: 1,
+    title: 'M1L3 – Draw a picture (Demo)',
+    spriteName: 'Easel',
+    description: 'Bức tranh bắt đầu trên một trang giấy trắng (Easel-a), sau đó đổi trang phục liên tục mỗi giây để bức tranh xuất hiện.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Đổi trang phục thành [Easel-a] (switch costume to Easel-a)' },
+      { type: 'control', text: 'Lặp lại (3) lần (repeat 3 times):' },
+      { type: 'control', text: '  ├─ Đợi (1) giây (wait 1 secs)' },
+      { type: 'looks', text: '  └─ Trang phục kế tiếp (next costume)' }
+    ]
+  },
+  '10661509': {
+    projectId: '10661509',
+    level: 2,
+    title: 'M1L3 – Penguin coming from Antarctica (Demo)',
+    spriteName: 'Penguin',
+    description: 'Chim cánh cụt bắt đầu chuyến đi từ Antarctica, bước đi (đổi trang phục) rồi chuyển cảnh sang phông nền tiếp theo.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Đổi phông nền thành [Antarctica] (switch backdrop to Antarctica)' },
+      { type: 'control', text: 'Lặp lại (3) lần (repeat 3 times):' },
+      { type: 'control', text: '  ├─ Lặp lại (3) lần:' },
+      { type: 'control', text: '  │   ├─ Đợi (0.5) giây' },
+      { type: 'looks', text: '  │   └─ Trang phục kế tiếp' },
+      { type: 'looks', text: '  └─ Phông nền tiếp theo (next backdrop)' }
+    ]
+  },
+  '10661520': {
+    projectId: '10661520',
+    level: 3,
+    title: 'M1L3 – Disappearing potion (Demo)',
+    spriteName: 'Witch',
+    description: 'Phù thủy hiện ra lúc bắt đầu, nói muốn uống thuốc độc trong 2 giây rồi biến mất.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Hiện (show)' },
+      { type: 'looks', text: 'Nói [I want to drink this potion!] trong (2) giây' },
+      { type: 'looks', text: 'Ẩn (hide)' }
+    ]
+  },
+  '10661531': {
+    projectId: '10661531',
+    level: 4,
+    title: 'M1L3 – Sorceress and teacher (Demo)',
+    spriteName: 'Wizard',
+    description: 'Pháp sư bắt đầu ở kích thước bình thường 100%, nói muốn thử thuốc thu nhỏ trong 2 giây rồi thu nhỏ còn 30%.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Đặt kích thước thành (100) % (set size to 100%)' },
+      { type: 'looks', text: 'Nói [Come on, let\'s try your shrinking potion.] trong (2) giây' },
+      { type: 'looks', text: 'Đặt kích thước thành (30) % (set size to 30%)' }
+    ]
+  },
+  '6112716': {
+    projectId: '6112716',
+    level: 5,
+    title: 'M1L3 – Balloon (Demo)',
+    spriteName: 'Balloon1',
+    description: 'Quả bóng ban đầu to (200%), khi ra ngoài trời lạnh bị co nhỏ dần dần.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Đặt kích thước thành (200) % (set size to 200%)' },
+      { type: 'control', text: 'Lặp lại (10) lần (repeat 10 times):' },
+      { type: 'control', text: '  ├─ Đợi (0.1) giây' },
+      { type: 'looks', text: '  └─ Thay đổi kích thước một lượng (-10)' }
+    ]
+  },
+  '9634110': {
+    projectId: '9634110',
+    level: 7,
+    title: 'M1L3 – Pterodactyl (Demo)',
+    spriteName: 'Dinosaur3',
+    description: 'Thằn lằn bay ban đầu ở xa (kích thước 25%, cánh xòe dinosaur3-b), sau đó bay dần lại gần: to dần và vỗ cánh liên tục.',
+    steps: [
+      { type: 'event', text: 'Khi bấm vào ⚑ (when green flag clicked)' },
+      { type: 'looks', text: 'Đặt kích thước thành (25) %' },
+      { type: 'looks', text: 'Đổi trang phục thành [dinosaur3-b]' },
+      { type: 'control', text: 'Lặp lại (10) lần (repeat 10 times):' },
+      { type: 'control', text: '  ├─ Đợi (0.2) giây' },
+      { type: 'looks', text: '  ├─ Thay đổi kích thước một lượng (10)' },
+      { type: 'looks', text: '  └─ Trang phục kế tiếp' }
+    ]
+  },
+  '10661609': {
+    projectId: '10661609',
+    level: 8,
+    title: 'M1L3 – Wizard and dog (Demo)',
+    spriteName: 'Wizard2 & Dog2',
+    description: 'Phù thủy vô tình làm chú chó to khổng lồ rồi tự tàng hình để trốn!',
+    steps: [
+      { type: 'event', text: 'Sprite Wizard2: Hiện -> Nói [Watch the dog!] (2s) -> Đợi (1s) -> Nói [Oh no, it\'s too big!] (2s) -> Ẩn' },
+      { type: 'event', text: 'Sprite Dog2: Đặt kích thước (100)% -> Đợi (2s) -> Lặp lại (10) lần: Thay đổi kích thước (10) & đợi 0.2s' }
+    ]
   }
 };
 

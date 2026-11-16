@@ -676,7 +676,22 @@
         'level_4_demo': 'M1L2 – A bear walks (Demo)',
         'level_5_demo': 'M1L2 – A clock (Demo)',
         'level_7_demo': 'M1L2 – Super cat (Demo)',
-        'level_8_demo': 'M1L2 – A star (Demo)'
+        'level_8_demo': 'M1L2 – A star (Demo)',
+        '9639729': 'Graphic editor — Fill',
+        '9639743': 'Graphic editor — Reshape',
+        '9639758': 'Graphic editor — Character creation',
+        '9639774': 'Graphic editor — Working with tools',
+        '9639793': 'Graphic editor — Costume change',
+        '19847_1': 'Graphic editor — Fill',
+        '19847_2': 'Graphic editor — Reshape',
+        '19847_3': 'Graphic editor — Character creation',
+        '19847_4': 'Graphic editor — Working with tools',
+        '19847_5': 'Graphic editor — Costume change',
+        '19847_level_1': 'Graphic editor — Fill',
+        '19847_level_2': 'Graphic editor — Reshape',
+        '19847_level_3': 'Graphic editor — Character creation',
+        '19847_level_4': 'Graphic editor — Working with tools',
+        '19847_level_5': 'Graphic editor — Costume change'
       };
 
       function resolveProjectTitle(url, level, explicitTitle) {
@@ -798,12 +813,42 @@
           '9098728', '2660096', '9099214', '2660244'
         ].includes(String(param)) ||
         String(param).includes('19097') ||
-        String(param).includes('demo') ||
+        (String(param).includes('demo') && window.location.search.includes('M1L2')) ||
         window.location.search.includes('19097');
 
         if (is19097) {
           if (param && (/^\d+$/.test(param) || param.includes('demo'))) {
             return `/starter-projects/19097/${param}.sb3`;
+          }
+          return null;
+        }
+
+        const is19846 = [
+          '9633775', '9633740', '9633799', '10661509', '9633847', '10661520',
+          '9633998', '10661531', '9634062', '6112716', '9634094', '9634110',
+          '9634128', '10661609'
+        ].includes(String(param)) ||
+        String(param).includes('19846') ||
+        (String(param).includes('demo') && window.location.search.includes('M1L3') && !window.location.search.includes('M1L3_2')) ||
+        window.location.search.includes('19846');
+
+        if (is19846) {
+          if (param && (/^\d+$/.test(param) || param.includes('demo') || param.includes('level'))) {
+            return `/starter-projects/19846/${param}.sb3`;
+          }
+          return null;
+        }
+
+        const is19847 = [
+          '9639729', '9639743', '9639758', '9639774', '9639793'
+        ].includes(String(param)) ||
+        String(param).includes('19847') ||
+        window.location.search.includes('M1L3_2') ||
+        window.location.search.includes('19847');
+
+        if (is19847) {
+          if (param && (/^\d+$/.test(param) || param.includes('demo') || param.includes('level'))) {
+            return `/starter-projects/19847/${param}.sb3`;
           }
           return null;
         }

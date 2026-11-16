@@ -1,10 +1,17 @@
 {
-  "schemaVersion": 2,
+  "version": 1,
   "id": "VP2_M1L3_1",
   "title": "Scratch. Where to start?",
   "type": "scratch-task",
   "level_type": "scratch",
+  "activityType": "scratch",
   "taskCount": 8,
+  "metadata": {
+    "courseId": "VP2",
+    "moduleId": "M1-Visual-Programming-Basics",
+    "pageId": "VP2_M1L3_1",
+    "generatedAt": "2026-11-16T03:38:49.029Z"
+  },
   "tasks": [
     {
       "id": "VP2_M1L3_1_1",
@@ -12,87 +19,42 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Where to start? - Task 1",
-      "activityType": "scratch",
+      "title": "Where to start 1 (with autocheck Scratch)",
+      "project_title": "Draw a picture",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Drawing_a_picture.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9633775",
+      "demo_project_id": "9633740",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_1_1",
-          "title": "Program Scratch. Where to start? - Task 1",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 1\".",
-          "type": "svg",
+          "title": "Set the right costume at the beginning",
+          "text": "So that the picture always starts on a clean page, after the start command, set the costume with a blank canvas.",
+          "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "title": "Changing costumes every second",
+          "text": "The first 4 costumes change every second, and it seems like a drawing appears on the canvas. Think about how to do it.",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Draw a picture",
+          "text": "The picture should start on a clean page. And only then does it change costumes when adding a drawing."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_1_state_1",
-          "stateId": "VP2_M1L3_1_1_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Drawing_a_picture.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Drawing a picture"
-        }
-      ],
-      "project_title": "M1L3 Drawing a picture",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_2",
@@ -100,87 +62,42 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Where to start? - Task 2",
-      "activityType": "scratch",
+      "title": "Where to start 2 (with autocheck Scratch)",
+      "project_title": "Penguin coming from Antarctica",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Penguin.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9633799",
+      "demo_project_id": "10661509",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Program Scratch. Where to start? - Task 2",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 2\".",
-          "type": "svg",
-          "url": ""
+          "title": "The first background - \"Antarctica\"",
+          "text": "The penguin begins its journey from Antarctica — this particular background should be the first.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo2_1616072433.webp"
         },
         {
           "id": "req_2_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Change of costume and background",
+          "text": "While the \"Antarctica\" background is on, the penguin takes \"steps,\" meaning it changes its costume. After several costume changes, the background changes.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo2-2.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Penguin coming from Antarctica",
+          "text": "The penguin is going on a journey! And it's beginning its journey from its native Antarctica."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_2_state_1",
-          "stateId": "VP2_M1L3_1_2_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Penguin.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Penguin"
-        }
-      ],
-      "project_title": "M1L3 Penguin",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_3",
@@ -188,87 +105,48 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Where to start? - Task 3",
-      "activityType": "scratch",
+      "title": "Where to start 3 (with autocheck Scratch)",
+      "project_title": "Disappearing potion",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Balloon_on_the_street.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9633847",
+      "demo_project_id": "10661520",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "events"
       ],
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Program Scratch. Where to start? - Task 3",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 3\".",
-          "type": "svg",
-          "url": ""
+          "title": "Emerging",
+          "text": "The Show command makes the sprite visible.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo3_1616072587.webp"
         },
         {
           "id": "req_3_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
+          "title": "The sorceress drinks the potion",
+          "text": "Before disappearing, the sorceress says that she wants to drink the potion.",
+          "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Disappearing",
+          "text": "The Hide command makes the sprite invisible.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo3-1.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Disappearing potion",
+          "text": "The sorceress appears, drinks the potion, and disappears."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_3_state_1",
-          "stateId": "VP2_M1L3_1_3_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Balloon_on_the_street.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Balloon on the street"
-        }
-      ],
-      "project_title": "M1L3 Balloon on the street",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_4",
@@ -276,87 +154,48 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Scratch. Where to start? - Task 4",
-      "activityType": "scratch",
+      "title": "Where to start 4 (with autocheck Scratch)",
+      "project_title": "Sorceress and teacher",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Hapless_wizard_and_dog.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9633998",
+      "demo_project_id": "10661531",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "events"
       ],
       "requirements": [
         {
           "id": "req_4_1",
-          "title": "Program Scratch. Where to start? - Task 4",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 4\".",
-          "type": "svg",
+          "title": "Drinking the potion",
+          "text": "Before shrinking, the wizard says he will drink the potion.",
+          "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "title": "Abrupt resizing",
+          "text": "Use this command to abruptly resize something.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo4_1616072739.webp"
         },
         {
           "id": "req_4_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "title": "At the beginning, the wizard is his normal height again!",
+          "text": "Set the desired size of the wizard at the beginning of the script",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Sorceress and teacher",
+          "text": "The wizard shrank under the influence of the potion. But if you run the project again, the wizard returns to his normal size!"
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_4_state_1",
-          "stateId": "VP2_M1L3_1_4_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Hapless_wizard_and_dog.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Hapless wizard and dog"
-        }
-      ],
-      "project_title": "M1L3 Hapless wizard and dog",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_5",
@@ -364,87 +203,42 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Scratch. Where to start? - Task 5",
-      "activityType": "scratch",
+      "title": "Where to start 5 (with autocheck Scratch)",
+      "project_title": "Balloon",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Disappearing.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9634062",
+      "demo_project_id": "6112716",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_5_1",
-          "title": "Program Scratch. Where to start? - Task 5",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 5\".",
-          "type": "svg",
-          "url": ""
+          "title": "Initial size",
+          "text": "Set the size at startup to 200%.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo5_1616072838.webp"
         },
         {
           "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "Smooth reduction in size",
+          "text": "To reduce the size, we need to specify a value with a minus sign: \"-10\".",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo5-1.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Balloon",
+          "text": "The balloon is large at first and is in a warm room. And then it's outside in the cold and becomes smaller."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_5_state_1",
-          "stateId": "VP2_M1L3_1_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Disappearing.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Disappearing"
-        }
-      ],
-      "project_title": "M1L3 Disappearing",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_6",
@@ -452,87 +246,16 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Where to start? - Task 6",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "M1L3_Before_takeoff.sb3",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_6_1",
-          "title": "Program Scratch. Where to start? - Task 6",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 6\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Scratch. Where to start? - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_6_state_1",
-          "stateId": "VP2_M1L3_1_6_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Before_takeoff.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Before takeoff"
-        }
-      ],
-      "project_title": "M1L3 Before takeoff",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "title": "Rating",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "rating",
+      "question": "Did you like the task?",
+      "label": "😊",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "media": []
     },
     {
       "id": "VP2_M1L3_1_7",
@@ -540,87 +263,42 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Scratch. Where to start? - Task 7",
-      "activityType": "scratch",
+      "title": "Where to start 6 (Bonus: Pterodactyl)",
+      "project_title": "Pterodactyl",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9634094",
+      "demo_project_id": "9634110",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_7_1",
-          "title": "Program Scratch. Where to start? - Task 7",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 7\".",
-          "type": "svg",
-          "url": ""
+          "title": "Approaching",
+          "text": "To make it seem like the pterodactyl is flying closer, we need to increase its size and change the costume. And we need to repeat that several times. Add a command that will repeat these steps.",
+          "type": "gif",
+          "url": "/vp-assets/19846/bo7_1616072917.webp"
         },
         {
           "id": "req_7_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_7_3",
           "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "text": "Think about what properties change for the pterodactyl. They need to be set at startup. For example, set the initial size to 25%.",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 7",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Pterodactyl",
+          "text": "It seems like the pterodactyl is flying right here! It is growing in size and flapping its wings. But in the beginning, it is still far away, small in size and with its wings spread."
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_7_state_1",
-          "stateId": "VP2_M1L3_1_7_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3 Trying on a dress"
-        }
-      ],
-      "project_title": "M1L3 Trying on a dress",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_1_8",
@@ -628,87 +306,56 @@
       "position": 8,
       "level_position": 8,
       "levelPosition": 8,
-      "title": "Scratch. Where to start? - Task 8",
-      "activityType": "scratch",
+      "title": "Where to start 7 (Bonus: Wizard and dog)",
+      "project_title": "Wizard and dog",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3.sb3",
+      "activityType": "scratch",
+      "starter_project_id": "9634128",
+      "demo_project_id": "10661609",
       "drawerOpen": true,
       "command_keys": [
-        "motion",
         "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
+        "control",
+        "events"
       ],
       "requirements": [
         {
           "id": "req_8_1",
-          "title": "Program Scratch. Where to start? - Task 8",
-          "text": "Program the sprites and animations for \"Scratch. Where to start? - Task 8\".",
-          "type": "svg",
-          "url": ""
+          "title": "What the dog does",
+          "text": "The dog changes size smoothly. How do we do that?",
+          "type": "gif",
+          "url": "/vp-assets/19846/bonus-2.webp"
         },
         {
           "id": "req_8_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "title": "What the wizard does",
+          "text": "The wizard says two phrases, between each of which he is silent for 1 second. And then he disappears.",
+          "type": "gif",
+          "url": "/vp-assets/19846/BONUS_21.webp"
         },
         {
           "id": "req_8_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "title": "What changes about the wizard?",
+          "text": "The wizard becomes invisible. So you need to make it visible at startup.",
+          "type": "gif",
+          "url": "/vp-assets/19846/BONUS_22.webp"
+        },
+        {
+          "id": "req_8_4",
+          "title": "What changes about the dog?",
+          "text": "The dog changes its size. But at startup it becomes normal again.",
+          "type": "gif",
+          "url": "/vp-assets/19846/BONUS_23.webp"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Where to start? - Task 8",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Wizard and dog",
+          "text": "Look, the wizard accidentally enlarged the dog and made himself invisible in order to hide from it!"
         }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L3_1_8_state_1",
-          "stateId": "VP2_M1L3_1_8_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L3.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L3"
-        }
-      ],
-      "project_title": "M1L3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     }
   ]
 }

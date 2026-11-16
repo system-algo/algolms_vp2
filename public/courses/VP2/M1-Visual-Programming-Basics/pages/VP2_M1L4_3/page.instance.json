@@ -47,14 +47,14 @@
           "title": "Approaching",
           "text": "Pressing the up arrow changes the costume and increases the size.",
           "type": "svg",
-          "url": "/vp-assets/m1l4/approaching_hint.svg"
+          "url": "/vp-assets/m1l4/approaching_hint.webp"
         },
         {
           "id": "req_1_2",
           "title": "Receding",
           "text": "Pressing the down arrow changes the costume and decreases the size.",
           "type": "svg",
-          "url": "/vp-assets/m1l4/receding_hint.svg"
+          "url": "/vp-assets/m1l4/receding_hint.webp"
         },
         {
           "id": "req_1_3",
@@ -140,7 +140,7 @@
           "type": "presentation",
           "title": "Hen",
           "text": "The hen walks, eats, or turns its head when the keys \"1\", \"2\", and \"3\" are pressed. These actions do not happen at the same time.",
-          "url": "/vp-assets/m1l4/hen_demo.svg"
+          "url": "/vp-assets/m1l4/hen_demo.webp"
         }
       ],
       "requirements": [

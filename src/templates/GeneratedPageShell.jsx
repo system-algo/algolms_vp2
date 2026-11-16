@@ -517,6 +517,56 @@ export default function GeneratedPageShell({
     );
   }, [completedTaskCount, tasks.length]);
 
+  const handleTaskCompleted = useCallback((completion = {}) => {
+    const submittedTaskId = String(
+      completion?.taskId ||
+      currentTaskIdRef.current ||
+      '',
+    ).trim();
+
+    if (!submittedTaskId) return;
+
+    const wasAlreadyCompleted = completedTaskIds.includes(submittedTaskId);
+
+    setCompletedTaskIds((currentIds) => {
+      if (currentIds.includes(submittedTaskId)) {
+        return currentIds;
+      }
+
+      const nextIds = [
+        ...currentIds,
+        submittedTaskId,
+      ];
+
+      localStorage.setItem(
+        completedTasksStorageKey,
+        JSON.stringify(nextIds),
+      );
+
+      return nextIds;
+    });
+
+    if (!wasAlreadyCompleted) {
+      setProgressJustIncreased(true);
+      setProgressCelebrationKey(Date.now());
+      setJustCompletedTaskId(submittedTaskId);
+    }
+
+    if (completion?.autoTransition !== false && taskIndexRef.current < tasksRef.current.length - 1) {
+      if (autoTransitionTimerRef.current) {
+        clearTimeout(autoTransitionTimerRef.current);
+      }
+      autoTransitionTimerRef.current = setTimeout(() => {
+        setTaskIndex((prev) => {
+          const nextIdx = Math.min(tasksRef.current.length - 1, prev + 1);
+          updateUrlTaskParam(nextIdx);
+          return nextIdx;
+        });
+        setStateIndex(0);
+      }, 1500);
+    }
+  }, [completedTaskIds, completedTasksStorageKey, updateUrlTaskParam]);
+
   function gotoTask(nextTaskIndex) {
     if (autoTransitionTimerRef.current) clearTimeout(autoTransitionTimerRef.current);
     setTaskIndex(nextTaskIndex);
@@ -679,6 +729,7 @@ export default function GeneratedPageShell({
         tasks={tasks}
         taskIndex={taskIndex}
         completedTaskIds={completedTaskIds}
+        onTaskCompleted={handleTaskCompleted}
         onSelectTask={gotoTask}
         onBackToCourses={onBackToCourses}
       />

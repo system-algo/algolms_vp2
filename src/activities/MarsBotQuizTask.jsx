@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import './MarsBotQuizTask.css';
 
+const API_BASE_URL = String(import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
+
 const QUIZ_QUESTIONS = {
   1: {
     prompt: 'Which script will help the MarsBot get to the x?',
@@ -87,30 +89,52 @@ const QUIZ_QUESTIONS = {
 };
 
 export default function MarsBotQuizTask(props) {
-  const { task, onTaskCompleted, onNextTask } = props;
+  const { task, completedTaskIds = [], onTaskCompleted, onNextTask, tasks = [], taskIndex = 0 } = props;
 
   const questionNum = (function () {
     const taskId = String(task?.id || task?.taskId || '');
     const match = taskId.match(/_(\d+)$/);
     if (match) return parseInt(match[1], 10);
-    return Number(task?.position || task?.level_position || 1);
+    return Number(task?.position || task?.level_position || (taskIndex + 1));
   })();
 
+  const currentTaskId = String(task?.id || task?.taskId || `VP2_M1L1_4_${questionNum}`);
   const questionData = QUIZ_QUESTIONS[questionNum] || QUIZ_QUESTIONS[1];
 
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [submissionStatus, setSubmissionStatus] = useState(null); // 'correct' | 'incorrect' | null
-  const [feedbackText, setFeedbackText] = useState('');
+  const isAlreadyCompleted =
+    completedTaskIds.includes(currentTaskId) ||
+    localStorage.getItem(`marsbot_completed_${currentTaskId}`) === 'true';
 
-  // Reset state whenever switching tasks/questions
+  const [selectedOption, setSelectedOption] = useState(() =>
+    isAlreadyCompleted ? questionData.correctOptionId : null
+  );
+  const [submissionStatus, setSubmissionStatus] = useState(() =>
+    isAlreadyCompleted ? 'correct' : null
+  ); // 'correct' | 'incorrect' | null
+  const [feedbackText, setFeedbackText] = useState(() =>
+    isAlreadyCompleted ? 'Correct! MarsBot reached the target successfully.' : ''
+  );
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Sync state whenever switching question/task
   useEffect(() => {
-    setSelectedOption(null);
-    setSubmissionStatus(null);
-    setFeedbackText('');
-  }, [task?.id, questionNum]);
+    const isDone =
+      completedTaskIds.includes(currentTaskId) ||
+      localStorage.getItem(`marsbot_completed_${currentTaskId}`) === 'true';
+
+    if (isDone) {
+      setSelectedOption(questionData.correctOptionId);
+      setSubmissionStatus('correct');
+      setFeedbackText('Correct! MarsBot reached the target successfully.');
+    } else {
+      setSelectedOption(null);
+      setSubmissionStatus(null);
+      setFeedbackText('');
+    }
+  }, [currentTaskId, completedTaskIds, questionNum]);
 
   const handleSelectOption = (optionId) => {
-    if (submissionStatus === 'correct') return; // Locked once correctly solved
+    if (submissionStatus === 'correct' || isSubmitting) return; // Khóa sau khi đã làm đúng
     setSelectedOption(optionId);
     if (submissionStatus === 'incorrect') {
       setSubmissionStatus(null);
@@ -119,12 +143,106 @@ export default function MarsBotQuizTask(props) {
   };
 
   const handleReset = () => {
+    if (isSubmitting) return;
     setSelectedOption(null);
     setSubmissionStatus(null);
     setFeedbackText('');
   };
 
-  const handleAnswerOrNext = () => {
+  // Nộp bài & Lưu tiến độ (LMS Handoff, Supabase, LocalStorage)
+  const submitTaskAttempt = async (isCorrect) => {
+    setIsSubmitting(true);
+
+    const studentEmail = localStorage.getItem('lms_student_email') || '';
+    const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL;
+    const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY;
+    const courseId = 'VP2';
+    const lessonId = 'M1-Visual-Programming-Basics';
+    const pageId = 'VP2_M1L1_4';
+
+    // 1. Lưu kết quả vào Supabase activity_progress
+    if (supabaseUrl && supabaseKey && studentEmail && isCorrect) {
+      try {
+        await fetch(`${supabaseUrl}/rest/v1/activity_progress`, {
+          method: 'POST',
+          headers: {
+            apikey: supabaseKey,
+            Authorization: `Bearer ${supabaseKey}`,
+            'Content-Type': 'application/json',
+            Prefer: 'resolution=merge-duplicates',
+          },
+          body: JSON.stringify({
+            user_id: studentEmail,
+            course_id: courseId,
+            lesson_id: lessonId,
+            page_id: pageId,
+            task_id: currentTaskId,
+            activity_type: 'marsbot-quiz',
+            status: 'completed',
+            is_completed: true,
+            updated_at: new Date().toISOString(),
+          }),
+        });
+      } catch (err) {
+        console.warn('[MarsBotQuizTask] Lỗi lưu activity_progress Supabase:', err);
+      }
+    }
+
+    // 2. Gửi attempt tới endpoint /api/activity-attempts (cho LMS backend & PageShell trackedFetch)
+    try {
+      const endpoint = `${API_BASE_URL}/api/activity-attempts`;
+      await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          sessionId: localStorage.getItem('lms-session-id') || `session-${Date.now()}`,
+          userId: studentEmail || 'student',
+          courseId,
+          lessonId,
+          pageId,
+          taskId: currentTaskId,
+          activityType: 'marsbot-quiz',
+          answer: {
+            selectedOptionId: selectedOption,
+          },
+          result: {
+            isCorrect,
+            score: isCorrect ? 1 : 0,
+            maxScore: 1,
+          },
+        }),
+      });
+    } catch (err) {
+      console.warn('[MarsBotQuizTask] Attempt submission warning:', err);
+    }
+
+    // 3. Đánh dấu hoàn thành trong localStorage để trạng thái không bị mất khi F5
+    if (isCorrect) {
+      try {
+        localStorage.setItem(`marsbot_completed_${currentTaskId}`, 'true');
+      } catch {}
+
+      // 4. Báo cho GeneratedPageShell & TopNavigation cập nhật tiến độ (dấu tích xanh ✓ & tăng %)
+      if (typeof onTaskCompleted === 'function') {
+        onTaskCompleted({
+          taskId: currentTaskId,
+          isCorrect: true,
+          completed: true,
+          score: 1,
+          maxScore: 1,
+          activityType: 'marsbot-quiz',
+          autoTransition: true,
+        });
+      }
+    }
+
+    setIsSubmitting(false);
+  };
+
+  const handleAnswerOrNext = async () => {
+    // Nếu đã hoàn thành bài đúng và ấn nút -> chuyển bài tiếp theo
     if (submissionStatus === 'correct') {
       if (typeof onNextTask === 'function') {
         onNextTask();
@@ -132,27 +250,22 @@ export default function MarsBotQuizTask(props) {
       return;
     }
 
-    if (!selectedOption) return;
+    if (!selectedOption || isSubmitting) return;
 
     if (selectedOption === questionData.correctOptionId) {
       setSubmissionStatus('correct');
       setFeedbackText('Correct! MarsBot reached the target successfully.');
       playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
-      if (typeof onTaskCompleted === 'function') {
-        onTaskCompleted({
-          isCorrect: true,
-          score: 1,
-          maxScore: 1,
-          taskId: task?.id || `VP2_M1L1_4_${questionNum}`,
-          activityType: 'marsbot-quiz'
-        });
-      }
+      await submitTaskAttempt(true);
     } else {
       setSubmissionStatus('incorrect');
       setFeedbackText('Not quite right. Check the turns and moves again!');
+      await submitTaskAttempt(false);
     }
   };
+
+  const isLastTask = taskIndex >= (tasks.length - 1);
 
   return (
     <div className="marsbot-quiz-page">
@@ -181,6 +294,7 @@ export default function MarsBotQuizTask(props) {
               type="button"
               className="marsbot-reset-btn"
               onClick={handleReset}
+              disabled={isSubmitting || submissionStatus === 'correct'}
               title="Reset choice"
               aria-label="Reset choice"
             >
@@ -209,9 +323,15 @@ export default function MarsBotQuizTask(props) {
                   : 'disabled'
               }`}
               onClick={handleAnswerOrNext}
-              disabled={!selectedOption && submissionStatus !== 'correct'}
+              disabled={(!selectedOption && submissionStatus !== 'correct') || isSubmitting}
             >
-              {submissionStatus === 'correct' ? 'Next' : 'Answer'}
+              {isSubmitting
+                ? 'Checking...'
+                : submissionStatus === 'correct'
+                ? isLastTask
+                  ? 'Finish'
+                  : 'Next'
+                : 'Answer'}
             </button>
           </div>
         </div>

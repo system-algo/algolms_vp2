@@ -587,7 +587,12 @@ export default function App() {
   function backToLessonCatalog() {
     sessionStorage.removeItem('lms_active_page');
     sessionStorage.removeItem('lms_active_task');
-    const nextUrl = `/?course=${encodeURIComponent(courseId)}`;
+    const params = new URLSearchParams(window.location.search);
+    const platformOrigin = params.get('platformOrigin');
+    const cId = courseId || params.get('course') || 'VP2';
+    const nextUrl = platformOrigin
+      ? `/?course=${encodeURIComponent(cId)}&platformOrigin=${encodeURIComponent(platformOrigin)}`
+      : `/?course=${encodeURIComponent(cId)}`;
 
     window.history.pushState({}, '', nextUrl);
     setLessonId('');

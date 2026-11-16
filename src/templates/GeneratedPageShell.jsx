@@ -138,10 +138,37 @@ export default function GeneratedPageShell({
   pageId = '',
   onBackToPages,
   onBackToCourses,
+  onBackToLessons,
 }) {
   const [manifest, setManifest] = useState(null);
   const [pageInstance, setPageInstance] = useState(null);
   const [error, setError] = useState('');
+
+  const handleBackToCourse = useCallback(() => {
+    if (typeof onBackToLessons === 'function') {
+      onBackToLessons();
+      return;
+    }
+    if (typeof onBackToPages === 'function') {
+      onBackToPages();
+      return;
+    }
+    if (typeof onBackToCourses === 'function') {
+      onBackToCourses();
+      return;
+    }
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const targetCourse = params.get('course') || courseId || 'VP2';
+      const platformOrigin = params.get('platformOrigin');
+      const nextUrl = platformOrigin
+        ? `/?course=${encodeURIComponent(targetCourse)}&platformOrigin=${encodeURIComponent(platformOrigin)}`
+        : `/?course=${encodeURIComponent(targetCourse)}`;
+      window.location.href = nextUrl;
+    } catch {
+      window.history.back();
+    }
+  }, [onBackToLessons, onBackToPages, onBackToCourses, courseId]);
   const getInitialTaskIndex = () => {
     try {
       const p = new URLSearchParams(window.location.search);
@@ -760,7 +787,7 @@ export default function GeneratedPageShell({
       <main className="empty-screen">
         <p>Loading page...</p>
 
-        <button type="button" onClick={onBackToPages}>
+        <button type="button" onClick={handleBackToCourse}>
           Back to pages
         </button>
       </main>
@@ -769,6 +796,50 @@ export default function GeneratedPageShell({
 
   return (
     <div className="app-shell">
+      <button
+        type="button"
+        className="lms-frame__back-to-course"
+        onClick={handleBackToCourse}
+        title="Back to Course"
+        style={{
+          position: 'fixed',
+          bottom: '24px',
+          left: '24px',
+          padding: '10px 16px',
+          background: 'rgba(255, 255, 255, 0.2)',
+          color: '#ffffff',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+          borderRadius: '8px',
+          fontSize: '14px',
+          fontWeight: 600,
+          cursor: 'pointer',
+          zIndex: 9999,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          width: 'fit-content',
+          boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
+          backdropFilter: 'blur(4px)',
+          WebkitBackdropFilter: 'blur(4px)',
+          transition: 'all 0.2s ease',
+        }}
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Course
+      </button>
+
       <TopNavigation
         title={pageTitle}
         courseId={courseId}
@@ -784,7 +855,7 @@ export default function GeneratedPageShell({
         progressJustIncreased={progressJustIncreased}
         progressCelebrationKey={progressCelebrationKey}
         onSelectTask={gotoTask}
-        onBackToCatalog={onBackToPages}
+        onBackToCatalog={handleBackToCourse}
         onBackToCourses={onBackToCourses}
       />
 
@@ -797,7 +868,7 @@ export default function GeneratedPageShell({
         onNextTask={nextTask}
         onPrevTask={prevTask}
         onSelectState={setStateIndex}
-        onBack={onBackToPages}
+        onBack={handleBackToCourse}
         tasks={tasks}
         taskIndex={taskIndex}
         completedTaskIds={completedTaskIds}

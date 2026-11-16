@@ -23,6 +23,45 @@
   min-width: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* ==========================================================================
+   Back to Course Button (LMS Standard Navigation)
+   ========================================================================== */
+.lms-frame__back-to-course {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+  user-select: none;
+  font-family: inherit;
+}
+
+.lms-frame__back-to-course:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.lms-frame__back-to-course:active {
+  transform: translateY(0);
 }
 
 .lms-shell-content {

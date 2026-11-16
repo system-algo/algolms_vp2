@@ -393,78 +393,64 @@ export default function ScratchInterfaceLabelTask(props) {
       pageId,
       taskId: currentTaskId,
       activityType: 'scratch-interface-label',
-      isCorrect: allCorrect,
-      score: allCorrect ? 100 : 0,
-      maxScore: 100,
-      answer: slotAssignments,
-      timestamp: new Date().toISOString(),
+      answer: {
+        slotAssignments,
+      },
     };
 
-    // Save to backend endpoints
-    try {
-      const backendUrl = getBackendUrl();
-      if (backendUrl) {
-        fetch(`${backendUrl}/api/activity/attempts`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        }).catch(() => {});
+    const backendUrl = getBackendUrl();
+    const endpoint = `${backendUrl}/api/activity-attempts`;
 
-        fetch(`${backendUrl}/api/activity/progress`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            sessionId: getSessionId(),
-            userId: getUserId(),
-            courseId,
-            lessonId,
-            pageId,
-            taskId: currentTaskId,
-            status: allCorrect ? 'completed' : 'in_progress',
-            completed: allCorrect,
-            score: allCorrect ? 100 : 0,
-            maxScore: 100,
-            metadata: {
-              activityType: 'scratch-interface-label',
-              slotAssignments,
-            },
-          }),
-        }).catch(() => {});
+    try {
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = { 'Content-Type': 'application/json' };
+      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        const gradingResult = data?.result || data?.attempt?.result;
+        if (gradingResult && typeof gradingResult.isCorrect === 'boolean') {
+          allCorrect = gradingResult.isCorrect;
+        }
       }
-    } catch {}
+    } catch (err) {
+      console.warn('[ScratchInterfaceLabelTask] Backend submission fallback:', err);
+    }
 
     // Save to Supabase
     if (allCorrect) {
+      setSubmissionStatus('correct');
+      setFeedbackText('Correct! You correctly identified all the elements of the Scratch interface.');
+      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
+
+      await saveTaskCompletionToSupabase({
+        courseId,
+        lessonId,
+        pageId,
+        taskId: currentTaskId,
+        activityType: 'scratch-interface-label',
+      });
+
       try {
         localStorage.setItem(`scratch_label_completed_${currentTaskId}`, 'true');
       } catch {}
 
-      try {
-        await saveTaskCompletionToSupabase({
-          sessionId: getSessionId(),
-          userId: getUserId(),
-          courseId,
-          lessonId,
-          pageId,
-          taskId: currentTaskId,
-          completed: true,
-          score: 100,
-          maxScore: 100,
-          isPassed: true,
-          autoTransition: true,
-        });
-      } catch {}
-
-      playLmsSound(LMS_SOUND_TYPES.CORRECT);
-      setSubmissionStatus('correct');
-      setFeedbackText('Correct! You correctly identified all the elements of the Scratch interface.');
-
       if (typeof onTaskCompleted === 'function') {
         onTaskCompleted({
           taskId: currentTaskId,
-          activityType: 'scratch-interface-label',
           isCorrect: true,
-          score: 100,
+          completed: true,
+          score: 1,
+          maxScore: 1,
+          activityType: 'scratch-interface-label',
           autoTransition: true,
         });
       }

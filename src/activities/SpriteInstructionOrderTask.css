@@ -190,6 +190,8 @@
   cursor: grab;
   transition: all 0.2s;
   padding: 4px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .sprite-instruction-bank-slot:active:not(.is-placed) {
@@ -237,6 +239,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .sprite-instruction-card-content img {
@@ -244,6 +247,8 @@
   max-height: 100%;
   object-fit: contain;
   pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 /* Bottom 3 Sequence Columns */
@@ -335,13 +340,19 @@
   object-fit: contain;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-.sprite-instruction-placeholder {
+.sprite-instruction-placeholder,
+.sprite-instruction-placeholder * {
   color: #94a3b8;
   font-size: 12.5px;
   font-weight: 600;
   text-align: center;
+  pointer-events: none;
+  user-select: none;
 }
 
 @keyframes fadeIn {

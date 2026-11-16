@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './SpriteInstructionOrderTask.css';
@@ -86,52 +86,27 @@ export default function SpriteInstructionOrderTask(props) {
 
   const currentTaskId = String(task?.id || task?.taskId || 'VP2_M1L1_4_2');
 
-  const isAlreadyCompleted =
-    completedTaskIds.includes(currentTaskId) ||
-    localStorage.getItem(`sprite_instruction_completed_${currentTaskId}`) === 'true';
-
-  const [columns, setColumns] = useState(() => {
-    if (isAlreadyCompleted) {
-      return { 1: 'card_choose_btn', 2: 'card_library', 3: 'card_stage' };
-    }
-    return { 1: null, 2: null, 3: null };
-  });
-
+  const [columns, setColumns] = useState({ 1: null, 2: null, 3: null });
   const [selectedCardId, setSelectedCardId] = useState(null);
-  const [submissionStatus, setSubmissionStatus] = useState(() => (isAlreadyCompleted ? 'correct' : null));
-  const [feedbackText, setFeedbackText] = useState(() =>
-    isAlreadyCompleted ? 'Correct! You created the right instructions to add a sprite.' : ''
-  );
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [feedbackText, setFeedbackText] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Sync state if completed externally
-  useEffect(() => {
-    const isDone =
-      completedTaskIds.includes(currentTaskId) ||
-      localStorage.getItem(`sprite_instruction_completed_${currentTaskId}`) === 'true';
-
-    if (isDone) {
-      setColumns({ 1: 'card_choose_btn', 2: 'card_library', 3: 'card_stage' });
-      setSubmissionStatus('correct');
-      setFeedbackText('Correct! You created the right instructions to add a sprite.');
-    }
-  }, [currentTaskId, completedTaskIds]);
+  const draggedCardRef = useRef(null);
 
   // Determine which cards are placed in columns
   const placedCardIds = Object.values(columns).filter(Boolean);
 
   // Click card in bank
   const handleBankCardClick = (cardId) => {
-    if (submissionStatus === 'correct' || isSubmitting) return;
+    if (isSubmitting) return;
 
     // If card is already placed in a column, click to remove it from column
     const existingCol = Object.keys(columns).find((col) => columns[col] === cardId);
     if (existingCol) {
       setColumns((prev) => ({ ...prev, [existingCol]: null }));
-      if (submissionStatus) {
-        setSubmissionStatus(null);
-        setFeedbackText('');
-      }
+      setSubmissionStatus(null);
+      setFeedbackText('');
       return;
     }
 
@@ -149,20 +124,17 @@ export default function SpriteInstructionOrderTask(props) {
     if (firstEmptyCol) {
       setColumns((prev) => ({ ...prev, [firstEmptyCol]: cardId }));
       setSelectedCardId(null);
-      if (submissionStatus) {
-        setSubmissionStatus(null);
-        setFeedbackText('');
-      }
+      setSubmissionStatus(null);
+      setFeedbackText('');
     }
   };
 
   // Click column slot
   const handleColumnClick = (colNum) => {
-    if (submissionStatus === 'correct' || isSubmitting) return;
+    if (isSubmitting) return;
 
     // If a bank card is currently selected, place it here
     if (selectedCardId) {
-      // Remove selectedCard from any other column first
       const updated = { ...columns };
       Object.keys(updated).forEach((k) => {
         if (updated[k] === selectedCardId) updated[k] = null;
@@ -170,103 +142,118 @@ export default function SpriteInstructionOrderTask(props) {
       updated[colNum] = selectedCardId;
       setColumns(updated);
       setSelectedCardId(null);
-
-      if (submissionStatus) {
-        setSubmissionStatus(null);
-        setFeedbackText('');
-      }
+      setSubmissionStatus(null);
+      setFeedbackText('');
       return;
     }
 
     // If column already has a card, clicking it removes it back to bank
     if (columns[colNum]) {
       setColumns((prev) => ({ ...prev, [colNum]: null }));
-      if (submissionStatus) {
-        setSubmissionStatus(null);
-        setFeedbackText('');
-      }
+      setSubmissionStatus(null);
+      setFeedbackText('');
     }
   };
 
   // Drag and drop handlers
   const handleDragStartFromBank = (e, cardId) => {
-    if (submissionStatus === 'correct' || isSubmitting) return;
+    draggedCardRef.current = { cardId, source: 'bank' };
     e.dataTransfer.setData('text/plain', cardId);
-    e.dataTransfer.setData('source-type', 'bank');
-  };
-
-  const handleDragStartFromColumn = (e, cardId, colNum) => {
-    if (submissionStatus === 'correct' || isSubmitting) return;
-    e.dataTransfer.setData('text/plain', cardId);
-    e.dataTransfer.setData('source-type', 'column');
-    e.dataTransfer.setData('from-column', String(colNum));
-  };
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-  };
-
-  const handleDropOnColumn = (e, targetCol) => {
-    e.preventDefault();
-    if (submissionStatus === 'correct' || isSubmitting) return;
-
-    const cardId = e.dataTransfer.getData('text/plain');
-    const sourceType = e.dataTransfer.getData('source-type');
-    const fromCol = e.dataTransfer.getData('from-column');
-    if (!cardId) return;
-
-    const updated = { ...columns };
-
-    if (sourceType === 'column' && fromCol) {
-      const fromColNum = parseInt(fromCol, 10);
-      if (fromColNum !== targetCol) {
-        // Swap or move from another column
-        const existingInTarget = updated[targetCol];
-        updated[fromColNum] = existingInTarget || null;
-        updated[targetCol] = cardId;
-      }
-    } else {
-      // Coming from bank: remove cardId from any other column first
-      Object.keys(updated).forEach((k) => {
-        if (updated[k] === cardId) updated[k] = null;
-      });
-      updated[targetCol] = cardId;
-    }
-
-    setColumns(updated);
-    setSelectedCardId(null);
-
+    e.dataTransfer.setData('application/x-lms-card', cardId);
+    e.dataTransfer.effectAllowed = 'move';
     if (submissionStatus) {
       setSubmissionStatus(null);
       setFeedbackText('');
     }
   };
 
+  const handleDragStartFromColumn = (e, cardId, colNum) => {
+    draggedCardRef.current = { cardId, source: 'column', fromCol: colNum };
+    e.dataTransfer.setData('text/plain', cardId);
+    e.dataTransfer.setData('application/x-lms-card', cardId);
+    e.dataTransfer.effectAllowed = 'move';
+    if (submissionStatus) {
+      setSubmissionStatus(null);
+      setFeedbackText('');
+    }
+  };
+
+  const handleDragEnd = () => {
+    draggedCardRef.current = null;
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  };
+
+  const handleDragEnter = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDropOnColumn = (e, targetCol) => {
+    e.preventDefault();
+    if (isSubmitting) return;
+
+    const info = draggedCardRef.current;
+    const cardId =
+      info?.cardId ||
+      e.dataTransfer.getData('application/x-lms-card') ||
+      e.dataTransfer.getData('text/plain');
+
+    if (!cardId) return;
+
+    const fromCol = info?.fromCol;
+
+    setColumns((prev) => {
+      const updated = { ...prev };
+      if (fromCol) {
+        const fromColNum = parseInt(fromCol, 10);
+        if (fromColNum !== targetCol) {
+          const existingInTarget = updated[targetCol];
+          updated[fromColNum] = existingInTarget || null;
+          updated[targetCol] = cardId;
+        }
+      } else {
+        Object.keys(updated).forEach((k) => {
+          if (updated[k] === cardId) updated[k] = null;
+        });
+        updated[targetCol] = cardId;
+      }
+      return updated;
+    });
+
+    draggedCardRef.current = null;
+    setSelectedCardId(null);
+    setSubmissionStatus(null);
+    setFeedbackText('');
+  };
+
   // Drop back to bank ("kéo lên trả lại kho")
   const handleDropOnBank = (e) => {
     e.preventDefault();
-    if (submissionStatus === 'correct' || isSubmitting) return;
+    if (isSubmitting) return;
 
-    const sourceType = e.dataTransfer.getData('source-type');
-    const fromCol = e.dataTransfer.getData('from-column');
-    const cardId = e.dataTransfer.getData('text/plain');
+    const info = draggedCardRef.current;
+    const cardId =
+      info?.cardId ||
+      e.dataTransfer.getData('application/x-lms-card') ||
+      e.dataTransfer.getData('text/plain');
 
-    if (sourceType === 'column' && fromCol) {
-      setColumns((prev) => ({ ...prev, [fromCol]: null }));
-      if (submissionStatus) {
-        setSubmissionStatus(null);
-        setFeedbackText('');
-      }
-    } else if (cardId) {
-      const existingCol = Object.keys(columns).find((col) => columns[col] === cardId);
-      if (existingCol) {
-        setColumns((prev) => ({ ...prev, [existingCol]: null }));
-        if (submissionStatus) {
-          setSubmissionStatus(null);
-          setFeedbackText('');
-        }
-      }
-    }
+    if (!cardId) return;
+
+    setColumns((prev) => {
+      const updated = { ...prev };
+      Object.keys(updated).forEach((k) => {
+        if (updated[k] === cardId) updated[k] = null;
+      });
+      return updated;
+    });
+
+    draggedCardRef.current = null;
+    setSelectedCardId(null);
+    setSubmissionStatus(null);
+    setFeedbackText('');
   };
 
   const handleReset = () => {
@@ -275,6 +262,10 @@ export default function SpriteInstructionOrderTask(props) {
     setSelectedCardId(null);
     setSubmissionStatus(null);
     setFeedbackText('');
+    draggedCardRef.current = null;
+    try {
+      localStorage.removeItem(`sprite_instruction_completed_${currentTaskId}`);
+    } catch {}
   };
 
   const submitAttempt = async () => {
@@ -476,6 +467,7 @@ export default function SpriteInstructionOrderTask(props) {
           <div
             className="sprite-instruction-bank-card"
             onDragOver={handleDragOver}
+            onDragEnter={handleDragEnter}
             onDrop={handleDropOnBank}
           >
             <div className="sprite-instruction-bank-grid">
@@ -490,12 +482,13 @@ export default function SpriteInstructionOrderTask(props) {
                       isPlaced ? 'is-placed' : ''
                     } ${isSelected ? 'is-selected' : ''}`}
                     onClick={() => handleBankCardClick(card.id)}
-                    draggable={!isPlaced && submissionStatus !== 'correct' && !isSubmitting}
+                    draggable={!isPlaced && !isSubmitting}
                     onDragStart={(e) => handleDragStartFromBank(e, card.id)}
+                    onDragEnd={handleDragEnd}
                     title={isPlaced ? 'Card is in a column (drag or click to return)' : 'Drag or click to place'}
                   >
                     <div className="sprite-instruction-card-content">
-                      <img src={card.image} alt={card.label} />
+                      <img src={card.image} alt={card.label} draggable={false} />
                     </div>
                   </div>
                 );
@@ -522,16 +515,18 @@ export default function SpriteInstructionOrderTask(props) {
                     } ${colStatus}`}
                     onClick={() => handleColumnClick(colNum)}
                     onDragOver={handleDragOver}
+                    onDragEnter={handleDragEnter}
                     onDrop={(e) => handleDropOnColumn(e, colNum)}
                     title={card ? 'Drag to another column, or drag up to bank to return' : `Drop step ${colNum} here`}
                   >
                     {card ? (
                       <div
                         className="sprite-instruction-placed-card"
-                        draggable={submissionStatus !== 'correct' && !isSubmitting}
+                        draggable={!isSubmitting}
                         onDragStart={(e) => handleDragStartFromColumn(e, card.id, colNum)}
+                        onDragEnd={handleDragEnd}
                       >
-                        <img src={card.image} alt={card.label} />
+                        <img src={card.image} alt={card.label} draggable={false} />
                       </div>
                     ) : (
                       <div className="sprite-instruction-placeholder">

@@ -159,13 +159,13 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_3_Task1_Demo.sb3",
           "level_position": 1,
           "levelPosition": 1
         }
       ],
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_3_Task1_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_2",
@@ -320,13 +320,13 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_3_Task2_Demo.sb3",
           "level_position": 2,
           "levelPosition": 2
         }
       ],
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_3_Task2_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_3",
@@ -449,13 +449,13 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_3_Task3_Demo.sb3",
           "level_position": 3,
           "levelPosition": 3
         }
       ],
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_3_Task3_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_4",
@@ -651,13 +651,13 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_3_Task5_Demo.sb3",
           "level_position": 5,
           "levelPosition": 5
         }
       ],
       "tips": [],
-      "demo_project_id": null,
+      "demo_project_id": "M1L4_3_Task5_Demo.sb3",
       "type": "bonus"
     }
   ]

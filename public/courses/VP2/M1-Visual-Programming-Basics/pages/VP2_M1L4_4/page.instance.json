@@ -39,10 +39,38 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Events - Question 2",
+      "title": "What script will lead to a change of costume after clicking on the sprite?",
       "activityType": "marsbot-quiz",
       "level_type": "quiz",
       "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What script will lead to a change of costume after clicking on the sprite?",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt1.png",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt2.png",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt3.png",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt4.png",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 2,
+        "feedbackCorrect": "Correct! The \"when this sprite clicked\" event combined with \"next costume\" changes the costume upon clicking.",
+        "feedbackIncorrect": "Not quite right. Look for an event block that triggers when clicking the sprite, and a looks block that changes costume!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",

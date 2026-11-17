@@ -310,6 +310,37 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! The second sprite waits while the first sprite speaks, so they take turns speaking without overlapping.',
       feedbackIncorrect: 'Not quite right. Trace each wait and say block in seconds to ensure the sprites never speak at the same time!'
     }
+  },
+  VP2_M1L4_4: {
+    // Question 1 (level 2 in LMS / Task 2 in manifest): Costume change on click quiz
+    2: {
+      prompt: 'What script will lead to a change of costume after clicking on the sprite?',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt1.png',
+          label: 'Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt2.png',
+          label: 'Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt3.png',
+          label: 'Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt4.png',
+          label: 'Option 4'
+        }
+      ],
+      correctOptionId: 2,
+      feedbackCorrect: 'Correct! The "when this sprite clicked" event combined with "next costume" changes the costume upon clicking.',
+      feedbackIncorrect: 'Not quite right. Look for an event block that triggers when clicking the sprite, and a looks block that changes costume!'
+    }
   }
 };
 

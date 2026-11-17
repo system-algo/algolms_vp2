@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "id": "VP2_M2L2_3",
-  "title": "Scratch. Pointing in different...",
+  "title": "Scratch. Pointing in different directions",
   "type": "scratch-task",
   "level_type": "scratch",
   "taskCount": 7,
@@ -12,87 +12,182 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Pointing in different... - Task 1",
+      "title": "Cat",
+      "project_title": "Cat",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L2_Penguin.sb3",
+      "starter_project_id": "M2L2_Cat.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Program Scratch. Pointing in different... - Task 1",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 1\".",
-          "type": "svg",
-          "url": ""
+          "id": "8406ba8e-5b1d-4874-947b-2072b93c1d27",
+          "title": "Turn up",
+          "text": "To make the cat turn towards the mouse, use the direction equal to 0.",
+          "type": "gif",
+          "url": "/vp-assets/26852/0.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "b92cb1e3-cea6-4299-83da-db2ecebd65fe",
+          "title": "Turn right",
+          "text": "To make the cat turn towards the milk, use the direction equal to 90.",
+          "type": "gif",
+          "url": "/vp-assets/26852/90.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "2d0bbf1b-ea1f-469f-be16-37411ba1a04c",
+          "title": "Turn down",
+          "text": "To make the cat turn towards the can of food, use the direction equal to 90.",
+          "type": "gif",
+          "url": "/vp-assets/26852/180.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "eb03b7c0-2572-43fc-b286-553be48a637f",
+          "title": "What does the cat say between direction changes?",
+          "text": "Come up with it yourself!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [
+        {
+          "id": "1565946251133-6",
+          "title": "Sprite direction",
+          "description": "The direction the sprite is facing can be seen in the sprite properties.",
+          "url": "/vp-assets/26852/sprite.png"
+        },
+        {
+          "id": "1565946233844-5",
+          "title": "Direction values",
+          "description": "By clicking on the window with the direction, it can be forcibly changed without using commands.",
+          "url": "/vp-assets/26852/Снимок-1.JPG"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Cat",
+          "text": "Program the cat so that it turns to each of the goodies one after another.",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329767",
+      "source_task_level_id": "199080",
+      "source_project_id": "10683005",
+      "source_demo_project_id": "10682992",
       "states": [
         {
           "id": "VP2_M2L2_3_1_state_1",
-          "stateId": "VP2_M2L2_3_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "level_position": 1,
+          "levelPosition": 1,
+          "title": "Cat",
+          "project_title": "Cat",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L2_Penguin.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Cat.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "8406ba8e-5b1d-4874-947b-2072b93c1d27",
+              "title": "Turn up",
+              "text": "To make the cat turn towards the mouse, use the direction equal to 0.",
+              "type": "gif",
+              "url": "/vp-assets/26852/0.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "b92cb1e3-cea6-4299-83da-db2ecebd65fe",
+              "title": "Turn right",
+              "text": "To make the cat turn towards the milk, use the direction equal to 90.",
+              "type": "gif",
+              "url": "/vp-assets/26852/90.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "2d0bbf1b-ea1f-469f-be16-37411ba1a04c",
+              "title": "Turn down",
+              "text": "To make the cat turn towards the can of food, use the direction equal to 90.",
+              "type": "gif",
+              "url": "/vp-assets/26852/180.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "eb03b7c0-2572-43fc-b286-553be48a637f",
+              "title": "What does the cat say between direction changes?",
+              "text": "Come up with it yourself!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L2 Penguin"
+          "tips": [
+            {
+              "id": "1565946251133-6",
+              "title": "Sprite direction",
+              "description": "The direction the sprite is facing can be seen in the sprite properties.",
+              "url": "/vp-assets/26852/sprite.png"
+            },
+            {
+              "id": "1565946233844-5",
+              "title": "Direction values",
+              "description": "By clicking on the window with the direction, it can be forcibly changed without using commands.",
+              "url": "/vp-assets/26852/Снимок-1.JPG"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Cat",
+              "text": "Program the cat so that it turns to each of the goodies one after another.",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329767",
+          "source_task_level_id": "199080",
+          "source_project_id": "10683005",
+          "source_demo_project_id": "10682992",
+          "stateId": "VP2_M2L2_3_1_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L2 Penguin",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_2",
@@ -100,87 +195,166 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Pointing in different... - Task 2",
+      "title": "Mouse",
+      "project_title": "Mouse",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L2_Bug.sb3",
+      "starter_project_id": "M2L2_Mouse.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Program Scratch. Pointing in different... - Task 2",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 2\".",
-          "type": "svg",
-          "url": ""
+          "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+          "title": "Endless movement: the mouse tries to run away",
+          "text": "The \"go __ steps\" command moves the sprite a few steps in the direction it is currently looking in. Now just make it so that it always repeats itself!",
+          "type": "gif",
+          "url": "/vp-assets/26852/move.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "5df51ba2-7507-4f7d-aa0f-0be4628dabe6",
+          "title": "The mouse does not run away",
+          "text": "The command \"if on edge, bounce\" does not allow the mouse to go off the stage.",
+          "type": "gif",
+          "url": "/vp-assets/26852/if.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_3",
+          "id": "1c7b6979-4556-4a6e-94ca-e11a45452bbe",
           "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "text": "Set the position that the mouse occupies at the start, as well as the direction it is pointed in at the beginning!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [
+        {
+          "id": "1565946385252-9",
+          "title": "Sprite direction",
+          "description": "The direction the sprite is facing can be seen in the sprite properties.",
+          "url": "/vp-assets/26852/sprite_1627890133.png"
+        },
+        {
+          "id": "1565946423467-10",
+          "title": "Direction values",
+          "description": "By clicking on the window with the direction, it can be forcibly changed without using commands.",
+          "url": "/vp-assets/26852/Снимок-3.JPG"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Mouse",
+          "text": "Program the mouse so that it runs around the stage but does not run off of it!",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329766",
+      "source_task_level_id": "199079",
+      "source_project_id": "10683015",
+      "source_demo_project_id": "2673988",
       "states": [
         {
           "id": "VP2_M2L2_3_2_state_1",
-          "stateId": "VP2_M2L2_3_2_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Mouse",
+          "project_title": "Mouse",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L2_Bug.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Mouse.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+              "title": "Endless movement: the mouse tries to run away",
+              "text": "The \"go __ steps\" command moves the sprite a few steps in the direction it is currently looking in. Now just make it so that it always repeats itself!",
+              "type": "gif",
+              "url": "/vp-assets/26852/move.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "5df51ba2-7507-4f7d-aa0f-0be4628dabe6",
+              "title": "The mouse does not run away",
+              "text": "The command \"if on edge, bounce\" does not allow the mouse to go off the stage.",
+              "type": "gif",
+              "url": "/vp-assets/26852/if.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "1c7b6979-4556-4a6e-94ca-e11a45452bbe",
+              "title": "Initial placement",
+              "text": "Set the position that the mouse occupies at the start, as well as the direction it is pointed in at the beginning!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L2 Bug"
+          "tips": [
+            {
+              "id": "1565946385252-9",
+              "title": "Sprite direction",
+              "description": "The direction the sprite is facing can be seen in the sprite properties.",
+              "url": "/vp-assets/26852/sprite_1627890133.png"
+            },
+            {
+              "id": "1565946423467-10",
+              "title": "Direction values",
+              "description": "By clicking on the window with the direction, it can be forcibly changed without using commands.",
+              "url": "/vp-assets/26852/Снимок-3.JPG"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Mouse",
+              "text": "Program the mouse so that it runs around the stage but does not run off of it!",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329766",
+          "source_task_level_id": "199079",
+          "source_project_id": "10683015",
+          "source_demo_project_id": "2673988",
+          "stateId": "VP2_M2L2_3_2_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L2 Bug",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_3",
@@ -188,87 +362,156 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Pointing in different... - Task 3",
+      "title": "MarsBot on Mars",
+      "project_title": "MarsBot on Mars",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L2_Mouse.sb3",
+      "starter_project_id": "M2L2_Marsobot_on_Mars.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_3_1",
-          "title": "Program Scratch. Pointing in different... - Task 3",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 3\".",
-          "type": "svg",
-          "url": ""
+          "id": "efa23b8b-af01-45e8-a604-a294b70ad131",
+          "title": "Initial placement of the MarsBot",
+          "text": "Don't forget about placement: you need to set the position of the MarsBot and the direction it is looking in.",
+          "type": "gif",
+          "url": "/vp-assets/26852/initial.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+          "title": "The MarsBot goes from one mountain to another",
+          "text": "Use motion, wait, and loop commands to program the movement of the sprite.",
+          "type": "gif",
+          "url": "/vp-assets/26852/repeat_1627890505.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "f27badad-1ca6-44ee-b2f1-5d21d88728c8",
+          "title": "The MarsBot turns around",
+          "text": "But how to turn around without pushing off of the edge? Use the already familiar \"point in direction __\" command. And don't forget about rotation style!",
+          "type": "gif",
+          "url": "/vp-assets/26852/set_rotation_1627890483.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "1a4f4a5b-201a-45cf-a739-7ec08a38c287",
+          "title": "The MarsBot returns to the starting point",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26852/repeat_1627890512.png",
+          "taskType": "basic"
         }
       ],
+      "tips": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "MarsBot on Mars",
+          "text": "Program the MarsBot to walk left and right and not bump into mountains!",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329763",
+      "source_task_level_id": "199076",
+      "source_project_id": "10683021",
+      "source_demo_project_id": "6375973",
       "states": [
         {
           "id": "VP2_M2L2_3_3_state_1",
-          "stateId": "VP2_M2L2_3_3_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "title": "MarsBot on Mars",
+          "project_title": "MarsBot on Mars",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L2_Mouse.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Marsobot_on_Mars.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "efa23b8b-af01-45e8-a604-a294b70ad131",
+              "title": "Initial placement of the MarsBot",
+              "text": "Don't forget about placement: you need to set the position of the MarsBot and the direction it is looking in.",
+              "type": "gif",
+              "url": "/vp-assets/26852/initial.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+              "title": "The MarsBot goes from one mountain to another",
+              "text": "Use motion, wait, and loop commands to program the movement of the sprite.",
+              "type": "gif",
+              "url": "/vp-assets/26852/repeat_1627890505.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "f27badad-1ca6-44ee-b2f1-5d21d88728c8",
+              "title": "The MarsBot turns around",
+              "text": "But how to turn around without pushing off of the edge? Use the already familiar \"point in direction __\" command. And don't forget about rotation style!",
+              "type": "gif",
+              "url": "/vp-assets/26852/set_rotation_1627890483.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "1a4f4a5b-201a-45cf-a739-7ec08a38c287",
+              "title": "The MarsBot returns to the starting point",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26852/repeat_1627890512.png",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L2 Mouse"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "MarsBot on Mars",
+              "text": "Program the MarsBot to walk left and right and not bump into mountains!",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329763",
+          "source_task_level_id": "199076",
+          "source_project_id": "10683021",
+          "source_demo_project_id": "6375973",
+          "stateId": "VP2_M2L2_3_3_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L2 Mouse",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_4",
@@ -276,87 +519,156 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Scratch. Pointing in different... - Task 4",
+      "title": "Penguin",
+      "project_title": "Penguin",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L2_Mouse_in_the_maze.sb3",
+      "starter_project_id": "M2L2_Penguin.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_4_1",
-          "title": "Program Scratch. Pointing in different... - Task 4",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 4\".",
-          "type": "svg",
-          "url": ""
+          "id": "d7f1c403-c093-4066-9932-fed40f5606a4",
+          "title": "Initial placement of the penguin",
+          "text": "Set the initial placement of the penguin so that the project always starts the same way.",
+          "type": "gif",
+          "url": "/vp-assets/26852/in_pinguin.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "6ebffd97-9f7d-4b78-a9e1-27cd4ad43124",
+          "title": "The penguin walks",
+          "text": "Use motion, wait, and loop commands to program the sprite to walk!",
+          "type": "gif",
+          "url": "/vp-assets/26852/penguin_walks.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "c7df559e-8b5c-421c-9faf-b85f788d3b03",
+          "title": "The penguin turns",
+          "text": "How to turn around without pushing off of the edge? Use the already familiar \"point in direction __\" command. And don't forget about rotation style!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "59f32866-fb04-4d19-b893-61b5058e647c",
+          "title": "The penguin change costumes",
+          "text": "Make the penguin change costumes while walking.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
+      "tips": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Penguin",
+          "text": "Program the Penguin's walk!",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329765",
+      "source_task_level_id": "199078",
+      "source_project_id": "10683031",
+      "source_demo_project_id": "2673992",
       "states": [
         {
           "id": "VP2_M2L2_3_4_state_1",
-          "stateId": "VP2_M2L2_3_4_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "title": "Penguin",
+          "project_title": "Penguin",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L2_Mouse_in_the_maze.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Penguin.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "d7f1c403-c093-4066-9932-fed40f5606a4",
+              "title": "Initial placement of the penguin",
+              "text": "Set the initial placement of the penguin so that the project always starts the same way.",
+              "type": "gif",
+              "url": "/vp-assets/26852/in_pinguin.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "6ebffd97-9f7d-4b78-a9e1-27cd4ad43124",
+              "title": "The penguin walks",
+              "text": "Use motion, wait, and loop commands to program the sprite to walk!",
+              "type": "gif",
+              "url": "/vp-assets/26852/penguin_walks.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "c7df559e-8b5c-421c-9faf-b85f788d3b03",
+              "title": "The penguin turns",
+              "text": "How to turn around without pushing off of the edge? Use the already familiar \"point in direction __\" command. And don't forget about rotation style!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "59f32866-fb04-4d19-b893-61b5058e647c",
+              "title": "The penguin change costumes",
+              "text": "Make the penguin change costumes while walking.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L2 Mouse in the maze"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Penguin",
+              "text": "Program the Penguin's walk!",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329765",
+          "source_task_level_id": "199078",
+          "source_project_id": "10683031",
+          "source_demo_project_id": "2673992",
+          "stateId": "VP2_M2L2_3_4_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L2 Mouse in the maze",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_5",
@@ -364,87 +676,124 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Scratch. Pointing in different... - Task 5",
+      "title": "Bug",
+      "project_title": "Bug",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L2_Cat.sb3",
+      "starter_project_id": "M2L2_Bug.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Program Scratch. Pointing in different... - Task 5",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 5\".",
-          "type": "svg",
-          "url": ""
+          "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+          "title": "Initial placement of the bug",
+          "text": "The initial placement is already complete, but you can add size settings, a phrase, or whatever you like!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "d32b70f3-0167-4a7f-95e5-b789986baa79",
+          "title": "The bug moves",
+          "text": "The bug turns in a certain direction, takes a few steps, and then turns again, and takes a few more steps. Experiment and guide the bug to the ladybug!",
+          "type": "gif",
+          "url": "/vp-assets/26852/bug_moves.png",
+          "taskType": "basic"
         }
       ],
+      "tips": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Bug",
+          "text": "The bug should reach the ladybug by moving along the branches of the tree!",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329762",
+      "source_task_level_id": "199075",
+      "source_project_id": "10683036",
+      "source_demo_project_id": "10683038",
       "states": [
         {
           "id": "VP2_M2L2_3_5_state_1",
-          "stateId": "VP2_M2L2_3_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "title": "Bug",
+          "project_title": "Bug",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L2_Cat.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Bug.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+              "title": "Initial placement of the bug",
+              "text": "The initial placement is already complete, but you can add size settings, a phrase, or whatever you like!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "d32b70f3-0167-4a7f-95e5-b789986baa79",
+              "title": "The bug moves",
+              "text": "The bug turns in a certain direction, takes a few steps, and then turns again, and takes a few more steps. Experiment and guide the bug to the ladybug!",
+              "type": "gif",
+              "url": "/vp-assets/26852/bug_moves.png",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L2 Cat"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Bug",
+              "text": "The bug should reach the ladybug by moving along the branches of the tree!",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329762",
+          "source_task_level_id": "199075",
+          "source_project_id": "10683036",
+          "source_demo_project_id": "10683038",
+          "stateId": "VP2_M2L2_3_5_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L2 Cat",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_6",
@@ -452,87 +801,46 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Pointing in different... - Task 6",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "M2L2_Marsobot_on_Mars.sb3",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_6_1",
-          "title": "Program Scratch. Pointing in different... - Task 6",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 6\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26852",
+      "source_level_id": "329764",
+      "source_task_level_id": "199077",
       "states": [
         {
           "id": "VP2_M2L2_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26852",
+          "source_level_id": "329764",
+          "source_task_level_id": "199077",
           "stateId": "VP2_M2L2_3_6_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M2L2_Marsobot_on_Mars.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M2L2 Marsobot on Mars"
+          "type": "rating"
         }
-      ],
-      "project_title": "M2L2 Marsobot on Mars",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_3_7",
@@ -540,87 +848,143 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Scratch. Pointing in different... - Task 7",
+      "title": "Mouse in the maze",
+      "project_title": "Mouse in the maze",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_Teleport.sb3",
+      "starter_project_id": "M2L2_Mouse_in_the_maze.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_7_1",
-          "title": "Program Scratch. Pointing in different... - Task 7",
-          "text": "Program the sprites and animations for \"Scratch. Pointing in different... - Task 7\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_7_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_7_3",
+          "id": "cdf261d2-7c6f-445b-8240-d26e877f8a41",
           "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "text": "Do the initial placement. Some of the commands are already there!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+          "title": "Mouse sprite movement starts",
+          "text": "Make it so that clicking the green flag triggers mouse movement.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "f27badad-1ca6-44ee-b2f1-5d21d88728c8",
+          "title": "The mouse runs to the red button",
+          "text": "Use this construction to bypass the walls of the labyrinth.\n",
+          "type": "gif",
+          "url": "/vp-assets/26852/image(1).jpg",
+          "taskType": "basic"
         }
       ],
+      "tips": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Pointing in different... - Task 7",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Mouse in the maze",
+          "text": "The mouse has to get to the red button in the maze.",
+          "url": ""
         }
       ],
+      "source_task_id": "26852",
+      "source_level_id": "329761",
+      "source_task_level_id": "199074",
+      "source_project_id": "10683040",
+      "source_demo_project_id": "2672228",
+      "isBonus": true,
+      "type": "bonus",
       "states": [
         {
           "id": "VP2_M2L2_3_7_state_1",
-          "stateId": "VP2_M2L2_3_7_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "title": "Mouse in the maze",
+          "project_title": "Mouse in the maze",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_Teleport.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L2_Mouse_in_the_maze.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "cdf261d2-7c6f-445b-8240-d26e877f8a41",
+              "title": "Initial placement",
+              "text": "Do the initial placement. Some of the commands are already there!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "f458b208-7205-4bbb-aa08-a924ed0a5bdd",
+              "title": "Mouse sprite movement starts",
+              "text": "Make it so that clicking the green flag triggers mouse movement.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "f27badad-1ca6-44ee-b2f1-5d21d88728c8",
+              "title": "The mouse runs to the red button",
+              "text": "Use this construction to bypass the walls of the labyrinth.\n",
+              "type": "gif",
+              "url": "/vp-assets/26852/image(1).jpg",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 Teleport"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Mouse in the maze",
+              "text": "The mouse has to get to the red button in the maze.",
+              "url": ""
+            }
+          ],
+          "source_task_id": "26852",
+          "source_level_id": "329761",
+          "source_task_level_id": "199074",
+          "source_project_id": "10683040",
+          "source_demo_project_id": "2672228",
+          "isBonus": true,
+          "type": "scratch",
+          "stateId": "VP2_M2L2_3_7_state_1"
         }
-      ],
-      "project_title": "M2L1 Teleport",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     }
   ]
 }

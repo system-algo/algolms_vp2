@@ -127,10 +127,10 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Events - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "Look at the rooster scripts. Choose the animation that shows what it will do when you press the spacebar.",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -179,7 +179,37 @@
       ],
       "project_title": "Test yourself. Events - Question 3",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "marsbotQuiz": {
+        "prompt": "Look at the rooster scripts. Choose the animation that shows what it will do when you press the spacebar.",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_scripts_question.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt1.gif",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt2.gif",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt3.gif",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt4.gif",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 3,
+        "feedbackCorrect": "Correct! When the spacebar is pressed, the rooster executes the repeat 9 loop to cycle through its costumes.",
+        "feedbackIncorrect": "Not quite right. Look closely at the \"when space key pressed\" script: it repeats changing costumes 9 times, and does not say Hello!"
+      }
     }
   ]
 }

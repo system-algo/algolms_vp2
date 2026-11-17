@@ -340,6 +340,37 @@ const QUIZ_CONFIG_BY_PAGE = {
       correctOptionId: 2,
       feedbackCorrect: 'Correct! The "when this sprite clicked" event combined with "next costume" changes the costume upon clicking.',
       feedbackIncorrect: 'Not quite right. Look for an event block that triggers when clicking the sprite, and a looks block that changes costume!'
+    },
+    // Question 2 (level 3 in LMS / Task 3 in manifest): Rooster spacebar animation quiz
+    3: {
+      prompt: 'Look at the rooster scripts. Choose the animation that shows what it will do when you press the spacebar.',
+      bannerBg: '#ffffff',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_scripts_question.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt1.gif',
+          label: 'Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt2.gif',
+          label: 'Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt3.gif',
+          label: 'Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt4.gif',
+          label: 'Option 4'
+        }
+      ],
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! When the spacebar is pressed, the rooster executes the repeat 9 loop to cycle through its costumes.',
+      feedbackIncorrect: 'Not quite right. Look closely at the "when space key pressed" script: it repeats changing costumes 9 times, and does not say Hello!'
     }
   }
 };

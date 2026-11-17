@@ -1,10 +1,16 @@
 {
-  "schemaVersion": 2,
+  "version": 1,
   "id": "VP2_M3L3_4",
-  "title": "Procedures - Part 4",
-  "type": "scratch-task",
-  "level_type": "scratch",
-  "taskCount": 3,
+  "title": "Test yourself. Procedures",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "taskCount": 4,
+  "metadata": {
+    "courseId": "VP2",
+    "moduleId": "M3-Functions-and-Modules",
+    "pageId": "VP2_M3L3_4",
+    "convertedAt": "2026-11-10T14:32:34.464Z"
+  },
   "tasks": [
     {
       "id": "VP2_M3L3_4_1",
@@ -12,129 +18,78 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Procedures",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Procedures\".",
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Procedures\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M3L3_4_1_state_1",
           "stateId": "VP2_M3L3_4_1_state_1",
           "position": 1,
-          "level_position": 1,
-          "levelPosition": 1,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Procedures\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [
-            "looks_sayforsecs",
-            "operator_and"
-          ],
-          "requirements": [
-            {
-              "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Procedures\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
-        }
-      ],
-      "type": "generic_captured_task"
-    },
-    {
-      "id": "task-2-22853",
-      "taskId": "task-2-22853",
-      "title": "Test yourself. Procedures",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
-      "bodyText": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "After which blocks can no other commands be placed?",
-        "ANSWER"
-      ],
-      "images": [],
-      "states": [
-        {
-          "id": "task-2-22853-state-1",
-          "stateId": "task-2-22853-state-1",
-          "name": "2",
-          "instruction": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
-          "bodyText": "1\n2\n3\nAfter which blocks can no other commands be placed?\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "After which blocks can no other commands be placed?",
-            "ANSWER"
-          ],
-          "images": [],
-          "screenshot": ""
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
       ]
+    },
+    {
+      "id": "VP2_M3L3_4_2",
+      "taskId": "VP2_M3L3_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "What will the sprite do when you click on it?",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "What will the sprite do when you click on it?",
+        "description": "",
+        "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q1_balloon_script.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "say",
+            "text": "Say \"inflate a large balloon\""
+          },
+          {
+            "id": "send",
+            "text": "Send the message \"inflate a large balloon\""
+          },
+          {
+            "id": "big",
+            "text": "Get 20% bigger 10 times and become 10 times more transparent"
+          },
+          {
+            "id": "small",
+            "text": "Get 10% bigger 10 times and become 5 times more transparent"
+          }
+        ],
+        "correctOptionIds": [
+          "big"
+        ]
+      },
+      "states": [
+        {
+          "id": "VP2_M3L3_4_2_state_1",
+          "stateId": "VP2_M3L3_4_2_state_1",
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "What will the sprite do when you click on it?"
+        }
+      ],
+      "project_title": "What will the sprite do when you click on it?",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M3L3_4_3",
@@ -142,92 +97,121 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Procedures",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Procedures\".",
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Procedures\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "title": "After which blocks can no other commands be placed?",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "After which blocks can no other commands be placed?",
+        "description": "",
+        "image": "",
+        "multiple": true,
+        "options": [
+          {
+            "id": "control",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q2_block_1.png",
+            "alt": "control"
+          },
+          {
+            "id": "stop_other",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q2_block_2.png",
+            "alt": "stop other scripts in sprite"
+          },
+          {
+            "id": "stop_this",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q2_block_3.png",
+            "alt": "stop this script"
+          },
+          {
+            "id": "stop_all",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q2_block_4.png",
+            "alt": "stop all"
+          }
+        ],
+        "correctOptionIds": [
+          "stop_this",
+          "stop_all"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M3L3_4_3_state_1",
           "stateId": "VP2_M3L3_4_3_state_1",
-          "position": 3,
-          "level_position": 3,
-          "levelPosition": 3,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Procedures\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Procedures\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "After which blocks can no other commands be placed?"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "After which blocks can no other commands be placed?",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
+    },
+    {
+      "id": "VP2_M3L3_4_4",
+      "taskId": "VP2_M3L3_4_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "How will the sprite behave when this program is run?",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "How will the sprite behave when this program is run?",
+        "description": "",
+        "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/q3_chick_script.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "a",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/chick_1.gif",
+            "alt": "Animation A"
+          },
+          {
+            "id": "b",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/chick_2.gif",
+            "alt": "Animation B"
+          },
+          {
+            "id": "c",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/chick_3.gif",
+            "alt": "Animation C"
+          },
+          {
+            "id": "d",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_4/images/chick_4.gif",
+            "alt": "Animation D"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ]
+      },
+      "states": [
+        {
+          "id": "VP2_M3L3_4_4_state_1",
+          "stateId": "VP2_M3L3_4_4_state_1",
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "How will the sprite behave when this program is run?"
+        }
+      ],
+      "project_title": "How will the sprite behave when this program is run?",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
-  ]
+  ],
+  "activityType": "marsbot-quiz"
 }

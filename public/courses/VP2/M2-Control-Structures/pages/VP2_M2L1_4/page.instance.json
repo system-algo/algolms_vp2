@@ -104,7 +104,7 @@
       "selectedType": "coordinate-dragdrop-task",
       "coordinateDragDropTask": {
         "title": "Part 1.",
-        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid.png",
+        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid_dots.png",
         "dots": [
           { "id": "dot_neg3_neg1", "x": -3, "y": -1, "expectedItem": "emerald" },
           { "id": "dot_3_neg1", "x": 3, "y": -1, "expectedItem": "diamond" },

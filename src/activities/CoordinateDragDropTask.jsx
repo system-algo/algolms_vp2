@@ -68,32 +68,32 @@ const GRID_DOTS = [
     id: 'dot_neg3_neg1',
     x: -3,
     y: -1,
-    leftPct: 26.75,
-    topPct: 56.73,
+    leftPct: 25.59,
+    topPct: 59.15,
     expectedItem: 'emerald',
   },
   {
     id: 'dot_3_neg1',
     x: 3,
     y: -1,
-    leftPct: 54.05,
-    topPct: 56.73,
+    leftPct: 54.92,
+    topPct: 59.15,
     expectedItem: 'diamond',
   },
   {
     id: 'dot_neg3_neg7',
     x: -3,
     y: -7,
-    leftPct: 26.75,
-    topPct: 87.63,
+    leftPct: 25.59,
+    topPct: 87.72,
     expectedItem: 'crystal',
   },
   {
     id: 'dot_3_neg7',
     x: 3,
     y: -7,
-    leftPct: 54.05,
-    topPct: 87.63,
+    leftPct: 54.92,
+    topPct: 87.72,
     expectedItem: null,
   },
 ];
@@ -430,7 +430,7 @@ export default function CoordinateDragDropTask({
             {/* Left: Coordinate Grid with Drop Dots */}
             <div className="coord-drag-grid-col">
               <img
-                src="/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid.png"
+                src="/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid_dots.png"
                 alt="Coordinate Grid"
                 className="coord-drag-grid-img"
               />

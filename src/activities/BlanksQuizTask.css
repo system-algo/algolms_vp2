@@ -1,0 +1,70 @@
+/* LMS quiz3 blanks layout — builds on ImageChoiceQuizTask.css */
+
+.bq-description {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bq-panel {
+  flex: 1;
+  min-width: 0;
+  min-height: min(734px, calc(100vh - 140px));
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.bq-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #0f1c2c;
+}
+
+.bq-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-height: 46px;
+}
+
+.bq-input {
+  box-sizing: content-box;
+  min-width: 14px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #81edfc;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #833ae0;
+  font-family: inherit;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bq-input:focus {
+  box-shadow: 0 0 0 2px rgba(129, 237, 252, 0.6);
+}
+
+.bq-input.is-correct {
+  border-color: #3ad15b;
+  color: #1f9a37;
+}
+
+.bq-input.is-wrong {
+  border-color: #ff6b6b;
+  color: #d93636;
+}
+
+.bq-input:disabled {
+  background: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .bq-panel {
+    min-height: 200px;
+  }
+}

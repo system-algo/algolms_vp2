@@ -1,0 +1,253 @@
+.coord-input-stage {
+  position: relative;
+  width: 100vw;
+  min-height: calc(100vh - 110px);
+  margin-left: calc(50% - 50vw);
+  padding: 40px 0 60px;
+  box-sizing: border-box;
+  background: #833ae0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.coord-card-container {
+  position: relative;
+  width: min(800px, calc(100vw - 120px));
+  margin: 0 auto;
+}
+
+.coord-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  padding: 28px 36px 36px;
+  box-sizing: border-box;
+}
+
+.coord-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.coord-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.coord-title.is-correct {
+  color: #2cbb45;
+}
+
+.coord-check-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2cbb45;
+}
+
+.coord-attempt {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.coord-floating-actions {
+  position: absolute;
+  top: 24px;
+  right: -16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.coord-action-btn {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 1.5px solid #dcd7eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.15s ease;
+  padding: 0;
+}
+
+.coord-action-btn:hover {
+  border-color: #7a3eed;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(122, 62, 237, 0.2);
+}
+
+.coord-action-btn:active {
+  transform: translateY(0);
+}
+
+.coord-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.coord-grid-col {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coord-grid-img {
+  width: 290px;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.coord-inputs-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 8px;
+}
+
+.coord-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.coord-item-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.coord-item-icon img {
+  max-width: 44px;
+  max-height: 44px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.coord-pill {
+  background: #e1dded;
+  border-radius: 28px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coord-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #262626;
+  font-family: inherit;
+}
+
+.coord-semicolon {
+  font-size: 18px;
+  font-weight: 700;
+  color: #262626;
+  margin: 0 4px;
+}
+
+.coord-field {
+  width: 42px;
+  height: 32px;
+  background: #ffffff;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #262626;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease;
+  font-family: inherit;
+}
+
+.coord-field:focus {
+  border-color: #7a3eed;
+}
+
+.coord-field.is-wrong {
+  border-color: #ef4444;
+  background: #fff5f5;
+  color: #dc2626;
+}
+
+.coord-field.is-correct {
+  border-color: #22c55e;
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.coord-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 10;
+  line-height: 1;
+  padding: 0;
+  padding-bottom: 4px;
+}
+
+.coord-nav-arrow:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.coord-nav-prev {
+  left: 24px;
+}
+
+.coord-nav-next {
+  right: 24px;
+}
+
+@media (max-width: 768px) {
+  .coord-body {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .coord-grid-img {
+    width: 240px;
+  }
+}

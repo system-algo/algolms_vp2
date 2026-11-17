@@ -218,3 +218,18 @@
 
 .reporter-block {position:relative;margin-left:7px;}
 .reporter-block::before {content:'';position:absolute;left:-8px;top:50%;transform:translateY(-50%);width:9px;height:13px;border-radius:4px 0 0 4px;background:inherit;border-left:1px solid #486782;}
+
+/* Expressions keep their own color and geometry inside a command socket. */
+.reporter-block{padding:0;min-height:0;border:0;border-radius:0;background:transparent;box-shadow:none;font:12px Arial,sans-serif;line-height:18px}
+.reporter-block::before{display:none}
+.reporter-input{box-sizing:border-box;min-height:20px;padding:1px 6px;gap:3px;border-radius:2px;color:#fff;line-height:18px;font:12px Arial,sans-serif;box-shadow:inset 0 1px #ffffff30;border:1px solid #0002}
+.reporter-input .reporter-input{background:#5b80a5}
+.reporter-input select,.reporter-input input{height:16px;min-width:24px;max-width:90px;padding:0 2px;border-radius:2px;font:11px Arial,sans-serif;background:#dce6f0}
+.reporter-input input{width:38px}
+.reporter-empty{min-width:16px;min-height:14px;padding:0 2px;background:#0003;outline:none;box-shadow:inset 0 0 0 1px #ffffff40;font-size:0}
+.reporter-clear,.reporter-grip{position:absolute;z-index:3;opacity:0;top:-13px;height:14px;line-height:14px;background:#334155;color:white}
+.reporter-clear{right:0}.reporter-grip{left:0}
+.reporter-input:hover>.reporter-clear,.reporter-input:hover>.reporter-grip,.reporter-input:focus-within>.reporter-clear{opacity:1}
+.reporter-drop-active{outline:2px solid #ffd32a!important}
+
+.reporter-input:not(.reporter-empty)::before{content:'';position:absolute;left:-5px;top:50%;width:5px;height:8px;transform:translateY(-50%);border-radius:3px 0 0 3px;background:inherit}

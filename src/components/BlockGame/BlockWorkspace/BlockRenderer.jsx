@@ -181,7 +181,7 @@ export default function BlockRenderer({
     return <span>{def.label}</span>;
   };
 
-  if(isReporter(block)) return <div className="reporter-block" data-block-id={block.id} data-block-type={block.type} style={{background:def.color}} onPointerDown={handlePointerDown}><ReporterInput value={reporterValue(block)} accept={def.output} target={isToolbox||isGhost?undefined:{blockId:block.id,param:'expression',path:[]}} onChange={expression=>handleSelectChange('expression',expression)} onStartDrag={onStartDrag} dropTarget={dropTarget} disabled={isExecuting||isGhost} toolbox={isToolbox}/></div>;
+  if(isReporter(block)) return <div className="reporter-block" data-block-id={block.id} data-block-type={block.type} style={{'--reporter-color':def.color}} onPointerDown={handlePointerDown}><ReporterInput value={reporterValue(block)} accept={def.output} target={isToolbox||isGhost?undefined:{blockId:block.id,param:'expression',path:[]}} onChange={expression=>handleSelectChange('expression',expression)} onStartDrag={onStartDrag} dropTarget={dropTarget} disabled={isExecuting||isGhost} toolbox={isToolbox}/></div>;
   const blockHeight = compact ? 24 : 34;
   const totalWidth = contentWidth + 24;
 
@@ -253,7 +253,7 @@ export default function BlockRenderer({
             display: 'flex',
             width: '100%',
             position: 'relative',
-            marginTop: '-4px', // Interlock with header
+            marginTop: '0px', // Header and child connectors share the same baseline
             zIndex: 1,
           }}
         >
@@ -279,8 +279,8 @@ export default function BlockRenderer({
               flexDirection: 'column',
               alignItems: 'flex-start',
               flex: 1,
-              minHeight: '34px',
-              padding: '2px 4px',
+              minHeight: block.children?.length ? '0px' : (compact ? '24px' : '34px'),
+              padding: '0px',
               background: isTargetInside ? 'rgba(250, 204, 21, 0.25)' : 'transparent',
               borderRadius: '4px',
               transition: 'background 0.15s ease',
@@ -300,7 +300,7 @@ export default function BlockRenderer({
                   return (
                     <React.Fragment key={childBlock.id}>
                       {isChildBefore && <div className="block-drop-indicator" />}
-                      <div style={{ display: 'block', marginTop: cIdx === 0 ? '-4px' : '-4px' }}>
+                      <div style={{ display: 'block', marginTop: '0px' }}>
                         <BlockRenderer compact={compact}
                           block={childBlock}
                           activeBlockId={activeBlockId}
@@ -320,9 +320,9 @@ export default function BlockRenderer({
                 data-slot-for={block.id}
                 data-slot-placeholder-for={block.id}
                 style={{
-                  height: '28px',
-                  minWidth: '140px',
-                  maxWidth: '220px',
+                  height: compact ? '20px' : '28px',
+                  minWidth: compact ? '40px' : '140px',
+                  maxWidth: compact ? '80px' : '220px',
                   border: isTargetInside ? '2px dashed #f59e0b' : '1.5px dashed #a7f3d0',
                   borderRadius: '6px',
                   margin: '2px 0 4px 4px',
@@ -353,7 +353,7 @@ export default function BlockRenderer({
             position: 'relative',
             width: `${bottomBracketWidth}px`,
             height: '14px',
-            marginTop: '-4px', // Interlock with last child block
+            marginTop: '0px', // Keep the last child tongue aligned with the floor socket
             cursor: 'grab',
             userSelect: 'none',
             zIndex: 2,
@@ -379,7 +379,8 @@ export default function BlockRenderer({
     <div
       className={`block-node-wrapper ${isExecuting ? 'is-executing' : ''} ${isGhost ? 'is-dragging' : ''}`}
       style={{
-        display: 'inline-block',
+        display: 'block',
+        width: 'max-content',
         position: 'relative',
         userSelect: 'none',
       }}
@@ -395,7 +396,7 @@ export default function BlockRenderer({
           width: `${totalWidth}px`,
           height: `${blockHeight}px`,
           cursor: isHat ? 'default' : 'grab',
-          display: 'inline-flex',
+          display: 'flex',
           alignItems: 'center',
         }}
       >
@@ -404,7 +405,7 @@ export default function BlockRenderer({
           width={totalWidth}
           height={blockHeight}
           type={shapeType}
-          color={compact && !isHat && !isCBlock && !['destroy', 'water'].includes(block.type) ? '#995ba7' : def.color || '#8A5BA7'}
+          color={def.color || '#995ba5'}
           darkColor={def.darkColor || '#6B4284'}
           isExecuting={isExecuting}
         />

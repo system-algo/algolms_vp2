@@ -108,81 +108,26 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Summercode Project",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "Summercode_Project.sb3",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_summer_1",
-          "title": "Program sprite animations",
-          "text": "Animate sprites using loops, costume changes, and motion blocks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_summer_2",
-          "title": "Initial placement",
-          "text": "Set initial stage backdrop, sprite positions, and reset variables.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Project. Personal website - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M1L5_1_2_state_1",
           "stateId": "VP2_M1L5_1_2_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "Summercode_Project.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "Summercode Project"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
-      ],
-      "project_title": "Summercode Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true,
-      "description": "Showcase your creative programming project with animations and sound!"
+      ]
     }
   ]
 }

@@ -1,10 +1,11 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
-import { BLOCK_TYPES, createBlockInstance, countCommands } from './BlockWorkspace/blockDefinitions.js';
+import { BLOCK_TYPES, createBlockInstance, countCommands, isWithinCommandLimit } from './BlockWorkspace/blockDefinitions.js';
 import { referenceProgram } from './GameEngine/referenceProgram.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
 import { stepExcursion, initialExcursionRobot, isExcursionComplete } from './GameEngine/excursionSimulation.js';
 import './ExcursionTask.css';
+import { sceneryPlacement } from './GameEngine/sceneryPlacement.js';
 
 const ASSETS = '/vp-assets/excursion/';
 const COMMANDS = [
@@ -14,7 +15,7 @@ const COMMANDS = [
 ];
 
 
-function ReferenceBoard({ level, robot }) {
+function ReferenceBoard({ level, robot, execution }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
   if (level.mode === 'retro') return <div className="retro-laboratory" aria-label="Retro laboratory crystal conveyor">
@@ -36,7 +37,8 @@ function ReferenceBoard({ level, robot }) {
       <image href="https://learn.alg.academy/img/games/fruits/table.png" x="113" y="355" width="285" height="137" />
       <image href="https://learn.alg.academy/img/games/fruits/borsch.png" x="180" y="429" width="173" height="121" />
       <image href="https://learn.alg.academy/img/games/fruits/tube.png" width="429" height="362" />
-      {level.fruits.slice(robot.fruitIndex, robot.fruitIndex + 7).map((fruit, i) => <image key={i} href={`https://learn.alg.academy/img/games/fruits/${fruit.name}.png`} width="75" height="75" x={i < 3 ? 20 : 20 + (i - 2) * 75} y={i < 3 ? 277 - i * 75 : 52} />)}
+      {level.fruits.slice(robot.fruitIndex, robot.fruitIndex + 7).map((fruit, i) => <image className="chef-ingredient" key={robot.fruitIndex+i} href={`https://learn.alg.academy/img/games/fruits/${fruit.name}.png`} width="75" height="75" x={i < 3 ? 20 : 20 + (i - 2) * 75} y={i < 3 ? 277 - i * 75 : 52} />)}
+      {execution?.action === 'cook' && <image key={`cook-${execution.index}`} className="chef-cooking-ingredient" href={`https://learn.alg.academy/img/games/fruits/${level.fruits[robot.fruitIndex]?.name}.png`} x="20" y="277" width="75" height="75" />}
     </svg><p>Ingredients processed: {robot.fruitIndex} / {level.fruits.length} · Cooked: {robot.cooked.length}</p>
   </div>;
   if (level.mode === 'coordinates') return <svg className="excursion-board excursion-coordinate-board" viewBox="0 0 798 704" role="img" aria-label={`Rocket at ${robot.x}, ${robot.y}`}>
@@ -57,8 +59,10 @@ function ReferenceBoard({ level, robot }) {
     {level.buildings.map((b,i) => <image key={i} href={b.image} x={b.x * 51 - 25} y={b.y * 51 - 25} width="100" height="100" opacity={robot.built.includes(i) ? 1 : 0.3} />)}
     <svg x={robot.x * 51 - 25} y={robot.y * 51 - 25} width="100" height="100" viewBox={`${robot.direction / 90 * 100} 0 100 100`} overflow="hidden"><image href="/vp-assets/construction/iron_sprite.png" width="400" height="100" /></svg>
   </svg>;
+  const scenery = level.scenery && sceneryPlacement(level.viewBox, level.scenery);
   return (
-    <svg className="excursion-board" viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
+    <svg className={`excursion-board${scenery ? " excursion-scenery-board" : ""}`} viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
+      {scenery && <image href={level.scenery} {...scenery} aria-hidden="true" />}
       {level.background && <image href={level.background} width="400" height="400" />}
       {level.cells.map((cell, index) => (
         <g key={`${cell.x},${cell.y}`}>
@@ -118,6 +122,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   });
   const [robot, setRobot] = useState(() => initialExcursionRobot(level));
   const [activeBlockId, setActiveBlockId] = useState(null);
+  const [execution, setExecution] = useState(null);
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
   const [guide, setGuide] = useState('intro');
@@ -135,13 +140,14 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     clearTimeout(timer.current);
     setRobot(initialExcursionRobot(level));
     setActiveBlockId(null);
+    setExecution(null);
     setStatus('idle');
     setMessage('');
   }
 
   function run() {
     reset();
-    if (level.maxCommands && countCommands(blocks) > level.maxCommands) { setStatus('failed'); setMessage(`Use no more than ${level.maxCommands} commands.`); return; }
+    if (!isWithinCommandLimit(blocks, level.maxCommands)) { setStatus('failed'); setMessage(`Commands used: ${countCommands(blocks)} out of ${level.maxCommands}. Reduce the number of blocks to complete this task.`); return; }
     let steps;
     let iterator;
     try { steps = level.dynamic ? [] : compileProgram(blocks); }
@@ -151,6 +157,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     let current = initialExcursionRobot(level);
     if(level.dynamic) iterator = referenceProgram(blocks,level,()=>current);
     let index = 0;
+    let executionIndex = 0;
     function advance() {
       let next;
       try { next = iterator ? iterator.next() : {done:index>=steps.length,value:steps[index++]}; } catch(error) {setStatus('failed');setMessage(error.message);return;}
@@ -167,9 +174,10 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
       if (isExcursionComplete(level, current)) { setStatus('completed'); setActiveBlockId(null); return; }
       const step = next.value;
       setActiveBlockId(step.blockId);
+      setExecution({...step,index:executionIndex++,label: step.conditionResult !== undefined ? `Condition: ${step.conditionResult ? 'true' : 'false'}` : step.action === 'advance_item' ? 'Next ingredient' : step.action === 'repeat_iteration' ? 'Loop: next iteration' : step.action.replaceAll('_',' ')});
       try { current = stepExcursion(level, current, step); setRobot(current); }
       catch (error) { setStatus('failed'); setMessage(error.message); setActiveBlockId(null); return; }
-      timer.current = setTimeout(advance, 380);
+      timer.current = setTimeout(advance, level.dynamic ? 650 : 380);
     }
     timer.current = setTimeout(advance, 100);
   }
@@ -192,19 +200,19 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     : guide === 'run' ? 'Create your own sequence of commands and click this button to start the program.' : level.hint;
 
   return (
-    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""} ${level.mode === "coordinates" ? "excursion-coordinate-task" : level.plants ? "excursion-plants-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
+    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""} ${level.mode === "chef" ? "excursion-chef-task" : ""} ${level.mode === "coordinates" ? "excursion-coordinate-task" : level.plants ? "excursion-plants-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
         <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={level.toolbox || [...(level.mode === 'coordinates' ? [`go_to_${level.unit}`] : level.plants ? [BLOCK_TYPES.TURN_CLOCKWISE, BLOCK_TYPES.TURN_COUNTERCLOCKWISE] : level.collectOnly ? [BLOCK_TYPES.MOVE_FORWARD, 'collect_direction', BLOCK_TYPES.TAKE_CARGO] : COMMANDS), ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.plants ? [BLOCK_TYPES.DESTROY, BLOCK_TYPES.WATER] : level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
-        <div className="excursion-world" style={level.scenery ? { backgroundImage: `url("${level.scenery}")` } : undefined}><ReferenceBoard level={level} robot={robot} /></div>
+        <div className={`excursion-world${level.scenery ? " excursion-scenery-world" : ""}`}><ReferenceBoard level={level} robot={robot} execution={status === 'running' ? execution : null} /></div>
         <div className="excursion-controls">
+          {status === 'running' && execution && <output className="excursion-execution" aria-live="polite">{execution.label}</output>}
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>
           <p>{level.hint}</p>{robot.variables&&<p aria-live="polite">{Object.entries(robot.variables).map(([name,value])=>`${name} = ${value}`).join(' · ')}{level.mode==='minerals'&&` · Minerals collected: ${robot.collected}${level.targetMinerals?` / ${level.targetMinerals}`:''}`}</p>}{level.cargo && <p className="excursion-cargo-count" aria-live="polite">{level.collectOnly ? 'Boxes collected' : 'Boxes delivered'}: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
-          <button className="excursion-guide-link" type="button" onClick={() => setGuide('intro')}>Show instructions</button>
         </div>
       </div>
       {(guide || status === 'completed' || status === 'failed') && (

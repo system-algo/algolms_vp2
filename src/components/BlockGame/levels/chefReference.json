@@ -7,6 +7,7 @@
   },
   {
     "number": 2,
+    "maxCommands": 4,
     "mode": "chef",
     "activityName": "Martian Chef",
     "hint": "What do we need for pumpkin pie? Pumpkin, of course! But how will the robot distinguish it from the watermelon and zucchini?",

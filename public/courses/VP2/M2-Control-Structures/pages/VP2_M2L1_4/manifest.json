@@ -19,59 +19,26 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Coordinates - Question 1",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M2L1_4_1_state_1",
           "stateId": "VP2_M2L1_4_1_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
-      ],
-      "project_title": "Test yourself. Coordinates - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_4_2",
@@ -79,57 +46,49 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Coordinates - Question 2",
-      "activityType": "marsbot-quiz",
+      "title": "Part 1. Coordinates",
+      "activityType": "coordinate-input-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "selectedType": "coordinate-input-task",
+      "coordinateInputTask": {
+        "title": "Part 1. Coordinates",
+        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid.png",
+        "items": [
+          {
+            "id": "emerald",
+            "name": "Emerald",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/emerald.png",
+            "correctX": 5,
+            "correctY": -5
+          },
+          {
+            "id": "chest",
+            "name": "Treasure Chest",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/chest.png",
+            "correctX": 8,
+            "correctY": 6
+          },
+          {
+            "id": "crystal",
+            "name": "Blue Crystal",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/crystal.png",
+            "correctX": -4,
+            "correctY": 4
+          }
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L1_4_2_state_1",
           "stateId": "VP2_M2L1_4_2_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
+          "type": "coordinate-input-task",
+          "selectedType": "coordinate-input-task",
           "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 2"
+          "project_title": "Part 1. Coordinates"
         }
       ],
-      "project_title": "Test yourself. Coordinates - Question 2",
+      "project_title": "Part 1. Coordinates",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     },
@@ -139,6 +98,64 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
+      "title": "Part 1. Coordinates",
+      "activityType": "coordinate-dragdrop-task",
+      "level_type": "quiz",
+      "selectedType": "coordinate-dragdrop-task",
+      "coordinateDragDropTask": {
+        "title": "Part 1.",
+        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid_dots.png",
+        "dots": [
+          { "id": "dot_neg3_neg1", "x": -3, "y": -1, "expectedItem": "emerald" },
+          { "id": "dot_3_neg1", "x": 3, "y": -1, "expectedItem": "diamond" },
+          { "id": "dot_neg3_neg7", "x": -3, "y": -7, "expectedItem": "crystal" },
+          { "id": "dot_3_neg7", "x": 3, "y": -7, "expectedItem": null }
+        ],
+        "items": [
+          {
+            "id": "diamond",
+            "name": "Diamond",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/diamond.png",
+            "targetX": 3,
+            "targetY": -1
+          },
+          {
+            "id": "emerald",
+            "name": "Emerald",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/emerald.png",
+            "targetX": -3,
+            "targetY": -1
+          },
+          {
+            "id": "crystal",
+            "name": "Blue Crystal",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/crystal.png",
+            "targetX": -3,
+            "targetY": -7
+          }
+        ]
+      },
+      "states": [
+        {
+          "id": "VP2_M2L1_4_3_state_1",
+          "stateId": "VP2_M2L1_4_3_state_1",
+          "position": 1,
+          "type": "coordinate-dragdrop-task",
+          "selectedType": "coordinate-dragdrop-task",
+          "level_type": "quiz",
+          "project_title": "Part 1. Coordinates"
+        }
+      ],
+      "project_title": "Part 1. Coordinates",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
+    },
+    {
+      "id": "VP2_M2L1_4_4",
+      "taskId": "VP2_M2L1_4_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
       "title": "Test yourself. Coordinates - Question 3",
       "activityType": "marsbot-quiz",
       "level_type": "quiz",
@@ -180,8 +197,8 @@
       ],
       "states": [
         {
-          "id": "VP2_M2L1_4_3_state_1",
-          "stateId": "VP2_M2L1_4_3_state_1",
+          "id": "VP2_M2L1_4_4_state_1",
+          "stateId": "VP2_M2L1_4_4_state_1",
           "position": 1,
           "type": "marsbot-quiz",
           "selectedType": "marsbot-quiz",
@@ -190,66 +207,6 @@
         }
       ],
       "project_title": "Test yourself. Coordinates - Question 3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
-    },
-    {
-      "id": "VP2_M2L1_4_4",
-      "taskId": "VP2_M2L1_4_4",
-      "position": 4,
-      "level_position": 4,
-      "levelPosition": 4,
-      "title": "Test yourself. Coordinates - Question 4",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_4_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_4_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 4",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
-      "states": [
-        {
-          "id": "VP2_M2L1_4_4_state_1",
-          "stateId": "VP2_M2L1_4_4_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 4"
-        }
-      ],
-      "project_title": "Test yourself. Coordinates - Question 4",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     }

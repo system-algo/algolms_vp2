@@ -21,6 +21,8 @@ import ScratchTask from './ScratchTask.jsx';
 import MarsBotQuizTask from './MarsBotQuizTask.jsx';
 import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
+import CoordinateInputTask from './CoordinateInputTask.jsx';
+import CoordinateDragDropTask from './CoordinateDragDropTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -711,6 +713,24 @@ function resolveRendererType(props) {
     return 'scratch-interface-label';
   }
 
+  if (
+    taskId === 'VP2_M2L1_4_2' ||
+    task?.activityType === 'coordinate-input-task' ||
+    task?.selectedType === 'coordinate-input-task' ||
+    ((taskId.includes('VP2_M2L1_4') || pageId === 'VP2_M2L1_4') && (props?.taskIndex === 1 || task?.position === 2 || task?.level_position === 2))
+  ) {
+    return 'coordinate-input-task';
+  }
+
+  if (
+    taskId === 'VP2_M2L1_4_3' ||
+    task?.activityType === 'coordinate-dragdrop-task' ||
+    task?.selectedType === 'coordinate-dragdrop-task' ||
+    ((taskId.includes('VP2_M2L1_4') || pageId === 'VP2_M2L1_4') && (props?.taskIndex === 2 || task?.position === 3 || task?.level_position === 3))
+  ) {
+    return 'coordinate-dragdrop-task';
+  }
+
   const isTestYourself =
     /test\s*yourself/i.test(task?.title || '') ||
     /test\s*yourself/i.test(pageInstance?.title || '') ||
@@ -1094,6 +1114,14 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'scratch-interface-label') {
     return <ScratchInterfaceLabelTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'coordinate-input-task') {
+    return <CoordinateInputTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'coordinate-dragdrop-task') {
+    return <CoordinateDragDropTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

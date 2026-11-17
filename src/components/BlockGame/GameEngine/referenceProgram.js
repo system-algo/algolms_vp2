@@ -65,12 +65,14 @@ export function* referenceProgram(blocks, level, readState) {
       if(++operations>3000)throw new Error('The program did not finish. Check your loop conditions.');
       if(b.type==='start_hat'||isReporter(b))continue;
       if(b.type==='if_else'){
-        yield {action:'repeat_iteration',blockId:b.id};
         const [yes,no]=b.children||[];
-        yield* walk(evaluateCondition(yes?.params?.condition,level,readState())?yes?.children||[]:no?.children||[],depth+1);
+        const conditionResult=evaluateCondition(yes?.params?.condition,level,readState());
+        yield {action:'repeat_iteration',blockId:yes?.id || b.id,conditionResult};
+        yield* walk(conditionResult?yes?.children||[]:no?.children||[],depth+1);
       }else if(b.type==='if_condition'||b.type==='branch_if'){
-        yield {action:'repeat_iteration',blockId:b.id};
-        if(evaluateCondition(b.params?.condition,level,readState()))yield* walk(b.children||[],depth+1);
+        const conditionResult=evaluateCondition(b.params?.condition,level,readState());
+        yield {action:'repeat_iteration',blockId:b.id,conditionResult};
+        if(conditionResult)yield* walk(b.children||[],depth+1);
       }else if(['repeat_until','forever','repeat','repeat_variable'].includes(b.type)){
         const times=b.type==='repeat_variable'?evaluateValue(b.params?.value,level,readState()):Number(b.params?.times ?? 2);
         if(['repeat','repeat_variable'].includes(b.type)&&(!Number.isInteger(times)||times<0||times>1000))throw new Error('Repeat needs a whole number from 0 to 1000.');

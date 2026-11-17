@@ -23,6 +23,7 @@ import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
 import CoordinateInputTask from './CoordinateInputTask.jsx';
 import CoordinateDragDropTask from './CoordinateDragDropTask.jsx';
+import ImageChoiceQuizTask from './ImageChoiceQuizTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -538,6 +539,8 @@ function normalizeRendererType(value) {
     'block-game-task': 'block-game-task',
     'block-programming': 'block-game-task',
     block_programming: 'block-game-task',
+    'image-choice-quiz-task': 'image-choice-quiz-task',
+    image_choice_quiz_task: 'image-choice-quiz-task',
     'marsbot-quiz': 'marsbot-quiz',
     marsbot_quiz: 'marsbot-quiz',
     marsbot: 'marsbot-quiz',
@@ -711,6 +714,14 @@ function resolveRendererType(props) {
     ((taskId.includes('VP2_M1L1_4') || pageId === 'VP2_M1L1_4') && (props?.taskIndex === 2 || task?.position === 3 || task?.level_position === 3))
   ) {
     return 'scratch-interface-label';
+  }
+
+  if (
+    task?.activityType === 'image-choice-quiz-task' ||
+    task?.selectedType === 'image-choice-quiz-task' ||
+    task?.imageChoiceQuizTask
+  ) {
+    return 'image-choice-quiz-task';
   }
 
   if (
@@ -1117,6 +1128,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'coordinate-dragdrop-task') {
     return <CoordinateDragDropTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'image-choice-quiz-task') {
+    return <ImageChoiceQuizTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

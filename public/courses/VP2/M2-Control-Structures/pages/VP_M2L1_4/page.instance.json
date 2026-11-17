@@ -106,10 +106,30 @@
         "title": "Part 1.",
         "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid_dots.png",
         "dots": [
-          { "id": "dot_neg3_neg1", "x": -3, "y": -1, "expectedItem": "emerald" },
-          { "id": "dot_3_neg1", "x": 3, "y": -1, "expectedItem": "diamond" },
-          { "id": "dot_neg3_neg7", "x": -3, "y": -7, "expectedItem": "crystal" },
-          { "id": "dot_3_neg7", "x": 3, "y": -7, "expectedItem": null }
+          {
+            "id": "dot_neg3_neg1",
+            "x": -3,
+            "y": -1,
+            "expectedItem": "emerald"
+          },
+          {
+            "id": "dot_3_neg1",
+            "x": 3,
+            "y": -1,
+            "expectedItem": "diamond"
+          },
+          {
+            "id": "dot_neg3_neg7",
+            "x": -3,
+            "y": -7,
+            "expectedItem": "crystal"
+          },
+          {
+            "id": "dot_3_neg7",
+            "x": 3,
+            "y": -7,
+            "expectedItem": null
+          }
         ],
         "items": [
           {
@@ -156,57 +176,49 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Test yourself. Coordinates - Question 3",
-      "activityType": "marsbot-quiz",
+      "title": "Ball coordinates",
+      "activityType": "image-choice-quiz-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 3",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Ball coordinates",
+        "description": "Choose the coordinates where the ball is.",
+        "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/ball_coordinates_scene.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "a",
+            "text": "x: 135; y: 95"
+          },
+          {
+            "id": "b",
+            "text": "x: 135; y: -95"
+          },
+          {
+            "id": "c",
+            "text": "x: -135; y: -95"
+          },
+          {
+            "id": "d",
+            "text": "x: -135; y: 95"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L1_4_4_state_1",
           "stateId": "VP2_M2L1_4_4_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
           "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 3"
+          "project_title": "Ball coordinates"
         }
       ],
-      "project_title": "Test yourself. Coordinates - Question 3",
+      "project_title": "Ball coordinates",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     }

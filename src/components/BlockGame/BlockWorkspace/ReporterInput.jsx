@@ -1,4 +1,5 @@
 import React from 'react';
+import { expressionColor } from './expressionStyle.js';
 const OPTIONS={color:['red','green','orange'],shape:['round','long'],size:['large','small'],cargo_color:['green','yellow'],cargo_shape:['cube','round'],path:['ahead','left','right'],finish:['crossed','ahead','left','right'],tank:['under','ahead','left','right'],dynamite:['under','ahead','left','right'],mineral:['under','ahead','left','right'],crystal_color:['red','green','blue']};
 const LABELS={color:'color',shape:'shape',size:'size',cargo_color:'cargo color',cargo_shape:'cargo shape',path:'path',finish:'finish line',tank:'gas tank',dynamite:'dynamite',mineral:'mineral',crystal_color:'color',crystal_size:'crystal size'};
 const variables=['variable','minerals','A','B','C','D'];
@@ -13,7 +14,7 @@ export default function ReporterInput({value,onChange,accept='boolean',target,on
   // A grip detaches the expression without moving its surrounding command.
   if(e.target.closest('[data-reporter-grip]')){e.stopPropagation();onStartDrag?.({type:accept==='boolean'?'condition_expression':'number_expression',params:{expression:value},sourceInput:socket},e);}
  }
- return <span className={`reporter-input reporter-${accept} ${selected?'reporter-drop-active':''} ${!kind?'reporter-empty':''}`} data-reporter-target={socket?JSON.stringify(socket):undefined} onPointerDown={e=>{if(toolbox&&!e.target.closest('select,input,button'))return;e.stopPropagation();drag(e)}}>
+ return <span className={`reporter-input reporter-${accept} ${selected?'reporter-drop-active':''} ${!kind?'reporter-empty':''}`} style={kind ? {background:expressionColor(value)} : undefined} data-reporter-target={socket?JSON.stringify(socket):undefined} onPointerDown={e=>{if(toolbox&&!e.target.closest('select,input,button'))return;e.stopPropagation();drag(e)}}>
   {target&&kind&&!toolbox&&<span data-reporter-grip="true" className="reporter-grip" title="Drag this expression" aria-label="Drag expression">⠿</span>}
   {!kind&&<span>{accept==='boolean'?'condition':'value'}</span>}
   {kind==='number'&&<input aria-label="Number" type="number" value={value} disabled={disabled} onChange={e=>onChange?.(Number(e.target.value))}/>}

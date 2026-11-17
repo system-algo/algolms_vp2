@@ -15,7 +15,7 @@ const COMMANDS = [
 ];
 
 
-function ReferenceBoard({ level, robot }) {
+function ReferenceBoard({ level, robot, execution }) {
   const id = useId().replace(/:/g, '');
   const frame = ({ 0: 0, 90: 4, 180: 8, 270: 12 })[robot.direction] ?? 8;
   if (level.mode === 'retro') return <div className="retro-laboratory" aria-label="Retro laboratory crystal conveyor">
@@ -37,7 +37,8 @@ function ReferenceBoard({ level, robot }) {
       <image href="https://learn.alg.academy/img/games/fruits/table.png" x="113" y="355" width="285" height="137" />
       <image href="https://learn.alg.academy/img/games/fruits/borsch.png" x="180" y="429" width="173" height="121" />
       <image href="https://learn.alg.academy/img/games/fruits/tube.png" width="429" height="362" />
-      {level.fruits.slice(robot.fruitIndex, robot.fruitIndex + 7).map((fruit, i) => <image key={i} href={`https://learn.alg.academy/img/games/fruits/${fruit.name}.png`} width="75" height="75" x={i < 3 ? 20 : 20 + (i - 2) * 75} y={i < 3 ? 277 - i * 75 : 52} />)}
+      {level.fruits.slice(robot.fruitIndex, robot.fruitIndex + 7).map((fruit, i) => <image className="chef-ingredient" key={robot.fruitIndex+i} href={`https://learn.alg.academy/img/games/fruits/${fruit.name}.png`} width="75" height="75" x={i < 3 ? 20 : 20 + (i - 2) * 75} y={i < 3 ? 277 - i * 75 : 52} />)}
+      {execution?.action === 'cook' && <image key={`cook-${execution.index}`} className="chef-cooking-ingredient" href={`https://learn.alg.academy/img/games/fruits/${level.fruits[robot.fruitIndex]?.name}.png`} x="20" y="277" width="75" height="75" />}
     </svg><p>Ingredients processed: {robot.fruitIndex} / {level.fruits.length} · Cooked: {robot.cooked.length}</p>
   </div>;
   if (level.mode === 'coordinates') return <svg className="excursion-board excursion-coordinate-board" viewBox="0 0 798 704" role="img" aria-label={`Rocket at ${robot.x}, ${robot.y}`}>
@@ -121,6 +122,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   });
   const [robot, setRobot] = useState(() => initialExcursionRobot(level));
   const [activeBlockId, setActiveBlockId] = useState(null);
+  const [execution, setExecution] = useState(null);
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
   const [guide, setGuide] = useState('intro');
@@ -138,6 +140,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     clearTimeout(timer.current);
     setRobot(initialExcursionRobot(level));
     setActiveBlockId(null);
+    setExecution(null);
     setStatus('idle');
     setMessage('');
   }
@@ -154,6 +157,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     let current = initialExcursionRobot(level);
     if(level.dynamic) iterator = referenceProgram(blocks,level,()=>current);
     let index = 0;
+    let executionIndex = 0;
     function advance() {
       let next;
       try { next = iterator ? iterator.next() : {done:index>=steps.length,value:steps[index++]}; } catch(error) {setStatus('failed');setMessage(error.message);return;}
@@ -170,9 +174,10 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
       if (isExcursionComplete(level, current)) { setStatus('completed'); setActiveBlockId(null); return; }
       const step = next.value;
       setActiveBlockId(step.blockId);
+      setExecution({...step,index:executionIndex++,label: step.conditionResult !== undefined ? `Condition: ${step.conditionResult ? 'true' : 'false'}` : step.action === 'advance_item' ? 'Next ingredient' : step.action === 'repeat_iteration' ? 'Loop: next iteration' : step.action.replaceAll('_',' ')});
       try { current = stepExcursion(level, current, step); setRobot(current); }
       catch (error) { setStatus('failed'); setMessage(error.message); setActiveBlockId(null); return; }
-      timer.current = setTimeout(advance, 380);
+      timer.current = setTimeout(advance, level.dynamic ? 650 : 380);
     }
     timer.current = setTimeout(advance, 100);
   }
@@ -195,14 +200,15 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
     : guide === 'run' ? 'Create your own sequence of commands and click this button to start the program.' : level.hint;
 
   return (
-    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""} ${level.mode === "coordinates" ? "excursion-coordinate-task" : level.plants ? "excursion-plants-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
+    <section className={`excursion-task ${level.loops ? "excursion-loop-task" : ""} ${level.mode === "chef" ? "excursion-chef-task" : ""} ${level.mode === "coordinates" ? "excursion-coordinate-task" : level.plants ? "excursion-plants-task" : ""}`} ref={root} aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
       <div className="excursion-editor" style={{ width: `${split}%` }}>
         <BlockWorkspace blocks={blocks} onChangeBlocks={setBlocks} toolboxBlockTypes={level.toolbox || [...(level.mode === 'coordinates' ? [`go_to_${level.unit}`] : level.plants ? [BLOCK_TYPES.TURN_CLOCKWISE, BLOCK_TYPES.TURN_COUNTERCLOCKWISE] : level.collectOnly ? [BLOCK_TYPES.MOVE_FORWARD, 'collect_direction', BLOCK_TYPES.TAKE_CARGO] : COMMANDS), ...(level.cargoCommands ? [BLOCK_TYPES.TAKE_CARGO, BLOCK_TYPES.PUT_CARGO] : []), ...(level.loops ? [{ type: BLOCK_TYPES.REPEAT, params: { times: level.repeatDefault || 4 } }] : []), ...(level.plants ? [BLOCK_TYPES.DESTROY, BLOCK_TYPES.WATER] : level.rocks ? [BLOCK_TYPES.DESTROY] : []), ...(level.buildings ? [...new Set(level.buildings.map(b => `build_${b.kind}`))] : [])]} maxCommands={level.maxCommands ?? null} compact activeBlockId={activeBlockId} isExecuting={status === 'running'} />
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
-        <div className={`excursion-world${level.scenery ? " excursion-scenery-world" : ""}`}><ReferenceBoard level={level} robot={robot} /></div>
+        <div className={`excursion-world${level.scenery ? " excursion-scenery-world" : ""}`}><ReferenceBoard level={level} robot={robot} execution={status === 'running' ? execution : null} /></div>
         <div className="excursion-controls">
+          {status === 'running' && execution && <output className="excursion-execution" aria-live="polite">{execution.label}</output>}
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>

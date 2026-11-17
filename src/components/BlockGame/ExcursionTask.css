@@ -38,7 +38,7 @@
 
 .excursion-plants-task .block-toolbox{width:225px;min-width:225px}
 
-.reference-condition{display:inline-flex;align-items:center;gap:3px;background:#378646;padding:2px 5px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 50%,calc(100% - 6px) 100%,6px 100%,0 50%)}.reference-condition select{font:12px Arial;color:white;background:#378646;border:0;max-width:110px}.reference-if-else>.c-block-root+ .c-block-root{margin-top:-5px}
+.reference-condition{display:inline-flex;align-items:center;gap:3px;background:#378646;padding:2px 5px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 50%,calc(100% - 6px) 100%,6px 100%,0 50%)}.reference-condition select{font:12px Arial;color:white;background:#378646;border:0;max-width:110px}.reference-if-else>.c-block-root+ .c-block-root{margin-top:0}
 
 .retro-laboratory { width:100%; max-width:620px; min-height:410px; padding:28px; box-sizing:border-box; background:radial-gradient(ellipse at center,#655b3b,#171e24); color:#f9e9bd; border-radius:18px; text-align:center; font-family:monospace; }
 .retro-laboratory h3 { margin:0 0 22px; font-size:22px; }
@@ -54,3 +54,12 @@
 /* Keep scenery and moving tiles on one canvas, including narrow split panes. */
 .excursion-scenery-world{overflow:hidden}
 .excursion-forest .excursion-scenery-board{width:min(100%,400px);max-width:400px}
+
+.excursion-execution{display:block;color:#ffe681;margin:0 0 8px;text-transform:capitalize}
+.excursion-chef-task .excursion-stage{background:#301535}
+.excursion-chef-task .chef-stage{width:100%;max-width:600px;color:white;text-align:center}
+.excursion-chef-task .chef-stage .excursion-board{width:100%;max-width:600px}
+.chef-ingredient{transition:x .4s ease,y .4s ease}
+.chef-cooking-ingredient{pointer-events:none;animation:chef-cook .6s ease-in forwards}
+@keyframes chef-cook{to{transform:translate(205px,185px) scale(.5);opacity:0}}
+@media(prefers-reduced-motion:reduce){.chef-ingredient{transition:none}.chef-cooking-ingredient{animation:none}}

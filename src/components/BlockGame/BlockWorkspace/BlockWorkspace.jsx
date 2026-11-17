@@ -145,6 +145,16 @@ export default function BlockWorkspace({
 }) {
   const [toolboxParams,setToolboxParams]=useState({});
   const workspaceRef = useRef(null);
+  useEffect(() => {
+    if (!activeBlockId) return;
+    const workspace = workspaceRef.current;
+    const active = Array.from(workspace?.querySelectorAll('[data-block-id]') || []).find(node => node.dataset.blockId === activeBlockId);
+    if (!active || !workspace) return;
+    const bounds = workspace.getBoundingClientRect(), blockBounds = active.getBoundingClientRect();
+    if (blockBounds.top < bounds.top + 30 || blockBounds.bottom > bounds.bottom - 20 || blockBounds.left < bounds.left || blockBounds.right > bounds.right) {
+      workspace.scrollBy({top:blockBounds.top - bounds.top - 60,left:blockBounds.left - bounds.left - 30,behavior:'smooth'});
+    }
+  }, [activeBlockId]);
   const toolboxRef = useRef(null);
 
   // Dragging state
@@ -426,7 +436,7 @@ export default function BlockWorkspace({
             return (
               <React.Fragment key={block.id}>
                 {isTargetBefore && <div className="block-drop-indicator" />}
-                <div style={{ display: 'block', marginTop: idx === 0 ? '0' : '-4px' }}>
+                <div style={{ display: 'block', marginTop: '0px' }}>
                   <BlockRenderer compact={compact}
                     block={block}
                     activeBlockId={activeBlockId}

@@ -74,6 +74,11 @@ export default function ScratchTask({
   const [isResizing, setIsResizing] = useState(false);
   const [completedItems, setCompletedItems] = useState({});
 
+  const bonusItems = React.useMemo(() => {
+    const requirements = task?.requirements || task?.states?.[0]?.requirements || state?.requirements || [];
+    return Array.isArray(requirements) ? requirements.filter((item) => item.taskType === 'bonus') : [];
+  }, [task?.requirements, task?.states, state?.requirements]);
+
   // Toolbar File / Edit menu states
   const [openFileMenu, setOpenFileMenu] = useState(false);
   const [openEditMenu, setOpenEditMenu] = useState(false);
@@ -212,7 +217,7 @@ export default function ScratchTask({
   // Checklist from static manifest requirements or default fallback
   const checklistItems = React.useMemo(() => {
     if (Array.isArray(task?.requirements) && task.requirements.length > 0) {
-      return task.requirements.map((item, idx) => ({
+      return task.requirements.filter((item) => item.taskType !== 'bonus').map((item, idx) => ({
         id: item.id || `item_${idx + 1}`,
         title: item.title || '',
         text: item.text || item.title || `Requirement ${idx + 1}`,
@@ -978,6 +983,29 @@ export default function ScratchTask({
                   })}
                 </div>
               </div>
+            )}
+            {bonusItems.length > 0 && (
+              <section className="scratch-task-bonus" aria-label="Bonus tasks">
+                <div className="scratch-task-checklist-heading">BONUS TASKS</div>
+                {bonusItems.map((item, index) => (
+                  <details key={`${task?.id || levelPosition}-bonus-${item.id || index}`} className="scratch-task-bonus-card" open>
+                    <summary className="scratch-task-bonus-heading">
+                      <span>{item.title}</span>
+                      <span className="scratch-task-tip-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div className="scratch-task-bonus-body">
+                      {item.text && <p>{item.text}</p>}
+                      {item.url && (
+                        <button type="button" className="scratch-task-tip-image"
+                          onClick={() => setModalImage({ url: item.url, title: item.title })}
+                          aria-label={`Enlarge ${item.title || 'bonus hint'}`}>
+                          <img src={item.url} alt={item.title || 'Bonus hint'} loading="lazy" />
+                        </button>
+                      )}
+                    </div>
+                  </details>
+                ))}
+              </section>
             )}
             {tipItems.length > 0 && (
               <section className="scratch-task-tips" aria-label="Tips">

@@ -1461,3 +1461,12 @@
 .scratch-task-tip-body p { margin: 0 0 12px; white-space: pre-line; }
 .scratch-task-tip-image { display: block; width: 100%; padding: 0; border: 1px solid #cbd0d7; border-radius: 10px; overflow: hidden; background: #fff; cursor: zoom-in; }
 .scratch-task-tip-image img { display: block; width: 100%; height: auto; }
+
+/* Optional XML requirements appear in their own bonus section. */
+.scratch-task-bonus { display: flex; flex-direction: column; gap: 12px; }
+.scratch-task-bonus-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; }
+.scratch-task-bonus-heading { display: flex; align-items: center; gap: 12px; padding: 18px 16px; color: #172333; font-size: 15px; font-weight: 700; cursor: pointer; list-style: none; }
+.scratch-task-bonus-heading::-webkit-details-marker { display: none; }
+.scratch-task-bonus-card[open] .scratch-task-tip-chevron { transform: rotate(180deg); }
+.scratch-task-bonus-body { padding: 0 16px 18px; color: #334155; font-size: 14.5px; line-height: 1.6; }
+.scratch-task-bonus-body p { margin: 0; white-space: pre-line; }

@@ -620,7 +620,7 @@
       // 3. Project Title Resolver & Application
       const PROJECT_TITLE_MAP = {
         // 18343 (M1L1)
-        '8908684': 'M1L1 – Free programming',
+        '8908684': 'M1L1 Introduction to Scratch',
         '8910738': 'M1L1 – add a backdrop',
         '8910872': 'M1L1 – add a backdrop for a mermaid',
         '8910976': 'M1L1 – add sprites in the space',
@@ -631,7 +631,7 @@
         '8911485': 'M1L1 – Choose the costume for the dog',
         '8911589': 'M1L1 – A snowman',
         '8911655': 'M1L1 – Mars',
-        'level_1': 'M1L1 – Free programming',
+        'level_1': 'M1L1 Introduction to Scratch',
         'level_2': 'M1L1 – add a backdrop',
         'level_3': 'M1L1 – add a backdrop for a mermaid',
         'level_4': 'M1L1 – add sprites in the space',
@@ -853,7 +853,7 @@
           return null;
         }
 
-        if (param && /^\d+$/.test(param) && param !== '8908684') {
+        if (param && /^\d+$/.test(param)) {
           return `/starter-projects/18343/${param}.sb3`;
         }
         return null;

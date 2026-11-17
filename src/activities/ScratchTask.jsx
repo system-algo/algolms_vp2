@@ -230,11 +230,12 @@ export default function ScratchTask({
     ];
   }, [task?.requirements, lowerTitle]);
 
+  const [isPresentationOpen, setIsPresentationOpen] = useState(true);
+
   useEffect(() => {
-    if (checklistItems && checklistItems.length > 0) {
-      setOpenReqs({ [checklistItems[0].id]: true });
-    }
-  }, [task?.id, task?.taskId, task?.activity_id, checklistItems]);
+    setOpenReqs({});
+    setIsPresentationOpen(true);
+  }, [task?.id, task?.taskId, task?.activity_id, levelPosition]);
 
   const selectedReq = React.useMemo(() => {
     return checklistItems.find((it) => it.id === selectedReqId) || null;
@@ -252,8 +253,11 @@ export default function ScratchTask({
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
   const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
-  const hasMediaInReqs = checklistItems.some((it) => !!it.url);
-  const showStandalonePreview = !demoProjectId && !!previewMediaUrl && !hasMediaInReqs;
+
+  const presentationMedia =
+    (task?.media && Array.isArray(task.media) && task.media[0]) ||
+    (task?.states?.[0]?.media && Array.isArray(task.states[0].media) && task.states[0].media[0]) ||
+    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: demoInstructionText } : null);
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
 
@@ -725,19 +729,6 @@ export default function ScratchTask({
 
         {/* Scrollable Drawer Body */}
         <div className="scratch-task-drawer-body">
-          {/* Clean Drawer Header (No yellow bar!) */}
-          <div className="scratch-task-drawer-header-clean">
-            <h2 className="scratch-task-drawer-task-title">{taskTitle}</h2>
-            <button
-              type="button"
-              className="scratch-task-drawer-close-btn"
-              onClick={() => setIsDrawerOpen(false)}
-              title="Thu gọn bảng bài tập"
-            >
-              ✕
-            </button>
-          </div>
-
           <div className="scratch-task-drawer-content">
             {/* Demo stage preview (if demoProjectId exists) */}
             {demoProjectId ? (
@@ -757,41 +748,78 @@ export default function ScratchTask({
                   </div>
                 </div>
               </div>
-            ) : showStandalonePreview ? (
-              /* Standalone GIF / Media image preview */
-              <div className="scratch-task-preview-media-standalone">
-                <img
-                  src={previewMediaUrl}
-                  alt={previewMediaTitle}
-                  className="scratch-task-preview-media-img"
-                  onClick={() => setModalImage({ url: previewMediaUrl, title: previewMediaTitle })}
-                  loading="lazy"
-                />
-                {previewMediaTitle && previewMediaTitle !== taskTitle && (
-                  <div className="scratch-task-media-caption">
-                    {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
+            ) : presentationMedia ? (
+              /* Presentation hint card at top matching LMS */
+              <div className="scratch-task-presentation-card">
+                <div
+                  className="scratch-task-presentation-header"
+                  onClick={() => setIsPresentationOpen((v) => !v)}
+                >
+                  <span className="scratch-task-presentation-title">
+                    {presentationMedia.title || previewMediaTitle || taskTitle}
+                  </span>
+                  <span className={`scratch-task-presentation-arrow ${isPresentationOpen ? 'open' : ''}`}>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: isPresentationOpen ? 'rotate(180deg)' : 'none',
+                        transition: 'transform 0.2s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                {isPresentationOpen && (
+                  <div className="scratch-task-presentation-body">
+                    {presentationMedia.url && (
+                      <div
+                        className="scratch-task-presentation-media-box"
+                        onClick={() => setModalImage({ url: presentationMedia.url, title: presentationMedia.title || '' })}
+                        title="Bấm để xem ảnh phóng to"
+                      >
+                        <img
+                          src={presentationMedia.url}
+                          alt={presentationMedia.title || ''}
+                          className="scratch-task-presentation-img"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                    {presentationMedia.text && (
+                      <p className="scratch-task-presentation-text">
+                        {presentationMedia.text}
+                      </p>
+                    )}
                   </div>
                 )}
-                {demoInstructionText && (
-                  <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
-                )}
               </div>
-            ) : (!hasMediaInReqs && demoInstructionText) ? (
-              <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
             ) : null}
 
-            {task?.description && task.description !== demoInstructionText && (
+            {task?.description && task.description !== presentationMedia?.text && task.description !== demoInstructionText && (
               <p className="scratch-task-description">
                 {task.description}
               </p>
+            )}
+
+            {/* Divider between presentation card and checklist */}
+            {presentationMedia && checklistItems.length > 0 && (
+              <div className="scratch-task-drawer-divider" />
             )}
 
             {/* Requirements Accordion List for THIS task */}
             {checklistItems.length > 0 && (
               <div className="scratch-task-checklist-section">
                 <div className="scratch-task-checklist-heading">
-                  <span>{task?.checklist_heading || (task?.isAutoCheck !== false ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER')}</span>
-                  <span className="scratch-task-info-icon" title="Automatic check validation">ⓘ</span>
+                  <span>{task?.checklist_heading || (task?.isAutoCheck === true ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER')}</span>
+                  <span className="scratch-task-info-icon" title="Checklist info">ⓘ</span>
                 </div>
 
                 <div className="scratch-task-req-accordion-list">
@@ -818,7 +846,7 @@ export default function ScratchTask({
                             title={isDone ? 'Đánh dấu chưa xong' : 'Đánh dấu đã hoàn thành'}
                           >
                             {isDone && (
-                              <svg viewBox="0 0 24 24" fill="none">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ width: 12, height: 12 }}>
                                 <polyline points="20 6 9 17 4 12" />
                               </svg>
                             )}
@@ -829,7 +857,22 @@ export default function ScratchTask({
                           </span>
 
                           <span className={`scratch-task-req-arrow ${isOpen ? 'open' : ''}`}>
-                            ▼
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              style={{
+                                transform: isOpen ? 'rotate(180deg)' : 'none',
+                                transition: 'transform 0.2s ease',
+                              }}
+                            >
+                              <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
                           </span>
                         </div>
 

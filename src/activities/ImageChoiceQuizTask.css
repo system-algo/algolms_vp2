@@ -122,7 +122,8 @@
 }
 
 .icq-btn:disabled {
-  opacity: 0.5;
+  background: #b89be3;
+  color: rgba(15, 28, 44, 0.6);
   cursor: default;
 }
 
@@ -237,6 +238,38 @@
   object-fit: contain;
 }
 
+/* image answers: 2-column grid of cards, radio in the top-left corner */
+
+.icq-options.is-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.icq-option.has-image {
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 355px;
+  padding: 54px 0 18px;
+}
+
+.icq-option.has-image .icq-option-control {
+  top: 9px;
+  left: 12px;
+  transform: none;
+}
+
+.icq-option.has-image .icq-option-body {
+  padding: 0;
+  align-items: center;
+}
+
+.icq-option.has-image .icq-option-image {
+  width: 100%;
+  height: 271px;
+  max-height: none;
+}
+
 /* ---------- navigation ---------- */
 
 .icq-nav-arrow {
@@ -286,6 +319,10 @@
 
   .icq-card {
     min-height: 0;
+  }
+
+  .icq-options.is-image-grid {
+    grid-template-columns: 1fr;
   }
 
   .icq-nav-arrow {

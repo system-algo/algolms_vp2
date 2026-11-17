@@ -2,9 +2,9 @@
   "version": 1,
   "id": "VP2_M2L2_4",
   "title": "Test yourself. Directions",
-  "type": "scratch-task",
-  "level_type": "scratch",
-  "activityType": "scratch",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "activityType": "marsbot-quiz",
   "taskCount": 3,
   "metadata": {
     "courseId": "VP2",
@@ -19,59 +19,26 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Directions - Question 1",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Directions - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M2L2_4_1_state_1",
           "stateId": "VP2_M2L2_4_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "project_title": "Test yourself. Directions - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
-      ],
-      "project_title": "Test yourself. Directions - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L2_4_2",
@@ -79,57 +46,49 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Directions - Question 2",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Directions - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "What block will the MarsBot pick up if the algorithm is run?",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "What block will the MarsBot pick up if the algorithm is run?",
+        "description": "",
+        "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/comics_3.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "blue",
+            "text": "Blue"
+          },
+          {
+            "id": "yellow",
+            "text": "Yellow"
+          },
+          {
+            "id": "none",
+            "text": "No correct answer"
+          },
+          {
+            "id": "green",
+            "text": "Green"
+          }
+        ],
+        "correctOptionIds": [
+          "yellow"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L2_4_2_state_1",
           "stateId": "VP2_M2L2_4_2_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "project_title": "Test yourself. Directions - Question 2"
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "What block will the MarsBot pick up if the algorithm is run?"
         }
       ],
-      "project_title": "Test yourself. Directions - Question 2",
+      "project_title": "What block will the MarsBot pick up if the algorithm is run?",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     },
@@ -139,57 +98,57 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Directions - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Directions\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Directions - Review 3",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "The rocket can only fly forward. Choose the direction for the rocket so that it flies toward the Earth.",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "The rocket can only fly forward. Choose the direction for the rocket so that it flies toward the Earth.",
+        "description": "",
+        "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/rocket_and_planet.jpg",
+        "multiple": false,
+        "options": [
+          {
+            "id": "dir_180",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/p180.png",
+            "alt": "point in direction 180"
+          },
+          {
+            "id": "dir_-90",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/p-90.png",
+            "alt": "point in direction -90"
+          },
+          {
+            "id": "dir_0",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/p0.png",
+            "alt": "point in direction 0"
+          },
+          {
+            "id": "dir_90",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L2_4/images/p90.png",
+            "alt": "point in direction 90"
+          }
+        ],
+        "correctOptionIds": [
+          "dir_90"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L2_4_3_state_1",
           "stateId": "VP2_M2L2_4_3_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "project_title": "Test yourself. Directions - Question 3"
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "The rocket can only fly forward. Choose the direction for the rocket so that it flies toward the Earth."
         }
       ],
-      "project_title": "Test yourself. Directions - Question 3",
+      "project_title": "The rocket can only fly forward. Choose the direction for the rocket so that it flies toward the Earth.",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     }

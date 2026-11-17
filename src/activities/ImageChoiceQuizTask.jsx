@@ -67,6 +67,7 @@ function getConfig(task) {
     id: String(option.id || `option-${index + 1}`),
     text: option.text || '',
     image: option.image || '',
+    alt: option.alt || option.text || '',
   }));
 
   const correct = raw.correctOptionIds || raw.answerKey || [];
@@ -291,7 +292,10 @@ export default function ImageChoiceQuizTask({
           </div>
         </div>
 
-        <div className="icq-options" role={config.multiple ? 'group' : 'radiogroup'}>
+        <div
+          className={`icq-options ${config.options.some((option) => option.image) ? 'is-image-grid' : ''}`}
+          role={config.multiple ? 'group' : 'radiogroup'}
+        >
           {config.options.map((option) => {
             const optionState = getOptionState(option.id);
             const isSelected = selected.includes(option.id);
@@ -312,7 +316,7 @@ export default function ImageChoiceQuizTask({
                 />
                 <span className="icq-option-body">
                   {option.image ? (
-                    <img src={option.image} alt={option.text || ''} className="icq-option-image" />
+                    <img src={option.image} alt={option.alt} className="icq-option-image" />
                   ) : null}
                   {option.text ? <span className="icq-option-text">{option.text}</span> : null}
                 </span>

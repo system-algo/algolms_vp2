@@ -23,44 +23,53 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_website_1",
-          "title": "Create avatar and icons",
-          "text": "Design and customize your avatar sprite and navigation buttons.",
-          "type": "svg",
-          "url": ""
+          "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
+          "title": "Add 2-3 sprites and a background",
+          "text": "Add or draw 2-3 sprites that show your hobbies! Think about who will talk about them. Perhaps you will have a \"presenter\" or the items will tell about themselves.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_website_2",
-          "title": "Interactive buttons",
-          "text": "Program the buttons to animate and speak information when clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
+          "title": "Planning",
+          "text": "What will your personal website be like? Did you come up with anything? Use the pages in your notebook to draw your plan!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_website_3",
-          "title": "Initial placement",
-          "text": "Arrange all website elements neatly on the homepage backdrop.",
-          "type": "svg",
-          "url": ""
+          "id": "45834b09-4937-4c53-9d87-31e23aeb77d9",
+          "title": "Use all the events",
+          "text": "\"When the green flag is clicked,\" \"when the key is pressed,\" and \"when the sprite is clicked.\"",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
+          "title": "Create!",
+          "text": "The most important part is left — programming!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Project. Personal website - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Personal website",
+          "text": "Tell about your hobbies.",
+          "url": ""
         }
       ],
       "states": [
@@ -77,23 +86,67 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "M1L5 Personal website",
+          "title": "Personal website",
+          "requirements": [
+            {
+              "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
+              "title": "Add 2-3 sprites and a background",
+              "text": "Add or draw 2-3 sprites that show your hobbies! Think about who will talk about them. Perhaps you will have a \"presenter\" or the items will tell about themselves.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
+              "title": "Planning",
+              "text": "What will your personal website be like? Did you come up with anything? Use the pages in your notebook to draw your plan!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "45834b09-4937-4c53-9d87-31e23aeb77d9",
+              "title": "Use all the events",
+              "text": "\"When the green flag is clicked,\" \"when the key is pressed,\" and \"when the sprite is clicked.\"",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
+              "title": "Create!",
+              "text": "The most important part is left — programming!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M1L5 Personal website"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Personal website",
+              "text": "Tell about your hobbies.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null
         }
       ],
       "project_title": "M1L5 Personal website",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true,
-      "description": "Build your own personal interactive website project in Scratch!"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "isAutoCheck": false,
+      "description": "Build your own personal interactive website project in Scratch!",
+      "tips": [],
+      "demo_project_id": null
     },
     {
       "id": "VP2_M1L5_1_2",
@@ -101,10 +154,10 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Did you like the lesson?",
+      "title": "Did you like the task?",
       "activityType": "feedback-rating-task",
       "level_type": "rating",
-      "selectedType": "feedback-rating-task",
+      "selectedType": "rating",
       "renderMode": "robot",
       "feedbackRatingTask": {
         "question": "Did you like the lesson?",
@@ -115,12 +168,25 @@
           "id": "VP2_M1L5_1_2_state_1",
           "stateId": "VP2_M1L5_1_2_state_1",
           "position": 1,
-          "type": "feedback-rating-task",
-          "selectedType": "feedback-rating-task",
+          "type": "rating",
+          "selectedType": "rating",
           "level_type": "rating",
-          "title": "Did you like the lesson?"
+          "title": "Did you like the task?",
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "demo_project_id": null,
+          "starter_project_id": null
         }
-      ]
+      ],
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "demo_project_id": null,
+      "starter_project_id": null,
+      "isAutoCheck": false,
+      "question": "Did you like the task?",
+      "hint": "Click on an appropriate emoji"
     }
   ]
 }

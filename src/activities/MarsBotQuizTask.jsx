@@ -310,6 +310,8 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! The second sprite waits while the first sprite speaks, so they take turns speaking without overlapping.',
       feedbackIncorrect: 'Not quite right. Trace each wait and say block in seconds to ensure the sprites never speak at the same time!'
     }
+  },
+
   VP2_M1L4_4: {
     // Question 1 (level 2 in LMS / Task 2 in manifest): Costume change on click quiz
     2: {

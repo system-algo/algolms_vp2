@@ -224,10 +224,36 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Test yourself. Loops - Question 4",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "Choose the examples of looping algorithms in real life.",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "Choose the examples of looping algorithms in real life.",
+        "multiple": true,
+        "layout": "vertical",
+        "options": [
+          {
+            "id": 1,
+            "text": "A flower opening and closing during the day"
+          },
+          {
+            "id": 2,
+            "text": "The change of seasons"
+          },
+          {
+            "id": 3,
+            "text": "A tree sprouting from a seed"
+          },
+          {
+            "id": 4,
+            "text": "How a traffic light works"
+          }
+        ],
+        "correctOptionIds": [1, 2, 4],
+        "feedbackCorrect": "Correct! Flowers opening/closing, seasons changing, and traffic lights are all looping processes in real life.",
+        "feedbackIncorrect": "Not quite right. Think about which processes repeat over and over again continuously!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",

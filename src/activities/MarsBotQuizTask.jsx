@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './MarsBotQuizTask.css';
@@ -164,8 +164,9 @@ const QUIZ_CONFIG_BY_PAGE = {
     }
   },
 
-  // Lesson 2 Task 4: Test yourself. Loops (Robot Construction Quiz)
+  // Lesson 2 Task 4: Test yourself. Loops
   VP2_M1L2_4: {
+    // Question 1 (level 1 in test): Robot building quiz
     2: {
       prompt: 'The robot is building in the picture.\nWhich program is it running?',
       bannerBg: '#ffffff',
@@ -196,6 +197,7 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
       feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
     },
+    // Question 2 (level 2 in test): Brush drawing quiz
     3: {
       prompt: 'What drawing will we get when this program is run (the brush is the start cell):',
       bannerBg: '#ffffff',
@@ -226,35 +228,33 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! The brush moves right and up 3 times, then draws a square.',
       feedbackIncorrect: 'Not quite right. Follow the loop steps (right, up) 3 times and check the final shape drawn!'
     },
+    // Question 3 (level 3 in test / Task 4 in manifest): Real life looping algorithms
     4: {
-      prompt: 'The robot is building in the picture.\nWhich program is it running?',
-      bannerBg: '#ffffff',
-      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png',
+      prompt: 'Choose the examples of looping algorithms in real life.',
+      gridImage: null,
+      multiple: true,
+      layout: 'vertical',
       options: [
         {
           id: 1,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png',
-          label: 'Option 1'
+          text: 'A flower opening and closing during the day'
         },
         {
           id: 2,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png',
-          label: 'Option 2'
+          text: 'The change of seasons'
         },
         {
           id: 3,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png',
-          label: 'Option 3'
+          text: 'A tree sprouting from a seed'
         },
         {
           id: 4,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png',
-          label: 'Option 4'
+          text: 'How a traffic light works'
         }
       ],
-      correctOptionId: 2,
-      feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
-      feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
+      correctOptionIds: [1, 2, 4],
+      feedbackCorrect: 'Correct! Flowers opening/closing, seasons changing, and traffic lights are all looping processes in real life.',
+      feedbackIncorrect: 'Not quite right. Think about which processes repeat over and over again continuously!'
     }
   }
 };
@@ -282,6 +282,8 @@ function resolveQuestionData(task, taskIndex) {
   const pageQuestions = QUIZ_CONFIG_BY_PAGE[normPageId] || QUIZ_CONFIG_BY_PAGE['VP2_M1L1_4'];
   return (
     pageQuestions[questionNum] ||
+    pageQuestions[4] ||
+    pageQuestions[3] ||
     pageQuestions[2] ||
     pageQuestions[1] ||
     Object.values(pageQuestions)[0]
@@ -301,16 +303,34 @@ export default function MarsBotQuizTask(props) {
   const currentTaskId = String(task?.id || task?.taskId || `VP2_M1L2_4_${questionNum}`);
   const questionData = resolveQuestionData(task, taskIndex);
 
+  const isMultiple = Boolean(
+    questionData.multiple ||
+    (Array.isArray(questionData.correctOptionIds) && questionData.correctOptionIds.length > 1)
+  );
+
+  const correctOptionIds = useMemo(() => {
+    if (Array.isArray(questionData.correctOptionIds)) {
+      return questionData.correctOptionIds;
+    }
+    if (questionData.correctOptionId != null) {
+      return [questionData.correctOptionId];
+    }
+    return [];
+  }, [questionData]);
+
   const isAlreadyCompleted =
     completedTaskIds.includes(currentTaskId) ||
     localStorage.getItem(`marsbot_completed_${currentTaskId}`) === 'true';
 
-  const [selectedOption, setSelectedOption] = useState(() =>
-    isAlreadyCompleted ? questionData.correctOptionId : null
-  );
+  const [selectedOptionIds, setSelectedOptionIds] = useState(() => {
+    if (isAlreadyCompleted) return correctOptionIds;
+    return [];
+  });
+
   const [submissionStatus, setSubmissionStatus] = useState(() =>
     isAlreadyCompleted ? 'correct' : null
   ); // 'correct' | 'incorrect' | null
+
   const [feedbackText, setFeedbackText] = useState(() =>
     isAlreadyCompleted
       ? (questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.')
@@ -325,19 +345,31 @@ export default function MarsBotQuizTask(props) {
       localStorage.getItem(`marsbot_completed_${currentTaskId}`) === 'true';
 
     if (isDone) {
-      setSelectedOption(questionData.correctOptionId);
+      setSelectedOptionIds(correctOptionIds);
       setSubmissionStatus('correct');
       setFeedbackText(questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.');
     } else {
-      setSelectedOption(null);
+      setSelectedOptionIds([]);
       setSubmissionStatus(null);
       setFeedbackText('');
     }
-  }, [currentTaskId, completedTaskIds, questionNum, questionData]);
+  }, [currentTaskId, completedTaskIds, questionNum, questionData, correctOptionIds]);
 
   const handleSelectOption = (optionId) => {
     if (isSubmitting) return;
-    setSelectedOption(optionId);
+
+    if (isMultiple) {
+      setSelectedOptionIds((prev) => {
+        if (prev.includes(optionId)) {
+          return prev.filter((id) => id !== optionId);
+        } else {
+          return [...prev, optionId];
+        }
+      });
+    } else {
+      setSelectedOptionIds([optionId]);
+    }
+
     if (submissionStatus) {
       setSubmissionStatus(null);
       setFeedbackText('');
@@ -346,7 +378,7 @@ export default function MarsBotQuizTask(props) {
 
   const handleReset = () => {
     if (isSubmitting) return;
-    setSelectedOption(null);
+    setSelectedOptionIds([]);
     setSubmissionStatus(null);
     setFeedbackText('');
     try {
@@ -355,7 +387,7 @@ export default function MarsBotQuizTask(props) {
   };
 
   // Nộp bài & Chấm điểm qua Backend /api/activity-attempts (chuẩn LMS Algorithmics)
-  const submitTaskAttempt = async (chosenOptionId) => {
+  const submitTaskAttempt = async (chosenIds) => {
     setIsSubmitting(true);
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -372,15 +404,18 @@ export default function MarsBotQuizTask(props) {
       taskId: currentTaskId,
       activityType: 'mcq-checkbox',
       answer: {
-        selectedOptionIds: [String(chosenOptionId)],
-        selectedOptionId: chosenOptionId,
+        selectedOptionIds: chosenIds.map(String),
+        selectedOptionId: chosenIds[0],
       },
     };
 
-    let isCorrect = chosenOptionId === questionData.correctOptionId;
+    const isCorrect =
+      chosenIds.length === correctOptionIds.length &&
+      correctOptionIds.every((id) => chosenIds.includes(id));
+
     let feedback = isCorrect
-      ? (questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.')
-      : (questionData.feedbackIncorrect || 'Not quite right. Check the turns and moves again!');
+      ? (questionData.feedbackCorrect || 'Correct! Answer submitted successfully.')
+      : (questionData.feedbackIncorrect || 'Not quite right. Check your choices again!');
 
     const backendUrl = getBackendUrl();
     const endpoint = `${backendUrl}/api/activity-attempts`;
@@ -407,7 +442,6 @@ export default function MarsBotQuizTask(props) {
         const data = await res.json();
         const gradingResult = data?.result || data?.attempt?.result;
         if (gradingResult && typeof gradingResult.isCorrect === 'boolean') {
-          isCorrect = gradingResult.isCorrect;
           if (gradingResult.feedback) {
             feedback = gradingResult.feedback;
           }
@@ -419,7 +453,7 @@ export default function MarsBotQuizTask(props) {
 
     if (isCorrect) {
       setSubmissionStatus('correct');
-      setFeedbackText(feedback || 'Correct! MarsBot reached the target successfully.');
+      setFeedbackText(feedback || 'Correct! Answer submitted successfully.');
       playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
       // Lưu Supabase activity_progress chuẩn LMS
@@ -448,7 +482,7 @@ export default function MarsBotQuizTask(props) {
       }
     } else {
       setSubmissionStatus('incorrect');
-      setFeedbackText(feedback || 'Not quite right. Check the turns and moves again!');
+      setFeedbackText(feedback || 'Not quite right. Check your choices again!');
     }
 
     setIsSubmitting(false);
@@ -463,27 +497,30 @@ export default function MarsBotQuizTask(props) {
       return;
     }
 
-    if (!selectedOption || isSubmitting) return;
+    if (selectedOptionIds.length === 0 || isSubmitting) return;
 
-    submitTaskAttempt(selectedOption);
+    submitTaskAttempt(selectedOptionIds);
   };
 
   const isLastTask = taskIndex >= (tasks.length - 1);
+  const isVerticalLayout = questionData.layout === 'vertical' || !questionData.options.some((o) => o.scriptImage);
 
   return (
     <div className="marsbot-quiz-page">
       <div className="marsbot-quiz-container">
         {/* Left Card: Question Banner, Prompt & Actions */}
         <div className="marsbot-question-card">
-          <div
-            className="marsbot-banner"
-            style={{ background: questionData.bannerBg || '#ffffff' }}
-          >
-            <img
-              src={questionData.gridImage}
-              alt="Quiz Grid"
-            />
-          </div>
+          {questionData.gridImage ? (
+            <div
+              className="marsbot-banner"
+              style={{ background: questionData.bannerBg || '#ffffff' }}
+            >
+              <img
+                src={questionData.gridImage}
+                alt="Quiz Grid"
+              />
+            </div>
+          ) : null}
 
           <div className="marsbot-question-body">
             <h2 className="marsbot-prompt">{questionData.prompt}</h2>
@@ -524,12 +561,12 @@ export default function MarsBotQuizTask(props) {
               className={`marsbot-answer-btn ${
                 submissionStatus === 'correct'
                   ? 'next'
-                  : selectedOption
+                  : selectedOptionIds.length > 0
                   ? 'active'
                   : 'disabled'
               }`}
               onClick={handleAnswerOrNext}
-              disabled={(!selectedOption && submissionStatus !== 'correct') || isSubmitting}
+              disabled={(selectedOptionIds.length === 0 && submissionStatus !== 'correct') || isSubmitting}
             >
               {isSubmitting
                 ? 'Checking...'
@@ -542,26 +579,19 @@ export default function MarsBotQuizTask(props) {
           </div>
         </div>
 
-        {/* Right Cards: 2x2 Option Grid */}
-        <div className="marsbot-options-grid">
+        {/* Right Cards: Either 2x2 Option Grid or Vertical Stack of Checkboxes */}
+        <div className={`marsbot-options-grid ${isVerticalLayout ? 'vertical-layout' : ''}`}>
           {questionData.options.map((option) => {
-            const isSelected = selectedOption === option.id;
+            const isSelected = selectedOptionIds.includes(option.id);
             const isCorrect = submissionStatus === 'correct' && isSelected;
             const isWrong = submissionStatus === 'incorrect' && isSelected;
 
             const cardClasses = [
               'marsbot-option-card',
+              isVerticalLayout ? 'vertical-card' : '',
               isSelected ? 'selected' : '',
               isCorrect ? 'is-correct' : '',
               isWrong ? 'is-wrong' : ''
-            ]
-              .filter(Boolean)
-              .join(' ');
-
-            const radioClasses = [
-              'marsbot-radio-btn',
-              isSelected ? 'checked' : '',
-              isCorrect ? 'correct-dot' : ''
             ]
               .filter(Boolean)
               .join(' ');
@@ -571,7 +601,7 @@ export default function MarsBotQuizTask(props) {
                 key={option.id}
                 className={cardClasses}
                 onClick={() => handleSelectOption(option.id)}
-                role="radio"
+                role={isMultiple ? 'checkbox' : 'radio'}
                 aria-checked={isSelected}
                 tabIndex={0}
                 onKeyDown={(e) => {
@@ -581,16 +611,41 @@ export default function MarsBotQuizTask(props) {
                   }
                 }}
               >
-                <div className={radioClasses}>
-                  {isSelected && <div className="marsbot-radio-dot" />}
-                </div>
+                {isMultiple ? (
+                  <div className={`marsbot-checkbox-box ${isSelected ? 'checked' : ''} ${isCorrect ? 'correct-check' : ''}`}>
+                    {isSelected && (
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        strokeWidth="3.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    )}
+                  </div>
+                ) : (
+                  <div className={`marsbot-radio-btn ${isSelected ? 'checked' : ''} ${isCorrect ? 'correct-dot' : ''}`}>
+                    {isSelected && <div className="marsbot-radio-dot" />}
+                  </div>
+                )}
 
-                <div className="marsbot-script-wrapper">
-                  <img
-                    src={option.scriptImage}
-                    alt={option.label}
-                  />
-                </div>
+                {option.scriptImage ? (
+                  <div className="marsbot-script-wrapper">
+                    <img
+                      src={option.scriptImage}
+                      alt={option.label || `Option ${option.id}`}
+                    />
+                  </div>
+                ) : (
+                  <div className="marsbot-option-label">
+                    {option.text || option.label}
+                  </div>
+                )}
               </div>
             );
           })}

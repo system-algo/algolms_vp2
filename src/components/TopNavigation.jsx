@@ -16,19 +16,23 @@ function getTaskId(task) {
   ).trim();
 }
 
-function getTaskMarker(task, index, total) {
+function getTaskMarker(task, index, total, allTasks = []) {
   const title = String(task?.title || '').toLowerCase();
-  const type = String(task?.level_type || task?.type || '').toLowerCase();
+  const type = String(task?.level_type || task?.type || task?.activityType || task?.selectedType || '').toLowerCase();
 
   // Rating / Vote task -> smiley icon
   if (
     type === 'rating' ||
+    type === 'feedback-rating-task' ||
+    task?.activityType === 'feedback-rating-task' ||
+    task?.selectedType === 'feedback-rating-task' ||
     title.includes('rate') ||
     title.includes('rating') ||
     title.includes('vote') ||
-    title.includes('like the task')
+    title.includes('like the task') ||
+    title.includes('like the lesson')
   ) {
-    return '☺';
+    return 'emoji';
   }
 
   // Bonus / Star task -> Star
@@ -38,6 +42,19 @@ function getTaskMarker(task, index, total) {
     title.includes('bonus')
   ) {
     return '★';
+  }
+
+  // When the first task is a rating task (e.g. "Did you like the lesson?"),
+  // LMS numbers the subsequent test tasks starting from 1 (1, 2, 3...)
+  const hasRatingAtStart = Array.isArray(allTasks) && allTasks.length > 0 && (
+    String(allTasks[0]?.level_type || allTasks[0]?.type || allTasks[0]?.activityType || allTasks[0]?.selectedType || '').toLowerCase() === 'rating' ||
+    String(allTasks[0]?.level_type || allTasks[0]?.type || allTasks[0]?.activityType || allTasks[0]?.selectedType || '').toLowerCase() === 'feedback-rating-task' ||
+    String(allTasks[0]?.title || '').toLowerCase().includes('like the lesson') ||
+    String(allTasks[0]?.title || '').toLowerCase().includes('like the task')
+  );
+
+  if (hasRatingAtStart && index > 0) {
+    return String(index);
   }
 
   return String(index + 1);
@@ -1361,11 +1378,35 @@ export default function TopNavigation({
                   }
                 >
                   <span className="lms-topbar__step-marker">
-                    {getTaskMarker(
-                      task,
-                      index,
-                      tasks.length,
-                    )}
+                    {(() => {
+                      const marker = getTaskMarker(
+                        task,
+                        index,
+                        tasks.length,
+                        tasks
+                      );
+                      if (marker === 'emoji') {
+                        return (
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            style={{ display: 'inline-block', verticalAlign: 'middle' }}
+                          >
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="8" cy="9.5" r="1.2" fill="currentColor" />
+                            <circle cx="16" cy="9.5" r="1.2" fill="currentColor" />
+                            <line x1="8" y1="15" x2="16" y2="15" />
+                          </svg>
+                        );
+                      }
+                      return marker;
+                    })()}
                   </span>
 
                   {isCompleted ? (

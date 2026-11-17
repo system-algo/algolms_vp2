@@ -1,9 +1,47 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
+import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress.js';
 import './FeedbackRatingTask.css';
+
+function getBackendUrl() {
+  return String(
+    sessionStorage.getItem('lms_backend_url') ||
+    localStorage.getItem('lms_backend_url') ||
+    import.meta.env.VITE_API_BASE_URL ||
+    import.meta.env.VITE_API_URL ||
+    'https://algo-lms-backend.onrender.com'
+  ).replace(/\/+$/, '');
+}
+
+function getSessionId() {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('sessionId') || params.get('session');
+  if (query) return query;
+  const studentEmail =
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email');
+  if (studentEmail) return `user:${studentEmail.trim().toLowerCase()}`;
+  return (
+    sessionStorage.getItem('lms-session-id') ||
+    localStorage.getItem('lms-session-id') ||
+    'session-feedback'
+  );
+}
+
+function getUserId() {
+  const params = new URLSearchParams(window.location.search);
+  return (
+    params.get('userId') ||
+    params.get('studentEmail') ||
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email') ||
+    'student@algo.edu.vn'
+  );
+}
 
 const DEFAULT_CONFIG = {
   eyebrow: 'Quick check-in',
-  question: 'How was this lesson for you?',
+  question: 'Did you like the lesson?',
   helperText: 'Your feedback helps us make lessons better.',
   nextLabel: 'Continue',
   robotImage: '/assets/feedback/robot-main.png',
@@ -105,26 +143,144 @@ export default function FeedbackRatingTask(props) {
     goToNext,
     handleNext,
     handleNextTask,
+    courseId = 'VP2',
+    lessonId = '',
+    pageId = '',
   } = props;
+
+  const currentTaskId = String(task?.id || task?.taskId || 'VP2_M1L2_4_1').trim();
 
   const config = useMemo(() => {
     const customConfig = task?.feedbackRatingTask || task?.feedbackTask || {};
-
     return {
       ...DEFAULT_CONFIG,
       ...customConfig,
+      question: customConfig.question || task?.title || DEFAULT_CONFIG.question,
       options: customConfig.options || DEFAULT_CONFIG.options,
       robotImage: customConfig.robotImage || DEFAULT_CONFIG.robotImage,
     };
   }, [task]);
 
-  const [selectedId, setSelectedId] = useState(null);
-  const selectedOption = config.options.find((option) => option.id === selectedId);
+  const [selectedId, setSelectedId] = useState(() => {
+    try {
+      return localStorage.getItem(`feedback_rating_${currentTaskId}`) || null;
+    } catch {
+      return null;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(`feedback_rating_${currentTaskId}`);
+      if (saved) setSelectedId(saved);
+    } catch {}
+  }, [currentTaskId]);
+
+  const isRobotMode = task?.renderMode === 'robot' || task?.style === 'robot';
+
+  const handleSelectEmoji = async (option) => {
+    setSelectedId(option.id);
+
+    try {
+      localStorage.setItem(`completed_${currentTaskId}`, 'true');
+      localStorage.setItem(`feedback_rating_${currentTaskId}`, option.id);
+    } catch {}
+
+    playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
+
+    const targetCourse = courseId || 'VP2';
+    const targetLesson = lessonId || 'M1-Visual-Programming-Basics';
+    const targetPage = pageId || 'VP2_M1L2_4';
+
+    const payload = {
+      sessionId: getSessionId(),
+      userId: getUserId(),
+      courseId: targetCourse,
+      lessonId: targetLesson,
+      pageId: targetPage,
+      taskId: currentTaskId,
+      activityType: 'feedback-rating-task',
+      answer: {
+        rating: option.id,
+        ratingType: option.type,
+        ratingLabel: option.label,
+      },
+      isCorrect: true,
+      score: 100,
+      maxScore: 100,
+    };
+
+    try {
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = { 'Content-Type': 'application/json' };
+      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+
+      fetch(`${getBackendUrl()}/api/activity-attempts`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      }).catch((e) => console.warn('[FeedbackRatingTask] backend attempt error:', e));
+    } catch (err) {
+      console.warn('[FeedbackRatingTask] attempt send error:', err);
+    }
+
+    try {
+      await saveTaskCompletionToSupabase({
+        courseId: targetCourse,
+        lessonId: targetLesson,
+        pageId: targetPage,
+        taskId: currentTaskId,
+        activityType: 'feedback-rating-task',
+      });
+    } catch (err) {
+      console.warn('[FeedbackRatingTask] Supabase save error:', err);
+    }
+
+    onTaskCompleted?.({
+      taskId: currentTaskId,
+      activityType: 'feedback-rating-task',
+      isCorrect: true,
+      completed: true,
+      score: 100,
+      maxScore: 100,
+      metadata: {
+        ratingId: option.id,
+        ratingType: option.type,
+        ratingLabel: option.label,
+      },
+    });
+
+    window.setTimeout(() => {
+      const callbacks = [
+        onNextTask,
+        nextTask,
+        onNext,
+        onComplete,
+        goNext,
+        goToNext,
+        handleNext,
+        handleNextTask,
+      ];
+      const callback = callbacks.find((cb) => typeof cb === 'function');
+      if (callback) {
+        callback();
+      } else {
+        clickNextTaskInHeader();
+      }
+    }, 500);
+  };
 
   const moveNext = () => {
+    const selectedOption = config.options.find((option) => option.id === selectedId);
     onTaskCompleted?.({
-      completionType: 'feedback-submitted',
-      feedback: 'Feedback submitted.',
+      taskId: currentTaskId,
+      activityType: 'feedback-rating-task',
+      isCorrect: true,
+      completed: true,
+      score: 100,
+      maxScore: 100,
       metadata: {
         ratingId: selectedOption?.id || selectedId,
         ratingType: selectedOption?.type || '',
@@ -142,9 +298,7 @@ export default function FeedbackRatingTask(props) {
       handleNext,
       handleNextTask,
     ];
-
-    const callback = callbacks.find((candidate) => typeof candidate === 'function');
-
+    const callback = callbacks.find((cb) => typeof cb === 'function');
     if (callback) {
       callback();
       return;
@@ -153,7 +307,6 @@ export default function FeedbackRatingTask(props) {
     const detail = {
       taskKey: task?.taskKey || task?.id || task?.taskId,
     };
-
     window.dispatchEvent(new CustomEvent('activity-next', { detail }));
     window.dispatchEvent(new CustomEvent('go-next-task', { detail }));
     window.dispatchEvent(new CustomEvent('next-task', { detail }));
@@ -161,50 +314,107 @@ export default function FeedbackRatingTask(props) {
     window.setTimeout(clickNextTaskInHeader, 0);
   };
 
-  if (selectedOption) {
+  // If explicit robot card mode requested
+  if (isRobotMode) {
+    const selectedOption = config.options.find((option) => option.id === selectedId);
+
+    if (selectedOption) {
+      return (
+        <main
+          className="feedback-rating-page feedback-rating-page--result"
+          style={{
+            '--feedback-result-accent': selectedOption.accent,
+            '--feedback-result-soft': selectedOption.softBackground,
+          }}
+        >
+          <section className="feedback-rating-shell">
+            <div className="feedback-result-card">
+              <div className="feedback-result-copy">
+                <div className="feedback-result-chip">
+                  <span className="feedback-result-chip__dot" aria-hidden="true" />
+                  Feedback received
+                </div>
+
+                <h1>{selectedOption.title || 'Thanks!'}</h1>
+                <p>{selectedOption.message}</p>
+
+                <div className="feedback-result-note">
+                  <span className="feedback-result-note__icon" aria-hidden="true">♥</span>
+                  <span>Your feedback helps us build better lessons.</span>
+                </div>
+
+                <button className="feedback-next-button" type="button" onClick={moveNext}>
+                  <span>{config.nextLabel || 'Continue'}</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+
+              <div className="feedback-result-visual" aria-hidden="true">
+                <div className="feedback-result-halo" />
+                <img
+                  className="feedback-result-robot"
+                  src={selectedOption.image || config.robotImage}
+                  alt=""
+                />
+                <span className="feedback-confetti feedback-confetti--1">✦</span>
+                <span className="feedback-confetti feedback-confetti--2">★</span>
+                <span className="feedback-confetti feedback-confetti--3">◆</span>
+                <span className="feedback-confetti feedback-confetti--4">✦</span>
+              </div>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
     return (
-      <main
-        className="feedback-rating-page feedback-rating-page--result"
-        style={{
-          '--feedback-result-accent': selectedOption.accent,
-          '--feedback-result-soft': selectedOption.softBackground,
-        }}
-      >
+      <main className="feedback-rating-page feedback-rating-page--question">
         <section className="feedback-rating-shell">
-          <div className="feedback-result-card">
-            <div className="feedback-result-copy">
-              <div className="feedback-result-chip">
-                <span className="feedback-result-chip__dot" aria-hidden="true" />
-                Feedback received
-              </div>
-
-              <h1>{selectedOption.title || 'Thanks!'}</h1>
-              <p>{selectedOption.message}</p>
-
-              <div className="feedback-result-note">
-                <span className="feedback-result-note__icon" aria-hidden="true">
-                  ♥
-                </span>
-                <span>Your feedback helps us build better lessons.</span>
-              </div>
-
-              <button className="feedback-next-button" type="button" onClick={moveNext}>
-                <span>{config.nextLabel || 'Continue'}</span>
-                <span aria-hidden="true">→</span>
-              </button>
+          <div className="feedback-question-card">
+            <div className="feedback-intro-badge">
+              <img src={config.robotImage} alt="" />
+              <span>
+                <strong>{config.eyebrow || 'Quick check-in'}</strong>
+                <small>Your opinion matters</small>
+              </span>
             </div>
 
-            <div className="feedback-result-visual" aria-hidden="true">
-              <div className="feedback-result-halo" />
-              <img
-                className="feedback-result-robot"
-                src={selectedOption.image || config.robotImage}
-                alt=""
-              />
-              <span className="feedback-confetti feedback-confetti--1">✦</span>
-              <span className="feedback-confetti feedback-confetti--2">★</span>
-              <span className="feedback-confetti feedback-confetti--3">◆</span>
-              <span className="feedback-confetti feedback-confetti--4">✦</span>
+            <header className="feedback-question-copy">
+              <h1>{config.question || 'How was this task for you?'}</h1>
+              <p>{config.helperText || 'Your feedback helps us make lessons better.'}</p>
+            </header>
+
+            <div
+              className="feedback-options"
+              role="radiogroup"
+              aria-label={config.question || 'Task feedback'}
+            >
+              {config.options.map((option) => (
+                <button
+                  key={option.id}
+                  className="feedback-option-card"
+                  type="button"
+                  role="radio"
+                  aria-checked={selectedId === option.id}
+                  aria-label={`${option.label}. ${option.sublabel || ''}`}
+                  style={{
+                    '--feedback-option-accent': option.accent,
+                    '--feedback-option-soft': option.softBackground,
+                  }}
+                  onClick={() => handleSelectEmoji(option)}
+                >
+                  <div className="feedback-option-image-wrap">
+                    <span className="feedback-option-dot feedback-option-dot--1" />
+                    <span className="feedback-option-dot feedback-option-dot--2" />
+                    <span className="feedback-option-dot feedback-option-dot--3" />
+                    <span className="feedback-option-dot feedback-option-dot--4" />
+                    <img src={option.image} alt="" className="feedback-rating-robot" />
+                  </div>
+
+                  <strong>{option.label}</strong>
+                  <span>{option.sublabel}</span>
+                </button>
+              ))}
             </div>
           </div>
         </section>
@@ -212,55 +422,69 @@ export default function FeedbackRatingTask(props) {
     );
   }
 
+  // Official LMS Standard 3-Emoji Rating Layout
   return (
-    <main className="feedback-rating-page feedback-rating-page--question">
-      <section className="feedback-rating-shell">
-        <div className="feedback-question-card">
-          <div className="feedback-intro-badge">
-            <img src={config.robotImage} alt="" />
-            <span>
-              <strong>{config.eyebrow || 'Quick check-in'}</strong>
-              <small>Your opinion matters</small>
-            </span>
-          </div>
+    <main className="lms-feedback-page" role="main">
+      <section className="lms-feedback-content">
+        <h1 className="lms-feedback-title">
+          {config.question || 'Did you like the lesson?'}
+        </h1>
 
-          <header className="feedback-question-copy">
-            <h1>{config.question || 'How was this task for you?'}</h1>
-            <p>{config.helperText || 'Your feedback helps us make lessons better.'}</p>
-          </header>
-
-          <div
-            className="feedback-options"
-            role="radiogroup"
-            aria-label={config.question || 'Task feedback'}
+        <div
+          className="lms-feedback-emojis"
+          role="radiogroup"
+          aria-label={config.question || 'Did you like the lesson?'}
+        >
+          {/* 1. Sad face 🙁 */}
+          <button
+            type="button"
+            className={`lms-feedback-emoji-btn ${selectedId === 'difficult' || selectedId === 'sad' ? 'is-selected' : ''}`}
+            role="radio"
+            aria-checked={selectedId === 'difficult' || selectedId === 'sad'}
+            aria-label="Sad / Difficult"
+            onClick={() => handleSelectEmoji(config.options[0])}
           >
-            {config.options.map((option) => (
-              <button
-                key={option.id}
-                className="feedback-option-card"
-                type="button"
-                role="radio"
-                aria-checked="false"
-                aria-label={`${option.label}. ${option.sublabel || ''}`}
-                style={{
-                  '--feedback-option-accent': option.accent,
-                  '--feedback-option-soft': option.softBackground,
-                }}
-                onClick={() => setSelectedId(option.id)}
-              >
-                <div className="feedback-option-image-wrap">
-                  <span className="feedback-option-dot feedback-option-dot--1" />
-                  <span className="feedback-option-dot feedback-option-dot--2" />
-                  <span className="feedback-option-dot feedback-option-dot--3" />
-                  <span className="feedback-option-dot feedback-option-dot--4" />
-                  <img src={option.image} alt="" className="feedback-rating-robot" />
-                </div>
+            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
+              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <path d="M 37.5 86 C 45 68, 76 68, 83.5 86" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" fill="none" />
+            </svg>
+          </button>
 
-                <strong>{option.label}</strong>
-                <span>{option.sublabel}</span>
-              </button>
-            ))}
-          </div>
+          {/* 2. Neutral face 😐 */}
+          <button
+            type="button"
+            className={`lms-feedback-emoji-btn ${selectedId === 'okay' || selectedId === 'neutral' ? 'is-selected' : ''}`}
+            role="radio"
+            aria-checked={selectedId === 'okay' || selectedId === 'neutral'}
+            aria-label="Neutral / Okay"
+            onClick={() => handleSelectEmoji(config.options[1])}
+          >
+            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
+              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <path d="M 37.5 75 L 83.5 75" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" />
+            </svg>
+          </button>
+
+          {/* 3. Happy face 🙂 */}
+          <button
+            type="button"
+            className={`lms-feedback-emoji-btn ${selectedId === 'easy' || selectedId === 'happy' ? 'is-selected' : ''}`}
+            role="radio"
+            aria-checked={selectedId === 'easy' || selectedId === 'happy'}
+            aria-label="Happy / Easy"
+            onClick={() => handleSelectEmoji(config.options[2])}
+          >
+            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
+              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
+              <path d="M 37.5 68 C 45 86, 76 86, 83.5 68" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" fill="none" />
+            </svg>
+          </button>
         </div>
       </section>
     </main>

@@ -19,7 +19,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Choosing a dress",
+      "title": "Choosing an outfit",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -30,44 +30,35 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_dress_1",
-          "title": "Change shorts",
-          "text": "Program the shorts sprite to switch to the next costume when clicked.",
-          "type": "svg",
+          "id": "f92ff5cf-f52d-488a-8d13-73adcd1d8121",
+          "title": "Startup script",
+          "text": "When you click on the green flag, the girl says which key to press.",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_dress_2",
-          "title": "Change shirt",
-          "text": "Program the shirt sprite to switch to the next costume when clicked.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_dress_3",
-          "title": "Initial placement",
-          "text": "Set initial position and costumes for Harper and clothes when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "0bffbde8-bf97-4bac-add9-6faeacb2f244",
+          "title": "Pressing a key",
+          "text": "When you press a key, the costume changes.",
+          "type": "gif",
+          "url": "/vp-assets/26846/when space pressed.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Events - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Choosing an outfit",
+          "text": "We can run commands from the keyboard too! Let's program a costume change by pressing the space bar.",
+          "url": ""
         }
       ],
       "states": [
@@ -84,23 +75,51 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Choosing an outfit",
+          "title": "Choosing an outfit",
+          "requirements": [
+            {
+              "id": "f92ff5cf-f52d-488a-8d13-73adcd1d8121",
+              "title": "Startup script",
+              "text": "When you click on the green flag, the girl says which key to press.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "0bffbde8-bf97-4bac-add9-6faeacb2f244",
+              "title": "Pressing a key",
+              "text": "When you press a key, the costume changes.",
+              "type": "gif",
+              "url": "/vp-assets/26846/when space pressed.png"
+            }
           ],
-          "project_title": "M1L4 Choosing a dress"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Choosing an outfit",
+              "text": "We can run commands from the keyboard too! Let's program a costume change by pressing the space bar.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 1,
+          "levelPosition": 1
         }
       ],
-      "project_title": "M1L4 Choosing a dress",
+      "project_title": "Choosing an outfit",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "description": "Help Harper choose an outfit! Click on the clothes to change costumes."
+      "description": "Help Harper choose an outfit! Click on the clothes to change costumes.",
+      "tips": [],
+      "demo_project_id": null
     },
     {
       "id": "VP2_M1L4_1_2",
@@ -108,103 +127,7 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Pop the balloon",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "M1L4_Pop_the_balloon.sb3",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_balloon_1",
-          "title": "Pop balloon 1",
-          "text": "When Balloon 1 is clicked, switch costume to pop or hide the sprite.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_balloon_2",
-          "title": "Pop balloon 2",
-          "text": "When Balloon 2 is clicked, switch costume to pop or hide the sprite.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_balloon_3",
-          "title": "Pop balloon 3",
-          "text": "When Balloon 3 is clicked, switch costume to pop or hide the sprite.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_balloon_4",
-          "title": "Initial placement",
-          "text": "Show all balloons and reset their initial costumes when the green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Scratch. Events - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
-      "states": [
-        {
-          "id": "VP2_M1L4_1_2_state_1",
-          "stateId": "VP2_M1L4_1_2_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L4_Pop_the_balloon.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L4 Pop the balloon"
-        }
-      ],
-      "project_title": "M1L4 Pop the balloon",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true,
-      "description": "Click the balloons to pop them and clear the stage!"
-    },
-    {
-      "id": "VP2_M1L4_1_3",
-      "taskId": "VP2_M1L4_1_3",
-      "position": 3,
-      "level_position": 3,
-      "levelPosition": 3,
-      "title": "The bell",
+      "title": "Bell",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -215,44 +138,42 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_bell_1",
-          "title": "Ring the bell",
-          "text": "When the bell sprite is clicked, animate the bell and play the bell sound.",
-          "type": "svg",
+          "id": "199f672f-28e9-49c8-b80e-334e580e417d",
+          "title": "Startup script",
+          "text": "When you click on the green flag, the bell tells you what to do.",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_bell_2",
-          "title": "Initial placement",
-          "text": "Position the bell in the witch house when the green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "f179e3a0-e697-48c1-b1de-6cf1201087a1",
+          "title": "Clicking on the bell",
+          "text": "When you click on the bell, it rings (it says the phrase \"Ding-dong\").",
+          "type": "gif",
+          "url": "/vp-assets/26846/sprite clicked.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Events - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Bell",
+          "text": "Here the bell rings if you click on it!",
+          "url": ""
         }
       ],
       "states": [
         {
-          "id": "VP2_M1L4_1_3_state_1",
-          "stateId": "VP2_M1L4_1_3_state_1",
-          "position": 1,
+          "id": "VP2_M1L4_1_2_state_1",
+          "stateId": "VP2_M1L4_1_2_state_1",
+          "position": 2,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -262,23 +183,173 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Bell",
+          "title": "Bell",
+          "requirements": [
+            {
+              "id": "199f672f-28e9-49c8-b80e-334e580e417d",
+              "title": "Startup script",
+              "text": "When you click on the green flag, the bell tells you what to do.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "f179e3a0-e697-48c1-b1de-6cf1201087a1",
+              "title": "Clicking on the bell",
+              "text": "When you click on the bell, it rings (it says the phrase \"Ding-dong\").",
+              "type": "gif",
+              "url": "/vp-assets/26846/sprite clicked.png"
+            }
           ],
-          "project_title": "M1L4 The bell"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Bell",
+              "text": "Here the bell rings if you click on it!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 2,
+          "levelPosition": 2
         }
       ],
-      "project_title": "M1L4 The bell",
+      "project_title": "Bell",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "description": "Ring the bell in the witch house by clicking on it!"
+      "description": "Click the balloons to pop them and clear the stage!",
+      "tips": [],
+      "demo_project_id": null
+    },
+    {
+      "id": "VP2_M1L4_1_3",
+      "taskId": "VP2_M1L4_1_3",
+      "position": 3,
+      "level_position": 3,
+      "levelPosition": 3,
+      "title": "Balloons",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "M1L4_Pop_the_balloon.sb3",
+      "drawerOpen": true,
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "21064061-9aef-450a-b05d-1bec33b364ef",
+          "title": "A balloon appears",
+          "text": "When you click on the green flag, a balloon appears and says what to do.",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "0fe8404a-b3d0-4e8b-8807-cef68a02eb4d",
+          "title": "The balloon pops",
+          "text": "When you click on a balloon, it pops (disappears).",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "bf2412dc-95d9-42c1-bb22-2c3cc2f82380",
+          "title": "Duplicate the scripts for the blue and yellow balloons",
+          "text": "To duplicate the script for another balloon, transfer the script as shown!",
+          "type": "gif",
+          "url": "/vp-assets/26846/identical scripts.gif"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Balloons",
+          "text": "If you click on a balloon, it disappears. If you click the green flag, the balloons reappear!",
+          "url": ""
+        }
+      ],
+      "states": [
+        {
+          "id": "VP2_M1L4_1_3_state_1",
+          "stateId": "VP2_M1L4_1_3_state_1",
+          "position": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "starter_project_id": "M1L4_Pop_the_balloon.sb3",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "project_title": "Balloons",
+          "title": "Balloons",
+          "requirements": [
+            {
+              "id": "21064061-9aef-450a-b05d-1bec33b364ef",
+              "title": "A balloon appears",
+              "text": "When you click on the green flag, a balloon appears and says what to do.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "0fe8404a-b3d0-4e8b-8807-cef68a02eb4d",
+              "title": "The balloon pops",
+              "text": "When you click on a balloon, it pops (disappears).",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "bf2412dc-95d9-42c1-bb22-2c3cc2f82380",
+              "title": "Duplicate the scripts for the blue and yellow balloons",
+              "text": "To duplicate the script for another balloon, transfer the script as shown!",
+              "type": "gif",
+              "url": "/vp-assets/26846/identical scripts.gif"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Balloons",
+              "text": "If you click on a balloon, it disappears. If you click the green flag, the balloons reappear!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 3,
+          "levelPosition": 3
+        }
+      ],
+      "project_title": "Balloons",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
+      "description": "Ring the bell in the witch house by clicking on it!",
+      "tips": [],
+      "demo_project_id": null
     },
     {
       "id": "VP2_M1L4_1_4",
@@ -297,65 +368,49 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_season_1",
-          "title": "Winter button",
-          "text": "When the Winter button is clicked, switch the stage backdrop to winter.",
-          "type": "svg",
+          "id": "e9d3c2cf-81d5-4e22-9afc-3d3e5791529a",
+          "title": "Set a background for the blue button",
+          "text": "When the sprite is clicked on, the background changes.",
+          "type": "gif",
+          "url": "/vp-assets/26846/winter.png"
+        },
+        {
+          "id": "2d8e4cc1-4b9f-4b07-a6bf-0b2cb9b72e78",
+          "title": "Multiple buttons",
+          "text": "All four buttons work the same way!",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_season_2",
-          "title": "Spring button",
-          "text": "When the Spring button is clicked, switch the stage backdrop to spring.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_season_3",
-          "title": "Summer button",
-          "text": "When the Summer button is clicked, switch the stage backdrop to summer.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_season_4",
-          "title": "Autumn button",
-          "text": "When the Autumn button is clicked, switch the stage backdrop to autumn.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_season_5",
-          "title": "Initial placement",
-          "text": "Position all 4 season buttons and set the starting backdrop when the green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "cb37bb61-db78-4bfa-ba5e-129e62a634b9",
+          "title": "*Initial placement",
+          "text": "When you click on the green flag, the background changes to neutral.",
+          "type": "gif",
+          "url": "/vp-assets/26846/start_1627632415.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Events - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Seasons",
+          "text": "Press the buttons to change the background.",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_1_4_state_1",
           "stateId": "VP2_M1L4_1_4_state_1",
-          "position": 1,
+          "position": 4,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -365,23 +420,58 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Seasons",
+          "title": "Seasons",
+          "requirements": [
+            {
+              "id": "e9d3c2cf-81d5-4e22-9afc-3d3e5791529a",
+              "title": "Set a background for the blue button",
+              "text": "When the sprite is clicked on, the background changes.",
+              "type": "gif",
+              "url": "/vp-assets/26846/winter.png"
+            },
+            {
+              "id": "2d8e4cc1-4b9f-4b07-a6bf-0b2cb9b72e78",
+              "title": "Multiple buttons",
+              "text": "All four buttons work the same way!",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "cb37bb61-db78-4bfa-ba5e-129e62a634b9",
+              "title": "*Initial placement",
+              "text": "When you click on the green flag, the background changes to neutral.",
+              "type": "gif",
+              "url": "/vp-assets/26846/start_1627632415.png"
+            }
           ],
-          "project_title": "M1L4 Seasons"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Seasons",
+              "text": "Press the buttons to change the background.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 4,
+          "levelPosition": 4
         }
       ],
-      "project_title": "M1L4 Seasons",
+      "project_title": "Seasons",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "description": "Click on the season buttons to change the backdrop to winter, spring, summer, or autumn!"
+      "description": "Click on the season buttons to change the backdrop to winter, spring, summer, or autumn!",
+      "tips": [],
+      "demo_project_id": null
     },
     {
       "id": "VP2_M1L4_1_5",
@@ -389,87 +479,42 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Scratch. Events - Task 5",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "M1L4_hen.sb3",
+      "title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
       "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_5_1",
-          "title": "Program Scratch. Events - Task 5",
-          "text": "Program the sprites and animations for \"Scratch. Events - Task 5\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Scratch. Events - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
+      "command_keys": [],
+      "command_blocks": [],
+      "requirements": [],
+      "media": [],
       "states": [
         {
           "id": "VP2_M1L4_1_5_state_1",
           "stateId": "VP2_M1L4_1_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "M1L4_hen.sb3",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "M1L4 hen"
+          "position": 5,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "starter_project_id": null,
+          "command_keys": [],
+          "command_blocks": [],
+          "project_title": "Did you like the task?",
+          "title": "Did you like the task?",
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "demo_project_id": null,
+          "level_position": 5,
+          "levelPosition": 5
         }
       ],
-      "project_title": "M1L4 hen",
+      "project_title": "Did you like the task?",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [],
+      "demo_project_id": null
     },
     {
       "id": "VP2_M1L4_1_6",
@@ -477,87 +522,140 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Events - Task 6",
+      "title": "Musician",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_A_rocketship.sb3",
+      "starter_project_id": "New_project.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_6_1",
-          "title": "Program Scratch. Events - Task 6",
-          "text": "Program the sprites and animations for \"Scratch. Events - Task 6\".",
-          "type": "svg",
-          "url": ""
+          "id": "bf3753af-57ba-4263-88de-5ed771aa4d36",
+          "title": "Choose the key you want",
+          "text": "You can program more than just pressing the space bar — choose the \"1\" key for that! ",
+          "type": "gif",
+          "url": "/vp-assets/26846/1_1627632649.png"
         },
         {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "2dcb3f51-4734-4d34-bef3-e7819cb63539",
+          "title": "Choose the sound you want",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26846/sound.png"
         },
         {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "f65a8f71-92b2-4611-970f-5a55a7a89b02",
+          "title": "Minimum 3 keys",
+          "text": "Program the keys \"1\", \"2\", and \"3,\" so that when you press on them, different sounds are played!",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Events - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Musician",
+          "text": "If you press different keys, you can play the guitar!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_1_6_state_1",
           "stateId": "VP2_M1L4_1_6_state_1",
-          "position": 1,
+          "position": 6,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_A_rocketship.sb3",
+          "starter_project_id": "New_project.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Musician",
+          "title": "Musician",
+          "requirements": [
+            {
+              "id": "bf3753af-57ba-4263-88de-5ed771aa4d36",
+              "title": "Choose the key you want",
+              "text": "You can program more than just pressing the space bar — choose the \"1\" key for that! ",
+              "type": "gif",
+              "url": "/vp-assets/26846/1_1627632649.png"
+            },
+            {
+              "id": "2dcb3f51-4734-4d34-bef3-e7819cb63539",
+              "title": "Choose the sound you want",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26846/sound.png"
+            },
+            {
+              "id": "f65a8f71-92b2-4611-970f-5a55a7a89b02",
+              "title": "Minimum 3 keys",
+              "text": "Program the keys \"1\", \"2\", and \"3,\" so that when you press on them, different sounds are played!",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L4 A rocketship"
+          "tips": [
+            {
+              "id": "1563279846560-5",
+              "title": "The musician's script has already been made",
+              "description": "One script is already ready!",
+              "url": "/vp-assets/26846/press.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Musician",
+              "text": "If you press different keys, you can play the guitar!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 6,
+          "levelPosition": 6
         }
       ],
-      "project_title": "M1L4 A rocketship",
+      "project_title": "Musician",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [
+        {
+          "id": "1563279846560-5",
+          "title": "The musician's script has already been made",
+          "description": "One script is already ready!",
+          "url": "/vp-assets/26846/press.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ],
+      "demo_project_id": null,
+      "type": "bonus",
+      "isBonus": true
     },
     {
       "id": "VP2_M1L4_1_7",
@@ -565,87 +663,122 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Scratch. Events - Task 7",
+      "title": "Dancers",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L4_Stars.sb3",
+      "starter_project_id": "New_project_1.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_7_1",
-          "title": "Program Scratch. Events - Task 7",
-          "text": "Program the sprites and animations for \"Scratch. Events - Task 7\".",
-          "type": "svg",
+          "id": "2bcd44fb-64c4-40dd-bea3-f1220121c860",
+          "title": "Plan the dialog",
+          "text": "Write a dialog plan in your workbook so that you don't get confused!",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_7_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
+          "id": "d29730b8-c1e2-4f74-9011-f0999b337e83",
+          "title": "Dancing",
+          "text": "When you press the space bar, the dancers change their costumes at regular intervals.",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_7_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "15e6f12c-3239-448d-848b-44a07f749c81",
+          "title": "Music",
+          "text": "After pressing the space bar, one of the dancers \"starts\" the music, and at the end stops it.",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Events - Task 7",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Dancers",
+          "text": "Please note: the dancers first talk to each other, and they only start dancing when you press the space bar.",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_1_7_state_1",
           "stateId": "VP2_M1L4_1_7_state_1",
-          "position": 1,
+          "position": 7,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L4_Stars.sb3",
+          "starter_project_id": "New_project_1.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Dancers",
+          "title": "Dancers",
+          "requirements": [
+            {
+              "id": "2bcd44fb-64c4-40dd-bea3-f1220121c860",
+              "title": "Plan the dialog",
+              "text": "Write a dialog plan in your workbook so that you don't get confused!",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "d29730b8-c1e2-4f74-9011-f0999b337e83",
+              "title": "Dancing",
+              "text": "When you press the space bar, the dancers change their costumes at regular intervals.",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "15e6f12c-3239-448d-848b-44a07f749c81",
+              "title": "Music",
+              "text": "After pressing the space bar, one of the dancers \"starts\" the music, and at the end stops it.",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L4 Stars"
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Dancers",
+              "text": "Please note: the dancers first talk to each other, and they only start dancing when you press the space bar.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": null,
+          "level_position": 7,
+          "levelPosition": 7
         }
       ],
-      "project_title": "M1L4 Stars",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "project_title": "Dancers",
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "isAutoCheck": false,
+      "tips": [],
+      "demo_project_id": null,
+      "type": "bonus",
+      "isBonus": true
     }
   ]
 }

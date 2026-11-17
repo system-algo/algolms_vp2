@@ -129,7 +129,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task1_Demo.sb3",
           "level_position": 1,
           "levelPosition": 1,
           "tips": []
@@ -138,7 +138,7 @@
       "project_title": "M1L3 Before takeoff",
       "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "isAutoCheck": false,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task1_Demo.sb3",
       "tips": []
     },
     {
@@ -222,7 +222,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task2_Demo.sb3",
           "level_position": 2,
           "levelPosition": 2,
           "tips": [
@@ -240,7 +240,7 @@
       "project_title": "M1L3 Dinosaurs",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task2_Demo.sb3",
       "tips": [
         {
           "id": "1563273161031-5",
@@ -333,7 +333,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task3_Demo.sb3",
           "level_position": 3,
           "levelPosition": 3,
           "tips": [
@@ -351,7 +351,7 @@
       "project_title": "M1L3 Girls in the castle",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task3_Demo.sb3",
       "tips": [
         {
           "id": "1563273688525-5",
@@ -444,7 +444,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task4_Demo.sb3",
           "level_position": 4,
           "levelPosition": 4,
           "tips": [
@@ -462,7 +462,7 @@
       "project_title": "M1L3 Astronauts",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task4_Demo.sb3",
       "tips": [
         {
           "id": "1564043086239-5",
@@ -612,7 +612,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task6_Demo.sb3",
           "level_position": 6,
           "levelPosition": 6,
           "tips": []
@@ -621,7 +621,7 @@
       "project_title": "M1L3 Trying on a dress",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task6_Demo.sb3",
       "isBonus": true,
       "type": "bonus",
       "tips": []
@@ -707,7 +707,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L3_3_Task7_Demo.sb3",
           "level_position": 7,
           "levelPosition": 7,
           "tips": []
@@ -716,7 +716,7 @@
       "project_title": "M1L3",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null,
+      "demo_project_id": "M1L3_3_Task7_Demo.sb3",
       "isBonus": true,
       "type": "bonus",
       "tips": []

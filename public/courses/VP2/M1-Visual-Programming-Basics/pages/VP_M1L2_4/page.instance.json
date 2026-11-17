@@ -16,8 +16,10 @@
       "activityType": "feedback-rating-task",
       "level_type": "rating",
       "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
       "feedbackRatingTask": {
-        "question": "Did you like the lesson?"
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
       },
       "states": [
         {

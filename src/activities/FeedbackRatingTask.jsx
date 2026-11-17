@@ -83,6 +83,15 @@ const DEFAULT_CONFIG = {
 };
 
 function clickNextTaskInHeader() {
+  const stepButtons = Array.from(document.querySelectorAll('.lms-topbar__step'));
+  if (stepButtons.length > 0) {
+    const activeIdx = stepButtons.findIndex((btn) => btn.classList.contains('is-active'));
+    if (activeIdx >= 0 && activeIdx < stepButtons.length - 1) {
+      stepButtons[activeIdx + 1].click();
+      return true;
+    }
+  }
+
   const buttons = Array.from(
     document.querySelectorAll(
       'button, a, [role="button"], [data-task-index], [data-task-id]'
@@ -143,6 +152,9 @@ export default function FeedbackRatingTask(props) {
     goToNext,
     handleNext,
     handleNextTask,
+    onSelectTask,
+    taskIndex,
+    tasks,
     courseId = 'VP2',
     lessonId = '',
     pageId = '',
@@ -176,7 +188,90 @@ export default function FeedbackRatingTask(props) {
     } catch {}
   }, [currentTaskId]);
 
-  const isRobotMode = task?.renderMode === 'robot' || task?.style === 'robot';
+  // Standard robot card style (like ptsy1 / previous courses) is enabled by default
+  const isRobotMode = task?.renderMode !== 'classic-emoji' && task?.style !== 'classic-emoji';
+
+  const handleSelectOption = async (option) => {
+    setSelectedId(option.id);
+
+    try {
+      localStorage.setItem(`completed_${currentTaskId}`, 'true');
+      localStorage.setItem(`feedback_rating_${currentTaskId}`, option.id);
+    } catch {}
+
+    playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
+
+    const targetCourse = courseId || 'VP2';
+    const targetLesson = lessonId || 'M1-Visual-Programming-Basics';
+    const targetPage = pageId || 'VP2_M1L3_4';
+
+    const payload = {
+      sessionId: getSessionId(),
+      userId: getUserId(),
+      courseId: targetCourse,
+      lessonId: targetLesson,
+      pageId: targetPage,
+      taskId: currentTaskId,
+      activityType: 'feedback-rating-task',
+      answer: {
+        rating: option.id,
+        ratingType: option.type,
+        ratingLabel: option.label,
+      },
+      isCorrect: true,
+      score: 100,
+      maxScore: 100,
+    };
+
+    try {
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = { 'Content-Type': 'application/json' };
+      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+
+      fetch(`${getBackendUrl()}/api/activity-attempts`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      }).catch((e) => console.warn('[FeedbackRatingTask] backend attempt error:', e));
+    } catch (err) {
+      console.warn('[FeedbackRatingTask] attempt send error:', err);
+    }
+
+    try {
+      await saveTaskCompletionToSupabase({
+        courseId: targetCourse,
+        lessonId: targetLesson,
+        pageId: targetPage,
+        taskId: currentTaskId,
+        activityType: 'feedback-rating-task',
+      });
+    } catch (err) {
+      console.warn('[FeedbackRatingTask] Supabase save error:', err);
+    }
+
+    onTaskCompleted?.({
+      taskId: currentTaskId,
+      activityType: 'feedback-rating-task',
+      isCorrect: true,
+      completed: true,
+      score: 100,
+      maxScore: 100,
+      metadata: {
+        ratingId: option.id,
+        ratingType: option.type,
+        ratingLabel: option.label,
+      },
+    });
+  };
+
+  const handleResetRating = () => {
+    try {
+      localStorage.removeItem(`feedback_rating_${currentTaskId}`);
+    } catch {}
+    setSelectedId(null);
+  };
 
   const handleSelectEmoji = async (option) => {
     setSelectedId(option.id);
@@ -190,7 +285,7 @@ export default function FeedbackRatingTask(props) {
 
     const targetCourse = courseId || 'VP2';
     const targetLesson = lessonId || 'M1-Visual-Programming-Basics';
-    const targetPage = pageId || 'VP2_M1L2_4';
+    const targetPage = pageId || 'VP2_M1L3_4';
 
     const payload = {
       sessionId: getSessionId(),
@@ -253,22 +348,7 @@ export default function FeedbackRatingTask(props) {
     });
 
     window.setTimeout(() => {
-      const callbacks = [
-        onNextTask,
-        nextTask,
-        onNext,
-        onComplete,
-        goNext,
-        goToNext,
-        handleNext,
-        handleNextTask,
-      ];
-      const callback = callbacks.find((cb) => typeof cb === 'function');
-      if (callback) {
-        callback();
-      } else {
-        clickNextTaskInHeader();
-      }
+      moveNext();
     }, 500);
   };
 
@@ -288,10 +368,24 @@ export default function FeedbackRatingTask(props) {
       },
     });
 
+    if (typeof onNextTask === 'function') {
+      onNextTask();
+      return;
+    }
+
+    if (
+      typeof onSelectTask === 'function' &&
+      typeof taskIndex === 'number' &&
+      Array.isArray(tasks) &&
+      taskIndex < tasks.length - 1
+    ) {
+      onSelectTask(taskIndex + 1);
+      return;
+    }
+
     const callbacks = [
       onNext,
       onComplete,
-      onNextTask,
       nextTask,
       goNext,
       goToNext,
@@ -311,10 +405,10 @@ export default function FeedbackRatingTask(props) {
     window.dispatchEvent(new CustomEvent('go-next-task', { detail }));
     window.dispatchEvent(new CustomEvent('next-task', { detail }));
 
-    window.setTimeout(clickNextTaskInHeader, 0);
+    clickNextTaskInHeader();
   };
 
-  // If explicit robot card mode requested
+  // Robot card mode (ptsy1 style)
   if (isRobotMode) {
     const selectedOption = config.options.find((option) => option.id === selectedId);
 
@@ -347,6 +441,25 @@ export default function FeedbackRatingTask(props) {
                   <span>{config.nextLabel || 'Continue'}</span>
                   <span aria-hidden="true">→</span>
                 </button>
+
+                <div style={{ marginTop: '16px' }}>
+                  <button
+                    type="button"
+                    onClick={handleResetRating}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      color: '#8b39e6',
+                      cursor: 'pointer',
+                      fontSize: '14px',
+                      fontWeight: 600,
+                      textDecoration: 'underline',
+                      padding: 0,
+                    }}
+                  >
+                    Change rating
+                  </button>
+                </div>
               </div>
 
               <div className="feedback-result-visual" aria-hidden="true">
@@ -380,7 +493,7 @@ export default function FeedbackRatingTask(props) {
             </div>
 
             <header className="feedback-question-copy">
-              <h1>{config.question || 'How was this task for you?'}</h1>
+              <h1>{config.question || 'Did you like the task?'}</h1>
               <p>{config.helperText || 'Your feedback helps us make lessons better.'}</p>
             </header>
 
@@ -401,7 +514,7 @@ export default function FeedbackRatingTask(props) {
                     '--feedback-option-accent': option.accent,
                     '--feedback-option-soft': option.softBackground,
                   }}
-                  onClick={() => handleSelectEmoji(option)}
+                  onClick={() => handleSelectOption(option)}
                 >
                   <div className="feedback-option-image-wrap">
                     <span className="feedback-option-dot feedback-option-dot--1" />

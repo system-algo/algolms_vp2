@@ -1,10 +1,10 @@
 {
   "version": 1,
   "id": "VP2_M3L2_4",
-  "title": "Changing coordinates - Part 4",
-  "type": "scratch-task",
-  "level_type": "scratch",
-  "taskCount": 3,
+  "title": "Test yourself. Changing coordinates",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "taskCount": 4,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M3-Functions-and-Modules",
@@ -13,36 +13,29 @@
   },
   "tasks": [
     {
-      "id": "task-1-22441",
-      "taskId": "task-1-22441",
-      "title": "Test yourself. Changing coordinates",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
-      "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Which script will move the smiley face to the red dot?",
-        "ANSWER"
-      ],
-      "images": [],
+      "id": "VP2_M3L2_4_1",
+      "taskId": "VP2_M3L2_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
-          "id": "task-1-22441-state-1",
-          "stateId": "task-1-22441-state-1",
-          "name": "1",
-          "instruction": "1\n2\n3\nWhich script will move the smiley face to the red dot?\nANSWER",
-          "bodyText": "1\n2\n3\n\nWhich script will move the smiley face to the red dot?\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Which script will move the smiley face to the red dot?",
-            "ANSWER"
-          ],
-          "images": [],
-          "screenshot": ""
+          "id": "VP2_M3L2_4_1_state_1",
+          "stateId": "VP2_M3L2_4_1_state_1",
+          "position": 1,
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
       ]
     },
@@ -52,92 +45,59 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Changing coordinates",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "title": "Which script will move the smiley face to the red dot?",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Which script will move the smiley face to the red dot?",
+        "description": "",
+        "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/q1_graph.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "a",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/q1_script_1.png",
+            "alt": "change y by 20, set x to 20"
+          },
+          {
+            "id": "b",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/q1_script_2.png",
+            "alt": "change y by -40, set x to 30"
+          },
+          {
+            "id": "c",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/q1_script_3.png",
+            "alt": "change x by 30, change y by 40"
+          },
+          {
+            "id": "d",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/q1_script_4.png",
+            "alt": "change x by -30, change y by 20"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M3L2_4_2_state_1",
           "stateId": "VP2_M3L2_4_2_state_1",
-          "position": 2,
-          "level_position": 2,
-          "levelPosition": 2,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Which script will move the smiley face to the red dot?"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "Which script will move the smiley face to the red dot?",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M3L2_4_3",
@@ -145,92 +105,146 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Changing coordinates",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      "title": "Select all the commands that will move the sprite down",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Select all the commands that will move the sprite down",
+        "description": "",
+        "image": "",
+        "multiple": true,
+        "options": [
+          {
+            "id": "x_m10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_3.png",
+            "alt": "change x by -10"
+          },
+          {
+            "id": "x_10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_2.png",
+            "alt": "change x by 10"
+          },
+          {
+            "id": "y_m4",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_4.png",
+            "alt": "change y by -4"
+          },
+          {
+            "id": "y_m10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_5.png",
+            "alt": "change y by -10"
+          },
+          {
+            "id": "x_5",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_1.png",
+            "alt": "change x by 5"
+          },
+          {
+            "id": "y_5",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_6.png",
+            "alt": "change y by 5"
+          }
+        ],
+        "correctOptionIds": [
+          "y_m4",
+          "y_m10"
+        ]
+      },
       "states": [
         {
           "id": "VP2_M3L2_4_3_state_1",
           "stateId": "VP2_M3L2_4_3_state_1",
-          "position": 3,
-          "level_position": 3,
-          "levelPosition": 3,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Changing coordinates\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Changing coordinates\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Select all the commands that will move the sprite down"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "Select all the commands that will move the sprite down",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
+    },
+    {
+      "id": "VP2_M3L2_4_4",
+      "taskId": "VP2_M3L2_4_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Select all the commands that will move the sprite to the right.",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Select all the commands that will move the sprite to the right.",
+        "description": "",
+        "image": "",
+        "multiple": true,
+        "options": [
+          {
+            "id": "y_m10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_5.png",
+            "alt": "change y by -10"
+          },
+          {
+            "id": "x_m10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_3.png",
+            "alt": "change x by -10"
+          },
+          {
+            "id": "y_5",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_6.png",
+            "alt": "change y by 5"
+          },
+          {
+            "id": "y_m4",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_7.png",
+            "alt": "change y by -4"
+          },
+          {
+            "id": "x_5",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_1.png",
+            "alt": "change x by 5"
+          },
+          {
+            "id": "x_10",
+            "text": "",
+            "image": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_4/images/block_2.png",
+            "alt": "change x by 10"
+          }
+        ],
+        "correctOptionIds": [
+          "x_5",
+          "x_10"
+        ]
+      },
+      "states": [
+        {
+          "id": "VP2_M3L2_4_4_state_1",
+          "stateId": "VP2_M3L2_4_4_state_1",
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Select all the commands that will move the sprite to the right."
+        }
+      ],
+      "project_title": "Select all the commands that will move the sprite to the right.",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
-  ]
+  ],
+  "activityType": "marsbot-quiz"
 }

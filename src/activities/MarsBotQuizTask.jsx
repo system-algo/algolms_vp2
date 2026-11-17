@@ -279,24 +279,36 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.',
       feedbackIncorrect: 'Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!'
     },
-    // Fallback for question 3 in case user clicks
+    // Question 2 (level 3 in LMS / Task 3 in manifest): Dialogue timing quiz
     3: {
-      prompt: 'What properties do we need to set for the bear sprite at the very beginning? What changes?',
+      prompt: 'The code for one of the sprites is shown on the left. Which of the scripts works for the other character? The sprites should not speak at the same time.',
       bannerBg: '#ffffff',
-      bannerFlush: true,
-      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/bear_initial_placement.png',
-      multiple: true,
-      layout: 'vertical',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_question.png',
       options: [
-        { id: 1, text: 'Size', label: 'Size' },
-        { id: 2, text: 'Visibility', label: 'Visibility' },
-        { id: 3, text: 'Background', label: 'Background' },
-        { id: 4, text: 'Costume', label: 'Costume' }
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt1.png',
+          label: 'Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt2.png',
+          label: 'Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt3.png',
+          label: 'Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt4.png',
+          label: 'Option 4'
+        }
       ],
-      correctOptionIds: [1, 4],
-      allowedOptionIdSets: [[1, 4], [1, 2, 4]],
-      feedbackCorrect: 'Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.',
-      feedbackIncorrect: 'Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!'
+      correctOptionId: 1,
+      feedbackCorrect: 'Correct! The second sprite waits while the first sprite speaks, so they take turns speaking without overlapping.',
+      feedbackIncorrect: 'Not quite right. Trace each wait and say block in seconds to ensure the sprites never speak at the same time!'
     }
   }
 };

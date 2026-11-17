@@ -19,59 +19,26 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Initial placement - Question 1",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Initial placement\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Initial placement - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the task?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the task?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M1L3_4_1_state_1",
           "stateId": "VP2_M1L3_4_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "project_title": "Test yourself. Initial placement - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the task?"
         }
-      ],
-      "project_title": "Test yourself. Initial placement - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L3_4_2",
@@ -79,10 +46,28 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Initial placement - Question 2",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "What properties do we need to set for the bear sprite at the very beginning? What changes?",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What properties do we need to set for the bear sprite at the very beginning? What changes?",
+        "bannerBg": "#ffffff",
+        "bannerFlush": true,
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/bear_initial_placement.png",
+        "multiple": true,
+        "layout": "vertical",
+        "options": [
+          { "id": 1, "text": "Size", "label": "Size" },
+          { "id": 2, "text": "Visibility", "label": "Visibility" },
+          { "id": 3, "text": "Background", "label": "Background" },
+          { "id": 4, "text": "Costume", "label": "Costume" }
+        ],
+        "correctOptionIds": [1, 4],
+        "allowedOptionIdSets": [[1, 4], [1, 2, 4]],
+        "feedbackCorrect": "Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.",
+        "feedbackIncorrect": "Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -123,9 +108,9 @@
           "id": "VP2_M1L3_4_2_state_1",
           "stateId": "VP2_M1L3_4_2_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
           "project_title": "Test yourself. Initial placement - Question 2"
         }
       ],
@@ -139,10 +124,40 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Initial placement - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "The code for one of the sprites is shown on the left. Which of the scripts works for the other character? The sprites should not speak at the same time.",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "The code for one of the sprites is shown on the left. Which of the scripts works for the other character? The sprites should not speak at the same time.",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_question.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt1.png",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt2.png",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt3.png",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/script_dialogue_opt4.png",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 1,
+        "feedbackCorrect": "Correct! The second sprite waits while the first sprite speaks, so they take turns speaking without overlapping.",
+        "feedbackIncorrect": "Not quite right. Trace each wait and say block in seconds to ensure the sprites never speak at the same time!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -183,9 +198,9 @@
           "id": "VP2_M1L3_4_3_state_1",
           "stateId": "VP2_M1L3_4_3_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
+          "type": "marsbot-quiz",
+          "selectedType": "marsbot-quiz",
+          "level_type": "quiz",
           "project_title": "Test yourself. Initial placement - Question 3"
         }
       ],

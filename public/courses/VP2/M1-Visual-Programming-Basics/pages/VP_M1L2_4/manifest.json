@@ -19,59 +19,26 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Loops - Question 1",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Loops\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Loops - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M1L2_4_1_state_1",
           "stateId": "VP2_M1L2_4_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "project_title": "Test yourself. Loops - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
-      ],
-      "project_title": "Test yourself. Loops - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L2_4_2",
@@ -79,10 +46,40 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Loops - Question 2",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "The robot is building in the picture. Which program is it running?",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "The robot is building in the picture.\nWhich program is it running?",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png",
+            "label": "repeat 3 [factory, move forward], move forward, wind generator"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png",
+            "label": "repeat 3 [move forward, factory], move forward, wind generator"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png",
+            "label": "repeat 3 [move forward, factory], wind generator"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png",
+            "label": "repeat 4 [move forward, factory], wind generator"
+          }
+        ],
+        "correctOptionId": 2,
+        "feedbackCorrect": "Correct! The robot follows this program to build 3 factories and 1 wind generator.",
+        "feedbackIncorrect": "Not quite right. Trace the repeat block and check what the robot builds first and last!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -139,10 +136,40 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Loops - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "What drawing will we get when this program is run (the brush is the start cell):",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What drawing will we get when this program is run (the brush is the start cell):",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_2.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_1.png",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_2.png",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_3.png",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_4.png",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 3,
+        "feedbackCorrect": "Correct! The brush moves right and up 3 times, then draws a square.",
+        "feedbackIncorrect": "Not quite right. Follow the loop steps (right, up) 3 times and check the final shape drawn!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -199,10 +226,36 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Test yourself. Loops - Question 4",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "Choose the examples of looping algorithms in real life.",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "Choose the examples of looping algorithms in real life.",
+        "multiple": true,
+        "layout": "vertical",
+        "options": [
+          {
+            "id": 1,
+            "text": "A flower opening and closing during the day"
+          },
+          {
+            "id": 2,
+            "text": "The change of seasons"
+          },
+          {
+            "id": 3,
+            "text": "A tree sprouting from a seed"
+          },
+          {
+            "id": 4,
+            "text": "How a traffic light works"
+          }
+        ],
+        "correctOptionIds": [1, 2, 4],
+        "feedbackCorrect": "Correct! Flowers opening/closing, seasons changing, and traffic lights are all looping processes in real life.",
+        "feedbackIncorrect": "Not quite right. Think about which processes repeat over and over again continuously!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",

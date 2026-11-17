@@ -12,59 +12,26 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Events - Question 1",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Events\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Events - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
           "id": "VP2_M1L4_4_1_state_1",
           "stateId": "VP2_M1L4_4_1_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Events - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
-      ],
-      "project_title": "Test yourself. Events - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M1L4_4_2",
@@ -72,10 +39,38 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Events - Question 2",
+      "title": "What script will lead to a change of costume after clicking on the sprite?",
       "activityType": "marsbot-quiz",
       "level_type": "quiz",
       "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What script will lead to a change of costume after clicking on the sprite?",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt1.png",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt2.png",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt3.png",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/costume_change_opt4.png",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 2,
+        "feedbackCorrect": "Correct! The \"when this sprite clicked\" event combined with \"next costume\" changes the costume upon clicking.",
+        "feedbackIncorrect": "Not quite right. Look for an event block that triggers when clicking the sprite, and a looks block that changes costume!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",
@@ -132,7 +127,7 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Events - Question 3",
+      "title": "Look at the rooster scripts. Choose the animation that shows what it will do when you press the spacebar.",
       "activityType": "marsbot-quiz",
       "level_type": "quiz",
       "selectedType": "marsbot-quiz",
@@ -184,7 +179,37 @@
       ],
       "project_title": "Test yourself. Events - Question 3",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "marsbotQuiz": {
+        "prompt": "Look at the rooster scripts. Choose the animation that shows what it will do when you press the spacebar.",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_scripts_question.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt1.gif",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt2.gif",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt3.gif",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L4_4/images/rooster_anim_opt4.gif",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 3,
+        "feedbackCorrect": "Correct! When the spacebar is pressed, the rooster executes the repeat 9 loop to cycle through its costumes.",
+        "feedbackIncorrect": "Not quite right. Look closely at the \"when space key pressed\" script: it repeats changing costumes 9 times, and does not say Hello!"
+      }
     }
   ]
 }

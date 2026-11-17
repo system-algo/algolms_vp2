@@ -546,9 +546,9 @@ function normalizeRendererType(value) {
     scratch_task: 'scratch-task',
     'scratch-task': 'scratch-task',
     scratch_programming: 'scratch-task',
-    rating: 'scratch-task',
-    rating_task: 'scratch-task',
-    'rating-task': 'scratch-task',
+    rating: 'feedback-rating-task',
+    rating_task: 'feedback-rating-task',
+    'rating-task': 'feedback-rating-task',
   };
 
   return aliases[text] || text.replaceAll('_', '-');
@@ -677,6 +677,21 @@ function resolveRendererType(props) {
 
   const taskId = getTaskIdFromProps(props);
   const pageId = props?.pageInstance?.id || props?.pageId || '';
+
+  if (
+    taskId === 'VP2_M1L2_4_1' ||
+    task?.activityType === 'feedback-rating-task' ||
+    task?.selectedType === 'feedback-rating-task' ||
+    task?.level_type === 'rating' ||
+    task?.type === 'rating' ||
+    task?.title === 'Did you like the lesson?' ||
+    task?.instruction === 'Did you like the lesson?' ||
+    task?.bodyText === 'Did you like the lesson?' ||
+    ((taskId.includes('VP2_M1L2_4') || pageId === 'VP2_M1L2_4' || taskId.includes('VP_M1L2_4') || pageId === 'VP_M1L2_4') &&
+      (props?.taskIndex === 0 || task?.position === 1 || task?.level_position === 1))
+  ) {
+    return 'feedback-rating-task';
+  }
 
   if (
     taskId === 'VP2_M1L1_4_2' ||

@@ -22,6 +22,7 @@ import MarsBotQuizTask from './MarsBotQuizTask.jsx';
 import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
 import CoordinateInputTask from './CoordinateInputTask.jsx';
+import CoordinateDragDropTask from './CoordinateDragDropTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -722,6 +723,15 @@ function resolveRendererType(props) {
   }
 
   if (
+    taskId === 'VP2_M2L1_4_3' ||
+    task?.activityType === 'coordinate-dragdrop-task' ||
+    task?.selectedType === 'coordinate-dragdrop-task' ||
+    ((taskId.includes('VP2_M2L1_4') || pageId === 'VP2_M2L1_4') && (props?.taskIndex === 2 || task?.position === 3 || task?.level_position === 3))
+  ) {
+    return 'coordinate-dragdrop-task';
+  }
+
+  if (
     taskId.includes('VP2_M1L1_4') ||
     pageId === 'VP2_M1L1_4' ||
     taskId.includes('VP2_M1L2_4') ||
@@ -1103,6 +1113,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'coordinate-input-task') {
     return <CoordinateInputTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'coordinate-dragdrop-task') {
+    return <CoordinateDragDropTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

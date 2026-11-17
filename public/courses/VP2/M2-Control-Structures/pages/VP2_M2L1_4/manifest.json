@@ -98,57 +98,55 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Coordinates - Question 2",
-      "activityType": "marsbot-quiz",
+      "title": "Part 1. Coordinates",
+      "activityType": "coordinate-dragdrop-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "selectedType": "coordinate-dragdrop-task",
+      "coordinateDragDropTask": {
+        "title": "Part 1.",
+        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid.png",
+        "dots": [
+          { "id": "dot_neg3_neg1", "x": -3, "y": -1, "expectedItem": "emerald" },
+          { "id": "dot_3_neg1", "x": 3, "y": -1, "expectedItem": "diamond" },
+          { "id": "dot_neg3_neg7", "x": -3, "y": -7, "expectedItem": "crystal" },
+          { "id": "dot_3_neg7", "x": 3, "y": -7, "expectedItem": null }
+        ],
+        "items": [
+          {
+            "id": "diamond",
+            "name": "Diamond",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/diamond.png",
+            "targetX": 3,
+            "targetY": -1
+          },
+          {
+            "id": "emerald",
+            "name": "Emerald",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/emerald.png",
+            "targetX": -3,
+            "targetY": -1
+          },
+          {
+            "id": "crystal",
+            "name": "Blue Crystal",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/crystal.png",
+            "targetX": -3,
+            "targetY": -7
+          }
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L1_4_3_state_1",
           "stateId": "VP2_M2L1_4_3_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
+          "type": "coordinate-dragdrop-task",
+          "selectedType": "coordinate-dragdrop-task",
           "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 2"
+          "project_title": "Part 1. Coordinates"
         }
       ],
-      "project_title": "Test yourself. Coordinates - Question 2",
+      "project_title": "Part 1. Coordinates",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     },

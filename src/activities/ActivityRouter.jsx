@@ -23,6 +23,7 @@ import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
 import CoordinateInputTask from './CoordinateInputTask.jsx';
 import CoordinateDragDropTask from './CoordinateDragDropTask.jsx';
+import TestYourselfTask from './TestYourselfTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -539,6 +540,10 @@ function normalizeRendererType(value) {
     'block-programming': 'block-game-task',
     block_programming: 'block-game-task',
     'marsbot-quiz': 'marsbot-quiz',
+    'test-input-task': 'test-input-task',
+    test_input_task: 'test-input-task',
+    'test-match-task': 'test-match-task',
+    test_match_task: 'test-match-task',
     marsbot_quiz: 'marsbot-quiz',
     marsbot: 'marsbot-quiz',
     'sprite-instruction-order': 'sprite-instruction-order',
@@ -1113,6 +1118,14 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'coordinate-input-task') {
     return <CoordinateInputTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'test-input-task') {
+    return <TestYourselfTask {...rendererProps} task={nextTask} mode="input" />;
+  }
+
+  if (rendererType === 'test-match-task') {
+    return <TestYourselfTask {...rendererProps} task={nextTask} mode="match" />;
   }
 
   if (rendererType === 'coordinate-dragdrop-task') {

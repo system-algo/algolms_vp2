@@ -650,6 +650,9 @@ export default function MarsBotQuizTask(props) {
 
           <div className="marsbot-question-body">
             <h2 className="marsbot-prompt">{questionData.prompt}</h2>
+            {questionData.description ? (
+              <p className="marsbot-description">{questionData.description}</p>
+            ) : null}
 
             {feedbackText && (
               <div className={`marsbot-feedback ${submissionStatus}`}>
@@ -706,7 +709,10 @@ export default function MarsBotQuizTask(props) {
         </div>
 
         {/* Right Cards: Either 2x2 Option Grid or Vertical Stack of Checkboxes */}
-        <div className={`marsbot-options-grid ${isVerticalLayout ? 'vertical-layout' : ''}`}>
+        <div
+          className={`marsbot-options-grid ${isVerticalLayout ? 'vertical-layout' : ''}`}
+          style={questionData.columns === 1 && !isVerticalLayout ? { gridTemplateColumns: '1fr' } : undefined}
+        >
           {questionData.options.map((option) => {
             const isSelected = selectedOptionIds.includes(option.id);
             const isCorrect = submissionStatus === 'correct' && isSelected;

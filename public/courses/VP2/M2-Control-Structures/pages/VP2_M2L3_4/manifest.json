@@ -1,216 +1,104 @@
 {
   "version": 1,
   "id": "VP2_M2L3_4",
-  "title": "Turns and degrees - Part 4",
-  "type": "generic-captured-page",
+  "title": "Test yourself. Degrees",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "activityType": "marsbot-quiz",
   "taskCount": 2,
   "metadata": {
     "courseId": "VP2",
-    "lessonId": "M2-Control-Structures",
-    "sourceZip": "VP_M2L3_4.zip",
-    "format": "logika-crawler-capture",
-    "importedAt": "2026-10-24T08:51:29.995Z"
+    "moduleId": "M2-Control-Structures",
+    "pageId": "VP2_M2L3_4",
+    "generatedAt": "2026-11-17T10:00:00.000Z"
   },
   "tasks": [
     {
-      "id": "task-1-21717",
-      "taskId": "task-1-21717",
-      "title": "Test yourself. Degrees",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\nMatch the correct descriptions of the turns.\nMove the clock pictures to the appropriate categories.\nANSWER\ncounterclockwise 120 degrees\nclockwise 30 degrees\ncounterclockwise 90 degrees",
-      "bodyText": "1\n2\nMatch the correct descriptions of the turns.\n\nMove the clock pictures to the appropriate categories.\n\nANSWER\n\ncounterclockwise 120 degrees\n\nclockwise 30 degrees\n\ncounterclockwise 90 degrees",
-      "textLines": [
-        "1",
-        "2",
-        "Match the correct descriptions of the turns.",
-        "Move the clock pictures to the appropriate categories.",
-        "ANSWER",
-        "counterclockwise 120 degrees",
-        "clockwise 30 degrees",
-        "counterclockwise 90 degrees"
-      ],
-      "images": [
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
-          "kind": "img",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
-          "kind": "img",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
-          "kind": "img",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
-          "kind": "img",
-          "width": 0,
-          "height": 0
-        }
-      ],
+      "id": "VP2_M2L3_4_1",
+      "taskId": "VP2_M2L3_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
-          "id": "task-1-21717-state-1",
-          "stateId": "task-1-21717-state-1",
-          "name": "1",
-          "instruction": "1\n2\nMatch the correct descriptions of the turns.\nMove the clock pictures to the appropriate categories.\nANSWER\ncounterclockwise 120 degrees\nclockwise 30 degrees\ncounterclockwise 90 degrees",
-          "bodyText": "1\n2\nMatch the correct descriptions of the turns.\n\nMove the clock pictures to the appropriate categories.\n\nANSWER\n\ncounterclockwise 120 degrees\n\nclockwise 30 degrees\n\ncounterclockwise 90 degrees",
-          "textLines": [
-            "1",
-            "2",
-            "Match the correct descriptions of the turns.",
-            "Move the clock pictures to the appropriate categories.",
-            "ANSWER",
-            "counterclockwise 120 degrees",
-            "clockwise 30 degrees",
-            "counterclockwise 90 degrees"
-          ],
-          "images": [
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg",
-              "kind": "img",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_02_img.png",
-              "kind": "img",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_03_img.png",
-              "kind": "img",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_04_img.png",
-              "kind": "img",
-              "width": 0,
-              "height": 0
-            }
-          ],
-          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_02_task_21717_actual_2_activity_image_01_img.svg"
+          "id": "VP2_M2L3_4_1_state_1",
+          "stateId": "VP2_M2L3_4_1_state_1",
+          "position": 1,
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
       ]
     },
     {
-      "id": "task-2-21717",
-      "taskId": "task-2-21717",
+      "id": "VP2_M2L3_4_2",
+      "taskId": "VP2_M2L3_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
       "title": "Test yourself. Degrees",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
-      "bodyText": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "Which direction will the MarsBot be looking in after clicking on it?",
-        "ANSWER"
-      ],
-      "images": [
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
-          "kind": "img",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
-          "kind": "css_background_or_style",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
-          "kind": "css_background_or_style",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
-          "kind": "css_background_or_style",
-          "width": 0,
-          "height": 0
-        },
-        {
-          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
-          "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
-          "kind": "css_background_or_style",
-          "width": 0,
-          "height": 0
-        }
-      ],
+      "activityType": "test-match-task",
+      "level_type": "quiz",
+      "selectedType": "test-match-task",
+      "testMatch": {
+        "prompt": "Match the correct descriptions of the turns.",
+        "description": "Move the clock pictures to the appropriate categories.",
+        "items": [
+          {
+            "id": "clock_30",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/images/clock_cw_30.png"
+          },
+          {
+            "id": "clock_120",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/images/clock_ccw_120.png"
+          },
+          {
+            "id": "clock_90",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/images/clock_ccw_90.png"
+          }
+        ],
+        "targets": [
+          {
+            "id": "ccw_120",
+            "text": "counterclockwise 120 degrees",
+            "answer": "clock_120"
+          },
+          {
+            "id": "cw_30",
+            "text": "clockwise 30 degrees",
+            "answer": "clock_30"
+          },
+          {
+            "id": "ccw_90",
+            "text": "counterclockwise 90 degrees",
+            "answer": "clock_90"
+          }
+        ],
+        "feedbackCorrect": "Correct! Every clock matches its turn.",
+        "feedbackIncorrect": "Not quite right. Check the direction of the orange arrow and count the degrees (one hour = 30 degrees)."
+      },
+      "project_title": "Test yourself. Degrees",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true,
       "states": [
         {
-          "id": "task-2-21717-state-1",
-          "stateId": "task-2-21717-state-1",
-          "name": "2",
-          "instruction": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
-          "bodyText": "1\n2\nWhich direction will the MarsBot be looking in after clicking on it?\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "Which direction will the MarsBot be looking in after clicking on it?",
-            "ANSWER"
-          ],
-          "images": [
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg",
-              "kind": "img",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_02_css.png",
-              "kind": "css_background_or_style",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_03_css.png",
-              "kind": "css_background_or_style",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_04_css.png",
-              "kind": "css_background_or_style",
-              "width": 0,
-              "height": 0
-            },
-            {
-              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
-              "src": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_05_css.png",
-              "kind": "css_background_or_style",
-              "width": 0,
-              "height": 0
-            }
-          ],
-          "screenshot": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L3_4/workspace/images/level_03_task_21717_actual_3_activity_image_01_img.svg"
+          "id": "VP2_M2L3_4_2_state_1",
+          "stateId": "VP2_M2L3_4_2_state_1",
+          "position": 1,
+          "type": "test-match-task",
+          "selectedType": "test-match-task",
+          "level_type": "quiz",
+          "title": "Test yourself. Degrees"
         }
       ]
     }

@@ -15,7 +15,8 @@ import './CategoryQuizTask.css';
  *   title, description,
  *   items: [{ id, image?, text?, alt? }],
  *   categories: [{ id, title }],
- *   answer: { [itemId]: categoryId }
+ *   answer: { [itemId]: categoryId },
+ *   layout: 'categories' | 'match'   // match: categories = [{ id, image }], one card each
  * }
  *
  * Cards can be dragged, or tapped and then a category tapped (touch friendly).
@@ -79,8 +80,12 @@ function getConfig(task) {
     categories: (raw.categories || []).map((category, index) => ({
       id: String(category.id || `category-${index + 1}`),
       title: category.title || '',
+      image: category.image || '',
+      alt: category.alt || category.title || '',
     })),
     answer: raw.answer || {},
+    // 'match': one card per category slot, categories shown as images (LMS quiz3 matching)
+    layout: raw.layout === 'match' ? 'match' : 'categories',
   };
 }
 
@@ -130,9 +135,20 @@ export default function CategoryQuizTask({
   const allPlaced = config.items.every((item) => placement[item.id] && placement[item.id] !== POOL);
   const hasPlaced = config.items.some((item) => placement[item.id] && placement[item.id] !== POOL);
 
+  const isMatch = config.layout === 'match';
+
   const moveItem = (itemId, target) => {
     if (isLocked || !itemId) return;
-    setPlacement((prev) => ({ ...prev, [itemId]: target }));
+    setPlacement((prev) => {
+      const next = { ...prev, [itemId]: target };
+      if (isMatch && target !== POOL) {
+        // a slot holds one card: send the previous card back to the list
+        Object.keys(next).forEach((otherId) => {
+          if (otherId !== itemId && next[otherId] === target) next[otherId] = POOL;
+        });
+      }
+      return next;
+    });
     setChecked((prev) => {
       const next = { ...prev };
       delete next[itemId];
@@ -299,7 +315,7 @@ export default function CategoryQuizTask({
         </button>
       )}
 
-      <div className="icq-layout cq-layout">
+      <div className={`icq-layout cq-layout ${isMatch ? 'is-match' : ''}`}>
         <div className="icq-left">
           <article className="icq-card cq-side-card">
             <h2 className={`icq-title cq-title ${status === 'correct' ? 'is-correct' : ''}`}>{config.title}</h2>
@@ -334,26 +350,55 @@ export default function CategoryQuizTask({
           </div>
         </div>
 
-        <div className="cq-right">
-          <div className={`cq-pool ${dragOver === POOL ? 'is-over' : ''}`} {...dropProps(POOL)}>
-            {poolItems.map(renderCard)}
-          </div>
+        {isMatch ? (
+          <div className="cq-match">
+            <div className={`cq-match-pool ${dragOver === POOL ? 'is-over' : ''}`} {...dropProps(POOL)}>
+              {poolItems.map(renderCard)}
+            </div>
 
-          <div className="cq-categories" style={{ '--cq-cols': config.categories.length || 1 }}>
-            {config.categories.map((category) => (
-              <div
-                key={category.id}
-                className={`cq-category ${dragOver === category.id ? 'is-over' : ''} ${pickedId ? 'is-target' : ''}`}
-                {...dropProps(category.id)}
-              >
-                <div className="cq-category-title">{category.title}</div>
-                <div className="cq-category-items">
-                  {config.items.filter((item) => placement[item.id] === category.id).map(renderCard)}
-                </div>
-              </div>
-            ))}
+            <div className="cq-match-panel">
+              {config.categories.map((category) => {
+                const placed = config.items.filter((item) => placement[item.id] === category.id);
+                return (
+                  <div key={category.id} className="cq-match-row">
+                    <div
+                      className={`cq-match-slot ${dragOver === category.id ? 'is-over' : ''} ${pickedId ? 'is-target' : ''}`}
+                      {...dropProps(category.id)}
+                    >
+                      {placed.map(renderCard)}
+                    </div>
+                    {category.image ? (
+                      <img className="cq-match-image" src={category.image} alt={category.alt} />
+                    ) : (
+                      <div className="cq-match-label">{category.title}</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="cq-right">
+            <div className={`cq-pool ${dragOver === POOL ? 'is-over' : ''}`} {...dropProps(POOL)}>
+              {poolItems.map(renderCard)}
+            </div>
+
+            <div className="cq-categories" style={{ '--cq-cols': config.categories.length || 1 }}>
+              {config.categories.map((category) => (
+                <div
+                  key={category.id}
+                  className={`cq-category ${dragOver === category.id ? 'is-over' : ''} ${pickedId ? 'is-target' : ''}`}
+                  {...dropProps(category.id)}
+                >
+                  <div className="cq-category-title">{category.title}</div>
+                  <div className="cq-category-items">
+                    {config.items.filter((item) => placement[item.id] === category.id).map(renderCard)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {onNextTask && (

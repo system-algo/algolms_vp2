@@ -256,6 +256,48 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackCorrect: 'Correct! Flowers opening/closing, seasons changing, and traffic lights are all looping processes in real life.',
       feedbackIncorrect: 'Not quite right. Think about which processes repeat over and over again continuously!'
     }
+  },
+
+  // Lesson 3 Task 4: Test yourself. Initial placement
+  VP2_M1L3_4: {
+    // Question 1 (level 2 in LMS): Bear initial properties
+    2: {
+      prompt: 'What properties do we need to set for the bear sprite at the very beginning? What changes?',
+      bannerBg: '#ffffff',
+      bannerFlush: true,
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/bear_initial_placement.png',
+      multiple: true,
+      layout: 'vertical',
+      options: [
+        { id: 1, text: 'Size', label: 'Size' },
+        { id: 2, text: 'Visibility', label: 'Visibility' },
+        { id: 3, text: 'Background', label: 'Background' },
+        { id: 4, text: 'Costume', label: 'Costume' }
+      ],
+      correctOptionIds: [1, 4],
+      allowedOptionIdSets: [[1, 4], [1, 2, 4]],
+      feedbackCorrect: 'Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.',
+      feedbackIncorrect: 'Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!'
+    },
+    // Fallback for question 3 in case user clicks
+    3: {
+      prompt: 'What properties do we need to set for the bear sprite at the very beginning? What changes?',
+      bannerBg: '#ffffff',
+      bannerFlush: true,
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/bear_initial_placement.png',
+      multiple: true,
+      layout: 'vertical',
+      options: [
+        { id: 1, text: 'Size', label: 'Size' },
+        { id: 2, text: 'Visibility', label: 'Visibility' },
+        { id: 3, text: 'Background', label: 'Background' },
+        { id: 4, text: 'Costume', label: 'Costume' }
+      ],
+      correctOptionIds: [1, 4],
+      allowedOptionIdSets: [[1, 4], [1, 2, 4]],
+      feedbackCorrect: 'Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.',
+      feedbackIncorrect: 'Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!'
+    }
   }
 };
 
@@ -409,9 +451,19 @@ export default function MarsBotQuizTask(props) {
       },
     };
 
-    const isCorrect =
-      chosenIds.length === correctOptionIds.length &&
-      correctOptionIds.every((id) => chosenIds.includes(id));
+    let isCorrect = false;
+    if (Array.isArray(questionData.allowedOptionIdSets)) {
+      isCorrect = questionData.allowedOptionIdSets.some((validSet) => {
+        return (
+          validSet.length === chosenIds.length &&
+          validSet.every((id) => chosenIds.includes(id))
+        );
+      });
+    } else {
+      isCorrect =
+        chosenIds.length === correctOptionIds.length &&
+        correctOptionIds.every((id) => chosenIds.includes(id));
+    }
 
     let feedback = isCorrect
       ? (questionData.feedbackCorrect || 'Correct! Answer submitted successfully.')
@@ -512,12 +564,12 @@ export default function MarsBotQuizTask(props) {
         <div className="marsbot-question-card">
           {questionData.gridImage ? (
             <div
-              className="marsbot-banner"
+              className={`marsbot-banner ${questionData.bannerFlush ? 'flush' : ''}`}
               style={{ background: questionData.bannerBg || '#ffffff' }}
             >
               <img
                 src={questionData.gridImage}
-                alt="Quiz Grid"
+                alt="Quiz Banner"
               />
             </div>
           ) : null}

@@ -37,10 +37,28 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Initial placement - Question 2",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "What properties do we need to set for the bear sprite at the very beginning? What changes?",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What properties do we need to set for the bear sprite at the very beginning? What changes?",
+        "bannerBg": "#ffffff",
+        "bannerFlush": true,
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L3_4/images/bear_initial_placement.png",
+        "multiple": true,
+        "layout": "vertical",
+        "options": [
+          { "id": 1, "text": "Size", "label": "Size" },
+          { "id": 2, "text": "Visibility", "label": "Visibility" },
+          { "id": 3, "text": "Background", "label": "Background" },
+          { "id": 4, "text": "Costume", "label": "Costume" }
+        ],
+        "correctOptionIds": [1, 4],
+        "allowedOptionIdSets": [[1, 4], [1, 2, 4]],
+        "feedbackCorrect": "Correct! The bear changes size as it walks along the path and changes costumes for the walking animation.",
+        "feedbackIncorrect": "Not quite right. Background is a property of the Stage, not a sprite. Think about what changes for the bear sprite!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",

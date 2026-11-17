@@ -273,7 +273,7 @@ export default function ScratchTask({
   // enabling controls, and never send commands to the student's editable project.
   useEffect(() => {
     setDemoReady(false);
-  }, [demoProjectId, levelPosition]);
+  }, [demoProjectId, levelPosition, isPresentationOpen]);
 
   useEffect(() => {
     const onDemoMessage = (event) => {

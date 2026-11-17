@@ -12,24 +12,122 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Additional task — Pen - Level 1",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_4",
-      "instruction": "Complete level 1 of Additional task — Pen. Navigate the robot and achieve the mission goals!",
+      "title": "Draw a square",
+      "project_title": "Draw a square",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "draw_a_square.sb3",
+      "demo_project_id": null,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "d114aa90-76e7-45c7-92a2-e2978685f6fe",
+          "title": "Watch the demo video and repeat the steps",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/square.gif",
+          "taskType": "basic"
+        },
+        {
+          "id": "dda5d081-fe62-4ec6-b7d7-417d1e5a4079",
+          "title": "Pen down",
+          "text": "The Pen Down command starts drawing from the point where the sprite is.",
+          "type": "gif",
+          "url": "/vp-assets/26853/pen_down.png",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [
+        {
+          "id": "1569509775087-5",
+          "title": "Add pen",
+          "description": "",
+          "url": "/vp-assets/26853/add_a_pen.gif"
+        }
+      ],
+      "media": [],
+      "source_task_id": "26853",
+      "source_level_id": "329769",
+      "source_task_level_id": "199082",
+      "source_project_id": "10682865",
       "states": [
         {
           "id": "VP2_M2L2_2_1_state_1",
-          "stateId": "VP2_M2L2_2_1_state_1",
           "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_4",
-          "starter_project_id": "draw_a_square.sb3"
+          "level_position": 1,
+          "levelPosition": 1,
+          "title": "Draw a square",
+          "project_title": "Draw a square",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "draw_a_square.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "d114aa90-76e7-45c7-92a2-e2978685f6fe",
+              "title": "Watch the demo video and repeat the steps",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/square.gif",
+              "taskType": "basic"
+            },
+            {
+              "id": "dda5d081-fe62-4ec6-b7d7-417d1e5a4079",
+              "title": "Pen down",
+              "text": "The Pen Down command starts drawing from the point where the sprite is.",
+              "type": "gif",
+              "url": "/vp-assets/26853/pen_down.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [
+            {
+              "id": "1569509775087-5",
+              "title": "Add pen",
+              "description": "",
+              "url": "/vp-assets/26853/add_a_pen.gif"
+            }
+          ],
+          "media": [],
+          "source_task_id": "26853",
+          "source_level_id": "329769",
+          "source_task_level_id": "199082",
+          "source_project_id": "10682865",
+          "stateId": "VP2_M2L2_2_1_state_1",
+          "type": "scratch"
         }
-      ],
-      "starter_project_id": "draw_a_square.sb3"
+      ]
     },
     {
       "id": "VP2_M2L2_2_2",
@@ -37,24 +135,124 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Additional task — Pen - Level 2",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_5",
-      "instruction": "Complete level 2 of Additional task — Pen. Navigate the robot and achieve the mission goals!",
+      "title": "Deleting",
+      "project_title": "Deleting",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "delete_all.sb3",
+      "demo_project_id": null,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "24f25fdb-74a4-4ac0-b30f-657fd9999a07",
+          "title": "Draw a few shapes using the script",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/draw.gif",
+          "taskType": "basic"
+        },
+        {
+          "id": "a5bd87b5-ba2d-40ce-9528-fe6480bc0175",
+          "title": "Watch the demo video and repeat the steps",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/erase_all.gif",
+          "taskType": "basic"
+        },
+        {
+          "id": "daab7e82-2514-4796-bcb0-b5811e1e9ed7",
+          "title": "\"Delete All\"",
+          "text": "This command clears the stage",
+          "type": "gif",
+          "url": "/vp-assets/26853/delete_all.png",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [],
+      "source_task_id": "26853",
+      "source_level_id": "329770",
+      "source_task_level_id": "199083",
+      "source_project_id": "10682873",
       "states": [
         {
           "id": "VP2_M2L2_2_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Deleting",
+          "project_title": "Deleting",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "delete_all.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "24f25fdb-74a4-4ac0-b30f-657fd9999a07",
+              "title": "Draw a few shapes using the script",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/draw.gif",
+              "taskType": "basic"
+            },
+            {
+              "id": "a5bd87b5-ba2d-40ce-9528-fe6480bc0175",
+              "title": "Watch the demo video and repeat the steps",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/erase_all.gif",
+              "taskType": "basic"
+            },
+            {
+              "id": "daab7e82-2514-4796-bcb0-b5811e1e9ed7",
+              "title": "\"Delete All\"",
+              "text": "This command clears the stage",
+              "type": "gif",
+              "url": "/vp-assets/26853/delete_all.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [],
+          "source_task_id": "26853",
+          "source_level_id": "329770",
+          "source_task_level_id": "199083",
+          "source_project_id": "10682873",
           "stateId": "VP2_M2L2_2_2_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_5",
-          "starter_project_id": "put_a_stamp.sb3"
+          "type": "scratch"
         }
-      ],
-      "starter_project_id": "put_a_stamp.sb3"
+      ]
     },
     {
       "id": "VP2_M2L2_2_3",
@@ -62,24 +260,108 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Additional task — Pen - Level 3",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_6",
-      "instruction": "Complete level 3 of Additional task — Pen. Navigate the robot and achieve the mission goals!",
+      "title": "Put a stamp",
+      "project_title": "Put a stamp",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "put_a_stamp.sb3",
+      "demo_project_id": null,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "afffe7bc-563d-4ce5-b82a-121d245b02b2",
+          "title": "The \"Stamp\" command lets you leave a stamp of the sprite on the screen",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/stamp.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "dd2f3ad8-8662-4383-b3d2-22eee341593c",
+          "title": "Watch the video and repeat",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/stamp_demo.gif",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [],
+      "source_task_id": "26853",
+      "source_level_id": "329768",
+      "source_task_level_id": "199081",
+      "source_project_id": "10682904",
       "states": [
         {
           "id": "VP2_M2L2_2_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "title": "Put a stamp",
+          "project_title": "Put a stamp",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "put_a_stamp.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "afffe7bc-563d-4ce5-b82a-121d245b02b2",
+              "title": "The \"Stamp\" command lets you leave a stamp of the sprite on the screen",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/stamp.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "dd2f3ad8-8662-4383-b3d2-22eee341593c",
+              "title": "Watch the video and repeat",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/stamp_demo.gif",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [],
+          "source_task_id": "26853",
+          "source_level_id": "329768",
+          "source_task_level_id": "199081",
+          "source_project_id": "10682904",
           "stateId": "VP2_M2L2_2_3_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_6",
-          "starter_project_id": "ornament2.sb3"
+          "type": "scratch"
         }
-      ],
-      "starter_project_id": "ornament2.sb3"
+      ]
     },
     {
       "id": "VP2_M2L2_2_4",
@@ -87,24 +369,92 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Additional task — Pen - Level 4",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_7",
-      "instruction": "Complete level 4 of Additional task — Pen. Navigate the robot and achieve the mission goals!",
+      "title": "Apple",
+      "project_title": "Apple",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "ornament2.sb3",
+      "demo_project_id": null,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "d2c2dfe6-2b13-49f4-a320-1564b041cd36",
+          "title": "Watch the video and repeat",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26853/apple.gif",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [],
+      "source_task_id": "26853",
+      "source_level_id": "329771",
+      "source_task_level_id": "199084",
+      "source_project_id": "10682917",
       "states": [
         {
           "id": "VP2_M2L2_2_4_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "title": "Apple",
+          "project_title": "Apple",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "ornament2.sb3",
+          "demo_project_id": null,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "d2c2dfe6-2b13-49f4-a320-1564b041cd36",
+              "title": "Watch the video and repeat",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26853/apple.gif",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [],
+          "source_task_id": "26853",
+          "source_level_id": "329771",
+          "source_task_level_id": "199084",
+          "source_project_id": "10682917",
           "stateId": "VP2_M2L2_2_4_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_7",
-          "starter_project_id": "delete_all.sb3"
+          "type": "scratch"
         }
-      ],
-      "starter_project_id": "delete_all.sb3"
+      ]
     },
     {
       "id": "VP2_M2L2_2_5",
@@ -112,24 +462,46 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Additional task — Pen - Level 5",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_8",
-      "instruction": "Complete level 5 of Additional task — Pen. Navigate the robot and achieve the mission goals!",
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26853",
+      "source_level_id": "329772",
+      "source_task_level_id": "199085",
       "states": [
         {
           "id": "VP2_M2L2_2_5_state_1",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26853",
+          "source_level_id": "329772",
+          "source_task_level_id": "199085",
           "stateId": "VP2_M2L2_2_5_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game",
-          "levelId": "mars_level_8",
-          "starter_project_id": ""
+          "type": "rating"
         }
-      ],
-      "starter_project_id": ""
+      ]
     }
   ]
 }

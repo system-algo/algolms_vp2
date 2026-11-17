@@ -127,10 +127,40 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Loops - Question 3",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
+      "title": "What drawing will we get when this program is run (the brush is the start cell):",
+      "activityType": "marsbot-quiz",
+      "level_type": "quiz",
+      "selectedType": "marsbot-quiz",
+      "marsbotQuiz": {
+        "prompt": "What drawing will we get when this program is run (the brush is the start cell):",
+        "bannerBg": "#ffffff",
+        "gridImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_2.png",
+        "options": [
+          {
+            "id": 1,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_1.png",
+            "label": "Option 1"
+          },
+          {
+            "id": 2,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_2.png",
+            "label": "Option 2"
+          },
+          {
+            "id": 3,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_3.png",
+            "label": "Option 3"
+          },
+          {
+            "id": 4,
+            "scriptImage": "/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_4.png",
+            "label": "Option 4"
+          }
+        ],
+        "correctOptionId": 3,
+        "feedbackCorrect": "Correct! The brush moves right and up 3 times, then draws a square.",
+        "feedbackIncorrect": "Not quite right. Follow the loop steps (right, up) 3 times and check the final shape drawn!"
+      },
       "drawerOpen": true,
       "command_keys": [
         "motion",

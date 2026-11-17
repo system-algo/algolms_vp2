@@ -197,34 +197,34 @@ const QUIZ_CONFIG_BY_PAGE = {
       feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
     },
     3: {
-      prompt: 'The robot is building in the picture.\nWhich program is it running?',
+      prompt: 'What drawing will we get when this program is run (the brush is the start cell):',
       bannerBg: '#ffffff',
-      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_2.png',
       options: [
         {
           id: 1,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png',
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_1.png',
           label: 'Option 1'
         },
         {
           id: 2,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png',
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_2.png',
           label: 'Option 2'
         },
         {
           id: 3,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png',
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_3.png',
           label: 'Option 3'
         },
         {
           id: 4,
-          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png',
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_option_4.png',
           label: 'Option 4'
         }
       ],
-      correctOptionId: 2,
-      feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
-      feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! The brush moves right and up 3 times, then draws a square.',
+      feedbackIncorrect: 'Not quite right. Follow the loop steps (right, up) 3 times and check the final shape drawn!'
     },
     4: {
       prompt: 'The robot is building in the picture.\nWhich program is it running?',

@@ -109,7 +109,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task1_Demo.sb3",
           "level_position": 1,
           "levelPosition": 1
         }
@@ -119,7 +119,7 @@
       "isAutoCheck": true,
       "description": "Help Harper choose an outfit! Click on the clothes to change costumes.",
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_1_Task1_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_1_2",
@@ -217,7 +217,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task2_Demo.sb3",
           "level_position": 2,
           "levelPosition": 2
         }
@@ -227,7 +227,7 @@
       "isAutoCheck": true,
       "description": "Click the balloons to pop them and clear the stage!",
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_1_Task2_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_1_3",
@@ -339,7 +339,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task3_Demo.sb3",
           "level_position": 3,
           "levelPosition": 3
         }
@@ -349,7 +349,7 @@
       "isAutoCheck": true,
       "description": "Ring the bell in the witch house by clicking on it!",
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_1_Task3_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_1_4",
@@ -461,7 +461,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task4_Demo.sb3",
           "level_position": 4,
           "levelPosition": 4
         }
@@ -471,7 +471,7 @@
       "isAutoCheck": true,
       "description": "Click on the season buttons to change the backdrop to winter, spring, summer, or autumn!",
       "tips": [],
-      "demo_project_id": null
+      "demo_project_id": "M1L4_1_Task4_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_1_5",
@@ -635,7 +635,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task6_Demo.sb3",
           "level_position": 6,
           "levelPosition": 6
         }
@@ -653,7 +653,7 @@
           "errorsRequired": 0
         }
       ],
-      "demo_project_id": null,
+      "demo_project_id": "M1L4_1_Task6_Demo.sb3",
       "type": "bonus",
       "isBonus": true
     },
@@ -767,7 +767,7 @@
               "url": ""
             }
           ],
-          "demo_project_id": null,
+          "demo_project_id": "M1L4_1_Task7_Demo.sb3",
           "level_position": 7,
           "levelPosition": 7
         }
@@ -776,7 +776,7 @@
       "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "isAutoCheck": false,
       "tips": [],
-      "demo_project_id": null,
+      "demo_project_id": "M1L4_1_Task7_Demo.sb3",
       "type": "bonus",
       "isBonus": true
     }

@@ -22,26 +22,26 @@
       "activityType": "scratch",
       "requirements": [
         {
-          "id": "req_1_1",
+          "id": "08211db8-3a80-4d21-a2a3-ae29c233d874",
           "title": "Add a command to start the project",
           "text": "The project should be run by clicking on the green flag.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+          "url": ""
         },
         {
-          "id": "req_1_2",
+          "id": "9f6a458a-0b33-4ecf-b16d-b9cd83a19f0e",
           "title": "Add a command for the bear to speak.",
           "text": "The bear should say \"Hello!\" within 3 seconds.",
           "type": "gif",
-          "url": "/vp-assets/18343/hello.webp"
+          "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
           "title": "See how the project should work",
-          "text": "The bear speaks for 3 seconds when the green flag is clicked.",
-          "url": "/vp-assets/19097/2_1598270849.PNG.webp"
+          "text": "",
+          "url": ""
         }
       ],
       "starter_project_id": "M1L1 Bear.sb3",
@@ -62,26 +62,26 @@
           "level_type": "scratch",
           "requirements": [
             {
-              "id": "req_1_1",
+              "id": "08211db8-3a80-4d21-a2a3-ae29c233d874",
               "title": "Add a command to start the project",
               "text": "The project should be run by clicking on the green flag.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+              "url": ""
             },
             {
-              "id": "req_1_2",
+              "id": "9f6a458a-0b33-4ecf-b16d-b9cd83a19f0e",
               "title": "Add a command for the bear to speak.",
               "text": "The bear should say \"Hello!\" within 3 seconds.",
               "type": "gif",
-              "url": "/vp-assets/18343/hello.webp"
+              "url": ""
             }
           ],
           "media": [
             {
               "type": "presentation",
               "title": "See how the project should work",
-              "text": "The bear speaks for 3 seconds when the green flag is clicked.",
-              "url": "/vp-assets/19097/2_1598270849.PNG.webp"
+              "text": "",
+              "url": ""
             }
           ],
           "starter_project_id": "M1L1 Bear.sb3",
@@ -117,33 +117,33 @@
       "activityType": "scratch",
       "requirements": [
         {
-          "id": "req_2_1",
+          "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
           "title": "Start of the script",
           "text": "The \"When the green flag is pressed\" command starts the script.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+          "url": "/vp-assets/19097/scratch2-1_1613627764.png"
         },
         {
-          "id": "req_2_2",
+          "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
           "title": "Setting the costume",
           "text": "This command will help you to set a specific costume. We have two different costumes set.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-2_1613627788.webp"
+          "url": "/vp-assets/19097/scratch2-2_1613627788.png"
         },
         {
-          "id": "req_2_3",
+          "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
           "title": "Expectation",
           "text": "The snake sees the dinosaur in a second instead of immediately. To prevent it from changing its costume ahead of time, we use the \"wait __ sec\" command",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-3_1613627800.webp"
+          "url": "/vp-assets/19097/scratch2-3_1613627800.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Dinosaur and Snake",
+          "title": "Dinosaur and snake",
           "text": "The snake first wriggles, then sees the dinosaur, is surprised, and then straightens its body. How do we program this?",
-          "url": "/vp-assets/19097/1_1598271971.PNG.webp"
+          "url": ""
         }
       ],
       "starter_project_id": "M1L2_A_dinosaur_and_a_snake.sb3",
@@ -165,33 +165,33 @@
           "level_type": "scratch",
           "requirements": [
             {
-              "id": "req_2_1",
+              "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
               "title": "Start of the script",
               "text": "The \"When the green flag is pressed\" command starts the script.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-1_1613627764.webp"
+              "url": "/vp-assets/19097/scratch2-1_1613627764.png"
             },
             {
-              "id": "req_2_2",
+              "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
               "title": "Setting the costume",
               "text": "This command will help you to set a specific costume. We have two different costumes set.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-2_1613627788.webp"
+              "url": "/vp-assets/19097/scratch2-2_1613627788.png"
             },
             {
-              "id": "req_2_3",
+              "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
               "title": "Expectation",
               "text": "The snake sees the dinosaur in a second instead of immediately. To prevent it from changing its costume ahead of time, we use the \"wait __ sec\" command",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-3_1613627800.webp"
+              "url": "/vp-assets/19097/scratch2-3_1613627800.png"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Dinosaur and Snake",
+              "title": "Dinosaur and snake",
               "text": "The snake first wriggles, then sees the dinosaur, is surprised, and then straightens its body. How do we program this?",
-              "url": "/vp-assets/19097/1_1598271971.PNG.webp"
+              "url": ""
             }
           ],
           "starter_project_id": "M1L2_A_dinosaur_and_a_snake.sb3",
@@ -230,40 +230,40 @@
       "activityType": "scratch",
       "requirements": [
         {
-          "id": "req_3_1",
+          "id": "673f11e1-eb65-4e58-8b62-a8ae4f616574",
           "title": "Start of the script",
           "text": "The \"When the green flag is pressed\" command starts the script.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-1_1613628380.webp"
+          "url": "/vp-assets/19097/scratch2-1_1613628380.png"
         },
         {
-          "id": "req_3_2",
+          "id": "7d74f1ff-cd5c-418b-9e6d-29f796335f60",
           "title": "Costume change",
           "text": "The \"Next Costume\" command changes the costume that is set next in the list of costumes.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch3-2.webp"
+          "url": "/vp-assets/19097/scratch3-2.png"
         },
         {
-          "id": "req_3_3",
+          "id": "bf65cf9c-ef83-41e1-8c74-b009f1ec1c5e",
           "title": "Repeating actions",
           "text": "For the sprite to perform an action multiple times, you need to use the \"Repeat __ times\" command. In the window, you can set the number of repetitions.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch3-3.webp"
+          "url": "/vp-assets/19097/scratch3-3.png"
         },
         {
-          "id": "req_3_4",
+          "id": "bc7edd56-14cf-4afa-b1a5-443e8a3df624",
           "title": "Expectation",
           "text": "Oops! If we use the \"Next costume\" command multiple times in a row, the costumes will change too quickly and we will not see how they change: it will be like nothing is happening. To prevent commands from being executed almost simultaneously, we insert a \"pause.\" To do this, we need the \"Wait __ sec\" command.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch2-3_1613628407.webp"
+          "url": "/vp-assets/19097/scratch2-3_1613628407.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "The Heart",
-          "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second.\n\nCan you do the same?",
-          "url": "/vp-assets/19097/0.PNG.webp"
+          "title": "The \"Heart\" project",
+          "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second. Can you do the same?",
+          "url": ""
         }
       ],
       "starter_project_id": "M1L2_A_heart.sb3",
@@ -285,40 +285,40 @@
           "level_type": "scratch",
           "requirements": [
             {
-              "id": "req_3_1",
+              "id": "673f11e1-eb65-4e58-8b62-a8ae4f616574",
               "title": "Start of the script",
               "text": "The \"When the green flag is pressed\" command starts the script.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-1_1613628380.webp"
+              "url": "/vp-assets/19097/scratch2-1_1613628380.png"
             },
             {
-              "id": "req_3_2",
+              "id": "7d74f1ff-cd5c-418b-9e6d-29f796335f60",
               "title": "Costume change",
               "text": "The \"Next Costume\" command changes the costume that is set next in the list of costumes.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch3-2.webp"
+              "url": "/vp-assets/19097/scratch3-2.png"
             },
             {
-              "id": "req_3_3",
+              "id": "bf65cf9c-ef83-41e1-8c74-b009f1ec1c5e",
               "title": "Repeating actions",
               "text": "For the sprite to perform an action multiple times, you need to use the \"Repeat __ times\" command. In the window, you can set the number of repetitions.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch3-3.webp"
+              "url": "/vp-assets/19097/scratch3-3.png"
             },
             {
-              "id": "req_3_4",
+              "id": "bc7edd56-14cf-4afa-b1a5-443e8a3df624",
               "title": "Expectation",
               "text": "Oops! If we use the \"Next costume\" command multiple times in a row, the costumes will change too quickly and we will not see how they change: it will be like nothing is happening. To prevent commands from being executed almost simultaneously, we insert a \"pause.\" To do this, we need the \"Wait __ sec\" command.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch2-3_1613628407.webp"
+              "url": "/vp-assets/19097/scratch2-3_1613628407.png"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "The Heart",
-              "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second.\n\nCan you do the same?",
-              "url": "/vp-assets/19097/0.PNG.webp"
+              "title": "The \"Heart\" project",
+              "text": "Take a look at the example. The heart changes costume 4 times. Each costume is visible for 1 second. Can you do the same?",
+              "url": ""
             }
           ],
           "starter_project_id": "M1L2_A_heart.sb3",
@@ -359,18 +359,18 @@
       "activityType": "scratch",
       "requirements": [
         {
-          "id": "req_4_1",
+          "id": "42923820-7fc1-42df-9a56-4eb69009ce1d",
           "title": "Constant repetition",
           "text": "To make an action repeat itself constantly, use the \"Repeat Always\" command.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch4-1_1613629034.webp"
+          "url": "/vp-assets/19097/scratch4-1_1613629034.png"
         },
         {
-          "id": "req_4_2",
+          "id": "a9edbc2c-c519-4983-b619-d89477dcdeaa",
           "title": "Smooth movements",
           "text": "You can make the movements smoother by setting a wait before each costume change. We can set the wait time. Try setting it for 0.1 seconds! This command is already ready — just put it in the right place.",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch4-2_1613629047.webp"
+          "url": "/vp-assets/19097/scratch4-2_1613629047.png"
         }
       ],
       "media": [
@@ -378,7 +378,7 @@
           "type": "presentation",
           "title": "The bear walks",
           "text": "Program a costume change so that it seems like the bear is constantly walking! See the example.",
-          "url": "/vp-assets/19097/1_1598272440.PNG.webp"
+          "url": ""
         }
       ],
       "starter_project_id": "M1L2_A_bear_walks.sb3",
@@ -400,18 +400,18 @@
           "level_type": "scratch",
           "requirements": [
             {
-              "id": "req_4_1",
+              "id": "42923820-7fc1-42df-9a56-4eb69009ce1d",
               "title": "Constant repetition",
               "text": "To make an action repeat itself constantly, use the \"Repeat Always\" command.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch4-1_1613629034.webp"
+              "url": "/vp-assets/19097/scratch4-1_1613629034.png"
             },
             {
-              "id": "req_4_2",
+              "id": "a9edbc2c-c519-4983-b619-d89477dcdeaa",
               "title": "Smooth movements",
               "text": "You can make the movements smoother by setting a wait before each costume change. We can set the wait time. Try setting it for 0.1 seconds! This command is already ready — just put it in the right place.",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch4-2_1613629047.webp"
+              "url": "/vp-assets/19097/scratch4-2_1613629047.png"
             }
           ],
           "media": [
@@ -419,7 +419,7 @@
               "type": "presentation",
               "title": "The bear walks",
               "text": "Program a costume change so that it seems like the bear is constantly walking! See the example.",
-              "url": "/vp-assets/19097/1_1598272440.PNG.webp"
+              "url": ""
             }
           ],
           "starter_project_id": "M1L2_A_bear_walks.sb3",
@@ -460,25 +460,25 @@
       "activityType": "scratch",
       "requirements": [
         {
-          "id": "req_5_1",
+          "id": "5a3e0d49-6af3-4894-afda-17c035edc2b2",
           "title": "Set the first background",
           "text": "Let the clock hands start moving from 12.",
           "type": "gif",
-          "url": "/vp-assets/19097/switchlight.webp"
+          "url": "/vp-assets/19097/switchlight.png"
         },
         {
-          "id": "req_5_2",
+          "id": "e96f0ba0-247c-4121-b46e-1cf87b160a2d",
           "title": "Change the background",
           "text": "Change the background using the \"Next Background\" command. Program the background to change every second.",
           "type": "gif",
-          "url": "/vp-assets/19097/ratch5-2.webp"
+          "url": "/vp-assets/19097/ratch5-2.png"
         },
         {
-          "id": "req_5_3",
+          "id": "2b2ee75e-4dcf-43a4-b944-f837a4e170d5",
           "title": "Program the background change to repeat",
-          "text": "Program the backdrop change to repeat constantly or for each hour.",
+          "text": "",
           "type": "gif",
-          "url": "/vp-assets/19097/scratch5-3.webp"
+          "url": "/vp-assets/19097/scratch5-3.png"
         }
       ],
       "media": [
@@ -486,7 +486,7 @@
           "type": "presentation",
           "title": "Create a clock!",
           "text": "Look, all the backgrounds you need are already there, you just need to change them every second.",
-          "url": "/vp-assets/19097/clock_presentation.webp"
+          "url": ""
         }
       ],
       "starter_project_id": "M1L2_A_clock.sb3",
@@ -508,25 +508,25 @@
           "level_type": "scratch",
           "requirements": [
             {
-              "id": "req_5_1",
+              "id": "5a3e0d49-6af3-4894-afda-17c035edc2b2",
               "title": "Set the first background",
               "text": "Let the clock hands start moving from 12.",
               "type": "gif",
-              "url": "/vp-assets/19097/switchlight.webp"
+              "url": "/vp-assets/19097/switchlight.png"
             },
             {
-              "id": "req_5_2",
+              "id": "e96f0ba0-247c-4121-b46e-1cf87b160a2d",
               "title": "Change the background",
               "text": "Change the background using the \"Next Background\" command. Program the background to change every second.",
               "type": "gif",
-              "url": "/vp-assets/19097/ratch5-2.webp"
+              "url": "/vp-assets/19097/ratch5-2.png"
             },
             {
-              "id": "req_5_3",
+              "id": "2b2ee75e-4dcf-43a4-b944-f837a4e170d5",
               "title": "Program the background change to repeat",
-              "text": "Program the backdrop change to repeat constantly or for each hour.",
+              "text": "",
               "type": "gif",
-              "url": "/vp-assets/19097/scratch5-3.webp"
+              "url": "/vp-assets/19097/scratch5-3.png"
             }
           ],
           "media": [
@@ -534,7 +534,7 @@
               "type": "presentation",
               "title": "Create a clock!",
               "text": "Look, all the backgrounds you need are already there, you just need to change them every second.",
-              "url": "/vp-assets/19097/clock_presentation.webp"
+              "url": ""
             }
           ],
           "starter_project_id": "M1L2_A_clock.sb3",
@@ -606,7 +606,7 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "M1L2 Super cat",
+      "title": "Super cat: smooth growth",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -615,14 +615,35 @@
       "drawerOpen": true,
       "requirements": [
         {
-          "id": "req_7_1",
-          "title": "Super Cat speech & flight",
-          "text": "Program the cat to say 'Super Cat!' for 2 seconds and fly by constantly changing costumes every 0.3 seconds.",
+          "id": "ad51bf58-a737-428a-a6e9-381aea897635",
+          "title": "Smoothly resize the sprite using a loop",
+          "text": "Use a loop to resize smoothly.",
           "type": "gif",
+          "url": "/vp-assets/19097/ввв.PNG"
+        },
+        {
+          "id": "4dc6020f-0917-459d-8ee6-67cb4b706d9a",
+          "title": "Set the size",
+          "text": "Set the size you want at the beginning of the script.",
+          "type": "gif",
+          "url": "/vp-assets/19097/ыс_1632746886.png"
+        },
+        {
+          "id": "c5866ce0-d0c0-486e-bc1c-45316ddf71a3",
+          "title": "Cat talks",
+          "text": "The cat should say \"I am super cat!\" before growing.",
+          "type": "gif",
+          "url": "/vp-assets/19097/dgkjlkg.PNG"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Super cat",
+          "text": "The super cat grows in size. Program the same!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M1L2_Super_cat.sb3",
       "demo_project_id": "level_7_demo",
       "command_keys": [
@@ -650,14 +671,35 @@
           "drawerOpen": true,
           "requirements": [
             {
-              "id": "req_7_1",
-              "title": "Super Cat speech & flight",
-              "text": "Program the cat to say 'Super Cat!' for 2 seconds and fly by constantly changing costumes every 0.3 seconds.",
+              "id": "ad51bf58-a737-428a-a6e9-381aea897635",
+              "title": "Smoothly resize the sprite using a loop",
+              "text": "Use a loop to resize smoothly.",
               "type": "gif",
+              "url": "/vp-assets/19097/ввв.PNG"
+            },
+            {
+              "id": "4dc6020f-0917-459d-8ee6-67cb4b706d9a",
+              "title": "Set the size",
+              "text": "Set the size you want at the beginning of the script.",
+              "type": "gif",
+              "url": "/vp-assets/19097/ыс_1632746886.png"
+            },
+            {
+              "id": "c5866ce0-d0c0-486e-bc1c-45316ddf71a3",
+              "title": "Cat talks",
+              "text": "The cat should say \"I am super cat!\" before growing.",
+              "type": "gif",
+              "url": "/vp-assets/19097/dgkjlkg.PNG"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Super cat",
+              "text": "The super cat grows in size. Program the same!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M1L2_Super_cat.sb3",
           "demo_project_id": "level_7_demo",
           "command_keys": [
@@ -695,11 +737,32 @@
       "drawerOpen": true,
       "requirements": [
         {
-          "id": "req_8_1",
-          "title": "Flashing star",
-          "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+          "id": "2552835d-88bb-45cf-83f9-5f8e39f6e0dd",
+          "title": "Starting size",
+          "text": "Set the desired size at the beginning of the script.",
           "type": "gif",
-          "url": "/vp-assets/19097/flashing_star_presentation.webp"
+          "url": "/vp-assets/19097/7-1.png"
+        },
+        {
+          "id": "8eff2d17-0b69-4731-96c1-869a8549c31f",
+          "title": "Resize - increase",
+          "text": "Use this command to increase the size.",
+          "type": "gif",
+          "url": "/vp-assets/19097/7-2.png"
+        },
+        {
+          "id": "29573fe8-bee8-43cb-b691-5eda2bbe60a8",
+          "title": "Resize - decrease",
+          "text": "You already know the command for how to resize a sprite. To reduce the size, just enter a number with a minus sign. For example, -5.",
+          "type": "gif",
+          "url": "/vp-assets/19097/7-3.png"
+        },
+        {
+          "id": "8d2f4ce8-5f9a-4cb8-bb66-0d5ddde33013",
+          "title": "The star is steadily increasing and decreasing",
+          "text": "Use two loops in a row.",
+          "type": "gif",
+          "url": "/vp-assets/19097/forever.png"
         }
       ],
       "media": [
@@ -707,7 +770,7 @@
           "type": "presentation",
           "title": "Flashing star",
           "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
-          "url": "/vp-assets/19097/flashing_star_presentation.webp"
+          "url": ""
         }
       ],
       "starter_project_id": "M1L2_A_star.sb3",
@@ -731,11 +794,32 @@
           "drawerOpen": true,
           "requirements": [
             {
-              "id": "req_8_1",
-              "title": "Flashing star",
-              "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
+              "id": "2552835d-88bb-45cf-83f9-5f8e39f6e0dd",
+              "title": "Starting size",
+              "text": "Set the desired size at the beginning of the script.",
               "type": "gif",
-              "url": "/vp-assets/19097/flashing_star_presentation.webp"
+              "url": "/vp-assets/19097/7-1.png"
+            },
+            {
+              "id": "8eff2d17-0b69-4731-96c1-869a8549c31f",
+              "title": "Resize - increase",
+              "text": "Use this command to increase the size.",
+              "type": "gif",
+              "url": "/vp-assets/19097/7-2.png"
+            },
+            {
+              "id": "29573fe8-bee8-43cb-b691-5eda2bbe60a8",
+              "title": "Resize - decrease",
+              "text": "You already know the command for how to resize a sprite. To reduce the size, just enter a number with a minus sign. For example, -5.",
+              "type": "gif",
+              "url": "/vp-assets/19097/7-3.png"
+            },
+            {
+              "id": "8d2f4ce8-5f9a-4cb8-bb66-0d5ddde33013",
+              "title": "The star is steadily increasing and decreasing",
+              "text": "Use two loops in a row.",
+              "type": "gif",
+              "url": "/vp-assets/19097/forever.png"
             }
           ],
           "media": [
@@ -743,7 +827,7 @@
               "type": "presentation",
               "title": "Flashing star",
               "text": "The star decreases slowly and increases slowly. And it does so constantly. Shall we program it?",
-              "url": "/vp-assets/19097/flashing_star_presentation.webp"
+              "url": ""
             }
           ],
           "starter_project_id": "M1L2_A_star.sb3",

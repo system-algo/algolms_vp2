@@ -45,7 +45,7 @@
         }
       ],
       "starter_project_id": "M1L1 Bear.sb3",
-      "demo_project_id": "9097732",
+      "demo_project_id": "M1L2_3_Task1_Demo.sb3",
       "command_keys": [
         "looks",
         "events"
@@ -85,7 +85,7 @@
             }
           ],
           "starter_project_id": "M1L1 Bear.sb3",
-          "demo_project_id": "9097732",
+          "demo_project_id": "M1L2_3_Task1_Demo.sb3",
           "command_keys": [
             "looks",
             "events"
@@ -147,7 +147,7 @@
         }
       ],
       "starter_project_id": "M1L2_A_dinosaur_and_a_snake.sb3",
-      "demo_project_id": "10653299",
+      "demo_project_id": "M1L2_3_Task2_Demo.sb3",
       "command_keys": [
         "looks",
         "events",
@@ -195,7 +195,7 @@
             }
           ],
           "starter_project_id": "M1L2_A_dinosaur_and_a_snake.sb3",
-          "demo_project_id": "10653299",
+          "demo_project_id": "M1L2_3_Task2_Demo.sb3",
           "command_keys": [
             "looks",
             "events",
@@ -267,7 +267,7 @@
         }
       ],
       "starter_project_id": "M1L2_A_heart.sb3",
-      "demo_project_id": "2660241",
+      "demo_project_id": "M1L2_3_Task3_Demo.sb3",
       "command_keys": [
         "looks",
         "events",
@@ -322,7 +322,7 @@
             }
           ],
           "starter_project_id": "M1L2_A_heart.sb3",
-          "demo_project_id": "2660241",
+          "demo_project_id": "M1L2_3_Task3_Demo.sb3",
           "command_keys": [
             "looks",
             "events",
@@ -382,7 +382,7 @@
         }
       ],
       "starter_project_id": "M1L2_A_bear_walks.sb3",
-      "demo_project_id": "2660096",
+      "demo_project_id": "M1L2_3_Task4_Demo.sb3",
       "command_keys": [
         "looks",
         "events",
@@ -423,7 +423,7 @@
             }
           ],
           "starter_project_id": "M1L2_A_bear_walks.sb3",
-          "demo_project_id": "2660096",
+          "demo_project_id": "M1L2_3_Task4_Demo.sb3",
           "command_keys": [
             "looks",
             "events",
@@ -490,7 +490,7 @@
         }
       ],
       "starter_project_id": "M1L2_A_clock.sb3",
-      "demo_project_id": "2660244",
+      "demo_project_id": "M1L2_3_Task5_Demo.sb3",
       "command_keys": [
         "looks",
         "events",
@@ -538,7 +538,7 @@
             }
           ],
           "starter_project_id": "M1L2_A_clock.sb3",
-          "demo_project_id": "2660244",
+          "demo_project_id": "M1L2_3_Task5_Demo.sb3",
           "command_keys": [
             "looks",
             "events",
@@ -645,7 +645,7 @@
         }
       ],
       "starter_project_id": "M1L2_Super_cat.sb3",
-      "demo_project_id": "level_7_demo",
+      "demo_project_id": "M1L2_3_Task7_Demo.sb3",
       "command_keys": [
         "motion",
         "looks",
@@ -701,7 +701,7 @@
             }
           ],
           "starter_project_id": "M1L2_Super_cat.sb3",
-          "demo_project_id": "level_7_demo",
+          "demo_project_id": "M1L2_3_Task7_Demo.sb3",
           "command_keys": [
             "motion",
             "looks",
@@ -774,7 +774,7 @@
         }
       ],
       "starter_project_id": "M1L2_A_star.sb3",
-      "demo_project_id": "level_8_demo",
+      "demo_project_id": "M1L2_3_Task8_Demo.sb3",
       "command_keys": [
         "looks",
         "events",
@@ -831,7 +831,7 @@
             }
           ],
           "starter_project_id": "M1L2_A_star.sb3",
-          "demo_project_id": "level_8_demo",
+          "demo_project_id": "M1L2_3_Task8_Demo.sb3",
           "command_keys": [
             "looks",
             "events",

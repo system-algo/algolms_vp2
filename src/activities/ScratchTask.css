@@ -350,7 +350,7 @@
 }
 
 .scratch-task-presentation-text {
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.5;
   color: #334155;
   margin: 12px 0 0 0;
@@ -434,7 +434,7 @@
 }
 
 .scratch-task-req-title {
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 600;
   color: #1e293b;
   line-height: 1.4;
@@ -461,7 +461,7 @@
 .scratch-task-req-body {
   padding: 12px 14px 14px 14px;
   background: #ffffff;
-  font-size: 13px;
+  font-size: 14.5px;
   line-height: 1.6;
   color: #334155;
 }
@@ -843,7 +843,7 @@
 }
 
 .scratch-task-checklist-heading {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;

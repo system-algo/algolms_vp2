@@ -762,7 +762,10 @@
 .scratch-task-demo-iframe-container {
   position: relative;
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
   aspect-ratio: 4 / 3;
+  overflow: hidden;
   background: #ffffff;
 }
 
@@ -1444,33 +1447,4 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-
-/* The demo is a responsive 4:3 stage, not a full Scratch editing workspace. */
-.scratch-task-demo-expand { margin-left: auto; }
-
-.scratch-task-demo-player-box:fullscreen {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 12px;
-  box-sizing: border-box;
-  background: #f8fafc;
-}
-
-.scratch-task-demo-player-box:fullscreen .scratch-task-demo-controls {
-  width: min(100%, calc((100vh - 100px) * 4 / 3));
-  box-sizing: border-box;
-}
-
-.scratch-task-demo-player-box:fullscreen .scratch-task-demo-iframe-container {
-  width: min(100%, calc((100vh - 100px) * 4 / 3));
-  height: min(calc(100vw * 3 / 4), calc(100vh - 100px));
-  min-height: 0;
-  max-height: none;
-  flex: none;
 }

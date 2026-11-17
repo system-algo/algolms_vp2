@@ -31,6 +31,9 @@
             display: block !important;
           }
 
+          html.is-player-only body { visibility: hidden !important; }
+          html.is-player-only.demo-stage-mounted body { visibility: visible !important; }
+
           /* The Scratch GUI remains mounted so its VM and renderer work; show ONLY its stage. */
           html.is-player-only [class*="gui_menu-bar-position_"],
           html.is-player-only [class*="gui_editor-wrapper_"],
@@ -99,9 +102,10 @@
           // Offset dimensions are untransformed, so fitting remains stable on every resize.
           const w = stage.offsetWidth || 480;
           const h = stage.offsetHeight || 360;
-          const scale = Math.min(window.innerWidth / w, window.innerHeight / h);
+          const scale = Math.min(1, window.innerWidth / w, window.innerHeight / h);
           if (!Number.isFinite(scale) || scale <= 0) return false;
           stageWrapper.style.setProperty('transform', `translate(-50%, -50%) scale(${scale})`, 'important');
+          document.documentElement.classList.add('demo-stage-mounted');
           return true;
         };
         // GUI and the SB3 are initialized asynchronously. Refit after both mount.
@@ -648,6 +652,7 @@
       }
 
       function applyBlocklyToolbox() {
+        if (isPlayerOnly) return true;
         if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
         const ws = window.Blockly.getMainWorkspace();
         if (!ws || !ws.options) return false;
@@ -913,12 +918,15 @@
         if (!url) return false;
         console.log('[AlgoLMS Bridge] Fetching project:', url);
         try {
-          const res = await fetch(url);
-          if (!res.ok) {
-            console.warn('[AlgoLMS Bridge] Failed to fetch project:', url, res.status);
-            return false;
+          let arrayBuffer = url === initialProjectUrl && prefetchedProject ? await prefetchedProject : null;
+          if (!arrayBuffer) {
+            const res = await fetch(url);
+            if (!res.ok) {
+              console.warn('[AlgoLMS Bridge] Failed to fetch project:', url, res.status);
+              return false;
+            }
+            arrayBuffer = await res.arrayBuffer();
           }
-          const arrayBuffer = await res.arrayBuffer();
 
           const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
           if (vm) {
@@ -931,15 +939,12 @@
             if (typeof vm.emitWorkspaceUpdate === 'function') {
               vm.emitWorkspaceUpdate();
             }
-            const loader = window.__scratchProjectLoader;
             const finalTitle = resolveProjectTitle(url, levelParam, titleParam);
             applyProjectTitle(finalTitle);
 
-            if (loader && loader.props) {
-              if (loader.props.onLoadingFinished) {
-                loader.props.onLoadingFinished(loader.props.loadingState, true);
-              }
-            }
+            // VM loading is independent of Scratch's file-upload Redux state.
+            // onLoadingFinished is only valid after requestProjectUpload; calling it
+            // here dispatches undefined when the GUI is already showing a project.
             setTimeout(applyBlocklyToolbox, 100);
             setTimeout(applyBlocklyToolbox, 400);
             setTimeout(applyBlocklyToolbox, 1000);
@@ -959,6 +964,10 @@
       }
 
       const initialProjectUrl = resolveProjectUrl(projectUrl, levelParam);
+      // Download in parallel with GUI initialization instead of waiting for its VM.
+      const prefetchedProject = initialProjectUrl
+        ? fetch(initialProjectUrl).then(async response => response.ok ? response.arrayBuffer() : null).catch(() => null)
+        : null;
       const expectedTitle = resolveProjectTitle(initialProjectUrl, levelParam, titleParam);
 
       // IndexedDB Storage Helpers for Project Persistence across lessons/weeks

@@ -21,6 +21,7 @@ import ScratchTask from './ScratchTask.jsx';
 import MarsBotQuizTask from './MarsBotQuizTask.jsx';
 import SpriteInstructionOrderTask from './SpriteInstructionOrderTask.jsx';
 import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
+import CoordinateInputTask from './CoordinateInputTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -712,6 +713,15 @@ function resolveRendererType(props) {
   }
 
   if (
+    taskId === 'VP2_M2L1_4_2' ||
+    task?.activityType === 'coordinate-input-task' ||
+    task?.selectedType === 'coordinate-input-task' ||
+    ((taskId.includes('VP2_M2L1_4') || pageId === 'VP2_M2L1_4') && (props?.taskIndex === 1 || task?.position === 2 || task?.level_position === 2))
+  ) {
+    return 'coordinate-input-task';
+  }
+
+  if (
     taskId.includes('VP2_M1L1_4') ||
     pageId === 'VP2_M1L1_4' ||
     taskId.includes('VP2_M1L2_4') ||
@@ -720,6 +730,8 @@ function resolveRendererType(props) {
     pageId === 'VP2_M1L3_4' ||
     taskId.includes('VP2_M1L4_4') ||
     pageId === 'VP2_M1L4_4' ||
+    taskId.includes('VP2_M2L1_4') ||
+    pageId === 'VP2_M2L1_4' ||
     task?.id === 'VP2_M1L1_4' ||
     task?.pageId === 'VP2_M1L1_4'
   ) {
@@ -1087,6 +1099,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'scratch-interface-label') {
     return <ScratchInterfaceLabelTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'coordinate-input-task') {
+    return <CoordinateInputTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

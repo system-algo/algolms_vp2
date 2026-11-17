@@ -46,57 +46,49 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Coordinates - Question 1",
-      "activityType": "marsbot-quiz",
+      "title": "Part 1. Coordinates",
+      "activityType": "coordinate-input-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Coordinates\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Coordinates - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "selectedType": "coordinate-input-task",
+      "coordinateInputTask": {
+        "title": "Part 1. Coordinates",
+        "gridImage": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/coordinate_grid.png",
+        "items": [
+          {
+            "id": "emerald",
+            "name": "Emerald",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/emerald.png",
+            "correctX": 5,
+            "correctY": -5
+          },
+          {
+            "id": "chest",
+            "name": "Treasure Chest",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/chest.png",
+            "correctX": 8,
+            "correctY": 6
+          },
+          {
+            "id": "crystal",
+            "name": "Blue Crystal",
+            "icon": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L1_4/images/crystal.png",
+            "correctX": -4,
+            "correctY": 4
+          }
+        ]
+      },
       "states": [
         {
           "id": "VP2_M2L1_4_2_state_1",
           "stateId": "VP2_M2L1_4_2_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
+          "type": "coordinate-input-task",
+          "selectedType": "coordinate-input-task",
           "level_type": "quiz",
-          "project_title": "Test yourself. Coordinates - Question 1"
+          "project_title": "Part 1. Coordinates"
         }
       ],
-      "project_title": "Test yourself. Coordinates - Question 1",
+      "project_title": "Part 1. Coordinates",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     },

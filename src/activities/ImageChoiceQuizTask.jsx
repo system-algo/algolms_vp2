@@ -122,6 +122,9 @@ export default function ImageChoiceQuizTask({
   }, [taskId, completedTaskIds, config.correctOptionIds]);
 
   const isLocked = status === 'correct' || status === 'failed';
+  const isImageGrid = config.options.some((option) => option.image);
+  // LMS: 4 image answers -> 2 columns, 6 (or 9) image answers -> 3 columns
+  const gridCols = isImageGrid && config.options.length >= 6 && config.options.length % 3 === 0 ? 3 : 2;
 
   const toggleOption = (optionId) => {
     if (isLocked) return;
@@ -240,7 +243,7 @@ export default function ImageChoiceQuizTask({
         </button>
       )}
 
-      <div className="icq-layout">
+      <div className={`icq-layout ${gridCols === 3 ? 'is-wide' : ''}`}>
         <div className="icq-left">
           <article className="icq-card">
             {config.image ? (
@@ -293,7 +296,8 @@ export default function ImageChoiceQuizTask({
         </div>
 
         <div
-          className={`icq-options ${config.options.some((option) => option.image) ? 'is-image-grid' : ''}`}
+          className={`icq-options ${isImageGrid ? 'is-image-grid' : ''}`}
+          style={isImageGrid ? { '--icq-cols': gridCols } : undefined}
           role={config.multiple ? 'group' : 'radiogroup'}
         >
           {config.options.map((option) => {

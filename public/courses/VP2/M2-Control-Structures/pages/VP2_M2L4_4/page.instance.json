@@ -1,86 +1,117 @@
 {
-  "schemaVersion": 2,
+  "version": 1,
   "id": "VP2_M2L4_4",
-  "title": "Messages - Part 4",
-  "type": "scratch-task",
-  "level_type": "scratch",
-  "taskCount": 3,
+  "title": "Test yourself. Messages",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "taskCount": 4,
+  "metadata": {
+    "courseId": "VP2",
+    "moduleId": "M2-Control-Structures",
+    "pageId": "VP2_M2L4_4",
+    "convertedAt": "2026-11-10T14:32:34.450Z"
+  },
   "tasks": [
     {
-      "id": "task-1-21661",
-      "taskId": "task-1-21661",
-      "title": "Test yourself. Messages",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nFind clear messages\nChoose the properly worded messages that make it clear what actions they trigger.\nANSWER",
-      "bodyText": "1\n2\n3\nFind clear messages\n\nChoose the properly worded messages that make it clear what actions they trigger.\n\nANSWER",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Find clear messages",
-        "Choose the properly worded messages that make it clear what actions they trigger.",
-        "ANSWER"
-      ],
-      "images": [],
+      "id": "VP2_M2L4_4_1",
+      "taskId": "VP2_M2L4_4_1",
+      "position": 1,
+      "level_position": 1,
+      "levelPosition": 1,
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "feedback-rating-task",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
       "states": [
         {
-          "id": "task-1-21661-state-1",
-          "stateId": "task-1-21661-state-1",
-          "name": "1",
-          "instruction": "1\n2\n3\nFind clear messages\nChoose the properly worded messages that make it clear what actions they trigger.\nANSWER",
-          "bodyText": "1\n2\n3\nFind clear messages\n\nChoose the properly worded messages that make it clear what actions they trigger.\n\nANSWER",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Find clear messages",
-            "Choose the properly worded messages that make it clear what actions they trigger.",
-            "ANSWER"
-          ],
-          "images": [],
-          "screenshot": ""
+          "id": "VP2_M2L4_4_1_state_1",
+          "stateId": "VP2_M2L4_4_1_state_1",
+          "position": 1,
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating",
+          "title": "Did you like the lesson?"
         }
       ]
     },
     {
-      "id": "task-2-21661",
-      "taskId": "task-2-21661",
-      "title": "Test yourself. Messages",
-      "activityType": "generic_captured_task",
-      "instruction": "1\n2\n3\nSort the events and messages\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\nANSWER\nMessages\nEvents",
-      "bodyText": "1\n2\n3\nSort the events and messages\n\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\n\nANSWER\n\nMessages\n\nEvents",
-      "textLines": [
-        "1",
-        "2",
-        "3",
-        "Sort the events and messages",
-        "Which commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?",
-        "ANSWER",
-        "Messages",
-        "Events"
-      ],
-      "images": [],
+      "id": "VP2_M2L4_4_2",
+      "taskId": "VP2_M2L4_4_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Find clear messages",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Find clear messages",
+        "description": "Choose the properly worded messages that make it clear what actions they trigger.",
+        "image": "",
+        "multiple": true,
+        "options": [
+          {
+            "id": "scene",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_1.png",
+            "alt": "when I receive Scene in the room"
+          },
+          {
+            "id": "krkrkr",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_2.png",
+            "alt": "when I receive krkrkr"
+          },
+          {
+            "id": "turn",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_3.png",
+            "alt": "when I receive Turn"
+          },
+          {
+            "id": "jump",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_4.png",
+            "alt": "when I receive Jump"
+          },
+          {
+            "id": "message1",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_5.png",
+            "alt": "when I receive message1"
+          },
+          {
+            "id": "pg",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q1_msg_6.png",
+            "alt": "when I receive pg"
+          }
+        ],
+        "correctOptionIds": [
+          "scene",
+          "turn",
+          "jump"
+        ]
+      },
       "states": [
         {
-          "id": "task-2-21661-state-1",
-          "stateId": "task-2-21661-state-1",
-          "name": "2",
-          "instruction": "1\n2\n3\nSort the events and messages\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\nANSWER\nMessages\nEvents",
-          "bodyText": "1\n2\n3\nSort the events and messages\n\nWhich commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?\n\nANSWER\n\nMessages\n\nEvents",
-          "textLines": [
-            "1",
-            "2",
-            "3",
-            "Sort the events and messages",
-            "Which commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?",
-            "ANSWER",
-            "Messages",
-            "Events"
-          ],
-          "images": [],
-          "screenshot": ""
+          "id": "VP2_M2L4_4_2_state_1",
+          "stateId": "VP2_M2L4_4_2_state_1",
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Find clear messages"
         }
-      ]
+      ],
+      "project_title": "Find clear messages",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     },
     {
       "id": "VP2_M2L4_4_3",
@@ -88,92 +119,151 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Messages",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Test yourself. Messages\".",
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Test yourself. Messages\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
+      "title": "Sort the events and messages",
+      "activityType": "category-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "category-quiz-task",
+      "categoryQuizTask": {
+        "title": "Sort the events and messages",
+        "description": "Which commands are events and exist in Scratch by default, and which are messages that we should first send at the right time?",
+        "items": [
+          {
+            "id": "recv_2",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_1.png",
+            "alt": "when I receive 2"
+          },
+          {
+            "id": "space",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_2.png",
+            "alt": "when space key pressed"
+          },
+          {
+            "id": "flag",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_3.png",
+            "alt": "when green flag clicked"
+          },
+          {
+            "id": "sprite",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_4.png",
+            "alt": "when this sprite clicked"
+          },
+          {
+            "id": "recv_message1",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_5.png",
+            "alt": "when I receive message1"
+          },
+          {
+            "id": "recv_dani",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q2_block_6.png",
+            "alt": "when I receive Dani is happy"
+          }
+        ],
+        "categories": [
+          {
+            "id": "messages",
+            "title": "Messages"
+          },
+          {
+            "id": "events",
+            "title": "Events"
+          }
+        ],
+        "answer": {
+          "recv_2": "messages",
+          "space": "events",
+          "flag": "events",
+          "sprite": "events",
+          "recv_message1": "messages",
+          "recv_dani": "messages"
         }
-      ],
-      "media": [],
-      "starter_project_id": null,
-      "demo_project_id": "",
+      },
       "states": [
         {
           "id": "VP2_M2L4_4_3_state_1",
           "stateId": "VP2_M2L4_4_3_state_1",
-          "position": 3,
-          "level_position": 3,
-          "levelPosition": 3,
-          "type": "generic_captured_task",
-          "selectedType": "scratch",
-          "level_type": "generic_captured_task",
-          "drawerOpen": true,
-          "description": "Complete the programming task for \"Test yourself. Messages\".",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Test yourself. Messages\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
-          "media": [],
-          "activityType": "generic_captured_task",
-          "starter_project_id": null
+          "position": 1,
+          "type": "category-quiz-task",
+          "selectedType": "category-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Sort the events and messages"
         }
       ],
-      "type": "generic_captured_task"
+      "project_title": "Sort the events and messages",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
+    },
+    {
+      "id": "VP2_M2L4_4_4",
+      "taskId": "VP2_M2L4_4_4",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Choose a script",
+      "activityType": "image-choice-quiz-task",
+      "level_type": "quiz",
+      "selectedType": "image-choice-quiz-task",
+      "imageChoiceQuizTask": {
+        "title": "Choose a script",
+        "description": "Choose the script where the sprite will rotate slightly 10 times when you run the above script.",
+        "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_task.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "a",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_1.png",
+            "alt": "Script A"
+          },
+          {
+            "id": "b",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_2.png",
+            "alt": "Script B"
+          },
+          {
+            "id": "c",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_3.png",
+            "alt": "Script C"
+          },
+          {
+            "id": "d",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_4.png",
+            "alt": "Script D"
+          },
+          {
+            "id": "e",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_5.png",
+            "alt": "Script E"
+          },
+          {
+            "id": "f",
+            "text": "",
+            "image": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/images/q3_script_6.png",
+            "alt": "Script F"
+          }
+        ],
+        "correctOptionIds": [
+          "a"
+        ]
+      },
+      "states": [
+        {
+          "id": "VP2_M2L4_4_4_state_1",
+          "stateId": "VP2_M2L4_4_4_state_1",
+          "position": 1,
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz",
+          "project_title": "Choose a script"
+        }
+      ],
+      "project_title": "Choose a script",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": true
     }
-  ]
+  ],
+  "activityType": "marsbot-quiz"
 }

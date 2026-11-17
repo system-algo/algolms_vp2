@@ -242,8 +242,17 @@
 
 .icq-options.is-image-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--icq-cols, 2), minmax(0, 1fr));
   gap: 24px;
+}
+
+.icq-layout.is-wide {
+  width: min(1526px, calc(100vw - 140px));
+}
+
+.icq-layout.is-wide .icq-left {
+  flex-basis: 346px;
+  width: 346px;
 }
 
 .icq-option.has-image {

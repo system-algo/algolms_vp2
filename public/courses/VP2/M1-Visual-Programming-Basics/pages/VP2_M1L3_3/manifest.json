@@ -138,13 +138,15 @@
           ],
           "demo_project_id": null,
           "level_position": 1,
-          "levelPosition": 1
+          "levelPosition": 1,
+          "tips": []
         }
       ],
       "project_title": "M1L3 Before takeoff",
       "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "isAutoCheck": false,
-      "demo_project_id": null
+      "demo_project_id": null,
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_2",
@@ -229,13 +231,33 @@
           ],
           "demo_project_id": null,
           "level_position": 2,
-          "levelPosition": 2
+          "levelPosition": 2,
+          "tips": [
+            {
+              "id": "1563273161031-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo2_1616074091.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "project_title": "M1L3 Dinosaurs",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null
+      "demo_project_id": null,
+      "tips": [
+        {
+          "id": "1563273161031-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo2_1616074091.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_3",
@@ -320,13 +342,33 @@
           ],
           "demo_project_id": null,
           "level_position": 3,
-          "levelPosition": 3
+          "levelPosition": 3,
+          "tips": [
+            {
+              "id": "1563273688525-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo3_1616074015.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "project_title": "M1L3 Girls in the castle",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null
+      "demo_project_id": null,
+      "tips": [
+        {
+          "id": "1563273688525-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo3_1616074015.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_4",
@@ -411,13 +453,33 @@
           ],
           "demo_project_id": null,
           "level_position": 4,
-          "levelPosition": 4
+          "levelPosition": 4,
+          "tips": [
+            {
+              "id": "1564043086239-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo4_1616074340.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "project_title": "M1L3 Astronauts",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null
+      "demo_project_id": null,
+      "tips": [
+        {
+          "id": "1564043086239-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo4_1616074340.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_5",
@@ -452,13 +514,15 @@
           "media": [],
           "demo_project_id": null,
           "level_position": 5,
-          "levelPosition": 5
+          "levelPosition": 5,
+          "tips": []
         }
       ],
       "project_title": "Scratch. Dialogs and planning - Task 5",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "demo_project_id": null
+      "demo_project_id": null,
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_6",
@@ -557,7 +621,8 @@
           ],
           "demo_project_id": null,
           "level_position": 6,
-          "levelPosition": 6
+          "levelPosition": 6,
+          "tips": []
         }
       ],
       "project_title": "M1L3 Trying on a dress",
@@ -565,7 +630,8 @@
       "isAutoCheck": true,
       "demo_project_id": null,
       "isBonus": true,
-      "type": "bonus"
+      "type": "bonus",
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_7",
@@ -650,7 +716,8 @@
           ],
           "demo_project_id": null,
           "level_position": 7,
-          "levelPosition": 7
+          "levelPosition": 7,
+          "tips": []
         }
       ],
       "project_title": "M1L3",
@@ -658,7 +725,8 @@
       "isAutoCheck": true,
       "demo_project_id": null,
       "isBonus": true,
-      "type": "bonus"
+      "type": "bonus",
+      "tips": []
     }
   ]
 }

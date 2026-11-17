@@ -49,8 +49,13 @@ export default function ScratchTask({
   const categoriesQuery = 'all';
   const blocksQuery = '';
 
+  const tipItems = React.useMemo(() => {
+    const candidates = [task?.tips, task?.config?.tips, task?.states?.[0]?.tips, state?.tips];
+    return candidates.find((items) => Array.isArray(items) && items.length > 0) || [];
+  }, [task?.tips, task?.config?.tips, task?.states, state?.tips]);
+
   const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
-                           (Array.isArray(task?.media) && task.media.length > 0);
+                           (Array.isArray(task?.media) && task.media.length > 0) || tipItems.length > 0;
 
   // Drawer open/collapse state
   const iframeRef = useRef(null);
@@ -973,6 +978,37 @@ export default function ScratchTask({
                   })}
                 </div>
               </div>
+            )}
+            {tipItems.length > 0 && (
+              <section className="scratch-task-tips" aria-label="Tips">
+                <div className="scratch-task-checklist-heading">TIPS</div>
+                {tipItems.map((tip, index) => (
+                  <details
+                    key={`${task?.activity_id || task?.id || levelPosition}-${tip.id || index}`}
+                    className="scratch-task-tip-card"
+                    open
+                  >
+                    <summary className="scratch-task-tip-heading">
+                      <span className="scratch-task-tip-icon" aria-hidden="true">!</span>
+                      <span>{tip.title}</span>
+                      <span className="scratch-task-tip-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div className="scratch-task-tip-body">
+                      {tip.description && <p>{tip.description}</p>}
+                      {tip.url && (
+                        <button
+                          type="button"
+                          className="scratch-task-tip-image"
+                          onClick={() => setModalImage({ url: tip.url, title: tip.title })}
+                          aria-label={`Enlarge ${tip.title || 'tip image'}`}
+                        >
+                          <img src={tip.url} alt={tip.title || 'Tip'} loading="lazy" />
+                        </button>
+                      )}
+                    </div>
+                  </details>
+                ))}
+              </section>
             )}
           </div>
         </div>

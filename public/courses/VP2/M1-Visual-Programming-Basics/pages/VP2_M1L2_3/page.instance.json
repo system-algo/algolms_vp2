@@ -88,7 +88,8 @@
             "event_whenflagclicked",
             "looks_sayforsecs"
           ],
-          "project_title": "M1L1 Bear"
+          "project_title": "M1L1 Bear",
+          "tips": []
         }
       ],
       "command_blocks": [
@@ -97,7 +98,8 @@
       ],
       "project_title": "M1L1 Bear",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": []
     },
     {
       "id": "VP2_M1L2_3_2",
@@ -200,7 +202,8 @@
             "looks_switchcostumeto",
             "control_wait"
           ],
-          "project_title": "M1L2 A dinosaur and a snake"
+          "project_title": "M1L2 A dinosaur and a snake",
+          "tips": []
         }
       ],
       "command_blocks": [
@@ -210,7 +213,8 @@
       ],
       "project_title": "M1L2 A dinosaur and a snake",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": []
     },
     {
       "id": "VP2_M1L2_3_3",
@@ -328,7 +332,8 @@
             "control_repeat",
             "control_wait"
           ],
-          "project_title": "M1L2 A heart"
+          "project_title": "M1L2 A heart",
+          "tips": []
         }
       ],
       "command_blocks": [
@@ -339,7 +344,8 @@
       ],
       "project_title": "M1L2 A heart",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": []
     },
     {
       "id": "VP2_M1L2_3_4",
@@ -429,7 +435,25 @@
             "control_forever",
             "control_wait"
           ],
-          "project_title": "M1L2 A bear walks"
+          "project_title": "M1L2 A bear walks",
+          "tips": [
+            {
+              "id": "1562871398277-5",
+              "title": "Remember where the script starts?",
+              "description": "",
+              "url": "/vp-assets/19097/scratch2-1_1613628789.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            },
+            {
+              "id": "1562871318970-5",
+              "title": "Costume change",
+              "description": "You already know this command",
+              "url": "/vp-assets/19097/scratch3-2_1613628798.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "command_blocks": [
@@ -440,7 +464,25 @@
       ],
       "project_title": "M1L2 A bear walks",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [
+        {
+          "id": "1562871398277-5",
+          "title": "Remember where the script starts?",
+          "description": "",
+          "url": "/vp-assets/19097/scratch2-1_1613628789.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        },
+        {
+          "id": "1562871318970-5",
+          "title": "Costume change",
+          "description": "You already know this command",
+          "url": "/vp-assets/19097/scratch3-2_1613628798.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L2_3_5",
@@ -546,7 +588,17 @@
             "control_forever",
             "control_wait"
           ],
-          "project_title": "M1L2 A clock"
+          "project_title": "M1L2 A clock",
+          "tips": [
+            {
+              "id": "1563207289586-5",
+              "title": "If you accidentally delete the script",
+              "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+              "url": "",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "command_blocks": [
@@ -559,7 +611,17 @@
       ],
       "project_title": "M1L2 A clock",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [
+        {
+          "id": "1563207289586-5",
+          "title": "If you accidentally delete the script",
+          "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+          "url": "",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L2_3_6",
@@ -590,9 +652,11 @@
           "media": [],
           "starter_project_id": null,
           "demo_project_id": null,
-          "command_keys": []
+          "command_keys": [],
+          "tips": []
         }
-      ]
+      ],
+      "tips": []
     },
     {
       "id": "VP2_M1L2_3_7",
@@ -708,13 +772,49 @@
             "myblocks"
           ],
           "command_blocks": [],
-          "project_title": "M1L2 Super cat"
+          "project_title": "M1L2 Super cat",
+          "tips": [
+            {
+              "id": "1562876565371-5",
+              "title": "Sprite size",
+              "description": "Here you can find out what size the sprite is now and also manually change it.",
+              "url": "/vp-assets/19097/6-3.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            },
+            {
+              "id": "1563207372046-5",
+              "title": "If you accidentally delete the script",
+              "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+              "url": "",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "command_blocks": [],
       "project_title": "M1L2 Super cat",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [
+        {
+          "id": "1562876565371-5",
+          "title": "Sprite size",
+          "description": "Here you can find out what size the sprite is now and also manually change it.",
+          "url": "/vp-assets/19097/6-3.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        },
+        {
+          "id": "1563207372046-5",
+          "title": "If you accidentally delete the script",
+          "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+          "url": "",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L2_3_8",
@@ -838,7 +938,17 @@
             "control_forever",
             "control_wait"
           ],
-          "project_title": "M1L2 A star"
+          "project_title": "M1L2 A star",
+          "tips": [
+            {
+              "id": "1563207397187-5",
+              "title": "If you accidentally delete the script",
+              "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+              "url": "",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "command_blocks": [
@@ -850,7 +960,17 @@
       ],
       "project_title": "M1L2 A star",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "tips": [
+        {
+          "id": "1563207397187-5",
+          "title": "If you accidentally delete the script",
+          "description": "Simultaneously press the \"CTRL\" and \"Z\" keys in the lower-left corner of the keyboard.",
+          "url": "",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     }
   ],
   "id": "VP2_M1L2_3",

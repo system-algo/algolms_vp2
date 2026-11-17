@@ -1448,3 +1448,16 @@
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* XML tips stay separate from the requirements checklist. */
+.scratch-task-tips { display: flex; flex-direction: column; gap: 12px; }
+.scratch-task-tip-card { border: 2px solid #cbd0d7; border-radius: 12px; background: #f1f3f5; }
+.scratch-task-tip-heading { display: flex; align-items: center; gap: 12px; padding: 18px 14px; color: #172333; font-size: 15px; font-weight: 600; cursor: pointer; list-style: none; }
+.scratch-task-tip-heading::-webkit-details-marker { display: none; }
+.scratch-task-tip-icon { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; flex-shrink: 0; border: 1px solid #8b939c; border-radius: 50%; color: #78818c; }
+.scratch-task-tip-chevron { margin-left: auto; transition: transform .15s; }
+.scratch-task-tip-card[open] .scratch-task-tip-chevron { transform: rotate(180deg); }
+.scratch-task-tip-body { padding: 0 16px 20px 54px; color: #334155; font-size: 14.5px; line-height: 1.6; }
+.scratch-task-tip-body p { margin: 0 0 12px; white-space: pre-line; }
+.scratch-task-tip-image { display: block; width: 100%; padding: 0; border: 1px solid #cbd0d7; border-radius: 10px; overflow: hidden; background: #fff; cursor: zoom-in; }
+.scratch-task-tip-image img { display: block; width: 100%; height: auto; }

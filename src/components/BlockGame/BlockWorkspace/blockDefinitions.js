@@ -43,9 +43,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'move forward',
     category: 'motion',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     icon: 'arrow-forward',
   },
 
@@ -54,9 +54,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'point in direction',
     category: 'motion',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     params: [
       {
         name: 'direction',
@@ -85,9 +85,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'take the cargo',
     category: 'actions',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     icon: 'box',
   },
 
@@ -96,9 +96,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'put the cargo down',
     category: 'actions',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     icon: 'box-down',
   },
 
@@ -109,8 +109,8 @@ export const BLOCK_DEFINITIONS = {
     labelSuffix: 'times',
     category: 'control',
     color: '#5BA55B',
-    darkColor: '#447C44',
-    lightColor: '#84C784',
+    darkColor: '#498449',
+    lightColor: '#8cc08c',
     params: [
       {
         name: 'times',
@@ -126,9 +126,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'turn',
     category: 'motion',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     params: [
       {
         name: 'direction',
@@ -147,9 +147,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'turn clockwise to',
     category: 'motion',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     params: [
       {
         name: 'angle',
@@ -178,9 +178,9 @@ export const BLOCK_DEFINITIONS = {
     kind: 'statement',
     label: 'turn counterclockwise to',
     category: 'motion',
-    color: '#8A5BA7',
-    darkColor: '#6B4284',
-    lightColor: '#B488CE',
+    color: '#995ba5',
+    darkColor: '#7a4984',
+    lightColor: '#b88cc0',
     params: [
       {
         name: 'angle',
@@ -274,7 +274,7 @@ export function countCommands(blocks = []) {
 
 Object.assign(BLOCK_TYPES, { BUILD_FACTORY: 'build_factory', BUILD_GREENHOUSE: 'build_greenhouse', BUILD_WINDMILL: 'build_windmill' });
 for (const [kind, label] of [['factory', 'factory'], ['greenhouse', 'greenhouse'], ['windmill', 'wind generator']]) {
-  BLOCK_DEFINITIONS[`build_${kind}`] = { type: `build_${kind}`, kind: 'statement', label, category: 'actions', color: '#995ba7', darkColor: '#6B4284', lightColor: '#B488CE' };
+  BLOCK_DEFINITIONS[`build_${kind}`] = { type: `build_${kind}`, kind: 'statement', label, category: 'actions', color: '#5ba58c', darkColor: '#498470', lightColor: '#8cc0af' };
 }
 
 // The three coordinate scales used by the original Rocket flight tasks.
@@ -293,10 +293,10 @@ for (const unit of [1, 10, 30]) for (const axis of ['x', 'y']) {
   BLOCK_DEFINITIONS[type] = { type, kind: 'statement', label: `change ${axis.toUpperCase()} by`, category: 'motion', color: '#995ba5', darkColor: '#7a4984', params: [{ name: 'amount', type: 'select', default: -8 * unit, options: Array.from({ length: 17 }, (_, n) => ({ value: (n - 8) * unit, label: String((n - 8) * unit) })) }] };
 }
 
-for (const [type,label,kind] of [['if_else','if / else','branch_block'],['branch_if','if','c_block'],['branch_else','else','c_block'],['if_condition','if','c_block'],['repeat_until','repeat until','c_block'],['forever','forever','c_block'],['cook','cook','statement']]) BLOCK_DEFINITIONS[type] = { type, label, kind, category: 'control', color: '#5ba55b', darkColor: '#498449', params: [] };
+for (const [type,label,kind] of [['if_else','if / else','branch_block'],['branch_if','if','c_block'],['branch_else','else','c_block'],['if_condition','if','c_block'],['repeat_until','repeat until','c_block'],['forever','forever','c_block'],['cook','cook','statement']]) BLOCK_DEFINITIONS[type] = { type, label, kind, category: 'control', color: type === 'cook' ? '#995ba5' : '#5ba55b', darkColor: type === 'cook' ? '#7a4984' : '#498449', params: [] };
 
 for (const [type,label,kind] of [['mine','mine','statement'],['set_variable','set','statement'],['add_variable','change by','statement'],['send_variable','send value','statement'],['next_crystal','next crystal','statement'],['repeat_variable','repeat times','c_block']]) {
-  BLOCK_DEFINITIONS[type] = {type,label,kind,category:'variables',color:type==='mine'?'#995ba7':'#dd8b23',darkColor:'#98601d',params:[]};
+  BLOCK_DEFINITIONS[type] = {type,label,kind,category:'variables',color:type==='mine'?'#995ba5':'#dd8b23',darkColor:'#98601d',params:[]};
 }
 
 for(const [type,reporter] of Object.entries(REPORTERS))BLOCK_DEFINITIONS[type]={type,kind:'reporter',label:reporter.label,output:reporter.output,color:reporter.color||'#5b80a5',darkColor:'#42617e',params:[]};

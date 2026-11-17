@@ -404,7 +404,7 @@ export default function BlockRenderer({
           width={totalWidth}
           height={blockHeight}
           type={shapeType}
-          color={compact && !isHat && !isCBlock && !['destroy', 'water'].includes(block.type) ? '#995ba7' : def.color || '#8A5BA7'}
+          color={def.color || '#995ba5'}
           darkColor={def.darkColor || '#6B4284'}
           isExecuting={isExecuting}
         />

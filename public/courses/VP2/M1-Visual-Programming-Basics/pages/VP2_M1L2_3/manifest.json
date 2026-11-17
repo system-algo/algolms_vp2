@@ -44,7 +44,7 @@
           "url": "/vp-assets/19097/2_1598270849.PNG.webp"
         }
       ],
-      "starter_project_id": "M1L2_A_bear_walks.sb3",
+      "starter_project_id": "M1L1 Bear.sb3",
       "demo_project_id": "9097732",
       "command_keys": [
         "looks",
@@ -84,7 +84,7 @@
               "url": "/vp-assets/19097/2_1598270849.PNG.webp"
             }
           ],
-          "starter_project_id": "M1L2_A_bear_walks.sb3",
+          "starter_project_id": "M1L1 Bear.sb3",
           "demo_project_id": "9097732",
           "command_keys": [
             "looks",
@@ -94,14 +94,14 @@
             "event_whenflagclicked",
             "looks_sayforsecs"
           ],
-          "project_title": "M1L2 A bear walks"
+          "project_title": "M1L1 Bear"
         }
       ],
       "command_blocks": [
         "event_whenflagclicked",
         "looks_sayforsecs"
       ],
-      "project_title": "M1L2 A bear walks",
+      "project_title": "M1L1 Bear",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true
     },

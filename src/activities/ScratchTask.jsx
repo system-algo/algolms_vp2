@@ -20,13 +20,16 @@ export default function ScratchTask({
   const derivedPos = matchPos ? parseInt(matchPos[1], 10) : 1;
   const levelPosition = Number(task?.level_position || task?.position || task?.levelPosition || derivedPos);
 
-  // Online project ID from LMS config / Supabase vp2_activities
-  const projectId =
+  // Task 1 starts from the original bare Bear project, not the walking-bear exercise.
+  // Keep this fallback even if an older LMS/Supabase task payload overrides the manifest.
+  const isBearStarterTask = String(task?.activity_id || task?.id || task?.taskId || '') === 'VP2_M1L2_3_1';
+  const projectId = isBearStarterTask ? 'M1L1 Bear.sb3' : (
     task?.starter_project_id ||
     task?.config?.project?.id ||
     task?.config?.project ||
     task?.projectId ||
-    '';
+    ''
+  );
 
   // Flyout categories / command keys: prioritize task definition, then state definition, then fall back
   const taskCommandKeys =
@@ -51,6 +54,8 @@ export default function ScratchTask({
 
   // Drawer open/collapse state
   const iframeRef = useRef(null);
+  const demoIframeRef = useRef(null);
+  const [demoReady, setDemoReady] = useState(false);
   const containerRef = useRef(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(
     task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
@@ -157,6 +162,7 @@ export default function ScratchTask({
   };
 
   const derivedProjectTitle = (
+    (isBearStarterTask ? 'M1L1 Bear' : '') ||
     task?.project_title ||
     task?.projectName ||
     (projectId && typeof projectId === 'string' && projectId.toLowerCase().endsWith('.sb3')
@@ -260,6 +266,26 @@ export default function ScratchTask({
     (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: demoInstructionText } : null);
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
+
+  // Demo runs in a separate Scratch VM iframe. Wait for its project to load before
+  // enabling controls, and never send commands to the student's editable project.
+  useEffect(() => {
+    setDemoReady(false);
+  }, [demoProjectId, levelPosition]);
+
+  useEffect(() => {
+    const onDemoMessage = (event) => {
+      if (event.origin !== window.location.origin || event.source !== demoIframeRef.current?.contentWindow) return;
+      if (event.data?.type === 'SCRATCH_DEMO_READY') setDemoReady(true);
+    };
+    window.addEventListener('message', onDemoMessage);
+    return () => window.removeEventListener('message', onDemoMessage);
+  }, []);
+
+  const controlDemo = (type) => {
+    if (!demoReady) return;
+    demoIframeRef.current?.contentWindow?.postMessage({ type }, window.location.origin);
+  };
 
   const [activeTab, setActiveTab] = useState(demoProjectId ? 'demo' : 'media');
 
@@ -722,20 +748,59 @@ export default function ScratchTask({
             {/* Demo stage preview (if demoProjectId exists) */}
             {demoProjectId ? (
               <div className="scratch-task-demo-wrapper">
-                <div className="scratch-task-demo-player-box">
-                  <div className="scratch-task-demo-iframe-container">
-                    <iframe
-                      key={`demo-${demoProjectId}-${levelPosition}`}
-                      src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
-                      className="scratch-task-demo-iframe"
-                      title="Scratch Demo Preview"
-                      allow="autoplay"
-                    />
+                <button
+                  type="button"
+                  className="scratch-task-demo-heading"
+                  onClick={() => setIsPresentationOpen((open) => !open)}
+                  aria-expanded={isPresentationOpen}
+                >
+                  <span>{presentationMedia?.title || 'See how the project should work'}</span>
+                  <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
+                </button>
+                {isPresentationOpen && (
+                  <div className="scratch-task-demo-player-box">
+                    <div className="scratch-task-demo-controls" role="group" aria-label="Scratch demo controls">
+                      <button
+                        type="button"
+                        className="scratch-task-demo-control"
+                        disabled={!demoReady}
+                        title={demoReady ? 'Run demo (green flag)' : 'Loading demo'}
+                        aria-label="Run demo"
+                        onClick={() => controlDemo('SCRATCH_DEMO_RUN')}
+                      >
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#28a745" d="M5 2h2v20H5zM7 3c3-2 6 2 9 0 1-.6 2-.8 3-.8v11c-4 0-7 3-12 1z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        className="scratch-task-demo-control"
+                        disabled={!demoReady}
+                        title={demoReady ? 'Stop demo' : 'Loading demo'}
+                        aria-label="Stop demo"
+                        onClick={() => controlDemo('SCRATCH_DEMO_STOP')}
+                      >
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#f08080" d="M8 2h8l6 6v8l-6 6H8l-6-6V8z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="scratch-task-demo-iframe-container">
+                      <iframe
+                        ref={demoIframeRef}
+                        key={`demo-${demoProjectId}-${levelPosition}`}
+                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
+                        className="scratch-task-demo-iframe"
+                        title="Scratch Demo Preview"
+                        onLoad={() => setDemoReady(false)}
+                        allow="autoplay"
+                      />
+                    </div>
+                    <div className="scratch-task-demo-hint">
+                      {demoReady ? 'Bấm cờ xanh để chạy mẫu, hoặc nút đỏ để dừng.' : 'Đang tải project demo...'}
+                    </div>
                   </div>
-                  <div className="scratch-task-demo-hint">
-                    <span className="scratch-task-demo-flag-icon">⚑</span> Bấm lá cờ xanh trong khung để xem hoạt động mẫu
-                  </div>
-                </div>
+                )}
               </div>
             ) : presentationMedia ? (
               /* Presentation hint card at top matching LMS */

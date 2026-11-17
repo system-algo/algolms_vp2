@@ -52,6 +52,8 @@
             max-width: 100% !important;
             max-height: calc(100vh - 44px) !important;
           }
+          /* The parent demo card owns the Run/Stop buttons, not the Scratch iframe. */
+          html.is-player-only div[class*="controls_controls-container_"],
           html.is-player-only div[class*="stage-header_stage-size-toggle-group"],
           html.is-player-only div[class*="alerts-container"] {
             display: none !important;
@@ -895,6 +897,10 @@
             setTimeout(applyBlocklyToolbox, 1000);
             setTimeout(() => applyProjectTitle(finalTitle), 200);
             setTimeout(() => applyProjectTitle(finalTitle), 800);
+            if (isPlayerOnly) {
+              // Signal the parent only after the correct demo SB3 is in the VM.
+              window.parent.postMessage({ type: 'SCRATCH_DEMO_READY' }, window.location.origin);
+            }
             return true;
           }
         } catch (e) {
@@ -1157,6 +1163,20 @@
       // Listen for parent LMS postMessage
       window.addEventListener('message', async (e) => {
         if (!e.data) return;
+        if (isPlayerOnly &&
+            e.source === window.parent &&
+            e.origin === window.location.origin &&
+            (e.data.type === 'SCRATCH_DEMO_RUN' || e.data.type === 'SCRATCH_DEMO_STOP')) {
+          const demoVm = window.vm || window.__scratchProjectLoader?.props?.vm;
+          if (!demoVm) return;
+          if (e.data.type === 'SCRATCH_DEMO_STOP') {
+            if (typeof demoVm.stopAll === 'function') demoVm.stopAll();
+          } else {
+            if (typeof demoVm.greenFlag === 'function') demoVm.greenFlag();
+            else demoVm.runtime?.startHats?.('event_whenflagclicked');
+          }
+          return;
+        }
         if (e.data.type === 'LOAD_SB3' && e.data.url) {
           await loadProjectFile(e.data.url);
         }

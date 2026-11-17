@@ -519,17 +519,6 @@ export default function ScratchTask({
       <div className="scratch-task-editor-pane">
         <div className="scratch-task-toolbar">
           <div className="scratch-task-toolbar-left">
-            {onBackToCourses && (
-              <button
-                type="button"
-                className="scratch-task-btn-tool back"
-                onClick={onBackToCourses}
-                title="Quay lại khóa học (Dashboard)"
-              >
-                ← Back to Course
-              </button>
-            )}
-
             <div
               className="scratch-task-menu-item"
               onClick={(e) => {

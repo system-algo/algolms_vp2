@@ -39,116 +39,254 @@ function getUserId() {
   );
 }
 
-const QUIZ_QUESTIONS = {
-  1: {
-    prompt: 'Which script will help the MarsBot get to the x?',
-    gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
-    options: [
-      {
-        id: 1,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
-        label: 'Script Option 1'
-      },
-      {
-        id: 2,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
-        label: 'Script Option 2'
-      },
-      {
-        id: 3,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
-        label: 'Script Option 3'
-      },
-      {
-        id: 4,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
-        label: 'Script Option 4'
-      }
-    ],
-    correctOptionId: 3
+const QUIZ_CONFIG_BY_PAGE = {
+  // Lesson 1 Task 4: MarsBot Navigation Quiz
+  VP2_M1L1_4: {
+    1: {
+      prompt: 'Which script will help the MarsBot get to the x?',
+      bannerBg: '#cf5228',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
+          label: 'Script Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
+          label: 'Script Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
+          label: 'Script Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
+          label: 'Script Option 4'
+        }
+      ],
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! MarsBot reached the target successfully.',
+      feedbackIncorrect: 'Not quite right. Check the turns and moves again!'
+    },
+    2: {
+      prompt: 'Which script will help the MarsBot get to the x?',
+      bannerBg: '#cf5228',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
+          label: 'Script Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
+          label: 'Script Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
+          label: 'Script Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
+          label: 'Script Option 4'
+        }
+      ],
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! MarsBot reached the target successfully.',
+      feedbackIncorrect: 'Not quite right. Check the turns and moves again!'
+    },
+    3: {
+      prompt: 'Which script will help the MarsBot get to the x?',
+      bannerBg: '#cf5228',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
+          label: 'Script Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
+          label: 'Script Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
+          label: 'Script Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
+          label: 'Script Option 4'
+        }
+      ],
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! MarsBot reached the target successfully.',
+      feedbackIncorrect: 'Not quite right. Check the turns and moves again!'
+    },
+    4: {
+      prompt: 'Which script will help the MarsBot get to the x?',
+      bannerBg: '#cf5228',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
+          label: 'Script Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
+          label: 'Script Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
+          label: 'Script Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
+          label: 'Script Option 4'
+        }
+      ],
+      correctOptionId: 3,
+      feedbackCorrect: 'Correct! MarsBot reached the target successfully.',
+      feedbackIncorrect: 'Not quite right. Check the turns and moves again!'
+    }
   },
-  2: {
-    prompt: 'Which script will help the MarsBot get to the x?',
-    gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
-    options: [
-      {
-        id: 1,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
-        label: 'Script Option 1'
-      },
-      {
-        id: 2,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
-        label: 'Script Option 2'
-      },
-      {
-        id: 3,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
-        label: 'Script Option 3'
-      },
-      {
-        id: 4,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
-        label: 'Script Option 4'
-      }
-    ],
-    correctOptionId: 3
-  },
-  3: {
-    prompt: 'Which script will help the MarsBot get to the x?',
-    gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
-    options: [
-      {
-        id: 1,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
-        label: 'Script Option 1'
-      },
-      {
-        id: 2,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
-        label: 'Script Option 2'
-      },
-      {
-        id: 3,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
-        label: 'Script Option 3'
-      },
-      {
-        id: 4,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
-        label: 'Script Option 4'
-      }
-    ],
-    correctOptionId: 3
-  },
-  4: {
-    prompt: 'Which script will help the MarsBot get to the x?',
-    gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/grid_question_1.png',
-    options: [
-      {
-        id: 1,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_1.png',
-        label: 'Script Option 1'
-      },
-      {
-        id: 2,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_2.png',
-        label: 'Script Option 2'
-      },
-      {
-        id: 3,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_3.png',
-        label: 'Script Option 3'
-      },
-      {
-        id: 4,
-        scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L1_4/images/script_option_4.png',
-        label: 'Script Option 4'
-      }
-    ],
-    correctOptionId: 3
+
+  // Lesson 2 Task 4: Test yourself. Loops (Robot Construction Quiz)
+  VP2_M1L2_4: {
+    2: {
+      prompt: 'The robot is building in the picture.\nWhich program is it running?',
+      bannerBg: '#ffffff',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png',
+          label: 'repeat 3 [factory, move forward], move forward, wind generator'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png',
+          label: 'repeat 3 [move forward, factory], move forward, wind generator'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png',
+          label: 'repeat 3 [move forward, factory], wind generator'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png',
+          label: 'repeat 4 [move forward, factory], wind generator'
+        }
+      ],
+      correctOptionId: 2,
+      feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
+      feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
+    },
+    3: {
+      prompt: 'The robot is building in the picture.\nWhich program is it running?',
+      bannerBg: '#ffffff',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png',
+          label: 'Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png',
+          label: 'Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png',
+          label: 'Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png',
+          label: 'Option 4'
+        }
+      ],
+      correctOptionId: 2,
+      feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
+      feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
+    },
+    4: {
+      prompt: 'The robot is building in the picture.\nWhich program is it running?',
+      bannerBg: '#ffffff',
+      gridImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/grid_question_1.png',
+      options: [
+        {
+          id: 1,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_1.png',
+          label: 'Option 1'
+        },
+        {
+          id: 2,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_2.png',
+          label: 'Option 2'
+        },
+        {
+          id: 3,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_3.png',
+          label: 'Option 3'
+        },
+        {
+          id: 4,
+          scriptImage: '/courses/VP2/M1-Visual-Programming-Basics/pages/VP2_M1L2_4/images/script_option_4.png',
+          label: 'Option 4'
+        }
+      ],
+      correctOptionId: 2,
+      feedbackCorrect: 'Correct! The robot follows this program to build 3 factories and 1 wind generator.',
+      feedbackIncorrect: 'Not quite right. Trace the repeat block and check what the robot builds first and last!'
+    }
   }
 };
+
+function resolveQuestionData(task, taskIndex) {
+  // 1. Task object directly has custom quiz configuration
+  if (task?.marsbotQuiz || task?.quizData || task?.quiz) {
+    return task.marsbotQuiz || task.quizData || task.quiz;
+  }
+
+  // 2. Identify pageId & questionNum
+  const taskId = String(task?.id || task?.taskId || '');
+  const urlParams = new URLSearchParams(window.location.search);
+  const rawPageId = String(
+    urlParams.get('page') ||
+    task?.pageId ||
+    (taskId.includes('_') ? taskId.substring(0, taskId.lastIndexOf('_')) : '') ||
+    'VP2_M1L1_4'
+  );
+  const normPageId = rawPageId.toUpperCase().replace(/^VP_/, 'VP2_');
+
+  const match = taskId.match(/_(\d+)$/);
+  const questionNum = match ? parseInt(match[1], 10) : Number(task?.position || (taskIndex + 1));
+
+  const pageQuestions = QUIZ_CONFIG_BY_PAGE[normPageId] || QUIZ_CONFIG_BY_PAGE['VP2_M1L1_4'];
+  return (
+    pageQuestions[questionNum] ||
+    pageQuestions[2] ||
+    pageQuestions[1] ||
+    Object.values(pageQuestions)[0]
+  );
+}
 
 export default function MarsBotQuizTask(props) {
   const { task, completedTaskIds = [], onTaskCompleted, onNextTask, tasks = [], taskIndex = 0 } = props;
@@ -160,8 +298,8 @@ export default function MarsBotQuizTask(props) {
     return Number(task?.position || task?.level_position || (taskIndex + 1));
   })();
 
-  const currentTaskId = String(task?.id || task?.taskId || `VP2_M1L1_4_${questionNum}`);
-  const questionData = QUIZ_QUESTIONS[questionNum] || QUIZ_QUESTIONS[1];
+  const currentTaskId = String(task?.id || task?.taskId || `VP2_M1L2_4_${questionNum}`);
+  const questionData = resolveQuestionData(task, taskIndex);
 
   const isAlreadyCompleted =
     completedTaskIds.includes(currentTaskId) ||
@@ -174,7 +312,9 @@ export default function MarsBotQuizTask(props) {
     isAlreadyCompleted ? 'correct' : null
   ); // 'correct' | 'incorrect' | null
   const [feedbackText, setFeedbackText] = useState(() =>
-    isAlreadyCompleted ? 'Correct! MarsBot reached the target successfully.' : ''
+    isAlreadyCompleted
+      ? (questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.')
+      : ''
   );
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -187,13 +327,13 @@ export default function MarsBotQuizTask(props) {
     if (isDone) {
       setSelectedOption(questionData.correctOptionId);
       setSubmissionStatus('correct');
-      setFeedbackText('Correct! MarsBot reached the target successfully.');
+      setFeedbackText(questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.');
     } else {
       setSelectedOption(null);
       setSubmissionStatus(null);
       setFeedbackText('');
     }
-  }, [currentTaskId, completedTaskIds, questionNum]);
+  }, [currentTaskId, completedTaskIds, questionNum, questionData]);
 
   const handleSelectOption = (optionId) => {
     if (isSubmitting) return;
@@ -209,6 +349,9 @@ export default function MarsBotQuizTask(props) {
     setSelectedOption(null);
     setSubmissionStatus(null);
     setFeedbackText('');
+    try {
+      localStorage.removeItem(`marsbot_completed_${currentTaskId}`);
+    } catch {}
   };
 
   // Nộp bài & Chấm điểm qua Backend /api/activity-attempts (chuẩn LMS Algorithmics)
@@ -218,7 +361,7 @@ export default function MarsBotQuizTask(props) {
     const urlParams = new URLSearchParams(window.location.search);
     const courseId = urlParams.get('course') || 'VP2';
     const lessonId = urlParams.get('lesson') || 'M1-Visual-Programming-Basics';
-    const pageId = urlParams.get('page') || 'VP2_M1L1_4';
+    const pageId = urlParams.get('page') || task?.pageId || 'VP2_M1L2_4';
 
     const payload = {
       sessionId: getSessionId(),
@@ -236,8 +379,8 @@ export default function MarsBotQuizTask(props) {
 
     let isCorrect = chosenOptionId === questionData.correctOptionId;
     let feedback = isCorrect
-      ? 'Correct! MarsBot reached the target successfully.'
-      : 'Not quite right. Check the turns and moves again!';
+      ? (questionData.feedbackCorrect || 'Correct! MarsBot reached the target successfully.')
+      : (questionData.feedbackIncorrect || 'Not quite right. Check the turns and moves again!');
 
     const backendUrl = getBackendUrl();
     const endpoint = `${backendUrl}/api/activity-attempts`;
@@ -253,7 +396,7 @@ export default function MarsBotQuizTask(props) {
         headers.Authorization = `Bearer ${accessToken}`;
       }
 
-      // Gọi endpoint /api/activity-attempts của backend (GeneratedPageShell tự động theo dõi qua trackedFetch)
+      // Gọi endpoint /api/activity-attempts của backend
       const res = await fetch(endpoint, {
         method: 'POST',
         headers,
@@ -332,10 +475,13 @@ export default function MarsBotQuizTask(props) {
       <div className="marsbot-quiz-container">
         {/* Left Card: Question Banner, Prompt & Actions */}
         <div className="marsbot-question-card">
-          <div className="marsbot-banner">
+          <div
+            className="marsbot-banner"
+            style={{ background: questionData.bannerBg || '#ffffff' }}
+          >
             <img
               src={questionData.gridImage}
-              alt="MarsBot Grid"
+              alt="Quiz Grid"
             />
           </div>
 

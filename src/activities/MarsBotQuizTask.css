@@ -31,18 +31,20 @@
 }
 
 .marsbot-banner {
-  background: #cf5228;
-  height: 150px;
+  background: #ffffff;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .marsbot-banner img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -54,11 +56,12 @@
 }
 
 .marsbot-prompt {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #1e293b;
   line-height: 1.45;
   margin: 0;
+  white-space: pre-line;
 }
 
 .marsbot-feedback {
@@ -234,8 +237,10 @@
 }
 
 .marsbot-script-wrapper img {
-  width: 140px;
-  height: 155px;
+  max-width: 160px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   pointer-events: none;
 }

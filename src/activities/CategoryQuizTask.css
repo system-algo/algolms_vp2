@@ -1,0 +1,169 @@
+/* LMS quiz3 category (sorting) layout — builds on ImageChoiceQuizTask.css */
+
+.cq-layout {
+  width: min(1526px, calc(100vw - 140px));
+}
+
+.cq-layout .icq-left {
+  flex-basis: 346px;
+  width: 346px;
+}
+
+.cq-side-card {
+  padding-top: 12px;
+}
+
+.cq-title {
+  padding: 10px 22px 12px;
+}
+
+.cq-description {
+  margin: 0;
+  padding: 0 22px 22px;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-line;
+}
+
+.cq-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cq-pool {
+  min-height: 355px;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 24px;
+  transition: box-shadow 0.15s ease;
+}
+
+.cq-pool.is-over,
+.cq-category.is-over {
+  box-shadow: inset 0 0 0 4px #81edfc;
+}
+
+.cq-categories {
+  display: grid;
+  grid-template-columns: repeat(var(--cq-cols, 3), minmax(0, 1fr));
+  gap: 24px;
+}
+
+.cq-category {
+  min-height: 355px;
+  box-sizing: border-box;
+  padding: 16px 16px 24px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.15s ease;
+}
+
+.cq-category.is-target {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px #dcd0f5;
+}
+
+.cq-category-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #0f1c2c;
+}
+
+.cq-category-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cq-category-items .cq-card {
+  flex: none;
+  width: 100%;
+}
+
+/* cards */
+
+.cq-card {
+  flex: 1 1 180px;
+  width: 354px;
+  max-width: 354px;
+  height: 120px;
+  padding: 0;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background: #f1f3f6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: grab;
+  font-family: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.cq-card:active {
+  cursor: grabbing;
+}
+
+.cq-card:disabled {
+  cursor: default;
+}
+
+.cq-card.is-picked {
+  border-color: #81edfc;
+  transform: translateY(-2px);
+}
+
+.cq-card.is-correct {
+  border-color: #3ad15b;
+}
+
+.cq-card.is-wrong {
+  border-color: #ff6b6b;
+}
+
+.cq-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cq-card.is-text {
+  height: auto;
+  min-height: 56px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0f1c2c;
+}
+
+@media (max-width: 900px) {
+  .cq-layout .icq-left {
+    width: 100%;
+  }
+
+  .cq-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .cq-pool,
+  .cq-category {
+    min-height: 160px;
+  }
+}

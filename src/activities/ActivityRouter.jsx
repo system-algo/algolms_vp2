@@ -24,6 +24,7 @@ import ScratchInterfaceLabelTask from './ScratchInterfaceLabelTask.jsx';
 import CoordinateInputTask from './CoordinateInputTask.jsx';
 import CoordinateDragDropTask from './CoordinateDragDropTask.jsx';
 import ImageChoiceQuizTask from './ImageChoiceQuizTask.jsx';
+import CategoryQuizTask from './CategoryQuizTask.jsx';
 
 function normalizeText(value) {
   return String(value || '')
@@ -541,6 +542,8 @@ function normalizeRendererType(value) {
     block_programming: 'block-game-task',
     'image-choice-quiz-task': 'image-choice-quiz-task',
     image_choice_quiz_task: 'image-choice-quiz-task',
+    'category-quiz-task': 'category-quiz-task',
+    category_quiz_task: 'category-quiz-task',
     'marsbot-quiz': 'marsbot-quiz',
     marsbot_quiz: 'marsbot-quiz',
     marsbot: 'marsbot-quiz',
@@ -722,6 +725,14 @@ function resolveRendererType(props) {
     task?.imageChoiceQuizTask
   ) {
     return 'image-choice-quiz-task';
+  }
+
+  if (
+    task?.activityType === 'category-quiz-task' ||
+    task?.selectedType === 'category-quiz-task' ||
+    task?.categoryQuizTask
+  ) {
+    return 'category-quiz-task';
   }
 
   if (
@@ -1132,6 +1143,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'image-choice-quiz-task') {
     return <ImageChoiceQuizTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (rendererType === 'category-quiz-task') {
+    return <CategoryQuizTask {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'block-game-task') {

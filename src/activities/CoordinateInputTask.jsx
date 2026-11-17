@@ -3,6 +3,42 @@ import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress';
 import './CoordinateInputTask.css';
 
+function getBackendUrl() {
+  return String(
+    sessionStorage.getItem('lms_backend_url') ||
+    localStorage.getItem('lms_backend_url') ||
+    import.meta.env.VITE_API_BASE_URL ||
+    import.meta.env.VITE_API_URL ||
+    'https://algo-lms-backend.onrender.com'
+  ).replace(/\/+$/, '');
+}
+
+function getSessionId() {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('sessionId') || params.get('session');
+  if (query) return query;
+  const studentEmail =
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email');
+  if (studentEmail) return `user:${studentEmail.trim().toLowerCase()}`;
+  return (
+    sessionStorage.getItem('lms-session-id') ||
+    localStorage.getItem('lms-session-id') ||
+    'session-coord'
+  );
+}
+
+function getUserId() {
+  const params = new URLSearchParams(window.location.search);
+  return (
+    params.get('userId') ||
+    params.get('studentEmail') ||
+    sessionStorage.getItem('lms_student_email') ||
+    localStorage.getItem('lms_student_email') ||
+    'student@algo.edu.vn'
+  );
+}
+
 const ITEMS = [
   {
     id: 'emerald',
@@ -93,7 +129,7 @@ export default function CoordinateInputTask({
     setStatus('');
   };
 
-  const handleCheck = () => {
+  const handleCheck = async () => {
     const nextStatuses = {};
     let allCorrect = true;
 
@@ -114,6 +150,56 @@ export default function CoordinateInputTask({
 
     setFieldStatuses(nextStatuses);
 
+    // Nộp attempt lên backend qua /api/activity-attempts (chuẩn LMS Algorithmics)
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseId = urlParams.get('course') || task?.courseId || 'VP2';
+    const lessonId = urlParams.get('lesson') || task?.lessonId || 'M2-Control-Structures';
+    const pageId = urlParams.get('page') || task?.pageId || 'VP2_M2L1_4';
+
+    const payload = {
+      sessionId: getSessionId(),
+      userId: getUserId(),
+      courseId,
+      lessonId,
+      pageId,
+      taskId,
+      activityType: 'coordinate-input-task',
+      answer: {
+        values: {
+          emerald_x: values.emerald?.x,
+          emerald_y: values.emerald?.y,
+          chest_x: values.chest?.x,
+          chest_y: values.chest?.y,
+          crystal_x: values.crystal?.x,
+          crystal_y: values.crystal?.y,
+        },
+      },
+      isCorrect: allCorrect,
+      score: allCorrect ? 1 : 0,
+      maxScore: 1,
+    };
+
+    const backendUrl = getBackendUrl();
+    const endpoint = `${backendUrl}/api/activity-attempts`;
+
+    try {
+      const accessToken =
+        sessionStorage.getItem('lms_access_token') ||
+        localStorage.getItem('lms_access_token');
+      const headers = { 'Content-Type': 'application/json' };
+      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      }).catch((err) => {
+        console.warn('[CoordinateInputTask] backend attempt error:', err);
+      });
+    } catch (err) {
+      console.warn('[CoordinateInputTask] attempt send error:', err);
+    }
+
     if (allCorrect) {
       setStatus('correct');
       try {
@@ -121,9 +207,9 @@ export default function CoordinateInputTask({
       } catch {}
 
       saveTaskCompletionToSupabase({
-        courseId: 'VP2',
-        lessonId: 'M2-Control-Structures',
-        pageId: 'VP2_M2L1_4',
+        courseId,
+        lessonId,
+        pageId,
         taskId,
         isCompleted: true,
       });
@@ -133,6 +219,7 @@ export default function CoordinateInputTask({
       } catch {}
 
       onTaskCompleted?.({
+        taskId,
         completionType: 'correct',
         isCorrect: true,
         score: 1,

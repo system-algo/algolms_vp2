@@ -204,7 +204,6 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}
           </button>
           <p>{level.hint}</p>{robot.variables&&<p aria-live="polite">{Object.entries(robot.variables).map(([name,value])=>`${name} = ${value}`).join(' · ')}{level.mode==='minerals'&&` · Minerals collected: ${robot.collected}${level.targetMinerals?` / ${level.targetMinerals}`:''}`}</p>}{level.cargo && <p className="excursion-cargo-count" aria-live="polite">{level.collectOnly ? 'Boxes collected' : 'Boxes delivered'}: {robot.delivered} / {level.cargo.length}{robot.carrying ? " · Carrying one box" : ""}</p>}
-          <button className="excursion-guide-link" type="button" onClick={() => setGuide('intro')}>Show instructions</button>
         </div>
       </div>
       {(guide || status === 'completed' || status === 'failed') && (

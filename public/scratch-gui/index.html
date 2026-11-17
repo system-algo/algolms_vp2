@@ -22,45 +22,93 @@
         const style = document.createElement('style');
         style.textContent = `
           html.is-player-only, html.is-player-only body {
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            overflow: hidden !important;
-            background: #f8fafc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          html.is-player-only div[class*="stage-wrapper_stage-wrapper"] {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            justify-content: center !important;
-            margin: 0 auto !important;
             width: 100% !important;
             height: 100% !important;
-            max-width: 100vw !important;
-            max-height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            background: #ffffff !important;
+            display: block !important;
           }
-          html.is-player-only div[class*="stage_stage_"] {
-            max-width: 100% !important;
-            max-height: 100vh !important;
-            object-fit: contain;
-          }
-          html.is-player-only canvas {
-            max-width: 100% !important;
-            max-height: 100vh !important;
-          }
-          /* The parent demo card owns the Run/Stop buttons, not the Scratch iframe. */
-          html.is-player-only div[class*="controls_controls-container_"],
-          html.is-player-only div[class*="stage-header_stage-size-toggle-group"],
-          html.is-player-only div[class*="alerts-container"] {
+
+          /* The Scratch GUI remains mounted so its VM and renderer work; show ONLY its stage. */
+          html.is-player-only [class*="gui_menu-bar-position_"],
+          html.is-player-only [class*="gui_editor-wrapper_"],
+          html.is-player-only [class*="gui_target-wrapper_"],
+          html.is-player-only [class*="stage-wrapper_stage-menu-wrapper_"],
+          html.is-player-only [class*="stage-header_stage-menu-wrapper_"],
+          html.is-player-only [class*="backpack_backpack-container_"],
+          html.is-player-only [class*="alerts-container"] {
             display: none !important;
+          }
+
+          html.is-player-only [class*="gui_page-wrapper_"],
+          html.is-player-only [class*="gui_body-wrapper_"],
+          html.is-player-only [class*="gui_flex-wrapper_"],
+          html.is-player-only [class*="gui_stage-and-target-wrapper_"],
+          html.is-player-only [class*="stage-wrapper_stage-wrapper_"],
+          html.is-player-only [class*="stage-wrapper_stage-canvas-wrapper_"] {
+            box-sizing: border-box !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-width: 0 !important;
+            max-width: none !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: 0 !important;
+            overflow: visible !important;
+            flex: none !important;
+          }
+          html.is-player-only [class*="gui_page-wrapper_"] {
+            position: fixed !important;
+            inset: 0 !important;
+          }
+          html.is-player-only [class*="gui_body-wrapper_"],
+          html.is-player-only [class*="gui_flex-wrapper_"],
+          html.is-player-only [class*="gui_stage-and-target-wrapper_"],
+          html.is-player-only [class*="stage-wrapper_stage-wrapper_"] {
+            position: absolute !important;
+            inset: 0 !important;
+            display: block !important;
+          }
+
+          /* Scale the stage and overlays AS A UNIT; sprites and speech bubbles stay aligned. */
+          html.is-player-only [class*="stage_stage-wrapper_"] {
+            position: fixed !important;
+            top: 50% !important;
+            left: 50% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            transform-origin: center center !important;
+            z-index: 10 !important;
+          }
+          html.is-player-only [class*="stage_stage_"],
+          html.is-player-only [class*="stage_stage-wrapper_"] canvas {
+            max-width: none !important;
+            max-height: none !important;
           }
         `;
         document.head.appendChild(style);
-      } else {
+
+        const fitDemoStage = () => {
+          const stageWrapper = document.querySelector('[class*="stage_stage-wrapper_"]');
+          const stage = stageWrapper?.querySelector('[class*="stage_stage_"]');
+          if (!stage || !stageWrapper) return false;
+          // Offset dimensions are untransformed, so fitting remains stable on every resize.
+          const w = stage.offsetWidth || 480;
+          const h = stage.offsetHeight || 360;
+          const scale = Math.min(window.innerWidth / w, window.innerHeight / h);
+          if (!Number.isFinite(scale) || scale <= 0) return false;
+          stageWrapper.style.setProperty('transform', `translate(-50%, -50%) scale(${scale})`, 'important');
+          return true;
+        };
+        // GUI and the SB3 are initialized asynchronously. Refit after both mount.
+        const fitTimer = setInterval(fitDemoStage, 250);
+        setTimeout(() => clearInterval(fitTimer), 15000);
+        window.addEventListener('resize', fitDemoStage);
+            } else {
         const editorStyle = document.createElement('style');
         editorStyle.textContent = `
           /* Hide standard Scratch GUI blue top bar (match Algo LMS Image 5) */
@@ -898,7 +946,8 @@
             setTimeout(() => applyProjectTitle(finalTitle), 200);
             setTimeout(() => applyProjectTitle(finalTitle), 800);
             if (isPlayerOnly) {
-              // Signal the parent only after the correct demo SB3 is in the VM.
+              // Never signal readiness before the SB3 has completed loading.
+              window.__algoDemoLoaded = true;
               window.parent.postMessage({ type: 'SCRATCH_DEMO_READY' }, window.location.origin);
             }
             return true;
@@ -1163,19 +1212,24 @@
       // Listen for parent LMS postMessage
       window.addEventListener('message', async (e) => {
         if (!e.data) return;
-        if (isPlayerOnly &&
-            e.source === window.parent &&
-            e.origin === window.location.origin &&
-            (e.data.type === 'SCRATCH_DEMO_RUN' || e.data.type === 'SCRATCH_DEMO_STOP')) {
-          const demoVm = window.vm || window.__scratchProjectLoader?.props?.vm;
-          if (!demoVm) return;
-          if (e.data.type === 'SCRATCH_DEMO_STOP') {
-            if (typeof demoVm.stopAll === 'function') demoVm.stopAll();
-          } else {
-            if (typeof demoVm.greenFlag === 'function') demoVm.greenFlag();
-            else demoVm.runtime?.startHats?.('event_whenflagclicked');
+        if (isPlayerOnly && e.source === window.parent && e.origin === window.location.origin) {
+          if (e.data.type === 'SCRATCH_DEMO_PING') {
+            if (window.__algoDemoLoaded) {
+              window.parent.postMessage({ type: 'SCRATCH_DEMO_READY' }, window.location.origin);
+            }
+            return;
           }
-          return;
+          if (e.data.type === 'SCRATCH_DEMO_RUN' || e.data.type === 'SCRATCH_DEMO_STOP') {
+            const demoVm = window.vm || window.__scratchProjectLoader?.props?.vm;
+            if (!window.__algoDemoLoaded || !demoVm) return;
+            if (e.data.type === 'SCRATCH_DEMO_STOP') {
+              if (typeof demoVm.stopAll === 'function') demoVm.stopAll();
+            } else {
+              if (typeof demoVm.greenFlag === 'function') demoVm.greenFlag();
+              else demoVm.runtime?.startHats?.('event_whenflagclicked');
+            }
+            return;
+          }
         }
         if (e.data.type === 'LOAD_SB3' && e.data.url) {
           await loadProjectFile(e.data.url);

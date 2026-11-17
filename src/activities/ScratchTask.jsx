@@ -55,7 +55,9 @@ export default function ScratchTask({
   // Drawer open/collapse state
   const iframeRef = useRef(null);
   const demoIframeRef = useRef(null);
+  const demoPlayerRef = useRef(null);
   const [demoReady, setDemoReady] = useState(false);
+  const [demoFullscreen, setDemoFullscreen] = useState(false);
   const containerRef = useRef(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(
     task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
@@ -281,6 +283,36 @@ export default function ScratchTask({
     window.addEventListener('message', onDemoMessage);
     return () => window.removeEventListener('message', onDemoMessage);
   }, []);
+
+  // Reload-safe handshake: late React listeners and iframe loads cannot lose READY.
+  useEffect(() => {
+    if (!demoProjectId || !isPresentationOpen || demoReady) return;
+    const ping = () => demoIframeRef.current?.contentWindow?.postMessage(
+      { type: 'SCRATCH_DEMO_PING' },
+      window.location.origin
+    );
+    ping();
+    const timer = window.setInterval(ping, 300);
+    return () => window.clearInterval(timer);
+  }, [demoProjectId, levelPosition, isPresentationOpen, demoReady]);
+
+  useEffect(() => {
+    const onFullscreenChange = () => setDemoFullscreen(document.fullscreenElement === demoPlayerRef.current);
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', onFullscreenChange);
+  }, []);
+
+  const toggleDemoFullscreen = async () => {
+    try {
+      if (document.fullscreenElement === demoPlayerRef.current) {
+        await document.exitFullscreen();
+      } else if (demoPlayerRef.current?.requestFullscreen) {
+        await demoPlayerRef.current.requestFullscreen();
+      }
+    } catch (error) {
+      console.warn('[Scratch Demo] Fullscreen unavailable:', error);
+    }
+  };
 
   const controlDemo = (type) => {
     if (!demoReady) return;
@@ -758,7 +790,7 @@ export default function ScratchTask({
                   <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
                 </button>
                 {isPresentationOpen && (
-                  <div className="scratch-task-demo-player-box">
+                  <div className="scratch-task-demo-player-box" ref={demoPlayerRef}>
                     <div className="scratch-task-demo-controls" role="group" aria-label="Scratch demo controls">
                       <button
                         type="button"
@@ -784,6 +816,21 @@ export default function ScratchTask({
                           <path fill="#f08080" d="M8 2h8l6 6v8l-6 6H8l-6-6V8z"/>
                         </svg>
                       </button>
+                      <button
+                        type="button"
+                        className="scratch-task-demo-control scratch-task-demo-expand"
+                        title={demoFullscreen ? 'Exit fullscreen' : 'Expand demo'}
+                        aria-label={demoFullscreen ? 'Exit fullscreen' : 'Expand demo'}
+                        onClick={toggleDemoFullscreen}
+                      >
+                        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#64748b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          {demoFullscreen ? (
+                            <><path d="M9 3v6H3M15 21v-6h6M3 9l6-6M21 15l-6 6"/></>
+                          ) : (
+                            <><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></>
+                          )}
+                        </svg>
+                      </button>
                     </div>
                     <div className="scratch-task-demo-iframe-container">
                       <iframe
@@ -792,7 +839,6 @@ export default function ScratchTask({
                         src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
                         className="scratch-task-demo-iframe"
                         title="Scratch Demo Preview"
-                        onLoad={() => setDemoReady(false)}
                         allow="autoplay"
                       />
                     </div>

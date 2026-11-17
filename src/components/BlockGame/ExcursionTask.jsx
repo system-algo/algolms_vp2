@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
-import { BLOCK_TYPES, createBlockInstance, countCommands } from './BlockWorkspace/blockDefinitions.js';
+import { BLOCK_TYPES, createBlockInstance, countCommands, isWithinCommandLimit } from './BlockWorkspace/blockDefinitions.js';
 import { referenceProgram } from './GameEngine/referenceProgram.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
 import { stepExcursion, initialExcursionRobot, isExcursionComplete } from './GameEngine/excursionSimulation.js';
@@ -147,7 +147,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
 
   function run() {
     reset();
-    if (level.maxCommands && countCommands(blocks) > level.maxCommands) { setStatus('failed'); setMessage(`Use no more than ${level.maxCommands} commands.`); return; }
+    if (!isWithinCommandLimit(blocks, level.maxCommands)) { setStatus('failed'); setMessage(`Commands used: ${countCommands(blocks)} out of ${level.maxCommands}. Reduce the number of blocks to complete this task.`); return; }
     let steps;
     let iterator;
     try { steps = level.dynamic ? [] : compileProgram(blocks); }

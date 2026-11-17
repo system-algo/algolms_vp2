@@ -259,17 +259,30 @@ export function createBlockInstance(type, customParams = {}) {
   return instance;
 }
 
+// Dropdown fields are part of their command; attached expression blocks count
+// once each, including every nested logical operator and sensor.
+export function countExpression(value) {
+  if (!value || typeof value !== 'object' || !value.kind) return 0;
+  return 1 + countExpression(value.a) + countExpression(value.b);
+}
+
 export function countCommands(blocks = []) {
-  let count = 0;
-  for (const block of blocks) {
-    if (![BLOCK_TYPES.START_HAT,'branch_if','branch_else'].includes(block.type)) {
-      count += 1;
+  return blocks.reduce((count, block) => {
+    const structural = [BLOCK_TYPES.START_HAT, 'branch_if', 'branch_else'].includes(block.type);
+    let own = structural ? 0 : 1;
+    if (REPORTERS[block.type]) {
+      // The outer reporter is already included in own.
+      const expression = block.params?.expression ?? REPORTERS[block.type].value;
+      own += Math.max(0, countExpression(expression) - 1);
+    } else {
+      own += countExpression(block.params?.condition) + countExpression(block.params?.value);
     }
-    if (Array.isArray(block.children)) {
-      count += countCommands(block.children);
-    }
-  }
-  return count;
+    return count + own + countCommands(block.children || []);
+  }, 0);
+}
+
+export function isWithinCommandLimit(blocks, maxCommands) {
+  return maxCommands == null || countCommands(blocks) <= maxCommands;
 }
 
 Object.assign(BLOCK_TYPES, { BUILD_FACTORY: 'build_factory', BUILD_GREENHOUSE: 'build_greenhouse', BUILD_WINDMILL: 'build_windmill' });

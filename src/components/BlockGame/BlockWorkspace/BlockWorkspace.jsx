@@ -383,7 +383,7 @@ export default function BlockWorkspace({
   }, [draggingBlock, blocks, onChangeBlocks]);
 
   const commandCount = countCommands(blocks);
-  const isLimitReached = maxCommands !== null && commandCount >= maxCommands;
+  const isLimitReached = maxCommands !== null && commandCount > maxCommands;
 
   return (
     <div className="block-editor-container">
@@ -424,7 +424,7 @@ export default function BlockWorkspace({
       <div className="block-workspace" ref={workspaceRef}>
         <div className={`workspace-stats ${isLimitReached ? 'limit-reached' : ''}`}>
           commands used: {commandCount}
-          {maxCommands !== null ? ` / ${maxCommands}` : ''}
+          {maxCommands !== null ? ` out of ${maxCommands}` : ''}
         </div>
 
         <div className="workspace-block-canvas">

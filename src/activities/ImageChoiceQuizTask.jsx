@@ -123,8 +123,10 @@ export default function ImageChoiceQuizTask({
 
   const isLocked = status === 'correct' || status === 'failed';
   const isImageGrid = config.options.some((option) => option.image);
-  // LMS: 4 image answers -> 2 columns, 6 (or 9) image answers -> 3 columns
-  const gridCols = isImageGrid && config.options.length >= 6 && config.options.length % 3 === 0 ? 3 : 2;
+  // LMS: 2 image answers -> 1 column, 4 -> 2 columns, 6 (or 9) -> 3 columns
+  let gridCols = 2;
+  if (config.options.length <= 2) gridCols = 1;
+  else if (config.options.length >= 6 && config.options.length % 3 === 0) gridCols = 3;
 
   const toggleOption = (optionId) => {
     if (isLocked) return;

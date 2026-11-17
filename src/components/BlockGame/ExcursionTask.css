@@ -50,3 +50,7 @@
 .retro-conveyor { display:flex; justify-content:center; gap:12px; align-items:flex-end; min-height:105px; border-bottom:12px solid #818463; padding:5px; }
 .retro-crystal { position:relative; opacity:.65; }.retro-current{ opacity:1;filter:drop-shadow(0 0 7px #f1d97d); }.retro-crystal b{ position:absolute;top:30px;left:22px;color:#111; }
 .reference-expression { display:inline-flex; align-items:center;gap:4px; }.reference-expression input,.reference-expression select{font:inherit;max-width:110px;}
+
+/* Keep scenery and moving tiles on one canvas, including narrow split panes. */
+.excursion-scenery-world{overflow:hidden}
+.excursion-forest .excursion-scenery-board{width:min(100%,400px);max-width:400px}

@@ -5,6 +5,7 @@ import { referenceProgram } from './GameEngine/referenceProgram.js';
 import { compileProgram } from './GameEngine/gameInterpreter.js';
 import { stepExcursion, initialExcursionRobot, isExcursionComplete } from './GameEngine/excursionSimulation.js';
 import './ExcursionTask.css';
+import { sceneryPlacement } from './GameEngine/sceneryPlacement.js';
 
 const ASSETS = '/vp-assets/excursion/';
 const COMMANDS = [
@@ -57,8 +58,10 @@ function ReferenceBoard({ level, robot }) {
     {level.buildings.map((b,i) => <image key={i} href={b.image} x={b.x * 51 - 25} y={b.y * 51 - 25} width="100" height="100" opacity={robot.built.includes(i) ? 1 : 0.3} />)}
     <svg x={robot.x * 51 - 25} y={robot.y * 51 - 25} width="100" height="100" viewBox={`${robot.direction / 90 * 100} 0 100 100`} overflow="hidden"><image href="/vp-assets/construction/iron_sprite.png" width="400" height="100" /></svg>
   </svg>;
+  const scenery = level.scenery && sceneryPlacement(level.viewBox, level.scenery);
   return (
-    <svg className="excursion-board" viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
+    <svg className={`excursion-board${scenery ? " excursion-scenery-board" : ""}`} viewBox={level.viewBox || "0 0 400 400"} role="img" aria-label={`${level.cargo ? "Earth" : "Mars"} route, robot at column ${robot.x + 1}, row ${robot.y + 1}`}>
+      {scenery && <image href={level.scenery} {...scenery} aria-hidden="true" />}
       {level.background && <image href={level.background} width="400" height="400" />}
       {level.cells.map((cell, index) => (
         <g key={`${cell.x},${cell.y}`}>
@@ -198,7 +201,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
       </div>
       <div className="excursion-divider" role="separator" aria-label="Resize code and game panels" aria-orientation="vertical" onPointerDown={startResize} />
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
-        <div className="excursion-world" style={level.scenery ? { backgroundImage: `url("${level.scenery}")` } : undefined}><ReferenceBoard level={level} robot={robot} /></div>
+        <div className={`excursion-world${level.scenery ? " excursion-scenery-world" : ""}`}><ReferenceBoard level={level} robot={robot} /></div>
         <div className="excursion-controls">
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}

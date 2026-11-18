@@ -286,6 +286,22 @@
 }
 
 /* Presentation Hint Card at Top (matching real LMS) */
+.scratch-task-starter-link {
+  display: block;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #6c2eb9;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.scratch-task-starter-link:hover,
+.scratch-task-starter-link:focus-visible {
+  text-decoration: underline;
+}
+
 .scratch-task-presentation-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;

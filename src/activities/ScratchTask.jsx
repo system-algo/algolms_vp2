@@ -259,12 +259,17 @@ export default function ScratchTask({
 
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
-  const demoProjectId =
+  const showStarterProject = task?.show_starter_project === true;
+  const starterProjectUrl = showStarterProject && projectId
+    ? `/starter-projects/${encodeURIComponent(projectId)}`
+    : '';
+  const demoProjectId = task?.hide_demo === true ? '' : (
     task?.demo_project_id ||
     task?.demoProjectId ||
     task?.config?.presentation?.projectId ||
     task?.config?.presentation?.project ||
-    (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '');
+    (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '')
+  );
 
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
@@ -767,6 +772,12 @@ export default function ScratchTask({
         {/* Scrollable Drawer Body */}
         <div className="scratch-task-drawer-body">
           <div className="scratch-task-drawer-content">
+            {starterProjectUrl && (
+              <a className="scratch-task-starter-link" href={starterProjectUrl} download>
+                {derivedProjectTitle}
+              </a>
+            )}
+
             {/* Demo stage preview (if demoProjectId exists) */}
             {demoProjectId ? (
               <div className="scratch-task-demo-wrapper">

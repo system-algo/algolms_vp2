@@ -12,13 +12,12 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Add example",
+      "title": "Example",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Add example\".",
       "command_keys": [
         "motion",
         "looks",
@@ -33,25 +32,10 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "18574ac7-a67f-4c6d-a2fb-2b72de194d6f",
+          "title": "Look at the project and restore the scripts to play it.",
           "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Add example\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
+          "url": "https://learn.alg.academy/uploads/2021/08/well%20done.gif"
         }
       ],
       "media": [],
@@ -68,7 +52,6 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Add example\".",
           "command_keys": [
             "motion",
             "looks",
@@ -83,34 +66,32 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "18574ac7-a67f-4c6d-a2fb-2b72de194d6f",
+              "title": "Look at the project and restore the scripts to play it.",
               "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Add example\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
+              "url": "https://learn.alg.academy/uploads/2021/08/well%20done.gif"
             }
           ],
           "media": [],
           "starter_project_id": "M2L6-add_example.sb3",
-          "project_title": "M2L6-add example"
+          "project_title": "M2L6-add example",
+          "show_starter_project": true,
+          "demo_project_id": "",
+          "source_project_id": "10683126",
+          "source_task_id": "26856",
+          "source_level_id": "329790",
+          "source_task_level_id": "199101",
+          "hide_demo": true
         }
       ],
       "project_title": "M2L6-add example",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "show_starter_project": true,
+      "source_project_id": "10683126",
+      "source_task_id": "26856",
+      "source_level_id": "329790",
+      "source_task_level_id": "199101",
+      "hide_demo": true
     }
   ]
 }

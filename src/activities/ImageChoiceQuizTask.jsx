@@ -102,8 +102,15 @@ export default function ImageChoiceQuizTask({
   const [selected, setSelected] = useState([]);
   const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
   const [attemptCount, setAttemptCount] = useState(1);
+  const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
+    setHasUserReset(false);
+  }, [taskId]);
+
+  useEffect(() => {
+    if (hasUserReset) return;
+
     let isAlreadyDone = false;
     try {
       isAlreadyDone =
@@ -119,7 +126,7 @@ export default function ImageChoiceQuizTask({
       setStatus('');
       setAttemptCount(1);
     }
-  }, [taskId, completedTaskIds, config.correctOptionIds]);
+  }, [taskId, completedTaskIds, config.correctOptionIds, hasUserReset]);
 
   const isLocked = status === 'correct' || status === 'failed';
   const isImageGrid = config.options.some((option) => option.image);
@@ -140,9 +147,13 @@ export default function ImageChoiceQuizTask({
   };
 
   const handleReset = () => {
-    if (status === 'correct') return;
+    try {
+      localStorage.removeItem(`task_completed_${taskId}`);
+    } catch {}
+    setHasUserReset(true);
     setSelected([]);
     setStatus('');
+    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -276,7 +287,7 @@ export default function ImageChoiceQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={status === 'correct' || selected.length === 0}
+              disabled={selected.length === 0 && !status}
               aria-label="Reset"
               title="Reset"
             >

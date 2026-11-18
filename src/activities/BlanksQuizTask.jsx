@@ -118,8 +118,15 @@ export default function BlanksQuizTask({
   const [checked, setChecked] = useState({}); // key -> 'is-correct' | 'is-wrong'
   const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
   const [attemptCount, setAttemptCount] = useState(1);
+  const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
+    setHasUserReset(false);
+  }, [taskId]);
+
+  useEffect(() => {
+    if (hasUserReset) return;
+
     let isAlreadyDone = false;
     try {
       isAlreadyDone =
@@ -137,7 +144,7 @@ export default function BlanksQuizTask({
       setStatus('');
       setAttemptCount(1);
     }
-  }, [taskId, completedTaskIds, config, blankKeys]);
+  }, [taskId, completedTaskIds, config, blankKeys, hasUserReset]);
 
   const isLocked = status === 'correct' || status === 'failed';
   const allFilled = blankKeys.every((key) => String(values[key] ?? '').trim() !== '');
@@ -155,10 +162,14 @@ export default function BlanksQuizTask({
   };
 
   const handleReset = () => {
-    if (isLocked) return;
+    try {
+      localStorage.removeItem(`task_completed_${taskId}`);
+    } catch {}
+    setHasUserReset(true);
     setValues({});
     setChecked({});
     setStatus('');
+    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -277,7 +288,7 @@ export default function BlanksQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={isLocked || !anyFilled}
+              disabled={!anyFilled && !status}
               aria-label="Reset"
               title="Reset"
             >

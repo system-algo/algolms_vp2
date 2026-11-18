@@ -109,8 +109,15 @@ export default function CategoryQuizTask({
   const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
   const [checked, setChecked] = useState({}); // itemId -> 'is-correct' | 'is-wrong'
   const [attemptCount, setAttemptCount] = useState(1);
+  const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
+    setHasUserReset(false);
+  }, [taskId]);
+
+  useEffect(() => {
+    if (hasUserReset) return;
+
     let isAlreadyDone = false;
     try {
       isAlreadyDone =
@@ -129,7 +136,7 @@ export default function CategoryQuizTask({
       setAttemptCount(1);
     }
     setPickedId(null);
-  }, [taskId, completedTaskIds, config]);
+  }, [taskId, completedTaskIds, config, hasUserReset]);
 
   const isLocked = status === 'correct' || status === 'failed';
   const allPlaced = config.items.every((item) => placement[item.id] && placement[item.id] !== POOL);
@@ -183,11 +190,15 @@ export default function CategoryQuizTask({
   });
 
   const handleReset = () => {
-    if (status === 'correct') return;
+    try {
+      localStorage.removeItem(`task_completed_${taskId}`);
+    } catch {}
+    setHasUserReset(true);
     setPlacement(emptyPlacement(config.items));
     setChecked({});
     setPickedId(null);
-    if (status !== 'failed') setStatus('');
+    setStatus('');
+    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -335,7 +346,7 @@ export default function CategoryQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={isLocked || !hasPlaced}
+              disabled={!hasPlaced && !status}
               aria-label="Reset"
               title="Reset"
             >

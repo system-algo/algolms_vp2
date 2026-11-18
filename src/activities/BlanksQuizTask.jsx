@@ -17,7 +17,6 @@ import './BlanksQuizTask.css';
  * }
  */
 
-const MAX_ATTEMPTS = 2;
 const TOKEN = /\{\{\s*([\w-]+)\s*\}\}/g;
 
 function getBackendUrl() {
@@ -116,8 +115,7 @@ export default function BlanksQuizTask({
 
   const [values, setValues] = useState({});
   const [checked, setChecked] = useState({}); // key -> 'is-correct' | 'is-wrong'
-  const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
-  const [attemptCount, setAttemptCount] = useState(1);
+  const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
   const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
@@ -142,11 +140,10 @@ export default function BlanksQuizTask({
       setValues({});
       setChecked({});
       setStatus('');
-      setAttemptCount(1);
     }
   }, [taskId, completedTaskIds, config, blankKeys, hasUserReset]);
 
-  const isLocked = status === 'correct' || status === 'failed';
+  const isLocked = status === 'correct';
   const allFilled = blankKeys.every((key) => String(values[key] ?? '').trim() !== '');
   const anyFilled = blankKeys.some((key) => String(values[key] ?? '').trim() !== '');
 
@@ -169,7 +166,6 @@ export default function BlanksQuizTask({
     setValues({});
     setChecked({});
     setStatus('');
-    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -244,14 +240,7 @@ export default function BlanksQuizTask({
       return;
     }
 
-    if (attemptCount >= MAX_ATTEMPTS) {
-      setValues(Object.fromEntries(blankKeys.map((key) => [key, config.answers[key][0]])));
-      setChecked(Object.fromEntries(blankKeys.map((key) => [key, 'is-correct'])));
-      setStatus('failed');
-    } else {
-      setStatus('wrong');
-      setAttemptCount((prev) => prev + 1);
-    }
+    setStatus('wrong');
   };
 
   return (
@@ -277,8 +266,7 @@ export default function BlanksQuizTask({
             {status ? (
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
-                {status === 'wrong' && `Not quite right. Attempt: ${attemptCount}/${MAX_ATTEMPTS}`}
-                {status === 'failed' && 'Here is the correct answer.'}
+                {status === 'wrong' && 'Not quite right.'}
               </div>
             ) : null}
           </article>

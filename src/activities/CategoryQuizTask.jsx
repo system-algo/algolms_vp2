@@ -22,7 +22,6 @@ import './CategoryQuizTask.css';
  * Cards can be dragged, or tapped and then a category tapped (touch friendly).
  */
 
-const MAX_ATTEMPTS = 2;
 const POOL = '__pool__';
 
 function getBackendUrl() {
@@ -106,9 +105,8 @@ export default function CategoryQuizTask({
   const [placement, setPlacement] = useState(() => emptyPlacement(config.items));
   const [pickedId, setPickedId] = useState(null);
   const [dragOver, setDragOver] = useState(null);
-  const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
+  const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
   const [checked, setChecked] = useState({}); // itemId -> 'is-correct' | 'is-wrong'
-  const [attemptCount, setAttemptCount] = useState(1);
   const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
@@ -133,12 +131,11 @@ export default function CategoryQuizTask({
       setPlacement(emptyPlacement(config.items));
       setChecked({});
       setStatus('');
-      setAttemptCount(1);
     }
     setPickedId(null);
   }, [taskId, completedTaskIds, config, hasUserReset]);
 
-  const isLocked = status === 'correct' || status === 'failed';
+  const isLocked = status === 'correct';
   const allPlaced = config.items.every((item) => placement[item.id] && placement[item.id] !== POOL);
   const hasPlaced = config.items.some((item) => placement[item.id] && placement[item.id] !== POOL);
 
@@ -198,7 +195,6 @@ export default function CategoryQuizTask({
     setChecked({});
     setPickedId(null);
     setStatus('');
-    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -273,15 +269,7 @@ export default function CategoryQuizTask({
       return;
     }
 
-    if (attemptCount >= MAX_ATTEMPTS) {
-      // show the right solution
-      setPlacement({ ...emptyPlacement(config.items), ...config.answer });
-      setChecked(Object.fromEntries(config.items.map((item) => [item.id, 'is-correct'])));
-      setStatus('failed');
-    } else {
-      setStatus('wrong');
-      setAttemptCount((prev) => prev + 1);
-    }
+    setStatus('wrong');
   };
 
   const renderCard = (item) => (
@@ -335,8 +323,7 @@ export default function CategoryQuizTask({
             {status ? (
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
-                {status === 'wrong' && `Not quite right. Attempt: ${attemptCount}/${MAX_ATTEMPTS}`}
-                {status === 'failed' && 'Here is the correct solution.'}
+                {status === 'wrong' && 'Not quite right.'}
               </div>
             ) : null}
           </article>

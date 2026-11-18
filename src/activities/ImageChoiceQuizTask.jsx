@@ -18,8 +18,6 @@ import './ImageChoiceQuizTask.css';
  * }
  */
 
-const MAX_ATTEMPTS = 2;
-
 function getBackendUrl() {
   return String(
     sessionStorage.getItem('lms_backend_url') ||
@@ -100,8 +98,7 @@ export default function ImageChoiceQuizTask({
   const config = useMemo(() => getConfig(task), [task]);
 
   const [selected, setSelected] = useState([]);
-  const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'failed'
-  const [attemptCount, setAttemptCount] = useState(1);
+  const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
   const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
@@ -124,11 +121,10 @@ export default function ImageChoiceQuizTask({
     } else {
       setSelected([]);
       setStatus('');
-      setAttemptCount(1);
     }
   }, [taskId, completedTaskIds, config.correctOptionIds, hasUserReset]);
 
-  const isLocked = status === 'correct' || status === 'failed';
+  const isLocked = status === 'correct';
   const isImageGrid = config.options.some((option) => option.image);
   // LMS: 2 image answers -> 1 column, 4 -> 2 columns, 6 (or 9) -> 3 columns
   let gridCols = 2;
@@ -153,7 +149,6 @@ export default function ImageChoiceQuizTask({
     setHasUserReset(true);
     setSelected([]);
     setStatus('');
-    setAttemptCount(1);
   };
 
   const handleAnswer = () => {
@@ -226,19 +221,13 @@ export default function ImageChoiceQuizTask({
       return;
     }
 
-    if (attemptCount >= MAX_ATTEMPTS) {
-      setStatus('failed');
-    } else {
-      setStatus('wrong');
-      setAttemptCount((prev) => prev + 1);
-    }
+    setStatus('wrong');
   };
 
   const getOptionState = (optionId) => {
     const isSelected = selected.includes(optionId);
     if (status === 'correct' && isSelected) return 'is-correct';
-    if (status === 'failed' && config.correctOptionIds.includes(optionId)) return 'is-correct';
-    if ((status === 'wrong' || status === 'failed') && isSelected) return 'is-wrong';
+    if (status === 'wrong' && isSelected) return 'is-wrong';
     if (isSelected) return 'is-selected';
     return '';
   };
@@ -276,8 +265,7 @@ export default function ImageChoiceQuizTask({
             {status ? (
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
-                {status === 'wrong' && `Not quite right. Attempt: ${attemptCount}/${MAX_ATTEMPTS}`}
-                {status === 'failed' && 'The correct answer is highlighted.'}
+                {status === 'wrong' && 'Not quite right.'}
               </div>
             ) : null}
           </article>

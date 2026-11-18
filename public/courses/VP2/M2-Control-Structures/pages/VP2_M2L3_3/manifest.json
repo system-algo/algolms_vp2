@@ -4,7 +4,7 @@
   "title": "Scratch. Turns and rotations",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 6,
+  "taskCount": 7,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -19,12 +19,15 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "Open the door",
+      "project_title": "Open the door",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_Open_the_door.sb3",
+      "demo_project_id": "M2L3_3_Task1_Demo.sb3",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Open the door\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -39,42 +42,52 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
+          "id": "dfa551cf-b02b-416b-a6d3-6ae756be0db5",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "The door must always be closed at startup. Use the Point in direction __ command to set the position of the door.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Open the door\".",
+          "id": "0a831a5f-5cbd-4076-899e-d612df1c9f22",
+          "title": "The door turns",
+          "text": "The door opens when you press the space bar.\nThe \"Rotate clockwise __ degrees\" command will rotate the door relative to itself. Let's put it inside a loop so that it does it multiple times.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/vp-assets/26854/dorr_turns.png",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Open the door",
+          "text": "Help the robots meet! Program the door to open when you press the space bar!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_Open_the_door.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329773",
+      "source_task_level_id": "199086",
+      "source_project_id": "10683052",
+      "source_demo_project_id": "2674668",
       "states": [
         {
           "id": "VP2_M2L3_3_1_state_1",
-          "stateId": "VP2_M2L3_3_1_state_1",
           "position": 1,
           "level_position": 1,
           "levelPosition": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Open the door",
+          "project_title": "Open the door",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_Open_the_door.sb3",
+          "demo_project_id": "M2L3_3_Task1_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Open the door\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -89,34 +102,40 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
+              "id": "dfa551cf-b02b-416b-a6d3-6ae756be0db5",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "The door must always be closed at startup. Use the Point in direction __ command to set the position of the door.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Open the door\".",
+              "id": "0a831a5f-5cbd-4076-899e-d612df1c9f22",
+              "title": "The door turns",
+              "text": "The door opens when you press the space bar.\nThe \"Rotate clockwise __ degrees\" command will rotate the door relative to itself. Let's put it inside a loop so that it does it multiple times.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/vp-assets/26854/dorr_turns.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Open the door",
+              "text": "Help the robots meet! Program the door to open when you press the space bar!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_Open_the_door.sb3",
-          "project_title": "M2L3 Open the door"
+          "source_task_id": "26854",
+          "source_level_id": "329773",
+          "source_task_level_id": "199086",
+          "source_project_id": "10683052",
+          "source_demo_project_id": "2674668",
+          "stateId": "VP2_M2L3_3_1_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L3 Open the door",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L3_3_2",
@@ -124,13 +143,16 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Knight",
+      "title": "The knight",
+      "project_title": "The knight",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_Knight.sb3",
+      "demo_project_id": "M2L3_3_Task2_Demo.sb3",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Knight\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -145,42 +167,68 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
+          "id": "dcc34e56-c1e9-4cab-be85-7f172b8e232b",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "The knight starts moving from the lower-left corner and looks to the right.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Knight\".",
+          "id": "3c830ea0-e0fa-4238-9f4f-8309d07a0e99",
+          "title": "The knight walks around one side of the tower",
+          "text": "To get around one side of the tower, the knight takes 10 steps 25 times.",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/26854/knight_walks.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "82a80f16-d773-4704-860a-6590f5375267",
+          "title": "The knight turns",
+          "text": "Each time after going around a wall, the knight turns 90 degrees. Note: counterclockwise turn.",
           "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "90ddd444-eeef-4af8-b869-4b72f55f7ec1",
+          "title": "Loop",
+          "text": "To get around the 4 walls, the knight needs to repeat the walk and turn 4 times.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The knight",
+          "text": "The knight is on duty and guarding the tower! Program it to walk around the tower from all sides.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_Knight.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329774",
+      "source_task_level_id": "199087",
+      "source_project_id": "10683056",
+      "source_demo_project_id": "6083058",
       "states": [
         {
           "id": "VP2_M2L3_3_2_state_1",
-          "stateId": "VP2_M2L3_3_2_state_1",
           "position": 2,
           "level_position": 2,
           "levelPosition": 2,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "The knight",
+          "project_title": "The knight",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_Knight.sb3",
+          "demo_project_id": "M2L3_3_Task2_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Knight\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -195,34 +243,56 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_2_1",
+              "id": "dcc34e56-c1e9-4cab-be85-7f172b8e232b",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "The knight starts moving from the lower-left corner and looks to the right.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Knight\".",
+              "id": "3c830ea0-e0fa-4238-9f4f-8309d07a0e99",
+              "title": "The knight walks around one side of the tower",
+              "text": "To get around one side of the tower, the knight takes 10 steps 25 times.",
               "type": "gif",
-              "url": ""
+              "url": "/vp-assets/26854/knight_walks.png",
+              "taskType": "basic"
             },
             {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "82a80f16-d773-4704-860a-6590f5375267",
+              "title": "The knight turns",
+              "text": "Each time after going around a wall, the knight turns 90 degrees. Note: counterclockwise turn.",
               "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "90ddd444-eeef-4af8-b869-4b72f55f7ec1",
+              "title": "Loop",
+              "text": "To get around the 4 walls, the knight needs to repeat the walk and turn 4 times.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The knight",
+              "text": "The knight is on duty and guarding the tower! Program it to walk around the tower from all sides.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_Knight.sb3",
-          "project_title": "M2L3 Knight"
+          "source_task_id": "26854",
+          "source_level_id": "329774",
+          "source_task_level_id": "199087",
+          "source_project_id": "10683056",
+          "source_demo_project_id": "6083058",
+          "stateId": "VP2_M2L3_3_2_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L3 Knight",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L3_3_3",
@@ -231,12 +301,15 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Egg",
+      "project_title": "Egg",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_Egg.sb3",
+      "demo_project_id": "M2L3_3_Task3_Demo.sb3",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Egg\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -251,42 +324,76 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_3_1",
+          "id": "f23ebfc0-120d-4527-af5f-3dadddcf193a",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "At startup, the egg is at a certain point, turned in a certain direction, and not broken.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Egg\".",
+          "id": "4f855a16-4326-4e85-b046-29a1a4f6c116",
+          "title": "Delay",
+          "text": "If the position changes are instantaneous, we will not see the difference. Let's add a 1-second delay to see the animation.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "96f0a457-85c1-4c28-b06c-8a0caf09c81a",
+          "title": "The egg turns",
+          "text": "Use the \"turn 90 degrees\" command.\nNote that the egg will turn to the left.",
           "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "f73a33f1-793e-4ff9-bf8d-eb7c2fa3438c",
+          "title": "The egg moves to the left",
+          "text": "To visually drop the egg on its side, but so that it doesn't move, you need to change the coordinate.\nWhat coordinate should change if the egg moves to the left?",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "6751d4b3-a364-4cc0-a8ed-83f80a5c0159",
+          "title": "The egg is cracked",
+          "text": "Select the appropriate costume",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Egg",
+          "text": "Crack the egg! To do that, program a 90° rotation.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_Egg.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329775",
+      "source_task_level_id": "199088",
+      "source_project_id": "10683059",
+      "source_demo_project_id": "2674372",
       "states": [
         {
           "id": "VP2_M2L3_3_3_state_1",
-          "stateId": "VP2_M2L3_3_3_state_1",
           "position": 3,
           "level_position": 3,
           "levelPosition": 3,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Egg",
+          "project_title": "Egg",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_Egg.sb3",
+          "demo_project_id": "M2L3_3_Task3_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Egg\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -301,34 +408,64 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_3_1",
+              "id": "f23ebfc0-120d-4527-af5f-3dadddcf193a",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "At startup, the egg is at a certain point, turned in a certain direction, and not broken.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Egg\".",
+              "id": "4f855a16-4326-4e85-b046-29a1a4f6c116",
+              "title": "Delay",
+              "text": "If the position changes are instantaneous, we will not see the difference. Let's add a 1-second delay to see the animation.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "96f0a457-85c1-4c28-b06c-8a0caf09c81a",
+              "title": "The egg turns",
+              "text": "Use the \"turn 90 degrees\" command.\nNote that the egg will turn to the left.",
               "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "f73a33f1-793e-4ff9-bf8d-eb7c2fa3438c",
+              "title": "The egg moves to the left",
+              "text": "To visually drop the egg on its side, but so that it doesn't move, you need to change the coordinate.\nWhat coordinate should change if the egg moves to the left?",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "6751d4b3-a364-4cc0-a8ed-83f80a5c0159",
+              "title": "The egg is cracked",
+              "text": "Select the appropriate costume",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Egg",
+              "text": "Crack the egg! To do that, program a 90° rotation.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_Egg.sb3",
-          "project_title": "M2L3 Egg"
+          "source_task_id": "26854",
+          "source_level_id": "329775",
+          "source_task_level_id": "199088",
+          "source_project_id": "10683059",
+          "source_demo_project_id": "2674372",
+          "stateId": "VP2_M2L3_3_3_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L3 Egg",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L3_3_4",
@@ -336,13 +473,16 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "The ball is spinning",
+      "title": "The ball is spinning!",
+      "project_title": "The ball is spinning!",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
+      "demo_project_id": "M2L3_3_Task4_Demo.sb3",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"The ball is spinning\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -357,42 +497,52 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_4_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "a89b3995-032e-4fa5-b3a9-56a482e2d9b4",
+          "title": "Repeating turns",
+          "text": "The ball sprite must rotate around its axis.\nUse the commands \"repeat __ times\", \"turn ___\".",
           "type": "gif",
-          "url": ""
+          "url": "/vp-assets/26854/empty.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"The ball is spinning\".",
+          "id": "4bca7811-bdd3-49f8-9808-d1b407abd833",
+          "title": "*Bonus: change the speed",
+          "text": "Think about how to change the rotation speed.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "taskType": "bonus"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "The ball is spinning!",
+          "text": "The ball sprite is spinning like a real one! Program it.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329776",
+      "source_task_level_id": "199089",
+      "source_project_id": "10683062",
+      "source_demo_project_id": "2674385",
       "states": [
         {
           "id": "VP2_M2L3_3_4_state_1",
-          "stateId": "VP2_M2L3_3_4_state_1",
           "position": 4,
           "level_position": 4,
           "levelPosition": 4,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "The ball is spinning!",
+          "project_title": "The ball is spinning!",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
+          "demo_project_id": "M2L3_3_Task4_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"The ball is spinning\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -407,34 +557,40 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_4_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "a89b3995-032e-4fa5-b3a9-56a482e2d9b4",
+              "title": "Repeating turns",
+              "text": "The ball sprite must rotate around its axis.\nUse the commands \"repeat __ times\", \"turn ___\".",
               "type": "gif",
-              "url": ""
+              "url": "/vp-assets/26854/empty.png",
+              "taskType": "basic"
             },
             {
-              "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"The ball is spinning\".",
+              "id": "4bca7811-bdd3-49f8-9808-d1b407abd833",
+              "title": "*Bonus: change the speed",
+              "text": "Think about how to change the rotation speed.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "taskType": "bonus"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "The ball is spinning!",
+              "text": "The ball sprite is spinning like a real one! Program it.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_The_ball_is_spinning.sb3",
-          "project_title": "M2L3 The ball is spinning"
+          "source_task_id": "26854",
+          "source_level_id": "329776",
+          "source_task_level_id": "199089",
+          "source_project_id": "10683062",
+          "source_demo_project_id": "2674385",
+          "stateId": "VP2_M2L3_3_4_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L3 The ball is spinning",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L3_3_5",
@@ -443,12 +599,15 @@
       "level_position": 5,
       "levelPosition": 5,
       "title": "Butterfly",
+      "project_title": "Butterfly",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_Butterfly.sb3",
+      "demo_project_id": "M2L3_3_Task5_Demo.sb3",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Butterfly\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -463,42 +622,52 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "9b460c9a-79c0-4f4c-8212-9cc68b35092f",
+          "title": "Rotation",
+          "text": "First, program the rotation of the butterfly — just like the ball in the previous task!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Butterfly\".",
+          "id": "b52d7642-82d6-4b90-93fb-32b8eb5ad6d2",
+          "title": "Circular movement",
+          "text": "To make a circle, add the command \"move __ steps\" to the loop. Then, after each small turn, the butterfly will move to the side, and then again make a turn and step: that is rotation!",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/vp-assets/26854/circular_movemennts.png",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Butterfly",
+          "text": "The butterfly flies around the flower. Program it!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_Butterfly.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329777",
+      "source_task_level_id": "199090",
+      "source_project_id": "10683073",
+      "source_demo_project_id": "2674396",
       "states": [
         {
           "id": "VP2_M2L3_3_5_state_1",
-          "stateId": "VP2_M2L3_3_5_state_1",
           "position": 5,
           "level_position": 5,
           "levelPosition": 5,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Butterfly",
+          "project_title": "Butterfly",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_Butterfly.sb3",
+          "demo_project_id": "M2L3_3_Task5_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Butterfly\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -513,34 +682,40 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "9b460c9a-79c0-4f4c-8212-9cc68b35092f",
+              "title": "Rotation",
+              "text": "First, program the rotation of the butterfly — just like the ball in the previous task!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Butterfly\".",
+              "id": "b52d7642-82d6-4b90-93fb-32b8eb5ad6d2",
+              "title": "Circular movement",
+              "text": "To make a circle, add the command \"move __ steps\" to the loop. Then, after each small turn, the butterfly will move to the side, and then again make a turn and step: that is rotation!",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/vp-assets/26854/circular_movemennts.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Butterfly",
+              "text": "The butterfly flies around the flower. Program it!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_Butterfly.sb3",
-          "project_title": "M2L3 Butterfly"
+          "source_task_id": "26854",
+          "source_level_id": "329777",
+          "source_task_level_id": "199090",
+          "source_project_id": "10683073",
+          "source_demo_project_id": "2674396",
+          "stateId": "VP2_M2L3_3_5_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L3 Butterfly",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L3_3_6",
@@ -548,13 +723,63 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26854",
+      "source_level_id": "329779",
+      "source_task_level_id": "199092",
+      "states": [
+        {
+          "id": "VP2_M2L3_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26854",
+          "source_level_id": "329779",
+          "source_task_level_id": "199092",
+          "stateId": "VP2_M2L3_3_6_state_1",
+          "type": "rating"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L3_3_7",
+      "taskId": "VP2_M2L3_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
       "title": "Clock",
+      "project_title": "Clock",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L3_Clock.sb3",
+      "demo_project_id": "M2L3_3_Task7_Demo.sb3",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Complete the programming task for \"Clock\".",
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "command_keys": [
         "motion",
         "looks",
@@ -569,42 +794,69 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_6_1",
+          "id": "c0d4128a-a469-4d34-b7e7-64b7f2d446a9",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "At startup, the time is exactly 12:00!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Clock\".",
+          "id": "d3a6c01b-86a0-40fc-bc72-04b2e793cc2c",
+          "title": "Movement of the second hand",
+          "text": "Does the arrow move clockwise or counterclockwise?\nThe whole circle is 360 degrees. 60 seconds in one circle. 360 divided by 60 = 6.\nThe second hand rotates 6 degrees every second.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "65890dd2-f90d-4e20-82da-8244ed79d793",
+          "title": "Movement of the minute hand",
+          "text": "Have you noticed that the minute hand moves less often and a shorter distance than the second hand? Let's move it one degree at a time. The minute hand moves 6 degrees in 60 seconds. 60 seconds divided by 6 degrees is 10 seconds — after that, the minute hand will move 1 degree.",
           "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [
+        {
+          "id": "1567190183557-5",
+          "title": "Sprite center",
+          "description": "Notice the small gray circle on the cloth of the sprite's costume. This is the center of the sprite around which it rotates.",
+          "url": "/vp-assets/26854/стрелка.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Clock",
+          "text": "This clock will be just like a real one after you program it.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L3_Clock.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26854",
+      "source_level_id": "329778",
+      "source_task_level_id": "199091",
+      "source_project_id": "10683075",
+      "source_demo_project_id": "2674694",
+      "isBonus": true,
+      "type": "bonus",
       "states": [
         {
-          "id": "VP2_M2L3_3_6_state_1",
-          "stateId": "VP2_M2L3_3_6_state_1",
-          "position": 6,
-          "level_position": 6,
-          "levelPosition": 6,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "id": "VP2_M2L3_3_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "title": "Clock",
+          "project_title": "Clock",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L3_Clock.sb3",
+          "demo_project_id": "M2L3_3_Task7_Demo.sb3",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Clock\".",
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
           "command_keys": [
             "motion",
             "looks",
@@ -619,34 +871,56 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_6_1",
+              "id": "c0d4128a-a469-4d34-b7e7-64b7f2d446a9",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "At startup, the time is exactly 12:00!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Clock\".",
+              "id": "d3a6c01b-86a0-40fc-bc72-04b2e793cc2c",
+              "title": "Movement of the second hand",
+              "text": "Does the arrow move clockwise or counterclockwise?\nThe whole circle is 360 degrees. 60 seconds in one circle. 360 divided by 60 = 6.\nThe second hand rotates 6 degrees every second.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "65890dd2-f90d-4e20-82da-8244ed79d793",
+              "title": "Movement of the minute hand",
+              "text": "Have you noticed that the minute hand moves less often and a shorter distance than the second hand? Let's move it one degree at a time. The minute hand moves 6 degrees in 60 seconds. 60 seconds divided by 6 degrees is 10 seconds — after that, the minute hand will move 1 degree.",
               "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [
+            {
+              "id": "1567190183557-5",
+              "title": "Sprite center",
+              "description": "Notice the small gray circle on the cloth of the sprite's costume. This is the center of the sprite around which it rotates.",
+              "url": "/vp-assets/26854/стрелка.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Clock",
+              "text": "This clock will be just like a real one after you program it.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L3_Clock.sb3",
-          "project_title": "M2L3 Clock"
+          "source_task_id": "26854",
+          "source_level_id": "329778",
+          "source_task_level_id": "199091",
+          "source_project_id": "10683075",
+          "source_demo_project_id": "2674694",
+          "isBonus": true,
+          "type": "scratch",
+          "stateId": "VP2_M2L3_3_7_state_1"
         }
-      ],
-      "project_title": "M2L3 Clock",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     }
   ]
 }

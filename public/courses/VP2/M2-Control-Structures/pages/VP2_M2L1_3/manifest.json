@@ -5,7 +5,7 @@
   "type": "scratch-task",
   "level_type": "scratch",
   "activityType": "scratch",
-  "taskCount": 6,
+  "taskCount": 8,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -19,87 +19,156 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Coordinates - Task 1",
+      "title": "Teleport",
+      "project_title": "Teleport",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_Traffic_light.sb3",
+      "starter_project_id": "M2L1_Teleport.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task1_Demo.sb3",
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Program Scratch. Coordinates - Task 1",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 1\".",
-          "type": "svg",
-          "url": ""
+          "id": "66fc54e7-beb3-4356-9515-e5e592cc17c6",
+          "title": "Event 1",
+          "text": "When you press the up arrow key, the rocket changes position.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "3f8097a6-24d0-4474-b5d5-c837f686140a",
+          "title": "Motion 1",
+          "text": "This command sets the position of the sprite on the stage using coordinates.\n1. Place the sprite in a certain place, and the command \"Go to x: __ y: __\" will contain the coordinate values corresponding to that position.\n2. Drag the \"Go to x: __ y: __\" block from the command palette. ",
+          "type": "gif",
+          "url": "/vp-assets/26849/motion_1.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "825fe7cf-e12f-4ad5-8e77-d8ed70de5f9e",
+          "title": "Event 2",
+          "text": "When you press the down arrow key, the rocket again changes position.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "41c297b2-ebc7-498a-872d-01a6e050513c",
+          "title": "Motion 2",
+          "text": "Move the sprite to a different position, and then new values will appear in the \"go to x: __ y: __\" command.",
+          "type": "gif",
+          "url": "/vp-assets/26849/motion_2.gif",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Teleport",
+          "text": "Program the rocket to move between two points when you press the up arrow and down arrow keys!",
+          "url": ""
         }
       ],
+      "source_project_id": "10680304",
+      "source_demo_project_id": "6083048",
+      "source_task_id": "26849",
+      "source_level_id": "329709",
+      "source_task_level_id": "199049",
       "states": [
         {
           "id": "VP2_M2L1_3_1_state_1",
-          "stateId": "VP2_M2L1_3_1_state_1",
           "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "level_position": 1,
+          "levelPosition": 1,
+          "title": "Teleport",
+          "project_title": "Teleport",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_Traffic_light.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_Teleport.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task1_Demo.sb3",
+          "requirements": [
+            {
+              "id": "66fc54e7-beb3-4356-9515-e5e592cc17c6",
+              "title": "Event 1",
+              "text": "When you press the up arrow key, the rocket changes position.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "3f8097a6-24d0-4474-b5d5-c837f686140a",
+              "title": "Motion 1",
+              "text": "This command sets the position of the sprite on the stage using coordinates.\n1. Place the sprite in a certain place, and the command \"Go to x: __ y: __\" will contain the coordinate values corresponding to that position.\n2. Drag the \"Go to x: __ y: __\" block from the command palette. ",
+              "type": "gif",
+              "url": "/vp-assets/26849/motion_1.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "825fe7cf-e12f-4ad5-8e77-d8ed70de5f9e",
+              "title": "Event 2",
+              "text": "When you press the down arrow key, the rocket again changes position.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "41c297b2-ebc7-498a-872d-01a6e050513c",
+              "title": "Motion 2",
+              "text": "Move the sprite to a different position, and then new values will appear in the \"go to x: __ y: __\" command.",
+              "type": "gif",
+              "url": "/vp-assets/26849/motion_2.gif",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 Traffic light"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Teleport",
+              "text": "Program the rocket to move between two points when you press the up arrow and down arrow keys!",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680304",
+          "source_demo_project_id": "6083048",
+          "source_task_id": "26849",
+          "source_level_id": "329709",
+          "source_task_level_id": "199049",
+          "stateId": "VP2_M2L1_3_1_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L1 Traffic light",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_3_2",
@@ -107,87 +176,124 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Coordinates - Task 2",
+      "title": "Star",
+      "project_title": "Star",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_Thermometer.sb3",
+      "starter_project_id": "M2L1_A_star.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task2_Demo.sb3",
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Program Scratch. Coordinates - Task 2",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 2\".",
-          "type": "svg",
-          "url": ""
+          "id": "6e23ab94-dff7-4a01-9d58-0dacf416ce45",
+          "title": "Motion",
+          "text": "Move the star anywhere and use the command \"Go to X __ Y __\", and do it 4 times.\nUse different coordinates for the command \"Go to X __ Y __\"",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "c00d1abe-45eb-4044-b91e-71c06e8f40af",
+          "title": "Delay",
+          "text": "Use the command \"wait __ sec\" between position changes, so that they become visible!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Star",
+          "text": "The star appears randomly in multiple places.",
+          "url": ""
         }
       ],
+      "source_project_id": "10680306",
+      "source_demo_project_id": "2670925",
+      "source_task_id": "26849",
+      "source_level_id": "329716",
+      "source_task_level_id": "199056",
       "states": [
         {
           "id": "VP2_M2L1_3_2_state_1",
-          "stateId": "VP2_M2L1_3_2_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Star",
+          "project_title": "Star",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_Thermometer.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_A_star.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task2_Demo.sb3",
+          "requirements": [
+            {
+              "id": "6e23ab94-dff7-4a01-9d58-0dacf416ce45",
+              "title": "Motion",
+              "text": "Move the star anywhere and use the command \"Go to X __ Y __\", and do it 4 times.\nUse different coordinates for the command \"Go to X __ Y __\"",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "c00d1abe-45eb-4044-b91e-71c06e8f40af",
+              "title": "Delay",
+              "text": "Use the command \"wait __ sec\" between position changes, so that they become visible!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 Thermometer"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Star",
+              "text": "The star appears randomly in multiple places.",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680306",
+          "source_demo_project_id": "2670925",
+          "source_task_id": "26849",
+          "source_level_id": "329716",
+          "source_task_level_id": "199056",
+          "stateId": "VP2_M2L1_3_2_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L1 Thermometer",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_3_3",
@@ -195,87 +301,124 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Coordinates - Task 3",
+      "title": "Moon",
+      "project_title": "Moon",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_Crab.sb3",
+      "starter_project_id": "M2L1_Moon.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task3_Demo.sb3",
       "requirements": [
         {
-          "id": "req_3_1",
-          "title": "Program Scratch. Coordinates - Task 3",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 3\".",
-          "type": "svg",
-          "url": ""
+          "id": "28976356-c353-4fbe-8458-292518cddeb3",
+          "title": "Motion",
+          "text": "Change the position of the moon 3 times.\nYou already know how to set a position. Do it yourself!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "6db3c102-ae8b-4586-a198-9f6305754c3a",
+          "title": "Delay",
+          "text": "Don't forget to use the command \"wait __ sec\" between movements.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Moon",
+          "text": "Did you notice that the moon moves across the sky? Let's program it!",
+          "url": ""
         }
       ],
+      "source_project_id": "10680307",
+      "source_demo_project_id": "2670933",
+      "source_task_id": "26849",
+      "source_level_id": "329710",
+      "source_task_level_id": "199050",
       "states": [
         {
           "id": "VP2_M2L1_3_3_state_1",
-          "stateId": "VP2_M2L1_3_3_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "title": "Moon",
+          "project_title": "Moon",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_Crab.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_Moon.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task3_Demo.sb3",
+          "requirements": [
+            {
+              "id": "28976356-c353-4fbe-8458-292518cddeb3",
+              "title": "Motion",
+              "text": "Change the position of the moon 3 times.\nYou already know how to set a position. Do it yourself!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "6db3c102-ae8b-4586-a198-9f6305754c3a",
+              "title": "Delay",
+              "text": "Don't forget to use the command \"wait __ sec\" between movements.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 Crab"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Moon",
+              "text": "Did you notice that the moon moves across the sky? Let's program it!",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680307",
+          "source_demo_project_id": "2670933",
+          "source_task_id": "26849",
+          "source_level_id": "329710",
+          "source_task_level_id": "199050",
+          "stateId": "VP2_M2L1_3_3_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L1 Crab",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_3_4",
@@ -283,87 +426,124 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Scratch. Coordinates - Task 4",
+      "title": "Crab",
+      "project_title": "Crab",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_The_Sun.sb3",
+      "starter_project_id": "M2L1_Crab.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task4_Demo.sb3",
       "requirements": [
         {
-          "id": "req_4_1",
-          "title": "Program Scratch. Coordinates - Task 4",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 4\".",
-          "type": "svg",
-          "url": ""
+          "id": "656c961d-9638-4416-be16-214117d866c4",
+          "title": "The \"set x to __\" command",
+          "text": "We can only change one coordinate.\nThe X coordinate changes the position of the sprite left-right. Change the position of the crab 5 times.",
+          "type": "gif",
+          "url": "/vp-assets/26849/set.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_4_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "4b26cb0d-5520-4e03-9591-162a8991ea6b",
+          "title": "Delay",
+          "text": "Use a delay.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Crab",
+          "text": "This crab moves sideways! Look, only the X coordinate changes.",
+          "url": ""
         }
       ],
+      "source_project_id": "10680311",
+      "source_demo_project_id": "2672391",
+      "source_task_id": "26849",
+      "source_level_id": "329711",
+      "source_task_level_id": "199051",
       "states": [
         {
           "id": "VP2_M2L1_3_4_state_1",
-          "stateId": "VP2_M2L1_3_4_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "title": "Crab",
+          "project_title": "Crab",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_The_Sun.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_Crab.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task4_Demo.sb3",
+          "requirements": [
+            {
+              "id": "656c961d-9638-4416-be16-214117d866c4",
+              "title": "The \"set x to __\" command",
+              "text": "We can only change one coordinate.\nThe X coordinate changes the position of the sprite left-right. Change the position of the crab 5 times.",
+              "type": "gif",
+              "url": "/vp-assets/26849/set.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "4b26cb0d-5520-4e03-9591-162a8991ea6b",
+              "title": "Delay",
+              "text": "Use a delay.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 The Sun"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Crab",
+              "text": "This crab moves sideways! Look, only the X coordinate changes.",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680311",
+          "source_demo_project_id": "2672391",
+          "source_task_id": "26849",
+          "source_level_id": "329711",
+          "source_task_level_id": "199051",
+          "stateId": "VP2_M2L1_3_4_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L1 The Sun",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_3_5",
@@ -371,87 +551,188 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Scratch. Coordinates - Task 5",
+      "title": "Thermometer",
+      "project_title": "Thermometer",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_Moon.sb3",
+      "starter_project_id": "M2L1_Thermometer.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task5_Demo.sb3",
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Program Scratch. Coordinates - Task 5",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 5\".",
-          "type": "svg",
-          "url": ""
+          "id": "a3de3532-6222-4eba-99f5-827a3dd30733",
+          "title": "Hot!",
+          "text": "This command moves the sprites up and down by changing the Y coordinate.\nSet the red marker, so that the thermometer shows a high temperature.",
+          "type": "gif",
+          "url": "/vp-assets/26849/hot.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "1dda71a3-ff7b-41ea-8e2c-0082610027d9",
+          "title": "Delay",
+          "text": "Let's have the thermometer report the temperature.\nInstead of the command to wait, use the command to say \"Hot!\"",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "ab9d624a-077f-4a18-99f4-06b030ea65e5",
+          "title": "Warm",
+          "text": "Set the red marker, so that the thermometer reads a little over 20 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "15b520d7-a492-4c81-9bcb-a4fba4f77583",
+          "title": "Cool",
+          "text": "Set the red marker, so that the thermometer reads just under 10 degrees.\nDon't forget that our thermometer notifies about the temperature, and at this temperature, it is \"Cool!\"",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "e9e3ad3c-f610-475a-83bf-66bd6a994067",
+          "title": "Cold",
+          "text": "Set the red marker, so that the thermometer reads about -10 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "da506785-706c-454a-b2ac-8877b96375eb",
+          "title": "Freezing",
+          "text": "Set the red marker, so that the thermometer reads about -30 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Thermometer",
+          "text": "Move the red marker up and down by changing the Y coordinate.",
+          "url": ""
         }
       ],
+      "source_project_id": "10680315",
+      "source_demo_project_id": "10680328",
+      "source_task_id": "26849",
+      "source_level_id": "329712",
+      "source_task_level_id": "199052",
       "states": [
         {
           "id": "VP2_M2L1_3_5_state_1",
-          "stateId": "VP2_M2L1_3_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "title": "Thermometer",
+          "project_title": "Thermometer",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_Moon.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_Thermometer.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task5_Demo.sb3",
+          "requirements": [
+            {
+              "id": "a3de3532-6222-4eba-99f5-827a3dd30733",
+              "title": "Hot!",
+              "text": "This command moves the sprites up and down by changing the Y coordinate.\nSet the red marker, so that the thermometer shows a high temperature.",
+              "type": "gif",
+              "url": "/vp-assets/26849/hot.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "1dda71a3-ff7b-41ea-8e2c-0082610027d9",
+              "title": "Delay",
+              "text": "Let's have the thermometer report the temperature.\nInstead of the command to wait, use the command to say \"Hot!\"",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "ab9d624a-077f-4a18-99f4-06b030ea65e5",
+              "title": "Warm",
+              "text": "Set the red marker, so that the thermometer reads a little over 20 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "15b520d7-a492-4c81-9bcb-a4fba4f77583",
+              "title": "Cool",
+              "text": "Set the red marker, so that the thermometer reads just under 10 degrees.\nDon't forget that our thermometer notifies about the temperature, and at this temperature, it is \"Cool!\"",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "e9e3ad3c-f610-475a-83bf-66bd6a994067",
+              "title": "Cold",
+              "text": "Set the red marker, so that the thermometer reads about -10 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "da506785-706c-454a-b2ac-8877b96375eb",
+              "title": "Freezing",
+              "text": "Set the red marker, so that the thermometer reads about -30 degrees.\nDon't forget that our thermometer notifies about the temperature.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 Moon"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Thermometer",
+              "text": "Move the red marker up and down by changing the Y coordinate.",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680315",
+          "source_demo_project_id": "10680328",
+          "source_task_id": "26849",
+          "source_level_id": "329712",
+          "source_task_level_id": "199052",
+          "stateId": "VP2_M2L1_3_5_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L1 Moon",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M2L1_3_6",
@@ -459,87 +740,334 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Coordinates - Task 6",
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "tips": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "source_task_id": "26849",
+      "source_level_id": "329715",
+      "source_task_level_id": "199055",
+      "states": [
+        {
+          "id": "VP2_M2L1_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "activityType": "feedback_rating_task",
+          "requirements": [],
+          "media": [],
+          "tips": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "source_task_id": "26849",
+          "source_level_id": "329715",
+          "source_task_level_id": "199055",
+          "stateId": "VP2_M2L1_3_6_state_1",
+          "type": "rating"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_3_7",
+      "taskId": "VP2_M2L1_3_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Traffic light",
+      "project_title": "Traffic light",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M2L1_A_star.sb3",
+      "starter_project_id": "M2L1_Traffic_light.sb3",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task7_Demo.sb3",
       "requirements": [
         {
-          "id": "req_6_1",
-          "title": "Program Scratch. Coordinates - Task 6",
-          "text": "Program the sprites and animations for \"Scratch. Coordinates - Task 6\".",
-          "type": "svg",
-          "url": ""
+          "id": "709ea183-795b-43ef-9446-7a2c966570b1",
+          "title": "Red light",
+          "text": "When you press the number \"1,\" the red light is on. One gray circle should cover the green, and the other should cover the yellow.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
+          "id": "527568de-a0c2-4f8e-a6fb-dbb8d800edcc",
+          "title": "Yellow light",
+          "text": "When you press the number \"2,\" the yellow light is on. One gray circle should cover the green, and the other should cover the red.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "id": "9c7ed70a-0861-463a-a668-a0591a101d44",
+          "title": "Green light",
+          "text": "When you press the number \"3,\" the green light is on. One gray circle should cover the red, and the second one should cover the yellow.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Coordinates - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Traffic light",
+          "text": "Cover the not-working colors with a gray circle and move it to the right place!\nPress the keys 1,2,3",
+          "url": ""
         }
       ],
+      "source_project_id": "10683422",
+      "source_demo_project_id": "6083052",
+      "isBonus": true,
+      "type": "bonus",
+      "source_task_id": "26849",
+      "source_level_id": "329713",
+      "source_task_level_id": "199053",
       "states": [
         {
-          "id": "VP2_M2L1_3_6_state_1",
-          "stateId": "VP2_M2L1_3_6_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "id": "VP2_M2L1_3_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "title": "Traffic light",
+          "project_title": "Traffic light",
+          "activityType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M2L1_A_star.sb3",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_Traffic_light.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task7_Demo.sb3",
+          "requirements": [
+            {
+              "id": "709ea183-795b-43ef-9446-7a2c966570b1",
+              "title": "Red light",
+              "text": "When you press the number \"1,\" the red light is on. One gray circle should cover the green, and the other should cover the yellow.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "527568de-a0c2-4f8e-a6fb-dbb8d800edcc",
+              "title": "Yellow light",
+              "text": "When you press the number \"2,\" the yellow light is on. One gray circle should cover the green, and the other should cover the red.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "9c7ed70a-0861-463a-a668-a0591a101d44",
+              "title": "Green light",
+              "text": "When you press the number \"3,\" the green light is on. One gray circle should cover the red, and the second one should cover the yellow.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
           ],
-          "project_title": "M2L1 A star"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Traffic light",
+              "text": "Cover the not-working colors with a gray circle and move it to the right place!\nPress the keys 1,2,3",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10683422",
+          "source_demo_project_id": "6083052",
+          "isBonus": true,
+          "type": "scratch",
+          "source_task_id": "26849",
+          "source_level_id": "329713",
+          "source_task_level_id": "199053",
+          "stateId": "VP2_M2L1_3_7_state_1"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L1_3_8",
+      "taskId": "VP2_M2L1_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Sun",
+      "project_title": "Sun",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "M2L1_The_Sun.sb3",
+      "drawerOpen": true,
+      "isAutoCheck": true,
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "tips": [],
+      "demo_project_id": "M2L1_3_Task8_Demo.sb3",
+      "requirements": [
+        {
+          "id": "2a3b31ec-a3b6-4c7b-90c0-3a61da7619d0",
+          "title": "The sun glides to multiple points",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "ab7c3bf7-699a-4c20-8f17-15869285a77b",
+          "title": "The sun changes costumes",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "abe31e91-0e6c-409c-ac5d-d57707032a3f",
+          "title": "Initial placement",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         }
       ],
-      "project_title": "M2L1 A star",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Sun",
+          "text": "Watch how smoothly the sun moves across the sky!",
+          "url": ""
+        }
+      ],
+      "source_project_id": "10680339",
+      "source_demo_project_id": "2670940",
+      "isBonus": true,
+      "type": "bonus",
+      "source_task_id": "26849",
+      "source_level_id": "329714",
+      "source_task_level_id": "199054",
+      "states": [
+        {
+          "id": "VP2_M2L1_3_8_state_1",
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
+          "title": "Sun",
+          "project_title": "Sun",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L1_The_Sun.sb3",
+          "drawerOpen": true,
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "tips": [],
+          "demo_project_id": "M2L1_3_Task8_Demo.sb3",
+          "requirements": [
+            {
+              "id": "2a3b31ec-a3b6-4c7b-90c0-3a61da7619d0",
+              "title": "The sun glides to multiple points",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "ab7c3bf7-699a-4c20-8f17-15869285a77b",
+              "title": "The sun changes costumes",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "abe31e91-0e6c-409c-ac5d-d57707032a3f",
+              "title": "Initial placement",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Sun",
+              "text": "Watch how smoothly the sun moves across the sky!",
+              "url": ""
+            }
+          ],
+          "source_project_id": "10680339",
+          "source_demo_project_id": "2670940",
+          "isBonus": true,
+          "type": "scratch",
+          "source_task_id": "26849",
+          "source_level_id": "329714",
+          "source_task_level_id": "199054",
+          "stateId": "VP2_M2L1_3_8_state_1"
+        }
+      ]
     }
   ]
 }

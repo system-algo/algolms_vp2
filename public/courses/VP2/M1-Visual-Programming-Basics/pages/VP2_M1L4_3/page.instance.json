@@ -13,7 +13,7 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "The rocket approaches and recedes",
-      "project_title": "M1L4 A rocketship",
+      "project_title": "The rocket approaches and recedes",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -22,49 +22,67 @@
       "isAutoCheck": true,
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_sayforsecs",
-        "looks_say",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_changesizeby",
-        "looks_setsizeto",
-        "looks_gotofrontback",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenthisspriteclicked",
-        "control_wait",
-        "control_repeat",
-        "control_forever"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
+          "id": "ed759e1f-b82e-4e27-b22f-52829398d641",
           "title": "Approaching",
           "text": "Pressing the up arrow changes the costume and increases the size.",
-          "type": "svg",
-          "url": "/vp-assets/m1l4/approaching_hint.webp"
+          "type": "gif",
+          "url": "/vp-assets/26848/app_1627633936.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_2",
+          "id": "097d4c45-7192-4bc7-bfa8-4c25804e439e",
           "title": "Receding",
-          "text": "Pressing the down arrow changes the costume and decreases the size.",
-          "type": "svg",
-          "url": "/vp-assets/m1l4/receding_hint.webp"
+          "text": "Pressing the down arrow changes the costume and decreases the size. Think about how to do it.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_1_3",
+          "id": "da80a77f-c4d8-4bf3-871f-e0000202e68b",
           "title": "Initial placement",
-          "text": "When the green flag is clicked, set the rocket's initial position, costume, and size to 100%.",
-          "type": "svg",
+          "text": "When you click on the green flag, the rocket is always the same size.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "3558bdfd-7243-4c93-8c59-9c00df22dc7b",
+          "title": "Stopping other scripts",
+          "text": "If you first press the up arrow and move the rocket closer, and then click the down arrow, you must first stop the approaching, and then start the receding.",
+          "type": "gif",
+          "url": "/vp-assets/26848/stop_1627633944.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "8c04b8af-7634-45ec-9623-94918c4aaabc",
+          "title": "*Bonus task: the Earth approaching and receding",
+          "text": "When you press the up arrow, the Earth recedes, when you press the down arrow, it approaches.",
+          "type": "gif",
+          "url": "",
+          "taskType": "bonus"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The rocket approaches and recedes",
+          "text": "Up arrow: the rocket is approaching. Down arrow: the rocket is receding.",
           "url": ""
         }
       ],
-      "media": [],
       "states": [
         {
           "id": "VP2_M1L4_3_1_state_1",
@@ -74,31 +92,80 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_A_rocketship.sb3",
-          "project_title": "M1L4 A rocketship",
+          "project_title": "The rocket approaches and recedes",
           "isAutoCheck": true,
           "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_sayforsecs",
-            "looks_say",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_changesizeby",
-            "looks_setsizeto",
-            "looks_gotofrontback",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenthisspriteclicked",
-            "control_wait",
-            "control_repeat",
-            "control_forever"
-          ]
+          "command_blocks": [],
+          "title": "The rocket approaches and recedes",
+          "requirements": [
+            {
+              "id": "ed759e1f-b82e-4e27-b22f-52829398d641",
+              "title": "Approaching",
+              "text": "Pressing the up arrow changes the costume and increases the size.",
+              "type": "gif",
+              "url": "/vp-assets/26848/app_1627633936.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "097d4c45-7192-4bc7-bfa8-4c25804e439e",
+              "title": "Receding",
+              "text": "Pressing the down arrow changes the costume and decreases the size. Think about how to do it.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "da80a77f-c4d8-4bf3-871f-e0000202e68b",
+              "title": "Initial placement",
+              "text": "When you click on the green flag, the rocket is always the same size.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "3558bdfd-7243-4c93-8c59-9c00df22dc7b",
+              "title": "Stopping other scripts",
+              "text": "If you first press the up arrow and move the rocket closer, and then click the down arrow, you must first stop the approaching, and then start the receding.",
+              "type": "gif",
+              "url": "/vp-assets/26848/stop_1627633944.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "8c04b8af-7634-45ec-9623-94918c4aaabc",
+              "title": "*Bonus task: the Earth approaching and receding",
+              "text": "When you press the up arrow, the Earth recedes, when you press the down arrow, it approaches.",
+              "type": "gif",
+              "url": "",
+              "taskType": "bonus"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The rocket approaches and recedes",
+              "text": "Up arrow: the rocket is approaching. Down arrow: the rocket is receding.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L4_3_Task1_Demo.sb3",
+          "level_position": 1,
+          "levelPosition": 1
         }
-      ]
+      ],
+      "tips": [],
+      "demo_project_id": "M1L4_3_Task1_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_2",
@@ -107,7 +174,7 @@
       "level_position": 2,
       "levelPosition": 2,
       "title": "Hen",
-      "project_title": "M1L4 hen",
+      "project_title": "Hen",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -116,97 +183,150 @@
       "isAutoCheck": true,
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "looks_changesizeby",
-        "looks_setsizeto",
-        "looks_show",
-        "looks_hide",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "event_whenthisspriteclicked",
-        "control_wait",
-        "control_repeat",
-        "control_forever"
-      ],
+      "command_blocks": [],
       "media": [
         {
           "type": "presentation",
           "title": "Hen",
           "text": "The hen walks, eats, or turns its head when the keys \"1\", \"2\", and \"3\" are pressed. These actions do not happen at the same time.",
-          "url": "/vp-assets/m1l4/hen_demo.webp"
+          "url": ""
         }
       ],
       "requirements": [
         {
-          "id": "req_2_1",
+          "id": "bbd00cfa-1623-43d6-9732-4403bc1a0fd8",
           "title": "The hen walks when the \"1\" key is pressed",
-          "text": "Pressing key 1 switches costume to walking.",
-          "type": "svg",
-          "url": "/vp-assets/m1l4/hen_walk_hint.svg"
+          "text": "We need costumes to change for the hen to take steps. How many seconds do we need to use in the \"wait\" command for the actions to run smoothly? Use the \"forever\" command to keep the chicken going.",
+          "type": "gif",
+          "url": "/vp-assets/26848/1_1627634088.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_2",
-          "title": "The hen eats when the \"2\" key is pressed",
-          "text": "Pressing key 2 switches costume to pecking/eating.",
-          "type": "svg",
-          "url": "/vp-assets/m1l4/hen_eat_hint.svg"
+          "id": "5d0aac16-b08c-4dbd-9319-bf439951fedd",
+          "title": "The hen pecks the grains when the \"2\" key is pressed",
+          "text": "We need costumes to change for the hen to eat. Use the same number of seconds in the \"wait\" command for the actions to run smoothly. Use the \"forever\" command to keep the chicken pecking.",
+          "type": "gif",
+          "url": "/vp-assets/26848/2_1627634095.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_3",
-          "title": "The hen turns its head when the \"3\" key is pressed",
-          "text": "Pressing key 3 switches costume to turning head.",
-          "type": "svg",
-          "url": "/vp-assets/m1l4/hen_head_hint.svg"
+          "id": "69ded947-45a4-4a41-bbda-9130de18b29a",
+          "title": "The hen looks when the \"3\" key is pressed",
+          "text": "We need costumes to change for the hen to turn its head. Here the “forever” command is also needed.",
+          "type": "gif",
+          "url": "/vp-assets/26848/3_1627634102.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_2_4",
+          "id": "1bc3447c-948b-4313-ab90-41af1c12fb9d",
           "title": "Initial placement",
-          "text": "Set initial costume and position when the green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "text": "At the start, the hen always returns to its original position.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "9ef20906-1088-488e-9120-ad761b2d70ab",
+          "title": "Stopping other scripts",
+          "text": "When we start an action, we stop the others.",
+          "type": "gif",
+          "url": "/vp-assets/26848/stop_1627634107.png",
+          "taskType": "basic"
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_3_2_state_1",
           "stateId": "VP2_M1L4_3_2_state_1",
-          "position": 1,
+          "position": 2,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_hen.sb3",
-          "project_title": "M1L4 hen",
+          "project_title": "Hen",
           "isAutoCheck": true,
           "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "looks_changesizeby",
-            "looks_setsizeto",
-            "looks_show",
-            "looks_hide",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "event_whenthisspriteclicked",
-            "control_wait",
-            "control_repeat",
-            "control_forever"
-          ]
+          "command_blocks": [],
+          "title": "Hen",
+          "requirements": [
+            {
+              "id": "bbd00cfa-1623-43d6-9732-4403bc1a0fd8",
+              "title": "The hen walks when the \"1\" key is pressed",
+              "text": "We need costumes to change for the hen to take steps. How many seconds do we need to use in the \"wait\" command for the actions to run smoothly? Use the \"forever\" command to keep the chicken going.",
+              "type": "gif",
+              "url": "/vp-assets/26848/1_1627634088.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "5d0aac16-b08c-4dbd-9319-bf439951fedd",
+              "title": "The hen pecks the grains when the \"2\" key is pressed",
+              "text": "We need costumes to change for the hen to eat. Use the same number of seconds in the \"wait\" command for the actions to run smoothly. Use the \"forever\" command to keep the chicken pecking.",
+              "type": "gif",
+              "url": "/vp-assets/26848/2_1627634095.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "69ded947-45a4-4a41-bbda-9130de18b29a",
+              "title": "The hen looks when the \"3\" key is pressed",
+              "text": "We need costumes to change for the hen to turn its head. Here the “forever” command is also needed.",
+              "type": "gif",
+              "url": "/vp-assets/26848/3_1627634102.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "1bc3447c-948b-4313-ab90-41af1c12fb9d",
+              "title": "Initial placement",
+              "text": "At the start, the hen always returns to its original position.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "9ef20906-1088-488e-9120-ad761b2d70ab",
+              "title": "Stopping other scripts",
+              "text": "When we start an action, we stop the others.",
+              "type": "gif",
+              "url": "/vp-assets/26848/stop_1627634107.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hen",
+              "text": "The hen walks, eats, or turns its head when the keys \"1\", \"2\", and \"3\" are pressed. These actions do not happen at the same time.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L4_3_Task2_Demo.sb3",
+          "level_position": 2,
+          "levelPosition": 2
         }
-      ]
+      ],
+      "tips": [],
+      "demo_project_id": "M1L4_3_Task2_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_3",
@@ -214,8 +334,8 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Skeleton",
-      "project_title": "M1L4 Sceleton",
+      "title": "Skeleton and ghost",
+      "project_title": "Skeleton and ghost",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -224,68 +344,118 @@
       "isAutoCheck": true,
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
+        "motion",
         "looks",
+        "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "looks_nextcostume",
-        "event_whenflagclicked",
-        "event_whenkeypressed",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Skeleton",
-          "text": "Program the skeleton to dance and switch costumes when control keys are pressed."
+          "title": "Skeleton and ghost",
+          "text": "Fantasy characters are walking without our consent — let's stop them by pressing the space bar!",
+          "url": ""
         }
       ],
       "requirements": [
         {
-          "id": "req_3_1",
-          "title": "The skeleton moves when keys are pressed",
-          "text": "Switch costumes to make the skeleton dance when keys are pressed.",
-          "type": "svg",
-          "url": ""
+          "id": "324093e6-5c40-4564-b19e-5cedd91d959c",
+          "title": "The skeleton walks",
+          "text": "When you click on the green flag, the skeleton is constantly walking. Please note that only three costumes are used for walking. Use the \"wait_sec\" command, so that the animation is visible.",
+          "type": "gif",
+          "url": "/vp-assets/26848/HLVvTzVS8B.gif",
+          "taskType": "basic"
         },
         {
-          "id": "req_3_2",
-          "title": "Initial placement",
-          "text": "Set the skeleton and ghost initial positions and costumes.",
-          "type": "svg",
-          "url": ""
+          "id": "1282e612-df76-43ea-8205-bdc85740059e",
+          "title": "The ghost",
+          "text": "When you click on the green flag, the ghost changes costumes. Use the \"wait_sec\" command, so that the animation is visible.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "5c4a3c04-753f-42b5-8ad4-eadf14677f5d",
+          "title": "Stop the whole project",
+          "text": "All the scripts stop when you press the space bar. The Stop All command immediately stops all scripts for both the skeleton and the ghost.",
+          "type": "gif",
+          "url": "/vp-assets/26848/stop all.png",
+          "taskType": "basic"
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_3_3_state_1",
           "stateId": "VP2_M1L4_3_3_state_1",
-          "position": 1,
+          "position": 3,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_Sceleton.sb3",
-          "project_title": "M1L4 Sceleton",
+          "project_title": "Skeleton and ghost",
           "isAutoCheck": true,
           "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
+            "motion",
             "looks",
+            "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "looks_nextcostume",
-            "event_whenflagclicked",
-            "event_whenkeypressed",
-            "control_wait"
-          ]
+          "command_blocks": [],
+          "title": "Skeleton and ghost",
+          "requirements": [
+            {
+              "id": "324093e6-5c40-4564-b19e-5cedd91d959c",
+              "title": "The skeleton walks",
+              "text": "When you click on the green flag, the skeleton is constantly walking. Please note that only three costumes are used for walking. Use the \"wait_sec\" command, so that the animation is visible.",
+              "type": "gif",
+              "url": "/vp-assets/26848/HLVvTzVS8B.gif",
+              "taskType": "basic"
+            },
+            {
+              "id": "1282e612-df76-43ea-8205-bdc85740059e",
+              "title": "The ghost",
+              "text": "When you click on the green flag, the ghost changes costumes. Use the \"wait_sec\" command, so that the animation is visible.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "5c4a3c04-753f-42b5-8ad4-eadf14677f5d",
+              "title": "Stop the whole project",
+              "text": "All the scripts stop when you press the space bar. The Stop All command immediately stops all scripts for both the skeleton and the ghost.",
+              "type": "gif",
+              "url": "/vp-assets/26848/stop all.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Skeleton and ghost",
+              "text": "Fantasy characters are walking without our consent — let's stop them by pressing the space bar!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L4_3_Task3_Demo.sb3",
+          "level_position": 3,
+          "levelPosition": 3
         }
-      ]
+      ],
+      "tips": [],
+      "demo_project_id": "M1L4_3_Task3_Demo.sb3"
     },
     {
       "id": "VP2_M1L4_3_4",
@@ -312,9 +482,20 @@
           "level_type": "rating",
           "requirements": [],
           "media": [],
-          "command_keys": []
+          "command_keys": [],
+          "title": "Did you like the task?",
+          "tips": [],
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "project_title": "Did you like the task?",
+          "command_blocks": []
         }
-      ]
+      ],
+      "tips": [],
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "project_title": "Did you like the task?",
+      "command_blocks": []
     },
     {
       "id": "VP2_M1L4_3_5",
@@ -322,64 +503,88 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Bonus! Stars",
-      "project_title": "M1L4 Stars",
+      "title": "Stars",
+      "project_title": "Stars",
       "isBonus": true,
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
       "starter_project_id": "M1L4_Stars.sb3",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "media": [
         {
           "type": "presentation",
-          "title": "Bonus! Stars",
-          "text": "Program the stars to twinkle and shine across the night sky."
+          "title": "Stars",
+          "text": "Wow! So many stars — and each one can twinkle and change costumes and size! Press the keys 1,2,3.",
+          "url": ""
         }
       ],
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Twinkling stars",
-          "text": "Program the star to switch costumes and change size.",
-          "type": "svg",
-          "url": ""
+          "id": "1d1bbd82-654d-4cd4-a5c6-11ad9f86f29c",
+          "title": "The star gradually gets bigger and smaller when the \"1\" key is pressed",
+          "text": "Use two loops in a row.",
+          "type": "gif",
+          "url": "/vp-assets/26848/1_1627634412.png",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_2",
+          "id": "81fb476c-b91d-41c7-be2d-ef42399e5264",
+          "title": "The star twinkles when the \"2\" key is pressed",
+          "text": "The star appears, lingers for a while, disappears, and then it waits a little more before reappearing. Remember to use the repeat forever command.",
+          "type": "gif",
+          "url": "/vp-assets/26848/2_1627634419.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "f024720c-f1de-4c98-8128-3c43f66a5fff",
+          "title": "The star changes color when the \"3\" key is pressed",
+          "text": "Constantly switching multicolored costumes.",
+          "type": "gif",
+          "url": "/vp-assets/26848/3_1627634425.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "3551d46f-e1f9-41aa-ad74-42774f3e4b19",
           "title": "Initial placement",
-          "text": "Set initial position and size for the star.",
-          "type": "svg",
-          "url": ""
+          "text": "Three parameters change here. Think about which ones and set them for the initial placement.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "33b07f07-4fca-4365-b945-a17262f53db7",
+          "title": "Duplicate the sprite",
+          "text": "Create 2 more stars. Right-click on it to duplicate it.",
+          "type": "gif",
+          "url": "/vp-assets/26848/duplicate.png",
+          "taskType": "basic"
         }
       ],
       "states": [
         {
           "id": "VP2_M1L4_3_5_state_1",
           "stateId": "VP2_M1L4_3_5_state_1",
-          "position": 1,
+          "position": 5,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "starter_project_id": "M1L4_Stars.sb3",
-          "project_title": "M1L4 Stars",
+          "project_title": "Stars",
           "isAutoCheck": true,
           "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
@@ -387,18 +592,73 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ]
+          "command_blocks": [],
+          "title": "Stars",
+          "requirements": [
+            {
+              "id": "1d1bbd82-654d-4cd4-a5c6-11ad9f86f29c",
+              "title": "The star gradually gets bigger and smaller when the \"1\" key is pressed",
+              "text": "Use two loops in a row.",
+              "type": "gif",
+              "url": "/vp-assets/26848/1_1627634412.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "81fb476c-b91d-41c7-be2d-ef42399e5264",
+              "title": "The star twinkles when the \"2\" key is pressed",
+              "text": "The star appears, lingers for a while, disappears, and then it waits a little more before reappearing. Remember to use the repeat forever command.",
+              "type": "gif",
+              "url": "/vp-assets/26848/2_1627634419.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "f024720c-f1de-4c98-8128-3c43f66a5fff",
+              "title": "The star changes color when the \"3\" key is pressed",
+              "text": "Constantly switching multicolored costumes.",
+              "type": "gif",
+              "url": "/vp-assets/26848/3_1627634425.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "3551d46f-e1f9-41aa-ad74-42774f3e4b19",
+              "title": "Initial placement",
+              "text": "Three parameters change here. Think about which ones and set them for the initial placement.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "33b07f07-4fca-4365-b945-a17262f53db7",
+              "title": "Duplicate the sprite",
+              "text": "Create 2 more stars. Right-click on it to duplicate it.",
+              "type": "gif",
+              "url": "/vp-assets/26848/duplicate.png",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Stars",
+              "text": "Wow! So many stars — and each one can twinkle and change costumes and size! Press the keys 1,2,3.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L4_3_Task5_Demo.sb3",
+          "level_position": 5,
+          "levelPosition": 5
         }
-      ]
+      ],
+      "tips": [],
+      "demo_project_id": "M1L4_3_Task5_Demo.sb3",
+      "type": "bonus"
     }
   ]
 }

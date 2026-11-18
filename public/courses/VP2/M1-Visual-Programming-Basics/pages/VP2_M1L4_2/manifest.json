@@ -42,25 +42,33 @@
       ],
       "requirements": [
         {
-          "id": "req_clicker_1",
-          "title": "Click the balloon",
-          "text": "When the balloon sprite is clicked, move to a random position and switch costume.",
-          "type": "svg",
-          "url": ""
+          "id": "7695912d-52cb-43af-a4e7-6eca5dc75097",
+          "title": "The balloon moves across the screen",
+          "text": "At the start, the balloon moves across the screen.",
+          "type": "gif",
+          "url": "/vp-assets/26847/1_1627633053.png"
         },
         {
-          "id": "req_clicker_2",
+          "id": "ba3dfbe3-e07b-411d-9f93-d0af74f179bd",
+          "title": "When you click on the balloon, the background changes",
+          "text": "",
+          "type": "gif",
+          "url": "/vp-assets/26847/2_1627633060.png"
+        },
+        {
+          "id": "fa2ee686-5631-44af-b5fe-e5d33f5dc246",
           "title": "Initial placement",
-          "text": "Reset the score and position when the green flag is clicked.",
-          "type": "svg",
-          "url": ""
+          "text": "Think about what properties of the balloon and the stage change during the game and set their initial values.",
+          "type": "gif",
+          "url": "/vp-assets/26847/CIRCLES.png"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Additional task: Clicker - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Clicker",
+          "text": "The aim of the game is to catch the balloon! Make a game like this and invite a friend to play it.",
+          "url": ""
         }
       ],
       "states": [
@@ -87,13 +95,49 @@
             "event_whenflagclicked",
             "control_wait"
           ],
-          "project_title": "Clicker"
+          "project_title": "Clicker",
+          "requirements": [
+            {
+              "id": "7695912d-52cb-43af-a4e7-6eca5dc75097",
+              "title": "The balloon moves across the screen",
+              "text": "At the start, the balloon moves across the screen.",
+              "type": "gif",
+              "url": "/vp-assets/26847/1_1627633053.png"
+            },
+            {
+              "id": "ba3dfbe3-e07b-411d-9f93-d0af74f179bd",
+              "title": "When you click on the balloon, the background changes",
+              "text": "",
+              "type": "gif",
+              "url": "/vp-assets/26847/2_1627633060.png"
+            },
+            {
+              "id": "fa2ee686-5631-44af-b5fe-e5d33f5dc246",
+              "title": "Initial placement",
+              "text": "Think about what properties of the balloon and the stage change during the game and set their initial values.",
+              "type": "gif",
+              "url": "/vp-assets/26847/CIRCLES.png"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Clicker",
+              "text": "The aim of the game is to catch the balloon! Make a game like this and invite a friend to play it.",
+              "url": ""
+            }
+          ],
+          "title": "Clicker",
+          "demo_project_id": "M1L4_2_Task1_Demo.sb3"
         }
       ],
       "project_title": "Clicker",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "isAutoCheck": true,
-      "description": "Create an interactive clicker game with balloons and changing backdrops!"
+      "description": "Create an interactive clicker game with balloons and changing backdrops!",
+      "tips": [],
+      "demo_project_id": "M1L4_2_Task1_Demo.sb3"
     }
   ]
 }

@@ -20,13 +20,16 @@ export default function ScratchTask({
   const derivedPos = matchPos ? parseInt(matchPos[1], 10) : 1;
   const levelPosition = Number(task?.level_position || task?.position || task?.levelPosition || derivedPos);
 
-  // Online project ID from LMS config / Supabase vp2_activities
-  const projectId =
+  // Task 1 starts from the original bare Bear project, not the walking-bear exercise.
+  // Keep this fallback even if an older LMS/Supabase task payload overrides the manifest.
+  const isBearStarterTask = String(task?.activity_id || task?.id || task?.taskId || '') === 'VP2_M1L2_3_1';
+  const projectId = isBearStarterTask ? 'M1L1 Bear.sb3' : (
     task?.starter_project_id ||
     task?.config?.project?.id ||
     task?.config?.project ||
     task?.projectId ||
-    '';
+    ''
+  );
 
   // Flyout categories / command keys: prioritize task definition, then state definition, then fall back
   const taskCommandKeys =
@@ -46,11 +49,18 @@ export default function ScratchTask({
   const categoriesQuery = 'all';
   const blocksQuery = '';
 
+  const tipItems = React.useMemo(() => {
+    const candidates = [task?.tips, task?.config?.tips, task?.states?.[0]?.tips, state?.tips];
+    return candidates.find((items) => Array.isArray(items) && items.length > 0) || [];
+  }, [task?.tips, task?.config?.tips, task?.states, state?.tips]);
+
   const hasDrawerContent = (Array.isArray(task?.requirements) && task.requirements.length > 0) ||
-                           (Array.isArray(task?.media) && task.media.length > 0);
+                           (Array.isArray(task?.media) && task.media.length > 0) || tipItems.length > 0;
 
   // Drawer open/collapse state
   const iframeRef = useRef(null);
+  const demoIframeRef = useRef(null);
+  const [demoReady, setDemoReady] = useState(false);
   const containerRef = useRef(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(
     task?.drawerOpen !== undefined ? !!task.drawerOpen : hasDrawerContent
@@ -63,6 +73,11 @@ export default function ScratchTask({
   });
   const [isResizing, setIsResizing] = useState(false);
   const [completedItems, setCompletedItems] = useState({});
+
+  const bonusItems = React.useMemo(() => {
+    const requirements = task?.requirements || task?.states?.[0]?.requirements || state?.requirements || [];
+    return Array.isArray(requirements) ? requirements.filter((item) => item.taskType === 'bonus') : [];
+  }, [task?.requirements, task?.states, state?.requirements]);
 
   // Toolbar File / Edit menu states
   const [openFileMenu, setOpenFileMenu] = useState(false);
@@ -157,6 +172,7 @@ export default function ScratchTask({
   };
 
   const derivedProjectTitle = (
+    (isBearStarterTask ? 'M1L1 Bear' : '') ||
     task?.project_title ||
     task?.projectName ||
     (projectId && typeof projectId === 'string' && projectId.toLowerCase().endsWith('.sb3')
@@ -201,7 +217,7 @@ export default function ScratchTask({
   // Checklist from static manifest requirements or default fallback
   const checklistItems = React.useMemo(() => {
     if (Array.isArray(task?.requirements) && task.requirements.length > 0) {
-      return task.requirements.map((item, idx) => ({
+      return task.requirements.filter((item) => item.taskType !== 'bonus').map((item, idx) => ({
         id: item.id || `item_${idx + 1}`,
         title: item.title || '',
         text: item.text || item.title || `Requirement ${idx + 1}`,
@@ -230,11 +246,12 @@ export default function ScratchTask({
     ];
   }, [task?.requirements, lowerTitle]);
 
+  const [isPresentationOpen, setIsPresentationOpen] = useState(true);
+
   useEffect(() => {
-    if (checklistItems && checklistItems.length > 0) {
-      setOpenReqs({ [checklistItems[0].id]: true });
-    }
-  }, [task?.id, task?.taskId, task?.activity_id, checklistItems]);
+    setOpenReqs({});
+    setIsPresentationOpen(true);
+  }, [task?.id, task?.taskId, task?.activity_id, levelPosition]);
 
   const selectedReq = React.useMemo(() => {
     return checklistItems.find((it) => it.id === selectedReqId) || null;
@@ -242,20 +259,60 @@ export default function ScratchTask({
 
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
-  const demoProjectId =
+  const showStarterProject = task?.show_starter_project === true;
+  const starterProjectUrl = showStarterProject && projectId
+    ? `/starter-projects/${encodeURIComponent(projectId)}`
+    : '';
+  const demoProjectId = task?.hide_demo === true ? '' : (
     task?.demo_project_id ||
     task?.demoProjectId ||
     task?.config?.presentation?.projectId ||
     task?.config?.presentation?.project ||
-    (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '');
+    (isM1L2Task && levelPosition === 7 ? 'level_7_demo' : isM1L2Task && levelPosition === 8 ? 'level_8_demo' : '')
+  );
 
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
   const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
-  const hasMediaInReqs = checklistItems.some((it) => !!it.url);
-  const showStandalonePreview = !demoProjectId && !!previewMediaUrl && !hasMediaInReqs;
+
+  const presentationMedia =
+    (task?.media && Array.isArray(task.media) && task.media[0]) ||
+    (task?.states?.[0]?.media && Array.isArray(task.states[0].media) && task.states[0].media[0]) ||
+    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: demoInstructionText } : null);
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
+
+  // Demo runs in a separate Scratch VM iframe. Wait for its project to load before
+  // enabling controls, and never send commands to the student's editable project.
+  useEffect(() => {
+    setDemoReady(false);
+  }, [demoProjectId, levelPosition, isPresentationOpen]);
+
+  useEffect(() => {
+    const onDemoMessage = (event) => {
+      if (event.origin !== window.location.origin || event.source !== demoIframeRef.current?.contentWindow) return;
+      if (event.data?.type === 'SCRATCH_DEMO_READY') setDemoReady(true);
+    };
+    window.addEventListener('message', onDemoMessage);
+    return () => window.removeEventListener('message', onDemoMessage);
+  }, []);
+
+  // Reload-safe handshake: late React listeners and iframe loads cannot lose READY.
+  useEffect(() => {
+    if (!demoProjectId || !isPresentationOpen || demoReady) return;
+    const ping = () => demoIframeRef.current?.contentWindow?.postMessage(
+      { type: 'SCRATCH_DEMO_PING' },
+      window.location.origin
+    );
+    ping();
+    const timer = window.setInterval(ping, 300);
+    return () => window.clearInterval(timer);
+  }, [demoProjectId, levelPosition, isPresentationOpen, demoReady]);
+
+  const controlDemo = (type) => {
+    if (!demoReady) return;
+    demoIframeRef.current?.contentWindow?.postMessage({ type }, window.location.origin);
+  };
 
   const [activeTab, setActiveTab] = useState(demoProjectId ? 'demo' : 'media');
 
@@ -515,17 +572,6 @@ export default function ScratchTask({
       <div className="scratch-task-editor-pane">
         <div className="scratch-task-toolbar">
           <div className="scratch-task-toolbar-left">
-            {onBackToCourses && (
-              <button
-                type="button"
-                className="scratch-task-btn-tool back"
-                onClick={onBackToCourses}
-                title="Quay lại khóa học (Dashboard)"
-              >
-                ← Back to Course
-              </button>
-            )}
-
             <div
               className="scratch-task-menu-item"
               onClick={(e) => {
@@ -725,73 +771,141 @@ export default function ScratchTask({
 
         {/* Scrollable Drawer Body */}
         <div className="scratch-task-drawer-body">
-          {/* Clean Drawer Header (No yellow bar!) */}
-          <div className="scratch-task-drawer-header-clean">
-            <h2 className="scratch-task-drawer-task-title">{taskTitle}</h2>
-            <button
-              type="button"
-              className="scratch-task-drawer-close-btn"
-              onClick={() => setIsDrawerOpen(false)}
-              title="Thu gọn bảng bài tập"
-            >
-              ✕
-            </button>
-          </div>
-
           <div className="scratch-task-drawer-content">
+            {starterProjectUrl && (
+              <a className="scratch-task-starter-link" href={starterProjectUrl} download>
+                {derivedProjectTitle}
+              </a>
+            )}
+
             {/* Demo stage preview (if demoProjectId exists) */}
             {demoProjectId ? (
               <div className="scratch-task-demo-wrapper">
-                <div className="scratch-task-demo-player-box">
-                  <div className="scratch-task-demo-iframe-container">
-                    <iframe
-                      key={`demo-${demoProjectId}-${levelPosition}`}
-                      src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&level=${encodeURIComponent(levelPosition)}`}
-                      className="scratch-task-demo-iframe"
-                      title="Scratch Demo Preview"
-                      allow="autoplay"
-                    />
+                <button
+                  type="button"
+                  className="scratch-task-demo-heading"
+                  onClick={() => setIsPresentationOpen((open) => !open)}
+                  aria-expanded={isPresentationOpen}
+                >
+                  <span>{presentationMedia?.title || 'See how the project should work'}</span>
+                  <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
+                </button>
+                {isPresentationOpen && (
+                  <div className="scratch-task-demo-player-box">
+                    <div className="scratch-task-demo-controls" role="group" aria-label="Scratch demo controls">
+                      <button
+                        type="button"
+                        className="scratch-task-demo-control"
+                        disabled={!demoReady}
+                        title={demoReady ? 'Run demo (green flag)' : 'Loading demo'}
+                        aria-label="Run demo"
+                        onClick={() => controlDemo('SCRATCH_DEMO_RUN')}
+                      >
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#28a745" d="M5 2h2v20H5zM7 3c3-2 6 2 9 0 1-.6 2-.8 3-.8v11c-4 0-7 3-12 1z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        className="scratch-task-demo-control"
+                        disabled={!demoReady}
+                        title={demoReady ? 'Stop demo' : 'Loading demo'}
+                        aria-label="Stop demo"
+                        onClick={() => controlDemo('SCRATCH_DEMO_STOP')}
+                      >
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#f08080" d="M8 2h8l6 6v8l-6 6H8l-6-6V8z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="scratch-task-demo-iframe-container">
+                      <iframe
+                        ref={demoIframeRef}
+                        key={`demo-${demoProjectId}-${levelPosition}`}
+                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&bridge=2&level=${encodeURIComponent(levelPosition)}`}
+                        className="scratch-task-demo-iframe"
+                        title="Scratch Demo Preview"
+                        allow="autoplay"
+                      />
+                    </div>
+                    <div className="scratch-task-demo-hint">
+                      {demoReady ? 'Bấm cờ xanh để chạy mẫu, hoặc nút đỏ để dừng.' : 'Đang tải project demo...'}
+                    </div>
                   </div>
-                  <div className="scratch-task-demo-hint">
-                    <span className="scratch-task-demo-flag-icon">⚑</span> Bấm lá cờ xanh trong khung để xem hoạt động mẫu
-                  </div>
+                )}
+              </div>
+            ) : presentationMedia ? (
+              /* Presentation hint card at top matching LMS */
+              <div className="scratch-task-presentation-card">
+                <div
+                  className="scratch-task-presentation-header"
+                  onClick={() => setIsPresentationOpen((v) => !v)}
+                >
+                  <span className="scratch-task-presentation-title">
+                    {presentationMedia.title || previewMediaTitle || taskTitle}
+                  </span>
+                  <span className={`scratch-task-presentation-arrow ${isPresentationOpen ? 'open' : ''}`}>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: isPresentationOpen ? 'rotate(180deg)' : 'none',
+                        transition: 'transform 0.2s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
                 </div>
-              </div>
-            ) : showStandalonePreview ? (
-              /* Standalone GIF / Media image preview */
-              <div className="scratch-task-preview-media-standalone">
-                <img
-                  src={previewMediaUrl}
-                  alt={previewMediaTitle}
-                  className="scratch-task-preview-media-img"
-                  onClick={() => setModalImage({ url: previewMediaUrl, title: previewMediaTitle })}
-                  loading="lazy"
-                />
-                {previewMediaTitle && previewMediaTitle !== taskTitle && (
-                  <div className="scratch-task-media-caption">
-                    {previewMediaTitle} <span className="scratch-task-media-zoom-hint">(Nhấn để phóng to)</span>
+                {isPresentationOpen && (
+                  <div className="scratch-task-presentation-body">
+                    {presentationMedia.url && (
+                      <div
+                        className="scratch-task-presentation-media-box"
+                        onClick={() => setModalImage({ url: presentationMedia.url, title: presentationMedia.title || '' })}
+                        title="Bấm để xem ảnh phóng to"
+                      >
+                        <img
+                          src={presentationMedia.url}
+                          alt={presentationMedia.title || ''}
+                          className="scratch-task-presentation-img"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                    {presentationMedia.text && (
+                      <p className="scratch-task-presentation-text">
+                        {presentationMedia.text}
+                      </p>
+                    )}
                   </div>
                 )}
-                {demoInstructionText && (
-                  <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
-                )}
               </div>
-            ) : (!hasMediaInReqs && demoInstructionText) ? (
-              <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
             ) : null}
 
-            {task?.description && task.description !== demoInstructionText && (
+            {task?.description && task.description !== presentationMedia?.text && task.description !== demoInstructionText && (
               <p className="scratch-task-description">
                 {task.description}
               </p>
+            )}
+
+            {/* Divider between presentation card and checklist */}
+            {presentationMedia && checklistItems.length > 0 && (
+              <div className="scratch-task-drawer-divider" />
             )}
 
             {/* Requirements Accordion List for THIS task */}
             {checklistItems.length > 0 && (
               <div className="scratch-task-checklist-section">
                 <div className="scratch-task-checklist-heading">
-                  <span>{task?.checklist_heading || (task?.isAutoCheck !== false ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER')}</span>
-                  <span className="scratch-task-info-icon" title="Automatic check validation">ⓘ</span>
+                  <span>{task?.checklist_heading || (task?.isAutoCheck === true ? 'TASKS WITH AUTOMATIC CHECK' : 'TASKS WILL BE CHECKED BY THE TEACHER')}</span>
+                  <span className="scratch-task-info-icon" title="Checklist info">ⓘ</span>
                 </div>
 
                 <div className="scratch-task-req-accordion-list">
@@ -818,7 +932,7 @@ export default function ScratchTask({
                             title={isDone ? 'Đánh dấu chưa xong' : 'Đánh dấu đã hoàn thành'}
                           >
                             {isDone && (
-                              <svg viewBox="0 0 24 24" fill="none">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ width: 12, height: 12 }}>
                                 <polyline points="20 6 9 17 4 12" />
                               </svg>
                             )}
@@ -829,7 +943,22 @@ export default function ScratchTask({
                           </span>
 
                           <span className={`scratch-task-req-arrow ${isOpen ? 'open' : ''}`}>
-                            ▼
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              style={{
+                                transform: isOpen ? 'rotate(180deg)' : 'none',
+                                transition: 'transform 0.2s ease',
+                              }}
+                            >
+                              <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
                           </span>
                         </div>
 
@@ -865,6 +994,60 @@ export default function ScratchTask({
                   })}
                 </div>
               </div>
+            )}
+            {bonusItems.length > 0 && (
+              <section className="scratch-task-bonus" aria-label="Bonus tasks">
+                <div className="scratch-task-checklist-heading">BONUS TASKS</div>
+                {bonusItems.map((item, index) => (
+                  <details key={`${task?.id || levelPosition}-bonus-${item.id || index}`} className="scratch-task-bonus-card" open>
+                    <summary className="scratch-task-bonus-heading">
+                      <span>{item.title}</span>
+                      <span className="scratch-task-tip-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div className="scratch-task-bonus-body">
+                      {item.text && <p>{item.text}</p>}
+                      {item.url && (
+                        <button type="button" className="scratch-task-tip-image"
+                          onClick={() => setModalImage({ url: item.url, title: item.title })}
+                          aria-label={`Enlarge ${item.title || 'bonus hint'}`}>
+                          <img src={item.url} alt={item.title || 'Bonus hint'} loading="lazy" />
+                        </button>
+                      )}
+                    </div>
+                  </details>
+                ))}
+              </section>
+            )}
+            {tipItems.length > 0 && (
+              <section className="scratch-task-tips" aria-label="Tips">
+                <div className="scratch-task-checklist-heading">TIPS</div>
+                {tipItems.map((tip, index) => (
+                  <details
+                    key={`${task?.activity_id || task?.id || levelPosition}-${tip.id || index}`}
+                    className="scratch-task-tip-card"
+                    open
+                  >
+                    <summary className="scratch-task-tip-heading">
+                      <span className="scratch-task-tip-icon" aria-hidden="true">!</span>
+                      <span>{tip.title}</span>
+                      <span className="scratch-task-tip-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div className="scratch-task-tip-body">
+                      {tip.description && <p>{tip.description}</p>}
+                      {tip.url && (
+                        <button
+                          type="button"
+                          className="scratch-task-tip-image"
+                          onClick={() => setModalImage({ url: tip.url, title: tip.title })}
+                          aria-label={`Enlarge ${tip.title || 'tip image'}`}
+                        >
+                          <img src={tip.url} alt={tip.title || 'Tip'} loading="lazy" />
+                        </button>
+                      )}
+                    </div>
+                  </details>
+                ))}
+              </section>
             )}
           </div>
         </div>

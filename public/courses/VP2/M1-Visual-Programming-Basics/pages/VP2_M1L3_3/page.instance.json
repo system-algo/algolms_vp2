@@ -12,55 +12,60 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Scratch. Dialogs and planning - Task 1",
+      "title": "Before takeoff",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Witch_and_teacher.sb3",
+      "starter_project_id": "M1L3_Before_takeoff.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Program Scratch. Dialogs and planning - Task 1",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 1\".",
-          "type": "svg",
+          "id": "ad15ae8f-2eb2-411f-b0f0-769a773be2a8",
+          "title": "Study the project plan in your workbook",
+          "text": "The sprites speak in turn. When they are silent and listening, the command \"Wait __ sec\" is used.",
+          "type": "gif",
+          "url": "/vp-assets/19848/bo1_1616073213.png"
+        },
+        {
+          "id": "d5658762-bc6c-4070-a115-6ab08fd5f211",
+          "title": "Program Captain Kepler",
+          "text": "",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
+          "id": "508b00f9-93e4-4144-a135-950fb92e8464",
+          "title": "Program the MarsBot",
+          "text": "",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_1_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "e1cb3dea-8542-48c3-818c-c4262902c594",
+          "title": "Program the astro cadet",
+          "text": "",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 1",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Before takeoff",
+          "text": "Program the project from your workbook. You can use the ready-made plan, or you can use the one that you wrote yourself.",
+          "url": ""
         }
       ],
       "states": [
@@ -71,28 +76,70 @@
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L3_Witch_and_teacher.sb3",
+          "starter_project_id": "M1L3_Before_takeoff.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "M1L3 Witch and teacher",
+          "title": "Before takeoff",
+          "requirements": [
+            {
+              "id": "ad15ae8f-2eb2-411f-b0f0-769a773be2a8",
+              "title": "Study the project plan in your workbook",
+              "text": "The sprites speak in turn. When they are silent and listening, the command \"Wait __ sec\" is used.",
+              "type": "gif",
+              "url": "/vp-assets/19848/bo1_1616073213.png"
+            },
+            {
+              "id": "d5658762-bc6c-4070-a115-6ab08fd5f211",
+              "title": "Program Captain Kepler",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "508b00f9-93e4-4144-a135-950fb92e8464",
+              "title": "Program the MarsBot",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "e1cb3dea-8542-48c3-818c-c4262902c594",
+              "title": "Program the astro cadet",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L3 Witch and teacher"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Before takeoff",
+              "text": "Program the project from your workbook. You can use the ready-made plan, or you can use the one that you wrote yourself.",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task1_Demo.sb3",
+          "level_position": 1,
+          "levelPosition": 1,
+          "tips": []
         }
       ],
-      "project_title": "M1L3 Witch and teacher",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "project_title": "M1L3 Before takeoff",
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "isAutoCheck": false,
+      "demo_project_id": "M1L3_3_Task1_Demo.sb3",
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_2",
@@ -100,7 +147,7 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Scratch. Dialogs and planning - Task 2",
+      "title": "Dinosaurs",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -111,51 +158,35 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Program Scratch. Dialogs and planning - Task 2",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 2\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "89ff3a5e-f8f1-48c2-91b5-52540c32c07f",
+          "title": "The dinosaurs take turns talking",
+          "text": "The dinosaurs' lines do not appear at the same time — when one speaks, the other listens!",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 2",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Dinosaurs",
+          "text": "The dinosaurs speak in turn, not at the same time! Put together a similar dialog in which one dinosaur responds to the other!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L3_3_2_state_1",
           "stateId": "VP2_M1L3_3_2_state_1",
-          "position": 1,
+          "position": 2,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -165,22 +196,61 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "M1L3 Dinosaurs",
+          "title": "Dinosaurs",
+          "requirements": [
+            {
+              "id": "89ff3a5e-f8f1-48c2-91b5-52540c32c07f",
+              "title": "The dinosaurs take turns talking",
+              "text": "The dinosaurs' lines do not appear at the same time — when one speaks, the other listens!",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L3 Dinosaurs"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Dinosaurs",
+              "text": "The dinosaurs speak in turn, not at the same time! Put together a similar dialog in which one dinosaur responds to the other!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task2_Demo.sb3",
+          "level_position": 2,
+          "levelPosition": 2,
+          "tips": [
+            {
+              "id": "1563273161031-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo2_1616074091.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "project_title": "M1L3 Dinosaurs",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": "M1L3_3_Task2_Demo.sb3",
+      "tips": [
+        {
+          "id": "1563273161031-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo2_1616074091.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_3",
@@ -188,87 +258,110 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Scratch. Dialogs and planning - Task 3",
+      "title": "Near the castle",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "M1L3_Pterodactyl_is_coming.sb3",
+      "starter_project_id": "M1L3_Girls_in_the_castle.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_3_1",
-          "title": "Program Scratch. Dialogs and planning - Task 3",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 3\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "b6edd06d-a84d-4cbd-9432-5e519ae4e1c1",
+          "title": "The girls take turns talking",
+          "text": "The girls don't interrupt each other!",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 3",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Near the castle",
+          "text": "Create a dialog from three phrases!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L3_3_3_state_1",
           "stateId": "VP2_M1L3_3_3_state_1",
-          "position": 1,
+          "position": 3,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "M1L3_Pterodactyl_is_coming.sb3",
+          "starter_project_id": "M1L3_Girls_in_the_castle.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "M1L3 Pterodactyl is coming",
+          "title": "Near the castle",
+          "requirements": [
+            {
+              "id": "b6edd06d-a84d-4cbd-9432-5e519ae4e1c1",
+              "title": "The girls take turns talking",
+              "text": "The girls don't interrupt each other!",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L3 Pterodactyl is coming"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Near the castle",
+              "text": "Create a dialog from three phrases!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task3_Demo.sb3",
+          "level_position": 3,
+          "levelPosition": 3,
+          "tips": [
+            {
+              "id": "1563273688525-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo3_1616074015.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
-      "project_title": "M1L3 Pterodactyl is coming",
+      "project_title": "M1L3 Girls in the castle",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": "M1L3_3_Task3_Demo.sb3",
+      "tips": [
+        {
+          "id": "1563273688525-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo3_1616074015.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_4",
@@ -276,7 +369,7 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Scratch. Dialogs and planning - Task 4",
+      "title": "About the planet",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -287,51 +380,35 @@
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_4_1",
-          "title": "Program Scratch. Dialogs and planning - Task 4",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 4\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_4_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_4_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "3287868e-1b9e-440f-938d-0f8cd1afff7f",
+          "title": "The astronauts take turns talking",
+          "text": "When one sprite speaks, the other listens and is silent.",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 4",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "About the planet",
+          "text": "In this dialog, each astronaut replies twice!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L3_3_4_state_1",
           "stateId": "VP2_M1L3_3_4_state_1",
-          "position": 1,
+          "position": 4,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -341,22 +418,61 @@
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "M1L3 Astronauts",
+          "title": "About the planet",
+          "requirements": [
+            {
+              "id": "3287868e-1b9e-440f-938d-0f8cd1afff7f",
+              "title": "The astronauts take turns talking",
+              "text": "When one sprite speaks, the other listens and is silent.",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "M1L3 Astronauts"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "About the planet",
+              "text": "In this dialog, each astronaut replies twice!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task4_Demo.sb3",
+          "level_position": 4,
+          "levelPosition": 4,
+          "tips": [
+            {
+              "id": "1564043086239-5",
+              "title": "Project plan",
+              "description": "",
+              "url": "/vp-assets/19848/bo4_1616074340.png",
+              "videoUrl": "",
+              "errorsRequired": 0
+            }
+          ]
         }
       ],
       "project_title": "M1L3 Astronauts",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": "M1L3_3_Task4_Demo.sb3",
+      "tips": [
+        {
+          "id": "1564043086239-5",
+          "title": "Project plan",
+          "description": "",
+          "url": "/vp-assets/19848/bo4_1616074340.png",
+          "videoUrl": "",
+          "errorsRequired": 0
+        }
+      ]
     },
     {
       "id": "VP2_M1L3_3_5",
@@ -364,87 +480,42 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Scratch. Dialogs and planning - Task 5",
-      "activityType": "scratch",
-      "level_type": "scratch",
-      "selectedType": "scratch",
-      "starter_project_id": "",
+      "title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
       "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
-      "requirements": [
-        {
-          "id": "req_5_1",
-          "title": "Program Scratch. Dialogs and planning - Task 5",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 5\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_5_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 5",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
-        }
-      ],
+      "command_keys": [],
+      "command_blocks": [],
+      "requirements": [],
+      "media": [],
       "states": [
         {
           "id": "VP2_M1L3_3_5_state_1",
           "stateId": "VP2_M1L3_3_5_state_1",
-          "position": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
-          "level_type": "scratch",
-          "starter_project_id": "",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control"
-          ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
-          ],
-          "project_title": "Scratch. Dialogs and planning - Task 5"
+          "position": 5,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "starter_project_id": null,
+          "command_keys": [],
+          "command_blocks": [],
+          "project_title": "Scratch. Dialogs and planning - Task 5",
+          "title": "Did you like the task?",
+          "requirements": [],
+          "media": [],
+          "demo_project_id": null,
+          "level_position": 5,
+          "levelPosition": 5,
+          "tips": []
         }
       ],
       "project_title": "Scratch. Dialogs and planning - Task 5",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": null,
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_6",
@@ -452,87 +523,108 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Dialogs and planning - Task 6",
+      "title": "Trying on a dress",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "",
+      "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_6_1",
-          "title": "Program Scratch. Dialogs and planning - Task 6",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 6\".",
-          "type": "svg",
+          "id": "35cc2e75-970e-4df5-8e01-9d3d71c8878f",
+          "title": "The costumes change every two seconds",
+          "text": "",
+          "type": "gif",
           "url": ""
         },
         {
-          "id": "req_6_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "a4a8241a-d596-4d16-babe-9a344210f8ed",
+          "title": "The girl comments on each outfit",
+          "text": "",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 6",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Trying on a dress",
+          "text": "Look, the outfits change every two seconds and the Harper girl comments on each outfit!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L3_3_6_state_1",
           "stateId": "VP2_M1L3_3_6_state_1",
-          "position": 1,
+          "position": 6,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "",
+          "starter_project_id": "M1L3_Trying_on_a_dress.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Scratch. Dialogs and planning - Task 6",
+          "title": "Trying on a dress",
+          "requirements": [
+            {
+              "id": "35cc2e75-970e-4df5-8e01-9d3d71c8878f",
+              "title": "The costumes change every two seconds",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "a4a8241a-d596-4d16-babe-9a344210f8ed",
+              "title": "The girl comments on each outfit",
+              "text": "",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "Scratch. Dialogs and planning - Task 6"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Trying on a dress",
+              "text": "Look, the outfits change every two seconds and the Harper girl comments on each outfit!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task6_Demo.sb3",
+          "level_position": 6,
+          "levelPosition": 6,
+          "tips": []
         }
       ],
-      "project_title": "Scratch. Dialogs and planning - Task 6",
+      "project_title": "M1L3 Trying on a dress",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": "M1L3_3_Task6_Demo.sb3",
+      "isBonus": true,
+      "type": "bonus",
+      "tips": []
     },
     {
       "id": "VP2_M1L3_3_7",
@@ -540,87 +632,94 @@
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Scratch. Dialogs and planning - Task 7",
+      "title": "Sorceress and broom",
       "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "starter_project_id": "",
+      "starter_project_id": "M1L3.sb3",
       "drawerOpen": true,
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "motion_movesteps",
-        "motion_gotoxy",
-        "looks_sayforsecs",
-        "looks_switchcostumeto",
-        "event_whenflagclicked",
-        "control_wait"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
-          "id": "req_7_1",
-          "title": "Program Scratch. Dialogs and planning - Task 7",
-          "text": "Program the sprites and animations for \"Scratch. Dialogs and planning - Task 7\".",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_7_2",
-          "title": "Add interactions",
-          "text": "Program scripts to respond to green flag, key presses, or mouse clicks.",
-          "type": "svg",
-          "url": ""
-        },
-        {
-          "id": "req_7_3",
-          "title": "Initial placement",
-          "text": "Set initial position, costume, and backdrop when green flag is clicked.",
-          "type": "svg",
+          "id": "e43836c1-5c2c-4169-8b2b-7f897d38fe67",
+          "title": "The characters don't interrupt each other",
+          "text": "Each character talks for 2 seconds. ",
+          "type": "gif",
           "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Scratch. Dialogs and planning - Task 7",
-          "text": "In this task, we practice visual programming in Scratch. Follow the instructions and complete the checklist on the left!"
+          "title": "Sorceress and broom",
+          "text": "Another dialog, but now three characters are talking! Even the broom is talking!",
+          "url": ""
         }
       ],
       "states": [
         {
           "id": "VP2_M1L3_3_7_state_1",
           "stateId": "VP2_M1L3_3_7_state_1",
-          "position": 1,
+          "position": 7,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
-          "starter_project_id": "",
+          "starter_project_id": "M1L3.sb3",
           "command_keys": [
             "motion",
             "looks",
             "sound",
             "events",
-            "control"
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
           ],
-          "command_blocks": [
-            "motion_movesteps",
-            "motion_gotoxy",
-            "looks_sayforsecs",
-            "looks_switchcostumeto",
-            "event_whenflagclicked",
-            "control_wait"
+          "command_blocks": [],
+          "project_title": "Scratch. Dialogs and planning - Task 7",
+          "title": "Sorceress and broom",
+          "requirements": [
+            {
+              "id": "e43836c1-5c2c-4169-8b2b-7f897d38fe67",
+              "title": "The characters don't interrupt each other",
+              "text": "Each character talks for 2 seconds. ",
+              "type": "gif",
+              "url": ""
+            }
           ],
-          "project_title": "Scratch. Dialogs and planning - Task 7"
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Sorceress and broom",
+              "text": "Another dialog, but now three characters are talking! Even the broom is talking!",
+              "url": ""
+            }
+          ],
+          "demo_project_id": "M1L3_3_Task7_Demo.sb3",
+          "level_position": 7,
+          "levelPosition": 7,
+          "tips": []
         }
       ],
-      "project_title": "Scratch. Dialogs and planning - Task 7",
+      "project_title": "M1L3",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "isAutoCheck": true,
+      "demo_project_id": "M1L3_3_Task7_Demo.sb3",
+      "isBonus": true,
+      "type": "bonus",
+      "tips": []
     }
   ]
 }

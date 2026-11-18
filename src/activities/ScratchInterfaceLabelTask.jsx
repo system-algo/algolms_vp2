@@ -429,7 +429,6 @@ export default function ScratchInterfaceLabelTask(props) {
     if (allCorrect) {
       setSubmissionStatus('correct');
       setFeedbackText('Correct! You correctly identified all the elements of the Scratch interface.');
-      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
       await saveTaskCompletionToSupabase({
         courseId,

@@ -249,9 +249,6 @@ export default function CategoryQuizTask({
 
     if (isCorrect) {
       setStatus('correct');
-      try {
-        playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
-      } catch {}
 
       saveTaskCompletionToSupabase({ courseId, lessonId, pageId, taskId, isCompleted: true });
 

@@ -575,9 +575,23 @@ export default function TopNavigation({
     });
   }
 
+  const lastCompletionSoundTimeRef = useRef(0);
+
   function playCustomSound(soundType) {
     if (!soundEnabled) {
       return;
+    }
+
+    const now = Date.now();
+    const isCompletionSound =
+      soundType === LMS_SOUND_TYPES.COMPLETE_ACTIVITY ||
+      soundType === LMS_SOUND_TYPES.COMPLETE_LESSON;
+
+    if (isCompletionSound) {
+      if (now - lastCompletionSoundTimeRef.current < 1200) {
+        return;
+      }
+      lastCompletionSoundTimeRef.current = now;
     }
 
     const audio =

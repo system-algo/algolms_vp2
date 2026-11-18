@@ -581,7 +581,6 @@ export default function MarsBotQuizTask(props) {
     if (isCorrect) {
       setSubmissionStatus('correct');
       setFeedbackText(feedback || 'Correct! Answer submitted successfully.');
-      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
       // Lưu Supabase activity_progress chuẩn LMS
       await saveTaskCompletionToSupabase({

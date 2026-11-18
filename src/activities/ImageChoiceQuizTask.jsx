@@ -195,9 +195,6 @@ export default function ImageChoiceQuizTask({
 
     if (isCorrect) {
       setStatus('correct');
-      try {
-        playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
-      } catch {}
 
       saveTaskCompletionToSupabase({
         courseId,

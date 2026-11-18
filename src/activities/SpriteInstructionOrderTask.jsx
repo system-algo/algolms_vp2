@@ -355,7 +355,6 @@ export default function SpriteInstructionOrderTask(props) {
     if (isCorrect) {
       setSubmissionStatus('correct');
       setFeedbackText(feedback || 'Correct! You created the right instructions to add a sprite.');
-      playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
       await saveTaskCompletionToSupabase({
         courseId,

@@ -199,8 +199,6 @@ export default function FeedbackRatingTask(props) {
       localStorage.setItem(`feedback_rating_${currentTaskId}`, option.id);
     } catch {}
 
-    playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
-
     const targetCourse = courseId || 'VP2';
     const targetLesson = lessonId || 'M1-Visual-Programming-Basics';
     const targetPage = pageId || 'VP2_M1L3_4';
@@ -280,8 +278,6 @@ export default function FeedbackRatingTask(props) {
       localStorage.setItem(`completed_${currentTaskId}`, 'true');
       localStorage.setItem(`feedback_rating_${currentTaskId}`, option.id);
     } catch {}
-
-    playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
 
     const targetCourse = courseId || 'VP2';
     const targetLesson = lessonId || 'M1-Visual-Programming-Basics';

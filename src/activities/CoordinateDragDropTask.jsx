@@ -308,9 +308,6 @@ export default function CoordinateDragDropTask({
 
     if (allCorrect) {
       setStatus('correct');
-      try {
-        playLmsSound(LMS_SOUND_TYPES.COMPLETE_ACTIVITY);
-      } catch {}
 
       saveTaskCompletionToSupabase({
         courseId,

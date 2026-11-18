@@ -4,7 +4,7 @@
   "title": "Scratch. Messages",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 6,
+  "taskCount": 7,
   "tasks": [
     {
       "id": "VP2_M2L4_1_1",
@@ -13,12 +13,15 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "Potion",
+      "project_title": "Potion",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L4_Potion.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Complete the programming task for \"Potion\".",
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "command_keys": [
         "motion",
         "looks",
@@ -33,42 +36,68 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
+          "id": "62db3cc1-90ca-4d1b-bafa-dc6025ed7b71",
+          "title": "The potion sends a message",
+          "text": "To make this possible, sprites exchange messages. For example, when the Potion sprite is clicked, it sends the Transform message.",
+          "type": "gif",
+          "url": "/vp-assets/26855/sends_a_message.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "078439de-8a16-4cf7-a2cf-37aedefa9539",
+          "title": "The Sorceress receives the message",
+          "text": "The Sorceress sprite receives the message. To do this, you need to create a script that starts with the command \"when I receive a message.\"",
+          "type": "gif",
+          "url": "/vp-assets/26855/receive_message.png",
+          "taskType": "basic"
+        },
+        {
+          "id": "efb7d69c-7a87-4da0-a220-0eafc033ddac",
+          "title": "Sorceress transformations",
+          "text": "Think up what happens to the Sorceress sprite and program it!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "983007c8-7344-41e9-9b24-0481392915b4",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "There are so many transformations of the Sorceress sprite! Of course, all the changes must be reset at startup.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Potion\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Potion",
+          "text": "You click on the Potion sprite, and a completely different sprite reacts. Look!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L4_Potion.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26855",
+      "source_level_id": "329781",
+      "source_task_level_id": "199094",
+      "source_project_id": "10683103",
+      "source_demo_project_id": "10683104",
       "states": [
         {
           "id": "VP2_M2L4_1_1_state_1",
-          "stateId": "VP2_M2L4_1_1_state_1",
           "position": 1,
           "level_position": 1,
           "levelPosition": 1,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Potion",
+          "project_title": "Potion",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L4_Potion.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Potion\".",
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
           "command_keys": [
             "motion",
             "looks",
@@ -83,34 +112,56 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
+              "id": "62db3cc1-90ca-4d1b-bafa-dc6025ed7b71",
+              "title": "The potion sends a message",
+              "text": "To make this possible, sprites exchange messages. For example, when the Potion sprite is clicked, it sends the Transform message.",
+              "type": "gif",
+              "url": "/vp-assets/26855/sends_a_message.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "078439de-8a16-4cf7-a2cf-37aedefa9539",
+              "title": "The Sorceress receives the message",
+              "text": "The Sorceress sprite receives the message. To do this, you need to create a script that starts with the command \"when I receive a message.\"",
+              "type": "gif",
+              "url": "/vp-assets/26855/receive_message.png",
+              "taskType": "basic"
+            },
+            {
+              "id": "efb7d69c-7a87-4da0-a220-0eafc033ddac",
+              "title": "Sorceress transformations",
+              "text": "Think up what happens to the Sorceress sprite and program it!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "983007c8-7344-41e9-9b24-0481392915b4",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "There are so many transformations of the Sorceress sprite! Of course, all the changes must be reset at startup.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Potion\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Potion",
+              "text": "You click on the Potion sprite, and a completely different sprite reacts. Look!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L4_Potion.sb3",
-          "project_title": "M2L4 Potion"
+          "source_task_id": "26855",
+          "source_level_id": "329781",
+          "source_task_level_id": "199094",
+          "source_project_id": "10683103",
+          "source_demo_project_id": "10683104",
+          "stateId": "VP2_M2L4_1_1_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L4 Potion",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L4_1_2",
@@ -118,13 +169,16 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Shop",
+      "title": "Store",
+      "project_title": "Store",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L4_Shop.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Shop\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -139,42 +193,68 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
+          "id": "6b63e4d5-1331-4ae0-b40b-b4993807c8d9",
+          "title": "The bell sends the message",
+          "text": "When you press the bell, it sends the message.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "a0bc50c9-7723-432f-a781-7b8ce3b0dee9",
+          "title": "The seller appears",
+          "text": "If the bell is pressed, the seller appears.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "84024eb1-dc02-47fb-829a-182b3908d594",
+          "title": "The boy greets the seller",
+          "text": "If the bell is pressed, the boy greets the seller.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "ba41c948-5841-4ea7-bb5c-96a9f1bf4dd9",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "Don't forget to set the initial parameters.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Shop\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Store",
+          "text": "Click on the bell!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L4_Shop.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26855",
+      "source_level_id": "329782",
+      "source_task_level_id": "199095",
+      "source_project_id": "10683105",
+      "source_demo_project_id": "10683108",
       "states": [
         {
           "id": "VP2_M2L4_1_2_state_1",
-          "stateId": "VP2_M2L4_1_2_state_1",
           "position": 2,
           "level_position": 2,
           "levelPosition": 2,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Store",
+          "project_title": "Store",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L4_Shop.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Shop\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -189,34 +269,56 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_2_1",
+              "id": "6b63e4d5-1331-4ae0-b40b-b4993807c8d9",
+              "title": "The bell sends the message",
+              "text": "When you press the bell, it sends the message.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "a0bc50c9-7723-432f-a781-7b8ce3b0dee9",
+              "title": "The seller appears",
+              "text": "If the bell is pressed, the seller appears.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "84024eb1-dc02-47fb-829a-182b3908d594",
+              "title": "The boy greets the seller",
+              "text": "If the bell is pressed, the boy greets the seller.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "ba41c948-5841-4ea7-bb5c-96a9f1bf4dd9",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "Don't forget to set the initial parameters.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Shop\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Store",
+              "text": "Click on the bell!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L4_Shop.sb3",
-          "project_title": "M2L4 Shop"
+          "source_task_id": "26855",
+          "source_level_id": "329782",
+          "source_task_level_id": "199095",
+          "source_project_id": "10683105",
+          "source_demo_project_id": "10683108",
+          "stateId": "VP2_M2L4_1_2_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L4 Shop",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L4_1_3",
@@ -225,12 +327,15 @@
       "level_position": 3,
       "levelPosition": 3,
       "title": "Research",
+      "project_title": "Research",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L4_Research.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Complete the programming task for \"Research\".",
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
       "command_keys": [
         "motion",
         "looks",
@@ -245,42 +350,76 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_3_1",
+          "id": "66ac4797-fc22-443b-a96b-907cf56d182f",
+          "title": "The MarsBot talks about the button",
+          "text": "When you click on the green flag, the MarsBot says what the button is!",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "77068340-5a34-4a77-b8de-2e7f91f7f21b",
+          "title": "The button sends a message",
+          "text": "Pressing the button changes the background and sends a message",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "42849266-31ea-43c1-8989-697185ec820b",
+          "title": "The MarsBot hides",
+          "text": "When the MarsBot receives the message, it hides.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "e05d6c7c-2bb8-431a-af33-fe5a0ecd8767",
+          "title": "The dog appears and moves",
+          "text": "When the dog receives the message, it appears and moves. Think up what it will do.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "84edbe65-efc5-4dbb-a71c-3e930e1c101d",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "At the start, the button and the MarsBot appear and fall into place, and the dog hides.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Research\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Research",
+          "text": "Watch the mini-animation and press the button!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L4_Research.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26855",
+      "source_level_id": "329783",
+      "source_task_level_id": "199096",
+      "source_project_id": "10683110",
+      "source_demo_project_id": "10683111",
       "states": [
         {
           "id": "VP2_M2L4_1_3_state_1",
-          "stateId": "VP2_M2L4_1_3_state_1",
           "position": 3,
           "level_position": 3,
           "levelPosition": 3,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Research",
+          "project_title": "Research",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L4_Research.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Research\".",
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
           "command_keys": [
             "motion",
             "looks",
@@ -295,34 +434,64 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_3_1",
+              "id": "66ac4797-fc22-443b-a96b-907cf56d182f",
+              "title": "The MarsBot talks about the button",
+              "text": "When you click on the green flag, the MarsBot says what the button is!",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "77068340-5a34-4a77-b8de-2e7f91f7f21b",
+              "title": "The button sends a message",
+              "text": "Pressing the button changes the background and sends a message",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "42849266-31ea-43c1-8989-697185ec820b",
+              "title": "The MarsBot hides",
+              "text": "When the MarsBot receives the message, it hides.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "e05d6c7c-2bb8-431a-af33-fe5a0ecd8767",
+              "title": "The dog appears and moves",
+              "text": "When the dog receives the message, it appears and moves. Think up what it will do.",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "84edbe65-efc5-4dbb-a71c-3e930e1c101d",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "At the start, the button and the MarsBot appear and fall into place, and the dog hides.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Research\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Research",
+              "text": "Watch the mini-animation and press the button!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L4_Research.sb3",
-          "project_title": "M2L4 Research"
+          "source_task_id": "26855",
+          "source_level_id": "329783",
+          "source_task_level_id": "199096",
+          "source_project_id": "10683110",
+          "source_demo_project_id": "10683111",
+          "stateId": "VP2_M2L4_1_3_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L4 Research",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L4_1_4",
@@ -331,12 +500,15 @@
       "level_position": 4,
       "levelPosition": 4,
       "title": "Choose a piece of fruit",
+      "project_title": "Choose a piece of fruit",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Choose a piece of fruit\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -351,42 +523,60 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_4_1",
+          "id": "28bd3039-42fe-411e-af00-2065a82c4d84",
           "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "text": "When you click on the green flag, the pieces of fruit fall back to their original places.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Choose a piece of fruit\".",
+          "id": "95673edf-39b0-4df7-a8f3-2bb0ac175937",
+          "title": "Choice of fruit",
+          "text": "When you click on the fruit, it changes position and sends a message to the Dani sprite",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_4_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "a438ed17-d2b1-4db6-af13-0a6af98b1b15",
+          "title": "Dani gets a message",
+          "text": "Dani receives the message and expresses gratitude for the help!",
           "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Choose a piece of fruit",
+          "text": "Help Dani pick some fruit! Click on a piece of fruit to transfer it to the bowl.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26855",
+      "source_level_id": "329784",
+      "source_task_level_id": "199097",
+      "source_project_id": "10683113",
+      "source_demo_project_id": "10683116",
       "states": [
         {
           "id": "VP2_M2L4_1_4_state_1",
-          "stateId": "VP2_M2L4_1_4_state_1",
           "position": 4,
           "level_position": 4,
           "levelPosition": 4,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Choose a piece of fruit",
+          "project_title": "Choose a piece of fruit",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Choose a piece of fruit\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -401,34 +591,48 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_4_1",
+              "id": "28bd3039-42fe-411e-af00-2065a82c4d84",
               "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "text": "When you click on the green flag, the pieces of fruit fall back to their original places.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_4_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Choose a piece of fruit\".",
+              "id": "95673edf-39b0-4df7-a8f3-2bb0ac175937",
+              "title": "Choice of fruit",
+              "text": "When you click on the fruit, it changes position and sends a message to the Dani sprite",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_4_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "a438ed17-d2b1-4db6-af13-0a6af98b1b15",
+              "title": "Dani gets a message",
+              "text": "Dani receives the message and expresses gratitude for the help!",
               "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Choose a piece of fruit",
+              "text": "Help Dani pick some fruit! Click on a piece of fruit to transfer it to the bowl.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L4_Choose_a_piece_of_fruit.sb3",
-          "project_title": "M2L4 Choose a piece of fruit"
+          "source_task_id": "26855",
+          "source_level_id": "329784",
+          "source_task_level_id": "199097",
+          "source_project_id": "10683113",
+          "source_demo_project_id": "10683116",
+          "stateId": "VP2_M2L4_1_4_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L4 Choose a piece of fruit",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L4_1_5",
@@ -436,13 +640,16 @@
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Button for dancing",
+      "title": "Dancing",
+      "project_title": "Dancing",
+      "activityType": "scratch",
       "level_type": "scratch",
       "selectedType": "scratch",
-      "activityType": "scratch",
+      "starter_project_id": "M2L4_button_for_dancing.sb3",
+      "demo_project_id": null,
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Button for dancing\".",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "command_keys": [
         "motion",
         "looks",
@@ -457,42 +664,52 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "d0c88f2b-90e7-4d3b-bfea-384a89f0cda2",
+          "title": "Program the gray button",
+          "text": "When you click on the gray button, it sends a message. The Dancer sprite receives it and performs the action.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "taskType": "basic"
         },
         {
-          "id": "req_5_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Button for dancing\".",
+          "id": "d5572fcb-4307-4418-98c8-66eab0edd0b7",
+          "title": "Program the blue button",
+          "text": "Pressing the blue button turns on the music.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "taskType": "basic"
+        }
+      ],
+      "tips": [],
+      "media": [
         {
-          "id": "req_5_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Dancing",
+          "text": "When you press the button, another sprite changes — the Dancer!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M2L4_button_for_dancing.sb3",
-      "demo_project_id": "",
+      "source_task_id": "26855",
+      "source_level_id": "329787",
+      "source_task_level_id": "199100",
+      "source_project_id": "10683117",
+      "source_demo_project_id": "10683119",
       "states": [
         {
           "id": "VP2_M2L4_1_5_state_1",
-          "stateId": "VP2_M2L4_1_5_state_1",
           "position": 5,
           "level_position": 5,
           "levelPosition": 5,
-          "type": "scratch",
-          "selectedType": "scratch",
+          "title": "Dancing",
+          "project_title": "Dancing",
+          "activityType": "scratch",
           "level_type": "scratch",
+          "selectedType": "scratch",
+          "starter_project_id": "M2L4_button_for_dancing.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Button for dancing\".",
+          "isAutoCheck": true,
+          "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
           "command_keys": [
             "motion",
             "looks",
@@ -507,34 +724,40 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_5_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "d0c88f2b-90e7-4d3b-bfea-384a89f0cda2",
+              "title": "Program the gray button",
+              "text": "When you click on the gray button, it sends a message. The Dancer sprite receives it and performs the action.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_5_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Button for dancing\".",
+              "id": "d5572fcb-4307-4418-98c8-66eab0edd0b7",
+              "title": "Program the blue button",
+              "text": "Pressing the blue button turns on the music.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "taskType": "basic"
+            }
+          ],
+          "tips": [],
+          "media": [
             {
-              "id": "req_5_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Dancing",
+              "text": "When you press the button, another sprite changes — the Dancer!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M2L4_button_for_dancing.sb3",
-          "project_title": "M2L4 button for dancing"
+          "source_task_id": "26855",
+          "source_level_id": "329787",
+          "source_task_level_id": "199100",
+          "source_project_id": "10683117",
+          "source_demo_project_id": "10683119",
+          "stateId": "VP2_M2L4_1_5_state_1",
+          "type": "scratch"
         }
-      ],
-      "project_title": "M2L4 button for dancing",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      ]
     },
     {
       "id": "VP2_M2L4_1_6",
@@ -542,51 +765,157 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Dialog",
-      "level_type": "generic_captured_task",
-      "selectedType": "scratch",
-      "activityType": "generic_captured_task",
-      "drawerOpen": true,
-      "isAutoCheck": false,
-      "description": "Complete the programming task for \"Dialog\".",
-      "requirements": [
-        {
-          "id": "req_6_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Dialog\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [],
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
       "starter_project_id": null,
-      "demo_project_id": "",
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26855",
+      "source_level_id": "329786",
+      "source_task_level_id": "199099",
       "states": [
         {
           "id": "VP2_M2L4_1_6_state_1",
-          "stateId": "VP2_M2L4_1_6_state_1",
           "position": 6,
           "level_position": 6,
           "levelPosition": 6,
-          "type": "generic_captured_task",
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26855",
+          "source_level_id": "329786",
+          "source_task_level_id": "199099",
+          "stateId": "VP2_M2L4_1_6_state_1",
+          "type": "rating"
+        }
+      ]
+    },
+    {
+      "id": "VP2_M2L4_1_7",
+      "taskId": "VP2_M2L4_1_7",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Dialog",
+      "project_title": "Dialog",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "starter_project_id": "M2L4_Meeting.sb3",
+      "demo_project_id": null,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "1c57796b-ef84-4ddf-bedf-79aabf959fae",
+          "title": "Initial placement of stage 1",
+          "text": "What do the characters look like and where are they in the first scene?",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "c96f0276-bc48-43a9-b4ad-4c11f2bd5f1f",
+          "title": "Scene 1",
+          "text": "Program scene 1, which takes place in the room.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "4ffc1ec6-d47c-4597-9e2e-922cfd653ad2",
+          "title": "Transition to stage 2",
+          "text": "Choose which sprite will send messages to switch scenes and change backgrounds.",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "c54dfefa-f30e-4809-818a-bd852e071728",
+          "title": "Initial placement of stage 2",
+          "text": "Where do the sprites go during the second scene? How big do they get?",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "a327b20c-18c2-4037-bded-1a435a254dd1",
+          "title": "Scene 2",
+          "text": "What are the sprites doing during scene 2?",
+          "type": "gif",
+          "url": "",
+          "taskType": "basic"
+        },
+        {
+          "id": "fb37f157-4817-4e5a-a8e5-ab4f8733a0c1",
+          "title": "*Test it",
+          "text": "Run the animation a few times and check that everything works as it should.",
+          "type": "gif",
+          "url": "",
+          "taskType": "bonus"
+        }
+      ],
+      "tips": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Dialog",
+          "text": "Look at the dialog and program a similar one.",
+          "url": ""
+        }
+      ],
+      "source_task_id": "26855",
+      "source_level_id": "329785",
+      "source_task_level_id": "199098",
+      "source_project_id": "10683120",
+      "source_demo_project_id": "10683123",
+      "isBonus": true,
+      "type": "bonus",
+      "states": [
+        {
+          "id": "VP2_M2L4_1_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "title": "Dialog",
+          "project_title": "Dialog",
+          "activityType": "scratch",
+          "level_type": "scratch",
           "selectedType": "scratch",
-          "level_type": "generic_captured_task",
+          "starter_project_id": "M2L4_Meeting.sb3",
+          "demo_project_id": null,
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Dialog\".",
+          "isAutoCheck": false,
+          "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
           "command_keys": [
             "motion",
             "looks",
@@ -601,33 +930,73 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_6_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "1c57796b-ef84-4ddf-bedf-79aabf959fae",
+              "title": "Initial placement of stage 1",
+              "text": "What do the characters look like and where are they in the first scene?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Dialog\".",
+              "id": "c96f0276-bc48-43a9-b4ad-4c11f2bd5f1f",
+              "title": "Scene 1",
+              "text": "Program scene 1, which takes place in the room.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "taskType": "basic"
             },
             {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "4ffc1ec6-d47c-4597-9e2e-922cfd653ad2",
+              "title": "Transition to stage 2",
+              "text": "Choose which sprite will send messages to switch scenes and change backgrounds.",
               "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "c54dfefa-f30e-4809-818a-bd852e071728",
+              "title": "Initial placement of stage 2",
+              "text": "Where do the sprites go during the second scene? How big do they get?",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "a327b20c-18c2-4037-bded-1a435a254dd1",
+              "title": "Scene 2",
+              "text": "What are the sprites doing during scene 2?",
+              "type": "gif",
+              "url": "",
+              "taskType": "basic"
+            },
+            {
+              "id": "fb37f157-4817-4e5a-a8e5-ab4f8733a0c1",
+              "title": "*Test it",
+              "text": "Run the animation a few times and check that everything works as it should.",
+              "type": "gif",
+              "url": "",
+              "taskType": "bonus"
+            }
+          ],
+          "tips": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Dialog",
+              "text": "Look at the dialog and program a similar one.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": null,
-          "activityType": "generic_captured_task"
+          "source_task_id": "26855",
+          "source_level_id": "329785",
+          "source_task_level_id": "199098",
+          "source_project_id": "10683120",
+          "source_demo_project_id": "10683123",
+          "isBonus": true,
+          "type": "scratch",
+          "stateId": "VP2_M2L4_1_7_state_1"
         }
-      ],
-      "type": "generic_captured_task"
+      ]
     }
   ]
 }

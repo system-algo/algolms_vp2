@@ -69,7 +69,7 @@
           "id": "VP2_M1L2_2",
           "title": "Bonus! Excavations....",
           "lessonId": "VP2_M1L2",
-          "taskCount": 14,
+          "taskCount": 15,
           "isBonus": true
         },
         {
@@ -186,7 +186,7 @@
           "id": "VP2_M2L1_2",
           "title": "Additional task: find the...",
           "lessonId": "VP2_M2L1",
-          "taskCount": 3,
+          "taskCount": 5,
           "isBonus": true
         },
         {
@@ -209,7 +209,7 @@
         },
         {
           "id": "VP2_M2L2_2",
-          "title": "Additional task \u2014 Pen",
+          "title": "Additional task — Pen",
           "lessonId": "VP2_M2L2",
           "taskCount": 5,
           "isBonus": true
@@ -243,19 +243,19 @@
           "id": "VP2_M2L3_3",
           "title": "Scratch. Turns and rotations",
           "lessonId": "VP2_M2L3",
-          "taskCount": 6
+          "taskCount": 7
         },
         {
           "id": "VP2_M2L3_4",
           "title": "Test yourself. Degrees",
           "lessonId": "VP2_M2L3",
-          "taskCount": 2
+          "taskCount": 3
         },
         {
           "id": "VP2_M2L4_1",
           "title": "Scratch. Messages",
           "lessonId": "VP2_M2L4",
-          "taskCount": 6
+          "taskCount": 7
         },
         {
           "id": "VP2_M2L4_2",
@@ -274,7 +274,7 @@
           "id": "VP2_M2L4_4",
           "title": "Test yourself. Messages",
           "lessonId": "VP2_M2L4",
-          "taskCount": 3
+          "taskCount": 4
         },
         {
           "id": "VP2_M2L5_1",
@@ -284,7 +284,7 @@
         }
       ],
       "pageCount": 17,
-      "taskCount": 98
+      "taskCount": 107
     },
     {
       "id": "M3-Functions-and-Modules",
@@ -346,7 +346,7 @@
           "id": "VP2_M3L1_4",
           "title": "Test yourself. Conditions",
           "lessonId": "VP2_M3L1",
-          "taskCount": 3
+          "taskCount": 4
         },
         {
           "id": "VP2_M3L2_1",
@@ -371,7 +371,7 @@
           "id": "VP2_M3L2_4",
           "title": "Test yourself. Changing...",
           "lessonId": "VP2_M3L2",
-          "taskCount": 3
+          "taskCount": 4
         },
         {
           "id": "VP2_M3L3_1",
@@ -396,29 +396,29 @@
           "id": "VP2_M3L3_4",
           "title": "Test yourself. Procedures",
           "lessonId": "VP2_M3L3",
-          "taskCount": 3
+          "taskCount": 4
         },
         {
           "id": "VP2_M3L4_1",
           "title": "Project. Game",
           "lessonId": "VP2_M3L4",
-          "taskCount": 1
+          "taskCount": 2
         },
         {
           "id": "VP2_M3L5_1",
           "title": "Project. Game",
           "lessonId": "VP2_M3L5",
-          "taskCount": 1
+          "taskCount": 2
         },
         {
           "id": "VP2_M3L6_1",
           "title": "Project. Game",
           "lessonId": "VP2_M3L6",
-          "taskCount": 1
+          "taskCount": 2
         }
       ],
       "pageCount": 15,
-      "taskCount": 77
+      "taskCount": 76
     },
     {
       "id": "M4-Math-and-Logic",
@@ -558,7 +558,7 @@
         }
       ],
       "pageCount": 21,
-      "taskCount": 216
+      "taskCount": 214
     },
     {
       "id": "M5-Game-Development",
@@ -632,7 +632,7 @@
           "id": "VP2_M5L3_3",
           "title": "Scratch. Game score",
           "lessonId": "VP2_M5L3",
-          "taskCount": 1
+          "taskCount": 2
         },
         {
           "id": "VP2_M5L3_4",
@@ -676,11 +676,11 @@
           "id": "VP2_M5L6_1",
           "title": "Project. Presentation",
           "lessonId": "VP2_M5L6",
-          "taskCount": 1
+          "taskCount": 2
         }
       ],
       "pageCount": 18,
-      "taskCount": 84
+      "taskCount": 86
     },
     {
       "id": "M6-Advanced-Projects",

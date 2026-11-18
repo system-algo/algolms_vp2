@@ -6,7 +6,7 @@
       "id": "VP2_M3L1_1",
       "title": "Conditions and the selection operator - Part 1",
       "lessonId": "VP2_M3L1",
-      "taskCount": 10
+      "taskCount": 12
     },
     {
       "id": "VP2_M3L1_2",
@@ -24,7 +24,7 @@
       "id": "VP2_M3L1_4",
       "title": "Conditions and the selection operator - Part 4",
       "lessonId": "VP2_M3L1",
-      "taskCount": 3
+      "taskCount": 4
     },
     {
       "id": "VP2_M3L2_SLIDES",
@@ -60,7 +60,7 @@
       "id": "VP2_M3L2_4",
       "title": "Changing coordinates - Part 4",
       "lessonId": "VP2_M3L2",
-      "taskCount": 3
+      "taskCount": 4
     },
     {
       "id": "VP2_M3L3_SLIDES",
@@ -90,7 +90,7 @@
       "id": "VP2_M3L3_4",
       "title": "Procedures - Part 4",
       "lessonId": "VP2_M3L3",
-      "taskCount": 3
+      "taskCount": 4
     },
     {
       "id": "VP2_M3L4_SLIDES",
@@ -102,7 +102,7 @@
       "id": "VP2_M3L4_1",
       "title": "Game planning - Part 1",
       "lessonId": "VP2_M3L4",
-      "taskCount": 1
+      "taskCount": 2
     },
     {
       "id": "VP2_M3L5_SLIDES",
@@ -114,7 +114,7 @@
       "id": "VP2_M3L5_1",
       "title": "Game Testing - Part 1",
       "lessonId": "VP2_M3L5",
-      "taskCount": 1
+      "taskCount": 2
     },
     {
       "id": "VP2_M3L6_SLIDES",
@@ -126,9 +126,9 @@
       "id": "VP2_M3L6_1",
       "title": "Game Presentation - Part 1",
       "lessonId": "VP2_M3L6",
-      "taskCount": 1
+      "taskCount": 2
     }
   ],
   "pageCount": 21,
-  "taskCount": 87
+  "taskCount": 95
 }

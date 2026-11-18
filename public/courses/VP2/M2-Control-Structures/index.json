@@ -24,13 +24,13 @@
       "id": "VP2_M2L3_3",
       "title": "Turns and degrees - Part 3",
       "lessonId": "VP2_M2L3",
-      "taskCount": 6
+      "taskCount": 7
     },
     {
       "id": "VP2_M2L3_4",
       "title": "Turns and degrees - Part 4",
       "lessonId": "VP2_M2L3",
-      "taskCount": 2
+      "taskCount": 3
     },
     {
       "id": "VP2_M2L4_SLIDES",
@@ -42,7 +42,7 @@
       "id": "VP2_M2L4_1",
       "title": "Messages - Part 1",
       "lessonId": "VP2_M2L4",
-      "taskCount": 6
+      "taskCount": 7
     },
     {
       "id": "VP2_M2L4_2",
@@ -60,7 +60,7 @@
       "id": "VP2_M2L4_4",
       "title": "Messages - Part 4",
       "lessonId": "VP2_M2L4",
-      "taskCount": 3
+      "taskCount": 4
     },
     {
       "id": "VP2_M2L4_5",
@@ -82,5 +82,5 @@
     }
   ],
   "pageCount": 13,
-  "taskCount": 43
+  "taskCount": 47
 }

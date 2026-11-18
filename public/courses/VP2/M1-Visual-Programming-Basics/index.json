@@ -10,12 +10,12 @@
     {
       "id": "VP_M1L1_1",
       "title": "M1L1",
-      "taskCount": 5
+      "taskCount": 12
     },
     {
       "id": "VP_M1L1_2",
       "title": "How to Make Toast Algorithm",
-      "taskCount": 1
+      "taskCount": 14
     },
     {
       "id": "VP2_M1L1_3",
@@ -30,12 +30,12 @@
     {
       "id": "VP_M1L2_1",
       "title": "M1L2",
-      "taskCount": 5
+      "taskCount": 18
     },
     {
       "id": "VP_M1L2_2",
       "title": "Match the Scratch vocabulary with the images",
-      "taskCount": 1
+      "taskCount": 15
     },
     {
       "id": "VP2_M1L2_3",
@@ -50,12 +50,12 @@
     {
       "id": "VP_M1L3_1",
       "title": "Coder Crossword",
-      "taskCount": 1
+      "taskCount": 8
     },
     {
       "id": "VP_M1L3_2",
       "title": "Drag the Words Task",
-      "taskCount": 1
+      "taskCount": 6
     },
     {
       "id": "VP_M1L4_SLIDES",
@@ -65,12 +65,12 @@
     {
       "id": "VP_M1L4_1",
       "title": "Fill in the blanks",
-      "taskCount": 1
+      "taskCount": 7
     },
     {
       "id": "VP_M1L4_2",
       "title": "Single choice set",
-      "taskCount": 5
+      "taskCount": 1
     },
     {
       "id": "VP_M1L5_SLIDES",
@@ -80,7 +80,7 @@
     {
       "id": "VP_M1L5_1",
       "title": "Drag the words Module 1",
-      "taskCount": 1
+      "taskCount": 2
     },
     {
       "id": "VP_M1L5_2",
@@ -89,5 +89,5 @@
     }
   ],
   "pageCount": 17,
-  "taskCount": 47
+  "taskCount": 109
 }

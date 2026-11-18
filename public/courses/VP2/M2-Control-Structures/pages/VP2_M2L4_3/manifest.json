@@ -4,7 +4,7 @@
   "title": "Scratch. Animation",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -18,13 +18,12 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Meeting",
+      "title": "Animation. Example",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Complete the programming task for \"Meeting\".",
       "command_keys": [
         "motion",
         "looks",
@@ -39,30 +38,39 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "62db3cc1-90ca-4d1b-bafa-dc6025ed7b71",
+          "title": "The \"On Mars\" scene is already prepared",
+          "text": "Study the existing blocks for initial placement and the first scene.",
           "type": "gif",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Meeting\".",
+          "id": "078439de-8a16-4cf7-a2cf-37aedefa9539",
+          "title": "Program the \"On the base\" scene",
+          "text": "Build the second scene using the plan in your workbook.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "efb7d69c-7a87-4da0-a220-0eafc033ddac",
+          "title": "Create your own scene",
+          "text": "Create a new scene and place it before or after the \"On Mars\" scene.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Meeting on Mars",
+          "text": "Watch the animation and think about what to do with the discovery.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M2L4_Meeting.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M2L4_3_Task1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M2L4_3_1_state_1",
@@ -74,7 +82,6 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Meeting\".",
           "command_keys": [
             "motion",
             "looks",
@@ -89,34 +96,96 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "62db3cc1-90ca-4d1b-bafa-dc6025ed7b71",
+              "title": "The \"On Mars\" scene is already prepared",
+              "text": "Study the existing blocks for initial placement and the first scene.",
               "type": "gif",
               "url": ""
             },
             {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Meeting\".",
+              "id": "078439de-8a16-4cf7-a2cf-37aedefa9539",
+              "title": "Program the \"On the base\" scene",
+              "text": "Build the second scene using the plan in your workbook.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "efb7d69c-7a87-4da0-a220-0eafc033ddac",
+              "title": "Create your own scene",
+              "text": "Create a new scene and place it before or after the \"On Mars\" scene.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Meeting on Mars",
+              "text": "Watch the animation and think about what to do with the discovery.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M2L4_Meeting.sb3",
-          "project_title": "M2L4 Meeting"
+          "project_title": "M2L4 Meeting",
+          "title": "Animation. Example",
+          "show_starter_project": true,
+          "demo_project_id": "M2L4_3_Task1_Demo.sb3",
+          "source_task_id": "26857",
+          "source_project_id": "10683144",
+          "source_demo_project_id": "10683145"
         }
       ],
       "project_title": "M2L4 Meeting",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "show_starter_project": true,
+      "source_task_id": "26857",
+      "source_project_id": "10683144",
+      "source_demo_project_id": "10683145"
+    },
+    {
+      "id": "VP2_M2L4_3_2",
+      "taskId": "VP2_M2L4_3_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26857",
+      "states": [
+        {
+          "id": "VP2_M2L4_3_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26857",
+          "stateId": "VP2_M2L4_3_2_state_1",
+          "type": "rating"
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import GeneratedPageShell from '../../../../templates/GeneratedPageShell';
 
-export default function VP2_M3L2_1_track2() {
+export default function VP2_M3L2_1_track2(props) {
   return (
     <GeneratedPageShell
       manifestUrl="/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_1_track2/manifest.json"
@@ -10,6 +10,7 @@ export default function VP2_M3L2_1_track2() {
       lessonId="M3-Functions-and-Modules"
       pageId="VP2_M3L2_1_track2"
       onBackToPages={() => window.history.back()}
+      {...props}
     />
   );
 }

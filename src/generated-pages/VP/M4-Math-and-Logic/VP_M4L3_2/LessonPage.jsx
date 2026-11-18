@@ -1,7 +1,7 @@
 import React from 'react';
 import H5pPlayerPage from '../../../../pages/H5pPlayerPage';
 
-export default function VP_M4L3_2() {
+export default function VP_M4L3_2(props) {
   const activity = {
     id: "VP_M4L3_2",
     title: "VP M4L3_2 Single Choice Set Pick random, greater than, less than",
@@ -15,6 +15,7 @@ export default function VP_M4L3_2() {
       activity={activity}
       courseId="VP"
       onBack={() => window.history.back()}
+      {...props}
     />
   );
 }

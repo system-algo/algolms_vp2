@@ -1034,7 +1034,22 @@ export default function TopNavigation({
     <>
       <header className="lms-topbar">
         <div className="lms-topbar__info-row">
-          <div className="lms-topbar__identity">
+          <div
+            className="lms-topbar__identity"
+            onClick={onBackToCatalog || onBackToCourses}
+            onKeyDown={(e) => {
+              if ((e.key === 'Enter' || e.key === ' ') && (onBackToCatalog || onBackToCourses)) {
+                e.preventDefault();
+                (onBackToCatalog || onBackToCourses)();
+              }
+            }}
+            role={onBackToCatalog || onBackToCourses ? 'button' : undefined}
+            tabIndex={onBackToCatalog || onBackToCourses ? 0 : undefined}
+            style={{
+              cursor: (onBackToCatalog || onBackToCourses) ? 'pointer' : 'default',
+            }}
+            title="Back to Course"
+          >
             <div className="lms-topbar__logo">
               <span
                 className="lms-topbar__logo-fallback"

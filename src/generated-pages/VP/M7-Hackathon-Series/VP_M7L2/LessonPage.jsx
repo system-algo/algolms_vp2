@@ -1,7 +1,7 @@
 import React from 'react';
 import H5pPlayerPage from '../../../../pages/H5pPlayerPage';
 
-export default function VP_M7L2() {
+export default function VP_M7L2(props) {
   const activity = {
     id: "VP_M7L2",
     title: "M7L2",
@@ -15,6 +15,7 @@ export default function VP_M7L2() {
       activity={activity}
       courseId="VP"
       onBack={() => window.history.back()}
+      {...props}
     />
   );
 }

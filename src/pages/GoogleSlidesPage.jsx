@@ -130,12 +130,40 @@ export default function GoogleSlidesPage({
   }
 
   function handleBackToCourse() {
-    if (typeof onBackToCourses === 'function') {
+    const isRealNav = (fn) =>
+      typeof fn === 'function' && !fn.toString().includes('history.back');
+
+    if (isRealNav(onBackToCourses)) {
       onBackToCourses();
       return;
     }
-    window.history.pushState({}, '', '/');
-    window.dispatchEvent(new PopStateEvent('popstate'));
+    if (isRealNav(onBack)) {
+      onBack();
+      return;
+    }
+
+    try {
+      sessionStorage.removeItem('lms_active_page');
+      sessionStorage.removeItem('lms_active_task');
+      const params = new URLSearchParams(window.location.search);
+      const targetCourse = params.get('course') || courseId || 'VP2';
+      const platformOrigin = params.get('platformOrigin');
+      const nextUrl = platformOrigin
+        ? `/?course=${encodeURIComponent(targetCourse)}&platformOrigin=${encodeURIComponent(platformOrigin)}`
+        : `/?course=${encodeURIComponent(targetCourse)}`;
+
+      window.history.pushState({}, '', nextUrl);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+
+      setTimeout(() => {
+        const cur = new URLSearchParams(window.location.search);
+        if (cur.get('page') || cur.get('lesson') || cur.get('h5p')) {
+          window.location.href = nextUrl;
+        }
+      }, 50);
+    } catch {
+      window.location.href = `/?course=${encodeURIComponent(courseId || 'VP2')}`;
+    }
   }
 
   return (
@@ -154,13 +182,13 @@ export default function GoogleSlidesPage({
         justCompletedTaskId={justCompletedTaskId}
         progressJustIncreased={progressJustIncreased}
         progressCelebrationKey={progressCelebrationKey}
-        onBackToCatalog={onBack}
+        onBackToCatalog={handleBackToCourse}
         onBackToCourses={handleBackToCourse}
       />
 
       <LmsActivityFrame
         title={title}
-        onBack={onBack}
+        onBack={handleBackToCourse}
         onReset={() => {
           window.location.reload();
         }}
@@ -176,7 +204,7 @@ export default function GoogleSlidesPage({
               type="button"
               className="kids-back-button"
               style={{ position: 'relative', top: 'auto', left: 'auto', marginTop: 20 }}
-              onClick={onBack}
+              onClick={handleBackToCourse}
             >
               ← Go back
             </button>

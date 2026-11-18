@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleSlidesPage from '../../../../pages/GoogleSlidesPage';
 
-export default function VP_M4L3_SLIDES() {
+export default function VP_M4L3_SLIDES(props) {
   const activity = {
     id: "VP_M4L3_SLIDES",
     title: "Slide: M4L3 - Random numbers and ranges",
@@ -14,6 +14,7 @@ export default function VP_M4L3_SLIDES() {
       activity={activity}
       courseId="VP"
       onBack={() => window.history.back()}
+      {...props}
     />
   );
 }

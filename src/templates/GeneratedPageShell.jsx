@@ -145,28 +145,43 @@ export default function GeneratedPageShell({
   const [error, setError] = useState('');
 
   const handleBackToCourse = useCallback(() => {
-    if (typeof onBackToLessons === 'function') {
+    const isRealNav = (fn) =>
+      typeof fn === 'function' && !fn.toString().includes('history.back');
+
+    if (isRealNav(onBackToLessons)) {
       onBackToLessons();
       return;
     }
-    if (typeof onBackToPages === 'function') {
-      onBackToPages();
-      return;
-    }
-    if (typeof onBackToCourses === 'function') {
+    if (isRealNav(onBackToCourses)) {
       onBackToCourses();
       return;
     }
+    if (isRealNav(onBackToPages)) {
+      onBackToPages();
+      return;
+    }
+
     try {
+      sessionStorage.removeItem('lms_active_page');
+      sessionStorage.removeItem('lms_active_task');
       const params = new URLSearchParams(window.location.search);
       const targetCourse = params.get('course') || courseId || 'VP2';
       const platformOrigin = params.get('platformOrigin');
       const nextUrl = platformOrigin
         ? `/?course=${encodeURIComponent(targetCourse)}&platformOrigin=${encodeURIComponent(platformOrigin)}`
         : `/?course=${encodeURIComponent(targetCourse)}`;
-      window.location.href = nextUrl;
+
+      window.history.pushState({}, '', nextUrl);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+
+      setTimeout(() => {
+        const cur = new URLSearchParams(window.location.search);
+        if (cur.get('page') || cur.get('lesson')) {
+          window.location.href = nextUrl;
+        }
+      }, 50);
     } catch {
-      window.history.back();
+      window.location.href = `/?course=${encodeURIComponent(courseId || 'VP2')}`;
     }
   }, [onBackToLessons, onBackToPages, onBackToCourses, courseId]);
   const getInitialTaskIndex = () => {
@@ -856,7 +871,7 @@ export default function GeneratedPageShell({
         progressCelebrationKey={progressCelebrationKey}
         onSelectTask={gotoTask}
         onBackToCatalog={handleBackToCourse}
-        onBackToCourses={onBackToCourses}
+        onBackToCourses={handleBackToCourse}
       />
 
       <ActivityRouter
@@ -874,7 +889,7 @@ export default function GeneratedPageShell({
         completedTaskIds={completedTaskIds}
         onTaskCompleted={handleTaskCompleted}
         onSelectTask={gotoTask}
-        onBackToCourses={onBackToCourses}
+        onBackToCourses={handleBackToCourse}
       />
 
     </div>

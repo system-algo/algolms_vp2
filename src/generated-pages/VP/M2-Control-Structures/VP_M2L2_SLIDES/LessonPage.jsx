@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleSlidesPage from '../../../../pages/GoogleSlidesPage';
 
-export default function VP_M2L2_SLIDES() {
+export default function VP_M2L2_SLIDES(props) {
   const activity = {
     id: "VP_M2L2_SLIDES",
     title: "Slide: M2L2 - Pointing in different directions",
@@ -14,6 +14,7 @@ export default function VP_M2L2_SLIDES() {
       activity={activity}
       courseId="VP"
       onBack={() => window.history.back()}
+      {...props}
     />
   );
 }

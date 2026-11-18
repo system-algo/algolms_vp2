@@ -1,7 +1,7 @@
 import React from 'react';
 import GeneratedPageShell from '../../../../templates/GeneratedPageShell';
 
-export default function VP2_M2L4_4() {
+export default function VP2_M2L4_4(props) {
   return (
     <GeneratedPageShell
       manifestUrl="/courses/VP2/M2-Control-Structures/pages/VP2_M2L4_4/manifest.json"
@@ -10,6 +10,7 @@ export default function VP2_M2L4_4() {
       lessonId="M2-Control-Structures"
       pageId="VP2_M2L4_4"
       onBackToPages={() => window.history.back()}
+      {...props}
     />
   );
 }

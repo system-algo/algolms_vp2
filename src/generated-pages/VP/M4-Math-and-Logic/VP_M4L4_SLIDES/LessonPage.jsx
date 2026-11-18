@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleSlidesPage from '../../../../pages/GoogleSlidesPage';
 
-export default function VP_M4L4_SLIDES() {
+export default function VP_M4L4_SLIDES(props) {
   const activity = {
     id: "VP_M4L4_SLIDES",
     title: "Slide: M4L4 - Coordinate areas",
@@ -14,6 +14,7 @@ export default function VP_M4L4_SLIDES() {
       activity={activity}
       courseId="VP"
       onBack={() => window.history.back()}
+      {...props}
     />
   );
 }

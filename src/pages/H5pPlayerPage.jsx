@@ -1034,33 +1034,40 @@ export default function H5pPlayerPage({
   }
 
   function handleBackToCourse() {
-    if (
-      typeof onBackToCourses ===
-      'function'
-    ) {
+    const isRealNav = (fn) =>
+      typeof fn === 'function' && !fn.toString().includes('history.back');
+
+    if (isRealNav(onBackToCourses)) {
       onBackToCourses();
       return;
     }
+    if (isRealNav(onBack)) {
+      onBack();
+      return;
+    }
 
-    /**
-     * Generated VP activity wrappers may not
-     * forward App routing props.
-     *
-     * Update URL and notify App so correct
-     * student/teacher course dashboard is restored
-     * without reloading the whole LMS.
-     */
-    window.history.pushState(
-      {},
-      '',
-      '/'
-    );
+    try {
+      sessionStorage.removeItem('lms_active_page');
+      sessionStorage.removeItem('lms_active_task');
+      const params = new URLSearchParams(window.location.search);
+      const targetCourse = params.get('course') || courseId || 'VP2';
+      const platformOrigin = params.get('platformOrigin');
+      const nextUrl = platformOrigin
+        ? `/?course=${encodeURIComponent(targetCourse)}&platformOrigin=${encodeURIComponent(platformOrigin)}`
+        : `/?course=${encodeURIComponent(targetCourse)}`;
 
-    window.dispatchEvent(
-      new PopStateEvent(
-        'popstate'
-      )
-    );
+      window.history.pushState({}, '', nextUrl);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+
+      setTimeout(() => {
+        const cur = new URLSearchParams(window.location.search);
+        if (cur.get('page') || cur.get('lesson') || cur.get('h5p')) {
+          window.location.href = nextUrl;
+        }
+      }, 50);
+    } catch {
+      window.location.href = `/?course=${encodeURIComponent(courseId || 'VP2')}`;
+    }
   }
 
   return (
@@ -1110,7 +1117,7 @@ export default function H5pPlayerPage({
           progressCelebrationKey
         }
         onBackToCatalog={
-          onBack
+          handleBackToCourse
         }
         onBackToCourses={
           handleBackToCourse
@@ -1119,7 +1126,7 @@ export default function H5pPlayerPage({
 
       <LmsActivityFrame
         title={title}
-        onBack={onBack}
+        onBack={handleBackToCourse}
         onReset={() => {
           initializedRef.current =
             false;
@@ -1163,7 +1170,7 @@ export default function H5pPlayerPage({
                 left: 'auto',
                 marginTop: 20,
               }}
-              onClick={onBack}
+              onClick={handleBackToCourse}
             >
               ← Go back
             </button>

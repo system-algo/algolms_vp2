@@ -4,7 +4,7 @@
   "title": "Project. Animation",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
@@ -117,6 +117,49 @@
       ],
       "project_title": "Chubby final",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+    },
+    {
+      "id": "VP2_M2L5_1_2",
+      "taskId": "VP2_M2L5_1_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback-rating-task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?",
+        "renderMode": "robot"
+      },
+      "states": [
+        {
+          "id": "VP2_M2L5_1_2_state_1",
+          "stateId": "VP2_M2L5_1_2_state_1",
+          "position": 1,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "title": "Did you like the task?",
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "demo_project_id": null,
+          "starter_project_id": null
+        }
+      ],
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "demo_project_id": null,
+      "starter_project_id": null,
+      "isAutoCheck": false,
+      "question": "Did you like the task?",
+      "hint": "Click on an appropriate emoji"
     }
   ]
 }

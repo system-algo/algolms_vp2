@@ -280,11 +280,11 @@
           "id": "VP2_M2L5_1",
           "title": "Project. Animation",
           "lessonId": "VP2_M2L5",
-          "taskCount": 1
+          "taskCount": 2
         }
       ],
       "pageCount": 17,
-      "taskCount": 107
+      "taskCount": 108
     },
     {
       "id": "M3-Functions-and-Modules",
@@ -850,5 +850,5 @@
     }
   ],
   "pageCount": 90,
-  "taskCount": 507
+  "taskCount": 508
 }

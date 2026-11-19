@@ -39,37 +39,40 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Initial placement",
-          "type": "gif",
-          "url": ""
-        },
-        {
           "id": "req_1_2",
           "title": "The apple moves on its own",
-          "text": "The apple moves on its own",
+          "text": "How does the Apple sprite move? Use the example from the demo project or come up with your own method!",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
           "title": "Controlling Kepler",
-          "text": "Controlling Kepler",
+          "text": "Program Kepler control. Use the right and left arrow keys to change Kepler’s x position. Switch costumes while he moves.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_4",
           "title": "Kepler and the apple touching",
-          "text": "Kepler and the apple touching",
+          "text": "If Kepler touches the apple, broadcast a message. When the Apple sprite receives it, it hides. Kepler says “Yummy!”",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_1",
+          "title": "Initial placement",
+          "text": "When the green flag is clicked, put the apple and Kepler back in their starting positions and show the apple again.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [],
       "starter_project_id": "M3L2_Take_the_apple.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_2_Take_the_apple_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_2_1_state_1",
@@ -97,37 +100,40 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Initial placement",
-              "type": "gif",
-              "url": ""
-            },
-            {
               "id": "req_1_2",
               "title": "The apple moves on its own",
-              "text": "The apple moves on its own",
+              "text": "How does the Apple sprite move? Use the example from the demo project or come up with your own method!",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
               "title": "Controlling Kepler",
-              "text": "Controlling Kepler",
+              "text": "Program Kepler control. Use the right and left arrow keys to change Kepler’s x position. Switch costumes while he moves.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_4",
               "title": "Kepler and the apple touching",
-              "text": "Kepler and the apple touching",
+              "text": "If Kepler touches the apple, broadcast a message. When the Apple sprite receives it, it hides. Kepler says “Yummy!”",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_1",
+              "title": "Initial placement",
+              "text": "When the green flag is clicked, put the apple and Kepler back in their starting positions and show the apple again.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [],
           "starter_project_id": "M3L2_Take_the_apple.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M3L2_2_Take_the_apple_Demo.sb3",
           "project_title": "M3L2 Take the apple"
         }
       ],

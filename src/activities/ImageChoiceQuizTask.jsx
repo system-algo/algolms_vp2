@@ -95,25 +95,20 @@ export default function ImageChoiceQuizTask({
   const [feedbackMessage, setFeedbackMessage] = useState('');
   const [hasUserReset, setHasUserReset] = useState(false);
 
+  // A change of task starts from a clean local form. Do not prefill the
+  // manifest's bundled correct answer or trust a shared localStorage flag.
   useEffect(() => {
     setHasUserReset(false);
+    setSelected([]);
+    setStatus('');
+    setFeedbackMessage('');
   }, [taskId]);
 
+  // Completion comes from the user-scoped course progress provided by the LMS.
+  // Do not reset the student's submitted selection when that progress arrives.
   useEffect(() => {
-    if (hasUserReset) return;
-
-    let isAlreadyDone = false;
-    try {
-      isAlreadyDone =
-        completedTaskIds.includes(taskId);
-    } catch {}
-
-    if (isAlreadyDone) {
-      setSelected([]);
+    if (!hasUserReset && completedTaskIds.includes(taskId)) {
       setStatus('correct');
-    } else {
-      setSelected([]);
-      setStatus('');
     }
   }, [taskId, completedTaskIds, hasUserReset]);
 

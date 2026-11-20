@@ -110,30 +110,24 @@ export default function CategoryQuizTask({
   const [checked, setChecked] = useState({}); // itemId -> 'is-correct' | 'is-wrong'
   const [hasUserReset, setHasUserReset] = useState(false);
 
+  // A change of task starts from a clean local form. Do not prefill the
+  // manifest's bundled correct answer or trust a shared localStorage flag.
   useEffect(() => {
     setHasUserReset(false);
+    setPlacement(emptyPlacement(config.items));
+    setChecked({});
+    setPickedId(null);
+    setStatus('');
+    setFeedbackMessage('');
   }, [taskId]);
 
+  // Completion comes from the user-scoped course progress provided by the LMS.
+  // Do not reset the student's submitted selection when that progress arrives.
   useEffect(() => {
-    if (hasUserReset) return;
-
-    let isAlreadyDone = false;
-    try {
-      isAlreadyDone =
-        completedTaskIds.includes(taskId);
-    } catch {}
-
-    if (isAlreadyDone) {
-      setPlacement(emptyPlacement(config.items));
-      setChecked({});
+    if (!hasUserReset && completedTaskIds.includes(taskId)) {
       setStatus('correct');
-    } else {
-      setPlacement(emptyPlacement(config.items));
-      setChecked({});
-      setStatus('');
     }
-    setPickedId(null);
-  }, [taskId, completedTaskIds, config, hasUserReset]);
+  }, [taskId, completedTaskIds, hasUserReset]);
 
   const isLocked = status === 'correct';
   const allPlaced = config.items.every((item) => placement[item.id] && placement[item.id] !== POOL);

@@ -35,44 +35,49 @@
         {
           "id": "req_1_1",
           "title": "Planning",
-          "text": "Planning",
+          "text": "Use the pages in your notebook to display your game plan.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
           "title": "Controlling the main character",
-          "text": "Controlling the main character",
+          "text": "Choose the main character for your game and program their control!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/main-character.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Level 1",
-          "text": "Level 1",
+          "text": "Choose the main character for your game and program their control!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_4",
           "title": "Level 2",
-          "text": "Level 2",
+          "text": "Program the transition to the second stage and the initial placement for it! Don't forget the obstacles and the goal!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_5",
           "title": "Victory",
-          "text": "Victory",
+          "text": "Remember to program how the player will find out when they have won.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_6",
           "title": "Create!",
-          "text": "Create!",
+          "text": "Program your level!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [],
@@ -107,54 +112,107 @@
             {
               "id": "req_1_1",
               "title": "Planning",
-              "text": "Planning",
+              "text": "Use the pages in your notebook to display your game plan.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
               "title": "Controlling the main character",
-              "text": "Controlling the main character",
+              "text": "Choose the main character for your game and program their control!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/main-character.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Level 1",
-              "text": "Level 1",
+              "text": "Choose the main character for your game and program their control!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_4",
               "title": "Level 2",
-              "text": "Level 2",
+              "text": "Program the transition to the second stage and the initial placement for it! Don't forget the obstacles and the goal!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_5",
               "title": "Victory",
-              "text": "Victory",
+              "text": "Remember to program how the player will find out when they have won.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_6",
               "title": "Create!",
-              "text": "Create!",
+              "text": "Program your level!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [],
           "starter_project_id": "M3L4_Game.sb3",
           "demo_project_id": "",
-          "project_title": "M3L4 Game"
+          "project_title": "M3L4 Game",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-1.png"
+            },
+            {
+              "id": "comic-2",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-2.png"
+            },
+            {
+              "id": "comic-3",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-3.png"
+            },
+            {
+              "id": "comic-4",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-4.png"
+            }
+          ],
+          "source_task_id": "26838",
+          "source_project_id": "10684169"
         }
       ],
       "project_title": "M3L4 Game",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-1.png"
+        },
+        {
+          "id": "comic-2",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-2.png"
+        },
+        {
+          "id": "comic-3",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-3.png"
+        },
+        {
+          "id": "comic-4",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-4.png"
+        }
+      ],
+      "source_task_id": "26838",
+      "source_project_id": "10684169"
     },
     {
       "id": "VP2_M3L4_1_2",
@@ -181,9 +239,15 @@
           "level_type": "rating",
           "requirements": [],
           "media": [],
-          "command_keys": []
+          "command_keys": [],
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
         }
-      ]
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     }
   ]
 }

@@ -167,7 +167,7 @@ export default function FeedbackRatingTask(props) {
     return {
       ...DEFAULT_CONFIG,
       ...customConfig,
-      question: customConfig.question || task?.title || DEFAULT_CONFIG.question,
+      question: customConfig.question || task?.question || task?.title || task?.instruction || DEFAULT_CONFIG.question,
       options: customConfig.options || DEFAULT_CONFIG.options,
       robotImage: customConfig.robotImage || DEFAULT_CONFIG.robotImage,
     };
@@ -188,8 +188,13 @@ export default function FeedbackRatingTask(props) {
     } catch {}
   }, [currentTaskId]);
 
-  // Standard robot card style (like ptsy1 / previous courses) is enabled by default
-  const isRobotMode = task?.renderMode !== 'classic-emoji' && task?.style !== 'classic-emoji';
+  // Default to official LMS 3-Emoji rating layout (classic-emoji).
+  // Robot mode is only enabled if explicitly configured as 'robot' and not a 'did you like' survey.
+  const isRobotMode =
+    (task?.renderMode === 'robot' || task?.style === 'robot') &&
+    task?.renderMode !== 'classic-emoji' &&
+    task?.style !== 'classic-emoji' &&
+    !/did you like|like the/i.test(task?.title || task?.question || config?.question || '');
 
   const handleSelectOption = async (option) => {
     setSelectedId(option.id);

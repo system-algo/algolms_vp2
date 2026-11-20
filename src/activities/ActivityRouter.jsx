@@ -692,12 +692,15 @@ function resolveRendererType(props) {
   if (
     taskId === 'VP2_M1L2_4_1' ||
     task?.activityType === 'feedback-rating-task' ||
+    task?.activityType === 'feedback_rating_task' ||
     task?.selectedType === 'feedback-rating-task' ||
+    task?.selectedType === 'feedback_rating_task' ||
     task?.level_type === 'rating' ||
     task?.type === 'rating' ||
-    task?.title === 'Did you like the lesson?' ||
-    task?.instruction === 'Did you like the lesson?' ||
-    task?.bodyText === 'Did you like the lesson?' ||
+    /did you like/i.test(task?.title || '') ||
+    /did you like/i.test(task?.instruction || '') ||
+    /did you like/i.test(task?.bodyText || '') ||
+    /did you like/i.test(task?.question || '') ||
     ((taskId.includes('VP2_M1L2_4') || pageId === 'VP2_M1L2_4' || taskId.includes('VP_M1L2_4') || pageId === 'VP_M1L2_4') &&
       (props?.taskIndex === 0 || task?.position === 1 || task?.level_position === 1))
   ) {

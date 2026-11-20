@@ -17,20 +17,23 @@ function getTaskId(task) {
 }
 
 function getTaskMarker(task, index, total, allTasks = []) {
-  const title = String(task?.title || '').toLowerCase();
+  const title = String(task?.title || task?.instruction || task?.question || task?.bodyText || '').toLowerCase();
   const type = String(task?.level_type || task?.type || task?.activityType || task?.selectedType || '').toLowerCase();
 
   // Rating / Vote task -> smiley icon
   if (
     type === 'rating' ||
     type === 'feedback-rating-task' ||
+    type === 'feedback_rating_task' ||
     task?.activityType === 'feedback-rating-task' ||
     task?.selectedType === 'feedback-rating-task' ||
+    task?.activityType === 'feedback_rating_task' ||
+    task?.selectedType === 'feedback_rating_task' ||
     title.includes('rate') ||
     title.includes('rating') ||
     title.includes('vote') ||
-    title.includes('like the task') ||
-    title.includes('like the lesson')
+    title.includes('like the') ||
+    /did you like/i.test(title)
   ) {
     return 'emoji';
   }
@@ -46,11 +49,14 @@ function getTaskMarker(task, index, total, allTasks = []) {
 
   // When the first task is a rating task (e.g. "Did you like the lesson?"),
   // LMS numbers the subsequent test tasks starting from 1 (1, 2, 3...)
+  const firstTaskTitle = String(allTasks[0]?.title || allTasks[0]?.instruction || allTasks[0]?.question || '').toLowerCase();
+  const firstTaskType = String(allTasks[0]?.level_type || allTasks[0]?.type || allTasks[0]?.activityType || allTasks[0]?.selectedType || '').toLowerCase();
   const hasRatingAtStart = Array.isArray(allTasks) && allTasks.length > 0 && (
-    String(allTasks[0]?.level_type || allTasks[0]?.type || allTasks[0]?.activityType || allTasks[0]?.selectedType || '').toLowerCase() === 'rating' ||
-    String(allTasks[0]?.level_type || allTasks[0]?.type || allTasks[0]?.activityType || allTasks[0]?.selectedType || '').toLowerCase() === 'feedback-rating-task' ||
-    String(allTasks[0]?.title || '').toLowerCase().includes('like the lesson') ||
-    String(allTasks[0]?.title || '').toLowerCase().includes('like the task')
+    firstTaskType === 'rating' ||
+    firstTaskType === 'feedback-rating-task' ||
+    firstTaskType === 'feedback_rating_task' ||
+    firstTaskTitle.includes('like the') ||
+    /did you like/i.test(firstTaskTitle)
   );
 
   if (hasRatingAtStart && index > 0) {

@@ -129,10 +129,10 @@
       "activityType": "feedback-rating-task",
       "level_type": "rating",
       "selectedType": "rating",
-      "renderMode": "robot",
+      "renderMode": "classic-emoji",
       "feedbackRatingTask": {
         "question": "Did you like the lesson?",
-        "renderMode": "robot"
+        "renderMode": "classic-emoji"
       },
       "states": [
         {

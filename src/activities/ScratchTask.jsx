@@ -259,10 +259,6 @@ export default function ScratchTask({
 
   const isM1L2Task = String(task?.activity_id || task?.id || task?.taskId || '').includes('M1L2') ||
                      String(task?.lesson_id || task?.lessonId || '').includes('M1L2');
-  const showStarterProject = task?.show_starter_project === true;
-  const starterProjectUrl = showStarterProject && projectId
-    ? `/starter-projects/${encodeURIComponent(projectId)}`
-    : '';
   const demoProjectId = task?.hide_demo === true ? '' : (
     task?.demo_project_id ||
     task?.demoProjectId ||
@@ -273,12 +269,23 @@ export default function ScratchTask({
 
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
   const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
-  const demoInstructionText = task?.media?.[0]?.text || task?.instruction || '';
-
   const presentationMedia =
-    (task?.media && Array.isArray(task.media) && task.media[0]) ||
-    (task?.states?.[0]?.media && Array.isArray(task.states[0].media) && task.states[0].media[0]) ||
-    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: demoInstructionText } : null);
+    task?.media?.find?.((item) => item.type === 'presentation') ||
+    state?.media?.find?.((item) => item.type === 'presentation') ||
+    task?.states?.[0]?.media?.find?.((item) => item.type === 'presentation') ||
+    task?.media?.[0] ||
+    state?.media?.[0] ||
+    task?.states?.[0]?.media?.[0] ||
+    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: task?.instruction } : null);
+  const demoInstructionText = [
+    presentationMedia?.text,
+    state?.config?.presentation?.text,
+    task?.config?.presentation?.text,
+    state?.instruction,
+    task?.instruction,
+    state?.description,
+    task?.description,
+  ].find((value) => typeof value === 'string' && value.trim())?.trim();
 
   const activeDemoCode = DEMO_SOURCE_CODE[demoProjectId] || DEMO_SOURCE_CODE[`level_${levelPosition}_demo`] || null;
 
@@ -310,8 +317,10 @@ export default function ScratchTask({
   }, [demoProjectId, levelPosition, isPresentationOpen, demoReady]);
 
   const controlDemo = (type) => {
-    if (!demoReady) return;
-    demoIframeRef.current?.contentWindow?.postMessage({ type }, window.location.origin);
+    const demoWindow = demoIframeRef.current?.contentWindow;
+    if (!demoReady || !demoWindow) return;
+    if (type === 'SCRATCH_DEMO_RUN') demoWindow.focus();
+    demoWindow.postMessage({ type }, window.location.origin);
   };
 
   const [activeTab, setActiveTab] = useState(demoProjectId ? 'demo' : 'media');
@@ -772,12 +781,6 @@ export default function ScratchTask({
         {/* Scrollable Drawer Body */}
         <div className="scratch-task-drawer-body">
           <div className="scratch-task-drawer-content">
-            {starterProjectUrl && (
-              <a className="scratch-task-starter-link" href={starterProjectUrl} download>
-                {derivedProjectTitle}
-              </a>
-            )}
-
             {/* Demo stage preview (if demoProjectId exists) */}
             {demoProjectId ? (
               <div className="scratch-task-demo-wrapper">
@@ -828,9 +831,12 @@ export default function ScratchTask({
                         allow="autoplay"
                       />
                     </div>
-                    <div className="scratch-task-demo-hint">
-                      {demoReady ? 'Bấm cờ xanh để chạy mẫu, hoặc nút đỏ để dừng.' : 'Đang tải project demo...'}
-                    </div>
+                    {!demoReady && (
+                      <p className="scratch-task-demo-loading" role="status">Đang tải project demo...</p>
+                    )}
+                    {demoInstructionText && (
+                      <p className="scratch-task-demo-instruction">{demoInstructionText}</p>
+                    )}
                   </div>
                 )}
               </div>
@@ -889,7 +895,7 @@ export default function ScratchTask({
               </div>
             ) : null}
 
-            {task?.description && task.description !== presentationMedia?.text && task.description !== demoInstructionText && (
+            {task?.description && task.description !== presentationMedia?.text && (!demoProjectId || task.description.trim() !== demoInstructionText) && (
               <p className="scratch-task-description">
                 {task.description}
               </p>

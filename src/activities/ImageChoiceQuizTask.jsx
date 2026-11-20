@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
-import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress';
+import { submitQuizAttempt } from '../lib/quizGradingApi';
 import './ImageChoiceQuizTask.css';
 
 /*
@@ -68,7 +68,6 @@ function getConfig(task) {
     alt: option.alt || option.text || '',
   }));
 
-  const correct = raw.correctOptionIds || raw.answerKey || [];
 
   return {
     title: raw.title || task?.title || '',
@@ -77,14 +76,7 @@ function getConfig(task) {
     imageAlt: raw.imageAlt || raw.title || '',
     multiple: Boolean(raw.multiple),
     options,
-    correctOptionIds: (Array.isArray(correct) ? correct : [correct]).map(String),
   };
-}
-
-function sameSet(a, b) {
-  if (a.length !== b.length) return false;
-  const set = new Set(a);
-  return b.every((item) => set.has(item));
 }
 
 export default function ImageChoiceQuizTask({
@@ -98,31 +90,27 @@ export default function ImageChoiceQuizTask({
   const config = useMemo(() => getConfig(task), [task]);
 
   const [selected, setSelected] = useState([]);
-  const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
+  const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'missing', 'error'
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedbackMessage, setFeedbackMessage] = useState('');
   const [hasUserReset, setHasUserReset] = useState(false);
 
+  // A change of task starts from a clean local form. Do not prefill the
+  // manifest's bundled correct answer or trust a shared localStorage flag.
   useEffect(() => {
     setHasUserReset(false);
+    setSelected([]);
+    setStatus('');
+    setFeedbackMessage('');
   }, [taskId]);
 
+  // Completion comes from the user-scoped course progress provided by the LMS.
+  // Do not reset the student's submitted selection when that progress arrives.
   useEffect(() => {
-    if (hasUserReset) return;
-
-    let isAlreadyDone = false;
-    try {
-      isAlreadyDone =
-        completedTaskIds.includes(taskId) ||
-        localStorage.getItem(`task_completed_${taskId}`) === 'true';
-    } catch {}
-
-    if (isAlreadyDone) {
-      setSelected(config.correctOptionIds);
+    if (!hasUserReset && completedTaskIds.includes(taskId)) {
       setStatus('correct');
-    } else {
-      setSelected([]);
-      setStatus('');
     }
-  }, [taskId, completedTaskIds, config.correctOptionIds, hasUserReset]);
+  }, [taskId, completedTaskIds, hasUserReset]);
 
   const isLocked = status === 'correct';
   const isImageGrid = config.options.some((option) => option.image);
@@ -132,35 +120,34 @@ export default function ImageChoiceQuizTask({
   else if (config.options.length >= 6 && config.options.length % 3 === 0) gridCols = 3;
 
   const toggleOption = (optionId) => {
-    if (isLocked) return;
+    if (isLocked || isSubmitting) return;
     setSelected((prev) => {
       if (!config.multiple) return [optionId];
       return prev.includes(optionId)
         ? prev.filter((id) => id !== optionId)
         : [...prev, optionId];
     });
-    if (status === 'wrong') setStatus('');
+    if (status && status !== 'correct') {
+      setStatus('');
+      setFeedbackMessage('');
+    }
   };
 
   const handleReset = () => {
-    try {
-      localStorage.removeItem(`task_completed_${taskId}`);
-    } catch {}
+    if (isSubmitting) return;
     setHasUserReset(true);
     setSelected([]);
     setStatus('');
+    setFeedbackMessage('');
   };
 
-  const handleAnswer = () => {
-    if (!selected.length || isLocked) return;
-
-    const isCorrect = sameSet(selected, config.correctOptionIds);
+  const handleAnswer = async () => {
+    if (!selected.length || isLocked || isSubmitting) return;
 
     const urlParams = new URLSearchParams(window.location.search);
     const courseId = urlParams.get('course') || task?.courseId || 'VP2';
     const lessonId = urlParams.get('lesson') || task?.lessonId || '';
     const pageId = urlParams.get('page') || task?.pageId || '';
-
     const payload = {
       sessionId: getSessionId(),
       userId: getUserId(),
@@ -169,56 +156,35 @@ export default function ImageChoiceQuizTask({
       pageId,
       taskId,
       activityType: 'image-choice-quiz-task',
-      answer: { selectedOptionIds: selected },
-      isCorrect,
-      score: isCorrect ? 1 : 0,
-      maxScore: 1,
+      answer: { selectedOptionIds: [...selected] },
     };
 
+    setIsSubmitting(true);
+    setFeedbackMessage('');
     try {
-      const accessToken =
-        sessionStorage.getItem('lms_access_token') ||
-        localStorage.getItem('lms_access_token');
-      const headers = { 'Content-Type': 'application/json' };
-      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+      const result = await submitQuizAttempt(getBackendUrl(), payload);
 
-      fetch(`${getBackendUrl()}/api/activity-attempts`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(payload),
-      }).catch((err) => {
-        console.warn('[ImageChoiceQuizTask] backend attempt error:', err);
-      });
-    } catch (err) {
-      console.warn('[ImageChoiceQuizTask] attempt send error:', err);
+      if (result.isCorrect === true && result.status === 'correct') {
+        setStatus('correct');
+        onTaskCompleted?.({
+          taskId,
+          completionType: 'correct',
+          isCorrect: true,
+          score: Number(result.score ?? 1),
+          maxScore: Number(result.maxScore ?? 1),
+        });
+      } else if (result.isCorrect === false) {
+        setStatus('wrong');
+      } else {
+        setStatus('missing');
+        setFeedbackMessage('Answer not yet available in Supabase. Please contact your teacher.');
+      }
+    } catch (error) {
+      setStatus('error');
+      setFeedbackMessage(error.message || 'Cannot check your answer now. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
-
-    if (isCorrect) {
-      setStatus('correct');
-
-      saveTaskCompletionToSupabase({
-        courseId,
-        lessonId,
-        pageId,
-        taskId,
-        isCompleted: true,
-      });
-
-      try {
-        localStorage.setItem(`task_completed_${taskId}`, 'true');
-      } catch {}
-
-      onTaskCompleted?.({
-        taskId,
-        completionType: 'correct',
-        isCorrect: true,
-        score: 1,
-        maxScore: 1,
-      });
-      return;
-    }
-
-    setStatus('wrong');
   };
 
   const getOptionState = (optionId) => {
@@ -263,6 +229,7 @@ export default function ImageChoiceQuizTask({
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
                 {status === 'wrong' && 'Not quite right.'}
+                {(status === 'missing' || status === 'error') && feedbackMessage}
               </div>
             ) : null}
           </article>
@@ -272,7 +239,7 @@ export default function ImageChoiceQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={selected.length === 0 && !status}
+              disabled={isSubmitting || (selected.length === 0 && !status)}
               aria-label="Reset"
               title="Reset"
             >
@@ -286,9 +253,9 @@ export default function ImageChoiceQuizTask({
               type="button"
               className="icq-btn icq-btn-answer"
               onClick={handleAnswer}
-              disabled={!selected.length || isLocked}
+              disabled={!selected.length || isLocked || isSubmitting}
             >
-              ANSWER
+              {isSubmitting ? 'CHECKING...' : 'ANSWER'}
             </button>
           </div>
         </div>
@@ -310,7 +277,7 @@ export default function ImageChoiceQuizTask({
                 onClick={() => toggleOption(option.id)}
                 role={config.multiple ? 'checkbox' : 'radio'}
                 aria-checked={isSelected}
-                disabled={isLocked}
+                disabled={isLocked || isSubmitting}
               >
                 <span
                   className={`icq-option-control ${config.multiple ? 'is-checkbox' : 'is-radio'} ${isSelected ? 'is-on' : ''}`}

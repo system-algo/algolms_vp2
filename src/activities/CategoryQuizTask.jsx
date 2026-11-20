@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
-import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress';
+import { submitQuizAttempt } from '../lib/quizGradingApi';
 import './ImageChoiceQuizTask.css';
 import './CategoryQuizTask.css';
 
@@ -82,7 +82,6 @@ function getConfig(task) {
       image: category.image || '',
       alt: category.alt || category.title || '',
     })),
-    answer: raw.answer || {},
     // 'match': one card per category slot, categories shown as images (LMS quiz3 matching)
     layout: raw.layout === 'match' ? 'match' : 'categories',
   };
@@ -105,35 +104,30 @@ export default function CategoryQuizTask({
   const [placement, setPlacement] = useState(() => emptyPlacement(config.items));
   const [pickedId, setPickedId] = useState(null);
   const [dragOver, setDragOver] = useState(null);
-  const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
+  const [status, setStatus] = useState(''); // '', 'correct', 'wrong', 'missing', 'error'
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedbackMessage, setFeedbackMessage] = useState('');
   const [checked, setChecked] = useState({}); // itemId -> 'is-correct' | 'is-wrong'
   const [hasUserReset, setHasUserReset] = useState(false);
 
+  // A change of task starts from a clean local form. Do not prefill the
+  // manifest's bundled correct answer or trust a shared localStorage flag.
   useEffect(() => {
     setHasUserReset(false);
+    setPlacement(emptyPlacement(config.items));
+    setChecked({});
+    setPickedId(null);
+    setStatus('');
+    setFeedbackMessage('');
   }, [taskId]);
 
+  // Completion comes from the user-scoped course progress provided by the LMS.
+  // Do not reset the student's submitted selection when that progress arrives.
   useEffect(() => {
-    if (hasUserReset) return;
-
-    let isAlreadyDone = false;
-    try {
-      isAlreadyDone =
-        completedTaskIds.includes(taskId) ||
-        localStorage.getItem(`task_completed_${taskId}`) === 'true';
-    } catch {}
-
-    if (isAlreadyDone) {
-      setPlacement({ ...emptyPlacement(config.items), ...config.answer });
-      setChecked(Object.fromEntries(config.items.map((item) => [item.id, 'is-correct'])));
+    if (!hasUserReset && completedTaskIds.includes(taskId)) {
       setStatus('correct');
-    } else {
-      setPlacement(emptyPlacement(config.items));
-      setChecked({});
-      setStatus('');
     }
-    setPickedId(null);
-  }, [taskId, completedTaskIds, config, hasUserReset]);
+  }, [taskId, completedTaskIds, hasUserReset]);
 
   const isLocked = status === 'correct';
   const allPlaced = config.items.every((item) => placement[item.id] && placement[item.id] !== POOL);
@@ -142,7 +136,7 @@ export default function CategoryQuizTask({
   const isMatch = config.layout === 'match';
 
   const moveItem = (itemId, target) => {
-    if (isLocked || !itemId) return;
+    if (isLocked || isSubmitting || !itemId) return;
     setPlacement((prev) => {
       const next = { ...prev, [itemId]: target };
       if (isMatch && target !== POOL) {
@@ -158,12 +152,15 @@ export default function CategoryQuizTask({
       delete next[itemId];
       return next;
     });
-    if (status === 'wrong') setStatus('');
+    if (status && status !== 'correct') {
+      setStatus('');
+      setFeedbackMessage('');
+    }
     setPickedId(null);
   };
 
   const handleCardClick = (itemId) => {
-    if (isLocked) return;
+    if (isLocked || isSubmitting) return;
     setPickedId((prev) => (prev === itemId ? null : itemId));
   };
 
@@ -173,7 +170,7 @@ export default function CategoryQuizTask({
 
   const dropProps = (target) => ({
     onDragOver: (event) => {
-      if (isLocked) return;
+      if (isLocked || isSubmitting) return;
       event.preventDefault();
       setDragOver(target);
     },
@@ -187,32 +184,22 @@ export default function CategoryQuizTask({
   });
 
   const handleReset = () => {
-    try {
-      localStorage.removeItem(`task_completed_${taskId}`);
-    } catch {}
+    if (isSubmitting) return;
     setHasUserReset(true);
     setPlacement(emptyPlacement(config.items));
     setChecked({});
     setPickedId(null);
     setStatus('');
+    setFeedbackMessage('');
   };
 
-  const handleAnswer = () => {
-    if (!allPlaced || isLocked) return;
-
-    const nextChecked = {};
-    let isCorrect = true;
-    config.items.forEach((item) => {
-      const ok = placement[item.id] === config.answer[item.id];
-      nextChecked[item.id] = ok ? 'is-correct' : 'is-wrong';
-      if (!ok) isCorrect = false;
-    });
+  const handleAnswer = async () => {
+    if (!allPlaced || isLocked || isSubmitting) return;
 
     const urlParams = new URLSearchParams(window.location.search);
     const courseId = urlParams.get('course') || task?.courseId || 'VP2';
     const lessonId = urlParams.get('lesson') || task?.lessonId || '';
     const pageId = urlParams.get('page') || task?.pageId || '';
-
     const payload = {
       sessionId: getSessionId(),
       userId: getUserId(),
@@ -221,52 +208,41 @@ export default function CategoryQuizTask({
       pageId,
       taskId,
       activityType: 'category-quiz-task',
-      answer: { placements: placement },
-      isCorrect,
-      score: isCorrect ? 1 : 0,
-      maxScore: 1,
+      answer: { placements: { ...placement } },
     };
 
+    setIsSubmitting(true);
+    setFeedbackMessage('');
     try {
-      const accessToken =
-        sessionStorage.getItem('lms_access_token') ||
-        localStorage.getItem('lms_access_token');
-      const headers = { 'Content-Type': 'application/json' };
-      if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
-
-      fetch(`${getBackendUrl()}/api/activity-attempts`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(payload),
-      }).catch((err) => {
-        console.warn('[CategoryQuizTask] backend attempt error:', err);
-      });
-    } catch (err) {
-      console.warn('[CategoryQuizTask] attempt send error:', err);
+      const result = await submitQuizAttempt(getBackendUrl(), payload);
+      if (result.isCorrect === true && result.status === 'correct') {
+        setChecked(Object.fromEntries(config.items.map((item) => [item.id, 'is-correct'])));
+        setStatus('correct');
+        onTaskCompleted?.({
+          taskId,
+          completionType: 'correct',
+          isCorrect: true,
+          score: Number(result.score ?? 1),
+          maxScore: Number(result.maxScore ?? 1),
+        });
+      } else if (result.isCorrect === false) {
+        const itemResults = result.details?.itemResults || {};
+        setChecked(Object.fromEntries(config.items.map((item) => [
+          item.id, itemResults[item.id] === true ? 'is-correct' : 'is-wrong',
+        ])));
+        setStatus('wrong');
+      } else {
+        setChecked({});
+        setStatus('missing');
+        setFeedbackMessage('Answer not yet available in Supabase. Please contact your teacher.');
+      }
+    } catch (error) {
+      setChecked({});
+      setStatus('error');
+      setFeedbackMessage(error.message || 'Cannot check your answer now. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setChecked(nextChecked);
-
-    if (isCorrect) {
-      setStatus('correct');
-
-      saveTaskCompletionToSupabase({ courseId, lessonId, pageId, taskId, isCompleted: true });
-
-      try {
-        localStorage.setItem(`task_completed_${taskId}`, 'true');
-      } catch {}
-
-      onTaskCompleted?.({
-        taskId,
-        completionType: 'correct',
-        isCorrect: true,
-        score: 1,
-        maxScore: 1,
-      });
-      return;
-    }
-
-    setStatus('wrong');
   };
 
   const renderCard = (item) => (
@@ -281,7 +257,7 @@ export default function CategoryQuizTask({
       ]
         .filter(Boolean)
         .join(' ')}
-      draggable={!isLocked}
+      draggable={!isLocked && !isSubmitting}
       onDragStart={(event) => {
         event.dataTransfer.setData('text/plain', item.id);
         event.dataTransfer.effectAllowed = 'move';
@@ -290,7 +266,7 @@ export default function CategoryQuizTask({
         event.stopPropagation();
         handleCardClick(item.id);
       }}
-      disabled={isLocked && !checked[item.id]}
+      disabled={isLocked || isSubmitting}
       aria-pressed={pickedId === item.id}
     >
       {item.image ? (
@@ -321,6 +297,7 @@ export default function CategoryQuizTask({
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
                 {status === 'wrong' && 'Not quite right.'}
+                {(status === 'missing' || status === 'error') && feedbackMessage}
               </div>
             ) : null}
           </article>
@@ -330,7 +307,7 @@ export default function CategoryQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={!hasPlaced && !status}
+              disabled={isSubmitting || (!hasPlaced && !status)}
               aria-label="Reset"
               title="Reset"
             >
@@ -339,8 +316,8 @@ export default function CategoryQuizTask({
                 <polyline points="3 3 3 9 9 9" />
               </svg>
             </button>
-            <button type="button" className="icq-btn icq-btn-answer" onClick={handleAnswer} disabled={!allPlaced || isLocked}>
-              ANSWER
+            <button type="button" className="icq-btn icq-btn-answer" onClick={handleAnswer} disabled={!allPlaced || isLocked || isSubmitting}>
+              {isSubmitting ? 'CHECKING...' : 'ANSWER'}
             </button>
           </div>
         </div>

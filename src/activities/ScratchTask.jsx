@@ -106,7 +106,7 @@ export default function ScratchTask({
     (task?.title || '').toLowerCase().includes('project. presentation');
 
   const storageKey = isM3L4_L6
-    ? 'M3L4_Shared_Game'
+    ? 'M3L4_Shared_Game_BlankStarter'
     : isM5L5_L6
     ? 'M5L5_Shared_Chatbot'
     : (projectId || task?.id || task?.taskId || '');
@@ -175,7 +175,7 @@ export default function ScratchTask({
   );
 
   const startFresh = isM3L4_L6 && newProjectRevision > 0;
-  const editorProjectId = startFresh || (isM3L4_L6 && task?.starter_project_id === '') ? '' : projectId;
+  const editorProjectId = startFresh || isM3L4_L6 ? '' : projectId;
   const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}${startFresh ? '&startFresh=true' : ''}`;
 
   // Selected requirement ID for highlighting and displaying its image/GIF
@@ -274,6 +274,8 @@ export default function ScratchTask({
     (previewMediaUrl || task?.description
       ? { url: previewMediaUrl, text: (previewMediaUrl && task?.instruction) || task?.description }
       : null);
+  const presentationTitle = state?.config?.presentation?.title ||
+    task?.config?.presentation?.title || presentationMedia?.title || taskTitle;
   const demoInstructionText = [
     presentationMedia?.text,
     state?.config?.presentation?.text,
@@ -602,6 +604,21 @@ export default function ScratchTask({
                       New project
                     </button>
                   )}
+                  {isM3L4_L6 && (
+                    <button
+                      type="button"
+                      className="scratch-task-dropdown-item"
+                      onClick={async () => {
+                        setOpenFileMenu(false);
+                        const download = iframeRef.current?.contentWindow?.downloadPreviousGameProject;
+                        if (!download || !(await download())) {
+                          window.alert('No previous Game project was found in this browser.');
+                        }
+                      }}
+                    >
+                      Download previous project
+                    </button>
+                  )}
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {
@@ -800,7 +817,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((open) => !open)}
                   aria-expanded={isPresentationOpen}
                 >
-                  <span>{taskTitle}</span>
+                  <span>{presentationTitle}</span>
                   <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
                 </button>
                 {isPresentationOpen && (
@@ -858,7 +875,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((v) => !v)}
                 >
                   <span className="scratch-task-presentation-title">
-                    {taskTitle}
+                    {presentationTitle}
                   </span>
                   <span className={`scratch-task-presentation-arrow ${isPresentationOpen ? 'open' : ''}`}>
                     <svg

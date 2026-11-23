@@ -4,7 +4,7 @@
   "title": "Conditions and selection",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 9,
+  "taskCount": 10,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M3-Functions-and-Modules",
@@ -16,15 +16,14 @@
       "id": "VP2_M3L1_3_1",
       "taskId": "VP2_M3L1_3_1",
       "position": 1,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 1,
+      "levelPosition": 1,
       "title": "Colored ball",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
       "command_keys": [
         "motion",
         "looks",
@@ -39,50 +38,59 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
+          "id": "1bbe6962-a7e4-4263-8f9f-18f132c77fac",
           "title": "Program the ball sprite to move constantly",
-          "text": "Program the ball sprite to move constantly",
+          "text": "Complete this task using the familiar \"move _ steps\" and \"repeat forever\" commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_1_2",
+          "id": "f6c397af-3e83-40fb-a10a-60f3722a1e7e",
           "title": "Program the ball so that it does not fly out of bounds",
-          "text": "Program the ball so that it does not fly out of bounds",
+          "text": "To complete this task, you need the command \"if on edge, bounce,\" which also checks the condition! And it contains a mathematical formula for calculating the angle at which the ball turns. But where do we put this command so that it always works?",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-2.png"
         },
         {
-          "id": "req_1_3",
+          "id": "b2c0bb6e-8747-49c5-8a40-b33aa6560eaa",
           "title": "Program the condition \"if the ball touches the edge, it changes color\"",
-          "text": "Program the condition \"if the ball touches the edge, it changes color\"",
+          "text": "But we do not have this ready-made command. We need to program a check for the condition \"if it touches the edge, it changes color.\" You can change the color by changing the costume!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-3.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_1_4",
+          "id": "0951deba-cd5b-4100-8150-3c78a92e47d8",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the initial size, costume, and position of the sprite Ball!",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-4.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Colored ball",
+          "text": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Colored_ball.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_1_state_1",
           "stateId": "VP2_M3L1_3_1_state_1",
           "position": 1,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 1,
+          "levelPosition": 1,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
           "command_keys": [
             "motion",
             "looks",
@@ -97,56 +105,75 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
+              "id": "1bbe6962-a7e4-4263-8f9f-18f132c77fac",
               "title": "Program the ball sprite to move constantly",
-              "text": "Program the ball sprite to move constantly",
+              "text": "Complete this task using the familiar \"move _ steps\" and \"repeat forever\" commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_1_2",
+              "id": "f6c397af-3e83-40fb-a10a-60f3722a1e7e",
               "title": "Program the ball so that it does not fly out of bounds",
-              "text": "Program the ball so that it does not fly out of bounds",
+              "text": "To complete this task, you need the command \"if on edge, bounce,\" which also checks the condition! And it contains a mathematical formula for calculating the angle at which the ball turns. But where do we put this command so that it always works?",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-2.png"
             },
             {
-              "id": "req_1_3",
+              "id": "b2c0bb6e-8747-49c5-8a40-b33aa6560eaa",
               "title": "Program the condition \"if the ball touches the edge, it changes color\"",
-              "text": "Program the condition \"if the ball touches the edge, it changes color\"",
+              "text": "But we do not have this ready-made command. We need to program a check for the condition \"if it touches the edge, it changes color.\" You can change the color by changing the costume!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-3.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_1_4",
+              "id": "0951deba-cd5b-4100-8150-3c78a92e47d8",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the initial size, costume, and position of the sprite Ball!",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-1-hint-4.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Colored ball",
+              "text": "The ball moves freely around the stage. Each time it touches the edge, it changes color and direction!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Colored_ball.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Colored ball"
+          "demo_project_id": "M3L1_3_Task_1_Demo.sb3",
+          "project_title": "M3L1 Colored ball",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683236",
+          "source_demo_project_id": "2715597",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Colored ball",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683236",
+      "source_demo_project_id": "2715597",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_2",
       "taskId": "VP2_M3L1_3_2",
       "position": 2,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 2,
+      "levelPosition": 2,
       "title": "Stars",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
       "command_keys": [
         "motion",
         "looks",
@@ -161,50 +188,60 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
+          "id": "232bb18e-7f9f-4624-8884-88e188ec3f95",
           "title": "A star is hiding",
-          "text": "A star is hiding",
+          "text": "Program the condition \"if the mouse pointer touches the star, it hides.\" To check the condition, always use the \"repeat forever\" command.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_2_2",
+          "id": "cbfc9fdb-fb29-48a1-8389-e0e5e050625e",
           "title": "A star appears",
-          "text": "A star appears",
+          "text": "When we press the space bar a star appears.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-2.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_2_3",
+          "id": "da68258d-8148-4f4c-814a-2391d97609e8",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "At the start, the sprite Star is always visible.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-3.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_2_4",
+          "id": "bc80aae5-b8da-48b6-ba76-10617cc31382",
           "title": "Let's program the remaining stars",
-          "text": "Let's program the remaining stars",
-          "type": "gif",
+          "text": "Program the remaining stars",
+          "type": "",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Stars",
+          "text": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Stars.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_2_state_1",
           "stateId": "VP2_M3L1_3_2_state_1",
           "position": 2,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 2,
+          "levelPosition": 2,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
           "command_keys": [
             "motion",
             "looks",
@@ -219,56 +256,76 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_2_1",
+              "id": "232bb18e-7f9f-4624-8884-88e188ec3f95",
               "title": "A star is hiding",
-              "text": "A star is hiding",
+              "text": "Program the condition \"if the mouse pointer touches the star, it hides.\" To check the condition, always use the \"repeat forever\" command.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_2_2",
+              "id": "cbfc9fdb-fb29-48a1-8389-e0e5e050625e",
               "title": "A star appears",
-              "text": "A star appears",
+              "text": "When we press the space bar a star appears.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-2.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_2_3",
+              "id": "da68258d-8148-4f4c-814a-2391d97609e8",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "At the start, the sprite Star is always visible.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-2-hint-3.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_2_4",
+              "id": "bc80aae5-b8da-48b6-ba76-10617cc31382",
               "title": "Let's program the remaining stars",
-              "text": "Let's program the remaining stars",
-              "type": "gif",
+              "text": "Program the remaining stars",
+              "type": "",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Stars",
+              "text": "Move your mouse cursor over the stars to collect them! When you collect all the stars, press the space bar and they will reappear.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Stars.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Stars"
+          "demo_project_id": "M3L1_3_Task_2_Demo.sb3",
+          "project_title": "M3L1 Stars",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683237",
+          "source_demo_project_id": "2682567",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Stars",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683237",
+      "source_demo_project_id": "2682567",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_3",
       "taskId": "VP2_M3L1_3_3",
       "position": 3,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 3,
+      "levelPosition": 3,
       "title": "Jellyfish",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
       "command_keys": [
         "motion",
         "looks",
@@ -283,43 +340,52 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_3_1",
+          "id": "e39936c7-fd82-4950-8b91-23361f622815",
           "title": "When you click on the mouse, the sprite changes its costume",
-          "text": "When you click on the mouse, the sprite changes its costume",
+          "text": "Program the condition so that when you click on the mouse pointer, the sprite changes its costume. The script for changing backgrounds is already in the project.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_3_2",
+          "id": "f3b406fe-c21c-4784-8fc6-be02c1a900bb",
           "title": "Always check if the mouse is clicked",
-          "text": "Always check if the mouse is clicked",
+          "text": "This condition must always be checked. We need this command to do so.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-2.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_3_3",
+          "id": "10c534ed-5fab-47ed-90c4-eaf908f7a1aa",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "The costume must always be the same when starting up.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-3.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Jellyfish",
+          "text": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Jellyfish.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_3_state_1",
           "stateId": "VP2_M3L1_3_3_state_1",
           "position": 3,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 3,
+          "levelPosition": 3,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
           "command_keys": [
             "motion",
             "looks",
@@ -334,49 +400,68 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_3_1",
+              "id": "e39936c7-fd82-4950-8b91-23361f622815",
               "title": "When you click on the mouse, the sprite changes its costume",
-              "text": "When you click on the mouse, the sprite changes its costume",
+              "text": "Program the condition so that when you click on the mouse pointer, the sprite changes its costume. The script for changing backgrounds is already in the project.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_3_2",
+              "id": "f3b406fe-c21c-4784-8fc6-be02c1a900bb",
               "title": "Always check if the mouse is clicked",
-              "text": "Always check if the mouse is clicked",
+              "text": "This condition must always be checked. We need this command to do so.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-2.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_3_3",
+              "id": "10c534ed-5fab-47ed-90c4-eaf908f7a1aa",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "The costume must always be the same when starting up.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-3-hint-3.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Jellyfish",
+              "text": "Click anywhere on the stage! When you press the mouse button, the background and costume change.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Jellyfish.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Jellyfish"
+          "demo_project_id": "M3L1_3_Task_3_Demo.sb3",
+          "project_title": "M3L1 Jellyfish",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683249",
+          "source_demo_project_id": "2701508",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Jellyfish",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683249",
+      "source_demo_project_id": "2701508",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_4",
       "taskId": "VP2_M3L1_3_4",
       "position": 4,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 4,
+      "levelPosition": 4,
       "title": "Bat",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
       "command_keys": [
         "motion",
         "looks",
@@ -391,36 +476,42 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_4_1",
+          "id": "31b4509a-22ab-40b3-ac8d-6738e2387edb",
           "title": "Program the condition \"if the mouse is clicked, glide...\"",
-          "text": "Program the condition \"if the mouse is clicked, glide...\"",
+          "text": "Program the rule \"if the mouse is clicked, glide for 1 second to the mouse pointer.\" You already know how to check rules using the \"if ...\" operator. Use this condition!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-hint-1.png"
         },
         {
-          "id": "req_4_2",
+          "id": "0bb508b9-7581-41df-b3b9-844db7712288",
           "title": "Always check if the mouse is clicked",
-          "text": "Always check if the mouse is clicked",
+          "text": "This condition must always be checked. What command do we need?",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-hint-2.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Bat",
+          "text": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Bat.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_4_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_4_state_1",
           "stateId": "VP2_M3L1_3_4_state_1",
           "position": 4,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 4,
+          "levelPosition": 4,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
           "command_keys": [
             "motion",
             "looks",
@@ -435,42 +526,70 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_4_1",
+              "id": "31b4509a-22ab-40b3-ac8d-6738e2387edb",
               "title": "Program the condition \"if the mouse is clicked, glide...\"",
-              "text": "Program the condition \"if the mouse is clicked, glide...\"",
+              "text": "Program the rule \"if the mouse is clicked, glide for 1 second to the mouse pointer.\" You already know how to check rules using the \"if ...\" operator. Use this condition!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-hint-1.png"
             },
             {
-              "id": "req_4_2",
+              "id": "0bb508b9-7581-41df-b3b9-844db7712288",
               "title": "Always check if the mouse is clicked",
-              "text": "Always check if the mouse is clicked",
+              "text": "This condition must always be checked. What command do we need?",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-hint-2.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Bat",
+              "text": "Click anywhere on the stage, the Bat sprite will fly to the mouse pointer for 1 second! Let's program it!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Bat.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Bat"
+          "demo_project_id": "M3L1_3_Task_4_Demo.sb3",
+          "project_title": "M3L1 Bat",
+          "tips": [
+            {
+              "id": "comic-2",
+              "title": "Scratch block reference",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-comic-2.png"
+            }
+          ],
+          "source_task_id": "26859",
+          "source_project_id": "10683251",
+          "source_demo_project_id": "2701515",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Bat",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-2",
+          "title": "Scratch block reference",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-4-comic-2.png"
+        }
+      ],
+      "source_task_id": "26859",
+      "source_project_id": "10683251",
+      "source_demo_project_id": "2701515",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_5",
       "taskId": "VP2_M3L1_3_5",
       "position": 5,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 5,
+      "levelPosition": 5,
       "title": "Three balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "After clicking on the green flag, the balls begin to move chaotically.",
       "command_keys": [
         "motion",
         "looks",
@@ -485,50 +604,59 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_5_1",
+          "id": "71f55894-ab9f-4c81-91aa-7b4b61685c85",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the position of the sprite Ball at the start and its direction. Any direction can be used!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-5-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_5_2",
+          "id": "39ed859a-2a80-4ecf-aa12-f361b14269f9",
           "title": "Chaotic ball movement",
-          "text": "Chaotic ball movement",
+          "text": "Program the movement of the ball using the \"move_steps\" and \"repeat forever\" commands.",
           "type": "gif",
           "url": ""
         },
         {
-          "id": "req_5_3",
+          "id": "1517549d-a25f-4fcf-b3d0-768e7ac34781",
           "title": "Change of direction",
-          "text": "Change of direction",
+          "text": "Program a change in the direction of the Ball sprite if it reaches the edge. For the command to always work, where should it be placed — in the loop or after?",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-5-hint-3.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_5_4",
+          "id": "be71a988-7f49-43ec-b474-9b0f8bc69ca9",
           "title": "Program 2 more balls",
-          "text": "Program 2 more balls",
+          "text": "Program the remaining balls by moving the resulting script to the sprite icon. Set for each ball its own starting position.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Three balls",
+          "text": "After clicking on the green flag, the balls begin to move chaotically.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Three_balls.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_5_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_5_state_1",
           "stateId": "VP2_M3L1_3_5_state_1",
           "position": 5,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 5,
+          "levelPosition": 5,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "After clicking on the green flag, the balls begin to move chaotically.",
           "command_keys": [
             "motion",
             "looks",
@@ -543,56 +671,75 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_5_1",
+              "id": "71f55894-ab9f-4c81-91aa-7b4b61685c85",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the position of the sprite Ball at the start and its direction. Any direction can be used!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-5-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_5_2",
+              "id": "39ed859a-2a80-4ecf-aa12-f361b14269f9",
               "title": "Chaotic ball movement",
-              "text": "Chaotic ball movement",
+              "text": "Program the movement of the ball using the \"move_steps\" and \"repeat forever\" commands.",
               "type": "gif",
               "url": ""
             },
             {
-              "id": "req_5_3",
+              "id": "1517549d-a25f-4fcf-b3d0-768e7ac34781",
               "title": "Change of direction",
-              "text": "Change of direction",
+              "text": "Program a change in the direction of the Ball sprite if it reaches the edge. For the command to always work, where should it be placed — in the loop or after?",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-5-hint-3.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_5_4",
+              "id": "be71a988-7f49-43ec-b474-9b0f8bc69ca9",
               "title": "Program 2 more balls",
-              "text": "Program 2 more balls",
+              "text": "Program the remaining balls by moving the resulting script to the sprite icon. Set for each ball its own starting position.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Three balls",
+              "text": "After clicking on the green flag, the balls begin to move chaotically.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Three_balls.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Three balls"
+          "demo_project_id": "M3L1_3_Task_5_Demo.sb3",
+          "project_title": "M3L1 Three balls",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683253",
+          "source_demo_project_id": "6040872",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Three balls",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683253",
+      "source_demo_project_id": "6040872",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_6",
       "taskId": "VP2_M3L1_3_6",
       "position": 6,
-      "level_position": 9,
-      "levelPosition": 9,
+      "level_position": 6,
+      "levelPosition": 6,
       "title": "Three balls (collision)",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
       "command_keys": [
         "motion",
         "looks",
@@ -607,36 +754,44 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_6_1",
+          "id": "0a24686a-fea2-4a01-bea7-bc847b8957f3",
           "title": "Checking if touching",
-          "text": "Checking if touching",
+          "text": "Use this condition to program the balls touching.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-6-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_6_2",
+          "id": "ff5f94be-261b-49ff-b7e6-d712398f423a",
           "title": "Bouncing",
-          "text": "Bouncing",
+          "text": "To make them bounce, they need to turn in the opposite direction and move!",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-6-hint-2.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Three balls",
+          "text": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Three_balls_(collision).sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_6_state_1",
           "stateId": "VP2_M3L1_3_6_state_1",
           "position": 6,
-          "level_position": 9,
-          "levelPosition": 9,
+          "level_position": 6,
+          "levelPosition": 6,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": true,
-          "description": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
           "command_keys": [
             "motion",
             "looks",
@@ -651,42 +806,109 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_6_1",
+              "id": "0a24686a-fea2-4a01-bea7-bc847b8957f3",
               "title": "Checking if touching",
-              "text": "Checking if touching",
+              "text": "Use this condition to program the balls touching.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-6-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_6_2",
+              "id": "ff5f94be-261b-49ff-b7e6-d712398f423a",
               "title": "Bouncing",
-              "text": "Bouncing",
+              "text": "To make them bounce, they need to turn in the opposite direction and move!",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-6-hint-2.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Three balls",
+              "text": "Watch how the balls move: when they touch, they bounce off each other! Modify the program to make the yellow ball fly away from others when it collides.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Three_balls_(collision).sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Three balls (collision)"
+          "demo_project_id": "M3L1_3_Task_6_Demo.sb3",
+          "project_title": "M3L1 Three balls (collision)",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683254",
+          "source_demo_project_id": "6051883",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Three balls (collision)",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683254",
+      "source_demo_project_id": "6051883",
+      "show_starter_project": true
+    },
+    {
+      "id": "VP2_M3L1_3_rating",
+      "taskId": "VP2_M3L1_3_rating",
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26859",
+      "states": [
+        {
+          "id": "VP2_M3L1_3_rating_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26859",
+          "stateId": "VP2_M3L1_3_rating_state_1",
+          "type": "rating",
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     },
     {
       "id": "VP2_M3L1_3_7",
       "taskId": "VP2_M3L1_3_7",
-      "position": 7,
-      "level_position": 1,
-      "levelPosition": 1,
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
       "title": "Three balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "After clicking on the green flag, the balls begin to move chaotically. Watch how the balls move: when they touch, they bounce off each other! Let's do the same!",
       "command_keys": [
         "motion",
         "looks",
@@ -701,57 +923,59 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_7_1",
+          "id": "a7adcc51-89e8-4ace-807b-050a9c2a9177",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_7_2",
+          "id": "39ed859a-2a80-4ecf-aa12-f361b14269f9",
           "title": "Chaotic ball movement",
-          "text": "Chaotic ball movement",
+          "text": "",
           "type": "gif",
           "url": ""
         },
         {
-          "id": "req_7_3",
+          "id": "0a24686a-fea2-4a01-bea7-bc847b8957f3",
           "title": "Checking if touching and bouncing",
-          "text": "Checking if touching and bouncing",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_7_4",
+          "id": "02fb92d1-10e9-4125-8a06-d384b1e6c801",
           "title": "Checking if both balls are touching",
-          "text": "Checking if both balls are touching",
+          "text": "",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
         {
-          "id": "req_7_5",
-          "title": "Move the script",
-          "text": "Move the script",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Three balls",
+          "text": "After clicking on the green flag, the balls begin to move chaotically.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M3L1_Three_balls_(1).sb3",
-      "demo_project_id": "",
+      "starter_project_id": "M3L1_Three_balls.sb3",
+      "demo_project_id": "M3L1_3_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_7_state_1",
           "stateId": "VP2_M3L1_3_7_state_1",
-          "position": 7,
-          "level_position": 1,
-          "levelPosition": 1,
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "After clicking on the green flag, the balls begin to move chaotically. Watch how the balls move: when they touch, they bounce off each other! Let's do the same!",
           "command_keys": [
             "motion",
             "looks",
@@ -766,63 +990,89 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_7_1",
+              "id": "a7adcc51-89e8-4ace-807b-050a9c2a9177",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_7_2",
+              "id": "39ed859a-2a80-4ecf-aa12-f361b14269f9",
               "title": "Chaotic ball movement",
-              "text": "Chaotic ball movement",
+              "text": "",
               "type": "gif",
               "url": ""
             },
             {
-              "id": "req_7_3",
+              "id": "0a24686a-fea2-4a01-bea7-bc847b8957f3",
               "title": "Checking if touching and bouncing",
-              "text": "Checking if touching and bouncing",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_7_4",
+              "id": "02fb92d1-10e9-4125-8a06-d384b1e6c801",
               "title": "Checking if both balls are touching",
-              "text": "Checking if both balls are touching",
+              "text": "",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
             {
-              "id": "req_7_5",
-              "title": "Move the script",
-              "text": "Move the script",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Three balls",
+              "text": "After clicking on the green flag, the balls begin to move chaotically.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "M3L1_Three_balls_(1).sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Three balls (1)"
+          "starter_project_id": "M3L1_Three_balls.sb3",
+          "demo_project_id": "M3L1_3_Task_6_Demo.sb3",
+          "project_title": "M3L1 Three balls",
+          "tips": [
+            {
+              "id": "1568736252322-5",
+              "title": "Move the script",
+              "description": "The ball scripts are very similar: they differ only in specifying the sprites they are colliding with. If you assemble a script for one ball, it can then be used as a template for other balls. To do that, transfer the script to the sprite image, as shown in the animation.",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-8-tip-1.gif"
+            }
+          ],
+          "source_task_id": "26859",
+          "source_project_id": "10683253",
+          "source_demo_project_id": "6040872",
+          "show_starter_project": true
         }
       ],
-      "project_title": "M3L1 Three balls (1)",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "M3L1 Three balls",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "1568736252322-5",
+          "title": "Move the script",
+          "description": "The ball scripts are very similar: they differ only in specifying the sprites they are colliding with. If you assemble a script for one ball, it can then be used as a template for other balls. To do that, transfer the script to the sprite image, as shown in the animation.",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-8-tip-1.gif"
+        }
+      ],
+      "source_task_id": "26859",
+      "source_project_id": "10683253",
+      "source_demo_project_id": "6040872",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_8",
       "taskId": "VP2_M3L1_3_8",
-      "position": 8,
-      "level_position": 1,
-      "levelPosition": 1,
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Balls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "The balloons are coming out of the box! Use the mouse cursor to keep the balloons away from the edge!",
       "command_keys": [
         "motion",
         "looks",
@@ -837,36 +1087,43 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_8_1",
+          "id": "e8f76034-c4a8-4b7a-b98b-9fdd5dec2778",
           "title": "Program touching the edge",
-          "text": "Program touching the edge",
+          "text": "When the balloons touch the edge, they start coming out of the box again. Use a condition and the \"move\" command!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-9-hint-1.png"
         },
         {
-          "id": "req_8_2",
+          "id": "d84b466e-a352-4fec-99c2-7211546a7b1f",
           "title": "The balloons touch the mouse cursor",
-          "text": "The balloons touch the mouse cursor",
+          "text": "When the balloons touch the mouse cursor, they should turn. Use a condition and command with rotation!",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-9-hint-2.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The balloons are coming out of the box!",
+          "text": "Use the mouse cursor to keep the balloons away from the edge!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Balls.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_9_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_8_state_1",
           "stateId": "VP2_M3L1_3_8_state_1",
-          "position": 8,
-          "level_position": 1,
-          "levelPosition": 1,
+          "position": 9,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "The balloons are coming out of the box! Use the mouse cursor to keep the balloons away from the edge!",
           "command_keys": [
             "motion",
             "looks",
@@ -881,42 +1138,59 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_8_1",
+              "id": "e8f76034-c4a8-4b7a-b98b-9fdd5dec2778",
               "title": "Program touching the edge",
-              "text": "Program touching the edge",
+              "text": "When the balloons touch the edge, they start coming out of the box again. Use a condition and the \"move\" command!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-9-hint-1.png"
             },
             {
-              "id": "req_8_2",
+              "id": "d84b466e-a352-4fec-99c2-7211546a7b1f",
               "title": "The balloons touch the mouse cursor",
-              "text": "The balloons touch the mouse cursor",
+              "text": "When the balloons touch the mouse cursor, they should turn. Use a condition and command with rotation!",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-9-hint-2.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The balloons are coming out of the box!",
+              "text": "Use the mouse cursor to keep the balloons away from the edge!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Balls.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Balls"
+          "demo_project_id": "M3L1_3_Task_9_Demo.sb3",
+          "project_title": "M3L1 Balls",
+          "tips": [],
+          "source_task_id": "26859",
+          "source_project_id": "10683259",
+          "source_demo_project_id": "2701587",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 Balls",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26859",
+      "source_project_id": "10683259",
+      "source_demo_project_id": "2701587",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L1_3_9",
       "taskId": "VP2_M3L1_3_9",
-      "position": 9,
-      "level_position": 1,
-      "levelPosition": 1,
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
       "title": "Hedgehog and crabs",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
       "command_keys": [
         "motion",
         "looks",
@@ -931,50 +1205,60 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_9_1",
+          "id": "4a94c74e-eba7-4084-84af-22dd3bc9ed02",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_9_2",
+          "id": "8da365da-3814-495f-940c-ec87529bed33",
           "title": "Use the \"if... then...\" command at least 2 times.",
-          "text": "Use the \"if... then...\" command at least 2 times.",
+          "text": "Use the \"if... then...\" command to check the conditions \"mouse clicked?\" and \"touching the edge?\"",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_9_3",
+          "id": "a385afe8-14a7-442f-ab7b-40464bd33229",
           "title": "Use the \"repeat forever\" command at least 2 times.",
-          "text": "Use the \"repeat forever\" command at least 2 times.",
+          "text": "Use the \"repeat forever\" command to program constant checking of the conditions.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_9_4",
+          "id": "cf70e533-d425-40cd-834f-b358aaaa68cc",
           "title": "Use the \"stop other sprite scripts\" command at least 2 times.",
-          "text": "Use the \"stop other sprite scripts\" command at least 2 times.",
+          "text": "Use the \"stop other sprite scripts\" command to prevent the simultaneous execution of scripts.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The hedgehog is flying to the crab!",
+          "text": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_hedgehog_and_crabs.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_3_Task_10_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_3_9_state_1",
           "stateId": "VP2_M3L1_3_9_state_1",
-          "position": 9,
-          "level_position": 1,
-          "levelPosition": 1,
+          "position": 10,
+          "level_position": 10,
+          "levelPosition": 10,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
           "command_keys": [
             "motion",
             "looks",
@@ -989,42 +1273,85 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_9_1",
+              "id": "4a94c74e-eba7-4084-84af-22dd3bc9ed02",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_9_2",
+              "id": "8da365da-3814-495f-940c-ec87529bed33",
               "title": "Use the \"if... then...\" command at least 2 times.",
-              "text": "Use the \"if... then...\" command at least 2 times.",
+              "text": "Use the \"if... then...\" command to check the conditions \"mouse clicked?\" and \"touching the edge?\"",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_9_3",
+              "id": "a385afe8-14a7-442f-ab7b-40464bd33229",
               "title": "Use the \"repeat forever\" command at least 2 times.",
-              "text": "Use the \"repeat forever\" command at least 2 times.",
+              "text": "Use the \"repeat forever\" command to program constant checking of the conditions.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_9_4",
+              "id": "cf70e533-d425-40cd-834f-b358aaaa68cc",
               "title": "Use the \"stop other sprite scripts\" command at least 2 times.",
-              "text": "Use the \"stop other sprite scripts\" command at least 2 times.",
+              "text": "Use the \"stop other sprite scripts\" command to prevent the simultaneous execution of scripts.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The hedgehog is flying to the crab!",
+              "text": "Study the game: you will need to create a similar one. Use the mouse cursor to aim and shoot the crabs by clicking on the mouse. The game consists of 2 stages: aiming and launching. Program the sprite to send messages to itself and split up the execution of the conditions using those messages!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_hedgehog_and_crabs.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 hedgehog and crabs"
+          "demo_project_id": "M3L1_3_Task_10_Demo.sb3",
+          "project_title": "M3L1 hedgehog and crabs",
+          "tips": [
+            {
+              "id": "comic-1",
+              "title": "Scratch block reference",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-10-comic-1.png"
+            },
+            {
+              "id": "comic-2",
+              "title": "Scratch block reference",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-10-comic-2.png"
+            }
+          ],
+          "source_task_id": "26859",
+          "source_project_id": "10683262",
+          "source_demo_project_id": "2715902",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L1 hedgehog and crabs",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "title": "Scratch block reference",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-10-comic-1.png"
+        },
+        {
+          "id": "comic-2",
+          "title": "Scratch block reference",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_3/assets/task-10-comic-2.png"
+        }
+      ],
+      "source_task_id": "26859",
+      "source_project_id": "10683262",
+      "source_demo_project_id": "2715902",
+      "show_starter_project": true
     }
   ]
 }

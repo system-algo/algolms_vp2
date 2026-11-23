@@ -4,7 +4,7 @@
   "title": "Procedures. Jump & Flip",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 5,
+  "taskCount": 6,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M3-Functions-and-Modules",
@@ -41,21 +41,28 @@
         {
           "id": "req_1_1",
           "title": "Create a new \"Jump\" command",
-          "text": "Create a new \"Jump\" command",
+          "text": "The robot changes position gradually. It moves up and then down. Use these commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-1.png"
         },
         {
           "id": "req_1_2",
           "title": "Double jump when pressing the space bar",
-          "text": "Double jump when pressing the space bar",
+          "text": "This command appeared in the \"Other Blocks\" section. Use it.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-2.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "MarsBot jumping",
+          "text": "Press the space bar and watch: the MarsBot jumps two times. Create the same project!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Jump.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_1_1_state_1",
@@ -85,26 +92,55 @@
             {
               "id": "req_1_1",
               "title": "Create a new \"Jump\" command",
-              "text": "Create a new \"Jump\" command",
+              "text": "The robot changes position gradually. It moves up and then down. Use these commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-1.png"
             },
             {
               "id": "req_1_2",
               "title": "Double jump when pressing the space bar",
-              "text": "Double jump when pressing the space bar",
+              "text": "This command appeared in the \"Other Blocks\" section. Use it.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-2.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "MarsBot jumping",
+              "text": "Press the space bar and watch: the MarsBot jumps two times. Create the same project!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Jump.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Jump"
+          "demo_project_id": "M3L3_1_Task_1_Demo.sb3",
+          "project_title": "M3L3 Jump",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-comic-1.png"
+            }
+          ],
+          "source_task_id": "26862",
+          "source_project_id": "10683347",
+          "source_demo_project_id": "2720718",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Jump",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-comic-1.png"
+        }
+      ],
+      "source_task_id": "26862",
+      "source_project_id": "10683347",
+      "source_demo_project_id": "2720718",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L3_1_2",
@@ -135,21 +171,28 @@
         {
           "id": "req_2_1",
           "title": "Create the \"Flip\" procedure",
-          "text": "Create the \"Flip\" procedure",
+          "text": "Your \"own\" commands are called procedures. Create the script for \"Flip\" procedure.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-hint-1.png"
         },
         {
           "id": "req_2_2",
           "title": "Double flip when pressing the space bar",
-          "text": "Double flip when pressing the space bar",
+          "text": "Use the \"Flip\" procedure twice when pressing the space bar to make the MarsBot do a double flip",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-hint-2.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The MarsBot does flips!",
+          "text": "Press the space bar and watch! The initial placement and the appearance of the robot can also be done with a separate command. Look at how it's done.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Flip.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_1_2_state_1",
@@ -179,26 +222,55 @@
             {
               "id": "req_2_1",
               "title": "Create the \"Flip\" procedure",
-              "text": "Create the \"Flip\" procedure",
+              "text": "Your \"own\" commands are called procedures. Create the script for \"Flip\" procedure.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-hint-1.png"
             },
             {
               "id": "req_2_2",
               "title": "Double flip when pressing the space bar",
-              "text": "Double flip when pressing the space bar",
+              "text": "Use the \"Flip\" procedure twice when pressing the space bar to make the MarsBot do a double flip",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-hint-2.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The MarsBot does flips!",
+              "text": "Press the space bar and watch! The initial placement and the appearance of the robot can also be done with a separate command. Look at how it's done.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Flip.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Flip"
+          "demo_project_id": "M3L3_1_Task_2_Demo.sb3",
+          "project_title": "M3L3 Flip",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-comic-1.png"
+            }
+          ],
+          "source_task_id": "26862",
+          "source_project_id": "10683356",
+          "source_demo_project_id": "2721268",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Flip",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-comic-1.png"
+        }
+      ],
+      "source_task_id": "26862",
+      "source_project_id": "10683356",
+      "source_demo_project_id": "2721268",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L3_1_3",
@@ -229,42 +301,49 @@
         {
           "id": "req_3_1",
           "title": "The \"Start\" procedure",
-          "text": "The \"Start\" procedure",
+          "text": "Use the \"Start\" procedure to set the size, position, and direction of the MarsBot.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-1.png"
         },
         {
           "id": "req_3_2",
           "title": "The \"backward somersault\" procedure",
-          "text": "The \"backward somersault\" procedure",
+          "text": "Create the \"backward somersault\" procedure the same way as the \"forward somersault\" procedure.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_3",
           "title": "Pressing the space bar",
-          "text": "Pressing the space bar",
+          "text": "The space bar starts a long warm-up and the MarsBot performs somersaults forward and backward.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-3.png"
         },
         {
           "id": "req_3_4",
           "title": "Pressing the number 1",
-          "text": "Pressing the number 1",
+          "text": "When you press the number 1, the MarsBot does a forward somersault.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-4.png"
         },
         {
           "id": "req_3_5",
           "title": "Pressing the number 2",
-          "text": "Pressing the number 2",
+          "text": "When you press the number 2, the MarsBot does a backward somersault.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-5.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The sprite does somersaults forward and backward",
+          "text": "To control the MarsBot, use the space bar and numbers 1 and 2.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Flip_(1).sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_1_3_state_1",
@@ -294,60 +373,148 @@
             {
               "id": "req_3_1",
               "title": "The \"Start\" procedure",
-              "text": "The \"Start\" procedure",
+              "text": "Use the \"Start\" procedure to set the size, position, and direction of the MarsBot.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-1.png"
             },
             {
               "id": "req_3_2",
               "title": "The \"backward somersault\" procedure",
-              "text": "The \"backward somersault\" procedure",
+              "text": "Create the \"backward somersault\" procedure the same way as the \"forward somersault\" procedure.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_3",
               "title": "Pressing the space bar",
-              "text": "Pressing the space bar",
+              "text": "The space bar starts a long warm-up and the MarsBot performs somersaults forward and backward.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-3.png"
             },
             {
               "id": "req_3_4",
               "title": "Pressing the number 1",
-              "text": "Pressing the number 1",
+              "text": "When you press the number 1, the MarsBot does a forward somersault.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-4.png"
             },
             {
               "id": "req_3_5",
               "title": "Pressing the number 2",
-              "text": "Pressing the number 2",
+              "text": "When you press the number 2, the MarsBot does a backward somersault.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-5.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The sprite does somersaults forward and backward",
+              "text": "To control the MarsBot, use the space bar and numbers 1 and 2.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Flip_(1).sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Flip (1)"
+          "demo_project_id": "M3L3_1_Task_3_Demo.sb3",
+          "project_title": "M3L3 Flip (1)",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-1.png"
+            },
+            {
+              "id": "comic-2",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-2.png"
+            }
+          ],
+          "source_task_id": "26862",
+          "source_project_id": "10683364",
+          "source_demo_project_id": "2721255",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Flip (1)",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-1.png"
+        },
+        {
+          "id": "comic-2",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-2.png"
+        }
+      ],
+      "source_task_id": "26862",
+      "source_project_id": "10683364",
+      "source_demo_project_id": "2721255",
+      "show_starter_project": true
+    },
+    {
+      "id": "VP2_M3L3_1_rating",
+      "taskId": "VP2_M3L3_1_rating",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26862",
+      "states": [
+        {
+          "id": "VP2_M3L3_1_rating_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26862",
+          "stateId": "VP2_M3L3_1_rating_state_1",
+          "type": "rating",
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     },
     {
       "id": "VP2_M3L3_1_4",
       "taskId": "VP2_M3L3_1_4",
-      "position": 4,
-      "level_position": 4,
-      "levelPosition": 4,
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
       "title": "The MarsBot walks or does flips all the time",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
+      "isAutoCheck": false,
       "description": "Click on 1 and 2 and watch the example!",
       "command_keys": [
         "motion",
@@ -365,56 +532,63 @@
         {
           "id": "req_4_1",
           "title": "Define the \"Start\" procedure",
-          "text": "Define the \"Start\" procedure",
+          "text": "Use Start to put MarsBot back in its starting position.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_2",
           "title": "Define the \"Walk\" procedure",
-          "text": "Define the \"Walk\" procedure",
+          "text": "In this procedure, the MarsBot moves to the right and then returns to its original place.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-2.png"
         },
         {
           "id": "req_4_3",
           "title": "Define the \"Flip\" procedure",
-          "text": "Define the \"Flip\" procedure",
+          "text": "Use Flip to move MarsBot up and down while turning.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_4",
           "title": "When you press 1, the MarsBot is constantly walking",
-          "text": "When you press 1, the MarsBot is constantly walking",
+          "text": "Put the procedure in an endless \"repeat forever\" loop!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-4.png"
         },
         {
           "id": "req_4_5",
           "title": "When you press 2, the MarsBot is constantly doing flips",
-          "text": "When you press 2, the MarsBot is constantly doing flips",
+          "text": "Put the \"Flip\" procedure in an endless loop. And add a small pause between jumps — after all, real athletes pause to prepare for their next jump!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-5.png"
         },
         {
           "id": "req_4_6",
           "title": "Stop the previous script",
-          "text": "Stop the previous script",
+          "text": "If the MarsBot is always walking and then we want it to do flips, we must first stop the walking script. To do this, use the command \"stop the sprite's other scripts.\" It is also best if the flipping and walking always start from the starting position, so we will use the “Start” procedure for all events.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-6.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The MarsBot walks or does flips all the time",
+          "text": "Click on 1 and 2 and watch the example!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Flip_and_walk.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_1_Task_5_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_1_4_state_1",
           "stateId": "VP2_M3L3_1_4_state_1",
-          "position": 4,
-          "level_position": 4,
-          "levelPosition": 4,
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -437,67 +611,84 @@
             {
               "id": "req_4_1",
               "title": "Define the \"Start\" procedure",
-              "text": "Define the \"Start\" procedure",
+              "text": "Use Start to put MarsBot back in its starting position.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_2",
               "title": "Define the \"Walk\" procedure",
-              "text": "Define the \"Walk\" procedure",
+              "text": "In this procedure, the MarsBot moves to the right and then returns to its original place.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-2.png"
             },
             {
               "id": "req_4_3",
               "title": "Define the \"Flip\" procedure",
-              "text": "Define the \"Flip\" procedure",
+              "text": "Use Flip to move MarsBot up and down while turning.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_4",
               "title": "When you press 1, the MarsBot is constantly walking",
-              "text": "When you press 1, the MarsBot is constantly walking",
+              "text": "Put the procedure in an endless \"repeat forever\" loop!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-4.png"
             },
             {
               "id": "req_4_5",
               "title": "When you press 2, the MarsBot is constantly doing flips",
-              "text": "When you press 2, the MarsBot is constantly doing flips",
+              "text": "Put the \"Flip\" procedure in an endless loop. And add a small pause between jumps — after all, real athletes pause to prepare for their next jump!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-5.png"
             },
             {
               "id": "req_4_6",
               "title": "Stop the previous script",
-              "text": "Stop the previous script",
+              "text": "If the MarsBot is always walking and then we want it to do flips, we must first stop the walking script. To do this, use the command \"stop the sprite's other scripts.\" It is also best if the flipping and walking always start from the starting position, so we will use the “Start” procedure for all events.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-5-hint-6.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The MarsBot walks or does flips all the time",
+              "text": "Click on 1 and 2 and watch the example!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Flip_and_walk.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Flip and walk"
+          "demo_project_id": "M3L3_1_Task_5_Demo.sb3",
+          "project_title": "M3L3 Flip and walk",
+          "tips": [],
+          "source_task_id": "26862",
+          "source_project_id": "10683386",
+          "source_demo_project_id": "2721252",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Flip and walk",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [],
+      "source_task_id": "26862",
+      "source_project_id": "10683386",
+      "source_demo_project_id": "2721252",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L3_1_5",
       "taskId": "VP2_M3L3_1_5",
-      "position": 5,
-      "level_position": 5,
-      "levelPosition": 5,
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
       "title": "Find the error",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
+      "isAutoCheck": false,
       "description": "Run the project, and press 2 and 1. What is the error?",
       "command_keys": [
         "motion",
@@ -515,21 +706,28 @@
         {
           "id": "req_5_1",
           "title": "Correct the error",
-          "text": "Correct the error",
+          "text": "Press 2, then 1. Make the new action stop the other script before it starts.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Find the error",
+          "text": "Run the project, and press 2 and 1. What is the error?",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M3L3_Find_the_error.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_1_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_1_5_state_1",
           "stateId": "VP2_M3L3_1_5_state_1",
-          "position": 5,
-          "level_position": 5,
-          "levelPosition": 5,
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -552,19 +750,36 @@
             {
               "id": "req_5_1",
               "title": "Correct the error",
-              "text": "Correct the error",
+              "text": "Press 2, then 1. Make the new action stop the other script before it starts.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Find the error",
+              "text": "Run the project, and press 2 and 1. What is the error?",
+              "url": ""
+            }
+          ],
           "starter_project_id": "M3L3_Find_the_error.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Find the error"
+          "demo_project_id": "M3L3_1_Task_6_Demo.sb3",
+          "project_title": "M3L3 Find the error",
+          "tips": [],
+          "source_task_id": "26862",
+          "source_project_id": "10683393",
+          "source_demo_project_id": "2721262",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Find the error",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [],
+      "source_task_id": "26862",
+      "source_project_id": "10683393",
+      "source_demo_project_id": "2721262",
+      "show_starter_project": true
     }
   ]
 }

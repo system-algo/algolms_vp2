@@ -35,14 +35,22 @@
         {
           "id": "req_1_1",
           "title": "Study the code and put the command in the right place.",
-          "text": "Study the code and put the command in the right place.",
+          "text": "Place the stop block so the ball responds to the broom only once.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-1-hint-1.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Hit the ball!",
+          "text": "Start the project with the green flag. Move the broom with your mouse and hit the ball. Note that after you touch the ball once, it no longer responds to the touch of the broom.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Broom_and_ball.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_2_1_state_1",
@@ -72,19 +80,49 @@
             {
               "id": "req_1_1",
               "title": "Study the code and put the command in the right place.",
-              "text": "Study the code and put the command in the right place.",
+              "text": "Place the stop block so the ball responds to the broom only once.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-1-hint-1.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hit the ball!",
+              "text": "Start the project with the green flag. Move the broom with your mouse and hit the ball. Note that after you touch the ball once, it no longer responds to the touch of the broom.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Broom_and_ball.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Broom and ball"
+          "demo_project_id": "M3L3_2_Task_1_Demo.sb3",
+          "project_title": "M3L3 Broom and ball",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-1-comic-1.png"
+            }
+          ],
+          "source_task_id": "26863",
+          "source_project_id": "10683440",
+          "source_demo_project_id": "10688665",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Broom and ball",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-1-comic-1.png"
+        }
+      ],
+      "source_task_id": "26863",
+      "source_project_id": "10683440",
+      "source_demo_project_id": "10688665",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L3_2_2",
@@ -115,14 +153,22 @@
         {
           "id": "req_2_1",
           "title": "Fix the error",
-          "text": "Fix the error",
+          "text": "Add a command to the right place so that the foxes stop after the bunny hides in the house.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-2-hint-1.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Hide the bunny!",
+          "text": "Hide the bunny in the house! Key controls. Note that when the bunny is hiding, the foxes stop!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Rabbit_and_fox.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_2_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_2_2_state_1",
@@ -152,19 +198,49 @@
             {
               "id": "req_2_1",
               "title": "Fix the error",
-              "text": "Fix the error",
+              "text": "Add a command to the right place so that the foxes stop after the bunny hides in the house.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-2-hint-1.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hide the bunny!",
+              "text": "Hide the bunny in the house! Key controls. Note that when the bunny is hiding, the foxes stop!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Rabbit_and_fox.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Rabbit and fox"
+          "demo_project_id": "M3L3_2_Task_2_Demo.sb3",
+          "project_title": "M3L3 Rabbit and fox",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-2-comic-1.png"
+            }
+          ],
+          "source_task_id": "26863",
+          "source_project_id": "10683446",
+          "source_demo_project_id": "10683450",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 Rabbit and fox",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-2-comic-1.png"
+        }
+      ],
+      "source_task_id": "26863",
+      "source_project_id": "10683446",
+      "source_demo_project_id": "10683450",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L3_2_3",
@@ -195,14 +271,22 @@
         {
           "id": "req_3_1",
           "title": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
-          "text": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
+          "text": "The rules for the first level continue to work in the second. The first level rule checking script needs to stop on time.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-3-hint-1.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Complete two levels of the maze!",
+          "text": "Check where the character returns when it touches the wall.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_maze_find_an_error.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_2_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_2_3_state_1",
@@ -232,19 +316,49 @@
             {
               "id": "req_3_1",
               "title": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
-              "text": "Run the project and check how the touching a wall or enemy and returning to the start work. How do we fix it?",
+              "text": "The rules for the first level continue to work in the second. The first level rule checking script needs to stop on time.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-3-hint-1.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Complete two levels of the maze!",
+              "text": "Check where the character returns when it touches the wall.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_maze_find_an_error.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 maze find an error"
+          "demo_project_id": "M3L3_2_Task_3_Demo.sb3",
+          "project_title": "M3L3 maze find an error",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-3-comic-1.png"
+            }
+          ],
+          "source_task_id": "26863",
+          "source_project_id": "10683455",
+          "source_demo_project_id": "389782",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L3 maze find an error",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_2/assets/task-3-comic-1.png"
+        }
+      ],
+      "source_task_id": "26863",
+      "source_project_id": "10683455",
+      "source_demo_project_id": "389782",
+      "show_starter_project": true
     }
   ]
 }

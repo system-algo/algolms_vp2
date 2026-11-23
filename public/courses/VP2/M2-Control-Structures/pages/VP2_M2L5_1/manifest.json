@@ -9,7 +9,7 @@
     "courseId": "VP2",
     "moduleId": "M2-Control-Structures",
     "pageId": "VP2_M2L5_1",
-    "convertedAt": "2026-11-10T14:32:34.452Z"
+    "pageTitle": "Project. Animation"
   },
   "tasks": [
     {
@@ -18,13 +18,11 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Creative Project (Level 1)",
+      "title": "Animation",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Complete the programming task for \"Creative Project (Level 1)\".",
       "command_keys": [
         "motion",
         "looks",
@@ -39,30 +37,39 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_1_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
+          "title": "Planning",
+          "text": "Use the pages in your workbook to sketch an outline of your animation. Pay special attention to how the scene switching will be arranged!",
           "type": "gif",
           "url": ""
         },
         {
-          "id": "req_1_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Creative Project (Level 1)\".",
+          "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
+          "title": "Add 2-3 sprites and 2-3 backgrounds.",
+          "text": "Add or draw 2-3 sprites that you need for your animation! Think about what will happen in the first scene of the animation, what will happen in the second, and what the sprites and backgrounds look like.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
-          "id": "req_1_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
+          "title": "Create!",
+          "text": "The most important part is left — program!",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Animation",
+          "text": "Come up with a story and tell it!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "Chubby_final.sb3",
-      "demo_project_id": "",
+      "starter_project_id": null,
+      "demo_project_id": null,
       "states": [
         {
           "id": "VP2_M2L5_1_1_state_1",
@@ -74,7 +81,6 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Creative Project (Level 1)\".",
           "command_keys": [
             "motion",
             "looks",
@@ -89,34 +95,94 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_1_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "3ad19a6d-2cd7-4b37-bd5f-bcbbbf780c34",
+              "title": "Planning",
+              "text": "Use the pages in your workbook to sketch an outline of your animation. Pay special attention to how the scene switching will be arranged!",
               "type": "gif",
               "url": ""
             },
             {
-              "id": "req_1_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Creative Project (Level 1)\".",
+              "id": "7a268045-86e2-49fa-ad1b-643029a66e2f",
+              "title": "Add 2-3 sprites and 2-3 backgrounds.",
+              "text": "Add or draw 2-3 sprites that you need for your animation! Think about what will happen in the first scene of the animation, what will happen in the second, and what the sprites and backgrounds look like.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
-              "id": "req_1_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "id": "42f62836-8efb-4797-92ba-e5429bbee4cb",
+              "title": "Create!",
+              "text": "The most important part is left — program!",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Animation",
+              "text": "Come up with a story and tell it!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "Chubby_final.sb3",
-          "project_title": "Chubby final"
+          "starter_project_id": null,
+          "project_title": "New project",
+          "title": "Animation",
+          "show_starter_project": false,
+          "demo_project_id": null,
+          "source_task_id": "26837",
+          "hide_demo": true,
+          "tips": [
+            {
+              "id": "switch-costume",
+              "title": "Switch costume to",
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/switch-costume.png"
+            },
+            {
+              "id": "space-costume",
+              "title": "Switch costume with Space",
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/space-costume.png"
+            },
+            {
+              "id": "green-flag-costume",
+              "title": "Switch costume with the green flag",
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/green-flag-costume.png"
+            },
+            {
+              "id": "next-costume",
+              "title": "Next costume",
+              "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/next-costume.png"
+            }
+          ]
         }
       ],
-      "project_title": "Chubby final",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "New project",
+      "show_starter_project": false,
+      "source_task_id": "26837",
+      "hide_demo": true,
+      "tips": [
+        {
+          "id": "switch-costume",
+          "title": "Switch costume to",
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/switch-costume.png"
+        },
+        {
+          "id": "space-costume",
+          "title": "Switch costume with Space",
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/space-costume.png"
+        },
+        {
+          "id": "green-flag-costume",
+          "title": "Switch costume with the green flag",
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/green-flag-costume.png"
+        },
+        {
+          "id": "next-costume",
+          "title": "Next costume",
+          "url": "/courses/VP2/M2-Control-Structures/pages/VP2_M2L5_1/assets/next-costume.png"
+        }
+      ]
     },
     {
       "id": "VP2_M2L5_1_2",
@@ -126,7 +192,7 @@
       "levelPosition": 2,
       "title": "Did you like the task?",
       "project_title": "Did you like the task?",
-      "activityType": "feedback-rating-task",
+      "activityType": "feedback_rating_task",
       "level_type": "rating",
       "selectedType": "rating",
       "renderMode": "classic-emoji",
@@ -134,32 +200,43 @@
         "question": "Did you like the lesson?",
         "renderMode": "classic-emoji"
       },
-      "states": [
-        {
-          "id": "VP2_M2L5_1_2_state_1",
-          "stateId": "VP2_M2L5_1_2_state_1",
-          "position": 1,
-          "level_position": 2,
-          "levelPosition": 2,
-          "type": "rating",
-          "selectedType": "rating",
-          "level_type": "rating",
-          "title": "Did you like the task?",
-          "requirements": [],
-          "tips": [],
-          "media": [],
-          "demo_project_id": null,
-          "starter_project_id": null
-        }
-      ],
+      "starter_project_id": null,
+      "demo_project_id": null,
       "requirements": [],
       "tips": [],
       "media": [],
-      "demo_project_id": null,
-      "starter_project_id": null,
-      "isAutoCheck": false,
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26837",
+      "states": [
+        {
+          "id": "VP2_M2L5_1_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26837",
+          "stateId": "VP2_M2L5_1_2_state_1",
+          "type": "rating",
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
       "question": "Did you like the task?",
-      "hint": "Click on an appropriate emoji"
+      "hint": "Click on an emoji",
+      "label": "😊"
     }
   ]
 }

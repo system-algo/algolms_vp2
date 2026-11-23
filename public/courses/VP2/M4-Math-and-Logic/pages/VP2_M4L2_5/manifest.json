@@ -171,7 +171,7 @@
       "selectedType": "image-choice-quiz-task",
       "imageChoiceQuizTask": {
         "title": "Where will the balloon end its journey?",
-        "description": "",
+        "description": "Illustration correction: read the movement blocks as change y by 5, change x by 5, and change y by -5 (not set to).",
         "image": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L2_5/images/q3_balloon_code.png",
         "multiple": false,
         "options": [
@@ -195,7 +195,7 @@
           }
         ],
         "correctOptionIds": [
-          "a"
+          "b"
         ]
       },
       "states": [

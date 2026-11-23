@@ -4,7 +4,7 @@
   "title": "Bonus: Hedgehog and Lightning",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "tasks": [
     {
       "id": "VP2_M3L1_2_1",
@@ -18,7 +18,6 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Click on the area on the screen where the Hedgehog sprite needs to move to dodge the lightning!",
       "command_keys": [
         "motion",
         "looks",
@@ -35,42 +34,54 @@
         {
           "id": "req_1_1",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the starting positions for Hedgehog and Lightning.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Hedgehog sprite control",
-          "text": "Hedgehog sprite control",
+          "text": "When you press the mouse button, the Hedgehog sprite moves!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_2/assets/hedgehog-control.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Lightning sprite movement",
-          "text": "Lightning sprite movement",
+          "text": "Start Lightning near the center, move right, and bounce when it touches the edge.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_4",
           "title": "If the Hedgehog sprite touches the lightning, a loss occurs",
-          "text": "If the Hedgehog sprite touches the lightning, a loss occurs",
+          "text": "When Hedgehog touches Lightning, broadcast losing.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_2/assets/lightning-collision.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_5",
           "title": "Losing",
-          "text": "Losing",
+          "text": "If you lose, the Hedgehog sprite announces the end of the game, and the Lightning sprite stops.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Hedgehog and lightning",
+          "text": "Click on the area on the screen where the Hedgehog sprite needs to move to dodge the lightning!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L1_Bonus_Hedgehog_and_Lightning.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L1_2_Hedgehog_and_Lightning_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L1_2_1_state_1",
@@ -83,7 +94,6 @@
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "Click on the area on the screen where the Hedgehog sprite needs to move to dodge the lightning!",
           "command_keys": [
             "motion",
             "looks",
@@ -100,47 +110,116 @@
             {
               "id": "req_1_1",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the starting positions for Hedgehog and Lightning.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Hedgehog sprite control",
-              "text": "Hedgehog sprite control",
+              "text": "When you press the mouse button, the Hedgehog sprite moves!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_2/assets/hedgehog-control.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Lightning sprite movement",
-              "text": "Lightning sprite movement",
+              "text": "Start Lightning near the center, move right, and bounce when it touches the edge.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_4",
               "title": "If the Hedgehog sprite touches the lightning, a loss occurs",
-              "text": "If the Hedgehog sprite touches the lightning, a loss occurs",
+              "text": "When Hedgehog touches Lightning, broadcast losing.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L1_2/assets/lightning-collision.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_5",
               "title": "Losing",
-              "text": "Losing",
+              "text": "If you lose, the Hedgehog sprite announces the end of the game, and the Lightning sprite stops.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hedgehog and lightning",
+              "text": "Click on the area on the screen where the Hedgehog sprite needs to move to dodge the lightning!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L1_Bonus_Hedgehog_and_Lightning.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L1 Bonus Hedgehog and Lightning"
+          "demo_project_id": "M3L1_2_Hedgehog_and_Lightning_Demo.sb3",
+          "project_title": "M3L1 Bonus Hedgehog and Lightning",
+          "show_starter_project": true,
+          "source_task_id": "22222",
+          "source_project_id": "10234489",
+          "source_demo_project_id": "10246726"
         }
       ],
       "project_title": "M3L1 Bonus Hedgehog and Lightning",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "show_starter_project": true,
+      "source_task_id": "22222",
+      "source_project_id": "10234489",
+      "source_demo_project_id": "10246726"
+    },
+    {
+      "id": "VP2_M3L1_2_2",
+      "taskId": "VP2_M3L1_2_2",
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "22222",
+      "states": [
+        {
+          "id": "VP2_M3L1_2_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "22222",
+          "stateId": "VP2_M3L1_2_2_state_1",
+          "type": "rating",
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     }
   ]
 }

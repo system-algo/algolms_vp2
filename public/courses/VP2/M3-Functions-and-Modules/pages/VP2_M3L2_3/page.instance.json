@@ -4,7 +4,7 @@
   "title": "Changing coordinates",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 9,
+  "taskCount": 10,
   "tasks": [
     {
       "id": "VP2_M3L2_3_1",
@@ -35,28 +35,37 @@
         {
           "id": "req_1_1",
           "title": "Upward movement",
-          "text": "Upward movement",
+          "text": "To move the Beetle sprite up, use the \"change y by __\" command.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-1.png"
         },
         {
           "id": "req_1_2",
           "title": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
-          "text": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
+          "text": "Use the command \"go to x: __ y: __\" to return the Beetle sprite to the beginning of its journey.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-2.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the direction and size of the Beetle sprite at the very beginning.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-3.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Beetle on a tree",
+          "text": "Let's program it: the sprite Beetle moves up the tree!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Beetle_on_a_tree.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_1_state_1",
@@ -86,33 +95,52 @@
             {
               "id": "req_1_1",
               "title": "Upward movement",
-              "text": "Upward movement",
+              "text": "To move the Beetle sprite up, use the \"change y by __\" command.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-1.png"
             },
             {
               "id": "req_1_2",
               "title": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
-              "text": "Having reached the top of the trunk, the Beetle sprite starts moving from the beginning.",
+              "text": "Use the command \"go to x: __ y: __\" to return the Beetle sprite to the beginning of its journey.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-2.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the direction and size of the Beetle sprite at the very beginning.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-1-hint-3.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Beetle on a tree",
+              "text": "Let's program it: the sprite Beetle moves up the tree!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Beetle_on_a_tree.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Beetle on a tree"
+          "demo_project_id": "M3L2_3_Task_1_Demo.sb3",
+          "project_title": "M3L2 Beetle on a tree",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683268",
+          "source_demo_project_id": "2716021",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Beetle on a tree",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683268",
+      "source_demo_project_id": "2716021",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_2",
@@ -143,28 +171,36 @@
         {
           "id": "req_2_1",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the initial position of the Snowflake sprite.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-1.png"
         },
         {
           "id": "req_2_2",
           "title": "Falling",
-          "text": "Falling",
+          "text": "Repeat the coordinate change a few times to simulate falling!",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-2.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_3",
           "title": "The snowflake falls constantly",
-          "text": "The snowflake falls constantly",
+          "text": "The Snowflake sprite always returns to the top and falls again!",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-3.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Snowflakes",
+          "text": "The Snowflake sprite appears at the top of the stage and falls down.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Snowflake_1.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_2_state_1",
@@ -194,33 +230,73 @@
             {
               "id": "req_2_1",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the initial position of the Snowflake sprite.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-1.png"
             },
             {
               "id": "req_2_2",
               "title": "Falling",
-              "text": "Falling",
+              "text": "Repeat the coordinate change a few times to simulate falling!",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-2.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_3",
               "title": "The snowflake falls constantly",
-              "text": "The snowflake falls constantly",
+              "text": "The Snowflake sprite always returns to the top and falls again!",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-hint-3.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Snowflakes",
+              "text": "The Snowflake sprite appears at the top of the stage and falls down.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Snowflake_1.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Snowflake 1"
+          "demo_project_id": "M3L2_3_Task_2_Demo.sb3",
+          "project_title": "M3L2 Snowflake 1",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
+            },
+            {
+              "id": "comic-2",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
+            }
+          ],
+          "source_task_id": "26861",
+          "source_project_id": "10683272",
+          "source_demo_project_id": "6041114",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Snowflake 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
+        },
+        {
+          "id": "comic-2",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
+        }
+      ],
+      "source_task_id": "26861",
+      "source_project_id": "10683272",
+      "source_demo_project_id": "6041114",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_3",
@@ -251,42 +327,54 @@
         {
           "id": "req_3_1",
           "title": "The dragon moves to the right",
-          "text": "The dragon moves to the right",
+          "text": "To move to the right, you need to change the X coordinate to a positive number (without the minus sign).",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-1.png"
         },
         {
           "id": "req_3_2",
           "title": "The dragon moves to the left",
-          "text": "The dragon moves to the left",
+          "text": "To move to the left, you need to change the X coordinate to a negative number that has a minus sign.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-2.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_3_3",
           "title": "The dragon turns",
-          "text": "The dragon turns",
+          "text": "The sprite Dragon looks in the direction it is flying in. Use the \"point in direction __\" command.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-3.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_3_4",
           "title": "The dragon moves constantly",
-          "text": "The dragon moves constantly",
+          "text": "Use the commands \"repeat forever\" and \"go to x: _ y: _\" to make the Dragon sprite move on the same level.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-4.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_3_5",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the size and rotation of the Dragon sprite.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-5.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The dragon guards the castle",
+          "text": "The sprite Dragon flies left and right!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_The_dragon_guards_the_castle.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_3_state_1",
@@ -316,47 +404,69 @@
             {
               "id": "req_3_1",
               "title": "The dragon moves to the right",
-              "text": "The dragon moves to the right",
+              "text": "To move to the right, you need to change the X coordinate to a positive number (without the minus sign).",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-1.png"
             },
             {
               "id": "req_3_2",
               "title": "The dragon moves to the left",
-              "text": "The dragon moves to the left",
+              "text": "To move to the left, you need to change the X coordinate to a negative number that has a minus sign.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-2.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_3_3",
               "title": "The dragon turns",
-              "text": "The dragon turns",
+              "text": "The sprite Dragon looks in the direction it is flying in. Use the \"point in direction __\" command.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-3.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_3_4",
               "title": "The dragon moves constantly",
-              "text": "The dragon moves constantly",
+              "text": "Use the commands \"repeat forever\" and \"go to x: _ y: _\" to make the Dragon sprite move on the same level.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-4.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_3_5",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the size and rotation of the Dragon sprite.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-3-hint-5.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The dragon guards the castle",
+              "text": "The sprite Dragon flies left and right!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_The_dragon_guards_the_castle.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 The dragon guards the castle"
+          "demo_project_id": "M3L2_3_Task_3_Demo.sb3",
+          "project_title": "M3L2 The dragon guards the castle",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683275",
+          "source_demo_project_id": "2715991",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 The dragon guards the castle",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683275",
+      "source_demo_project_id": "2715991",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_4",
@@ -387,35 +497,47 @@
         {
           "id": "req_4_1",
           "title": "Movement to the right",
-          "text": "Movement to the right",
+          "text": "Program the following rule: if the right arrow key is pressed, the goalkeeper moves to the right.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_4_2",
           "title": "Movement to the left",
-          "text": "Movement to the left",
+          "text": "Program the following rule: if the left arrow key is pressed, the goalkeeper moves to the left.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-2.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_4_3",
           "title": "Constantly checking keystrokes",
-          "text": "Constantly checking keystrokes",
+          "text": "Use one \"repeat forever\" command to constantly check to see if any keys are pressed.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-3.png"
         },
         {
           "id": "req_4_4",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the size of the goalkeeper at the very beginning.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-4.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Goalkeeper control right and left",
+          "text": "Use the right arrow key to move the goalkeeper to the right and the left arrow key to move the goalkeeper to the left.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_4_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_4_state_1",
@@ -445,40 +567,62 @@
             {
               "id": "req_4_1",
               "title": "Movement to the right",
-              "text": "Movement to the right",
+              "text": "Program the following rule: if the right arrow key is pressed, the goalkeeper moves to the right.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_4_2",
               "title": "Movement to the left",
-              "text": "Movement to the left",
+              "text": "Program the following rule: if the left arrow key is pressed, the goalkeeper moves to the left.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-2.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_4_3",
               "title": "Constantly checking keystrokes",
-              "text": "Constantly checking keystrokes",
+              "text": "Use one \"repeat forever\" command to constantly check to see if any keys are pressed.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-3.png"
             },
             {
               "id": "req_4_4",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the size of the goalkeeper at the very beginning.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-4-hint-4.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Goalkeeper control right and left",
+              "text": "Use the right arrow key to move the goalkeeper to the right and the left arrow key to move the goalkeeper to the left.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Goalkeeper control"
+          "demo_project_id": "M3L2_3_Task_4_Demo.sb3",
+          "project_title": "M3L2 Goalkeeper control",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683281",
+          "source_demo_project_id": "6041553",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Goalkeeper control",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683281",
+      "source_demo_project_id": "6041553",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_5",
@@ -509,35 +653,48 @@
         {
           "id": "req_5_1",
           "title": "Upward movement",
-          "text": "Upward movement",
+          "text": "Program the following rule: if the up arrow key is pressed, the goalkeeper moves up.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-1.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_5_2",
           "title": "Downward movement",
-          "text": "Downward movement",
+          "text": "Program the following rule: if the down arrow key is pressed, the goalkeeper moves down.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-2.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_5_3",
           "title": "Constantly checking keystrokes",
-          "text": "Constantly checking keystrokes",
+          "text": "In order for the program to always check if a key is pressed, use the \"repeat forever\" command.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-3.png"
         },
         {
           "id": "req_5_4",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the size of the goalkeeper at the very beginning.",
           "type": "gif",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-4.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Goalkeeper control up and down",
+          "text": "Use the up arrow key to move the goalkeeper up and the down arrow key to move the goalkeeper down.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_5_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_5_state_1",
@@ -567,53 +724,125 @@
             {
               "id": "req_5_1",
               "title": "Upward movement",
-              "text": "Upward movement",
+              "text": "Program the following rule: if the up arrow key is pressed, the goalkeeper moves up.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-1.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_5_2",
               "title": "Downward movement",
-              "text": "Downward movement",
+              "text": "Program the following rule: if the down arrow key is pressed, the goalkeeper moves down.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-2.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_5_3",
               "title": "Constantly checking keystrokes",
-              "text": "Constantly checking keystrokes",
+              "text": "In order for the program to always check if a key is pressed, use the \"repeat forever\" command.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-3.png"
             },
             {
               "id": "req_5_4",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the size of the goalkeeper at the very beginning.",
               "type": "gif",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-5-hint-4.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Goalkeeper control up and down",
+              "text": "Use the up arrow key to move the goalkeeper up and the down arrow key to move the goalkeeper down.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Goalkeeper_control.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Goalkeeper control"
+          "demo_project_id": "M3L2_3_Task_5_Demo.sb3",
+          "project_title": "M3L2 Goalkeeper control",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "21115285",
+          "source_demo_project_id": "6041622",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Goalkeeper control",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "21115285",
+      "source_demo_project_id": "6041622",
+      "show_starter_project": true
+    },
+    {
+      "id": "VP2_M3L2_3_rating",
+      "taskId": "VP2_M3L2_3_rating",
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
+      "title": "Did you like the task?",
+      "project_title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "starter_project_id": null,
+      "demo_project_id": null,
+      "requirements": [],
+      "tips": [],
+      "media": [],
+      "command_keys": [],
+      "command_blocks": [],
+      "source_task_id": "26861",
+      "states": [
+        {
+          "id": "VP2_M3L2_3_rating_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "title": "Did you like the task?",
+          "project_title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "starter_project_id": null,
+          "demo_project_id": null,
+          "requirements": [],
+          "tips": [],
+          "media": [],
+          "command_keys": [],
+          "command_blocks": [],
+          "source_task_id": "26861",
+          "stateId": "VP2_M3L2_3_rating_state_1",
+          "type": "rating",
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     },
     {
       "id": "VP2_M3L2_3_6",
       "taskId": "VP2_M3L2_3_6",
-      "position": 6,
-      "level_position": 6,
-      "levelPosition": 6,
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
       "title": "Snowflakes",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
+      "isAutoCheck": false,
       "description": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
       "command_keys": [
         "motion",
@@ -631,28 +860,47 @@
         {
           "id": "req_6_1",
           "title": "Falling snowflakes",
-          "text": "Falling snowflakes",
+          "text": "Program the Snowflake sprites so that they constantly fall.\nUse the \"wait __ seconds\" command.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_6_2",
           "title": "The snowflakes fall at different speeds",
-          "text": "The snowflakes fall at different speeds",
+          "text": "Enter different values that change the Y coordinate for different snowflakes — then they will fall differently!",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_6_3",
+          "title": "* Bonus: spinning snowflakes",
+          "text": "Think about how to make the snowflakes spin while they're falling. Which command will turn the snowflakes?",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Snowflakes",
+          "text": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Snowflakes.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_7_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_6_state_1",
           "stateId": "VP2_M3L2_3_6_state_1",
-          "position": 6,
-          "level_position": 6,
-          "levelPosition": 6,
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -675,40 +923,91 @@
             {
               "id": "req_6_1",
               "title": "Falling snowflakes",
-              "text": "Falling snowflakes",
+              "text": "Program the Snowflake sprites so that they constantly fall.\nUse the \"wait __ seconds\" command.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_6_2",
               "title": "The snowflakes fall at different speeds",
-              "text": "The snowflakes fall at different speeds",
+              "text": "Enter different values that change the Y coordinate for different snowflakes — then they will fall differently!",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_6_3",
+              "title": "* Bonus: spinning snowflakes",
+              "text": "Think about how to make the snowflakes spin while they're falling. Which command will turn the snowflakes?",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Snowflakes",
+              "text": "Snowflake sprites appear at the top of the stage and fall down. Let's program that!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Snowflakes.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Snowflakes"
+          "demo_project_id": "M3L2_3_Task_7_Demo.sb3",
+          "project_title": "M3L2 Snowflakes",
+          "tips": [
+            {
+              "id": "comic-1",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
+            },
+            {
+              "id": "comic-2",
+              "type": "image",
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
+            }
+          ],
+          "source_task_id": "26861",
+          "source_project_id": "10683289",
+          "source_demo_project_id": "2716040",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Snowflakes",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [
+        {
+          "id": "comic-1",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
+        },
+        {
+          "id": "comic-2",
+          "type": "image",
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
+        }
+      ],
+      "source_task_id": "26861",
+      "source_project_id": "10683289",
+      "source_demo_project_id": "2716040",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_7",
       "taskId": "VP2_M3L2_3_7",
-      "position": 7,
-      "level_position": 7,
-      "levelPosition": 7,
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
       "title": "Soccer",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Create a game in which the goalkeeper has to protect their goal. Use the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
+      "isAutoCheck": false,
+      "description": "Create a game in which the goalkeeper has to protect their goal.\nUse the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
       "command_keys": [
         "motion",
         "looks",
@@ -725,34 +1024,44 @@
         {
           "id": "req_7_1",
           "title": "Goalkeeper control",
-          "text": "Goalkeeper control",
+          "text": "If the corresponding key is pressed, the sprite moves in that direction.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-8-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_7_2",
           "title": "Ball movement",
-          "text": "Ball movement",
+          "text": "Program the Ball sprite so that it moves randomly using the move_steps, repeat forever, and if on edge, bounce.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Soccer",
+          "text": "Create a game in which the goalkeeper has to protect their goal.\nUse the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Soccer_(task).sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_8_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_7_state_1",
           "stateId": "VP2_M3L2_3_7_state_1",
-          "position": 7,
-          "level_position": 7,
-          "levelPosition": 7,
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "Create a game in which the goalkeeper has to protect their goal. Use the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
+          "description": "Create a game in which the goalkeeper has to protect their goal.\nUse the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
           "command_keys": [
             "motion",
             "looks",
@@ -769,40 +1078,60 @@
             {
               "id": "req_7_1",
               "title": "Goalkeeper control",
-              "text": "Goalkeeper control",
+              "text": "If the corresponding key is pressed, the sprite moves in that direction.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-8-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_7_2",
               "title": "Ball movement",
-              "text": "Ball movement",
+              "text": "Program the Ball sprite so that it moves randomly using the move_steps, repeat forever, and if on edge, bounce.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Soccer",
+              "text": "Create a game in which the goalkeeper has to protect their goal.\nUse the arrow keys on the keyboard to control the movement of the Goalkeeper sprite.",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Soccer_(task).sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Soccer (task)"
+          "demo_project_id": "M3L2_3_Task_8_Demo.sb3",
+          "project_title": "M3L2 Soccer (task)",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683294",
+          "source_demo_project_id": "6041734",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Soccer (task)",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683294",
+      "source_demo_project_id": "6041734",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_8",
       "taskId": "VP2_M3L2_3_8",
-      "position": 8,
-      "level_position": 8,
-      "levelPosition": 8,
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "Jump",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "The Cat sprite jumps. Press the space bar!",
+      "isAutoCheck": false,
+      "description": "Press the space bar!",
       "command_keys": [
         "motion",
         "looks",
@@ -819,41 +1148,51 @@
         {
           "id": "req_8_1",
           "title": "Upward movement",
-          "text": "Upward movement",
+          "text": "Program the Cat sprite to move up when you press the spacebar. What coordinate are we going to change?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_8_2",
           "title": "Downward movement",
-          "text": "Downward movement",
+          "text": "Program downward movement. What coordinate are we going to change? To what number?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_8_3",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Use the \"go to x: _ y: _\" command.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Cat sprite jumps",
+          "text": "Press the space bar!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Jump.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_9_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_8_state_1",
           "stateId": "VP2_M3L2_3_8_state_1",
-          "position": 8,
-          "level_position": 8,
-          "levelPosition": 8,
+          "position": 9,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
           "isAutoCheck": false,
-          "description": "The Cat sprite jumps. Press the space bar!",
+          "description": "Press the space bar!",
           "command_keys": [
             "motion",
             "looks",
@@ -870,46 +1209,66 @@
             {
               "id": "req_8_1",
               "title": "Upward movement",
-              "text": "Upward movement",
+              "text": "Program the Cat sprite to move up when you press the spacebar. What coordinate are we going to change?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_8_2",
               "title": "Downward movement",
-              "text": "Downward movement",
+              "text": "Program downward movement. What coordinate are we going to change? To what number?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_8_3",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Use the \"go to x: _ y: _\" command.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Cat sprite jumps",
+              "text": "Press the space bar!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Jump.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Jump"
+          "demo_project_id": "M3L2_3_Task_9_Demo.sb3",
+          "project_title": "M3L2 Jump",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683298",
+          "source_demo_project_id": "2716045",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Jump",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683298",
+      "source_demo_project_id": "2716045",
+      "show_starter_project": true
     },
     {
       "id": "VP2_M3L2_3_9",
       "taskId": "VP2_M3L2_3_9",
-      "position": 9,
-      "level_position": 9,
-      "levelPosition": 9,
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
       "title": "Race",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
+      "isAutoCheck": false,
       "description": "Use the arrows to control the Car sprite and reach the finish line!",
       "command_keys": [
         "motion",
@@ -927,35 +1286,45 @@
         {
           "id": "req_9_1",
           "title": "Car control",
-          "text": "Car control",
+          "text": "Another control method is to turn when you click on the arrows instead of moving! Try to program that.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-10-hint-1.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_9_2",
           "title": "Touching the grass",
-          "text": "Touching the grass",
+          "text": "Program this rule:\nIf the Car sprite touches anything green (i.e. travels off the road), it begins its journey again.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_9_3",
           "title": "Touching the finish line sprite",
-          "text": "Touching the finish line sprite",
+          "text": "Program this rule:\nIf the Car sprite touches the finish line, you win and the project stops.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Race",
+          "text": "Use the arrows to control the Car sprite and reach the finish line!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L2_Race.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L2_3_Task_10_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L2_3_9_state_1",
           "stateId": "VP2_M3L2_3_9_state_1",
-          "position": 9,
-          "level_position": 9,
-          "levelPosition": 9,
+          "position": 10,
+          "level_position": 10,
+          "levelPosition": 10,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -978,33 +1347,53 @@
             {
               "id": "req_9_1",
               "title": "Car control",
-              "text": "Car control",
+              "text": "Another control method is to turn when you click on the arrows instead of moving! Try to program that.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-10-hint-1.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_9_2",
               "title": "Touching the grass",
-              "text": "Touching the grass",
+              "text": "Program this rule:\nIf the Car sprite touches anything green (i.e. travels off the road), it begins its journey again.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_9_3",
               "title": "Touching the finish line sprite",
-              "text": "Touching the finish line sprite",
+              "text": "Program this rule:\nIf the Car sprite touches the finish line, you win and the project stops.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Race",
+              "text": "Use the arrows to control the Car sprite and reach the finish line!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L2_Race.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L2 Race"
+          "demo_project_id": "M3L2_3_Task_10_Demo.sb3",
+          "project_title": "M3L2 Race",
+          "tips": [],
+          "source_task_id": "26861",
+          "source_project_id": "10683299",
+          "source_demo_project_id": "10172640",
+          "show_starter_project": true
         }
       ],
       "project_title": "M3L2 Race",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
+      "tips": [],
+      "source_task_id": "26861",
+      "source_project_id": "10683299",
+      "source_demo_project_id": "10172640",
+      "show_starter_project": true
     }
   ]
 }

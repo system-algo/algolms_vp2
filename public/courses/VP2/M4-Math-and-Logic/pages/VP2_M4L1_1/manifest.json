@@ -4,7 +4,7 @@
   "title": "Logical operators - Part 1",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 9,
+  "taskCount": 10,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M4-Math-and-Logic",
@@ -41,19 +41,26 @@
         {
           "id": "req_1_1",
           "title": "Controlling the Cat sprite",
-          "text": "Controlling the Cat sprite",
+          "text": "Use two nested conditions to check whether the mouse is down and the pointer touches the Cat. Move the Cat to the pointer when both are true.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/controlling-the-cat-sprite.png"
         },
         {
           "id": "req_1_2",
           "title": "Continuous condition checking",
-          "text": "Continuous condition checking",
+          "text": "Put the checks inside a forever loop so the Cat keeps responding.",
           "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/forever.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Cat sprite",
+          "text": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L1_Cat_task_0.sb3",
       "demo_project_id": "",
       "states": [
@@ -84,28 +91,41 @@
             {
               "id": "req_1_1",
               "title": "Controlling the Cat sprite",
-              "text": "Controlling the Cat sprite",
+              "text": "Use two nested conditions to check whether the mouse is down and the pointer touches the Cat. Move the Cat to the pointer when both are true.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/controlling-the-cat-sprite.png"
             },
             {
               "id": "req_1_2",
               "title": "Continuous condition checking",
-              "text": "Continuous condition checking",
+              "text": "Put the checks inside a forever loop so the Cat keeps responding.",
               "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/forever.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Cat sprite",
+              "text": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "The Cat sprite",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task_0.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Cat task 0"
+          "project_title": "M4L1 Cat task 0",
+          "source_task_id": "26864",
+          "source_project_id": "10691123",
+          "source_demo_project_id": "6044504"
         }
       ],
       "project_title": "M4L1 Cat task 0",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691123",
+      "source_demo_project_id": "6044504"
     },
     {
       "id": "VP2_M4L1_1_2",
@@ -136,19 +156,26 @@
         {
           "id": "req_2_1",
           "title": "Another way to control the Cat sprite",
-          "text": "Another way to control the Cat sprite",
+          "text": "Combine the mouse-down and touching-mouse-pointer checks in a single AND condition. Move the Cat to the pointer when it is true.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/another-way.png"
         },
         {
           "id": "req_2_2",
           "title": "Continuous condition checking",
-          "text": "Continuous condition checking",
+          "text": "Use a forever loop to check the condition continuously.",
           "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/forever_1628491038.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Cat sprite",
+          "text": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Let's solve the same task but in a different way, using one condition (using the logical operator 'AND').",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L1_Cat_task.sb3",
       "demo_project_id": "",
       "states": [
@@ -179,28 +206,41 @@
             {
               "id": "req_2_1",
               "title": "Another way to control the Cat sprite",
-              "text": "Another way to control the Cat sprite",
+              "text": "Combine the mouse-down and touching-mouse-pointer checks in a single AND condition. Move the Cat to the pointer when it is true.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/another-way.png"
             },
             {
               "id": "req_2_2",
               "title": "Continuous condition checking",
-              "text": "Continuous condition checking",
+              "text": "Use a forever loop to check the condition continuously.",
               "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/forever_1628491038.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Cat sprite",
+              "text": "Move the Cat sprite with the mouse: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Let's solve the same task but in a different way, using one condition (using the logical operator 'AND').",
               "url": ""
             }
           ],
-          "media": [],
           "title": "The Cat sprite (AND)",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Cat task"
+          "project_title": "M4L1 Cat task",
+          "source_task_id": "26864",
+          "source_project_id": "10691127",
+          "source_demo_project_id": "6044504"
         }
       ],
       "project_title": "M4L1 Cat task",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691127",
+      "source_demo_project_id": "6044504"
     },
     {
       "id": "VP2_M4L1_1_3",
@@ -231,26 +271,19 @@
         {
           "id": "req_3_1",
           "title": "Button touching",
-          "text": "Button touching",
+          "text": "Start with costume 1. Wait until Avery or Abby touches the button, then switch to costume 2.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/button-touching.png"
+        }
+      ],
+      "media": [
         {
-          "id": "req_3_2",
-          "title": "TIPS",
-          "text": "TIPS",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "The A, W, S, D keys.",
-          "text": "The A, W, S, D keys.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Call the elevator",
+          "text": "The elevator call button will work if any of the Girl sprites goes up to it! Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "New_project_(3).sb3",
       "demo_project_id": "",
       "states": [
@@ -281,35 +314,46 @@
             {
               "id": "req_3_1",
               "title": "Button touching",
-              "text": "Button touching",
+              "text": "Start with costume 1. Wait until Avery or Abby touches the button, then switch to costume 2.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/button-touching.png"
+            }
+          ],
+          "media": [
             {
-              "id": "req_3_2",
-              "title": "TIPS",
-              "text": "TIPS",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "The A, W, S, D keys.",
-              "text": "The A, W, S, D keys.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Call the elevator",
+              "text": "The elevator call button will work if any of the Girl sprites goes up to it! Character control: to control the sprites use the A, D keys and \"right\"-\"left\" arrow keys.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Call the elevator",
           "isAutoCheck": true,
           "starter_project_id": "New_project_(3).sb3",
           "demo_project_id": "",
-          "project_title": "New project (3)"
+          "project_title": "New project (3)",
+          "source_task_id": "26864",
+          "source_project_id": "10925535",
+          "source_demo_project_id": "6068391",
+          "tips": [
+            {
+              "title": "Keyboard controls",
+              "text": "If the letter keys do not respond, switch to the English keyboard layout."
+            }
+          ]
         }
       ],
       "project_title": "New project (3)",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10925535",
+      "source_demo_project_id": "6068391",
+      "tips": [
+        {
+          "title": "Keyboard controls",
+          "text": "If the letter keys do not respond, switch to the English keyboard layout."
+        }
+      ]
     },
     {
       "id": "VP2_M4L1_1_4",
@@ -340,40 +384,47 @@
         {
           "id": "req_4_1",
           "title": "Giga says what to do",
-          "text": "Giga says what to do",
+          "text": "Have Giga explain the goal and tell the players how to move.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/giga-says.png"
         },
         {
           "id": "req_4_2",
           "title": "Giga sprite control",
-          "text": "Giga sprite control",
+          "text": "Use W, A, S and D to move Giga.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/giga-sprite-control.png"
         },
         {
           "id": "req_4_3",
           "title": "Pico sprite control",
-          "text": "Pico sprite control",
+          "text": "Use the arrow keys to move Pico.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/pico-sprite-control.png"
         },
         {
           "id": "req_4_4",
           "title": "Programming the button",
-          "text": "Programming the button",
+          "text": "Wait until Giga and Pico are both touching the button.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_4_5",
           "title": "The button sends a message that the task has been completed",
-          "text": "The button sends a message that the task has been completed",
+          "text": "Have the button announce that the task is complete.",
           "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/button-says.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Teamwork",
+          "text": "The Giga and Pico sprites should touch the button together.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L1_Button.sb3",
       "demo_project_id": "",
       "states": [
@@ -404,56 +455,104 @@
             {
               "id": "req_4_1",
               "title": "Giga says what to do",
-              "text": "Giga says what to do",
+              "text": "Have Giga explain the goal and tell the players how to move.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/giga-says.png"
             },
             {
               "id": "req_4_2",
               "title": "Giga sprite control",
-              "text": "Giga sprite control",
+              "text": "Use W, A, S and D to move Giga.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/giga-sprite-control.png"
             },
             {
               "id": "req_4_3",
               "title": "Pico sprite control",
-              "text": "Pico sprite control",
+              "text": "Use the arrow keys to move Pico.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/pico-sprite-control.png"
             },
             {
               "id": "req_4_4",
               "title": "Programming the button",
-              "text": "Programming the button",
+              "text": "Wait until Giga and Pico are both touching the button.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_4_5",
               "title": "The button sends a message that the task has been completed",
-              "text": "The button sends a message that the task has been completed",
+              "text": "Have the button announce that the task is complete.",
               "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/button-says.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Teamwork",
+              "text": "The Giga and Pico sprites should touch the button together.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Teamwork",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Button.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Button"
+          "project_title": "M4L1 Button",
+          "source_task_id": "26864",
+          "source_project_id": "32839185",
+          "source_demo_project_id": "10691152"
         }
       ],
       "project_title": "M4L1 Button",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "32839185",
+      "source_demo_project_id": "10691152"
+    },
+    {
+      "id": "VP2_M4L1_1_rating",
+      "taskId": "VP2_M4L1_1_rating",
+      "position": 5,
+      "level_position": 5,
+      "levelPosition": 5,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
+      "states": [
+        {
+          "id": "VP2_M4L1_1_rating_state_1",
+          "stateId": "VP2_M4L1_1_rating_state_1",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": [],
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊"
     },
     {
       "id": "VP2_M4L1_1_5",
       "taskId": "VP2_M4L1_1_5",
-      "position": 5,
-      "level_position": 5,
-      "levelPosition": 5,
+      "position": 6,
+      "level_position": 6,
+      "levelPosition": 6,
       "title": "Cat and Hedgehog",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -477,42 +576,49 @@
         {
           "id": "req_5_1",
           "title": "Controlling the Cat sprite",
-          "text": "Controlling the Cat sprite",
+          "text": "Move the Cat to the pointer while the mouse is held down and the pointer touches the Cat.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_2",
           "title": "Movement of Hedgehog sprites",
-          "text": "Movement of Hedgehog sprites",
+          "text": "Program the movement of both Hedgehog sprites.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_5_3",
           "title": "Hedgehog sprite touching",
-          "text": "Hedgehog sprite touching",
+          "text": "Use OR to detect contact with either Hedgehog.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/hedgehog.png"
         },
         {
           "id": "req_5_4",
           "title": "Continuous condition checking and initial placement",
-          "text": "Continuous condition checking and initial placement",
+          "text": "Set the starting positions and keep checking for contact as the game runs.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Cat and Hedgehog sprites",
+          "text": "The Cat sprite dodges the hedgehogs! The rule for controlling the Cat sprite: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Study the example and we'll create something similar.",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M4L1_1_5_state_1",
           "stateId": "VP2_M4L1_1_5_state_1",
-          "position": 5,
-          "level_position": 5,
-          "levelPosition": 5,
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -534,49 +640,62 @@
             {
               "id": "req_5_1",
               "title": "Controlling the Cat sprite",
-              "text": "Controlling the Cat sprite",
+              "text": "Move the Cat to the pointer while the mouse is held down and the pointer touches the Cat.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_2",
               "title": "Movement of Hedgehog sprites",
-              "text": "Movement of Hedgehog sprites",
+              "text": "Program the movement of both Hedgehog sprites.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_5_3",
               "title": "Hedgehog sprite touching",
-              "text": "Hedgehog sprite touching",
+              "text": "Use OR to detect contact with either Hedgehog.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/hedgehog.png"
             },
             {
               "id": "req_5_4",
               "title": "Continuous condition checking and initial placement",
-              "text": "Continuous condition checking and initial placement",
+              "text": "Set the starting positions and keep checking for contact as the game runs.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Cat and Hedgehog sprites",
+              "text": "The Cat sprite dodges the hedgehogs! The rule for controlling the Cat sprite: if the mouse pointer touches the Cat sprite and the mouse is held down, the sprite follows the mouse. Study the example and we'll create something similar.",
+              "url": ""
+            }
+          ],
           "title": "Cat and Hedgehog",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Cat and Hedgehog"
+          "project_title": "M4L1 Cat and Hedgehog",
+          "source_task_id": "26864",
+          "source_project_id": "10691157",
+          "source_demo_project_id": "10691172"
         }
       ],
       "project_title": "M4L1 Cat and Hedgehog",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691157",
+      "source_demo_project_id": "10691172"
     },
     {
       "id": "VP2_M4L1_1_6",
       "taskId": "VP2_M4L1_1_6",
-      "position": 6,
-      "level_position": 6,
-      "levelPosition": 6,
+      "position": 7,
+      "level_position": 7,
+      "levelPosition": 7,
       "title": "Open the elevator",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -600,56 +719,49 @@
         {
           "id": "req_6_1",
           "title": "Wait until...",
-          "text": "Wait until...",
+          "text": "Use wait until to make the button wait for contact.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/wait-until.png"
         },
         {
           "id": "req_6_2",
           "title": "Girl sprite touching",
-          "text": "Girl sprite touching",
+          "text": "Use OR to detect contact with either Girl sprite, then broadcast a message from the button.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_6_3",
           "title": "Opening the elevator door",
-          "text": "Opening the elevator door",
+          "text": "Open the door when it receives the message.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_6_4",
           "title": "Initial placement",
-          "text": "Initial placement",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_5",
-          "title": "TIPS",
-          "text": "TIPS",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_6",
-          "title": "The A, W, S, D keys.",
-          "text": "The A, W, S, D keys.",
+          "text": "Set the starting state and positions.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Open the elevator",
+          "text": "Program the elevator so that the door will open if any of the Girl sprites come up and touch the button!",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_Open_the_elevator.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M4L1_1_6_state_1",
           "stateId": "VP2_M4L1_1_6_state_1",
-          "position": 6,
-          "level_position": 6,
-          "levelPosition": 6,
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -671,63 +783,74 @@
             {
               "id": "req_6_1",
               "title": "Wait until...",
-              "text": "Wait until...",
+              "text": "Use wait until to make the button wait for contact.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/wait-until.png"
             },
             {
               "id": "req_6_2",
               "title": "Girl sprite touching",
-              "text": "Girl sprite touching",
+              "text": "Use OR to detect contact with either Girl sprite, then broadcast a message from the button.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_6_3",
               "title": "Opening the elevator door",
-              "text": "Opening the elevator door",
+              "text": "Open the door when it receives the message.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_6_4",
               "title": "Initial placement",
-              "text": "Initial placement",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_5",
-              "title": "TIPS",
-              "text": "TIPS",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_6",
-              "title": "The A, W, S, D keys.",
-              "text": "The A, W, S, D keys.",
+              "text": "Set the starting state and positions.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Open the elevator",
+              "text": "Program the elevator so that the door will open if any of the Girl sprites come up and touch the button!",
+              "url": ""
+            }
+          ],
           "title": "Open the elevator",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Open_the_elevator.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Open the elevator"
+          "project_title": "M4L1 Open the elevator",
+          "source_task_id": "26864",
+          "source_project_id": "10691176",
+          "source_demo_project_id": "10691181",
+          "tips": [
+            {
+              "title": "Keyboard controls",
+              "text": "If the letter keys do not respond, switch to the English keyboard layout."
+            }
+          ]
         }
       ],
       "project_title": "M4L1 Open the elevator",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691176",
+      "source_demo_project_id": "10691181",
+      "tips": [
+        {
+          "title": "Keyboard controls",
+          "text": "If the letter keys do not respond, switch to the English keyboard layout."
+        }
+      ]
     },
     {
       "id": "VP2_M4L1_1_7",
       "taskId": "VP2_M4L1_1_7",
-      "position": 7,
-      "level_position": 7,
-      "levelPosition": 7,
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
       "title": "Start the Algorithmics bus",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -751,35 +874,42 @@
         {
           "id": "req_7_1",
           "title": "Pressing the button",
-          "text": "Pressing the button",
+          "text": "Use AND to check that Pico and Giga touch the button at the same time.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_7_2",
           "title": "The appearance of the portal and running the bus",
-          "text": "The appearance of the portal and running the bus",
+          "text": "Broadcast a message from the button that the portal and bus can receive.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_7_3",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the starting positions and visibility of the sprites.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Start the Algorithmics bus",
+          "text": "The sprites Giga and Pico need to run the Algorithmics bus from the portal. To do this, they need to touch a button together. Study the example and let's create the code!",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M4L1_1_7_state_1",
           "stateId": "VP2_M4L1_1_7_state_1",
-          "position": 7,
-          "level_position": 7,
-          "levelPosition": 7,
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -801,42 +931,55 @@
             {
               "id": "req_7_1",
               "title": "Pressing the button",
-              "text": "Pressing the button",
+              "text": "Use AND to check that Pico and Giga touch the button at the same time.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_7_2",
               "title": "The appearance of the portal and running the bus",
-              "text": "The appearance of the portal and running the bus",
+              "text": "Broadcast a message from the button that the portal and bus can receive.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_7_3",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the starting positions and visibility of the sprites.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Start the Algorithmics bus",
+              "text": "The sprites Giga and Pico need to run the Algorithmics bus from the portal. To do this, they need to touch a button together. Study the example and let's create the code!",
+              "url": ""
+            }
+          ],
           "title": "Start the Algorithmics bus",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Start the Algorithmics bus"
+          "project_title": "M4L1 Start the Algorithmics bus",
+          "source_task_id": "26864",
+          "source_project_id": "10691186",
+          "source_demo_project_id": "10691192"
         }
       ],
       "project_title": "M4L1 Start the Algorithmics bus",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691186",
+      "source_demo_project_id": "10691192"
     },
     {
       "id": "VP2_M4L1_1_8",
       "taskId": "VP2_M4L1_1_8",
-      "position": 8,
-      "level_position": 8,
-      "levelPosition": 8,
+      "position": 9,
+      "level_position": 9,
+      "levelPosition": 9,
       "title": "The Crab and Coral",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -860,42 +1003,49 @@
         {
           "id": "req_8_1",
           "title": "Mouse control",
-          "text": "Mouse control",
+          "text": "Wait for a mouse click, then glide toward the pointer.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/mouse-control.png"
         },
         {
           "id": "req_8_2",
           "title": "Two \"OR\" logical operators",
-          "text": "Two \"OR\" logical operators",
+          "text": "Nest two OR blocks to check three coral colors.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/two-or.png"
         },
         {
           "id": "req_8_3",
           "title": "Change color",
-          "text": "Change color",
+          "text": "Use the eyedropper in the touching color block to sample the coral colors.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/change-color.png"
         },
         {
           "id": "req_8_4",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the Crab’s starting position.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Crab and Coral sprites",
+          "text": "The Crab sprite needs to hide behind the coral! Click on the area of the stage where it needs to move to.",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M4L1_1_8_state_1",
           "stateId": "VP2_M4L1_1_8_state_1",
-          "position": 8,
-          "level_position": 8,
-          "levelPosition": 8,
+          "position": 9,
+          "level_position": 9,
+          "levelPosition": 9,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -917,49 +1067,62 @@
             {
               "id": "req_8_1",
               "title": "Mouse control",
-              "text": "Mouse control",
+              "text": "Wait for a mouse click, then glide toward the pointer.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/mouse-control.png"
             },
             {
               "id": "req_8_2",
               "title": "Two \"OR\" logical operators",
-              "text": "Two \"OR\" logical operators",
+              "text": "Nest two OR blocks to check three coral colors.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/two-or.png"
             },
             {
               "id": "req_8_3",
               "title": "Change color",
-              "text": "Change color",
+              "text": "Use the eyedropper in the touching color block to sample the coral colors.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/change-color.png"
             },
             {
               "id": "req_8_4",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the Crab’s starting position.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Crab and Coral sprites",
+              "text": "The Crab sprite needs to hide behind the coral! Click on the area of the stage where it needs to move to.",
+              "url": ""
+            }
+          ],
           "title": "The Crab and Coral",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 The Crab and Coral"
+          "project_title": "M4L1 The Crab and Coral",
+          "source_task_id": "26864",
+          "source_project_id": "10691254",
+          "source_demo_project_id": "10691256"
         }
       ],
       "project_title": "M4L1 The Crab and Coral",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691254",
+      "source_demo_project_id": "10691256"
     },
     {
       "id": "VP2_M4L1_1_9",
       "taskId": "VP2_M4L1_1_9",
-      "position": 9,
-      "level_position": 9,
-      "levelPosition": 9,
+      "position": 10,
+      "level_position": 10,
+      "levelPosition": 10,
       "title": "Growth apple",
       "level_type": "scratch",
       "selectedType": "scratch",
@@ -983,28 +1146,35 @@
         {
           "id": "req_9_1",
           "title": "The Cat sprite grows in size when it touches the apple",
-          "text": "The Cat sprite grows in size when it touches the apple",
+          "text": "Increase the Cat’s size by 20 when it touches the magic apple.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_9_2",
           "title": "The Cat sprite shouldn't grow immediately",
-          "text": "The Cat sprite shouldn't grow immediately",
+          "text": "After each increase, wait until the Cat stops touching the apple before checking for another touch.",
           "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/wait-until_1628495954.png"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Growth apple",
+          "text": "The Cat sprite isn't allowing the Triceratops sprite to reach the volcano. The dinosaur will only leave if the Cat sprite becomes large enough. To do that, it needs to touch the magic apple!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L1_Growth_apple.sb3",
       "demo_project_id": "",
       "states": [
         {
           "id": "VP2_M4L1_1_9_state_1",
           "stateId": "VP2_M4L1_1_9_state_1",
-          "position": 9,
-          "level_position": 9,
-          "levelPosition": 9,
+          "position": 10,
+          "level_position": 10,
+          "levelPosition": 10,
           "type": "scratch",
           "selectedType": "scratch",
           "level_type": "scratch",
@@ -1026,28 +1196,41 @@
             {
               "id": "req_9_1",
               "title": "The Cat sprite grows in size when it touches the apple",
-              "text": "The Cat sprite grows in size when it touches the apple",
+              "text": "Increase the Cat’s size by 20 when it touches the magic apple.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_9_2",
               "title": "The Cat sprite shouldn't grow immediately",
-              "text": "The Cat sprite shouldn't grow immediately",
+              "text": "After each increase, wait until the Cat stops touching the apple before checking for another touch.",
               "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L1_1/assets/wait-until_1628495954.png"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Growth apple",
+              "text": "The Cat sprite isn't allowing the Triceratops sprite to reach the volcano. The dinosaur will only leave if the Cat sprite becomes large enough. To do that, it needs to touch the magic apple!",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Growth apple",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Growth_apple.sb3",
           "demo_project_id": "",
-          "project_title": "M4L1 Growth apple"
+          "project_title": "M4L1 Growth apple",
+          "source_task_id": "26864",
+          "source_project_id": "10691263",
+          "source_demo_project_id": "10691269"
         }
       ],
       "project_title": "M4L1 Growth apple",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26864",
+      "source_project_id": "10691263",
+      "source_demo_project_id": "10691269"
     }
   ]
 }

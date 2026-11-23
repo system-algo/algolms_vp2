@@ -12,7 +12,7 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Shooter",
+      "title": "Shooting",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
@@ -35,30 +35,60 @@
         {
           "id": "req_1_1",
           "title": "Enemy appears 1",
-          "text": "Enemy appears 1",
+          "text": "The enemy appears at the top of the stage.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/hints/enemy-top.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Second and third enemy",
-          "text": "Second and third enemy",
+          "text": "Duplicate the enemy sprite and for each enemy set the movement speed and coordinate area where it appears.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/hints/enemy-side.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Losing",
-          "text": "Losing",
+          "text": "For the \"Rocket\" sprite, describe the conditions under which a loss occurs.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_4",
           "title": "Fire movement",
-          "text": "Fire movement",
+          "text": "Program the fire starting upon the click of the mouse button. The fire flies until it touches the edge or one of the enemies. When it touches something, it sends the message \"hit.\"",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_5_xml",
+          "title": "Enemies react to fire hitting",
+          "text": "The enemies receive the message \"hit,\" and if they touch fire, they start again.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_6_xml",
+          "title": "*Bonus: add a main enemy",
+          "text": "Modify the game as you like. Add enemies and change their appearance. Add a main enemy.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        },
+        {
+          "id": "req_1_7_xml",
+          "title": "*Bonus: The main enemy changes size",
+          "text": "If you hit the main enemy, it gets smaller. If it is less than a certain value, you win.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
         }
       ],
       "media": [
@@ -99,30 +129,60 @@
             {
               "id": "req_1_1",
               "title": "Enemy appears 1",
-              "text": "Enemy appears 1",
+              "text": "The enemy appears at the top of the stage.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/hints/enemy-top.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Second and third enemy",
-              "text": "Second and third enemy",
+              "text": "Duplicate the enemy sprite and for each enemy set the movement speed and coordinate area where it appears.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/hints/enemy-side.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Losing",
-              "text": "Losing",
+              "text": "For the \"Rocket\" sprite, describe the conditions under which a loss occurs.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_4",
               "title": "Fire movement",
-              "text": "Fire movement",
+              "text": "Program the fire starting upon the click of the mouse button. The fire flies until it touches the edge or one of the enemies. When it touches something, it sends the message \"hit.\"",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_5_xml",
+              "title": "Enemies react to fire hitting",
+              "text": "The enemies receive the message \"hit,\" and if they touch fire, they start again.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_6_xml",
+              "title": "*Bonus: add a main enemy",
+              "text": "Modify the game as you like. Add enemies and change their appearance. Add a main enemy.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            },
+            {
+              "id": "req_1_7_xml",
+              "title": "*Bonus: The main enemy changes size",
+              "text": "If you hit the main enemy, it gets smaller. If it is less than a certain value, you win.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
             }
           ],
           "media": [
@@ -133,7 +193,7 @@
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/workspace/assets/task-1-1x43ld7/initial/asset-d9v7a4.png"
             }
           ],
-          "title": "Shooter",
+          "title": "Shooting",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Shooter.sb3",
           "demo_project_id": "",

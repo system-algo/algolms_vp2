@@ -442,7 +442,7 @@
               "id": "VP2_M4L1_2",
               "title": "Logical operators - Part 2",
               "lessonId": "VP2_M4L1",
-              "taskCount": 3
+              "taskCount": 4
             },
             {
               "id": "VP2_M4L1_3_track1",
@@ -584,7 +584,7 @@
             }
           ],
           "pageCount": 26,
-          "taskCount": 222
+          "taskCount": 223
         },
         {
           "id": "M5-Game-Development",
@@ -870,7 +870,7 @@
         }
       ],
       "pageCount": 118,
-      "taskCount": 701
+      "taskCount": 702
     }
   ]
 }

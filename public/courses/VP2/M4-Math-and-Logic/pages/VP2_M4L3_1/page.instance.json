@@ -13233,16 +13233,18 @@
         {
           "id": "req_6_1",
           "title": "Random number of repetitions",
-          "text": "Random number of repetitions",
+          "text": "The costume change occurs a random number of times when you click on the sprite.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/1_1623846692.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_6_2",
           "title": "Invisibility and visibility",
-          "text": "Invisibility and visibility",
+          "text": "To avoid seeing how the Dice sprite changes costumes, have it hide before changing costumes and appear after.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
@@ -13283,16 +13285,18 @@
             {
               "id": "req_6_1",
               "title": "Random number of repetitions",
-              "text": "Random number of repetitions",
+              "text": "The costume change occurs a random number of times when you click on the sprite.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/1_1623846692.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_6_2",
               "title": "Invisibility and visibility",
-              "text": "Invisibility and visibility",
+              "text": "To avoid seeing how the Dice sprite changes costumes, have it hide before changing costumes and appear after.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
@@ -13432,7 +13436,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Program the basketball to move to a random place when Space is pressed.",
+      "description": "The Cat sprite always scores a goal! The Ball sprite always hits the goal, but each time it flies to a different point. Press the spacebar to run the Ball sprite.",
       "command_keys": [
         "motion",
         "looks",
@@ -13445,12 +13449,38 @@
         "myblocks"
       ],
       "command_blocks": [],
-      "requirements": [],
+      "requirements": [
+        {
+          "id": "req_8_1",
+          "title": "Conversation with the Cat sprite",
+          "text": "Program the sprite Cat's lines",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/7_1623849040.jpg",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
+        },
+        {
+          "id": "req_8_2",
+          "title": "When you press the key, the Ball sprite goes toward the goal",
+          "text": "When you press the spacebar, the Ball sprite returns to the starting point and then flies into the goal.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/8.jpg",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_8_3",
+          "title": "The Ball sprite flies to different points",
+          "text": "We set the coordinate ranges using the \"pick random __ to __\" block. This time we need 2 commands. Study the dimensions of the goal.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/9.jpg",
+          "evaluationType": "markCompleted"
+        }
+      ],
       "media": [
         {
           "type": "presentation",
           "title": "Goal",
-          "text": "Press Space and watch where the basketball goes."
+          "text": "The Cat sprite always scores a goal! The Ball sprite always hits the goal, but each time it flies to a different point. Press the spacebar to run the Ball sprite."
         }
       ],
       "starter_project_id": "M4L3_Goal_1.sb3",
@@ -13466,7 +13496,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Program the basketball to move to a random place when Space is pressed.",
+          "description": "The Cat sprite always scores a goal! The Ball sprite always hits the goal, but each time it flies to a different point. Press the spacebar to run the Ball sprite.",
           "command_keys": [
             "motion",
             "looks",
@@ -13479,12 +13509,38 @@
             "myblocks"
           ],
           "command_blocks": [],
-          "requirements": [],
+          "requirements": [
+            {
+              "id": "req_8_1",
+              "title": "Conversation with the Cat sprite",
+              "text": "Program the sprite Cat's lines",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/7_1623849040.jpg",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
+            },
+            {
+              "id": "req_8_2",
+              "title": "When you press the key, the Ball sprite goes toward the goal",
+              "text": "When you press the spacebar, the Ball sprite returns to the starting point and then flies into the goal.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/8.jpg",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_8_3",
+              "title": "The Ball sprite flies to different points",
+              "text": "We set the coordinate ranges using the \"pick random __ to __\" block. This time we need 2 commands. Study the dimensions of the goal.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/9.jpg",
+              "evaluationType": "markCompleted"
+            }
+          ],
           "media": [
             {
               "type": "presentation",
               "title": "Goal",
-              "text": "Press Space and watch where the basketball goes."
+              "text": "The Cat sprite always scores a goal! The Ball sprite always hits the goal, but each time it flies to a different point. Press the spacebar to run the Ball sprite."
             }
           ],
           "starter_project_id": "M4L3_Goal_1.sb3",
@@ -13525,23 +13581,26 @@
         {
           "id": "req_9_1",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the initial position of the Ball sprite.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/10.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_9_2",
           "title": "The Ball sprite starts to move in random directions",
-          "text": "The Ball sprite starts to move in random directions",
+          "text": "The Ball sprite starts to move down, but not always in the direction of 180: sometimes it deflects either to the right or to the left. Program that movement using these commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/11.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_9_3",
           "title": "Ball bouncing",
-          "text": "Ball bouncing",
+          "text": "The Ball sprite bounces off the platform, turning in a random direction away from the platform.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/ball-bouncing.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
@@ -13581,23 +13640,26 @@
             {
               "id": "req_9_1",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the initial position of the Ball sprite.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/10.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_9_2",
               "title": "The Ball sprite starts to move in random directions",
-              "text": "The Ball sprite starts to move in random directions",
+              "text": "The Ball sprite starts to move down, but not always in the direction of 180: sometimes it deflects either to the right or to the left. Program that movement using these commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/11.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_9_3",
               "title": "Ball bouncing",
-              "text": "Ball bouncing",
+              "text": "The Ball sprite bounces off the platform, turning in a random direction away from the platform.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/ball-bouncing.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
@@ -13675,23 +13737,68 @@
         {
           "id": "req_11_1",
           "title": "Controlling the platform",
-          "text": "Controlling the platform",
+          "text": "Program the platform controls.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_11_2",
           "title": "The Ball sprite starts to move in random directions",
-          "text": "The Ball sprite starts to move in random directions",
+          "text": "The Ball sprite starts to move down, but not always in the direction of 180: sometimes it deflects either to the right or to the left. Program that movement using these commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/12.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_11_3",
           "title": "Continuous movement of the Ball sprite",
-          "text": "Continuous movement of the Ball sprite",
+          "text": "You're already familiar with this movement! Shall we program it?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_11_4",
+          "title": "Loss checking",
+          "text": "Think about at what point the game ends. How is a loss indicated?",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_11_5",
+          "title": "Ball bouncing",
+          "text": "The Ball sprite bounces off the platform, turning in a random direction away from the platform.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/ball-bouncing.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_11_6",
+          "title": "Initial placement",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_11_7",
+          "title": "*Bonus: add the ability to choose the difficulty level",
+          "text": "The difficulty depends, for example, on the size of the platform. Make it so that you can choose the difficulty level.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        },
+        {
+          "id": "req_11_8",
+          "title": "*Bonus: add a second player",
+          "text": "Redesign the game so that it can be played by two!",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
         }
       ],
       "media": [
@@ -13731,23 +13838,68 @@
             {
               "id": "req_11_1",
               "title": "Controlling the platform",
-              "text": "Controlling the platform",
+              "text": "Program the platform controls.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_11_2",
               "title": "The Ball sprite starts to move in random directions",
-              "text": "The Ball sprite starts to move in random directions",
+              "text": "The Ball sprite starts to move down, but not always in the direction of 180: sometimes it deflects either to the right or to the left. Program that movement using these commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/12.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_11_3",
               "title": "Continuous movement of the Ball sprite",
-              "text": "Continuous movement of the Ball sprite",
+              "text": "You're already familiar with this movement! Shall we program it?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_11_4",
+              "title": "Loss checking",
+              "text": "Think about at what point the game ends. How is a loss indicated?",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_11_5",
+              "title": "Ball bouncing",
+              "text": "The Ball sprite bounces off the platform, turning in a random direction away from the platform.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/ball-bouncing.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_11_6",
+              "title": "Initial placement",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_11_7",
+              "title": "*Bonus: add the ability to choose the difficulty level",
+              "text": "The difficulty depends, for example, on the size of the platform. Make it so that you can choose the difficulty level.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            },
+            {
+              "id": "req_11_8",
+              "title": "*Bonus: add a second player",
+              "text": "Redesign the game so that it can be played by two!",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
             }
           ],
           "media": [
@@ -13903,30 +14055,50 @@
         {
           "id": "req_13_1",
           "title": "When you click on the green flag, all the sprites take their starting positions",
-          "text": "When you click on the green flag, all the sprites take their starting positions",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_13_2",
           "title": "The MarsBot is keyboard controlled",
-          "text": "The MarsBot is keyboard controlled",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_13_3",
           "title": "Rocks appear randomly at the top of the stage and move downward",
-          "text": "Rocks appear randomly at the top of the stage and move downward",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/13.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_13_4",
           "title": "After touching the edge, the rock disappears and reappears at a random point at the top",
-          "text": "After touching the edge, the rock disappears and reappears at a random point at the top",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_13_5",
+          "title": "It's a win if the MarsBot lasts 20 seconds",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_13_6",
+          "title": "When the MarsBot and a rock touch, the loss event occurs",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
@@ -13967,30 +14139,50 @@
             {
               "id": "req_13_1",
               "title": "When you click on the green flag, all the sprites take their starting positions",
-              "text": "When you click on the green flag, all the sprites take their starting positions",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_13_2",
               "title": "The MarsBot is keyboard controlled",
-              "text": "The MarsBot is keyboard controlled",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_13_3",
               "title": "Rocks appear randomly at the top of the stage and move downward",
-              "text": "Rocks appear randomly at the top of the stage and move downward",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/13.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_13_4",
               "title": "After touching the edge, the rock disappears and reappears at a random point at the top",
-              "text": "After touching the edge, the rock disappears and reappears at a random point at the top",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_13_5",
+              "title": "It's a win if the MarsBot lasts 20 seconds",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_13_6",
+              "title": "When the MarsBot and a rock touch, the loss event occurs",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
@@ -14040,30 +14232,44 @@
         {
           "id": "req_14_1",
           "title": "A Raindrop sprite appears at a random position at the top of the stage",
-          "text": "A Raindrop sprite appears at a random position at the top of the stage",
+          "text": "A Raindrop sprite appears at a random position at the top of the stage. Think which coordinate is constant there, and which one changes randomly?",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/2_1623847481.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_14_2",
           "title": "The Raindrop sprite is moving down",
-          "text": "The Raindrop sprite is moving down",
+          "text": "Program the Raindrop sprite to move downward. What coordinate will change?",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/3_1623847489.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_14_3",
           "title": "The Raindrop sprite falls until...",
-          "text": "The Raindrop sprite falls until...",
+          "text": "The Raindrop sprite falls until it touches the ground, i.e. the brown.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/4_1623847498.jpg",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_14_4",
           "title": "Repeat forever",
-          "text": "Repeat forever",
+          "text": "Program the movement of the Raindrop sprite to repeat itself always",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/5_1623847507.jpg",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
+        },
+        {
+          "id": "req_14_5",
+          "title": "Program 2 more raindrops",
+          "text": "Duplicate the code for the other raindrops. Use commands \"hide\" and \"show\" only for raindrops 2 and 3, and don't forget about command \"wait__ seconds\" for these two sprites, so that the drops fall at different times. Any amount of time can be used.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/6.jpg",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         }
       ],
       "media": [
@@ -14104,30 +14310,44 @@
             {
               "id": "req_14_1",
               "title": "A Raindrop sprite appears at a random position at the top of the stage",
-              "text": "A Raindrop sprite appears at a random position at the top of the stage",
+              "text": "A Raindrop sprite appears at a random position at the top of the stage. Think which coordinate is constant there, and which one changes randomly?",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/2_1623847481.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_14_2",
               "title": "The Raindrop sprite is moving down",
-              "text": "The Raindrop sprite is moving down",
+              "text": "Program the Raindrop sprite to move downward. What coordinate will change?",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/3_1623847489.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_14_3",
               "title": "The Raindrop sprite falls until...",
-              "text": "The Raindrop sprite falls until...",
+              "text": "The Raindrop sprite falls until it touches the ground, i.e. the brown.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/4_1623847498.jpg",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_14_4",
               "title": "Repeat forever",
-              "text": "Repeat forever",
+              "text": "Program the movement of the Raindrop sprite to repeat itself always",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/5_1623847507.jpg",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
+            },
+            {
+              "id": "req_14_5",
+              "title": "Program 2 more raindrops",
+              "text": "Duplicate the code for the other raindrops. Use commands \"hide\" and \"show\" only for raindrops 2 and 3, and don't forget about command \"wait__ seconds\" for these two sprites, so that the drops fall at different times. Any amount of time can be used.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/hints/6.jpg",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             }
           ],
           "media": [

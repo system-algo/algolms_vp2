@@ -1007,20 +1007,6 @@
         }
       }
 
-      window.downloadPreviousGameProject = async function() {
-        const buffer = await getSavedProject('M3L4_Shared_Game');
-        if (!buffer) return false;
-        const url = URL.createObjectURL(new Blob([buffer], { type: 'application/octet-stream' }));
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'M3L4 Game - previous project.sb3';
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        setTimeout(() => URL.revokeObjectURL(url), 1000);
-        return true;
-      };
-
       window.saveProjectToStorage = async function(key) {
         const k = key || storageKeyParam;
         if (!k) return false;

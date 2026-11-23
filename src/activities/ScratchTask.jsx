@@ -604,21 +604,6 @@ export default function ScratchTask({
                       New project
                     </button>
                   )}
-                  {isM3L4_L6 && (
-                    <button
-                      type="button"
-                      className="scratch-task-dropdown-item"
-                      onClick={async () => {
-                        setOpenFileMenu(false);
-                        const download = iframeRef.current?.contentWindow?.downloadPreviousGameProject;
-                        if (!download || !(await download())) {
-                          window.alert('No previous Game project was found in this browser.');
-                        }
-                      }}
-                    >
-                      Download previous project
-                    </button>
-                  )}
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {

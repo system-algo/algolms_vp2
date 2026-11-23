@@ -80,7 +80,13 @@
           "evaluationType": "markCompleted"
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Game",
+          "text": "Create your own game with a main character, prize, obstacles or enemies, and program it!"
+        }
+      ],
       "starter_project_id": "",
       "demo_project_id": "",
       "states": [
@@ -157,7 +163,13 @@
               "evaluationType": "markCompleted"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Game",
+              "text": "Create your own game with a main character, prize, obstacles or enemies, and program it!"
+            }
+          ],
           "starter_project_id": "",
           "demo_project_id": "",
           "project_title": "M3L4 Game",

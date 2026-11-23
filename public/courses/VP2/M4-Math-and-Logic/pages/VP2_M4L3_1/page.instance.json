@@ -13248,13 +13248,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
+          "title": "The Dice sprite",
+          "text": "Click the dice to roll it.",
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-39-6jkjcj/initial/asset-1gwz70s.png"
         }
       ],
       "starter_project_id": "M4L3_Dice.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_6_state_1",
@@ -13298,15 +13298,15 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
+              "title": "The Dice sprite",
+              "text": "Click the dice to roll it.",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-39-6jkjcj/initial/asset-1gwz70s.png"
             }
           ],
           "title": "The Dice sprite",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Dice.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_1_Task_1_Demo.sb3",
           "project_title": "M4L3 Dice"
         }
       ],
@@ -13426,13 +13426,13 @@
       "position": 8,
       "level_position": 8,
       "levelPosition": 8,
-      "title": "Loading Project",
+      "title": "Goal",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "Program the basketball to move to a random place when Space is pressed.",
       "command_keys": [
         "motion",
         "looks",
@@ -13445,32 +13445,16 @@
         "myblocks"
       ],
       "command_blocks": [],
-      "requirements": [
+      "requirements": [],
+      "media": [
         {
-          "id": "req_8_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_8_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_8_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
+          "type": "presentation",
+          "title": "Goal",
+          "text": "Press Space and watch where the basketball goes."
         }
       ],
-      "media": [],
-      "starter_project_id": "",
-      "demo_project_id": "",
+      "starter_project_id": "M4L3_Goal_1.sb3",
+      "demo_project_id": "M4L3_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_8_state_1",
@@ -13482,7 +13466,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "Program the basketball to move to a random place when Space is pressed.",
           "command_keys": [
             "motion",
             "looks",
@@ -13495,36 +13479,21 @@
             "myblocks"
           ],
           "command_blocks": [],
-          "requirements": [
+          "requirements": [],
+          "media": [
             {
-              "id": "req_8_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_8_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_8_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
+              "type": "presentation",
+              "title": "Goal",
+              "text": "Press Space and watch where the basketball goes."
             }
           ],
-          "media": [],
-          "starter_project_id": "",
-          "demo_project_id": "",
-          "project_title": "Loading Project"
+          "starter_project_id": "M4L3_Goal_1.sb3",
+          "demo_project_id": "M4L3_1_Task_3_Demo.sb3",
+          "project_title": "M4L3 Goal 1",
+          "title": "Goal"
         }
       ],
-      "project_title": "Loading Project",
+      "project_title": "M4L3 Goal 1",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {
@@ -13575,9 +13544,15 @@
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Catch the ball",
+          "text": "Drag the platform with your mouse to bounce the ball."
+        }
+      ],
       "starter_project_id": "M4L3_Tennis.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_1_Task_4_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_9_state_1",
@@ -13625,11 +13600,17 @@
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Catch the ball",
+              "text": "Drag the platform with your mouse to bounce the ball."
+            }
+          ],
           "title": "Catch the ball",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Tennis.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_1_Task_4_Demo.sb3",
           "project_title": "M4L3 Tennis"
         }
       ],
@@ -13713,9 +13694,15 @@
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Tennis",
+          "text": "Use the left and right arrow keys to move the platform and bounce the ball."
+        }
+      ],
       "starter_project_id": "M4L3_Tennis_2.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_1_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_11_state_1",
@@ -13763,11 +13750,17 @@
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Tennis",
+              "text": "Use the left and right arrow keys to move the platform and bounce the ball."
+            }
+          ],
           "title": "Tennis",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Tennis_2.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_1_Task_6_Demo.sb3",
           "project_title": "M4L3 Tennis 2"
         }
       ],
@@ -13939,13 +13932,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student June 16 at 8:38 PM",
-          "text": "Complete the programming task for \"Last save by student June 16 at 8:38 PM\".",
+          "title": "Rockfall",
+          "text": "Use the arrow keys to move the MarsBot and dodge the falling rocks.",
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-158-ht1z5t/initial/asset-1r6nlc6.png"
         }
       ],
       "starter_project_id": "M4L3_Rockfall.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_1_Task_7_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_13_state_1",
@@ -14003,15 +13996,15 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student June 16 at 8:38 PM",
-              "text": "Complete the programming task for \"Last save by student June 16 at 8:38 PM\".",
+              "title": "Rockfall",
+              "text": "Use the arrow keys to move the MarsBot and dodge the falling rocks.",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-158-ht1z5t/initial/asset-1r6nlc6.png"
             }
           ],
           "title": "Rockfall",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Rockfall.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_1_Task_7_Demo.sb3",
           "project_title": "M4L3 Rockfall"
         }
       ],
@@ -14076,13 +14069,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
+          "title": "Rain",
+          "text": "Start the project and watch the raindrops fall from random positions.",
           "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-216-1iigys7/initial/asset-1glgbkz.png"
         }
       ],
       "starter_project_id": "M4L3_Rain.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_1_14_state_1",
@@ -14140,15 +14133,15 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
+              "title": "Rain",
+              "text": "Start the project and watch the raindrops fall from random positions.",
               "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_1/workspace/assets/task-216-1iigys7/initial/asset-1glgbkz.png"
             }
           ],
           "title": "Rain",
           "isAutoCheck": true,
           "starter_project_id": "M4L3_Rain.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_1_Task_2_Demo.sb3",
           "project_title": "M4L3 Rain"
         }
       ],

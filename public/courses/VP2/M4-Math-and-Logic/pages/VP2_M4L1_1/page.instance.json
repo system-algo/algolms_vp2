@@ -56,7 +56,7 @@
         }
       ],
       "starter_project_id": "M4L1_Cat_task_0.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_1_state_1",
@@ -108,7 +108,7 @@
           "title": "The Cat sprite",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task_0.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_1_Demo.sb3",
           "project_title": "M4L1 Cat task 0",
           "source_task_id": "26864",
           "source_project_id": "10691123",
@@ -171,7 +171,7 @@
         }
       ],
       "starter_project_id": "M4L1_Cat_task.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_2_state_1",
@@ -223,7 +223,7 @@
           "title": "The Cat sprite (AND)",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Cat_task.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_2_Demo.sb3",
           "project_title": "M4L1 Cat task",
           "source_task_id": "26864",
           "source_project_id": "10691127",
@@ -279,7 +279,7 @@
         }
       ],
       "starter_project_id": "New_project_(3).sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_3_state_1",
@@ -324,7 +324,7 @@
           "title": "Call the elevator",
           "isAutoCheck": true,
           "starter_project_id": "New_project_(3).sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_3_Demo.sb3",
           "project_title": "New project (3)",
           "source_task_id": "26864",
           "source_project_id": "10925535",
@@ -420,7 +420,7 @@
         }
       ],
       "starter_project_id": "M4L1_Button.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_4_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_4_state_1",
@@ -493,7 +493,7 @@
           "title": "Teamwork",
           "isAutoCheck": true,
           "starter_project_id": "M4L1_Button.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_4_Demo.sb3",
           "project_title": "M4L1 Button",
           "source_task_id": "26864",
           "source_project_id": "32839185",
@@ -605,7 +605,7 @@
         }
       ],
       "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_5_state_1",
@@ -671,7 +671,7 @@
           "title": "Cat and Hedgehog",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Cat_and_Hedgehog.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_6_Demo.sb3",
           "project_title": "M4L1 Cat and Hedgehog",
           "source_task_id": "26864",
           "source_project_id": "10691157",
@@ -748,7 +748,7 @@
         }
       ],
       "starter_project_id": "M4L1_Open_the_elevator.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_7_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_6_state_1",
@@ -814,7 +814,7 @@
           "title": "Open the elevator",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Open_the_elevator.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_7_Demo.sb3",
           "project_title": "M4L1 Open the elevator",
           "source_task_id": "26864",
           "source_project_id": "10691176",
@@ -896,7 +896,7 @@
         }
       ],
       "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_8_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_7_state_1",
@@ -955,7 +955,7 @@
           "title": "Start the Algorithmics bus",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Start_the_Algorithmics_bus.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_8_Demo.sb3",
           "project_title": "M4L1 Start the Algorithmics bus",
           "source_task_id": "26864",
           "source_project_id": "10691186",
@@ -1032,7 +1032,7 @@
         }
       ],
       "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_9_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_8_state_1",
@@ -1098,7 +1098,7 @@
           "title": "The Crab and Coral",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_The_Crab_and_Coral.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_9_Demo.sb3",
           "project_title": "M4L1 The Crab and Coral",
           "source_task_id": "26864",
           "source_project_id": "10691254",
@@ -1161,7 +1161,7 @@
         }
       ],
       "starter_project_id": "M4L1_Growth_apple.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_1_Task_10_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_1_9_state_1",
@@ -1213,7 +1213,7 @@
           "title": "Growth apple",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Growth_apple.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_1_Task_10_Demo.sb3",
           "project_title": "M4L1 Growth apple",
           "source_task_id": "26864",
           "source_project_id": "10691263",

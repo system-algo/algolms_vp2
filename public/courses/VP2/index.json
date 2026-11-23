@@ -480,9 +480,9 @@
         },
         {
           "id": "VP2_M4L2_3",
-          "title": "Scratch. Conditional loops",
+          "title": "Scratch: Condition checking",
           "lessonId": "VP2_M4L2",
-          "taskCount": 22
+          "taskCount": 8
         },
         {
           "id": "VP2_M4L2_5",
@@ -558,7 +558,7 @@
         }
       ],
       "pageCount": 21,
-      "taskCount": 216
+      "taskCount": 202
     },
     {
       "id": "M5-Game-Development",
@@ -796,5 +796,5 @@
     }
   ],
   "pageCount": 105,
-  "taskCount": 683
+  "taskCount": 669
 }

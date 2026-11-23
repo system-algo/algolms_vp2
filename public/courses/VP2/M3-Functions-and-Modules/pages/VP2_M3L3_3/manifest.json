@@ -4,7 +4,7 @@
   "title": "Dog in the labyrinth",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 1,
+  "taskCount": 2,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M3-Functions-and-Modules",
@@ -41,49 +41,61 @@
         {
           "id": "req_1_1",
           "title": "Create a project plan",
-          "text": "Create a project plan",
+          "text": "Plan the project using a notebook. Make notes to help you program your project correctly!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Controlling the Dog sprite",
-          "text": "Controlling the Dog sprite",
+          "text": "Program the controls for the Dog sprite.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_3",
           "title": "Touching obstacles",
-          "text": "Touching obstacles",
+          "text": "There are two obstacles in this project — the walls of the maze and the lightning.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_4",
           "title": "Level 1",
-          "text": "Level 1",
+          "text": "Program the initial placement for level 1.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_5",
           "title": "Level 2",
-          "text": "Level 2",
+          "text": "Program the initial placement for level 2.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_6",
           "title": "Touching the target",
-          "text": "Touching the target",
+          "text": "We have two targets: two different crystals. One of the crystals takes us to the next level, and the other one creates the \"Victory\" event.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Dog in the maze",
+          "text": "Collect the crystals!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M3L3_Dog_in_the_labyrinth.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M3L3_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M3L3_3_1_state_1",
@@ -113,54 +125,111 @@
             {
               "id": "req_1_1",
               "title": "Create a project plan",
-              "text": "Create a project plan",
+              "text": "Plan the project using a notebook. Make notes to help you program your project correctly!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Controlling the Dog sprite",
-              "text": "Controlling the Dog sprite",
+              "text": "Program the controls for the Dog sprite.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_3",
               "title": "Touching obstacles",
-              "text": "Touching obstacles",
+              "text": "There are two obstacles in this project — the walls of the maze and the lightning.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_4",
               "title": "Level 1",
-              "text": "Level 1",
+              "text": "Program the initial placement for level 1.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_5",
               "title": "Level 2",
-              "text": "Level 2",
+              "text": "Program the initial placement for level 2.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_6",
               "title": "Touching the target",
-              "text": "Touching the target",
+              "text": "We have two targets: two different crystals. One of the crystals takes us to the next level, and the other one creates the \"Victory\" event.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Dog in the maze",
+              "text": "Collect the crystals!",
               "url": ""
             }
           ],
-          "media": [],
           "starter_project_id": "M3L3_Dog_in_the_labyrinth.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L3 Dog in the labyrinth"
+          "demo_project_id": "M3L3_3_Task_1_Demo.sb3",
+          "project_title": "M3L3 Dog in the labyrinth",
+          "source_task_id": "22852",
+          "source_project_id": "10375315",
+          "source_demo_project_id": "10387618"
         }
       ],
       "project_title": "M3L3 Dog in the labyrinth",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "22852",
+      "source_project_id": "10375315",
+      "source_demo_project_id": "10387618"
+    },
+    {
+      "position": 2,
+      "level_position": 2,
+      "levelPosition": 2,
+      "title": "Did you like the task?",
+      "activityType": "feedback_rating_task",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊",
+      "source_task_id": "22852",
+      "id": "VP2_M3L3_3_rating",
+      "taskId": "VP2_M3L3_3_rating",
+      "states": [
+        {
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "title": "Did you like the task?",
+          "activityType": "feedback_rating_task",
+          "level_type": "rating",
+          "selectedType": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": [],
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊",
+          "source_task_id": "22852",
+          "id": "VP2_M3L3_3_rating_state_1",
+          "stateId": "VP2_M3L3_3_rating_state_1",
+          "type": "rating"
+        }
+      ]
     }
   ]
 }

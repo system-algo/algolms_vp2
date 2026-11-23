@@ -100,7 +100,7 @@
         }
       ],
       "starter_project_id": "M4L3_Shooter.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_3_1_state_1",
@@ -196,7 +196,7 @@
           "title": "Shooting",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Shooter.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_3_Task_1_Demo.sb3",
           "project_title": "M4L3 Shooter"
         }
       ],

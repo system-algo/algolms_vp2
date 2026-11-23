@@ -14246,7 +14246,7 @@
         }
       ],
       "starter_project_id": "M4L3_Geometric_Shapes.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L3_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L3_2_15_state_1",
@@ -14333,7 +14333,7 @@
           "title": "Geometric shapes",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Geometric_Shapes.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L3_2_Task_1_Demo.sb3",
           "project_title": "M4L3 Geometric Shapes"
         }
       ],

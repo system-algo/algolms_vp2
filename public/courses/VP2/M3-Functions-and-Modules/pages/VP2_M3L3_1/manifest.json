@@ -119,7 +119,7 @@
             {
               "id": "comic-1",
               "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-comic-1.png"
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-1.png"
             }
           ],
           "source_task_id": "26862",
@@ -134,7 +134,7 @@
         {
           "id": "comic-1",
           "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-comic-1.png"
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-1-hint-1.png"
         }
       ],
       "source_task_id": "26862",
@@ -245,13 +245,7 @@
           "starter_project_id": "M3L3_Flip.sb3",
           "demo_project_id": "M3L3_1_Task_2_Demo.sb3",
           "project_title": "M3L3 Flip",
-          "tips": [
-            {
-              "id": "comic-1",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-comic-1.png"
-            }
-          ],
+          "tips": [],
           "source_task_id": "26862",
           "source_project_id": "10683356",
           "source_demo_project_id": "2721268",
@@ -260,13 +254,7 @@
       ],
       "project_title": "M3L3 Flip",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "tips": [
-        {
-          "id": "comic-1",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-2-comic-1.png"
-        }
-      ],
+      "tips": [],
       "source_task_id": "26862",
       "source_project_id": "10683356",
       "source_demo_project_id": "2721268",
@@ -419,14 +407,9 @@
           "project_title": "M3L3 Flip (1)",
           "tips": [
             {
-              "id": "comic-1",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-1.png"
-            },
-            {
               "id": "comic-2",
               "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-2.png"
+              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-3.png"
             }
           ],
           "source_task_id": "26862",
@@ -439,14 +422,9 @@
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
       "tips": [
         {
-          "id": "comic-1",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-1.png"
-        },
-        {
           "id": "comic-2",
           "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-comic-2.png"
+          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L3_1/assets/task-3-hint-3.png"
         }
       ],
       "source_task_id": "26862",

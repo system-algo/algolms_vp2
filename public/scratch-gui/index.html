@@ -14,8 +14,6 @@
       const projectUrl = params.get('project') || '';
       const levelParam = params.get('level') || '1';
       const titleParam = (params.get('title') || '').trim();
-      const startFresh = params.get('startFresh') === 'true';
-      let canAutosave = !startFresh;
       const storageKeyParam = params.get('storageKey') || (projectUrl.includes('M3L4_Game') ? 'M3L4_Shared_Game' : (projectUrl.includes('M5L5_Chatbot') ? 'M5L5_Shared_Chatbot' : ''));
 
       const isPlayerOnly = params.get('isPlayerOnly') === 'true' || params.get('mode') === 'player';
@@ -1025,7 +1023,6 @@
             tx.onabort = () => resolve(false);
           });
           if (!saved) return false;
-          canAutosave = true;
           console.log('[AlgoLMS] Saved project to storage for key:', k);
           window.parent.postMessage({ type: 'PROJECT_SAVED_SUCCESS', storageKey: k, timestamp: Date.now() }, '*');
           return true;
@@ -1037,14 +1034,14 @@
 
       if (storageKeyParam) {
         setInterval(() => {
-          if (canAutosave) window.saveProjectToStorage(storageKeyParam);
+          window.saveProjectToStorage(storageKeyParam);
         }, 30000);
         window.addEventListener('beforeunload', () => {
-          if (canAutosave) window.saveProjectToStorage(storageKeyParam);
+          window.saveProjectToStorage(storageKeyParam);
         });
       }
 
-      if (!initialProjectUrl && (!storageKeyParam || startFresh)) {
+      if (!initialProjectUrl && !storageKeyParam) {
         // Level 1: Default Cat. Wait for Blockly workspace to be ready then apply Level 1 toolbox & title
         let checks = 0;
         const blocklyInterval = setInterval(() => {

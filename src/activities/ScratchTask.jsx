@@ -83,7 +83,6 @@ export default function ScratchTask({
   const [openFileMenu, setOpenFileMenu] = useState(false);
   const [openEditMenu, setOpenEditMenu] = useState(false);
   const [lastSaveTime, setLastSaveTime] = useState('');
-  const [newProjectRevision, setNewProjectRevision] = useState(0);
   const [isSaving, setIsSaving] = useState(false);
   const [isTurboMode, setIsTurboMode] = useState(false);
 
@@ -174,9 +173,8 @@ export default function ScratchTask({
     ''
   );
 
-  const startFresh = isM3L4_L6 && newProjectRevision > 0;
-  const editorProjectId = startFresh || isM3L4_L6 ? '' : projectId;
-  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}${startFresh ? '&startFresh=true' : ''}`;
+  const editorProjectId = isM3L4_L6 ? '' : projectId;
+  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
 
   // Selected requirement ID for highlighting and displaying its image/GIF
   const [selectedReqId, setSelectedReqId] = useState(null);
@@ -197,7 +195,6 @@ export default function ScratchTask({
     );
     setCompletedItems({});
     setSelectedReqId(null);
-    setNewProjectRevision(0);
     setLastSaveTime('');
     setDemoViewMode('stage');
     setCopiedXml(false);
@@ -591,19 +588,6 @@ export default function ScratchTask({
               <span>File</span>
               {openFileMenu && (
                 <div className="scratch-task-dropdown-menu" onClick={(e) => e.stopPropagation()}>
-                  {isM3L4_L6 && (
-                    <button
-                      type="button"
-                      className="scratch-task-dropdown-item"
-                      onClick={() => {
-                        setOpenFileMenu(false);
-                        setLastSaveTime('');
-                        setNewProjectRevision((revision) => revision + 1);
-                      }}
-                    >
-                      New project
-                    </button>
-                  )}
                   <div
                     className="scratch-task-dropdown-item"
                     onClick={() => {
@@ -762,7 +746,7 @@ export default function ScratchTask({
 
         <div className="scratch-task-iframe-wrapper">
           <iframe
-            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${derivedProjectTitle}-${newProjectRevision}`}
+            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${derivedProjectTitle}`}
             ref={iframeRef}
             src={editorUrl}
             className="scratch-task-iframe"

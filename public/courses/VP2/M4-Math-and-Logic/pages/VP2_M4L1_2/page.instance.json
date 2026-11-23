@@ -57,7 +57,7 @@
         }
       ],
       "starter_project_id": "M4L1_Bear_in_space.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_1_state_1",
@@ -110,7 +110,7 @@
           "title": "Bear in space",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Bear_in_space.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_2_Task_1_Demo.sb3",
           "project_title": "M4L1 Bear in space",
           "source_task_id": "26866",
           "source_level_id": "329845",
@@ -168,7 +168,7 @@
         }
       ],
       "starter_project_id": "M4L1_Potion_Making.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_2_state_1",
@@ -213,7 +213,7 @@
           "title": "Potion",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Potion_Making.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_2_Task_2_Demo.sb3",
           "project_title": "M4L1 Potion Making",
           "source_task_id": "26866",
           "source_level_id": "329846",
@@ -305,7 +305,7 @@
         }
       ],
       "starter_project_id": "M4L1_Robot_charges.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_3_state_1",
@@ -384,7 +384,7 @@
           "title": "Robot charges",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Robot_charges.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L1_2_Task_3_Demo.sb3",
           "project_title": "M4L1 Robot charges",
           "source_task_id": "26866",
           "source_level_id": "329848",

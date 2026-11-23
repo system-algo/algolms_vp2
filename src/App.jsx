@@ -17,17 +17,28 @@ installTabIsolatedLmsStorage();
   if (typeof window === 'undefined') return;
   try {
     const params = new URLSearchParams(window.location.search);
-    const email = params.get('studentEmail') || params.get('email');
-    const incomingCourseId = params.get('courseId');
+    const teacherEmail = params.get('teacherEmail');
+    const studentEmail = params.get('studentEmail');
+    const rawEmail = teacherEmail || studentEmail || params.get('email') || params.get('userEmail');
+    const incomingCourseId = params.get('courseId') || params.get('course');
     const supabaseUrl = params.get('supabaseUrl');
     const supabaseKey = params.get('supabaseKey');
     const accessToken = params.get('accessToken');
     const backendUrl = params.get('backendUrl');
+    const platformOrigin = params.get('platformOrigin') || params.get('portal');
+    const incomingRole = (params.get('viewerRole') || params.get('role') || params.get('userRole') || (teacherEmail ? 'teacher' : ''))?.toLowerCase().trim();
 
-    if (email) {
-      const normalizedEmail = email.trim().toLowerCase();
+    if (rawEmail) {
+      const normalizedEmail = rawEmail.trim().toLowerCase();
       localStorage.setItem('lms_student_email', normalizedEmail);
       localStorage.setItem('lms_user_email', normalizedEmail);
+    }
+    if (incomingRole && ['teacher', 'admin', 'student'].includes(incomingRole)) {
+      localStorage.setItem('lms_user_role', incomingRole);
+      localStorage.setItem('lms_viewer_role', incomingRole);
+    } else if (teacherEmail || (rawEmail && (rawEmail.includes('.tch') || rawEmail.includes('teacher')))) {
+      localStorage.setItem('lms_user_role', 'teacher');
+      localStorage.setItem('lms_viewer_role', 'teacher');
     }
     if (incomingCourseId) localStorage.setItem('lms_course_id', incomingCourseId);
     if (supabaseUrl) localStorage.setItem('lms_supabase_url', supabaseUrl);
@@ -37,6 +48,10 @@ installTabIsolatedLmsStorage();
       sessionStorage.setItem('lms_access_token', accessToken);
     }
     if (backendUrl) localStorage.setItem('lms_backend_url', backendUrl);
+    if (platformOrigin) {
+      localStorage.setItem('lms_platform_origin', platformOrigin);
+      sessionStorage.setItem('lms_platform_origin', platformOrigin);
+    }
   } catch {}
 })();
 
@@ -125,7 +140,21 @@ export default function App() {
   const [h5pActivity, setH5pActivity] = useState(null);
 
   // Role checking state
-  const [role, setRole] = useState('student');
+  const [role, setRole] = useState(() => {
+    if (typeof window === 'undefined') return 'student';
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const teacherEmail = params.get('teacherEmail');
+      const urlRole = (params.get('viewerRole') || params.get('role') || params.get('userRole'))?.toLowerCase().trim();
+      if (['teacher', 'admin', 'student'].includes(urlRole)) return urlRole;
+      if (teacherEmail) return 'teacher';
+      const storedRole = (localStorage.getItem('lms_viewer_role') || localStorage.getItem('lms_user_role'))?.toLowerCase().trim();
+      if (['teacher', 'admin', 'student'].includes(storedRole)) return storedRole;
+      const email = (teacherEmail || params.get('studentEmail') || params.get('email') || params.get('userEmail') || localStorage.getItem('lms_user_email') || localStorage.getItem('lms_student_email') || '').toLowerCase();
+      if (email.includes('.tch') || email.includes('teacher')) return 'teacher';
+    } catch {}
+    return 'student';
+  });
   const [loadingRole, setLoadingRole] = useState(true);
   const [lessonAccess, setLessonAccess] = useState({ route: '', status: 'checking' });
   const sessionRedirectStartedRef = useRef(false);
@@ -142,12 +171,16 @@ export default function App() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
 
-    const email = params.get('studentEmail');
-    const incomingCourseId = params.get('courseId');
+    const teacherEmail = params.get('teacherEmail');
+    const studentEmail = params.get('studentEmail');
+    const email = teacherEmail || studentEmail || params.get('email') || params.get('userEmail');
+    const incomingCourseId = params.get('courseId') || params.get('course');
     const supabaseUrl = params.get('supabaseUrl');
     const supabaseKey = params.get('supabaseKey');
     const accessToken = params.get('accessToken');
     const backendUrl = params.get('backendUrl');
+    const platformOrigin = params.get('platformOrigin') || params.get('portal');
+    const incomingRole = (params.get('viewerRole') || params.get('role') || params.get('userRole') || (teacherEmail ? 'teacher' : ''))?.toLowerCase().trim();
 
     const hasIncomingSessionPayload = Boolean(
       email ||
@@ -155,7 +188,9 @@ export default function App() {
       supabaseUrl ||
       supabaseKey ||
       accessToken ||
-      backendUrl,
+      backendUrl ||
+      teacherEmail ||
+      incomingRole,
     );
 
     /*
@@ -181,14 +216,23 @@ export default function App() {
     }
 
     if (email) {
-      localStorage.setItem('lms_student_email', email);
-      localStorage.setItem('lms_user_email', email);
+      const normalizedEmail = email.trim().toLowerCase();
+      localStorage.setItem('lms_student_email', normalizedEmail);
+      localStorage.setItem('lms_user_email', normalizedEmail);
     } else if (
       !localStorage.getItem('lms_student_email') &&
       !localStorage.getItem('lms_user_email')
     ) {
       localStorage.setItem('lms_student_email', 'guest@algo.edu.vn');
       localStorage.setItem('lms_user_email', 'guest@algo.edu.vn');
+    }
+
+    if (incomingRole && ['teacher', 'admin', 'student'].includes(incomingRole)) {
+      localStorage.setItem('lms_user_role', incomingRole);
+      localStorage.setItem('lms_viewer_role', incomingRole);
+    } else if (teacherEmail || (email && (email.includes('.tch') || email.includes('teacher')))) {
+      localStorage.setItem('lms_user_role', 'teacher');
+      localStorage.setItem('lms_viewer_role', 'teacher');
     }
 
     if (incomingCourseId) {
@@ -205,10 +249,16 @@ export default function App() {
 
     if (accessToken) {
       localStorage.setItem('lms_access_token', accessToken);
+      sessionStorage.setItem('lms_access_token', accessToken);
     }
 
     if (backendUrl) {
       localStorage.setItem('lms_backend_url', backendUrl);
+    }
+
+    if (platformOrigin) {
+      localStorage.setItem('lms_platform_origin', platformOrigin);
+      sessionStorage.setItem('lms_platform_origin', platformOrigin);
     }
 
     /*
@@ -220,11 +270,19 @@ export default function App() {
       const searchParams = new URLSearchParams(window.location.search);
 
       searchParams.delete('studentEmail');
+      searchParams.delete('teacherEmail');
+      searchParams.delete('email');
+      searchParams.delete('userEmail');
       searchParams.delete('courseId');
       searchParams.delete('supabaseUrl');
       searchParams.delete('supabaseKey');
       searchParams.delete('accessToken');
       searchParams.delete('backendUrl');
+      searchParams.delete('role');
+      searchParams.delete('viewerRole');
+      searchParams.delete('userRole');
+      searchParams.delete('platformOrigin');
+      searchParams.delete('portal');
 
       const remainingQuery = searchParams.toString();
       const cleanUrl =
@@ -245,8 +303,8 @@ export default function App() {
 
     const activeEmail =
       email ||
-      localStorage.getItem('lms_student_email') ||
       localStorage.getItem('lms_user_email') ||
+      localStorage.getItem('lms_student_email') ||
       'guest@algo.edu.vn';
 
     const activeUrl =
@@ -262,9 +320,16 @@ export default function App() {
       localStorage.getItem('lms_access_token') ||
       '';
 
-    if (activeUrl && activeKey && activeEmail) {
+    const initialDetectedRole =
+      (incomingRole && ['teacher', 'admin', 'student'].includes(incomingRole))
+        ? incomingRole
+        : (localStorage.getItem('lms_viewer_role') ||
+           localStorage.getItem('lms_user_role') ||
+           (teacherEmail || (activeEmail && (activeEmail.includes('.tch') || activeEmail.includes('teacher'))) ? 'teacher' : 'student'));
+
+    if (activeUrl && activeKey && activeEmail && activeEmail !== 'guest@algo.edu.vn') {
       async function determineRole() {
-        let parsedRole = 'student';
+        let parsedRole = initialDetectedRole;
 
         try {
           const profileUrl =
@@ -343,6 +408,10 @@ export default function App() {
           }
         }
 
+        if (parsedRole === 'student' && (initialDetectedRole === 'teacher' || initialDetectedRole === 'admin')) {
+          parsedRole = initialDetectedRole;
+        }
+
         console.log(
           'LMS final parsed user role:',
           parsedRole,
@@ -359,7 +428,7 @@ export default function App() {
 
       determineRole();
     } else {
-      const parsedRole = 'student';
+      const parsedRole = initialDetectedRole;
 
       console.log(
         'LMS final parsed user role (no authenticated role source):',
@@ -600,17 +669,36 @@ export default function App() {
     setH5pActivity(null);
   }
 
-  function openPageFromDashboard(moduleId, pageId) {
-    const cId = courseId || 'VP2';
-    sessionStorage.setItem('lms_active_course', cId);
-    sessionStorage.setItem('lms_active_lesson', moduleId);
-    sessionStorage.setItem('lms_active_page', pageId);
-    sessionStorage.setItem('lms_active_task', '1');
-    const nextUrl = `/?course=${encodeURIComponent(cId)}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(pageId)}&task=1`;
+  function backToTeacherDashboard() {
+    const rawCourseId = courseId || getRouteFromUrl().courseId || 'VP2';
+    const storedTab = sessionStorage.getItem('lms_source_tab') || 'classes';
+    try {
+      if (storedTab) {
+        sessionStorage.setItem('teacher_active_tab', storedTab);
+      }
+    } catch {}
+    const nextUrl = `/?course=${encodeURIComponent(rawCourseId)}&sourceTab=${encodeURIComponent(storedTab)}`;
+
     window.history.pushState({}, '', nextUrl);
-    setCourseId(cId);
+    setPageId('');
+    setH5pActivity(null);
+  }
+
+  function openPageFromDashboard(moduleId, nextPageId, overrideCourseId, sourceTab = 'classes') {
+    const resolvedCourseId = overrideCourseId || courseId || getRouteFromUrl().courseId || 'VP2';
+    sessionStorage.setItem('lms_active_course', resolvedCourseId);
+    sessionStorage.setItem('lms_active_lesson', moduleId);
+    sessionStorage.setItem('lms_active_page', nextPageId);
+    sessionStorage.setItem('lms_active_task', '1');
+    try {
+      sessionStorage.setItem('lms_source_tab', sourceTab);
+    } catch {}
+
+    const nextUrl = `/?course=${encodeURIComponent(resolvedCourseId)}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(nextPageId)}&task=1${sourceTab ? `&sourceTab=${encodeURIComponent(sourceTab)}` : ''}`;
+    window.history.pushState({}, '', nextUrl);
+    setCourseId(resolvedCourseId);
     setLessonId(moduleId);
-    setPageId(pageId);
+    setPageId(nextPageId);
   }
 
   // ─── Role Check redirects ──────────────────────────
@@ -703,9 +791,17 @@ export default function App() {
     );
   }
 
+  const isTeacherOrAdmin = role === 'teacher' || role === 'admin';
+
   // Render TeacherDashboard only if they are not currently previewing a specific page
-  if ((role === 'teacher' || role === 'admin') && !pageId) {
-    return <TeacherDashboard />;
+  if (isTeacherOrAdmin && !pageId) {
+    return (
+      <TeacherDashboard
+        initialCourseId={courseId || 'VP2'}
+        initialLessonId={lessonId}
+        onOpenPage={openPageFromDashboard}
+      />
+    );
   }
 
   // ─── H5P Player view ────────────────────────────────
@@ -714,7 +810,7 @@ export default function App() {
       <H5pPlayerPage
         activity={h5pActivity}
         courseId={courseId}
-        onBack={() => {
+        onBack={isTeacherOrAdmin ? backToTeacherDashboard : () => {
           if (h5pActivity?.moduleId) {
             const nextUrl = `/?course=${encodeURIComponent(courseId)}&lesson=${encodeURIComponent(h5pActivity.moduleId)}`;
             window.history.pushState({}, '', nextUrl);
@@ -725,7 +821,7 @@ export default function App() {
             backToLessonCatalog();
           }
         }}
-        onBackToCourses={backToCourseCatalog}
+        onBackToCourses={isTeacherOrAdmin ? backToTeacherDashboard : backToCourseCatalog}
       />
     );
   }
@@ -778,9 +874,19 @@ export default function App() {
           courseId={courseId}
           lessonId={lessonId}
           pageId={pageId}
-          onBackToPages={backToLessonCatalog}
-          onBackToLessons={backToLessonCatalog}
-          onBackToCourses={backToCourseCatalog}
+          role={role}
+          userRole={role}
+          isTeacherOrAdmin={isTeacherOrAdmin}
+          onBack={isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog}
+          onBackToPages={
+            isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog
+          }
+          onBackToLessons={
+            isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog
+          }
+          onBackToCourses={
+            isTeacherOrAdmin ? backToTeacherDashboard : backToCourseCatalog
+          }
         />
       </Suspense>
     );
@@ -794,9 +900,19 @@ export default function App() {
         courseId={courseId}
         lessonId={lessonId}
         pageId={pageId}
-        onBackToPages={backToLessonCatalog}
-        onBackToLessons={backToLessonCatalog}
-        onBackToCourses={backToCourseCatalog}
+        role={role}
+        userRole={role}
+        isTeacherOrAdmin={isTeacherOrAdmin}
+        onBack={isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog}
+        onBackToPages={
+          isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog
+        }
+        onBackToLessons={
+          isTeacherOrAdmin ? backToTeacherDashboard : backToLessonCatalog
+        }
+        onBackToCourses={
+          isTeacherOrAdmin ? backToTeacherDashboard : backToCourseCatalog
+        }
       />
     );
   }

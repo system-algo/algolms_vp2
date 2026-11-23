@@ -1,36 +1,123 @@
 import { getMainPlatformSignOutUrl } from '../lib/authConfig';
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import TeacherCoursePreview from '../components/TeacherCoursePreview.jsx';
 import customNames from '../config/mapping.json';
-
-function isModuleCatalogEntry(entry) {
-  const id = String(entry?.id || entry?.moduleId || '').trim();
-  if (!id || /L\d+/i.test(id)) return false;
-  return /(?:^|[_-])M\d+(?:[_-]|$)|graduation/i.test(id);
-}
+import MessagingPage from '../features/messaging/pages/MessagingPage.jsx';
+import { isMessagingAllowedForUser } from '../features/messaging/utils/messagingAuth.js';
 
 const CATALOG_URL = '/courses/index.json';
 
-export default function TeacherDashboard() {
+async function fetchWithTimeoutAndRetry(url, options = {}, { timeoutMs = 8000, retries = 2, delayMs = 1000 } = {}) {
+  let lastError = null;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, {
+        ...options,
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      if (res.ok) {
+        return res;
+      }
+      if (res.status === 404 || (res.status >= 400 && res.status < 500 && res.status !== 408 && res.status !== 429)) {
+        return res;
+      }
+      throw new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      clearTimeout(timer);
+      lastError = err;
+      if (attempt < retries) {
+        const backoff = delayMs * Math.pow(1.5, attempt);
+        await new Promise((r) => setTimeout(r, backoff));
+      }
+    }
+  }
+  throw lastError || new Error(`Failed to fetch ${url} after ${retries + 1} attempts`);
+}
+
+export default function TeacherDashboard({
+  initialCourseId = '',
+  initialLessonId = '',
+  initialSelectedLessonId = '',
+  initialSelectedPageId = '',
+  initialActiveTab = 'classes',
+  onOpenPage,
+}) {
+  const supabaseUrl = localStorage.getItem('lms_supabase_url');
+  const supabaseKey = localStorage.getItem('lms_supabase_key');
+  const currentTeacherEmail =
+    localStorage.getItem('lms_user_email') ||
+    localStorage.getItem('lms_student_email') ||
+    (typeof window !== 'undefined' ? (new URLSearchParams(window.location.search).get('teacherEmail') || new URLSearchParams(window.location.search).get('email')) : '') ||
+    '';
+  const teacherDisplayName = currentTeacherEmail
+    ? currentTeacherEmail
+        .split('@')[0]
+        .split(/[._-]+/)
+        .filter(Boolean)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ')
+    : 'Teacher';
+  const isDbMode = !!(supabaseUrl && supabaseKey);
+  const canUseMessaging = isMessagingAllowedForUser(currentTeacherEmail, 'teacher');
   const getStoredCourseId = () =>
     sessionStorage.getItem('lms_course_id') ||
     localStorage.getItem('lms_course_id') ||
     '';
 
   const mapCatalogIdToDbId = (id) => {
+    if (id === 'PTSY1') return '863374997183';
+    if (id === 'PTPY1') return '870430906310';
     const storedCourseId = getStoredCourseId();
+    if (id === 'VP2' || id === 'VP') return storedCourseId || 'VP2';
     return storedCourseId || id;
   };
 
   const mapDbIdToCatalogId = (id) => {
+    if (id === '863374997183') return 'PTSY1';
+    if (id === '870430906310') return 'PTPY1';
     const storedCourseId = getStoredCourseId();
-    const catalogCourseId = catalog?.courses?.[0]?.id || '';
-
+    const catalogCourseId = catalog?.courses?.[0]?.id || 'VP2';
     if (storedCourseId && String(id) === String(storedCourseId)) {
       return catalogCourseId || id;
     }
-
     return id;
+  };
+
+  const sortModulesHelper = (modulesList) => {
+    if (!modulesList) return [];
+    return [...modulesList].sort((a, b) => {
+      const aIsGraduation = /graduation/i.test(`${a?.title || ''} ${a?.id || ''}`);
+      const bIsGraduation = /graduation/i.test(`${b?.title || ''} ${b?.id || ''}`);
+
+      if (aIsGraduation !== bIsGraduation) {
+        return aIsGraduation ? 1 : -1;
+      }
+
+      const moduleNumberA = parseInt(
+        String(a?.id || '').match(/M(\d+)/i)?.[1] || '999',
+        10
+      );
+      const moduleNumberB = parseInt(
+        String(b?.id || '').match(/M(\d+)/i)?.[1] || '999',
+        10
+      );
+
+      return moduleNumberA - moduleNumberB;
+    });
+  };
+
+  const getCourseCodeDisplay = (code) => {
+    const raw = String(code || selectedCourseId || '').trim().toUpperCase();
+    if (raw === 'VP' || raw === 'VP2') {
+      return 'VP2';
+    }
+    if (raw === 'PTSY1' || (typeof window !== 'undefined' && window.location.hostname.includes('ptsy1.'))) {
+      return 'PTSY1';
+    }
+    return raw || 'VP2';
   };
 
   const getValidSupabaseToken = (anonKey) => {
@@ -57,84 +144,25 @@ export default function TeacherDashboard() {
     return cachedToken;
   };
 
-  const fetchStudentProfilesAndMerge = async (membersList, supabaseUrl, supabaseKey, supabaseToken) => {
-    if (!Array.isArray(membersList) || membersList.length === 0) return [];
-    
-    try {
-      const emails = membersList.map((m) => m.email).filter(Boolean);
-      if (emails.length === 0) {
-        return membersList.map((m) => ({
-          id: m.google_user_id || m.email,
-          name: m.name || m.email.split('@')[0],
-          email: m.email,
-        }));
-      }
-
-      const formattedEmails = emails.map((e) => `"${e.trim().toLowerCase()}"`).join(',');
-      const url = `${supabaseUrl}/rest/v1/user_profiles?email=in.(${encodeURIComponent(formattedEmails)})&select=*`;
-      
-      const res = await fetch(url, {
-        headers: {
-          'apikey': supabaseKey,
-          'Authorization': `Bearer ${supabaseToken}`
-        }
-      });
-      if (!res.ok) throw new Error(`Profiles fetch failed: ${res.status}`);
-      const profiles = await res.json();
-      console.log('TeacherDashboard: resolved user_profiles:', profiles);
-
-      // Create a map by email
-      const profileMap = {};
-      if (Array.isArray(profiles)) {
-        profiles.forEach((p) => {
-          if (p.email) {
-            profileMap[p.email.toLowerCase().trim()] = p;
-          }
-        });
-      }
-
-      return membersList.map((m) => {
-        const emailKey = String(m.email || '').toLowerCase().trim();
-        const profile = profileMap[emailKey] || {};
-        
-        // Resolve student name: profile name fallback to member name fallback to email prefix
-        const resolvedName = profile.name || profile.display_name || profile.full_name || m.name || emailKey.split('@')[0];
-        
-        return {
-          id: m.google_user_id || m.email,
-          name: resolvedName,
-          email: m.email,
-          username: profile.username || '',
-          password: profile.password || '',
-          studentCode: profile.student_code || profile['student code'] || profile.student_id || m.x_studio_student_code || '',
-          gender: profile.gender || 'male',
-          courseId: m.courseId,
-          courseTitle: m.courseTitle
-        };
-      });
-    } catch (err) {
-      console.warn('TeacherDashboard: failed to merge student profiles:', err);
-      return membersList.map((m) => ({
-        id: m.google_user_id || m.email,
-        name: m.name || m.email.split('@')[0],
-        email: m.email,
-        courseId: m.courseId,
-        courseTitle: m.courseTitle
-      }));
-    }
-  };
-
   const [catalog, setCatalog] = useState(null);
-  const [selectedCourseId, setSelectedCourseId] = useState('');
+  const [selectedCourseId, setSelectedCourseId] = useState(
+    sessionStorage.getItem('teacher_selected_course_id') || initialCourseId || ''
+  );
   const [selectedCourseData, setSelectedCourseData] = useState(null);
-  const [selectedModuleId, setSelectedModuleId] = useState('');
+  const [selectedModuleId, setSelectedModuleId] = useState(
+    sessionStorage.getItem('teacher_selected_module_id') || ''
+  );
   const [selectedModuleData, setSelectedModuleData] = useState(null);
-  const [selectedLessonId, setSelectedLessonId] = useState('');
+  const [selectedLessonId, setSelectedLessonId] = useState(
+    sessionStorage.getItem('teacher_selected_lesson_id') || initialSelectedLessonId || ''
+  );
 
   const [myClassesOpen, setMyClassesOpen] = useState(true);
 
   // Preview Mode State
-  const [selectedPreviewCourseId, setSelectedPreviewCourseId] = useState('');
+  const [selectedPreviewCourseId, setSelectedPreviewCourseId] = useState(
+    sessionStorage.getItem('teacher_selected_preview_course_id') || (initialActiveTab === 'preview' ? initialCourseId : '')
+  );
 
   // DB Data
   const [students, setStudents] = useState([]);
@@ -145,7 +173,9 @@ export default function TeacherDashboard() {
   const [profileTeacherName, setProfileTeacherName] = useState('');
 
   // Tab navigation states
-  const [activeTab, setActiveTab] = useState('classes');
+  const [activeTab, setActiveTab] = useState(
+    sessionStorage.getItem('teacher_active_tab') || initialActiveTab || 'classes'
+  );
   const [allStudents, setAllStudents] = useState([]);
   const [allAttempts, setAllAttempts] = useState([]);
   const [tabSelectedStudent, setTabSelectedStudent] = useState(null);
@@ -155,7 +185,9 @@ export default function TeacherDashboard() {
   // My Classes view controls
   const [classProgressFilter, setClassProgressFilter] = useState('all');
   const [classSortMode, setClassSortMode] = useState('progress-asc');
-  const [selectedPageId, setSelectedPageId] = useState('overview');
+  const [selectedPageId, setSelectedPageId] = useState(
+    sessionStorage.getItem('teacher_selected_page_id') || initialSelectedPageId || 'overview'
+  );
   
   // Toast notifier
   const [toasts, setToasts] = useState([]);
@@ -170,25 +202,36 @@ export default function TeacherDashboard() {
     }, 3000);
   };
 
-  const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL;
-  const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY;
-  const currentTeacherEmail =
-    localStorage.getItem('lms_user_email') ||
-    localStorage.getItem('lms_student_email') ||
-    '';
-  const teacherDisplayName = profileTeacherName || (currentTeacherEmail
-    ? currentTeacherEmail
-        .split('@')[0]
-        .split(/[._-]+/)
-        .filter(Boolean)
-        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-        .join(' ')
-    : 'Teacher');
-  const isDbMode = !!(supabaseUrl && supabaseKey);
+  useEffect(() => {
+    if (selectedCourseId) sessionStorage.setItem('teacher_selected_course_id', selectedCourseId);
+  }, [selectedCourseId]);
+
+  useEffect(() => {
+    if (selectedModuleId) sessionStorage.setItem('teacher_selected_module_id', selectedModuleId);
+  }, [selectedModuleId]);
+
+  useEffect(() => {
+    if (selectedLessonId) sessionStorage.setItem('teacher_selected_lesson_id', selectedLessonId);
+  }, [selectedLessonId]);
+
+  useEffect(() => {
+    sessionStorage.setItem('teacher_selected_page_id', selectedPageId || 'overview');
+  }, [selectedPageId]);
+
+  useEffect(() => {
+    sessionStorage.setItem('teacher_active_tab', activeTab || 'classes');
+  }, [activeTab]);
+
+  useEffect(() => {
+    sessionStorage.setItem('teacher_selected_preview_course_id', selectedPreviewCourseId || '');
+  }, [selectedPreviewCourseId]);
+
+// Declarations moved to top of component
 
   const handleLogout = () => {
-    localStorage.clear();
     const targetUrl = getMainPlatformSignOutUrl();
+    localStorage.clear();
+
     try {
       if (window.self !== window.top) {
         window.top.location.href = targetUrl;
@@ -207,114 +250,79 @@ export default function TeacherDashboard() {
       .then((data) => {
         setCatalog(data);
         if (data.courses && data.courses.length > 0) {
-          const firstCourse = data.courses[0];
-          setSelectedCourseId(firstCourse.id);
+          const matchedCourse = initialCourseId
+            ? data.courses.find((c) => c.id === initialCourseId)
+            : null;
+          const targetCourse = matchedCourse || data.courses[0];
+          setSelectedCourseId(targetCourse.id);
+          if (initialActiveTab === 'preview') {
+            setSelectedPreviewCourseId(targetCourse.id);
+          }
         }
       })
       .catch((err) => console.error('Failed to load courses list:', err));
-  }, []);
+  }, [initialCourseId, initialActiveTab]);
 
   // Load Course Details (Modules)
   useEffect(() => {
-    if (!selectedCourseId || !catalog) return;
-
-    const courseInfo = catalog.courses.find(
-      (course) => course.id === selectedCourseId
-    );
+    if (!catalog || !catalog.courses || catalog.courses.length === 0) return;
+    const courseInfo =
+      catalog.courses.find((c) => c.id === selectedCourseId) ||
+      catalog.courses[0];
     if (!courseInfo) return;
+    const courseIndexUrl = courseInfo.index || `/courses/${selectedCourseId}/index.json`;
 
-    const courseUrl =
-      courseInfo.index ||
-      `/courses/${encodeURIComponent(selectedCourseId)}/index.json`;
-
-    fetch(courseUrl)
-      .then((res) => {
-        if (!res.ok) throw new Error('Failed to load course details');
-        return res.json();
-      })
+    fetch(courseIndexUrl)
+      .then((res) => res.json())
       .then(async (data) => {
-        const modules = (data.lessons || data.modules || courseInfo.lessons || [])
-          .filter(isModuleCatalogEntry)
-          .sort((a, b) => {
-            const numA = parseInt(String(a.id || '').match(/M(\d+)/i)?.[1] || '999', 10);
-            const numB = parseInt(String(b.id || '').match(/M(\d+)/i)?.[1] || '999', 10);
-            return numA - numB;
-          })
-          .map((module) => ({
-            ...module,
-            title: customNames?.modules?.[module.id] || module.title,
-          }));
+        setSelectedCourseData(data);
+        if (data.lessons && data.lessons.length > 0) {
+          // Fetch all modules' data in parallel to calculate absolute lesson offsets
+          const modulePromises = data.lessons.map((mod) => {
+            const indexUrl = mod.index || `/courses/${data.id || 'VP2'}/${mod.id}/index.json`;
+            return fetch(indexUrl)
+              .then((r) => r.ok ? r.json() : null)
+              .catch(() => null);
+          });
+          
+          const modulesData = await Promise.all(modulePromises);
+          setCourseModulesData(modulesData.filter(Boolean));
 
-        // Fetch all modules' data in parallel to calculate absolute lesson offsets
-        const modulePromises = modules.map((mod) => {
-          const indexUrl = mod.index || `/courses/${encodeURIComponent(selectedCourseId)}/${encodeURIComponent(mod.id)}/index.json`;
-          return fetch(indexUrl)
-            .then((r) => r.ok ? r.json() : null)
-            .catch(() => null);
-        });
-        const modulesData = await Promise.all(modulePromises);
-        setCourseModulesData(modulesData.filter(Boolean));
-
-        // Also set resolved database course ID
-        setResolvedCourseId(mapCatalogIdToDbId(selectedCourseId));
-
-        setSelectedCourseData({
-          ...data,
-          lessons: modules,
-        });
-
-        setSelectedModuleId((currentModuleId) => {
-          if (modules.some((module) => module.id === currentModuleId)) {
-            return currentModuleId;
-          }
-          return modules[0]?.id || '';
-        });
-        setSelectedLessonId('');
+          // In catalog structure, lessons represent modules
+          const savedModuleId = sessionStorage.getItem('teacher_selected_module_id');
+          const matchedModule = initialLessonId
+            ? data.lessons.find((l) => l.id === initialLessonId)
+            : savedModuleId
+              ? data.lessons.find((l) => l.id === savedModuleId)
+              : null;
+          const sorted = sortModulesHelper(data.lessons);
+          const targetModule = matchedModule || sorted[0] || data.lessons[0];
+          setSelectedModuleId(targetModule.id);
+        }
       })
-      .catch((error) => {
-        console.error('Failed to load course details:', error);
-        setSelectedCourseData(null);
-        setSelectedModuleId('');
-      });
-  }, [selectedCourseId, catalog]);
+      .catch((err) => console.error('Failed to load course details:', err));
+  }, [selectedCourseId, catalog, initialLessonId]);
 
   // Load Module Details (Pages)
   useEffect(() => {
     if (!selectedModuleId || !selectedCourseData) return;
+    const modInfo = selectedCourseData.lessons.find((l) => l.id === selectedModuleId);
+    if (!modInfo) return;
 
-    const moduleInfo = selectedCourseData.lessons.find(
-      (module) => module.id === selectedModuleId
-    );
-    if (!moduleInfo) return;
-
-    // VP stores its module pages directly in /courses/VP/index.json.
-    if (
-      Array.isArray(moduleInfo.pages) ||
-      Array.isArray(moduleInfo.lessons)
-    ) {
-      setSelectedModuleData(moduleInfo);
-      setSelectedLessonId('');
+    if (modInfo.pages || modInfo.lessons) {
+      setSelectedModuleData(modInfo);
       return;
     }
 
-    const moduleUrl =
-      moduleInfo.index ||
-      `/courses/${encodeURIComponent(selectedCourseId)}/${encodeURIComponent(selectedModuleId)}/index.json`;
+    if (!modInfo.index) return;
 
-    fetch(moduleUrl)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Failed to load module ${selectedModuleId}`);
-        return res.json();
-      })
+    fetch(modInfo.index)
+      .then((res) => res.json())
       .then((data) => {
         setSelectedModuleData(data);
-        setSelectedLessonId('');
       })
-      .catch((error) => {
-        console.error('Failed to load module details:', error);
-        setSelectedModuleData(moduleInfo);
-      });
-  }, [selectedCourseId, selectedModuleId, selectedCourseData]);
+      .catch((err) => console.error('Failed to load module details:', err));
+  }, [selectedModuleId, selectedCourseData]);
 
   // Query DB Students & Attempts for the selected course dynamically
   useEffect(() => {
@@ -334,126 +342,197 @@ export default function TeacherDashboard() {
       dbCourseId
     });
 
-    // 1. Resolve real numeric course ID from code or saved course ID (e.g. 'PTSY1')
-    const savedCourseId = localStorage.getItem('lms_course_id');
-    const lookupId = savedCourseId || dbCourseId;
-    const courseLookupFilter = /^\d+$/.test(String(lookupId))
-      ? `id=eq.${encodeURIComponent(lookupId)}`
-      : `code=eq.${encodeURIComponent(lookupId)}`;
-    const coursesUrl = `${supabaseUrl}/rest/v1/classroom_courses?${courseLookupFilter}&select=id,code,title`;
-    fetch(coursesUrl, {
-      headers: {
-        'apikey': supabaseKey,
-        'Authorization': `Bearer ${supabaseToken}`
+    const fetchStudentsAndProgress = (realCourseId) => {
+      console.log('TeacherDashboard: fetching details for realCourseId:', realCourseId);
+      setResolvedCourseId(realCourseId);
+      // 2. Fetch course members (students) using the resolved realCourseId
+      const membersUrl = `${supabaseUrl}/rest/v1/classroom_course_members?course_id=eq.${realCourseId}&role=eq.student&select=google_user_id,name,email`;
+      console.log('TeacherDashboard: fetching members from:', membersUrl);
+      fetchWithTimeoutAndRetry(membersUrl, {
+        headers: {
+          'apikey': supabaseKey,
+          'Authorization': `Bearer ${supabaseToken}`
+        }
+      })
+        .then((res) => {
+          console.log('TeacherDashboard: membersUrl response status:', res.status);
+          if (!res.ok) throw new Error(`Failed to fetch members (status ${res.status})`);
+          return res.json();
+        })
+        .then((data) => {
+          console.log('TeacherDashboard: members data returned:', data);
+          if (Array.isArray(data) && data.length > 0) {
+            console.log(`TeacherDashboard: Found ${data.length} real students in DB. Fetching profiles...`);
+            const emails = data.map((m) => m.email).filter(Boolean);
+            const usernames = emails.map((e) => e.split('@')[0]);
+            
+            const fetchProfiles = () => {
+              if (usernames.length === 0) return Promise.resolve([]);
+              const profilesUrl = `${supabaseUrl}/rest/v1/user_profiles?username=in.(${usernames.map(u => `"${u}"`).join(',')})&select=*`;
+              return fetchWithTimeoutAndRetry(profilesUrl, {
+                headers: {
+                  'apikey': supabaseKey,
+                  'Authorization': `Bearer ${supabaseToken}`
+                }
+              })
+                .then(res => res.ok ? res.json() : [])
+                .catch(() => []);
+            };
+
+            fetchProfiles().then((profiles) => {
+              console.log('TeacherDashboard: fetched profiles:', profiles);
+              const studentsList = data.map((m) => {
+                const emailLower = m.email?.toLowerCase();
+                const usernamePart = m.email?.split('@')[0]?.toLowerCase();
+                
+                const profile = profiles.find(p => 
+                  p.email?.toLowerCase() === emailLower || 
+                  p.username?.toLowerCase() === usernamePart
+                );
+
+                const dbName = profile?.name || m.name || m.email.split('@')[0];
+                const dbCode = profile ? (profile['student code'] || profile.student_code) : '';
+                const displayName = dbCode ? `${dbName} ${dbCode}` : dbName;
+
+                return {
+                  id: m.google_user_id || m.email,
+                  name: displayName,
+                  email: m.email,
+                  username: profile?.username || usernamePart,
+                  password: profile?.password || ''
+                };
+              });
+              setStudents(studentsList);
+            });
+          } else {
+            setStudents([]);
+          }
+        })
+        .catch((err) => {
+          console.error('TeacherDashboard: error loading course members:', err);
+          setStudents([]);
+        });
+
+      // 3. Fetch progress from activity_progress using either realCourseId or the code selectedCourseId
+      const attemptsUrl = `${supabaseUrl}/rest/v1/activity_progress?or=(course_id.eq.${realCourseId},course_id.eq.${selectedCourseId})&select=user_id,course_id,lesson_id,page_id,task_id,status,is_completed`;
+      console.log('TeacherDashboard: fetching progress from:', attemptsUrl);
+      fetchWithTimeoutAndRetry(attemptsUrl, {
+        headers: {
+          'apikey': supabaseKey,
+          'Authorization': `Bearer ${supabaseToken}`
+        }
+      })
+        .then((res) => {
+          console.log('TeacherDashboard: attemptsUrl (activity_progress) response status:', res.status);
+          if (!res.ok) throw new Error(`Failed to fetch progress (status ${res.status})`);
+          return res.json();
+        })
+        .then((data) => {
+          console.log(`TeacherDashboard: fetched ${data?.length || 0} progress rows from DB.`);
+          if (Array.isArray(data)) {
+            setDbAttempts(data);
+          }
+        })
+        .catch((err) => {
+          console.error('TeacherDashboard: error fetching progress:', err);
+          setDbAttempts([]);
+        });
+    };
+
+    const resolveTeacherCourseId = async () => {
+      const teacherEmail = currentTeacherEmail;
+      if (!teacherEmail) return null;
+      try {
+        const teacherClassUrl = `${supabaseUrl}/rest/v1/classroom_course_members?email=eq.${teacherEmail}&role=eq.teacher&select=course_id,course_code,name`;
+        const res = await fetchWithTimeoutAndRetry(teacherClassUrl, {
+          headers: {
+            'apikey': supabaseKey,
+            'Authorization': `Bearer ${supabaseToken}`
+          }
+        });
+        if (!res.ok) return null;
+        const memberships = await res.json();
+        if (!Array.isArray(memberships) || memberships.length === 0) return null;
+
+        // Resolve teacher display name
+        const teacherMember = memberships.find((m) => m.name);
+        if (teacherMember && teacherMember.name) {
+          setProfileTeacherName(teacherMember.name);
+        }
+
+        // 1. Try to match by lms_course_id from localStorage first
+        const savedCourseId = localStorage.getItem('lms_course_id');
+        if (savedCourseId) {
+          const matchBySavedId = memberships.find(m => String(m.course_id) === String(savedCourseId));
+          if (matchBySavedId) {
+            console.log('TeacherDashboard: matched class ID by saved lms_course_id:', matchBySavedId.course_id);
+            return matchBySavedId.course_id;
+          }
+        }
+
+        // 2. Try to find membership with matching or containing course_code
+        const matchByCode = memberships.find(m => 
+          m.course_code === selectedCourseId || 
+          (m.course_code && selectedCourseId && m.course_code.toUpperCase().includes(selectedCourseId.toUpperCase()))
+        );
+        if (matchByCode && matchByCode.course_id) {
+          console.log('TeacherDashboard: matched class ID by course_code:', matchByCode.course_id);
+          return matchByCode.course_id;
+        }
+
+        // 2. If not matched, query classroom_courses to resolve by code/id
+        const teacherCourseIds = memberships.map(m => m.course_id).filter(Boolean);
+        if (teacherCourseIds.length > 0) {
+          const coursesUrl = `${supabaseUrl}/rest/v1/classroom_courses?id=in.(${teacherCourseIds.join(',')})&select=id,code`;
+          const coursesRes = await fetchWithTimeoutAndRetry(coursesUrl, {
+            headers: {
+              'apikey': supabaseKey,
+              'Authorization': `Bearer ${supabaseToken}`
+            }
+          });
+          if (coursesRes.ok) {
+            const coursesList = await coursesRes.json();
+            const matchedCourse = coursesList.find(c => c.code === selectedCourseId || c.id === dbCourseId);
+            if (matchedCourse) {
+              console.log('TeacherDashboard: matched class ID via courses lookup:', matchedCourse.id);
+              return matchedCourse.id;
+            }
+          }
+        }
+      } catch (err) {
+        console.warn('TeacherDashboard: failed to dynamically resolve teacher course ID:', err);
       }
-    })
-      .then((res) => {
-        console.log('TeacherDashboard: coursesUrl response status:', res.status);
-        if (!res.ok) throw new Error(`Failed to resolve course ID (status ${res.status})`);
-        return res.json();
-      })
-      .then((courseData) => {
-        console.log('TeacherDashboard: resolved courseData:', courseData);
-        const realCourseId = (courseData && courseData[0] && courseData[0].id) || dbCourseId;
-        console.log('TeacherDashboard: resolved realCourseId:', realCourseId);
+      return null;
+    };
 
-        // 2. Fetch course members (students) using the resolved realCourseId
-        const membersUrl = `${supabaseUrl}/rest/v1/classroom_course_members?course_id=eq.${realCourseId}&role=eq.student&select=google_user_id,name,email`;
-        console.log('TeacherDashboard: fetching members from:', membersUrl);
-        fetch(membersUrl, {
+    resolveTeacherCourseId().then((resolvedId) => {
+      if (resolvedId) {
+        fetchStudentsAndProgress(resolvedId);
+      } else {
+        // Fall back to resolving from dbCourseId by querying classroom_courses
+        const coursesUrl = `${supabaseUrl}/rest/v1/classroom_courses?or=(code.eq.${dbCourseId},id.eq.${dbCourseId})&select=id`;
+        fetchWithTimeoutAndRetry(coursesUrl, {
           headers: {
             'apikey': supabaseKey,
             'Authorization': `Bearer ${supabaseToken}`
           }
         })
           .then((res) => {
-            console.log('TeacherDashboard: membersUrl response status:', res.status);
-            if (!res.ok) throw new Error(`Failed to fetch members (status ${res.status})`);
+            if (!res.ok) throw new Error(`Failed to resolve course ID (status ${res.status})`);
             return res.json();
           })
-          .then((data) => {
-            console.log('TeacherDashboard: members data returned:', data);
-            if (Array.isArray(data) && data.length > 0) {
-              console.log(`TeacherDashboard: Found ${data.length} real students in DB. Setting state.`);
-              fetchStudentProfilesAndMerge(data, supabaseUrl, supabaseKey, supabaseToken)
-                .then((merged) => setStudents(merged));
-            } else {
-              setStudents([]);
-            }
+          .then((courseData) => {
+            const realCourseId = (courseData && courseData[0] && courseData[0].id) || dbCourseId;
+            fetchStudentsAndProgress(realCourseId);
           })
           .catch((err) => {
-            console.error('TeacherDashboard: error loading course members:', err);
-            setStudents([]);
+            console.error('TeacherDashboard: error resolving via fallback coursesUrl:', err);
+            fetchStudentsAndProgress(dbCourseId);
           });
+      }
+    });
 
-        // 3. Fetch progress from activity_progress using either realCourseId or the code selectedCourseId
-        const attemptsUrl = `${supabaseUrl}/rest/v1/activity_progress?or=(course_id.eq.${realCourseId},course_id.eq.${selectedCourseId})&select=user_id,course_id,lesson_id,page_id,task_id,status,is_completed`;
-        console.log('TeacherDashboard: fetching progress from:', attemptsUrl);
-        fetch(attemptsUrl, {
-          headers: {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseToken}`
-          }
-        })
-          .then((res) => {
-            console.log('TeacherDashboard: attemptsUrl (activity_progress) response status:', res.status);
-            if (!res.ok) throw new Error(`Failed to fetch progress (status ${res.status})`);
-            return res.json();
-          })
-          .then((data) => {
-            console.log(`TeacherDashboard: fetched ${data?.length || 0} progress rows from DB.`);
-            if (Array.isArray(data)) {
-              setDbAttempts(data);
-            }
-          })
-          .catch((err) => {
-            console.error('TeacherDashboard: error fetching progress:', err);
-            setDbAttempts([]);
-          });
-      })
-      .catch((err) => {
-        console.error('TeacherDashboard: error in resolution chain, running direct fallback:', err);
-        // Fallback directly using dbCourseId
-        const membersUrl = `${supabaseUrl}/rest/v1/classroom_course_members?course_id=eq.${dbCourseId}&role=eq.student&select=google_user_id,name,email`;
-        fetch(membersUrl, {
-          headers: {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseToken}`
-          }
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            if (Array.isArray(data) && data.length > 0) {
-              fetchStudentProfilesAndMerge(data, supabaseUrl, supabaseKey, supabaseToken)
-                .then((merged) => setStudents(merged));
-            } else {
-              setStudents([]);
-            }
-          })
-          .catch((err) => {
-            console.error('TeacherDashboard: direct member fallback failed:', err);
-            setStudents([]);
-          });
-
-        const attemptsUrl = `${supabaseUrl}/rest/v1/activity_progress?or=(course_id.eq.${dbCourseId},course_id.eq.${selectedCourseId})&select=user_id,course_id,lesson_id,page_id,task_id,status,is_completed`;
-        fetch(attemptsUrl, {
-          headers: {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseToken}`
-          }
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            if (Array.isArray(data)) {
-              setDbAttempts(data);
-            }
-          })
-          .catch((err) => {
-            console.error('TeacherDashboard: direct progress fallback failed:', err);
-            setDbAttempts([]);
-          });
-      });
-  }, [selectedCourseId, isDbMode, supabaseUrl, supabaseKey]);
+  }, [selectedCourseId, isDbMode, supabaseUrl, supabaseKey, currentTeacherEmail]);
 
   // Centralized load for the 'Students' directory tab
   useEffect(() => {
@@ -468,7 +547,7 @@ export default function TeacherDashboard() {
     const supabaseToken = getValidSupabaseToken(supabaseKey);
 
     // Step 1: Fetch classroom_course_memberships where role is teacher for this email
-    const teacherCoursesUrl = `${supabaseUrl}/rest/v1/classroom_course_members?email=eq.${teacherEmail}&role=eq.teacher&select=course_id`;
+    const teacherCoursesUrl = `${supabaseUrl}/rest/v1/classroom_course_members?email=eq.${teacherEmail}&role=eq.teacher&select=course_id,name`;
     
     fetch(teacherCoursesUrl, {
       headers: {
@@ -488,11 +567,17 @@ export default function TeacherDashboard() {
           return null;
         }
 
+        // Resolve teacher display name
+        const teacherMember = memberships.find((m) => m.name);
+        if (teacherMember && teacherMember.name) {
+          setProfileTeacherName(teacherMember.name);
+        }
+
         const teacherCourseIds = memberships.map((m) => m.course_id);
 
         // Step 2: Fetch classroom_courses corresponding to only the courses taught by this teacher
         const coursesUrl = `${supabaseUrl}/rest/v1/classroom_courses?id=in.(${teacherCourseIds.join(',')})&select=id,code,title`;
-        return fetch(coursesUrl, {
+        return fetchWithTimeoutAndRetry(coursesUrl, {
           headers: {
             'apikey': supabaseKey,
             'Authorization': `Bearer ${supabaseToken}`
@@ -512,19 +597,11 @@ export default function TeacherDashboard() {
           return;
         }
 
-        // Keep courses represented by this repo's catalog. While the code column is
-        // being backfilled, the numeric course ID handed off by the platform is also accepted.
-        const catalogCourseKeys = new Set(
-          (catalog?.courses || []).flatMap((course) => [
-            String(course.id || ''),
-            String(course.code || ''),
-            String(mapCatalogIdToDbId(course.id) || ''),
-          ]).filter(Boolean)
-        );
-
-        const activeCoursesList = coursesList.filter((course) =>
-          catalogCourseKeys.has(String(course.id || '')) ||
-          catalogCourseKeys.has(String(course.code || ''))
+        // Filter: only keep courses that are defined in the active catalog
+        const catalogIds = catalog?.courses.map((x) => x.id) || [];
+        const catalogDbCourseIds = catalog?.courses.map((x) => mapCatalogIdToDbId(x.id)) || [];
+        const activeCoursesList = coursesList.filter(
+          (c) => catalogDbCourseIds.includes(c.id) || catalogDbCourseIds.includes(c.code) || catalogIds.includes(c.code) || catalogIds.includes(c.id)
         );
 
         if (activeCoursesList.length === 0) {
@@ -541,7 +618,7 @@ export default function TeacherDashboard() {
         activeCoursesList.forEach((c) => {
           // Fetch members (students) for this course
           const mUrl = `${supabaseUrl}/rest/v1/classroom_course_members?course_id=eq.${c.id}&role=eq.student&select=google_user_id,name,email`;
-          const mPromise = fetch(mUrl, {
+          const mPromise = fetchWithTimeoutAndRetry(mUrl, {
             headers: { 'apikey': supabaseKey, 'Authorization': `Bearer ${supabaseToken}` }
           })
             .then((res) => res.json())
@@ -559,9 +636,9 @@ export default function TeacherDashboard() {
           memberPromises.push(mPromise);
 
           // Fetch progress (only for this course)
-          const catalogId = c.code || mapDbIdToCatalogId(c.id);
+          const catalogId = mapDbIdToCatalogId(c.id);
           const pUrl = `${supabaseUrl}/rest/v1/activity_progress?or=(course_id.eq.${c.id},course_id.eq.${catalogId})&select=user_id,course_id,lesson_id,page_id,task_id,status,is_completed`;
-          const pPromise = fetch(pUrl, {
+          const pPromise = fetchWithTimeoutAndRetry(pUrl, {
             headers: { 'apikey': supabaseKey, 'Authorization': `Bearer ${supabaseToken}` }
           })
             .then((res) => res.json())
@@ -572,44 +649,68 @@ export default function TeacherDashboard() {
 
         Promise.all(memberPromises).then((results) => {
           const mergedMembers = results.flat();
-          
-          fetchStudentProfilesAndMerge(mergedMembers, supabaseUrl, supabaseKey, supabaseToken)
-            .then((mergedWithProfiles) => {
-              // Group members by email so a student enrolled in multiple courses has a single profile containing all courses
-              const studentMap = {};
-              mergedWithProfiles.forEach((m) => {
-                if (!m.email) return;
-                const email = m.email.toLowerCase();
-                if (!studentMap[email]) {
-                  studentMap[email] = {
-                    id: m.id,
-                    name: m.name,
-                    email: m.email,
-                    username: m.username,
-                    password: m.password,
-                    studentCode: m.studentCode,
-                    gender: m.gender,
-                    courses: []
-                  };
-                }
-                // Check if course already added
-                if (!studentMap[email].courses.some((x) => x.id === m.courseId)) {
-                  studentMap[email].courses.push({
-                    id: m.courseId,
-                    title: m.courseTitle
-                  });
-                }
-              });
+          const uniqueEmails = [...new Set(mergedMembers.map((m) => m.email).filter(Boolean))];
+          const uniqueUsernames = uniqueEmails.map((e) => e.split('@')[0]);
 
-              const studentsList = Object.values(studentMap);
-              if (studentsList.length > 0) {
-                setAllStudents(studentsList);
-                setTabSelectedStudent(studentsList[0]);
-              } else {
-                setAllStudents([]);
-                setTabSelectedStudent(null);
+          const fetchProfiles = () => {
+            if (uniqueUsernames.length === 0) return Promise.resolve([]);
+            const profilesUrl = `${supabaseUrl}/rest/v1/user_profiles?username=in.(${uniqueUsernames.map(u => `"${u}"`).join(',')})&select=*`;
+            return fetchWithTimeoutAndRetry(profilesUrl, {
+              headers: {
+                'apikey': supabaseKey,
+                'Authorization': `Bearer ${supabaseToken}`
+              }
+            })
+              .then(res => res.ok ? res.json() : [])
+              .catch(() => []);
+          };
+
+          fetchProfiles().then((profiles) => {
+            console.log('TeacherDashboard Directory: fetched profiles:', profiles);
+            // Group members by email so a student enrolled in multiple courses has a single profile containing all courses
+            const studentMap = {};
+            mergedMembers.forEach((m) => {
+              if (!m.email) return;
+              const email = m.email.toLowerCase();
+              if (!studentMap[email]) {
+                const usernamePart = m.email.split('@')[0].toLowerCase();
+                const profile = profiles.find(p => 
+                  p.email?.toLowerCase() === email || 
+                  p.username?.toLowerCase() === usernamePart
+                );
+
+                const dbName = profile?.name || m.name || m.email.split('@')[0];
+                const dbCode = profile ? (profile['student code'] || profile.student_code) : '';
+                const displayName = dbCode ? `${dbName} ${dbCode}` : dbName;
+
+                studentMap[email] = {
+                  id: m.google_user_id || m.email,
+                  name: displayName,
+                  email: m.email,
+                  username: profile?.username || usernamePart,
+                  password: profile?.password || '',
+                  gender: profile?.gender || '',
+                  courses: []
+                };
+              }
+              // Check if course already added
+              if (!studentMap[email].courses.some((x) => x.id === m.courseId)) {
+                studentMap[email].courses.push({
+                  id: m.courseId,
+                  title: m.courseTitle
+                });
               }
             });
+
+            const studentsList = Object.values(studentMap);
+            if (studentsList.length > 0) {
+              setAllStudents(studentsList);
+              setTabSelectedStudent(studentsList[0]);
+            } else {
+              setAllStudents([]);
+              setTabSelectedStudent(null);
+            }
+          });
         });
 
         Promise.all(progressPromises).then((results) => {
@@ -625,35 +726,6 @@ export default function TeacherDashboard() {
       });
   }, [catalog, isDbMode, supabaseUrl, supabaseKey, currentTeacherEmail]);
 
-  // Load Teacher Profile Display Name
-  useEffect(() => {
-    if (!isDbMode || !currentTeacherEmail) {
-      setProfileTeacherName('');
-      return;
-    }
-
-    const supabaseToken = getValidSupabaseToken(supabaseKey);
-
-    if (supabaseUrl && supabaseKey) {
-      const teacherUrl = `${supabaseUrl}/rest/v1/classroom_course_members?email=eq.${encodeURIComponent(currentTeacherEmail)}&role=eq.teacher&select=name`;
-      fetch(teacherUrl, {
-        headers: {
-          'apikey': supabaseKey,
-          'Authorization': `Bearer ${supabaseToken}`
-        }
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (Array.isArray(data) && data[0] && data[0].name) {
-            setProfileTeacherName(data[0].name);
-          }
-        })
-        .catch((err) => {
-          console.warn('TeacherDashboard: failed to load teacher profile name:', err);
-        });
-    }
-  }, [isDbMode, supabaseUrl, supabaseKey, currentTeacherEmail]);
-
   const filteredStudents = useMemo(() => {
     return allStudents.filter(
       (s) => s.name.toLowerCase().includes(studentSearchQuery.toLowerCase()) ||
@@ -661,52 +733,34 @@ export default function TeacherDashboard() {
     );
   }, [allStudents, studentSearchQuery]);
 
-  // Group pages in the selected module into lessons.
-  // Support both nested lesson data and VP's flat module pages array.
+  // Group pages in the selected module into Lessons.
+  // Keep the original module > lessons > pages structure.
+  // mapping.json is used only to replace the visible lesson name.
   const lessons = useMemo(() => {
-    if (!selectedModuleData) return [];
-
-    const flatPages = Array.isArray(selectedModuleData.pages)
-      ? selectedModuleData.pages
-      : [];
-    const lessonCatalog = Array.isArray(selectedModuleData.lessons)
-      ? selectedModuleData.lessons
-      : [];
-    const pagesByLesson = new Map();
-
-    flatPages.forEach((page) => {
-      const rawPageId = String(page.id || page.pageId || '');
-      const lessonId =
-        page.lessonId ||
-        rawPageId.match(/^(.+?_M\d+L\d+)(?:_|$)/i)?.[1] ||
-        '';
-
-      if (!lessonId) return;
-
-      if (!pagesByLesson.has(lessonId)) {
-        pagesByLesson.set(lessonId, []);
-      }
-
-      pagesByLesson.get(lessonId).push(page);
-    });
-
-    const sortPages = (pages) =>
-      [...pages].sort((a, b) => {
-        const numA = parseInt(
-          String(a.id || a.pageId || '').match(/_(\d+)$/)?.[1] || '0',
-          10
-        );
-        const numB = parseInt(
-          String(b.id || b.pageId || '').match(/_(\d+)$/)?.[1] || '0',
-          10
-        );
-        return numA - numB;
-      });
+    if (!selectedModuleData || !selectedModuleData.pages) return [];
 
     // Calculate lesson offset before the selected module
     let offset = 0;
     if (selectedCourseData && selectedCourseData.lessons && courseModulesData.length > 0) {
-      const sortedModules = selectedCourseData.lessons;
+      const sortedModules = [...selectedCourseData.lessons].sort((a, b) => {
+        const aIsGraduation = /graduation/i.test(`${a?.title || ''} ${a?.id || ''}`);
+        const bIsGraduation = /graduation/i.test(`${b?.title || ''} ${b?.id || ''}`);
+
+        if (aIsGraduation !== bIsGraduation) {
+          return aIsGraduation ? 1 : -1;
+        }
+
+        const moduleNumberA = parseInt(
+          String(a?.id || '').match(/M(\d+)/i)?.[1] || '999',
+          10
+        );
+        const moduleNumberB = parseInt(
+          String(b?.id || '').match(/M(\d+)/i)?.[1] || '999',
+          10
+        );
+
+        return moduleNumberA - moduleNumberB;
+      });
       const currentModuleIdx = sortedModules.findIndex((m) => m.id === selectedModuleId);
       for (let i = 0; i < currentModuleIdx; i++) {
         const prevModId = sortedModules[i].id;
@@ -729,61 +783,80 @@ export default function TeacherDashboard() {
       }
     }
 
-    if (lessonCatalog.length > 0) {
-      return lessonCatalog.map((lesson, index) => {
-        const lessonId = lesson.id || lesson.lessonId;
-        const lessonPages = Array.isArray(lesson.pages) && lesson.pages.length > 0
-          ? lesson.pages
-          : pagesByLesson.get(lessonId) || [];
+    const grouped = [];
 
-        return {
-          ...lesson,
-          id: lessonId,
-          num: offset + index + 1,
-          displayNum: index + 1,
+    selectedModuleData.pages.forEach((page) => {
+      // Find lesson number from the page ID, for example:
+      // PTPY1_M1L2_3 -> Lesson 2
+      const match = String(page.id || page.pageId || '').match(/L(\d+)/i);
+      const lessonNum = match ? parseInt(match[1], 10) : 1;
+      const absoluteLessonNum = offset + lessonNum;
+      
+      const lessonId = `${selectedCourseId}_M${String(selectedModuleId).match(/M(\d+)/i)?.[1] || ''}L${lessonNum}`;
+      const fallbackLessonId = `Lesson-${lessonNum}`;
+
+      let lesson = grouped.find((item) => item.num === absoluteLessonNum);
+
+      if (!lesson) {
+        lesson = {
+          id: fallbackLessonId,
+          mappingId: lessonId,
+          num: absoluteLessonNum, // Absolute index for Supabase topic_id!
+          displayNum: lessonNum,   // Local lesson number for UI if needed
           title:
             customNames?.lessons?.[lessonId] ||
-            lesson.title ||
-            `Lesson ${index + 1}`,
-          pages: sortPages(lessonPages),
+            customNames?.lessons?.[page.lessonId] ||
+            `Lesson ${lessonNum}`,
+          pages: [],
         };
-      });
-    }
 
-    return Array.from(pagesByLesson.entries())
-      .sort(([lessonIdA], [lessonIdB]) => {
-        const numA = parseInt(lessonIdA.match(/L(\d+)/i)?.[1] || '0', 10);
-        const numB = parseInt(lessonIdB.match(/L(\d+)/i)?.[1] || '0', 10);
-        return numA - numB;
-      })
-      .map(([lessonId, lessonPages], index) => ({
-        id: lessonId,
-        num: offset + index + 1,
-        displayNum: index + 1,
-        title: customNames?.lessons?.[lessonId] || `Lesson ${index + 1}`,
-        pages: sortPages(lessonPages),
-      }));
+        grouped.push(lesson);
+      }
+
+      lesson.pages.push(page);
+    });
+
+    grouped.forEach((lesson) => {
+      lesson.pages.sort((a, b) => {
+        const pageNumA = parseInt(
+          String(a.id || a.pageId || '').match(/_(\d+)$/)?.[1] || '0',
+          10
+        );
+        const pageNumB = parseInt(
+          String(b.id || b.pageId || '').match(/_(\d+)$/)?.[1] || '0',
+          10
+        );
+        return pageNumA - pageNumB;
+      });
+    });
+
+    grouped.sort((a, b) => a.num - b.num);
+    return grouped;
   }, [selectedModuleData, selectedCourseId, selectedModuleId, selectedCourseData, courseModulesData, customNames]);
 
-  // Select the first valid lesson whenever the module changes.
+  // Select first lesson by default if not set or invalid
   useEffect(() => {
-    if (
-      lessons.length > 0 &&
-      !lessons.some((lesson) => lesson.id === selectedLessonId)
-    ) {
-      setSelectedLessonId(lessons[0].id);
+    if (lessons.length > 0) {
+      const exists = lessons.some((l) => l.id === selectedLessonId || l.mappingId === selectedLessonId);
+      if (!exists) {
+        setSelectedLessonId(lessons[0].id);
+      }
     }
   }, [lessons, selectedLessonId]);
 
   const activeLesson = useMemo(() => {
-    return lessons.find((l) => l.id === selectedLessonId) || lessons[0] || null;
+    return lessons.find((l) => l.id === selectedLessonId || l.mappingId === selectedLessonId) || lessons[0] || null;
   }, [lessons, selectedLessonId]);
 
+  // Clean up selectedPageId if not found in active lesson
   useEffect(() => {
-    setSelectedPageId('overview');
-    setClassProgressFilter('all');
-    setSelectedStudent(null);
-  }, [selectedModuleId, selectedLessonId]);
+    if (activeLesson && selectedPageId !== 'overview') {
+      const pageExists = activeLesson.pages.some((page) => page.id === selectedPageId || page.pageId === selectedPageId);
+      if (!pageExists) {
+        setSelectedPageId('overview');
+      }
+    }
+  }, [activeLesson, selectedPageId]);
 
   // Calculate Student Progress Metrics
   const getStudentProgressForPage = (studentEmail, page) => {
@@ -877,30 +950,54 @@ export default function TeacherDashboard() {
   const orderedCourseModules = useMemo(() => {
     const modules = selectedCourseData?.lessons || [];
 
-    return [...modules].sort((a, b) => {
-      const aIsGraduation = /graduation/i.test(`${a?.title || ''} ${a?.id || ''}`);
-      const bIsGraduation = /graduation/i.test(`${b?.title || ''} ${b?.id || ''}`);
+    return [...modules]
+      .map((module) => ({
+        ...module,
+        rawTitle: module.title,
+        title:
+          customNames?.modules?.[module.id] ||
+          module.title ||
+          module.id,
+      }))
+      .sort((a, b) => {
+        const aIsGraduation = /graduation/i.test(`${a?.title || ''} ${a?.id || ''}`);
+        const bIsGraduation = /graduation/i.test(`${b?.title || ''} ${b?.id || ''}`);
 
-      if (aIsGraduation === bIsGraduation) return 0;
-      return aIsGraduation ? 1 : -1;
-    });
+        if (aIsGraduation !== bIsGraduation) {
+          return aIsGraduation ? 1 : -1;
+        }
+
+        const moduleNumberA = parseInt(
+          String(a?.id || '').match(/M(\d+)/i)?.[1] || '999',
+          10
+        );
+        const moduleNumberB = parseInt(
+          String(b?.id || '').match(/M(\d+)/i)?.[1] || '999',
+          10
+        );
+
+        return moduleNumberA - moduleNumberB;
+      });
   }, [selectedCourseData]);
 
   const selectedModuleInfo = selectedCourseData?.lessons?.find(
     (module) => module.id === selectedModuleId
   );
-  const rawModuleTitle =
+
+  const activeModuleTitle =
     customNames?.modules?.[selectedModuleId] ||
     selectedModuleInfo?.title ||
     selectedModuleData?.title ||
     'Select a module';
-  const moduleTitleMatch = rawModuleTitle.match(/^(M\d+):\s*(.*)/i);
-  const activeModuleCode = moduleTitleMatch
-    ? moduleTitleMatch[1].toUpperCase()
-    : rawModuleTitle.toLowerCase().includes('graduation')
-      ? 'GRAD'
-      : selectedModuleId || 'MODULE';
-  const activeModuleTitle = moduleTitleMatch ? moduleTitleMatch[2] : rawModuleTitle;
+
+  const selectedModuleNumberMatch = String(selectedModuleId || '').match(/M(\d+)/i);
+  const activeModuleCode = /graduation/i.test(
+    `${selectedModuleId || ''} ${activeModuleTitle || ''}`
+  )
+    ? 'Graduation'
+    : selectedModuleNumberMatch
+      ? `Module ${selectedModuleNumberMatch[1]}`
+      : 'Module 1';
 
   const classProgressRows = activeLesson
     ? students.map((student) => {
@@ -1004,6 +1101,12 @@ export default function TeacherDashboard() {
     : [];
 
   const selectedPage = activeLesson?.pages?.find((page) => page.id === selectedPageId) || null;
+  const resetTargetPage =
+    selectedPage || activeLesson?.pages?.[0] || null;
+
+  const resetTargetPageNumber = resetTargetPage
+    ? activeLesson.pages.findIndex((page) => page.id === resetTargetPage.id) + 1
+    : 0;
   const selectedStudentRow = selectedStudent
     ? classProgressRows.find((row) => row.email === selectedStudent.email) || null
     : null;
@@ -1015,18 +1118,14 @@ export default function TeacherDashboard() {
       return;
     }
 
-    window.open(
-      `/?course=${encodeURIComponent(selectedCourseId)}&lesson=${encodeURIComponent(selectedModuleId)}&page=${encodeURIComponent(targetPage.id)}`,
-      '_blank',
-      'noopener,noreferrer'
-    );
-  };
+    if (typeof onOpenPage === 'function') {
+      onOpenPage(selectedModuleId, targetPage.id, selectedCourseId, 'classes');
+      return;
+    }
 
-  const resetTargetPage =
-    selectedPage && selectedPage.id !== 'overview' ? selectedPage : null;
-  const resetTargetPageNumber = resetTargetPage
-    ? activeLesson.pages.findIndex((page) => page.id === resetTargetPage.id) + 1
-    : null;
+    const nextUrl = `/?course=${encodeURIComponent(selectedCourseId)}&lesson=${encodeURIComponent(selectedModuleId)}&page=${encodeURIComponent(targetPage.id)}&sourceTab=classes`;
+    window.location.href = nextUrl;
+  };
 
   const handleResetPageClick = () => {
     if (!resetTargetPage) {
@@ -1034,29 +1133,40 @@ export default function TeacherDashboard() {
       return;
     }
 
+    const match = (selectedModuleData?.title || '').match(/^(M\d+)/i);
+    const modDisplay = match ? `Module ${match[1].replace(/M/i, '')}` : (selectedModuleData?.title || selectedModuleId);
+    const lessonDisplay = activeLesson?.title || `Lesson ${activeLesson?.num}`;
     const confirmed = window.confirm(
-      `Reset Page ${resetTargetPageNumber} progress?\n\n` +
-      `Page: ${resetTargetPage.id}\n\n` +
-      `This will permanently clear progress for all students in this class. Are you sure?`
+      `Reset progress for ${modDisplay}, Lesson ${lessonDisplay}, Page ${resetTargetPageNumber}?`
     );
 
     if (!confirmed) return;
 
-    const backendUrl =
-      localStorage.getItem('lms_backend_url') ||
+    console.log('Reset confirmed:', {
+      courseId: selectedCourseId,
+      lessonId: selectedModuleId,
+      pageId: resetTargetPage.id,
+      pageNumber: resetTargetPageNumber,
+      teacherEmail: currentTeacherEmail,
+    });
+
+    const backendUrl = String(
+      import.meta.env.VITE_API_BASE_URL ||
       import.meta.env.VITE_API_URL ||
-      '';
+      localStorage.getItem('lms_backend_url') ||
+      ''
+    ).replace(/\/+$/, '');
 
     const targetUrl = `${backendUrl}/api/progress/reset-page`;
-    const supabaseToken = getValidSupabaseToken(supabaseKey);
 
     fetch(targetUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${supabaseToken}`,
       },
       body: JSON.stringify({
+        sessionId: `user:${currentTeacherEmail}`,
+        userId: currentTeacherEmail,
         courseId: selectedCourseId,
         lessonId: selectedModuleId,
         pageId: resetTargetPage.id,
@@ -1081,11 +1191,11 @@ export default function TeacherDashboard() {
         keysToRemove.forEach((key) => localStorage.removeItem(key));
         console.log('Cleared local storage keys for page reset:', keysToRemove);
 
-        triggerToast(`Reset progress successfully for Page ${resetTargetPageNumber}.`);
+        triggerToast('Reset progress successfully.');
       })
       .catch((err) => {
         console.error('Reset progress API error:', err);
-        triggerToast(`Failed to reset progress: ${err.message}`);
+        triggerToast('Failed to reset progress.');
       });
   };
 
@@ -1107,44 +1217,76 @@ export default function TeacherDashboard() {
     const lessonTitle = activeLesson.title || `Lesson ${activeLesson.num}`;
 
     const confirmed = window.confirm(
-      `Hệ thống sẽ mở khoá Lesson ${topicId} (${lessonTitle}) cho các học sinh sau:\n\n` +
-      students.map((s) => `- ${s.name} (${s.email})`).join('\n')
+      `System will unlock Lesson ${topicId} (${lessonTitle}) for the following students:\n\n` +
+      students.map((s) => `- ${s.name}`).join('\n')
     );
 
     if (!confirmed) return;
 
     const supabaseToken = getValidSupabaseToken(supabaseKey);
-    const payload = students.map((s) => ({
-      student_email: s.email,
-      course_id: String(resolvedCourseId),
-      topic_id: topicId,
-      lms_course_id: selectedCourseId,
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
-    }));
+    const checkUrl = `${supabaseUrl}/rest/v1/student_lesson_schedules?course_id=eq.${resolvedCourseId}&topic_id=eq.${topicId}&select=student_email`;
 
-    const url = `${supabaseUrl}/rest/v1/student_lesson_schedules`;
-
-    fetch(url, {
-      method: 'POST',
+    fetch(checkUrl, {
       headers: {
-        'Content-Type': 'application/json',
         'apikey': supabaseKey,
         'Authorization': `Bearer ${supabaseToken}`
-      },
-      body: JSON.stringify(payload)
+      }
     })
       .then((res) => {
-        if (res.status === 409) {
-          triggerToast(`Lesson ${topicId} đã được mở rồi.`);
+        if (!res.ok) throw new Error(`Failed to verify lock status (status ${res.status})`);
+        return res.json();
+      })
+      .then((existingSchedules) => {
+        const existingEmails = new Set(
+          (existingSchedules || []).map((s) => s.student_email?.toLowerCase().trim()).filter(Boolean)
+        );
+
+        const studentsToUnlock = students.filter(
+          (s) => !existingEmails.has(s.email?.toLowerCase().trim())
+        );
+
+        if (studentsToUnlock.length === 0) {
+          triggerToast(`Lesson ${topicId} is already unlocked for all students.`);
           return;
         }
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        triggerToast(`Mở khoá Lesson ${topicId} thành công cho ${students.length} học sinh!`);
+
+        const payload = studentsToUnlock.map((s) => ({
+          student_email: s.email,
+          course_id: String(resolvedCourseId),
+          topic_id: topicId,
+          lms_course_id: selectedCourseId,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        }));
+
+        const url = `${supabaseUrl}/rest/v1/student_lesson_schedules`;
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': supabaseKey,
+            'Authorization': `Bearer ${supabaseToken}`
+          },
+          body: JSON.stringify(payload)
+        })
+          .then((res) => {
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            const alreadyUnlockedCount = students.length - studentsToUnlock.length;
+            if (alreadyUnlockedCount > 0) {
+              triggerToast(`Unlocked for ${studentsToUnlock.length} new student(s) (${alreadyUnlockedCount} previously unlocked).`);
+            } else {
+              triggerToast(`Successfully unlocked Lesson ${topicId} for ${studentsToUnlock.length} student(s).`);
+            }
+          })
+          .catch((err) => {
+            console.error('Unlock lesson error:', err);
+            triggerToast('Failed to unlock lesson.');
+          });
       })
       .catch((err) => {
-        console.error('Unlock lesson error:', err);
-        triggerToast(`Mở khoá thất bại: ${err.message}`);
+        console.error('Check existing schedules error:', err);
+        triggerToast('Failed to verify lock status.');
       });
   };
 
@@ -3071,8 +3213,8 @@ export default function TeacherDashboard() {
       <aside className="ts-sidebar">
         <div className="ts-brand">
           <img
-            src="/assets/algorithmics-logo.png"
-            alt="Algo Learning Space"
+            src="/logo.png"
+            alt="Algo logo"
             className="ts-brand-logo"
           />
           <div className="ts-brand-text">
@@ -3145,7 +3287,7 @@ export default function TeacherDashboard() {
                       }}
                     >
                       <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <span>👾</span> {course.title}
+                        <span>👾</span> {getCourseCodeDisplay(course.id)}
                       </span>
                     </button>
                   </div>
@@ -3157,7 +3299,17 @@ export default function TeacherDashboard() {
           <button type="button" className="ts-nav-link" onClick={() => triggerToast('Coming soon')}>
             <span>📅</span> Calendar
           </button>
-          <button type="button" className="ts-nav-link" onClick={() => triggerToast('Coming soon')}>
+          <button
+            type="button"
+            className={`ts-nav-link ${activeTab === 'messages' ? 'active' : ''}`}
+            onClick={() => {
+              if (canUseMessaging) {
+                setActiveTab('messages');
+              } else {
+                triggerToast('Coming soon');
+              }
+            }}
+          >
             <span>💬</span> Messages
           </button>
           <button type="button" className="ts-nav-link" onClick={() => triggerToast('Coming soon')}>
@@ -3178,7 +3330,7 @@ export default function TeacherDashboard() {
               {currentTeacherEmail ? currentTeacherEmail.charAt(0).toUpperCase() : 'T'}
             </div>
             <div className="ts-profile-info">
-              <strong>{currentTeacherEmail ? currentTeacherEmail.split('@')[0] : 'Teacher'}</strong>
+              <strong>{profileTeacherName || teacherDisplayName}</strong>
               <span style={{ display: 'block', fontSize: '12px', color: '#9ca3af' }}>Teacher Account</span>
             </div>
           </div>
@@ -3216,9 +3368,18 @@ export default function TeacherDashboard() {
 
       {/* ─── MAIN CONTENT ─── */}
       <main className="ts-main">
+        {activeTab === 'messages' && (
+          <div style={{ height: 'calc(100vh - 40px)', width: '100%', minHeight: '600px', padding: '16px', background: '#fff' }}>
+            <MessagingPage
+              currentUserId={currentTeacherEmail}
+              userRole="teacher"
+            />
+          </div>
+        )}
         {activeTab === 'preview' && selectedPreviewCourseId ? (
           <TeacherCoursePreview
             courseId={selectedPreviewCourseId}
+            onOpenPage={onOpenPage}
             onClose={() => setActiveTab('classes')}
           />
         ) : activeTab === 'classes' && (
@@ -3226,16 +3387,16 @@ export default function TeacherDashboard() {
             <div className="td-topbar">
               <div className="td-welcome-block">
                 <p className="td-welcome-text">
-                  Good to see you, <strong>{teacherDisplayName}</strong>. Let’s check how your students are progressing today.
+                  Good to see you, <strong>{profileTeacherName || teacherDisplayName}</strong>. Let’s check how your students are progressing today.
                 </p>
                 <div className="td-breadcrumb" aria-label="Current course location">
                   <span>My Classes</span>
                   <span className="td-breadcrumb-separator">/</span>
-                  <strong>{selectedCourseId || 'Course'}</strong>
+                  <strong>{getCourseCodeDisplay(selectedCourseId)}</strong>
                   <span className="td-breadcrumb-separator">/</span>
                   <span>{activeModuleCode}</span>
                   <span className="td-breadcrumb-separator">/</span>
-                  <span>{activeLesson?.title || 'Select lesson'}</span>
+                  <span>{customNames?.lessons?.[activeLesson?.mappingId] || activeLesson?.title || 'Select lesson'}</span>
                 </div>
               </div>
 
@@ -3273,6 +3434,9 @@ export default function TeacherDashboard() {
                         onClick={() => {
                           setSelectedModuleId(module.id);
                           setSelectedLessonId('');
+                          setSelectedPageId('overview');
+                          setClassProgressFilter('all');
+                          setSelectedStudent(null);
                         }}
                       >
                         <span className="td-module-code">{moduleCode}</span>
@@ -3289,7 +3453,7 @@ export default function TeacherDashboard() {
                 <span className="td-navigator-label">Lessons</span>
                 <div className="td-lesson-scroll">
                   {lessons.map((lesson) => {
-                    const isActive = selectedLessonId === lesson.id;
+                    const isActive = selectedLessonId === lesson.id || selectedLessonId === lesson.mappingId;
                     const lessonTotal = students.reduce(
                       (sum, student) =>
                         sum + getStudentProgressForLesson(student.email, lesson).percentage,
@@ -3304,7 +3468,12 @@ export default function TeacherDashboard() {
                         key={lesson.id}
                         type="button"
                         className={`td-lesson-tab ${isActive ? 'active' : ''}`}
-                        onClick={() => setSelectedLessonId(lesson.id)}
+                        onClick={() => {
+                          setSelectedLessonId(lesson.id);
+                          setSelectedPageId('overview');
+                          setClassProgressFilter('all');
+                          setSelectedStudent(null);
+                        }}
                       >
                         <span>{lesson.title}</span>
                         <span style={{ color: isActive ? '#7c3aed' : '#94a3b8', fontSize: '11px' }}>
@@ -3627,11 +3796,6 @@ export default function TeacherDashboard() {
                       <div style={{ minWidth: 0 }}>
                         <h3>{selectedStudentRow.name}</h3>
                         <p>{selectedStudentRow.username ? `${selectedStudentRow.username} / ${selectedStudentRow.password}` : selectedStudentRow.email}</p>
-                        {selectedStudentRow.studentCode && (
-                          <p style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>
-                            Code: {selectedStudentRow.studentCode}
-                          </p>
-                        )}
                       </div>
                     </div>
                   </div>
@@ -3857,18 +4021,8 @@ export default function TeacherDashboard() {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '28px' }}>
                       <div style={{ background: '#f9fafb', padding: '12px 16px', borderRadius: '8px' }}>
-                        <span style={{ display: 'block', fontSize: '12px', color: '#9ca3af', textTransform: 'uppercase', fontWeight: '600' }}>Email</span>
-                        <span style={{ fontSize: '15px', color: '#374151', fontWeight: '500' }}>{tabSelectedStudent.email}</span>
-                      </div>
-                      <div style={{ background: '#f9fafb', padding: '12px 16px', borderRadius: '8px' }}>
-                        <span style={{ display: 'block', fontSize: '12px', color: '#9ca3af', textTransform: 'uppercase', fontWeight: '600' }}>Student Code</span>
-                        <span style={{ fontSize: '15px', color: '#374151', fontWeight: '500' }}>{tabSelectedStudent.studentCode || 'Not specified'}</span>
-                      </div>
-                      <div style={{ background: '#f9fafb', padding: '12px 16px', borderRadius: '8px' }}>
                         <span style={{ display: 'block', fontSize: '12px', color: '#9ca3af', textTransform: 'uppercase', fontWeight: '600' }}>Username / Password</span>
-                        <span style={{ fontSize: '15px', color: '#374151', fontWeight: '500' }}>
-                          {tabSelectedStudent.username ? `${tabSelectedStudent.username} / ${tabSelectedStudent.password}` : 'Not specified'}
-                        </span>
+                        <span style={{ fontSize: '15px', color: '#374151', fontWeight: '500' }}>{tabSelectedStudent.username ? `${tabSelectedStudent.username} / ${tabSelectedStudent.password}` : tabSelectedStudent.email}</span>
                       </div>
                       <div style={{ background: '#f9fafb', padding: '12px 16px', borderRadius: '8px' }}>
                         <span style={{ display: 'block', fontSize: '12px', color: '#9ca3af', textTransform: 'uppercase', fontWeight: '600' }}>Gender</span>
@@ -3973,7 +4127,7 @@ export default function TeacherDashboard() {
                             </div>
 
                             {/* Display module breakdowns if active course matches */}
-                            {selectedCourseData && (c.id === selectedCourseId || catalogId === selectedCourseId) && (
+                            {selectedCourseData && (c.id === selectedCourseId || c.id === 'VP2' || catalogId === 'VP2' || c.id === 'PTSY1' || catalogId === 'PTSY1') && (
                               <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid #f3f4f6' }}>
                                 <span style={{ fontSize: '12px', color: '#9ca3af', fontWeight: '600', display: 'block', marginBottom: '12px', letterSpacing: '0.05em' }}>MODULES BREAKDOWN</span>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -4194,7 +4348,7 @@ export default function TeacherDashboard() {
                                 </div>
                                 <div style={{ overflow: 'hidden' }}>
                                   <strong style={{ display: 'block', fontSize: '15.5px', color: '#1f2937', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', marginBottom: '2px' }}>{student.name}</strong>
-                                  <span style={{ fontSize: '13px', color: '#6b7280' }}>{student.email}</span>
+                                  <span style={{ fontSize: '13px', color: '#6b7280' }}>{student.username ? `${student.username} / ${student.password}` : student.email}</span>
                                 </div>
                               </button>
                             ))}

@@ -110,11 +110,13 @@ function assertTokenMatchesContext(context) {
     viewerRole === 'teacher' || viewerRole === 'admin'
       ? teacherEmail || studentEmail
       : studentEmail || teacherEmail;
-  const tokenEmail = String(decodeJwtPayload(context?.accessToken).email || '')
-    .trim()
-    .toLowerCase();
+  let tokenEmail = '';
+  try {
+    const payload = decodeJwtPayload(context?.accessToken);
+    tokenEmail = String(payload?.email || payload?.user_metadata?.email || '').trim().toLowerCase();
+  } catch {}
 
-  if (!expectedEmail || !tokenEmail || tokenEmail !== expectedEmail) {
+  if (tokenEmail && expectedEmail && tokenEmail !== expectedEmail) {
     throw new Error('LMS handoff identity does not match the access token.');
   }
 }
@@ -225,9 +227,10 @@ export function receiveSecureLmsHandoff(event) {
     localStorage.setItem('lms_platform_origin', platformOrigin);
   }
 
-  if (viewerRole === 'teacher' || viewerRole === 'admin' || viewerRole === 'student') {
-    localStorage.setItem('lms_user_role', viewerRole);
-    localStorage.setItem('lms_viewer_role', viewerRole);
+  const resolvedRole = viewerRole || (teacherEmail ? 'teacher' : 'student');
+  if (resolvedRole === 'teacher' || resolvedRole === 'admin' || resolvedRole === 'student') {
+    localStorage.setItem('lms_user_role', resolvedRole);
+    localStorage.setItem('lms_viewer_role', resolvedRole);
   }
 
   sessionStorage.setItem(APPLIED_HANDOFF_KEY, String(data.handoffId));

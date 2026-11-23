@@ -13,6 +13,7 @@
     "import:clean": "node scripts/importH5p.mjs --clean --force"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.119.1",
     "@vitejs/plugin-react": "latest",
     "adm-zip": "^0.5.17",
     "h5p-standalone": "^3.8.2",

@@ -27,7 +27,7 @@ function groupPagesByLesson(pages) {
   return groups;
 }
 
-export default function TeacherCoursePreview({ courseId, onClose }) {
+export default function TeacherCoursePreview({ courseId, onOpenPage, onClose }) {
   const [lessonsData, setLessonsData] = useState([]);
   const [loadingLessons, setLoadingLessons] = useState(true);
   const [selectedModuleIndex, setSelectedModuleIndex] = useState(0);
@@ -198,7 +198,11 @@ export default function TeacherCoursePreview({ courseId, onClose }) {
   }, [activeModule, selectedLessonIndex]);
 
   const handleLaunchPage = (moduleId, pageId) => {
-    window.location.href = `/?course=${encodeURIComponent(courseId)}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(pageId)}`;
+    if (typeof onOpenPage === 'function') {
+      onOpenPage(moduleId, pageId, courseId, 'preview');
+      return;
+    }
+    window.location.href = `/?course=${encodeURIComponent(courseId)}&lesson=${encodeURIComponent(moduleId)}&page=${encodeURIComponent(pageId)}&sourceTab=preview`;
   };
 
   const handleLaunchFirstPageOfLesson = (lesson) => {

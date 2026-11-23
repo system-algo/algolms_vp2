@@ -14182,14 +14182,63 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_15_1",
-          "title": "Tasks will be checked by the teacher",
-          "text": "Tasks will be checked by the teacher",
+          "id": "req_15_1_xml",
+          "title": "Gravity",
+          "text": "The ball is affected by gravity if it does not touch the platforms.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_15_2_xml",
+          "title": "Rules",
+          "text": "There are only two rules: touching the \"lava\" (red) and the target — the green shape.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_15_3_xml",
+          "title": "Jump",
+          "text": "We can only control the jumping of the shape. Program a jump that occurs only when you touch the platform (to be able to bounce off).",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_15_4_xml",
+          "title": "Going to the beginning of the level",
+          "text": "The balloon returns to the starting position whenever the background changes or it touches lava. We need a procedure for that.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_15_5_xml",
+          "title": "Initial placement",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_15_6_xml",
+          "title": "*Bonus: modify the game as you see fit.",
+          "text": "Add new levels and change rules and controls.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Geometric shapes",
+          "text": "The balloon moves by itself and jumps when you press the space bar. The rules are the same for each level, only the background changes.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L3_Geometric_Shapes.sb3",
       "demo_project_id": "",
       "states": [
@@ -14218,14 +14267,63 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_15_1",
-              "title": "Tasks will be checked by the teacher",
-              "text": "Tasks will be checked by the teacher",
+              "id": "req_15_1_xml",
+              "title": "Gravity",
+              "text": "The ball is affected by gravity if it does not touch the platforms.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_15_2_xml",
+              "title": "Rules",
+              "text": "There are only two rules: touching the \"lava\" (red) and the target — the green shape.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_15_3_xml",
+              "title": "Jump",
+              "text": "We can only control the jumping of the shape. Program a jump that occurs only when you touch the platform (to be able to bounce off).",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_15_4_xml",
+              "title": "Going to the beginning of the level",
+              "text": "The balloon returns to the starting position whenever the background changes or it touches lava. We need a procedure for that.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_15_5_xml",
+              "title": "Initial placement",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_15_6_xml",
+              "title": "*Bonus: modify the game as you see fit.",
+              "text": "Add new levels and change rules and controls.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Geometric shapes",
+              "text": "The balloon moves by itself and jumps when you press the space bar. The rules are the same for each level, only the background changes.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Geometric shapes",
           "isAutoCheck": false,
           "starter_project_id": "M4L3_Geometric_Shapes.sb3",

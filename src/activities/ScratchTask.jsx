@@ -264,7 +264,6 @@ export default function ScratchTask({
   );
 
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
-  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
   const presentationMedia =
     task?.media?.find?.((item) => item.type === 'presentation') ||
     state?.media?.find?.((item) => item.type === 'presentation') ||
@@ -272,7 +271,9 @@ export default function ScratchTask({
     task?.media?.[0] ||
     state?.media?.[0] ||
     task?.states?.[0]?.media?.[0] ||
-    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: task?.instruction } : null);
+    (previewMediaUrl || task?.description
+      ? { url: previewMediaUrl, text: (previewMediaUrl && task?.instruction) || task?.description }
+      : null);
   const demoInstructionText = [
     presentationMedia?.text,
     state?.config?.presentation?.text,
@@ -799,7 +800,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((open) => !open)}
                   aria-expanded={isPresentationOpen}
                 >
-                  <span>{presentationMedia?.title || taskTitle}</span>
+                  <span>{taskTitle}</span>
                   <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
                 </button>
                 {isPresentationOpen && (
@@ -857,7 +858,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((v) => !v)}
                 >
                   <span className="scratch-task-presentation-title">
-                    {presentationMedia.title || previewMediaTitle || taskTitle}
+                    {taskTitle}
                   </span>
                   <span className={`scratch-task-presentation-arrow ${isPresentationOpen ? 'open' : ''}`}>
                     <svg
@@ -902,7 +903,13 @@ export default function ScratchTask({
                   </div>
                 )}
               </div>
-            ) : null}
+            ) : (
+              <div className="scratch-task-presentation-card">
+                <div className="scratch-task-presentation-header">
+                  <span className="scratch-task-presentation-title">{taskTitle}</span>
+                </div>
+              </div>
+            )}
 
             {task?.description && task.description !== presentationMedia?.text && (!demoProjectId || task.description.trim() !== demoInstructionText) && (
               <p className="scratch-task-description">

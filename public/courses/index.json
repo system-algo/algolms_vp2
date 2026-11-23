@@ -488,6 +488,12 @@
             },
             {
               "id": "VP2_M4L2_3",
+              "title": "Bonus: Maze in the dark",
+              "lessonId": "VP2_M4L2",
+              "taskCount": 7
+            },
+            {
+              "id": "VP2_M4L2_4",
               "title": "Scratch: Condition checking",
               "lessonId": "VP2_M4L2",
               "taskCount": 8
@@ -583,8 +589,8 @@
               "taskCount": 5
             }
           ],
-          "pageCount": 26,
-          "taskCount": 209
+          "pageCount": 27,
+          "taskCount": 216
         },
         {
           "id": "M5-Game-Development",
@@ -869,8 +875,8 @@
           "taskCount": 65
         }
       ],
-      "pageCount": 118,
-      "taskCount": 688
+      "pageCount": 119,
+      "taskCount": 695
     }
   ]
 }

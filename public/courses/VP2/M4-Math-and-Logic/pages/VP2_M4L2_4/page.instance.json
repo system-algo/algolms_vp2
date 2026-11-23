@@ -1,158 +1,976 @@
 {
   "schemaVersion": 2,
   "id": "VP2_M4L2_4",
-  "title": "Bonus: Maze in the dark",
-  "taskCount": 7,
-  "type": "block-game-task",
-  "level_type": "block_game",
-  "activityType": "block_game",
+  "title": "Scratch: Condition checking",
+  "type": "scratch-task",
+  "level_type": "scratch",
+  "taskCount": 8,
   "tasks": [
     {
-      "id": "VP2_M4L2_4_1",
-      "taskId": "VP2_M4L2_4_1",
+      "id": "VP2_M4L2_3_1",
+      "taskId": "VP2_M4L2_3_1",
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Bonus: Maze in the dark - 1",
-      "instruction": "Maze in the dark \u2014 introduction comic",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Drip-drop",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_1_1",
+          "title": "Follow the mouse pointer",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_2",
+          "title": "Detect a mouse click",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_3",
+          "title": "Repeat until the drop touches sand",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Drip-drop",
+          "text": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4L2_Drip-drop.sb3",
+      "demo_project_id": "M4L2_3_Task_1_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_1_state_1",
-          "stateId": "VP2_M4L2_4_1_state_1",
+          "id": "VP2_M4L2_3_1_state_1",
+          "stateId": "VP2_M4L2_3_1_state_1",
           "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "level_position": 1,
+          "levelPosition": 1,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_1_1",
+              "title": "Follow the mouse pointer",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_2",
+              "title": "Detect a mouse click",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_3",
+              "title": "Repeat until the drop touches sand",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Drip-drop",
+              "text": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+              "url": ""
+            }
+          ],
+          "title": "Drip-drop",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L2_Drip-drop.sb3",
+          "demo_project_id": "M4L2_3_Task_1_Demo.sb3",
+          "project_title": "M4L2 Drip-drop",
+          "source_task_id": "26867",
+          "source_project_id": "10691424",
+          "source_demo_project_id": "6045350",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4L2 Drip-drop",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691424",
+      "source_demo_project_id": "6045350",
+      "tips": []
     },
     {
-      "id": "VP2_M4L2_4_2",
-      "taskId": "VP2_M4L2_4_2",
+      "id": "VP2_M4L2_3_2",
+      "taskId": "VP2_M4L2_3_2",
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Bonus: Maze in the dark - 2",
-      "instruction": "Darkness has fallen. Tanks are somewhere in the middle of our path. Take them and reach the finish line. Remember If-Else!",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Game",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Aim with the mouse and click to launch the ball at the falling obstacles.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_2_1",
+          "title": "Launch the ball",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_2_2",
+          "title": "Check when the ball reaches an obstacle or the edge",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Game",
+          "text": "Aim with the mouse and click to launch the ball at the falling obstacles.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4L2_Game..sb3",
+      "demo_project_id": "M4L2_3_Task_2_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_2_state_1",
-          "stateId": "VP2_M4L2_4_2_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_2_state_1",
+          "stateId": "VP2_M4L2_3_2_state_1",
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Aim with the mouse and click to launch the ball at the falling obstacles.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_2_1",
+              "title": "Launch the ball",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_2_2",
+              "title": "Check when the ball reaches an obstacle or the edge",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Game",
+              "text": "Aim with the mouse and click to launch the ball at the falling obstacles.",
+              "url": ""
+            }
+          ],
+          "title": "Game",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L2_Game..sb3",
+          "demo_project_id": "M4L2_3_Task_2_Demo.sb3",
+          "project_title": "M4L2 Game.",
+          "source_task_id": "26867",
+          "source_project_id": "10691425",
+          "source_demo_project_id": "6085084",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4L2 Game.",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691425",
+      "source_demo_project_id": "6085084",
+      "tips": []
     },
     {
-      "id": "VP2_M4L2_4_3",
-      "taskId": "VP2_M4L2_4_3",
+      "id": "VP2_M4L2_3_3",
+      "taskId": "VP2_M4L2_3_3",
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Bonus: Maze in the dark - 3",
-      "instruction": "Lots of tanks along the path. You need to take them and reach the finish line.",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Hide and seek in the swamp",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Play hide and seek with the dinosaur and the bat in the swamp.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_3_1",
+          "title": "Check for contact",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_2",
+          "title": "Use a conditional loop",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Hide and seek in the swamp",
+          "text": "Play hide and seek with the dinosaur and the bat in the swamp.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4T2_Hide_and_seek_in_the_swamp.sb3",
+      "demo_project_id": "M4L2_3_Task_3_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_3_state_1",
-          "stateId": "VP2_M4L2_4_3_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_3_state_1",
+          "stateId": "VP2_M4L2_3_3_state_1",
+          "position": 3,
+          "level_position": 3,
+          "levelPosition": 3,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Play hide and seek with the dinosaur and the bat in the swamp.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_3_1",
+              "title": "Check for contact",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_2",
+              "title": "Use a conditional loop",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Hide and seek in the swamp",
+              "text": "Play hide and seek with the dinosaur and the bat in the swamp.",
+              "url": ""
+            }
+          ],
+          "title": "Hide and seek in the swamp",
+          "isAutoCheck": false,
+          "starter_project_id": "M4T2_Hide_and_seek_in_the_swamp.sb3",
+          "demo_project_id": "M4L2_3_Task_3_Demo.sb3",
+          "project_title": "M4T2 Hide and seek in the swamp",
+          "source_task_id": "26867",
+          "source_project_id": "10691435",
+          "source_demo_project_id": "10691438",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4T2 Hide and seek in the swamp",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691435",
+      "source_demo_project_id": "10691438",
+      "tips": []
     },
     {
-      "id": "VP2_M4L2_4_4",
-      "taskId": "VP2_M4L2_4_4",
+      "id": "VP2_M4L2_3_4",
+      "taskId": "VP2_M4L2_3_4",
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Bonus: Maze in the dark - 4",
-      "instruction": "Even more turns. Even more tanks along the path. You need to take them and reach the finish line.",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "The Knight sprite",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Guide the knight through the maze.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_4_1",
+          "title": "Use logical conditions to check the knight’s path",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "The Knight sprite",
+          "text": "Guide the knight through the maze.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4L2_Knight.sb3",
+      "demo_project_id": "M4L2_3_Task_4_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_4_state_1",
-          "stateId": "VP2_M4L2_4_4_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_4_state_1",
+          "stateId": "VP2_M4L2_3_4_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Guide the knight through the maze.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_4_1",
+              "title": "Use logical conditions to check the knight’s path",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "The Knight sprite",
+              "text": "Guide the knight through the maze.",
+              "url": ""
+            }
+          ],
+          "title": "The Knight sprite",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L2_Knight.sb3",
+          "demo_project_id": "M4L2_3_Task_4_Demo.sb3",
+          "project_title": "M4L2 Knight",
+          "source_task_id": "26867",
+          "source_project_id": "10691442",
+          "source_demo_project_id": "2935516",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4L2 Knight",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691442",
+      "source_demo_project_id": "2935516",
+      "tips": []
     },
     {
-      "id": "VP2_M4L2_4_5",
-      "taskId": "VP2_M4L2_4_5",
+      "id": "VP2_M4L2_3_rating",
+      "taskId": "VP2_M4L2_3_rating",
       "position": 5,
       "level_position": 5,
       "levelPosition": 5,
-      "title": "Bonus: Maze in the dark - 5",
-      "instruction": "There is a tank somewhere in the middle of the path. Right under it, at an unknown distance, are 2 or 3 tanks. Take all tanks and reach the finish line!",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
       "states": [
         {
-          "id": "VP2_M4L2_4_5_state_1",
-          "stateId": "VP2_M4L2_4_5_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_rating_state_1",
+          "stateId": "VP2_M4L2_3_rating_state_1",
+          "position": 5,
+          "level_position": 5,
+          "levelPosition": 5,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": [],
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊",
+          "source_task_id": "26867"
         }
-      ]
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊",
+      "source_task_id": "26867"
     },
     {
-      "id": "VP2_M4L2_4_6",
-      "taskId": "VP2_M4L2_4_6",
+      "id": "VP2_M4L2_3_6",
+      "taskId": "VP2_M4L2_3_6",
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Bonus: Maze in the dark - 6",
-      "instruction": "There are now a lot of tanks in the alcoves to the right of the robot path. Take them and reach the finish line.",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Drip, drop",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_6_1",
+          "title": "Follow the mouse pointer",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_6_2",
+          "title": "Repeat until the drop touches sand",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Drip, drop",
+          "text": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4L2_Drip-Drop_(1).sb3",
+      "demo_project_id": "M4L2_3_Task_6_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_6_state_1",
-          "stateId": "VP2_M4L2_4_6_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_6_state_1",
+          "stateId": "VP2_M4L2_3_6_state_1",
+          "position": 6,
+          "level_position": 6,
+          "levelPosition": 6,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_6_1",
+              "title": "Follow the mouse pointer",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_6_2",
+              "title": "Repeat until the drop touches sand",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Drip, drop",
+              "text": "Move the mouse to guide the drop. Click to make it fall onto the sand.",
+              "url": ""
+            }
+          ],
+          "title": "Drip, drop",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L2_Drip-Drop_(1).sb3",
+          "demo_project_id": "M4L2_3_Task_6_Demo.sb3",
+          "project_title": "M4L2 Drip-Drop (1)",
+          "source_task_id": "26867",
+          "source_project_id": "10691460",
+          "source_demo_project_id": "2932812",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4L2 Drip-Drop (1)",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691460",
+      "source_demo_project_id": "2932812",
+      "tips": []
     },
     {
-      "id": "VP2_M4L2_4_7",
-      "taskId": "VP2_M4L2_4_7",
+      "id": "VP2_M4L2_3_7",
+      "taskId": "VP2_M4L2_3_7",
       "position": 7,
       "level_position": 7,
       "levelPosition": 7,
-      "title": "Bonus: Maze in the dark - 7",
-      "instruction": "How did you like the task?",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Arcade game",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Hit the falling obstacles before they reach the bottom boundary.",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_7_1",
+          "title": "Move the meteorite down",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_7_2",
+          "title": "Launch the ball toward the mouse",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_7_3",
+          "title": "Set the starting positions",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_7_4",
+          "title": "Duplicate the Meteorite sprite",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_7_5",
+          "title": "Restart a meteorite after a hit",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_7_6",
+          "title": "Add winning and losing conditions",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Arcade game",
+          "text": "Hit the falling obstacles before they reach the bottom boundary.",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4L2_Arcade_game.sb3",
+      "demo_project_id": "M4L2_3_Task_7_Demo.sb3",
       "states": [
         {
-          "id": "VP2_M4L2_4_7_state_1",
-          "stateId": "VP2_M4L2_4_7_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "id": "VP2_M4L2_3_7_state_1",
+          "stateId": "VP2_M4L2_3_7_state_1",
+          "position": 7,
+          "level_position": 7,
+          "levelPosition": 7,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Hit the falling obstacles before they reach the bottom boundary.",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_7_1",
+              "title": "Move the meteorite down",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_7_2",
+              "title": "Launch the ball toward the mouse",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_7_3",
+              "title": "Set the starting positions",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_7_4",
+              "title": "Duplicate the Meteorite sprite",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_7_5",
+              "title": "Restart a meteorite after a hit",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_7_6",
+              "title": "Add winning and losing conditions",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Arcade game",
+              "text": "Hit the falling obstacles before they reach the bottom boundary.",
+              "url": ""
+            }
+          ],
+          "title": "Arcade game",
+          "isAutoCheck": false,
+          "starter_project_id": "M4L2_Arcade_game.sb3",
+          "demo_project_id": "M4L2_3_Task_7_Demo.sb3",
+          "project_title": "M4L2 Arcade game",
+          "source_task_id": "26867",
+          "source_project_id": "10691469",
+          "source_demo_project_id": "2995649",
+          "tips": []
         }
-      ]
+      ],
+      "project_title": "M4L2 Arcade game",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691469",
+      "source_demo_project_id": "2995649",
+      "tips": []
+    },
+    {
+      "id": "VP2_M4L2_3_8",
+      "taskId": "VP2_M4L2_3_8",
+      "position": 8,
+      "level_position": 8,
+      "levelPosition": 8,
+      "title": "Grow a tree",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "description": "Touch the little sprout with a drop until a tree grows!",
+      "command_keys": [
+        "motion",
+        "looks",
+        "sound",
+        "events",
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
+      ],
+      "command_blocks": [],
+      "requirements": [
+        {
+          "id": "req_8_1",
+          "title": "Grow the sprout when the drop touches it and the mouse is clicked",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_8_2",
+          "title": "Grow only once per click",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_8_3",
+          "title": "Use the costume number to stop at the final costume",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Grow a tree",
+          "text": "Touch the little sprout with a drop until a tree grows!",
+          "url": ""
+        }
+      ],
+      "starter_project_id": "M4T2_Grow_a_tree.sb3",
+      "demo_project_id": "M4L2_3_Task_8_Demo.sb3",
+      "states": [
+        {
+          "id": "VP2_M4L2_3_8_state_1",
+          "stateId": "VP2_M4L2_3_8_state_1",
+          "position": 8,
+          "level_position": 8,
+          "levelPosition": 8,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Touch the little sprout with a drop until a tree grows!",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_8_1",
+              "title": "Grow the sprout when the drop touches it and the mouse is clicked",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_8_2",
+              "title": "Grow only once per click",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_8_3",
+              "title": "Use the costume number to stop at the final costume",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Grow a tree",
+              "text": "Touch the little sprout with a drop until a tree grows!",
+              "url": ""
+            }
+          ],
+          "title": "Grow a tree",
+          "isAutoCheck": false,
+          "starter_project_id": "M4T2_Grow_a_tree.sb3",
+          "demo_project_id": "M4L2_3_Task_8_Demo.sb3",
+          "project_title": "M4T2 Grow a tree",
+          "source_task_id": "26867",
+          "source_project_id": "10691483",
+          "source_demo_project_id": "10691485",
+          "tips": []
+        }
+      ],
+      "project_title": "M4T2 Grow a tree",
+      "checklist_heading": "TASKS",
+      "source_task_id": "26867",
+      "source_project_id": "10691483",
+      "source_demo_project_id": "10691485",
+      "tips": []
     }
   ]
 }

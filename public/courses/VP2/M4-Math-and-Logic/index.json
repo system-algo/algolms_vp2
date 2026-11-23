@@ -12,13 +12,13 @@
       "id": "VP2_M4L1_1",
       "title": "Logical operators - Part 1",
       "lessonId": "VP2_M4L1",
-      "taskCount": 9
+      "taskCount": 10
     },
     {
       "id": "VP2_M4L1_2",
       "title": "Logical operators - Part 2",
       "lessonId": "VP2_M4L1",
-      "taskCount": 3
+      "taskCount": 4
     },
     {
       "id": "VP2_M4L1_3_track1",
@@ -160,5 +160,5 @@
     }
   ],
   "pageCount": 26,
-  "taskCount": 212
+  "taskCount": 214
 }

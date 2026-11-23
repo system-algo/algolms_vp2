@@ -80,8 +80,14 @@
           "evaluationType": "markCompleted"
         }
       ],
-      "media": [],
-      "starter_project_id": "M3L4_Game.sb3",
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Game",
+          "text": "Create your own game with a main character, prize, obstacles or enemies, and program it!"
+        }
+      ],
+      "starter_project_id": "",
       "demo_project_id": "",
       "states": [
         {
@@ -157,60 +163,24 @@
               "evaluationType": "markCompleted"
             }
           ],
-          "media": [],
-          "starter_project_id": "M3L4_Game.sb3",
-          "demo_project_id": "",
-          "project_title": "M3L4 Game",
-          "tips": [
+          "media": [
             {
-              "id": "comic-1",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-1.png"
-            },
-            {
-              "id": "comic-2",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-2.png"
-            },
-            {
-              "id": "comic-3",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-3.png"
-            },
-            {
-              "id": "comic-4",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-4.png"
+              "type": "presentation",
+              "title": "Game",
+              "text": "Create your own game with a main character, prize, obstacles or enemies, and program it!"
             }
           ],
+          "starter_project_id": "",
+          "demo_project_id": "",
+          "project_title": "M3L4 Game",
+          "tips": [],
           "source_task_id": "26840",
           "source_project_id": "10684169"
         }
       ],
       "project_title": "M3L4 Game",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "tips": [
-        {
-          "id": "comic-1",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-1.png"
-        },
-        {
-          "id": "comic-2",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-2.png"
-        },
-        {
-          "id": "comic-3",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-3.png"
-        },
-        {
-          "id": "comic-4",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L4_1/assets/costume-tip-4.png"
-        }
-      ],
+      "tips": [],
       "source_task_id": "26840",
       "source_project_id": "10684169"
     },

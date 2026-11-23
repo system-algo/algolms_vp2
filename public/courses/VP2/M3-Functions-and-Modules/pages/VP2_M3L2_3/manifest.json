@@ -267,18 +267,7 @@
           "starter_project_id": "M3L2_Snowflake_1.sb3",
           "demo_project_id": "M3L2_3_Task_2_Demo.sb3",
           "project_title": "M3L2 Snowflake 1",
-          "tips": [
-            {
-              "id": "comic-1",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
-            },
-            {
-              "id": "comic-2",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
-            }
-          ],
+          "tips": [],
           "source_task_id": "26861",
           "source_project_id": "10683272",
           "source_demo_project_id": "6041114",
@@ -287,18 +276,7 @@
       ],
       "project_title": "M3L2 Snowflake 1",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "tips": [
-        {
-          "id": "comic-1",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
-        },
-        {
-          "id": "comic-2",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
-        }
-      ],
+      "tips": [],
       "source_task_id": "26861",
       "source_project_id": "10683272",
       "source_demo_project_id": "6041114",
@@ -964,18 +942,7 @@
           "starter_project_id": "M3L2_Snowflakes.sb3",
           "demo_project_id": "M3L2_3_Task_7_Demo.sb3",
           "project_title": "M3L2 Snowflakes",
-          "tips": [
-            {
-              "id": "comic-1",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
-            },
-            {
-              "id": "comic-2",
-              "type": "image",
-              "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
-            }
-          ],
+          "tips": [],
           "source_task_id": "26861",
           "source_project_id": "10683289",
           "source_demo_project_id": "2716040",
@@ -984,18 +951,7 @@
       ],
       "project_title": "M3L2 Snowflakes",
       "checklist_heading": "TASKS WILL BE CHECKED BY THE TEACHER",
-      "tips": [
-        {
-          "id": "comic-1",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-1.png"
-        },
-        {
-          "id": "comic-2",
-          "type": "image",
-          "url": "/courses/VP2/M3-Functions-and-Modules/pages/VP2_M3L2_3/assets/task-2-comic-2.png"
-        }
-      ],
+      "tips": [],
       "source_task_id": "26861",
       "source_project_id": "10683289",
       "source_demo_project_id": "2716040",

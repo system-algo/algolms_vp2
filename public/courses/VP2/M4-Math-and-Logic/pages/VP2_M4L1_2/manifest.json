@@ -4,7 +4,7 @@
   "title": "Logical operators - Part 2",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 3,
+  "taskCount": 4,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M4-Math-and-Logic",
@@ -41,21 +41,29 @@
         {
           "id": "req_1_1",
           "title": "Change the background number",
-          "text": "Change the background number",
+          "text": "In the Looks blocks, use the number of the backdrop you want to switch to.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Add conditions",
-          "text": "Add conditions",
+          "text": "Change to the space backdrop and use logical operators to allow the Bear to move only in space.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Bear in space",
+          "text": "The bear really wants to go to space! Only there will he be able to move to the right and to the left and up and down. In order to send the bear into space, change the background using numbers.",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_Bear_in_space.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_1_state_1",
@@ -84,28 +92,44 @@
             {
               "id": "req_1_1",
               "title": "Change the background number",
-              "text": "Change the background number",
+              "text": "In the Looks blocks, use the number of the backdrop you want to switch to.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Add conditions",
-              "text": "Add conditions",
+              "text": "Change to the space backdrop and use logical operators to allow the Bear to move only in space.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Bear in space",
+              "text": "The bear really wants to go to space! Only there will he be able to move to the right and to the left and up and down. In order to send the bear into space, change the background using numbers.",
+              "url": ""
+            }
+          ],
           "title": "Bear in space",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Bear_in_space.sb3",
-          "demo_project_id": "",
-          "project_title": "M4L1 Bear in space"
+          "demo_project_id": "M4L1_2_Task_1_Demo.sb3",
+          "project_title": "M4L1 Bear in space",
+          "source_task_id": "26866",
+          "source_level_id": "329845",
+          "source_project_id": "10691316",
+          "source_demo_project_id": "10691320"
         }
       ],
       "project_title": "M4L1 Bear in space",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26866",
+      "source_level_id": "329845",
+      "source_project_id": "10691316",
+      "source_demo_project_id": "10691320"
     },
     {
       "id": "VP2_M4L1_2_2",
@@ -136,14 +160,21 @@
         {
           "id": "req_2_1",
           "title": "Combining different ingredients",
-          "text": "Combining different ingredients",
+          "text": "Combine magic water with either an apple or a beetle. Keep apples and beetles out of the same potion.",
           "type": "gif",
           "url": ""
         }
       ],
-      "media": [],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Potion",
+          "text": "You need to drag the ingredients into the cauldron to help the sorceress brew the potion. But be careful because if you mix up the ingredients, you won't be able to make the potion!",
+          "url": ""
+        }
+      ],
       "starter_project_id": "M4L1_Potion_Making.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_2_state_1",
@@ -172,21 +203,36 @@
             {
               "id": "req_2_1",
               "title": "Combining different ingredients",
-              "text": "Combining different ingredients",
+              "text": "Combine magic water with either an apple or a beetle. Keep apples and beetles out of the same potion.",
               "type": "gif",
               "url": ""
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Potion",
+              "text": "You need to drag the ingredients into the cauldron to help the sorceress brew the potion. But be careful because if you mix up the ingredients, you won't be able to make the potion!",
+              "url": ""
+            }
+          ],
           "title": "Potion",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Potion_Making.sb3",
-          "demo_project_id": "",
-          "project_title": "M4L1 Potion Making"
+          "demo_project_id": "M4L1_2_Task_2_Demo.sb3",
+          "project_title": "M4L1 Potion Making",
+          "source_task_id": "26866",
+          "source_level_id": "329846",
+          "source_project_id": "10691323",
+          "source_demo_project_id": "10691327"
         }
       ],
       "project_title": "M4L1 Potion Making",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26866",
+      "source_level_id": "329846",
+      "source_project_id": "10691323",
+      "source_demo_project_id": "10691327"
     },
     {
       "id": "VP2_M4L1_2_3",
@@ -217,28 +263,55 @@
         {
           "id": "req_3_1",
           "title": "Add rules and conditions for winning to the procedure",
-          "text": "Add rules and conditions for winning to the procedure",
+          "text": "Use AND to combine the winning conditions in the procedure.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_3_2",
           "title": "Add conditions for losing",
-          "text": "Add conditions for losing",
+          "text": "Use OR so either losing condition ends the game.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_3_3",
           "title": "The rockets push Kepler to the left",
-          "text": "The rockets push Kepler to the left",
+          "text": "",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_4",
+          "title": "Make the game more difficult: add sprites and change their movement",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "taskType": "bonus",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_5",
+          "title": "Add a sprite to freeze",
+          "text": "Press D2 in the demo to see the freeze effect.",
+          "type": "gif",
+          "url": "",
+          "taskType": "bonus",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Run the project!",
+          "text": "",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L1_Robot_charges.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L1_2_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L1_2_3_state_1",
@@ -267,35 +340,121 @@
             {
               "id": "req_3_1",
               "title": "Add rules and conditions for winning to the procedure",
-              "text": "Add rules and conditions for winning to the procedure",
+              "text": "Use AND to combine the winning conditions in the procedure.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_3_2",
               "title": "Add conditions for losing",
-              "text": "Add conditions for losing",
+              "text": "Use OR so either losing condition ends the game.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_3_3",
               "title": "The rockets push Kepler to the left",
-              "text": "The rockets push Kepler to the left",
+              "text": "",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_4",
+              "title": "Make the game more difficult: add sprites and change their movement",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "taskType": "bonus",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_5",
+              "title": "Add a sprite to freeze",
+              "text": "Press D2 in the demo to see the freeze effect.",
+              "type": "gif",
+              "url": "",
+              "taskType": "bonus",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Run the project!",
+              "text": "",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Robot charges",
           "isAutoCheck": false,
           "starter_project_id": "M4L1_Robot_charges.sb3",
-          "demo_project_id": "",
-          "project_title": "M4L1 Robot charges"
+          "demo_project_id": "M4L1_2_Task_3_Demo.sb3",
+          "project_title": "M4L1 Robot charges",
+          "source_task_id": "26866",
+          "source_level_id": "329848",
+          "source_project_id": "10691332",
+          "source_demo_project_id": "499255",
+          "tips": [
+            {
+              "id": "tip-direction",
+              "title": "Point in direction",
+              "text": "Use the Motion block “point in direction” to turn a sprite before moving it."
+            }
+          ]
         }
       ],
       "project_title": "M4L1 Robot charges",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26866",
+      "source_level_id": "329848",
+      "source_project_id": "10691332",
+      "source_demo_project_id": "499255",
+      "tips": [
+        {
+          "id": "tip-direction",
+          "title": "Point in direction",
+          "text": "Use the Motion block “point in direction” to turn a sprite before moving it."
+        }
+      ]
+    },
+    {
+      "id": "VP2_M4L1_2_rating",
+      "taskId": "VP2_M4L1_2_rating",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "title": "Did you like the task?",
+      "level_type": "rating",
+      "selectedType": "rating",
+      "activityType": "feedback_rating_task",
+      "requirements": [],
+      "media": [],
+      "command_keys": [],
+      "states": [
+        {
+          "id": "VP2_M4L1_2_rating_state_1",
+          "stateId": "VP2_M4L1_2_rating_state_1",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "type": "rating",
+          "selectedType": "rating",
+          "level_type": "rating",
+          "requirements": [],
+          "media": [],
+          "command_keys": [],
+          "question": "Did you like the task?",
+          "hint": "Click on an emoji",
+          "label": "😊"
+        }
+      ],
+      "question": "Did you like the task?",
+      "hint": "Click on an emoji",
+      "label": "😊",
+      "source_task_id": "26866",
+      "source_level_id": "329847"
     }
   ]
 }

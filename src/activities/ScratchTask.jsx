@@ -82,10 +82,7 @@ export default function ScratchTask({
   // Toolbar File / Edit menu states
   const [openFileMenu, setOpenFileMenu] = useState(false);
   const [openEditMenu, setOpenEditMenu] = useState(false);
-  const [lastSaveTime, setLastSaveTime] = useState(() => {
-    const d = new Date();
-    return `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`;
-  });
+  const [lastSaveTime, setLastSaveTime] = useState('');
   const [isSaving, setIsSaving] = useState(false);
   const [isTurboMode, setIsTurboMode] = useState(false);
 
@@ -108,7 +105,7 @@ export default function ScratchTask({
     (task?.title || '').toLowerCase().includes('project. presentation');
 
   const storageKey = isM3L4_L6
-    ? 'M3L4_Shared_Game'
+    ? 'M3L4_Shared_Game_BlankStarter'
     : isM5L5_L6
     ? 'M5L5_Shared_Chatbot'
     : (projectId || task?.id || task?.taskId || '');
@@ -119,18 +116,12 @@ export default function ScratchTask({
     if (win) {
       win.postMessage({ type: 'SAVE_TO_STORAGE', storageKey }, '*');
     }
-    setTimeout(() => {
-      const d = new Date();
-      setLastSaveTime(
-        `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`
-      );
-      setIsSaving(false);
-    }, 400);
+    setTimeout(() => setIsSaving(false), 400);
   };
 
   useEffect(() => {
     const handleSavedMsg = (e) => {
-      if (e.data?.type === 'PROJECT_SAVED_SUCCESS') {
+      if (e.origin === window.location.origin && e.source === iframeRef.current?.contentWindow && e.data?.type === 'PROJECT_SAVED_SUCCESS') {
         const d = new Date();
         setLastSaveTime(
           `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`
@@ -182,7 +173,8 @@ export default function ScratchTask({
     ''
   );
 
-  const editorUrl = `/scratch-gui/index.html?${projectId ? `project=${encodeURIComponent(projectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
+  const editorProjectId = isM3L4_L6 ? '' : projectId;
+  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
 
   // Selected requirement ID for highlighting and displaying its image/GIF
   const [selectedReqId, setSelectedReqId] = useState(null);
@@ -203,6 +195,7 @@ export default function ScratchTask({
     );
     setCompletedItems({});
     setSelectedReqId(null);
+    setLastSaveTime('');
     setDemoViewMode('stage');
     setCopiedXml(false);
   }, [task?.activity_id, task?.id, task?.taskId, levelPosition, hasDrawerContent, task?.drawerOpen]);
@@ -268,7 +261,6 @@ export default function ScratchTask({
   );
 
   const previewMediaUrl = task?.media?.[0]?.url || task?.preview_url || '';
-  const previewMediaTitle = task?.media?.[0]?.title || taskTitle;
   const presentationMedia =
     task?.media?.find?.((item) => item.type === 'presentation') ||
     state?.media?.find?.((item) => item.type === 'presentation') ||
@@ -276,7 +268,11 @@ export default function ScratchTask({
     task?.media?.[0] ||
     state?.media?.[0] ||
     task?.states?.[0]?.media?.[0] ||
-    (previewMediaUrl ? { url: previewMediaUrl, title: previewMediaTitle, text: task?.instruction } : null);
+    (previewMediaUrl || task?.description
+      ? { url: previewMediaUrl, text: (previewMediaUrl && task?.instruction) || task?.description }
+      : null);
+  const presentationTitle = state?.config?.presentation?.title ||
+    task?.config?.presentation?.title || presentationMedia?.title || taskTitle;
   const demoInstructionText = [
     presentationMedia?.text,
     state?.config?.presentation?.text,
@@ -723,9 +719,9 @@ export default function ScratchTask({
           </div>
 
           <div className="scratch-task-toolbar-right">
-            <span className="scratch-task-save-status">
-              Last save {lastSaveTime}
-            </span>
+            {lastSaveTime && (
+              <span className="scratch-task-save-status">Last save {lastSaveTime}</span>
+            )}
 
             <button
               type="button"
@@ -790,7 +786,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((open) => !open)}
                   aria-expanded={isPresentationOpen}
                 >
-                  <span>{presentationMedia?.title || 'See how the project should work'}</span>
+                  <span>{presentationTitle}</span>
                   <span className={`scratch-task-demo-chevron ${isPresentationOpen ? 'open' : ''}`} aria-hidden="true">⌄</span>
                 </button>
                 {isPresentationOpen && (
@@ -848,7 +844,7 @@ export default function ScratchTask({
                   onClick={() => setIsPresentationOpen((v) => !v)}
                 >
                   <span className="scratch-task-presentation-title">
-                    {presentationMedia.title || previewMediaTitle || taskTitle}
+                    {presentationTitle}
                   </span>
                   <span className={`scratch-task-presentation-arrow ${isPresentationOpen ? 'open' : ''}`}>
                     <svg
@@ -893,7 +889,13 @@ export default function ScratchTask({
                   </div>
                 )}
               </div>
-            ) : null}
+            ) : (
+              <div className="scratch-task-presentation-card">
+                <div className="scratch-task-presentation-header">
+                  <span className="scratch-task-presentation-title">{taskTitle}</span>
+                </div>
+              </div>
+            )}
 
             {task?.description && task.description !== presentationMedia?.text && (!demoProjectId || task.description.trim() !== demoInstructionText) && (
               <p className="scratch-task-description">

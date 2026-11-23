@@ -703,64 +703,10 @@
           "title": "Test yourself. Classes and objects",
           "lessonId": "VP2_M6L1",
           "taskCount": 3
-        },
-        {
-          "id": "VP2_M6L2_1",
-          "title": "Local and global variables - Part 1",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 2
-        },
-        {
-          "id": "VP2_M6L2_2",
-          "title": "Bonus: Local and global variables",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 2
-        },
-        {
-          "id": "VP2_M6L2_3",
-          "title": "Scratch. Clones - Part 1",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 1
-        },
-        {
-          "id": "VP2_M6L2_4",
-          "title": "Scratch. Clones - Part 2",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 1
-        },
-        {
-          "id": "VP2_M6L2_5",
-          "title": "Scratch. Clones - Part 3",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 1
-        },
-        {
-          "id": "VP2_M6L2_6",
-          "title": "Test yourself. Clones",
-          "lessonId": "VP2_M6L2",
-          "taskCount": 1
-        },
-        {
-          "id": "VP2_M6L3_1",
-          "title": "Adding an interface - Part 1",
-          "lessonId": "VP2_M6L3",
-          "taskCount": 2
-        },
-        {
-          "id": "VP2_M6L3_2",
-          "title": "Test yourself. Adding an interface",
-          "lessonId": "VP2_M6L3",
-          "taskCount": 3
-        },
-        {
-          "id": "VP2_M6L4_1",
-          "title": "Scratch. Game creation",
-          "lessonId": "VP2_M6L4",
-          "taskCount": 3
         }
       ],
-      "pageCount": 12,
-      "taskCount": 22
+      "pageCount": 3,
+      "taskCount": 6
     },
     {
       "id": "M7-Hackathon-Series",
@@ -849,6 +795,6 @@
       "taskCount": 63
     }
   ],
-  "pageCount": 90,
-  "taskCount": 508
+  "pageCount": 105,
+  "taskCount": 681
 }

@@ -90,7 +90,7 @@
         }
       ],
       "starter_project_id": "store.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L4_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L4_2_1_state_1",
@@ -176,7 +176,7 @@
           "title": "Store",
           "isAutoCheck": false,
           "starter_project_id": "store.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L4_2_Task_1_Demo.sb3",
           "project_title": "store",
           "source_task_id": "26880",
           "source_project_id": "10692686",

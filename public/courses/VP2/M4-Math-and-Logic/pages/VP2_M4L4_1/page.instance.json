@@ -58,7 +58,7 @@
         }
       ],
       "starter_project_id": "M4L4_Swamp_1.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_1_1_state_1",
@@ -112,7 +112,7 @@
           "title": "Frank in the swamp",
           "isAutoCheck": true,
           "starter_project_id": "M4L4_Swamp_1.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_1_Task_1_Demo.sb3",
           "project_title": "M4L4 Swamp 1",
           "tips": [
             {
@@ -179,7 +179,7 @@
         }
       ],
       "starter_project_id": "M4L4_Going_around_walls.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_1_2_state_1",
@@ -223,7 +223,7 @@
             }
           ],
           "starter_project_id": "M4L4_Going_around_walls.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_1_Task_2_Demo.sb3",
           "project_title": "M4L4 Going around walls",
           "title": "Going around walls",
           "tips": [
@@ -308,7 +308,7 @@
         }
       ],
       "starter_project_id": "M4L4_The_Goalkeeper.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_1_3_state_1",
@@ -373,7 +373,7 @@
           "title": "The Goalkeeper",
           "isAutoCheck": true,
           "starter_project_id": "M4L4_The_Goalkeeper.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_1_Task_3_Demo.sb3",
           "project_title": "M4L4 The Goalkeeper"
         }
       ],
@@ -485,7 +485,7 @@
         }
       ],
       "starter_project_id": "M4L4_Swamp.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_1_5_state_1",
@@ -563,7 +563,7 @@
           "title": "Frank in the swamp",
           "isAutoCheck": false,
           "starter_project_id": "M4L4_Swamp.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_1_Task_1_Demo.sb3",
           "project_title": "M4L4 Swamp",
           "tips": [
             {

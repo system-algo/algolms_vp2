@@ -24,7 +24,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "The score is set to zero. Controlling the octopus",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -41,19 +41,36 @@
         {
           "id": "req_1_1",
           "title": "The score is set to zero",
-          "text": "The score is set to zero",
+          "text": "At the start, the score is 0.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/score-zero.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Controlling the octopus",
-          "text": "Controlling the octopus",
+          "text": "Add the \"Control\" block and the \"Repeat forever\" command.",
           "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/octopus-control.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_3",
+          "title": "The score goes up",
+          "text": "Add the next set of commands after the control block. Note that the condition must be checked constantly.",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/score-increase.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Octopus",
+          "text": "The counter keeps track of how many times the octopus catches its prey.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M5L2_Octopus_1.sb3",
       "demo_project_id": "",
       "states": [
@@ -67,7 +84,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "The score is set to zero. Controlling the octopus",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -84,28 +101,51 @@
             {
               "id": "req_1_1",
               "title": "The score is set to zero",
-              "text": "The score is set to zero",
+              "text": "At the start, the score is 0.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/score-zero.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Controlling the octopus",
-              "text": "Controlling the octopus",
+              "text": "Add the \"Control\" block and the \"Repeat forever\" command.",
               "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/octopus-control.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_3",
+              "title": "The score goes up",
+              "text": "Add the next set of commands after the control block. Note that the condition must be checked constantly.",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/score-increase.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Octopus",
+              "text": "The counter keeps track of how many times the octopus catches its prey.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Octopus 1",
           "isAutoCheck": true,
           "starter_project_id": "M5L2_Octopus_1.sb3",
           "demo_project_id": "",
-          "project_title": "M5L2 Octopus 1"
+          "project_title": "M5L2 Octopus 1",
+          "source_task_id": "26874",
+          "source_demo_project_id": "10692431",
+          "source_project_id": "10692424"
         }
       ],
       "project_title": "M5L2 Octopus 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26874",
+      "source_demo_project_id": "10692431",
+      "source_project_id": "10692424"
     },
     {
       "id": "VP2_M5L2_1_2",
@@ -113,13 +153,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Guess the number 1",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -135,28 +175,46 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Rules of the game",
+          "text": "Program the \"Game Rules\" block so that the MarsBot explains the rules.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/game-rules.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
+          "title": "The MarsBot thinks of a number",
+          "text": "Program the Question-Answer block. Set the \"Secret number\" variable to a random value.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/random-number.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
+          "title": "The user enters a number",
+          "text": "The MarsBot asks the user.",
           "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/enter-number.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_2_4",
+          "title": "Condition checking",
+          "text": "The MarsBot says whether the user guessed the number or not. If not, it says the secret number. Use the join block.",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/check-guess.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Guess the number",
+          "text": "The MarsBot chooses a number from 1 to 10. Try to guess what the number is.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M5L2_Guess_the_number.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -169,7 +227,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -185,34 +243,59 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Rules of the game",
+              "text": "Program the \"Game Rules\" block so that the MarsBot explains the rules.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/game-rules.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
+              "title": "The MarsBot thinks of a number",
+              "text": "Program the Question-Answer block. Set the \"Secret number\" variable to a random value.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/random-number.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
+              "title": "The user enters a number",
+              "text": "The MarsBot asks the user.",
               "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/enter-number.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_2_4",
+              "title": "Condition checking",
+              "text": "The MarsBot says whether the user guessed the number or not. If not, it says the secret number. Use the join block.",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/hints/check-guess.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Guess the number",
+              "text": "The MarsBot chooses a number from 1 to 10. Try to guess what the number is.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "",
+          "starter_project_id": "M5L2_Guess_the_number.sb3",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "Loading Project",
+          "title": "Guess the number 1",
+          "source_task_id": "26874",
+          "source_demo_project_id": "10692437",
+          "source_project_id": "10692444"
         }
       ],
       "project_title": "Loading Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26874",
+      "source_demo_project_id": "10692437",
+      "source_project_id": "10692444"
     },
     {
       "id": "VP2_M5L2_1_3",
@@ -226,7 +309,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Play the game. Write the same!",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -243,13 +326,45 @@
         {
           "id": "req_3_1",
           "title": "Rules of the game",
-          "text": "Rules of the game",
+          "text": "The sprite explains the rules of the game.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_2",
+          "title": "Number input and comparing it with the secret one",
+          "text": "The sprite asks for a number until it is guessed.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_3",
+          "title": "Tips",
+          "text": "The sprite says whether the secret number is higher or lower than the entered one.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_4",
+          "title": "The program calculates how many attempts the player took to guess the secret number.",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Guess the number",
+          "text": "Play the game. Write the same!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "M5L2_Guess_the_number.sb3",
+      "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -262,7 +377,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Play the game. Write the same!",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -279,1172 +394,127 @@
             {
               "id": "req_3_1",
               "title": "Rules of the game",
-              "text": "Rules of the game",
+              "text": "The sprite explains the rules of the game.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_2",
+              "title": "Number input and comparing it with the secret one",
+              "text": "The sprite asks for a number until it is guessed.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_3",
+              "title": "Tips",
+              "text": "The sprite says whether the secret number is higher or lower than the entered one.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_4",
+              "title": "The program calculates how many attempts the player took to guess the secret number.",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Guess the number",
+              "text": "Play the game. Write the same!",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Guess the number",
           "isAutoCheck": false,
-          "starter_project_id": "M5L2_Guess_the_number.sb3",
+          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
           "demo_project_id": "",
-          "project_title": "M5L2 Guess the number"
+          "project_title": "M5L2 Guess the number",
+          "source_task_id": "26874",
+          "source_demo_project_id": "10692463",
+          "source_project_id": "43014122",
+          "taskLevelType": "bonus"
         }
       ],
       "project_title": "M5L2 Guess the number",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26874",
+      "source_demo_project_id": "10692463",
+      "source_project_id": "43014122",
+      "taskLevelType": "bonus"
     },
     {
+      "id": "task-64-omn1ls",
       "taskId": "task-64-omn1ls",
-      "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-      "title": "Guess the number (1)",
-      "activityType": "fill_blank_task",
-      "documentTitle": "Scratch. Guess the number",
-      "firstCapturedAt": "2026-05-29T03:33:39.213Z",
-      "clickAudit": [
-        {
-          "stateId": "task-64-omn1ls-1hmfwlq",
-          "stateName": "after-1-Go",
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0065-task-64-omn1ls-after-1-Go.png",
-          "after": {
-            "ariaLabel": "",
-            "capturedAt": "2026-05-29T03:33:42.705Z",
-            "className": "green-flag_green-flag_1kiAo green-flag_is-active_2oExT",
-            "cssCursor": "pointer",
-            "rect": {
-              "h": 32,
-              "w": 32,
-              "x": 377,
-              "y": 69
-            },
-            "text": "",
-            "title": "Go"
-          },
-          "ariaLabel": "",
-          "backgroundColor": "rgba(0, 0, 0, 0)",
-          "capturedAt": "2026-05-29T03:33:41.788Z",
-          "center": {
-            "x": 393,
-            "y": 85
-          },
-          "className": "green-flag_green-flag_1kiAo",
-          "clickIndex": 1,
-          "clickableReason": [
-            "purple-toolbar",
-            "activity-toolbar-area",
-            "cursor:pointer"
-          ],
-          "color": "rgb(15, 28, 44)",
-          "cssCursor": "pointer",
-          "href": "",
-          "htmlPreview": "<img class=\"green-flag_green-flag_1kiAo\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/2e0c4790f8f9cf28e3c346b9cef0fcb6.svg\" title=\"Go\">",
-          "id": "",
-          "kind": "purple-toolbar",
-          "label": "Go",
-          "phase": "before-click",
-          "rect": {
-            "h": 32,
-            "w": 32,
-            "x": 377,
-            "y": 69
-          },
-          "role": "",
-          "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.green-flag_green-flag_1kiAo:nth-of-type(1)",
-          "tag": "img",
-          "text": "",
-          "title": "Go"
-        },
-        {
-          "stateId": "task-64-omn1ls-3mo0lt",
-          "stateName": "after-2-Stop",
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0066-task-64-omn1ls-after-2-Stop.png",
-          "after": {
-            "ariaLabel": "",
-            "capturedAt": "2026-05-29T03:33:44.249Z",
-            "className": "stage-header_stage-menu-wrapper_15JJt box_box_2jjDp",
-            "cssCursor": "auto",
-            "rect": {
-              "h": 44,
-              "w": 1902,
-              "x": 0,
-              "y": 60
-            },
-            "text": "",
-            "title": ""
-          },
-          "ariaLabel": "",
-          "backgroundColor": "",
-          "capturedAt": "2026-05-29T03:33:43.331Z",
-          "center": {
-            "x": 0,
-            "y": 0
-          },
-          "className": "stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0",
-          "clickIndex": 2,
-          "clickableReason": [
-            "purple-toolbar"
-          ],
-          "color": "",
-          "cssCursor": "",
-          "href": "",
-          "htmlPreview": "<img class=\"stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/36fcc7dbca20720abcab01e49d4955f9.svg\" title=\"Stop\">",
-          "id": "",
-          "kind": "purple-toolbar",
-          "label": "Stop",
-          "phase": "before-click",
-          "rect": {
-            "h": 0,
-            "w": 0,
-            "x": 0,
-            "y": 0
-          },
-          "role": "",
-          "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.stop-all_stop-all_1Y8P9:nth-of-type(2)",
-          "tag": "img",
-          "text": "",
-          "title": "Stop"
-        },
-        {
-          "stateId": "task-64-omn1ls-m6llw3",
-          "stateName": "after-4-splitter-collapse-handle",
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0067-task-64-omn1ls-after-4-splitter-collapse-handle.png",
-          "after": {
-            "ariaLabel": "",
-            "capturedAt": "2026-05-29T03:33:46.037Z",
-            "className": "sc-1qc3qkv-2 iNeMm",
-            "cssCursor": "pointer",
-            "rect": {
-              "h": 50,
-              "w": 8,
-              "x": 1908,
-              "y": 525
-            },
-            "text": "",
-            "title": ""
-          },
-          "ariaLabel": "",
-          "backgroundColor": "rgb(255, 255, 255)",
-          "capturedAt": "2026-05-29T03:33:44.862Z",
-          "center": {
-            "x": 1357,
-            "y": 550
-          },
-          "className": "sc-1qc3qkv-2 iNeMm",
-          "clickIndex": 4,
-          "clickableReason": [
-            "splitter",
-            "splitter/collapse-handle",
-            "cursor:pointer",
-            "contains-icon"
-          ],
-          "color": "rgb(15, 28, 44)",
-          "cssCursor": "pointer",
-          "href": "",
-          "htmlPreview": "<div class=\"sc-1qc3qkv-2 iNeMm\"><svg width=\"6\" height=\"7\" viewBox=\"0 0 6 7\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"sc-1qc3qkv-3 WWYYW\"><path d=\"M0.638062 1.36326L0.638062 5.43572C0.638062 6.253 1.56526 6.72516 2.22623 6.24445L5.02605 4.20822C5.57515 3.80887 5.57515 2.9901 5.02605 2.59075L2.22623 0.554521C1.56526 0.0738158 0.638062 0.54597 0.638062 1.36326Z\" fill=\"#833AE0\"></path></svg></div>",
-          "id": "",
-          "kind": "splitter",
-          "label": "splitter-collapse-handle",
-          "phase": "before-click",
-          "rect": {
-            "h": 50,
-            "w": 8,
-            "x": 1353,
-            "y": 525
-          },
-          "role": "",
-          "selector": "div.sc-1e45dnh-0.joWLyV:nth-of-type(2) > div.sc-1qc3qkv-0.jQEpdS:nth-of-type(2) > div.sc-1qc3qkv-1.blkroL > div.sc-1qc3qkv-4.hKfvmu:nth-of-type(1) > div.sc-1qc3qkv-2.iNeMm",
-          "tag": "div",
-          "text": "",
-          "title": ""
-        }
-      ],
       "states": [
         {
-          "stateId": "task-64-omn1ls-zvc8ld",
-          "stateName": "initial",
-          "triggeredBy": null,
-          "clickAudit": [],
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0064-task-64-omn1ls-initial.png",
-          "capturedAt": "2026-05-29T03:33:39.213Z",
-          "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-          "scroll": {
-            "x": 0,
-            "y": 0
-          },
-          "viewport": {
-            "devicePixelRatio": 1,
-            "height": 989,
-            "width": 1920
-          },
-          "textLines": [
-            "M3T2.1 Demo 2",
-            "Tasks with automatic check",
-            "Play the game. Write the same!"
-          ],
-          "buttons": [
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "index": 0,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 890,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(1)",
-              "tag": "a",
-              "text": "1",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "index": 1,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 934,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(2)",
-              "tag": "a",
-              "text": "2",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "index": 2,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 978,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(3)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "index": 3,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 1022,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.eSGCEY:nth-of-type(4)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            }
-          ],
-          "inputs": [],
-          "choiceOptions": [],
-          "dragDrop": {
-            "draggable": [],
-            "dropZones": []
-          },
-          "codeBlocks": [],
-          "images": [],
-          "rasterImageUrls": [],
-          "downloadedAssets": {
-            "downloaded": [],
-            "skipped": []
-          },
-          "iframes": [],
-          "videos": [],
-          "links": [
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "text": "1"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "text": "2"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "text": ""
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "text": ""
-            }
-          ],
-          "layoutHints": {
-            "hasCanvas": true,
-            "hasModal": true,
-            "hasTaskNavigation": true,
-            "headings": [],
-            "panels": [],
-            "taskDotsText": []
-          },
-          "id": "task-64-omn1ls-zvc8ld",
-          "name": "initial",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0064-task-64-omn1ls-initial.png",
-          "title": "Guess the number (1)",
-          "isAutoCheck": true,
-          "description": "Play the game. Write the same!",
-          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-          "demo_project_id": "",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
+          "id": "task-64-omn1ls_state_1",
+          "stateId": "task-64-omn1ls_state_1",
+          "title": "M3T2.1 Demo 2",
+          "position": 4,
+          "level_position": 4,
+          "levelPosition": 4,
+          "description": "",
+          "starter_project_id": null,
+          "source_task_id": "26874",
+          "source_demo_project_id": "10692470",
+          "media": [],
           "requirements": [
             {
               "id": "req_4_1",
               "title": "Play the game. Write the same!",
-              "text": "Play the game. Write the same!",
+              "text": "",
               "type": "gif",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "stateId": "task-64-omn1ls-1hmfwlq",
-          "stateName": "after-1-Go",
-          "triggeredBy": {
-            "after": {
-              "ariaLabel": "",
-              "capturedAt": "2026-05-29T03:33:42.705Z",
-              "className": "green-flag_green-flag_1kiAo green-flag_is-active_2oExT",
-              "cssCursor": "pointer",
-              "rect": {
-                "h": 32,
-                "w": 32,
-                "x": 377,
-                "y": 69
-              },
-              "text": "",
-              "title": "Go"
-            },
-            "ariaLabel": "",
-            "backgroundColor": "rgba(0, 0, 0, 0)",
-            "capturedAt": "2026-05-29T03:33:41.788Z",
-            "center": {
-              "x": 393,
-              "y": 85
-            },
-            "className": "green-flag_green-flag_1kiAo",
-            "clickIndex": 1,
-            "clickableReason": [
-              "purple-toolbar",
-              "activity-toolbar-area",
-              "cursor:pointer"
-            ],
-            "color": "rgb(15, 28, 44)",
-            "cssCursor": "pointer",
-            "href": "",
-            "htmlPreview": "<img class=\"green-flag_green-flag_1kiAo\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/2e0c4790f8f9cf28e3c346b9cef0fcb6.svg\" title=\"Go\">",
-            "id": "",
-            "kind": "purple-toolbar",
-            "label": "Go",
-            "phase": "before-click",
-            "rect": {
-              "h": 32,
-              "w": 32,
-              "x": 377,
-              "y": 69
-            },
-            "role": "",
-            "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.green-flag_green-flag_1kiAo:nth-of-type(1)",
-            "tag": "img",
-            "text": "",
-            "title": "Go"
-          },
-          "clickAudit": [
-            {
-              "after": {
-                "ariaLabel": "",
-                "capturedAt": "2026-05-29T03:33:42.705Z",
-                "className": "green-flag_green-flag_1kiAo green-flag_is-active_2oExT",
-                "cssCursor": "pointer",
-                "rect": {
-                  "h": 32,
-                  "w": 32,
-                  "x": 377,
-                  "y": 69
-                },
-                "text": "",
-                "title": "Go"
-              },
-              "ariaLabel": "",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "capturedAt": "2026-05-29T03:33:41.788Z",
-              "center": {
-                "x": 393,
-                "y": 85
-              },
-              "className": "green-flag_green-flag_1kiAo",
-              "clickIndex": 1,
-              "clickableReason": [
-                "purple-toolbar",
-                "activity-toolbar-area",
-                "cursor:pointer"
-              ],
-              "color": "rgb(15, 28, 44)",
-              "cssCursor": "pointer",
-              "href": "",
-              "htmlPreview": "<img class=\"green-flag_green-flag_1kiAo\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/2e0c4790f8f9cf28e3c346b9cef0fcb6.svg\" title=\"Go\">",
-              "id": "",
-              "kind": "purple-toolbar",
-              "label": "Go",
-              "phase": "before-click",
-              "rect": {
-                "h": 32,
-                "w": 32,
-                "x": 377,
-                "y": 69
-              },
-              "role": "",
-              "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.green-flag_green-flag_1kiAo:nth-of-type(1)",
-              "tag": "img",
-              "text": "",
-              "title": "Go"
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0065-task-64-omn1ls-after-1-Go.png",
-          "capturedAt": "2026-05-29T03:33:42.786Z",
-          "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-          "scroll": {
-            "x": 0,
-            "y": 0
-          },
-          "viewport": {
-            "devicePixelRatio": 1,
-            "height": 989,
-            "width": 1920
-          },
-          "textLines": [
-            "M3T2.1 Demo 2",
-            "Tasks with automatic check",
-            "Play the game. Write the same!"
-          ],
-          "buttons": [
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "index": 0,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 890,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(1)",
-              "tag": "a",
-              "text": "1",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "index": 1,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 934,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(2)",
-              "tag": "a",
-              "text": "2",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "index": 2,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 978,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(3)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "index": 3,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 1022,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.eSGCEY:nth-of-type(4)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            }
-          ],
-          "inputs": [],
-          "choiceOptions": [],
-          "dragDrop": {
-            "draggable": [],
-            "dropZones": []
-          },
-          "codeBlocks": [],
-          "images": [],
-          "rasterImageUrls": [],
-          "downloadedAssets": {
-            "downloaded": [],
-            "skipped": []
-          },
-          "iframes": [],
-          "videos": [],
-          "links": [
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "text": "1"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "text": "2"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "text": ""
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "text": ""
-            }
-          ],
-          "layoutHints": {
-            "hasCanvas": true,
-            "hasModal": true,
-            "hasTaskNavigation": true,
-            "headings": [],
-            "panels": [],
-            "taskDotsText": []
-          },
-          "id": "task-64-omn1ls-1hmfwlq",
-          "name": "after-1-Go",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0065-task-64-omn1ls-after-1-Go.png",
-          "title": "Guess the number (1)",
-          "isAutoCheck": true,
-          "description": "Play the game. Write the same!",
-          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-          "demo_project_id": "",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_4_1",
-              "title": "Play the game. Write the same!",
-              "text": "Play the game. Write the same!",
-              "type": "gif",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "stateId": "task-64-omn1ls-3mo0lt",
-          "stateName": "after-2-Stop",
-          "triggeredBy": {
-            "after": {
-              "ariaLabel": "",
-              "capturedAt": "2026-05-29T03:33:44.249Z",
-              "className": "stage-header_stage-menu-wrapper_15JJt box_box_2jjDp",
-              "cssCursor": "auto",
-              "rect": {
-                "h": 44,
-                "w": 1902,
-                "x": 0,
-                "y": 60
-              },
-              "text": "",
-              "title": ""
-            },
-            "ariaLabel": "",
-            "backgroundColor": "",
-            "capturedAt": "2026-05-29T03:33:43.331Z",
-            "center": {
-              "x": 0,
-              "y": 0
-            },
-            "className": "stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0",
-            "clickIndex": 2,
-            "clickableReason": [
-              "purple-toolbar"
-            ],
-            "color": "",
-            "cssCursor": "",
-            "href": "",
-            "htmlPreview": "<img class=\"stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/36fcc7dbca20720abcab01e49d4955f9.svg\" title=\"Stop\">",
-            "id": "",
-            "kind": "purple-toolbar",
-            "label": "Stop",
-            "phase": "before-click",
-            "rect": {
-              "h": 0,
-              "w": 0,
-              "x": 0,
-              "y": 0
-            },
-            "role": "",
-            "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.stop-all_stop-all_1Y8P9:nth-of-type(2)",
-            "tag": "img",
-            "text": "",
-            "title": "Stop"
-          },
-          "clickAudit": [
-            {
-              "after": {
-                "ariaLabel": "",
-                "capturedAt": "2026-05-29T03:33:44.249Z",
-                "className": "stage-header_stage-menu-wrapper_15JJt box_box_2jjDp",
-                "cssCursor": "auto",
-                "rect": {
-                  "h": 44,
-                  "w": 1902,
-                  "x": 0,
-                  "y": 60
-                },
-                "text": "",
-                "title": ""
-              },
-              "ariaLabel": "",
-              "backgroundColor": "",
-              "capturedAt": "2026-05-29T03:33:43.331Z",
-              "center": {
-                "x": 0,
-                "y": 0
-              },
-              "className": "stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0",
-              "clickIndex": 2,
-              "clickableReason": [
-                "purple-toolbar"
-              ],
-              "color": "",
-              "cssCursor": "",
-              "href": "",
-              "htmlPreview": "<img class=\"stop-all_stop-all_1Y8P9 stop-all_is-active_3nog0\" draggable=\"false\" src=\"/singlepage/root/scratch-gui/static/assets/36fcc7dbca20720abcab01e49d4955f9.svg\" title=\"Stop\">",
-              "id": "",
-              "kind": "purple-toolbar",
-              "label": "Stop",
-              "phase": "before-click",
-              "rect": {
-                "h": 0,
-                "w": 0,
-                "x": 0,
-                "y": 0
-              },
-              "role": "",
-              "selector": "div.box_box_2jjDp > div.box_box_2jjDp:nth-of-type(1) > div.box_box_2jjDp > div > img.stop-all_stop-all_1Y8P9:nth-of-type(2)",
-              "tag": "img",
-              "text": "",
-              "title": "Stop"
-            }
-          ],
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0066-task-64-omn1ls-after-2-Stop.png",
-          "capturedAt": "2026-05-29T03:33:44.327Z",
-          "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-          "scroll": {
-            "x": 0,
-            "y": 0
-          },
-          "viewport": {
-            "devicePixelRatio": 1,
-            "height": 989,
-            "width": 1920
-          },
-          "textLines": [
-            "M3T2.1 Demo 2",
-            "Tasks with automatic check",
-            "Play the game. Write the same!"
-          ],
-          "buttons": [
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "index": 0,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 890,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(1)",
-              "tag": "a",
-              "text": "1",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "index": 1,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 934,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(2)",
-              "tag": "a",
-              "text": "2",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "index": 2,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 978,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(3)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "index": 3,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 1022,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.eSGCEY:nth-of-type(4)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            }
-          ],
-          "inputs": [],
-          "choiceOptions": [],
-          "dragDrop": {
-            "draggable": [],
-            "dropZones": []
-          },
-          "codeBlocks": [],
-          "images": [],
-          "rasterImageUrls": [],
-          "downloadedAssets": {
-            "downloaded": [],
-            "skipped": []
-          },
-          "iframes": [],
-          "videos": [],
-          "links": [
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "text": "1"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "text": "2"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "text": ""
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "text": ""
-            }
-          ],
-          "layoutHints": {
-            "hasCanvas": true,
-            "hasModal": true,
-            "hasTaskNavigation": true,
-            "headings": [],
-            "panels": [],
-            "taskDotsText": []
-          },
-          "id": "task-64-omn1ls-3mo0lt",
-          "name": "after-2-Stop",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0066-task-64-omn1ls-after-2-Stop.png",
-          "title": "Guess the number (1)",
-          "isAutoCheck": true,
-          "description": "Play the game. Write the same!",
-          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-          "demo_project_id": "",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_4_1",
-              "title": "Play the game. Write the same!",
-              "text": "Play the game. Write the same!",
-              "type": "gif",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "stateId": "task-64-omn1ls-m6llw3",
-          "stateName": "after-4-splitter-collapse-handle",
-          "triggeredBy": {
-            "after": {
-              "ariaLabel": "",
-              "capturedAt": "2026-05-29T03:33:46.037Z",
-              "className": "sc-1qc3qkv-2 iNeMm",
-              "cssCursor": "pointer",
-              "rect": {
-                "h": 50,
-                "w": 8,
-                "x": 1908,
-                "y": 525
-              },
-              "text": "",
-              "title": ""
-            },
-            "ariaLabel": "",
-            "backgroundColor": "rgb(255, 255, 255)",
-            "capturedAt": "2026-05-29T03:33:44.862Z",
-            "center": {
-              "x": 1357,
-              "y": 550
-            },
-            "className": "sc-1qc3qkv-2 iNeMm",
-            "clickIndex": 4,
-            "clickableReason": [
-              "splitter",
-              "splitter/collapse-handle",
-              "cursor:pointer",
-              "contains-icon"
-            ],
-            "color": "rgb(15, 28, 44)",
-            "cssCursor": "pointer",
-            "href": "",
-            "htmlPreview": "<div class=\"sc-1qc3qkv-2 iNeMm\"><svg width=\"6\" height=\"7\" viewBox=\"0 0 6 7\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"sc-1qc3qkv-3 WWYYW\"><path d=\"M0.638062 1.36326L0.638062 5.43572C0.638062 6.253 1.56526 6.72516 2.22623 6.24445L5.02605 4.20822C5.57515 3.80887 5.57515 2.9901 5.02605 2.59075L2.22623 0.554521C1.56526 0.0738158 0.638062 0.54597 0.638062 1.36326Z\" fill=\"#833AE0\"></path></svg></div>",
-            "id": "",
-            "kind": "splitter",
-            "label": "splitter-collapse-handle",
-            "phase": "before-click",
-            "rect": {
-              "h": 50,
-              "w": 8,
-              "x": 1353,
-              "y": 525
-            },
-            "role": "",
-            "selector": "div.sc-1e45dnh-0.joWLyV:nth-of-type(2) > div.sc-1qc3qkv-0.jQEpdS:nth-of-type(2) > div.sc-1qc3qkv-1.blkroL > div.sc-1qc3qkv-4.hKfvmu:nth-of-type(1) > div.sc-1qc3qkv-2.iNeMm",
-            "tag": "div",
-            "text": "",
-            "title": ""
-          },
-          "clickAudit": [
-            {
-              "after": {
-                "ariaLabel": "",
-                "capturedAt": "2026-05-29T03:33:46.037Z",
-                "className": "sc-1qc3qkv-2 iNeMm",
-                "cssCursor": "pointer",
-                "rect": {
-                  "h": 50,
-                  "w": 8,
-                  "x": 1908,
-                  "y": 525
-                },
-                "text": "",
-                "title": ""
-              },
-              "ariaLabel": "",
-              "backgroundColor": "rgb(255, 255, 255)",
-              "capturedAt": "2026-05-29T03:33:44.862Z",
-              "center": {
-                "x": 1357,
-                "y": 550
-              },
-              "className": "sc-1qc3qkv-2 iNeMm",
-              "clickIndex": 4,
-              "clickableReason": [
-                "splitter",
-                "splitter/collapse-handle",
-                "cursor:pointer",
-                "contains-icon"
-              ],
-              "color": "rgb(15, 28, 44)",
-              "cssCursor": "pointer",
-              "href": "",
-              "htmlPreview": "<div class=\"sc-1qc3qkv-2 iNeMm\"><svg width=\"6\" height=\"7\" viewBox=\"0 0 6 7\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"sc-1qc3qkv-3 WWYYW\"><path d=\"M0.638062 1.36326L0.638062 5.43572C0.638062 6.253 1.56526 6.72516 2.22623 6.24445L5.02605 4.20822C5.57515 3.80887 5.57515 2.9901 5.02605 2.59075L2.22623 0.554521C1.56526 0.0738158 0.638062 0.54597 0.638062 1.36326Z\" fill=\"#833AE0\"></path></svg></div>",
-              "id": "",
-              "kind": "splitter",
-              "label": "splitter-collapse-handle",
-              "phase": "before-click",
-              "rect": {
-                "h": 50,
-                "w": 8,
-                "x": 1353,
-                "y": 525
-              },
-              "role": "",
-              "selector": "div.sc-1e45dnh-0.joWLyV:nth-of-type(2) > div.sc-1qc3qkv-0.jQEpdS:nth-of-type(2) > div.sc-1qc3qkv-1.blkroL > div.sc-1qc3qkv-4.hKfvmu:nth-of-type(1) > div.sc-1qc3qkv-2.iNeMm",
-              "tag": "div",
-              "text": "",
-              "title": ""
-            }
-          ],
-          "screenshotFile": "lms-template-capture/run-2026-05-29T03-31-52-114Z/screenshots/0067-task-64-omn1ls-after-4-splitter-collapse-handle.png",
-          "capturedAt": "2026-05-29T03:33:46.113Z",
-          "url": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-          "scroll": {
-            "x": 0,
-            "y": 0
-          },
-          "viewport": {
-            "devicePixelRatio": 1,
-            "height": 989,
-            "width": 1920
-          },
-          "textLines": [],
-          "buttons": [
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "index": 0,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 890,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(1)",
-              "tag": "a",
-              "text": "1",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "index": 1,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 934,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(2)",
-              "tag": "a",
-              "text": "2",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "index": 2,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 978,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.lgmxNl:nth-of-type(3)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            },
-            {
-              "ariaLabel": "",
-              "dangerous": false,
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "index": 3,
-              "manualConfirmRecommended": false,
-              "rect": {
-                "h": 44,
-                "w": 44,
-                "x": 1022,
-                "y": 8
-              },
-              "selector": "div.sc-1qfdy0n-0.hRiias:nth-of-type(1) > div.sc-1enjw3w-0.gBqTXc:nth-of-type(1) > div.sc-6lwyqj-0.haLmTZ:nth-of-type(2) > div.sc-6lwyqj-1.jWPLGV:nth-of-type(2) > a.sc-ic0hs2-1.eSGCEY:nth-of-type(4)",
-              "tag": "a",
-              "text": "",
-              "title": ""
-            }
-          ],
-          "inputs": [
-            {
-              "checked": false,
-              "name": "",
-              "placeholder": "",
-              "selector": "div.stage_question-wrapper_3ukB4 > div > div > div.question_question-input_1oAB7 > input.input_input-form_l9eYg",
-              "tag": "input",
-              "type": "",
-              "value": ""
-            }
-          ],
-          "choiceOptions": [],
-          "dragDrop": {
-            "draggable": [],
-            "dropZones": []
-          },
-          "codeBlocks": [],
-          "images": [],
-          "rasterImageUrls": [],
-          "downloadedAssets": {
-            "downloaded": [],
-            "skipped": []
-          },
-          "iframes": [],
-          "videos": [],
-          "links": [
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=1&track=1",
-              "text": "1"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=2&track=1",
-              "text": "2"
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=3&track=1",
-              "text": ""
-            },
-            {
-              "href": "https://lms.logikaschool.com/task-preview/26874?task=26874&level=4&track=1",
-              "text": ""
-            }
-          ],
-          "layoutHints": {
-            "hasCanvas": true,
-            "hasModal": true,
-            "hasTaskNavigation": true,
-            "headings": [],
-            "panels": [],
-            "taskDotsText": []
-          },
-          "id": "task-64-omn1ls-m6llw3",
-          "name": "after-4-splitter-collapse-handle",
-          "screenshot": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_1/workspace/screenshots/0067-task-64-omn1ls-after-4-splitter-collapse-handle.png",
-          "title": "Guess the number (1)",
-          "isAutoCheck": true,
-          "description": "Play the game. Write the same!",
-          "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-          "demo_project_id": "",
-          "command_keys": [
-            "motion",
-            "looks",
-            "sound",
-            "events",
-            "control",
-            "sensing",
-            "operators",
-            "variables",
-            "myblocks"
-          ],
-          "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_4_1",
-              "title": "Play the game. Write the same!",
-              "text": "Play the game. Write the same!",
-              "type": "gif",
-              "url": ""
-            }
-          ]
+          "taskLevelType": "bonus",
+          "type": "intro_or_modal_state",
+          "level_type": "intro_or_modal_state",
+          "activityType": "intro_or_modal_state",
+          "selectedType": "scratch",
+          "demoFullPage": true,
+          "drawerOpen": true,
+          "isAutoCheck": false,
+          "demo_project_id": ""
         }
       ],
-      "id": "task-64-omn1ls",
-      "instruction": "M3T2.1 Demo 2\nTasks with automatic check\nPlay the game. Write the same!",
-      "bodyText": "M3T2.1 Demo 2\nTasks with automatic check\nPlay the game. Write the same!",
-      "textLines": [
-        "M3T2.1 Demo 2",
-        "Tasks with automatic check",
-        "Play the game. Write the same!"
-      ],
-      "images": [],
-      "isAutoCheck": true,
-      "description": "Play the game. Write the same!",
-      "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-      "demo_project_id": "",
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control",
-        "sensing",
-        "operators",
-        "variables",
-        "myblocks"
-      ],
-      "command_blocks": [],
+      "title": "M3T2.1 Demo 2",
+      "position": 4,
+      "level_position": 4,
+      "levelPosition": 4,
+      "description": "",
+      "starter_project_id": null,
+      "source_task_id": "26874",
+      "source_demo_project_id": "10692470",
+      "media": [],
       "requirements": [
         {
           "id": "req_4_1",
           "title": "Play the game. Write the same!",
-          "text": "Play the game. Write the same!",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         }
-      ]
+      ],
+      "taskLevelType": "bonus",
+      "type": "intro_or_modal_state",
+      "level_type": "intro_or_modal_state",
+      "activityType": "intro_or_modal_state",
+      "selectedType": "scratch",
+      "demoFullPage": true,
+      "drawerOpen": true,
+      "isAutoCheck": false,
+      "demo_project_id": ""
     }
   ]
 }

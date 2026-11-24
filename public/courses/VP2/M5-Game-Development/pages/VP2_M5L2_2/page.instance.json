@@ -204,7 +204,7 @@
         }
       ],
       "starter_project_id": "Race_across_the_planet.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_2_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_2_2_state_1",
@@ -247,7 +247,7 @@
             }
           ],
           "starter_project_id": "Race_across_the_planet.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L2_2_Task_2_Demo.sb3",
           "project_title": "Snowman",
           "title": "Snowman",
           "source_task_id": "26875",
@@ -307,7 +307,7 @@
         }
       ],
       "starter_project_id": "Soccer_field.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_2_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_2_3_state_1",
@@ -351,7 +351,7 @@
             }
           ],
           "starter_project_id": "Soccer_field.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L2_2_Task_3_Demo.sb3",
           "project_title": "Soccer field",
           "title": "Soccer field",
           "source_task_id": "26875",

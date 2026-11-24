@@ -4,7 +4,7 @@
   "title": "Variables in games - Part 3",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 2,
+  "taskCount": 1,
   "tasks": [
     {
       "id": "VP2_M5L3_3_1",
@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Ping Pong",
+      "title": "Ping-pong",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -35,26 +35,44 @@
         {
           "id": "req_1_1",
           "title": "Program the greeting and introduction with the referee",
-          "text": "Program the greeting and introduction with the referee",
+          "text": "The referee asks for the names of the players before the game and announces them. How do we program this?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Program the racket controls",
-          "text": "Program the racket controls",
+          "text": "The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Counting missed balls",
-          "text": "Counting missed balls",
+          "text": "Find the Goal Check procedure and program it.",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_4",
+          "title": "Describe the victory check",
+          "text": "Find the Win Check procedure and program it.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Ping-pong",
+          "text": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M5L3_Ping_Pong.sb3",
       "demo_project_id": "",
       "states": [
@@ -68,7 +86,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -85,64 +103,59 @@
             {
               "id": "req_1_1",
               "title": "Program the greeting and introduction with the referee",
-              "text": "Program the greeting and introduction with the referee",
+              "text": "The referee asks for the names of the players before the game and announces them. How do we program this?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Program the racket controls",
-              "text": "Program the racket controls",
+              "text": "The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Counting missed balls",
-              "text": "Counting missed balls",
+              "text": "Find the Goal Check procedure and program it.",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_4",
+              "title": "Describe the victory check",
+              "text": "Find the Win Check procedure and program it.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Ping-pong",
+              "text": "This is a 2 player game. Who will win? The first player can control their racket using the W and S keys, and the second player can control theirs using the up and down arrows.",
               "url": ""
             }
           ],
-          "media": [],
-          "title": "Ping Pong",
+          "title": "Ping-pong",
           "isAutoCheck": false,
           "starter_project_id": "M5L3_Ping_Pong.sb3",
           "demo_project_id": "",
-          "project_title": "M5L3 Ping Pong"
+          "project_title": "M5L3 Ping Pong",
+          "source_task_id": "26877",
+          "source_project_id": "10692496",
+          "source_demo_project_id": "10692497"
         }
       ],
       "project_title": "M5L3 Ping Pong",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
-    },
-    {
-      "id": "VP2_M5L3_3_2",
-      "taskId": "VP2_M5L3_3_2",
-      "position": 2,
-      "level_position": 2,
-      "levelPosition": 2,
-      "title": "Did you like the task?",
-      "level_type": "rating",
-      "selectedType": "rating",
-      "activityType": "feedback_rating_task",
-      "requirements": [],
-      "media": [],
-      "command_keys": [],
-      "states": [
-        {
-          "id": "VP2_M5L3_3_2_state_1",
-          "stateId": "VP2_M5L3_3_2_state_1",
-          "position": 2,
-          "level_position": 2,
-          "levelPosition": 2,
-          "type": "rating",
-          "selectedType": "rating",
-          "level_type": "rating",
-          "requirements": [],
-          "media": [],
-          "command_keys": []
-        }
-      ]
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26877",
+      "source_project_id": "10692496",
+      "source_demo_project_id": "10692497"
     }
   ]
 }

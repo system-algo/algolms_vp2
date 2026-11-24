@@ -18,7 +18,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "If the octopus touches its prey, the score goes up",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -35,21 +35,47 @@
         {
           "id": "req_1_1",
           "title": "The score is set to zero",
-          "text": "The score is set to zero",
+          "text": "At the start, the score is 0.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "If the octopus touches its prey, the score goes up",
-          "text": "If the octopus touches its prey, the score goes up",
+          "text": "",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_3",
+          "title": "The octopus moves in the direction of the mouse pointer",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_4",
+          "title": "*When the mouse isn't moving, the octopus isn't moving either.",
+          "text": "The octopus only goes when the distance to the mouse pointer is less than 5.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Octopus",
+          "text": "The counter keeps track of how many times the octopus catches its prey.",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "Octopus.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_2_1_state_1",
@@ -61,7 +87,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "If the octopus touches its prey, the score goes up",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -78,28 +104,62 @@
             {
               "id": "req_1_1",
               "title": "The score is set to zero",
-              "text": "The score is set to zero",
+              "text": "At the start, the score is 0.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "If the octopus touches its prey, the score goes up",
-              "text": "If the octopus touches its prey, the score goes up",
+              "text": "",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_3",
+              "title": "The octopus moves in the direction of the mouse pointer",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_4",
+              "title": "*When the mouse isn't moving, the octopus isn't moving either.",
+              "text": "The octopus only goes when the distance to the mouse pointer is less than 5.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Octopus",
+              "text": "The counter keeps track of how many times the octopus catches its prey.",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Octopus",
           "isAutoCheck": false,
           "starter_project_id": "Octopus.sb3",
-          "demo_project_id": "",
-          "project_title": "Octopus"
+          "demo_project_id": "M5L2_1_Task_1_Demo.sb3",
+          "project_title": "Octopus",
+          "source_task_id": "26875",
+          "source_project_id": "10692471",
+          "source_demo_project_id": "10692431",
+          "tips": []
         }
       ],
       "project_title": "Octopus",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26875",
+      "source_project_id": "10692471",
+      "source_demo_project_id": "10692431",
+      "tips": []
     },
     {
       "id": "VP2_M5L2_2_2",
@@ -107,13 +167,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Snowman",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -129,28 +189,21 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Snowman costume change",
+          "text": "Program condition checking using a logical operator and the \"background: number\" and \"costume: number\" built-in variables.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_2/hints/snowman-costume-change.png"
+        }
+      ],
+      "media": [
         {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Race across the planet",
+          "text": "The snowman is traveling so fast that only the player can help it change clothes in time! \"Left arrow\" - puts on winter clothes; \"Right arrow\" - puts on summer clothes. Hurry before the snowman freezes or melts!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "Race_across_the_planet.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -163,7 +216,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -179,34 +232,36 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Snowman costume change",
+              "text": "Program condition checking using a logical operator and the \"background: number\" and \"costume: number\" built-in variables.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L2_2/hints/snowman-costume-change.png"
+            }
+          ],
+          "media": [
             {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Race across the planet",
+              "text": "The snowman is traveling so fast that only the player can help it change clothes in time! \"Left arrow\" - puts on winter clothes; \"Right arrow\" - puts on summer clothes. Hurry before the snowman freezes or melts!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "",
+          "starter_project_id": "Race_across_the_planet.sb3",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "Snowman",
+          "title": "Snowman",
+          "source_task_id": "26875",
+          "source_project_id": "10692474",
+          "source_demo_project_id": "10692476",
+          "tips": []
         }
       ],
-      "project_title": "Loading Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "Snowman",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26875",
+      "source_project_id": "10692474",
+      "source_demo_project_id": "10692476",
+      "tips": []
     },
     {
       "id": "VP2_M5L2_2_3",
@@ -214,13 +269,13 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Loading Project",
+      "title": "Soccer field",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -236,28 +291,22 @@
       "requirements": [
         {
           "id": "req_3_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "Background number",
+          "text": "The ball takes a different position depending on the background number.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
         {
-          "id": "req_3_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Soccer field",
+          "text": "Run the program on the green flag. Switch the view by clicking on the mouse.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "Soccer_field.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -270,7 +319,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -286,34 +335,37 @@
           "requirements": [
             {
               "id": "req_3_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "Background number",
+              "text": "The ball takes a different position depending on the background number.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
             {
-              "id": "req_3_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_3_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Soccer field",
+              "text": "Run the program on the green flag. Switch the view by clicking on the mouse.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "",
+          "starter_project_id": "Soccer_field.sb3",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "Soccer field",
+          "title": "Soccer field",
+          "source_task_id": "26875",
+          "source_project_id": "10692477",
+          "source_demo_project_id": "2698620",
+          "tips": []
         }
       ],
-      "project_title": "Loading Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "Soccer field",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26875",
+      "source_project_id": "10692477",
+      "source_demo_project_id": "2698620",
+      "tips": []
     },
     {
       "id": "VP2_M5L2_2_4",

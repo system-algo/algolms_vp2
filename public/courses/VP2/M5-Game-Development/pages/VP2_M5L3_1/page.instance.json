@@ -82,7 +82,7 @@
         }
       ],
       "starter_project_id": "M5L3_Apple_picking_season.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_1_1_state_1",
@@ -160,7 +160,7 @@
           "title": "Apple picking",
           "isAutoCheck": true,
           "starter_project_id": "M5L3_Apple_picking_season.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_1_Task_1_Demo.sb3",
           "project_title": "M5L3 Apple picking season",
           "source_task_id": "26876",
           "source_project_id": "10692487",
@@ -293,7 +293,7 @@
         }
       ],
       "starter_project_id": "M5L3_Catch_the_balls.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_1_2_state_1",
@@ -415,7 +415,7 @@
           "title": "The \"Catch the balls\" project",
           "isAutoCheck": false,
           "starter_project_id": "M5L3_Catch_the_balls.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_1_Task_2_Demo.sb3",
           "project_title": "M5L3 Catch the balls",
           "source_task_id": "26876",
           "source_project_id": "10692489",

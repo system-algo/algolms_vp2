@@ -24,7 +24,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Study the project. The cat asks for the username and greets them. Let's program it.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -41,17 +41,26 @@
         {
           "id": "req_1_1",
           "title": "The cat asks for a name and remembers it.",
-          "text": "The cat asks for a name and remembers it.",
+          "text": "The cat asks for a name and remembers it. To program that, use the following commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/ask-name.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_2",
+          "title": "The cat calls the user by name",
+          "text": "The cat refers to the user by name. To program that, use the following commands.",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/say-name.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-1-1y16kmo/initial/asset-3aejnc.png"
+          "title": "Cat bot 1",
+          "text": "Study the project. The cat asks for the username and greets them. Let's program it.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L1_Cat_bot_1.sb3",
@@ -67,7 +76,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Study the project. The cat asks for the username and greets them. Let's program it.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -84,28 +93,43 @@
             {
               "id": "req_1_1",
               "title": "The cat asks for a name and remembers it.",
-              "text": "The cat asks for a name and remembers it.",
+              "text": "The cat asks for a name and remembers it. To program that, use the following commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/ask-name.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_2",
+              "title": "The cat calls the user by name",
+              "text": "The cat refers to the user by name. To program that, use the following commands.",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/say-name.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-1-1y16kmo/initial/asset-3aejnc.png"
+              "title": "Cat bot 1",
+              "text": "Study the project. The cat asks for the username and greets them. Let's program it.",
+              "url": ""
             }
           ],
           "title": "Cat bot 1",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_1.sb3",
           "demo_project_id": "",
-          "project_title": "M5L1 Cat bot 1"
+          "project_title": "M5L1 Cat bot 1",
+          "source_task_id": "26872",
+          "source_project_id": "10691933",
+          "source_demo_project_id": "10691929"
         }
       ],
       "project_title": "M5L1 Cat bot 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26872",
+      "source_project_id": "10691933",
+      "source_demo_project_id": "10691929"
     },
     {
       "id": "VP2_M5L1_1_2",
@@ -119,7 +143,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -136,17 +160,26 @@
         {
           "id": "req_2_1",
           "title": "The cat asks for an age",
-          "text": "The cat asks for an age",
+          "text": "The cat asks the user's age and remembers it. To program that, use the following commands.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/ask-age.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_2_2",
+          "title": "The cat communicates",
+          "text": "The cat uses the age value to refer to the user. To program that, use the following commands.",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/say-age.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-22-ssu41u/initial/asset-3aejnc.png"
+          "title": "Cat bot 2",
+          "text": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L1_Cat_bot_2.sb3",
@@ -162,7 +195,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -179,28 +212,43 @@
             {
               "id": "req_2_1",
               "title": "The cat asks for an age",
-              "text": "The cat asks for an age",
+              "text": "The cat asks the user's age and remembers it. To program that, use the following commands.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/ask-age.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_2_2",
+              "title": "The cat communicates",
+              "text": "The cat uses the age value to refer to the user. To program that, use the following commands.",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/say-age.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-22-ssu41u/initial/asset-3aejnc.png"
+              "title": "Cat bot 2",
+              "text": "Study how the cat bot works. It asks the user's age and responds. Let's program it.",
+              "url": ""
             }
           ],
           "title": "Cat bot 2",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_2.sb3",
           "demo_project_id": "",
-          "project_title": "M5L1 Cat bot 2"
+          "project_title": "M5L1 Cat bot 2",
+          "source_task_id": "26872",
+          "source_project_id": "10691942",
+          "source_demo_project_id": "10691940"
         }
       ],
       "project_title": "M5L1 Cat bot 2",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26872",
+      "source_project_id": "10691942",
+      "source_demo_project_id": "10691940"
     },
     {
       "id": "VP2_M5L1_1_3",
@@ -214,7 +262,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Run the project and answer the questions.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -231,17 +279,42 @@
         {
           "id": "req_3_1",
           "title": "Create variables",
-          "text": "Create variables",
+          "text": "How many variables do you need? How should they be named?",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/make-variable.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_2",
+          "title": "The cat's age",
+          "text": "The cat's age is a random variable.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_3",
+          "title": "Record the values you need in variables",
+          "text": "The player enters a name and age.",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/record-values.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_4",
+          "title": "Use variable values",
+          "text": "Let the cat call you by name and compare ages!",
+          "type": "gif",
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/use-values.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 9 at 10:15 PM",
-          "text": "Complete the programming task for \"Last save by student August 9 at 10:15 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-43-prdb1n/initial/asset-3aejnc.png"
+          "title": "Greeting",
+          "text": "Run the project and answer the questions.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L1_Greeting.sb3",
@@ -257,7 +330,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the project and answer the questions.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -274,28 +347,59 @@
             {
               "id": "req_3_1",
               "title": "Create variables",
-              "text": "Create variables",
+              "text": "How many variables do you need? How should they be named?",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/make-variable.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_2",
+              "title": "The cat's age",
+              "text": "The cat's age is a random variable.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_3",
+              "title": "Record the values you need in variables",
+              "text": "The player enters a name and age.",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/record-values.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_4",
+              "title": "Use variable values",
+              "text": "Let the cat call you by name and compare ages!",
+              "type": "gif",
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/hints/use-values.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 9 at 10:15 PM",
-              "text": "Complete the programming task for \"Last save by student August 9 at 10:15 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_1/workspace/assets/task-43-prdb1n/initial/asset-3aejnc.png"
+              "title": "Greeting",
+              "text": "Run the project and answer the questions.",
+              "url": ""
             }
           ],
           "title": "Greeting",
           "isAutoCheck": false,
           "starter_project_id": "M5L1_Greeting.sb3",
           "demo_project_id": "",
-          "project_title": "M5L1 Greeting"
+          "project_title": "M5L1 Greeting",
+          "source_task_id": "26872",
+          "source_project_id": "10691955",
+          "source_demo_project_id": "10635513"
         }
       ],
       "project_title": "M5L1 Greeting",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26872",
+      "source_project_id": "10691955",
+      "source_demo_project_id": "10635513"
     }
   ]
 }

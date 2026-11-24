@@ -18,7 +18,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Eliminate enemy sprites with the shooting mechanic! Control movement and aim carefully.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -94,9 +94,9 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 9 at 8:45 PM",
-          "text": "Complete the programming task for \"Last save by student August 9 at 8:45 PM\".",
-          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/workspace/assets/task-1-1x43ld7/initial/asset-d9v7a4.png"
+          "title": "Shooting",
+          "text": "",
+          "url": ""
         }
       ],
       "starter_project_id": "M4L3_Shooter.sb3",
@@ -112,7 +112,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Eliminate enemy sprites with the shooting mechanic! Control movement and aim carefully.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -188,9 +188,9 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 9 at 8:45 PM",
-              "text": "Complete the programming task for \"Last save by student August 9 at 8:45 PM\".",
-              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L3_3/workspace/assets/task-1-1x43ld7/initial/asset-d9v7a4.png"
+              "title": "Shooting",
+              "text": "",
+              "url": ""
             }
           ],
           "title": "Shooting",

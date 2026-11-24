@@ -74,7 +74,7 @@
         }
       ],
       "starter_project_id": "M5L3_Ping_Pong.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_3_1_state_1",
@@ -144,7 +144,7 @@
           "title": "Ping-pong",
           "isAutoCheck": false,
           "starter_project_id": "M5L3_Ping_Pong.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_3_Task_1_Demo.sb3",
           "project_title": "M5L3 Ping Pong",
           "source_task_id": "26877",
           "source_project_id": "10692496",

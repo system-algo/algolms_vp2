@@ -1,3 +1,4 @@
+import ScratchDemoPlayer from './ScratchDemoPlayer.jsx';
 import CodeClassificationTask from './CodeClassificationTask.jsx';
 import CodePlaceholderTask from './CodePlaceholderTask.jsx';
 import GenericCapturedTask from './GenericCapturedTask.jsx';
@@ -1174,6 +1175,10 @@ export default function ActivityRouter(props) {
 
   if (rendererType === 'block-game-task') {
     return <BlockGameTask {...rendererProps} task={nextTask} />;
+  }
+
+  if (nextTask.demoFullPage && nextTask.demo_project_id) {
+    return <ScratchDemoPlayer key={taskId} project={nextTask.demo_project_id} title={nextTask.title} />;
   }
 
   if (rendererType === 'scratch-task') {

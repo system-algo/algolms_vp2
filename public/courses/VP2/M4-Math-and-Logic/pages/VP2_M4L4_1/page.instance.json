@@ -602,7 +602,7 @@
       "requirements": [],
       "media": [],
       "starter_project_id": null,
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_1_Task_6_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_1_6_state_1",
@@ -634,7 +634,8 @@
           "title": "Rescue the penguin"
         }
       ],
-      "type": "intro_or_modal_state"
+      "type": "intro_or_modal_state",
+      "demoFullPage": true
     }
   ]
 }

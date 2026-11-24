@@ -18,7 +18,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Define the questions procedure. Define the story procedure",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -35,24 +35,26 @@
         {
           "id": "req_1_1",
           "title": "Define the \"questions\" procedure",
-          "text": "Define the \"questions\" procedure",
+          "text": "Request all the words you need and record them in different variables.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/questions.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Define the \"story\" procedure",
-          "text": "Define the \"story\" procedure",
+          "text": "Think of what the character will tell the player. Enter the variable values in the story.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/story.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student September 19 at 3:57 PM",
-          "text": "Complete the programming task for \"Last save by student September 19 at 3:57 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-1-193qcd8/initial/asset-15kmfa1.png"
+          "title": "Run the project!",
+          "text": "",
+          "url": ""
         }
       ],
       "starter_project_id": "Quest.sb3",
@@ -68,7 +70,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Define the questions procedure. Define the story procedure",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -85,35 +87,45 @@
             {
               "id": "req_1_1",
               "title": "Define the \"questions\" procedure",
-              "text": "Define the \"questions\" procedure",
+              "text": "Request all the words you need and record them in different variables.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/questions.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Define the \"story\" procedure",
-              "text": "Define the \"story\" procedure",
+              "text": "Think of what the character will tell the player. Enter the variable values in the story.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/story.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student September 19 at 3:57 PM",
-              "text": "Complete the programming task for \"Last save by student September 19 at 3:57 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-1-193qcd8/initial/asset-15kmfa1.png"
+              "title": "Run the project!",
+              "text": "",
+              "url": ""
             }
           ],
           "title": "Quest",
           "isAutoCheck": false,
           "starter_project_id": "Quest.sb3",
           "demo_project_id": "",
-          "project_title": "Quest"
+          "project_title": "Quest",
+          "source_task_id": "26878",
+          "source_project_id": "10692499",
+          "source_demo_project_id": "10692504",
+          "tips": []
         }
       ],
       "project_title": "Quest",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26878",
+      "source_project_id": "10692499",
+      "source_demo_project_id": "10692504",
+      "tips": []
     },
     {
       "id": "VP2_M5L3_2_2",
@@ -121,13 +133,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Flying ball",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -143,28 +155,30 @@
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "title": "What happens for the \"space bar is pressed\" event?",
+          "text": "The sprite asks for a new speed value and records it.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/space-bar.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
+          "title": "How can you fly at a set speed?",
+          "text": "Build such a script and run it on the green flag.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/set-speed.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
         {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Ball",
+          "text": "Run the program on the green flag. Press the space bar to change the speed of the ball.",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "Ball.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -177,7 +191,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -193,34 +207,45 @@
           "requirements": [
             {
               "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "title": "What happens for the \"space bar is pressed\" event?",
+              "text": "The sprite asks for a new speed value and records it.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/space-bar.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
+              "title": "How can you fly at a set speed?",
+              "text": "Build such a script and run it on the green flag.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/hints/set-speed.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
             {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Ball",
+              "text": "Run the program on the green flag. Press the space bar to change the speed of the ball.",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "",
+          "starter_project_id": "Ball.sb3",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "Ball",
+          "title": "Flying ball",
+          "source_task_id": "26878",
+          "source_project_id": "10692507",
+          "source_demo_project_id": "10692511",
+          "tips": []
         }
       ],
-      "project_title": "Loading Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "Ball",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26878",
+      "source_project_id": "10692507",
+      "source_demo_project_id": "10692511",
+      "tips": []
     },
     {
       "id": "VP2_M5L3_2_3",
@@ -234,7 +259,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -251,17 +276,43 @@
         {
           "id": "req_3_1",
           "title": "Key touching",
-          "text": "Key touching",
+          "text": "Upon touching a key, the color of the last key taken is written in the variable.",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_2",
+          "title": "The door says the color",
+          "text": "Upon touching the door, the door says the color of the last key taken",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_3",
+          "title": "If no key was taken, the door says nothing",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_3_4",
+          "title": "*Bonus: colorful doors",
+          "text": "Make it so that taking the green key will open the green door, and the red one will open the red door.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student September 19 at 3:58 PM",
-          "text": "Complete the programming task for \"Last save by student September 19 at 3:58 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-43-7rn4fv/initial/asset-xbcvh3.png"
+          "title": "Colored keys",
+          "text": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
+          "url": ""
         }
       ],
       "starter_project_id": "Colored_keys.sb3",
@@ -277,7 +328,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -294,28 +345,62 @@
             {
               "id": "req_3_1",
               "title": "Key touching",
-              "text": "Key touching",
+              "text": "Upon touching a key, the color of the last key taken is written in the variable.",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_2",
+              "title": "The door says the color",
+              "text": "Upon touching the door, the door says the color of the last key taken",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_3",
+              "title": "If no key was taken, the door says nothing",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_3_4",
+              "title": "*Bonus: colorful doors",
+              "text": "Make it so that taking the green key will open the green door, and the red one will open the red door.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student September 19 at 3:58 PM",
-              "text": "Complete the programming task for \"Last save by student September 19 at 3:58 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L3_2/workspace/assets/task-43-7rn4fv/initial/asset-xbcvh3.png"
+              "title": "Colored keys",
+              "text": "Run the program on the green flag. Have the dog take one or both keys and walk to the door. The door will tell you the color of the last key taken.",
+              "url": ""
             }
           ],
           "title": "Colored keys",
           "isAutoCheck": false,
           "starter_project_id": "Colored_keys.sb3",
           "demo_project_id": "",
-          "project_title": "Colored keys"
+          "project_title": "Colored keys",
+          "source_task_id": "26878",
+          "source_project_id": "10692515",
+          "source_demo_project_id": "10692516",
+          "tips": []
         }
       ],
       "project_title": "Colored keys",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26878",
+      "source_project_id": "10692515",
+      "source_demo_project_id": "10692516",
+      "tips": []
     },
     {
       "id": "VP2_M5L3_2_4",

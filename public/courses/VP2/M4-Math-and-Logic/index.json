@@ -90,13 +90,13 @@
       "id": "VP2_M4L3_1",
       "title": "Random numbers and ranges - Part 1",
       "lessonId": "VP2_M4L3",
-      "taskCount": 14
+      "taskCount": 7
     },
     {
       "id": "VP2_M4L3_2",
       "title": "Random numbers and ranges - Part 2",
       "lessonId": "VP2_M4L3",
-      "taskCount": 16
+      "taskCount": 2
     },
     {
       "id": "VP2_M4L3_3",
@@ -109,12 +109,6 @@
       "title": "Random numbers and ranges - Part 4",
       "lessonId": "VP2_M4L3",
       "taskCount": 4
-    },
-    {
-      "id": "VP2_M4L4_1",
-      "title": "Random numbers and ranges - Part 1",
-      "lessonId": "VP2_M4L3",
-      "taskCount": 6
     },
     {
       "id": "VP2_M4L4_SLIDES",
@@ -165,6 +159,6 @@
       "taskCount": 5
     }
   ],
-  "pageCount": 27,
-  "taskCount": 207
+  "pageCount": 26,
+  "taskCount": 180
 }

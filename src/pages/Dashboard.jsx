@@ -423,15 +423,9 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
 
           const sortPages = (pages) =>
             [...(pages || [])].sort((a, b) => {
-              const numA = parseInt(
-                String(a.id || a.pageId || '').match(/_(\d+)$/)?.[1] || '0',
-                10
-              );
-              const numB = parseInt(
-                String(b.id || b.pageId || '').match(/_(\d+)$/)?.[1] || '0',
-                10
-              );
-              return numA - numB;
+              const pageNumber = (page) => Number(String(page.id || page.pageId || '')
+                .match(/_(\d+)(?:_track\d+)?$/i)?.[1] || 0);
+              return pageNumber(a) - pageNumber(b);
             });
 
           let lessons = [];
@@ -1394,7 +1388,11 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
             <div className="pages-circles-grid">
               {activeLesson?.pages && activeLesson.pages.length > 0 ? (
                 activeLesson.pages.map((page, index) => {
-                  const pageNum = index + 1;
+                  const id = String(page.id || page.pageId || '');
+                  const isSlide = /_SLIDES$/i.test(id);
+                  const numberedPage = id.match(/_(\d+)(?:_track(\d+))?$/i);
+                  const pageNum = numberedPage ? Number(numberedPage[1]) : index + 1;
+                  const track = numberedPage?.[2];
                   const tasksCount = page.taskCount || 0;
                   const isLocked =
                     activeLesson.isLocked === true ||
@@ -1424,14 +1422,14 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
                     >
                       <div className="circle-node">
                         <span className="circle-label">
-                          {isLocked ? 'LOCKED' : completed ? 'DONE' : 'PAGE'}
+                          {isLocked ? 'LOCKED' : completed ? 'DONE' : isSlide ? 'SLIDE' : track ? `TRACK ${track}` : 'PAGE'}
                         </span>
                         <span className="circle-number">
                           {isLocked
                             ? '🔒'
                             : completed
                             ? '✓'
-                            : String(pageNum).padStart(2, '0')}
+                            : isSlide ? '▤' : String(pageNum).padStart(2, '0')}
                         </span>
                       </div>
                       <span className="circle-task-count">

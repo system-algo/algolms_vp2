@@ -494,13 +494,13 @@
           "id": "VP2_M4L3_1",
           "title": "Random numbers - Part 1",
           "lessonId": "VP2_M4L3",
-          "taskCount": 14
+          "taskCount": 7
         },
         {
           "id": "VP2_M4L3_2",
           "title": "Random numbers - Part 2",
           "lessonId": "VP2_M4L3",
-          "taskCount": 16
+          "taskCount": 2
         },
         {
           "id": "VP2_M4L3_3",
@@ -513,12 +513,6 @@
           "title": "Test yourself. Random numbers",
           "lessonId": "VP2_M4L3",
           "taskCount": 4
-        },
-        {
-          "id": "VP2_M4L4_1",
-          "title": "Coordinate areas",
-          "lessonId": "VP2_M4L3",
-          "taskCount": 6
         },
         {
           "id": "VP2_M4L4_1",
@@ -558,7 +552,7 @@
         }
       ],
       "pageCount": 21,
-      "taskCount": 202
+      "taskCount": 175
     },
     {
       "id": "M5-Game-Development",
@@ -795,6 +789,6 @@
       "taskCount": 63
     }
   ],
-  "pageCount": 105,
-  "taskCount": 669
+  "pageCount": 104,
+  "taskCount": 642
 }

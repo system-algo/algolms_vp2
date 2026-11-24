@@ -24,7 +24,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Run the project and answer the questions.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -41,17 +41,34 @@
         {
           "id": "req_1_1",
           "title": "Create variables",
-          "text": "Create variables",
+          "text": "How many variables do you need? How should they be named?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_2",
+          "title": "The cat asks for a password and remembers it",
+          "text": "To remember the password, you need to write it in a variable.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_3",
+          "title": "The cat asks for the password and checks it",
+          "text": "If the answer and the \"Password\" variable match, the appearance of the cat changes or it performs an action.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 9 at 10:19 PM",
-          "text": "Complete the programming task for \"Last save by student August 9 at 10:19 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_2/workspace/assets/task-1-tb9zf2/initial/asset-1gwz70s.png"
+          "title": "Greeting",
+          "text": "Run the project and answer the questions.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L1_Password.sb3",
@@ -67,7 +84,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the project and answer the questions.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -84,28 +101,51 @@
             {
               "id": "req_1_1",
               "title": "Create variables",
-              "text": "Create variables",
+              "text": "How many variables do you need? How should they be named?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_2",
+              "title": "The cat asks for a password and remembers it",
+              "text": "To remember the password, you need to write it in a variable.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_3",
+              "title": "The cat asks for the password and checks it",
+              "text": "If the answer and the \"Password\" variable match, the appearance of the cat changes or it performs an action.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 9 at 10:19 PM",
-              "text": "Complete the programming task for \"Last save by student August 9 at 10:19 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L1_2/workspace/assets/task-1-tb9zf2/initial/asset-1gwz70s.png"
+              "title": "Greeting",
+              "text": "Run the project and answer the questions.",
+              "url": ""
             }
           ],
           "title": "Password",
           "isAutoCheck": false,
           "starter_project_id": "M5L1_Password.sb3",
           "demo_project_id": "",
-          "project_title": "M5L1 Password"
+          "project_title": "M5L1 Password",
+          "source_task_id": "26873",
+          "source_project_id": "10691967",
+          "source_demo_project_id": "10691965"
         }
       ],
       "project_title": "M5L1 Password",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26873",
+      "source_project_id": "10691967",
+      "source_demo_project_id": "10691965"
     },
     {
       "id": "VP2_M5L1_2_2",

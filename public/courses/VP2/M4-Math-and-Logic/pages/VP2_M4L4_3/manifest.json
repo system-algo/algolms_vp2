@@ -41,31 +41,51 @@
         {
           "id": "req_1_1",
           "title": "Rule: if the player is at the bottom of the stage, you lose",
-          "text": "Rule: if the player is at the bottom of the stage, you lose",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Other rules",
-          "text": "Other rules",
+          "text": "Don't forget about the rest of the rules: how do enemies and obstacles work?",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Enemy movement in levels 1 and 2",
-          "text": "Enemy movement in levels 1 and 2",
+          "text": "Adds enemies and program their movement!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_xml_4",
+          "title": "Transitions between levels",
+          "text": "Don't forget about transitions between game levels: how do all the participants react to level changes?",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_1_xml_5",
+          "title": "*Bonus: add new features",
+          "text": "Add new features like shooting, leverage, or superpowers for the main character. See an example in the next level marked with the letter \"D\"!",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted",
+          "taskType": "bonus"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student June 4 at 3:02 PM",
-          "text": "Complete the programming task for \"Last save by student June 4 at 3:02 PM\".",
-          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_3/workspace/assets/task-1-1o7bfu4/initial/asset-1o5vivw.png"
+          "title": "Platformer",
+          "text": "This is a real platformer game! Here gravity affects the player and you can only jump by pushing off the platform. You need to reach the goal by jumping over obstacles.",
+          "url": ""
         }
       ],
       "starter_project_id": "M4L4_Platformer.sb3",
@@ -98,31 +118,51 @@
             {
               "id": "req_1_1",
               "title": "Rule: if the player is at the bottom of the stage, you lose",
-              "text": "Rule: if the player is at the bottom of the stage, you lose",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Other rules",
-              "text": "Other rules",
+              "text": "Don't forget about the rest of the rules: how do enemies and obstacles work?",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Enemy movement in levels 1 and 2",
-              "text": "Enemy movement in levels 1 and 2",
+              "text": "Adds enemies and program their movement!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_xml_4",
+              "title": "Transitions between levels",
+              "text": "Don't forget about transitions between game levels: how do all the participants react to level changes?",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_1_xml_5",
+              "title": "*Bonus: add new features",
+              "text": "Add new features like shooting, leverage, or superpowers for the main character. See an example in the next level marked with the letter \"D\"!",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted",
+              "taskType": "bonus"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student June 4 at 3:02 PM",
-              "text": "Complete the programming task for \"Last save by student June 4 at 3:02 PM\".",
-              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_3/workspace/assets/task-1-1o7bfu4/initial/asset-1o5vivw.png"
+              "title": "Platformer",
+              "text": "This is a real platformer game! Here gravity affects the player and you can only jump by pushing off the platform. You need to reach the goal by jumping over obstacles.",
+              "url": ""
             }
           ],
           "title": "Platformer",
@@ -141,13 +181,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Platformer with shooting",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
-      "isAutoCheck": true,
-      "description": "Preview example project",
+      "isAutoCheck": false,
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -162,25 +202,12 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "req_2_xml_1",
+          "title": "The character jumps on the \"up\" arrow and shoots on the space bar. Try to figure out how to turn on the elevator.",
+          "text": "",
           "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [],
@@ -197,7 +224,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -212,34 +239,23 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "req_2_xml_1",
+              "title": "The character jumps on the \"up\" arrow and shoots on the space bar. Try to figure out how to turn on the elevator.",
+              "text": "",
               "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [],
           "starter_project_id": "",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "Platformer with shooting",
+          "title": "Platformer with shooting",
+          "isAutoCheck": false
         }
       ],
-      "project_title": "Loading Project",
+      "project_title": "Platformer with shooting",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
     },
     {

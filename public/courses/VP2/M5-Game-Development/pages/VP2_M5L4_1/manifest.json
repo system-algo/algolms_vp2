@@ -24,7 +24,7 @@
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Run the project. When you press the space bar, a new drawing appears. Let's program it",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -41,31 +41,34 @@
         {
           "id": "req_1_1",
           "title": "Procedure with a parameter",
-          "text": "Procedure with a parameter",
+          "text": "Create a procedure with a parameter and attach it to the script that draws the pattern. Be sure to call this procedure \"Flower with __ petals.\"",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/petals.gif",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Number of petals",
-          "text": "Number of petals",
+          "text": "Add the \"number of petals\" parameter to the script.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/number-of-petals.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Pressing the space bar",
-          "text": "Pressing the space bar",
+          "text": "When you press the space bar, the procedure \"Flower with __ petals\" is performed, and the number of petals is randomly determined from 5 to 25.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/space-bar.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 10 at 4:08 PM",
-          "text": "Complete the programming task for \"Last save by student August 10 at 4:08 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-1-1p2tuhd/initial/asset-15t4blx.png"
+          "title": "Kaleidoscope",
+          "text": "Run the project. When you press the space bar, a new drawing appears. Let's program it.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L4_Kaleidoscope.sb3",
@@ -81,7 +84,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the project. When you press the space bar, a new drawing appears. Let's program it",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -98,42 +101,51 @@
             {
               "id": "req_1_1",
               "title": "Procedure with a parameter",
-              "text": "Procedure with a parameter",
+              "text": "Create a procedure with a parameter and attach it to the script that draws the pattern. Be sure to call this procedure \"Flower with __ petals.\"",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/petals.gif",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Number of petals",
-              "text": "Number of petals",
+              "text": "Add the \"number of petals\" parameter to the script.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/number-of-petals.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Pressing the space bar",
-              "text": "Pressing the space bar",
+              "text": "When you press the space bar, the procedure \"Flower with __ petals\" is performed, and the number of petals is randomly determined from 5 to 25.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/space-bar.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 10 at 4:08 PM",
-              "text": "Complete the programming task for \"Last save by student August 10 at 4:08 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-1-1p2tuhd/initial/asset-15t4blx.png"
+              "title": "Kaleidoscope",
+              "text": "Run the project. When you press the space bar, a new drawing appears. Let's program it.",
+              "url": ""
             }
           ],
           "title": "Kaleidoscope",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Kaleidoscope.sb3",
           "demo_project_id": "",
-          "project_title": "M5L4 Kaleidoscope"
+          "project_title": "M5L4 Kaleidoscope",
+          "source_task_id": "26879",
+          "source_project_id": "10692651",
+          "source_demo_project_id": "6157743"
         }
       ],
       "project_title": "M5L4 Kaleidoscope",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26879",
+      "source_project_id": "10692651",
+      "source_demo_project_id": "6157743"
     },
     {
       "id": "VP2_M5L4_1_2",
@@ -141,13 +153,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Flower generation",
+      "title": "Flower generator",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -164,31 +176,42 @@
         {
           "id": "req_2_1",
           "title": "Add the Pen extension",
-          "text": "Add the Pen extension",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/pen.gif",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_2",
           "title": "Create a procedure with a parameter for drawing a flower",
-          "text": "Create a procedure with a parameter for drawing a flower",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/flower-parameter.gif",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_2_3",
           "title": "Program the drawing of the flower",
-          "text": "Program the drawing of the flower",
+          "text": "You will need to choose a costume, color, and rotate by the number of petals by the following number of degrees: 360/(number of petals).",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/draw-flower.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_2_4",
+          "title": "Program the choice of the number of petals",
+          "text": "Make it so that when you click on the number 3, a flower with 3 petals is drawn, or when you click on 4, it has four petals.",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student August 10 at 4:18 PM",
-          "text": "Complete the programming task for \"Last save by student August 10 at 4:18 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-22-pkxncp/initial/asset-15t4blx.png"
+          "title": "Kaleidoscope 2",
+          "text": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L4_Flower_generation.sb3",
@@ -204,7 +227,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -221,42 +244,59 @@
             {
               "id": "req_2_1",
               "title": "Add the Pen extension",
-              "text": "Add the Pen extension",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/pen.gif",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_2",
               "title": "Create a procedure with a parameter for drawing a flower",
-              "text": "Create a procedure with a parameter for drawing a flower",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/flower-parameter.gif",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_2_3",
               "title": "Program the drawing of the flower",
-              "text": "Program the drawing of the flower",
+              "text": "You will need to choose a costume, color, and rotate by the number of petals by the following number of degrees: 360/(number of petals).",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/hints/draw-flower.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_2_4",
+              "title": "Program the choice of the number of petals",
+              "text": "Make it so that when you click on the number 3, a flower with 3 petals is drawn, or when you click on 4, it has four petals.",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student August 10 at 4:18 PM",
-              "text": "Complete the programming task for \"Last save by student August 10 at 4:18 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L4_1/workspace/assets/task-22-pkxncp/initial/asset-15t4blx.png"
+              "title": "Kaleidoscope 2",
+              "text": "Run the project. When you press a key from 3 to 9, a new pattern appears and the number of petals is equal to that number. Let's program it.",
+              "url": ""
             }
           ],
-          "title": "Flower generation",
+          "title": "Flower generator",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Flower_generation.sb3",
           "demo_project_id": "",
-          "project_title": "M5L4 Flower generation"
+          "project_title": "M5L4 Flower generation",
+          "source_task_id": "26879",
+          "source_project_id": "10692663",
+          "source_demo_project_id": "6157875"
         }
       ],
       "project_title": "M5L4 Flower generation",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26879",
+      "source_project_id": "10692663",
+      "source_demo_project_id": "6157875"
     }
   ]
 }

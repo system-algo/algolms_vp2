@@ -35,58 +35,25 @@
         {
           "id": "req_1_1",
           "title": "Planning",
-          "text": "Planning",
+          "text": "Use the pages in your workbook to write your game plan.",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_1_2",
           "title": "Create!",
-          "text": "Create!",
+          "text": "Program your level!",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Combine",
-          "text": "Combine",
+          "text": "Ask your teacher to help you combine the different parts of the project.",
           "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_4",
-          "title": "Tips",
-          "text": "Tips",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_5",
-          "title": "Download the sprite",
-          "text": "Download the sprite",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_6",
-          "title": "Upload the sprite",
-          "text": "Upload the sprite",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_7",
-          "title": "Download the background",
-          "text": "Download the background",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_8",
-          "title": "Upload the background",
-          "text": "Upload the background",
-          "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [],
@@ -120,58 +87,25 @@
             {
               "id": "req_1_1",
               "title": "Planning",
-              "text": "Planning",
+              "text": "Use the pages in your workbook to write your game plan.",
               "type": "gif",
               "url": ""
             },
             {
               "id": "req_1_2",
               "title": "Create!",
-              "text": "Create!",
+              "text": "Program your level!",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Combine",
-              "text": "Combine",
+              "text": "Ask your teacher to help you combine the different parts of the project.",
               "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_4",
-              "title": "Tips",
-              "text": "Tips",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_5",
-              "title": "Download the sprite",
-              "text": "Download the sprite",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_6",
-              "title": "Upload the sprite",
-              "text": "Upload the sprite",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_7",
-              "title": "Download the background",
-              "text": "Download the background",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_8",
-              "title": "Upload the background",
-              "text": "Upload the background",
-              "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [],
@@ -179,11 +113,59 @@
           "isAutoCheck": false,
           "starter_project_id": "M4L5_Group_project.sb3",
           "demo_project_id": "",
-          "project_title": "M4L5 Group project"
+          "project_title": "M4L5 Group project",
+          "tips": [
+            {
+              "title": "Download the sprite",
+              "text": "To merge two projects, transfer the sprites to the other project.",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/download-sprite.png"
+            },
+            {
+              "title": "Upload the sprite",
+              "text": "Add your sprites to the main project.",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/upload-sprite.png"
+            },
+            {
+              "title": "Download the background",
+              "text": "",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/download-background.png"
+            },
+            {
+              "title": "Upload the background",
+              "text": "Upload the backgrounds to the main project",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/upload-the-background.png"
+            }
+          ],
+          "source_task_id": "26841",
+          "source_project_id": "10691903"
         }
       ],
       "project_title": "M4L5 Group project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "title": "Download the sprite",
+          "text": "To merge two projects, transfer the sprites to the other project.",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/download-sprite.png"
+        },
+        {
+          "title": "Upload the sprite",
+          "text": "Add your sprites to the main project.",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/upload-sprite.png"
+        },
+        {
+          "title": "Download the background",
+          "text": "",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/download-background.png"
+        },
+        {
+          "title": "Upload the background",
+          "text": "Upload the backgrounds to the main project",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L5_1/hints/upload-the-background.png"
+        }
+      ],
+      "source_task_id": "26841",
+      "source_project_id": "10691903"
     },
     {
       "id": "VP2_M4L5_1_2",

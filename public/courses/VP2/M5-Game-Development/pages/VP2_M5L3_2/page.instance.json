@@ -58,7 +58,7 @@
         }
       ],
       "starter_project_id": "Quest.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_2_1_state_1",
@@ -112,7 +112,7 @@
           "title": "Quest",
           "isAutoCheck": false,
           "starter_project_id": "Quest.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_2_Task_1_Demo.sb3",
           "project_title": "Quest",
           "source_task_id": "26878",
           "source_project_id": "10692499",
@@ -179,7 +179,7 @@
         }
       ],
       "starter_project_id": "Ball.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_2_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_2_2_state_1",
@@ -231,7 +231,7 @@
             }
           ],
           "starter_project_id": "Ball.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_2_Task_2_Demo.sb3",
           "project_title": "Ball",
           "title": "Flying ball",
           "source_task_id": "26878",
@@ -316,7 +316,7 @@
         }
       ],
       "starter_project_id": "Colored_keys.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L3_2_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L3_2_3_state_1",
@@ -387,7 +387,7 @@
           "title": "Colored keys",
           "isAutoCheck": false,
           "starter_project_id": "Colored_keys.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L3_2_Task_3_Demo.sb3",
           "project_title": "Colored keys",
           "source_task_id": "26878",
           "source_project_id": "10692515",

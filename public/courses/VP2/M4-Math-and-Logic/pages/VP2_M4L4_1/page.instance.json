@@ -35,33 +35,28 @@
         {
           "id": "req_1_1",
           "title": "The Frank sprite got stuck in the swamp",
-          "text": "The Frank sprite got stuck in the swamp",
+          "text": "Modify the program so that the Frank sprite says he got stuck in the swamp if he drops down too low.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-swamp.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the original position of the Frank sprite.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-initial.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
         {
-          "id": "req_1_3",
-          "title": "Tips",
-          "text": "Tips",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_4",
-          "title": "Less than symbol",
-          "text": "Less than symbol",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Run the program on the flag",
+          "text": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L4_Swamp_1.sb3",
       "demo_project_id": "",
       "states": [
@@ -92,42 +87,53 @@
             {
               "id": "req_1_1",
               "title": "The Frank sprite got stuck in the swamp",
-              "text": "The Frank sprite got stuck in the swamp",
+              "text": "Modify the program so that the Frank sprite says he got stuck in the swamp if he drops down too low.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-swamp.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the original position of the Frank sprite.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-initial.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
             {
-              "id": "req_1_3",
-              "title": "Tips",
-              "text": "Tips",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_4",
-              "title": "Less than symbol",
-              "text": "Less than symbol",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Run the program on the flag",
+              "text": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Frank in the swamp",
           "isAutoCheck": true,
           "starter_project_id": "M4L4_Swamp_1.sb3",
           "demo_project_id": "",
-          "project_title": "M4L4 Swamp 1"
+          "project_title": "M4L4 Swamp 1",
+          "tips": [
+            {
+              "id": "less-than",
+              "title": "Less than symbol",
+              "description": "This is the less than symbol. The number to the left of the symbol is less than the other one. The acute angle always points to the smaller number.",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/less-than.png"
+            }
+          ]
         }
       ],
       "project_title": "M4L4 Swamp 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "less-than",
+          "title": "Less than symbol",
+          "description": "This is the less than symbol. The number to the left of the symbol is less than the other one. The acute angle always points to the smaller number.",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/less-than.png"
+        }
+      ]
     },
     {
       "id": "VP2_M4L4_1_2",
@@ -135,13 +141,13 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Loading Project",
+      "title": "Going around walls",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Preview example project",
+      "description": "Arrow control. Please note that the Andy sprite does not walk on walls. Just like in reality!",
       "command_keys": [
         "motion",
         "looks",
@@ -156,29 +162,23 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_2_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
+          "id": "req_2_xml_1",
+          "title": "We don't move along walls",
+          "text": "Complete the code that is triggered when you press the up arrow key. If the up arrow is pressed but the Y coordinate is greater than 25, no movement occurs.",
           "type": "gif",
-          "url": ""
-        },
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/walls.png",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
         {
-          "id": "req_2_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Loading Project\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
+          "type": "presentation",
+          "title": "Going around walls",
+          "text": "Arrow control. Please note that the Andy sprite does not walk on walls. Just like in reality!",
           "url": ""
         }
       ],
-      "media": [],
-      "starter_project_id": "",
+      "starter_project_id": "M4L4_Going_around_walls.sb3",
       "demo_project_id": "",
       "states": [
         {
@@ -191,7 +191,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Preview example project",
+          "description": "Arrow control. Please note that the Andy sprite does not walk on walls. Just like in reality!",
           "command_keys": [
             "motion",
             "looks",
@@ -206,35 +206,44 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_2_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
+              "id": "req_2_xml_1",
+              "title": "We don't move along walls",
+              "text": "Complete the code that is triggered when you press the up arrow key. If the up arrow is pressed but the Y coordinate is greater than 25, no movement occurs.",
               "type": "gif",
-              "url": ""
-            },
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/walls.png",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
             {
-              "id": "req_2_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Loading Project\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_2_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
+              "type": "presentation",
+              "title": "Going around walls",
+              "text": "Arrow control. Please note that the Andy sprite does not walk on walls. Just like in reality!",
               "url": ""
             }
           ],
-          "media": [],
-          "starter_project_id": "",
+          "starter_project_id": "M4L4_Going_around_walls.sb3",
           "demo_project_id": "",
-          "project_title": "Loading Project"
+          "project_title": "M4L4 Going around walls",
+          "title": "Going around walls",
+          "tips": [
+            {
+              "id": "greater-than",
+              "title": "Greater than symbol",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/greater-than.png"
+            }
+          ]
         }
       ],
-      "project_title": "Loading Project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "project_title": "M4L4 Going around walls",
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "greater-than",
+          "title": "Greater than symbol",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/greater-than.png"
+        }
+      ]
     },
     {
       "id": "VP2_M4L4_1_3",
@@ -265,31 +274,37 @@
         {
           "id": "req_3_1",
           "title": "Left movement",
-          "text": "Left movement",
+          "text": "Program the movement of the Goalkeeper sprite to the left. It must not go past the goal.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/goalkeeper-left.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_3_2",
           "title": "Right movement",
-          "text": "Right movement",
+          "text": "Program the movement to the right.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/goalkeeper-right.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         },
         {
           "id": "req_3_3",
           "title": "Repeat forever",
-          "text": "Repeat forever",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/forever.png",
+          "evaluationType": "markCompleted",
+          "taskType": "basic"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Show solution",
-          "text": "Complete the programming task for \"Show solution\".",
-          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/workspace/assets/task-43-wv1xft/initial/asset-3aejnc.png"
+          "title": "The Goalkeeper sprite",
+          "text": "The Goalkeeper sprite moves left and right in front of the goal, without going past it. It also starts moving from wherever it stopped last. Run it several times to check.",
+          "url": ""
         }
       ],
       "starter_project_id": "M4L4_The_Goalkeeper.sb3",
@@ -322,31 +337,37 @@
             {
               "id": "req_3_1",
               "title": "Left movement",
-              "text": "Left movement",
+              "text": "Program the movement of the Goalkeeper sprite to the left. It must not go past the goal.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/goalkeeper-left.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_3_2",
               "title": "Right movement",
-              "text": "Right movement",
+              "text": "Program the movement to the right.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/goalkeeper-right.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             },
             {
               "id": "req_3_3",
               "title": "Repeat forever",
-              "text": "Repeat forever",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/forever.png",
+              "evaluationType": "markCompleted",
+              "taskType": "basic"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Show solution",
-              "text": "Complete the programming task for \"Show solution\".",
-              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/workspace/assets/task-43-wv1xft/initial/asset-3aejnc.png"
+              "title": "The Goalkeeper sprite",
+              "text": "The Goalkeeper sprite moves left and right in front of the goal, without going past it. It also starts moving from wherever it stopped last. Run it several times to check.",
+              "url": ""
             }
           ],
           "title": "The Goalkeeper",
@@ -415,21 +436,54 @@
       "command_blocks": [],
       "requirements": [
         {
-          "id": "req_5_1",
-          "title": "Run the program on the flag",
-          "text": "Run the program on the flag",
-          "type": "gif",
-          "url": ""
-        },
-        {
           "id": "req_5_2",
           "title": "Left and right control",
-          "text": "Left and right control",
+          "text": "Program the Frank sprite controls!",
           "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_5_xml_2",
+          "title": "Jump",
+          "text": "Program the Frank sprite so that when you press the up arrow, he will jump only if he is standing on a rock.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-jump.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_5_xml_3",
+          "title": "Gravity",
+          "text": "If the Frank sprite does not touch the rock, it falls, which means it moves down and the Y coordinate changes.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-gravity.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_5_xml_4",
+          "title": "The Frank sprite got stuck in the swamp",
+          "text": "If the Frank sprite drops down too low, he says that he is stuck in the swamp.",
+          "type": "gif",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-swamp.png",
+          "evaluationType": "markCompleted"
+        },
+        {
+          "id": "req_5_xml_5",
+          "title": "Initial placement",
+          "text": "",
+          "type": "gif",
+          "url": "",
+          "evaluationType": "markCompleted"
+        }
+      ],
+      "media": [
+        {
+          "type": "presentation",
+          "title": "Run the program on the flag",
+          "text": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
           "url": ""
         }
       ],
-      "media": [],
       "starter_project_id": "M4L4_Swamp.sb3",
       "demo_project_id": "",
       "states": [
@@ -458,30 +512,79 @@
           "command_blocks": [],
           "requirements": [
             {
-              "id": "req_5_1",
-              "title": "Run the program on the flag",
-              "text": "Run the program on the flag",
-              "type": "gif",
-              "url": ""
-            },
-            {
               "id": "req_5_2",
               "title": "Left and right control",
-              "text": "Left and right control",
+              "text": "Program the Frank sprite controls!",
               "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_5_xml_2",
+              "title": "Jump",
+              "text": "Program the Frank sprite so that when you press the up arrow, he will jump only if he is standing on a rock.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-jump.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_5_xml_3",
+              "title": "Gravity",
+              "text": "If the Frank sprite does not touch the rock, it falls, which means it moves down and the Y coordinate changes.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-gravity.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_5_xml_4",
+              "title": "The Frank sprite got stuck in the swamp",
+              "text": "If the Frank sprite drops down too low, he says that he is stuck in the swamp.",
+              "type": "gif",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/frank-swamp.png",
+              "evaluationType": "markCompleted"
+            },
+            {
+              "id": "req_5_xml_5",
+              "title": "Initial placement",
+              "text": "",
+              "type": "gif",
+              "url": "",
+              "evaluationType": "markCompleted"
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Run the program on the flag",
+              "text": "This is the Frank sprite. He can jump over rocks. Control him using the arrows and don't let him get stuck in the swamp!",
               "url": ""
             }
           ],
-          "media": [],
           "title": "Frank in the swamp",
           "isAutoCheck": false,
           "starter_project_id": "M4L4_Swamp.sb3",
           "demo_project_id": "",
-          "project_title": "M4L4 Swamp"
+          "project_title": "M4L4 Swamp",
+          "tips": [
+            {
+              "id": "less-than",
+              "title": "Less than symbol",
+              "description": "This is the less than symbol. The number to the left of the symbol is less than the other one. The acute angle always points to the smaller number.",
+              "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/less-than.png"
+            }
+          ]
         }
       ],
       "project_title": "M4L4 Swamp",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "less-than",
+          "title": "Less than symbol",
+          "description": "This is the less than symbol. The number to the left of the symbol is less than the other one. The acute angle always points to the smaller number.",
+          "url": "/courses/VP2/M4-Math-and-Logic/pages/VP2_M4L4_1/hints/less-than.png"
+        }
+      ]
     },
     {
       "id": "VP2_M4L4_1_6",
@@ -489,36 +592,14 @@
       "position": 6,
       "level_position": 6,
       "levelPosition": 6,
-      "title": "Scratch. Coordinate areas",
+      "title": "Rescue the penguin",
       "level_type": "intro_or_modal_state",
       "selectedType": "scratch",
       "activityType": "intro_or_modal_state",
       "drawerOpen": true,
       "isAutoCheck": false,
-      "description": "Complete the programming task for \"Scratch. Coordinate areas\".",
-      "requirements": [
-        {
-          "id": "req_6_1",
-          "title": "Initial placement",
-          "text": "Arrange initial sprites and stage backdrop as required.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_2",
-          "title": "Programming script",
-          "text": "Create the code blocks for \"Scratch. Coordinate areas\".",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_6_3",
-          "title": "Check with teacher",
-          "text": "Run the program and demonstrate the result to your teacher.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
+      "description": "",
+      "requirements": [],
       "media": [],
       "starter_project_id": null,
       "demo_project_id": "",
@@ -533,7 +614,7 @@
           "selectedType": "scratch",
           "level_type": "intro_or_modal_state",
           "drawerOpen": true,
-          "description": "Complete the programming task for \"Scratch. Coordinate areas\".",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -546,32 +627,11 @@
             "myblocks"
           ],
           "command_blocks": [],
-          "requirements": [
-            {
-              "id": "req_6_1",
-              "title": "Initial placement",
-              "text": "Arrange initial sprites and stage backdrop as required.",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_2",
-              "title": "Programming script",
-              "text": "Create the code blocks for \"Scratch. Coordinate areas\".",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_6_3",
-              "title": "Check with teacher",
-              "text": "Run the program and demonstrate the result to your teacher.",
-              "type": "gif",
-              "url": ""
-            }
-          ],
+          "requirements": [],
           "media": [],
           "activityType": "intro_or_modal_state",
-          "starter_project_id": null
+          "starter_project_id": null,
+          "title": "Rescue the penguin"
         }
       ],
       "type": "intro_or_modal_state"

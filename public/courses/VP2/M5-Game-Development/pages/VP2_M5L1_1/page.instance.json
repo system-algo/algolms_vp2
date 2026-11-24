@@ -58,7 +58,7 @@
         }
       ],
       "starter_project_id": "M5L1_Cat_bot_1.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L1_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L1_1_1_state_1",
@@ -112,7 +112,7 @@
           "title": "Cat bot 1",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_1.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L1_1_Task_1_Demo.sb3",
           "project_title": "M5L1 Cat bot 1",
           "source_task_id": "26872",
           "source_project_id": "10691933",
@@ -177,7 +177,7 @@
         }
       ],
       "starter_project_id": "M5L1_Cat_bot_2.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L1_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L1_1_2_state_1",
@@ -231,7 +231,7 @@
           "title": "Cat bot 2",
           "isAutoCheck": true,
           "starter_project_id": "M5L1_Cat_bot_2.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L1_1_Task_2_Demo.sb3",
           "project_title": "M5L1 Cat bot 2",
           "source_task_id": "26872",
           "source_project_id": "10691942",
@@ -312,7 +312,7 @@
         }
       ],
       "starter_project_id": "M5L1_Greeting.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L1_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L1_1_3_state_1",
@@ -382,7 +382,7 @@
           "title": "Greeting",
           "isAutoCheck": false,
           "starter_project_id": "M5L1_Greeting.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L1_1_Task_3_Demo.sb3",
           "project_title": "M5L1 Greeting",
           "source_task_id": "26872",
           "source_project_id": "10691955",

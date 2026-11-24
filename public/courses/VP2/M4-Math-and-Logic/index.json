@@ -51,12 +51,6 @@
       "taskCount": 11
     },
     {
-      "id": "VP2_M4L2_1_track2",
-      "title": "Conditional loop - VP_M4L2_1_track2",
-      "lessonId": "VP2_M4L2",
-      "taskCount": 27
-    },
-    {
       "id": "VP2_M4L2_2",
       "title": "Conditional loop - Part 2",
       "lessonId": "VP2_M4L2",
@@ -159,6 +153,6 @@
       "taskCount": 5
     }
   ],
-  "pageCount": 26,
-  "taskCount": 180
+  "pageCount": 25,
+  "taskCount": 153
 }

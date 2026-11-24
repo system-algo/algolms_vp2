@@ -461,12 +461,6 @@
           "taskCount": 11
         },
         {
-          "id": "VP2_M4L2_1_track2",
-          "title": "Conditional loop - Track 2",
-          "lessonId": "VP2_M4L2",
-          "taskCount": 27
-        },
-        {
           "id": "VP2_M4L2_2",
           "title": "Bonus: Training base",
           "lessonId": "VP2_M4L2",
@@ -551,8 +545,8 @@
           "taskCount": 5
         }
       ],
-      "pageCount": 21,
-      "taskCount": 175
+      "pageCount": 20,
+      "taskCount": 148
     },
     {
       "id": "M5-Game-Development",
@@ -789,6 +783,6 @@
       "taskCount": 63
     }
   ],
-  "pageCount": 104,
-  "taskCount": 642
+  "pageCount": 103,
+  "taskCount": 615
 }

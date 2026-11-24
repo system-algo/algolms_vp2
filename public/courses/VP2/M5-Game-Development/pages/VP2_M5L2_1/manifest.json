@@ -72,7 +72,7 @@
         }
       ],
       "starter_project_id": "M5L2_Octopus_1.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_1_1_state_1",
@@ -134,7 +134,7 @@
           "title": "Octopus 1",
           "isAutoCheck": true,
           "starter_project_id": "M5L2_Octopus_1.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L2_1_Task_1_Demo.sb3",
           "project_title": "M5L2 Octopus 1",
           "source_task_id": "26874",
           "source_demo_project_id": "10692431",
@@ -215,7 +215,7 @@
         }
       ],
       "starter_project_id": "M5L2_Guess_the_number.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_1_2_state_1",
@@ -283,7 +283,7 @@
             }
           ],
           "starter_project_id": "M5L2_Guess_the_number.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L2_1_Task_2_Demo.sb3",
           "project_title": "Loading Project",
           "title": "Guess the number 1",
           "source_task_id": "26874",
@@ -365,7 +365,7 @@
         }
       ],
       "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L2_1_Task_3_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L2_1_3_state_1",
@@ -435,7 +435,7 @@
           "title": "Guess the number",
           "isAutoCheck": false,
           "starter_project_id": "M5L2_Guess_the_number_(1).sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L2_1_Task_3_Demo.sb3",
           "project_title": "M5L2 Guess the number",
           "source_task_id": "26874",
           "source_demo_project_id": "10692463",
@@ -484,7 +484,7 @@
           "demoFullPage": true,
           "drawerOpen": true,
           "isAutoCheck": false,
-          "demo_project_id": ""
+          "demo_project_id": "M5L2_1_Task_4_Demo.sb3"
         }
       ],
       "title": "M3T2.1 Demo 2",
@@ -514,7 +514,7 @@
       "demoFullPage": true,
       "drawerOpen": true,
       "isAutoCheck": false,
-      "demo_project_id": ""
+      "demo_project_id": "M5L2_1_Task_4_Demo.sb3"
     }
   ]
 }

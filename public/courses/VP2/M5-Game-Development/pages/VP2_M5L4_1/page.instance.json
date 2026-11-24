@@ -66,7 +66,7 @@
         }
       ],
       "starter_project_id": "M5L4_Kaleidoscope.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L4_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L4_1_1_state_1",
@@ -128,7 +128,7 @@
           "title": "Kaleidoscope",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Kaleidoscope.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L4_1_Task_1_Demo.sb3",
           "project_title": "M5L4 Kaleidoscope",
           "source_task_id": "26879",
           "source_project_id": "10692651",
@@ -209,7 +209,7 @@
         }
       ],
       "starter_project_id": "M5L4_Flower_generation.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L4_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L4_1_2_state_1",
@@ -279,7 +279,7 @@
           "title": "Flower generator",
           "isAutoCheck": false,
           "starter_project_id": "M5L4_Flower_generation.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M5L4_1_Task_2_Demo.sb3",
           "project_title": "M5L4 Flower generation",
           "source_task_id": "26879",
           "source_project_id": "10692663",

@@ -89,7 +89,7 @@
         }
       ],
       "starter_project_id": "M4L4_Platformer.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_3_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_3_1_state_1",
@@ -168,7 +168,7 @@
           "title": "Platformer",
           "isAutoCheck": false,
           "starter_project_id": "M4L4_Platformer.sb3",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_3_Task_1_Demo.sb3",
           "project_title": "M4L4 Platformer"
         }
       ],
@@ -212,7 +212,7 @@
       ],
       "media": [],
       "starter_project_id": "",
-      "demo_project_id": "",
+      "demo_project_id": "M4L4_3_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M4L4_3_2_state_1",
@@ -249,14 +249,16 @@
           ],
           "media": [],
           "starter_project_id": "",
-          "demo_project_id": "",
+          "demo_project_id": "M4L4_3_Task_2_Demo.sb3",
           "project_title": "Platformer with shooting",
           "title": "Platformer with shooting",
-          "isAutoCheck": false
+          "isAutoCheck": false,
+          "demoFullPage": true
         }
       ],
       "project_title": "Platformer with shooting",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "demoFullPage": true
     },
     {
       "id": "VP2_M4L4_3_3",

@@ -915,6 +915,29 @@
         return null;
       }
 
+      function refreshEditorAfterProjectLoad(vm) {
+        if (!isPlayerOnly && (!vm.editingTarget || vm.editingTarget.isStage)) {
+          const sprite = vm.runtime.targets.find(target => !target.isStage && target.isOriginal);
+          if (sprite) {
+            vm.setEditingTarget(sprite.id);
+            return;
+          }
+        }
+        vm.emitTargetsUpdate(false);
+        vm.emitWorkspaceUpdate();
+      }
+
+      function registerLibraryAssetFallback(vm) {
+        const storage = vm.runtime.storage;
+        if (isPlayerOnly || !storage || storage.__algoLibraryAssetFallback) return;
+
+        const { ImageVector, ImageBitmap, Sound } = storage.AssetType;
+        storage.addWebStore([ImageVector, ImageBitmap, Sound], asset =>
+          `https://cdn.assets.scratch.mit.edu/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`
+        );
+        storage.__algoLibraryAssetFallback = true;
+      }
+
       async function loadProjectFile(url) {
         if (!url) return false;
         console.log('[AlgoLMS Bridge] Fetching project:', url);
@@ -934,12 +957,7 @@
             console.log('[AlgoLMS Bridge] Loading arrayBuffer directly into VM...');
             await vm.loadProject(arrayBuffer);
             console.log('[AlgoLMS Bridge] Project successfully loaded into VM!');
-            if (typeof vm.emitTargetsUpdate === 'function') {
-              vm.emitTargetsUpdate();
-            }
-            if (typeof vm.emitWorkspaceUpdate === 'function') {
-              vm.emitWorkspaceUpdate();
-            }
+            refreshEditorAfterProjectLoad(vm);
             const finalTitle = resolveProjectTitle(url, levelParam, titleParam);
             applyProjectTitle(finalTitle);
 
@@ -1051,6 +1069,8 @@
         const blocklyInterval = setInterval(() => {
           checks++;
           applyProjectTitle(expectedTitle);
+          const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
+          if (vm?.runtime?.storage) registerLibraryAssetFallback(vm);
           if (applyBlocklyToolbox()) {
             clearInterval(blocklyInterval);
             setTimeout(() => applyProjectTitle(expectedTitle), 200);
@@ -1070,6 +1090,7 @@
           if (vm && vm.runtime && Array.isArray(vm.runtime.targets) && vm.runtime.targets.length > 0 && !projectLoaded) {
             projectLoaded = true;
             clearInterval(loaderCheck);
+            registerLibraryAssetFallback(vm);
 
             // First check if a saved project exists in IndexedDB for this storageKey
             let loadedFromStorage = false;
@@ -1081,8 +1102,7 @@
                 console.log('[AlgoLMS Bridge] Restoring saved project for key:', storageKeyParam);
                 try {
                   await vm.loadProject(savedBuffer);
-                  if (typeof vm.emitTargetsUpdate === 'function') vm.emitTargetsUpdate();
-                  if (typeof vm.emitWorkspaceUpdate === 'function') vm.emitWorkspaceUpdate();
+                  refreshEditorAfterProjectLoad(vm);
                   loadedFromStorage = true;
                   setTimeout(applyBlocklyToolbox, 100);
                   setTimeout(applyBlocklyToolbox, 500);

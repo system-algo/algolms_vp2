@@ -297,13 +297,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Captain Track 1",
+          "title": "You send the MarsBot to find out the team's readiness for the flight",
           "text": "You send the MarsBot to find out the team's readiness for the flight",
           "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_1/workspace/screenshots/0005-task-2-otsenc-after-3-purple-toolbar-button-6.png"
         }
       ],
       "starter_project_id": "Captain_Track_1.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "Graduation_01_Demo.sb3",
       "states": [
         {
           "id": "VP2_M7L2_1_2_state_1",
@@ -379,17 +379,22 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Captain Track 1",
+              "title": "You send the MarsBot to find out the team's readiness for the flight",
               "text": "You send the MarsBot to find out the team's readiness for the flight",
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_1/workspace/screenshots/0005-task-2-otsenc-after-3-purple-toolbar-button-6.png"
             }
           ],
           "title": "Captain Track 1",
-          "project_title": "Captain Track 1"
+          "project_title": "Captain Track 1",
+          "demo_project_id": "Graduation_01_Demo.sb3",
+          "source_demo_project_id": "10775382",
+          "source_project_id": "10775345"
         }
       ],
       "project_title": "Captain Track 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "10775382",
+      "source_project_id": "10775345"
     },
     {
       "taskId": "task-23-122i6nq",

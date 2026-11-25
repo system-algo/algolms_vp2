@@ -293,13 +293,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Navigation man",
+          "title": "Think over the rocket route",
           "text": "Think over the rocket route",
           "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_3/workspace/screenshots/0005-task-2-ax3ay6-after-3-purple-toolbar-button-6.png"
         }
       ],
       "starter_project_id": "Navigation_man.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "Graduation_03_Demo.sb3",
       "states": [
         {
           "id": "VP2_M7L2_3_2_state_1",
@@ -365,17 +365,22 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Navigation man",
+              "title": "Think over the rocket route",
               "text": "Think over the rocket route",
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_3/workspace/screenshots/0005-task-2-ax3ay6-after-3-purple-toolbar-button-6.png"
             }
           ],
           "title": "Navigation man",
-          "project_title": "Navigation man"
+          "project_title": "Navigation man",
+          "demo_project_id": "Graduation_03_Demo.sb3",
+          "source_demo_project_id": "10804790",
+          "source_project_id": "10804783"
         }
       ],
       "project_title": "Navigation man",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "10804790",
+      "source_project_id": "10804783"
     },
     {
       "taskId": "task-23-1b6m4rw",

@@ -287,13 +287,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "MarsBots Engineer",
+          "title": "Use the MarsBot to find 7 purple crystals for making fuel.",
           "text": "Use the MarsBot to find 7 purple crystals for making fuel",
           "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_7/workspace/screenshots/0005-task-2-wc8k5y-after-3-purple-toolbar-button-6.png"
         }
       ],
       "starter_project_id": "MarsBots_Engineer.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "Graduation_07_Demo.sb3",
       "states": [
         {
           "id": "VP2_M7L2_7_2_state_1",
@@ -359,17 +359,22 @@
           "media": [
             {
               "type": "presentation",
-              "title": "MarsBots Engineer",
+              "title": "Use the MarsBot to find 7 purple crystals for making fuel.",
               "text": "Use the MarsBot to find 7 purple crystals for making fuel",
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_7/workspace/screenshots/0005-task-2-wc8k5y-after-3-purple-toolbar-button-6.png"
             }
           ],
           "title": "MarsBots Engineer",
-          "project_title": "MarsBots Engineer"
+          "project_title": "MarsBots Engineer",
+          "demo_project_id": "Graduation_07_Demo.sb3",
+          "source_demo_project_id": "10805475",
+          "source_project_id": "10804996"
         }
       ],
       "project_title": "MarsBots Engineer",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "10805475",
+      "source_project_id": "10804996"
     },
     {
       "taskId": "task-23-v8bmdw",

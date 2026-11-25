@@ -293,13 +293,13 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Astromech",
+          "title": "Fix the conveyor",
           "text": "Fix the conveyor",
           "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_10/workspace/screenshots/0005-task-2-l431n4-after-3-purple-toolbar-button-6.png"
         }
       ],
       "starter_project_id": "Astromech.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "Graduation_10_Demo.sb3",
       "states": [
         {
           "id": "VP2_M7L2_10_2_state_1",
@@ -365,17 +365,22 @@
           "media": [
             {
               "type": "presentation",
-              "title": "Astromech",
+              "title": "Fix the conveyor",
               "text": "Fix the conveyor",
               "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_10/workspace/screenshots/0005-task-2-l431n4-after-3-purple-toolbar-button-6.png"
             }
           ],
           "title": "Astromech",
-          "project_title": "Astromech"
+          "project_title": "Astromech",
+          "demo_project_id": "Graduation_10_Demo.sb3",
+          "source_demo_project_id": "10805855",
+          "source_project_id": "10805808"
         }
       ],
       "project_title": "Astromech",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "10805855",
+      "source_project_id": "10805808"
     },
     {
       "taskId": "task-23-1hk0o24",

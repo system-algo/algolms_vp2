@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "id": "VP2_M7L2_4",
   "title": "Graduation: Communication man",
-  "type": "marsbot-quiz",
-  "level_type": "quiz",
+  "type": "scratch-task",
+  "level_type": "scratch",
   "taskCount": 5,
   "tasks": [
     {
@@ -72,34 +72,72 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Graduation: Communication man - Question 2",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
+      "title": "Communication man",
+      "level_type": "scratch",
+      "selectedType": "scratch",
+      "activityType": "scratch",
       "drawerOpen": true,
+      "isAutoCheck": true,
+      "description": "Bring the robot to the antenna",
       "command_keys": [
         "motion",
         "looks",
         "sound",
         "events",
-        "control"
+        "control",
+        "sensing",
+        "operators",
+        "variables",
+        "myblocks"
       ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
+      "command_blocks": [],
       "requirements": [
         {
           "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Graduation: Communication man\" and complete the interactive test task.",
+          "title": "I think I've seen it somewhere before",
+          "text": "I think I've seen it somewhere before",
           "type": "gif",
           "url": ""
         },
         {
           "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
+          "title": "Examine the code of the Stepping Right procedure",
+          "text": "Examine the code of the Stepping Right procedure",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_3",
+          "title": "Write a script for the Stepping Up procedure",
+          "text": "Write a script for the Stepping Up procedure",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_4",
+          "title": "How can we test the procedure operation?",
+          "text": "How can we test the procedure operation?",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_5",
+          "title": "Write a script for the Stepping Left procedure",
+          "text": "Write a script for the Stepping Left procedure",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_6",
+          "title": "Improve the script of the Destroy procedure",
+          "text": "Improve the script of the Destroy procedure",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_7",
+          "title": "Improve the Green Flag Is Checked script",
+          "text": "Improve the Green Flag Is Checked script",
           "type": "gif",
           "url": ""
         }
@@ -107,24 +145,107 @@
       "media": [
         {
           "type": "presentation",
-          "title": "Graduation: Communication man - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
+          "title": "Bring the robot to the antenna",
+          "text": "Bring the robot to the antenna",
+          "url": ""
         }
       ],
+      "starter_project_id": "Communication_man.sb3",
+      "demo_project_id": "Graduation_04_Demo.sb3",
       "states": [
         {
           "id": "VP2_M7L2_4_2_state_1",
           "stateId": "VP2_M7L2_4_2_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Graduation: Communication man - Question 2"
+          "position": 2,
+          "level_position": 2,
+          "levelPosition": 2,
+          "type": "scratch",
+          "selectedType": "scratch",
+          "level_type": "scratch",
+          "drawerOpen": true,
+          "description": "Bring the robot to the antenna",
+          "command_keys": [
+            "motion",
+            "looks",
+            "sound",
+            "events",
+            "control",
+            "sensing",
+            "operators",
+            "variables",
+            "myblocks"
+          ],
+          "command_blocks": [],
+          "requirements": [
+            {
+              "id": "req_2_1",
+              "title": "I think I've seen it somewhere before",
+              "text": "I think I've seen it somewhere before",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_2",
+              "title": "Examine the code of the Stepping Right procedure",
+              "text": "Examine the code of the Stepping Right procedure",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_3",
+              "title": "Write a script for the Stepping Up procedure",
+              "text": "Write a script for the Stepping Up procedure",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_4",
+              "title": "How can we test the procedure operation?",
+              "text": "How can we test the procedure operation?",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_5",
+              "title": "Write a script for the Stepping Left procedure",
+              "text": "Write a script for the Stepping Left procedure",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_6",
+              "title": "Improve the script of the Destroy procedure",
+              "text": "Improve the script of the Destroy procedure",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_7",
+              "title": "Improve the Green Flag Is Checked script",
+              "text": "Improve the Green Flag Is Checked script",
+              "type": "gif",
+              "url": ""
+            }
+          ],
+          "media": [
+            {
+              "type": "presentation",
+              "title": "Bring the robot to the antenna",
+              "text": "Bring the robot to the antenna",
+              "url": ""
+            }
+          ],
+          "title": "Communication man",
+          "project_title": "Communication man",
+          "demo_project_id": "Graduation_04_Demo.sb3",
+          "source_demo_project_id": "10804831",
+          "source_project_id": "10804816"
         }
       ],
-      "project_title": "Graduation: Communication man - Question 2",
+      "project_title": "Communication man",
       "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "source_demo_project_id": "10804831",
+      "source_project_id": "10804816"
     },
     {
       "id": "VP2_M7L2_4_3",

@@ -473,6 +473,14 @@
         const storage = vm.runtime.storage;
         if (isPlayerOnly || !storage || storage.__algoLibraryAssetFallback) return;
 
+        // This standalone Scratch build ships without its asset fetch worker.
+        // Use Scratch Storage's existing fetch transport so downloads cannot
+        // stall waiting for a response from the missing worker.
+        const assetTool = storage.webHelper?.assetTool;
+        if (assetTool?.tools?.some(tool => tool.isGetSupported && tool.isSendSupported)) {
+          assetTool.tools = assetTool.tools.filter(tool => tool.isSendSupported);
+        }
+
         const { ImageVector, ImageBitmap, Sound } = storage.AssetType;
         storage.addWebStore([ImageVector, ImageBitmap, Sound], asset =>
           `https://cdn.assets.scratch.mit.edu/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`

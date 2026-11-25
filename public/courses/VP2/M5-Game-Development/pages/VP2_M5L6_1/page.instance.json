@@ -4,7 +4,7 @@
   "title": "Project. Presentation - Part 1",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 2,
+  "taskCount": 1,
   "tasks": [
     {
       "id": "VP2_M5L6_1_1",
@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Chatbot Presentation",
+      "title": "Cat-bot",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Chat with the Cat-bot! Present your completed project.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -35,35 +35,38 @@
         {
           "id": "req_1_1",
           "title": "Add your bot that will perform actions",
-          "text": "Add your bot that will perform actions",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "At startup, the bot asks for a name and age",
-          "text": "At startup, the bot asks for a name and age",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/hints/at-startup.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Choose at least 2 functions for your bot and program them!",
-          "text": "Choose at least 2 functions for your bot and program them!",
+          "text": "What can your bot do? It could compare your ages, play the guitar, call a friend, or tell a story.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/hints/bot-functions.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student June 7 at 8:04 PM",
-          "text": "Complete the programming task for \"Last save by student June 7 at 8:04 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/workspace/assets/task-1-1qgte9a/initial/asset-gpi9cd.png"
+          "title": "Chat with the Cat-bot!",
+          "text": "",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L5_Chatbot.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M5L5_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M5L6_1_1_state_1",
@@ -75,7 +78,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Chat with the Cat-bot! Present your completed project.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -92,71 +95,51 @@
             {
               "id": "req_1_1",
               "title": "Add your bot that will perform actions",
-              "text": "Add your bot that will perform actions",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "At startup, the bot asks for a name and age",
-              "text": "At startup, the bot asks for a name and age",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/hints/at-startup.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Choose at least 2 functions for your bot and program them!",
-              "text": "Choose at least 2 functions for your bot and program them!",
+              "text": "What can your bot do? It could compare your ages, play the guitar, call a friend, or tell a story.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/hints/bot-functions.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student June 7 at 8:04 PM",
-              "text": "Complete the programming task for \"Last save by student June 7 at 8:04 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L6_1/workspace/assets/task-1-1qgte9a/initial/asset-gpi9cd.png"
+              "title": "Chat with the Cat-bot!",
+              "text": "",
+              "url": ""
             }
           ],
-          "title": "Chatbot Presentation",
+          "title": "Cat-bot",
           "isAutoCheck": false,
           "starter_project_id": "M5L5_Chatbot.sb3",
-          "demo_project_id": "",
-          "project_title": "M5L5 Chatbot"
+          "demo_project_id": "M5L5_1_Task_1_Demo.sb3",
+          "project_title": "M5L5 Chatbot",
+          "source_task_id": "26843",
+          "source_project_id": "43179797",
+          "source_demo_project_id": "10692715"
         }
       ],
       "project_title": "M5L5 Chatbot",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
-    },
-    {
-      "id": "VP2_M5L6_1_2",
-      "taskId": "VP2_M5L6_1_2",
-      "position": 2,
-      "level_position": 2,
-      "levelPosition": 2,
-      "title": "Did you like the module?",
-      "level_type": "rating",
-      "selectedType": "rating",
-      "activityType": "feedback_rating_task",
-      "requirements": [],
-      "media": [],
-      "command_keys": [],
-      "states": [
-        {
-          "id": "VP2_M5L6_1_2_state_1",
-          "stateId": "VP2_M5L6_1_2_state_1",
-          "position": 2,
-          "level_position": 2,
-          "levelPosition": 2,
-          "type": "rating",
-          "selectedType": "rating",
-          "level_type": "rating",
-          "requirements": [],
-          "media": [],
-          "command_keys": []
-        }
-      ]
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26843",
+      "source_project_id": "43179797",
+      "source_demo_project_id": "10692715"
     }
   ]
 }

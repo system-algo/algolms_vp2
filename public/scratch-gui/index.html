@@ -447,6 +447,18 @@
       }
 
       function refreshEditorAfterProjectLoad(vm) {
+        if (!isPlayerOnly) {
+          // Scratch only shows its variable commands if the project has a scalar variable.
+          const stage = vm.runtime.getTargetForStage();
+          const hasVariable = vm.runtime.targets.some(target =>
+            Object.values(target.variables).some(variable => variable.type === '')
+          );
+          if (stage && !hasVariable) {
+            let id = 'algo-default-variable';
+            while (vm.runtime.targets.some(target => target.variables[id])) id += '-';
+            stage.createVariable(id, 'my variable', '', false);
+          }
+        }
         if (!isPlayerOnly && (!vm.editingTarget || vm.editingTarget.isStage)) {
           const sprite = vm.runtime.targets.find(target => !target.isStage && target.isOriginal);
           if (sprite) {

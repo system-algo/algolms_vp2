@@ -68,7 +68,7 @@
         }
       ],
       "starter_project_id": "M6L1_Draw_snowflakes-bonus.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M6L1_2_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M6L1_2_1_state_1",
@@ -154,7 +154,8 @@
             }
           ],
           "source_project_id": "10692902",
-          "source_demo_project_id": "10692901"
+          "source_demo_project_id": "10692901",
+          "demo_project_id": "M6L1_2_Task_1_Demo.sb3"
         }
       ],
       "project_title": "M6L1 Draw snowflakes-bonus",

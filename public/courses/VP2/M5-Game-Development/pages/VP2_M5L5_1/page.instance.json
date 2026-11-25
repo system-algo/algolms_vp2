@@ -12,13 +12,13 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Chatbot",
+      "title": "Cat-bot",
       "level_type": "scratch",
       "selectedType": "scratch",
       "activityType": "scratch",
       "drawerOpen": true,
       "isAutoCheck": true,
-      "description": "Chat with the Cat-bot! Plan and build your own chatbot.",
+      "description": "",
       "command_keys": [
         "motion",
         "looks",
@@ -35,31 +35,34 @@
         {
           "id": "req_1_1",
           "title": "Add your bot that will perform actions",
-          "text": "Add your bot that will perform actions",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_2",
           "title": "At startup, the bot asks for a name and age",
-          "text": "At startup, the bot asks for a name and age",
+          "text": "",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/hints/at-startup.png",
+          "evaluationType": "markCompleted"
         },
         {
           "id": "req_1_3",
           "title": "Choose at least 2 functions for your bot and program them!",
-          "text": "Choose at least 2 functions for your bot and program them!",
+          "text": "What can your bot do? It could compare your ages, play the guitar, call a friend, or tell a story.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/hints/bot-functions.png",
+          "evaluationType": "markCompleted"
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Last save by student April 8 at 7:23 PM",
-          "text": "Complete the programming task for \"Last save by student April 8 at 7:23 PM\".",
-          "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/workspace/assets/task-1-f9jxiu/initial/asset-1gwz70s.png"
+          "title": "Chat with the Cat-bot!",
+          "text": "",
+          "url": ""
         }
       ],
       "starter_project_id": "M5L5_Chatbot.sb3",
@@ -75,7 +78,7 @@
           "selectedType": "scratch",
           "level_type": "scratch",
           "drawerOpen": true,
-          "description": "Chat with the Cat-bot! Plan and build your own chatbot.",
+          "description": "",
           "command_keys": [
             "motion",
             "looks",
@@ -92,42 +95,51 @@
             {
               "id": "req_1_1",
               "title": "Add your bot that will perform actions",
-              "text": "Add your bot that will perform actions",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_2",
               "title": "At startup, the bot asks for a name and age",
-              "text": "At startup, the bot asks for a name and age",
+              "text": "",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/hints/at-startup.png",
+              "evaluationType": "markCompleted"
             },
             {
               "id": "req_1_3",
               "title": "Choose at least 2 functions for your bot and program them!",
-              "text": "Choose at least 2 functions for your bot and program them!",
+              "text": "What can your bot do? It could compare your ages, play the guitar, call a friend, or tell a story.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/hints/bot-functions.png",
+              "evaluationType": "markCompleted"
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Last save by student April 8 at 7:23 PM",
-              "text": "Complete the programming task for \"Last save by student April 8 at 7:23 PM\".",
-              "url": "/courses/VP2/M5-Game-Development/pages/VP2_M5L5_1/workspace/assets/task-1-f9jxiu/initial/asset-1gwz70s.png"
+              "title": "Chat with the Cat-bot!",
+              "text": "",
+              "url": ""
             }
           ],
-          "title": "Chatbot",
+          "title": "Cat-bot",
           "isAutoCheck": false,
           "starter_project_id": "M5L5_Chatbot.sb3",
           "demo_project_id": "",
-          "project_title": "M5L5 Chatbot"
+          "project_title": "M5L5 Chatbot",
+          "source_task_id": "26842",
+          "source_project_id": "12032665",
+          "source_demo_project_id": "10692715"
         }
       ],
       "project_title": "M5L5 Chatbot",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_task_id": "26842",
+      "source_project_id": "12032665",
+      "source_demo_project_id": "10692715"
     },
     {
       "id": "VP2_M5L5_1_2",

@@ -1006,9 +1006,12 @@
         }
       }
 
+      // The shared chatbot must finish restoring before it can replace its draft.
+      let chatbotReadyToSave = storageKeyParam !== 'M5L5_Shared_Chatbot';
+
       window.saveProjectToStorage = async function(key) {
         const k = key || storageKeyParam;
-        if (!k) return false;
+        if (!k || !chatbotReadyToSave) return false;
         const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
         if (!vm || typeof vm.saveProjectSb3 !== 'function') return false;
         try {
@@ -1070,9 +1073,11 @@
 
             // First check if a saved project exists in IndexedDB for this storageKey
             let loadedFromStorage = false;
+            let hadSavedProject = false;
             if (storageKeyParam) {
               const savedBuffer = await getSavedProject(storageKeyParam);
               if (savedBuffer) {
+                hadSavedProject = true;
                 console.log('[AlgoLMS Bridge] Restoring saved project for key:', storageKeyParam);
                 try {
                   await vm.loadProject(savedBuffer);
@@ -1089,6 +1094,9 @@
 
             if (!loadedFromStorage && initialProjectUrl) {
               await loadProjectFile(initialProjectUrl);
+            }
+            if (storageKeyParam === 'M5L5_Shared_Chatbot') {
+              chatbotReadyToSave = loadedFromStorage || !hadSavedProject;
             }
           }
           if (attempts > 300) {
@@ -1253,7 +1261,10 @@
           window.saveProjectToComputer(e.data.title);
         }
         if (e.data.type === 'SAVE_TO_STORAGE') {
-          await window.saveProjectToStorage(e.data.storageKey || storageKeyParam);
+          const saved = await window.saveProjectToStorage(e.data.storageKey || storageKeyParam);
+          if (!saved && storageKeyParam === 'M5L5_Shared_Chatbot') {
+            window.parent.postMessage({ type: 'PROJECT_SAVE_FAILED' }, window.location.origin);
+          }
         }
         if (e.data.type === 'REVERT_DRAFT_PROJECT') {
           window.revertToDraftProject();

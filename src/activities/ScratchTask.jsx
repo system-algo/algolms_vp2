@@ -84,6 +84,8 @@ export default function ScratchTask({
   const [openEditMenu, setOpenEditMenu] = useState(false);
   const [lastSaveTime, setLastSaveTime] = useState('');
   const [isSaving, setIsSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
+  const saveTimeoutRef = useRef(null);
   const [isTurboMode, setIsTurboMode] = useState(false);
 
   // Shared storage key for projects that span multiple weeks/lessons (such as M3L4, M3L5, M3L6 and M5L5, M5L6)
@@ -112,16 +114,29 @@ export default function ScratchTask({
 
   const handleSaveClick = () => {
     setIsSaving(true);
+    setSaveError('');
     const win = iframeRef.current?.contentWindow;
     if (win) {
       win.postMessage({ type: 'SAVE_TO_STORAGE', storageKey }, '*');
     }
-    setTimeout(() => setIsSaving(false), 400);
+    clearTimeout(saveTimeoutRef.current);
+    saveTimeoutRef.current = setTimeout(() => {
+      setIsSaving(false);
+      if (isM5L5_L6) setSaveError('Save was not confirmed. Try again before switching lessons.');
+    }, isM5L5_L6 ? 15000 : 400);
   };
 
   useEffect(() => {
     const handleSavedMsg = (e) => {
-      if (e.origin === window.location.origin && e.source === iframeRef.current?.contentWindow && e.data?.type === 'PROJECT_SAVED_SUCCESS') {
+      if (e.origin !== window.location.origin || e.source !== iframeRef.current?.contentWindow) return;
+      if (e.data?.type === 'PROJECT_SAVE_FAILED') {
+        clearTimeout(saveTimeoutRef.current);
+        setIsSaving(false);
+        setSaveError('Could not save the project. Try again or download a copy.');
+      }
+      if (e.data?.type === 'PROJECT_SAVED_SUCCESS') {
+        clearTimeout(saveTimeoutRef.current);
+        setSaveError('');
         const d = new Date();
         setLastSaveTime(
           `${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true })}`
@@ -195,6 +210,9 @@ export default function ScratchTask({
     );
     setCompletedItems({});
     setSelectedReqId(null);
+    clearTimeout(saveTimeoutRef.current);
+    setSaveError('');
+    setIsSaving(false);
     setLastSaveTime('');
     setDemoViewMode('stage');
     setCopiedXml(false);
@@ -719,7 +737,8 @@ export default function ScratchTask({
           </div>
 
           <div className="scratch-task-toolbar-right">
-            {lastSaveTime && (
+            {saveError && <span role="status" className="scratch-task-save-status">{saveError}</span>}
+            {!saveError && lastSaveTime && (
               <span className="scratch-task-save-status">Last save {lastSaveTime}</span>
             )}
 

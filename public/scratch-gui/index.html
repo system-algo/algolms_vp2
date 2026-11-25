@@ -8,7 +8,7 @@
   <title>Scratch 3.0 GUI</title>
   <script defer="defer" src="gui.js"></script>
   <script>
-    // Algo LMS Scratch Bridge - Precision Block & Category Filter
+    // Algo LMS Scratch editor and demo bridge
     (function() {
       const params = new URLSearchParams(window.location.search);
       const projectUrl = params.get('project') || '';
@@ -170,507 +170,38 @@
         document.head.appendChild(editorStyle);
       }
 
-      // 1. Dynamic category & block parsing & normalisation
-      const categoriesParam = (params.get('categories') || '').trim();
-      let allowedCategories = categoriesParam
-        ? categoriesParam.split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
-        : ['motion', 'looks', 'events', 'control'];
-
-      const blocksParam = (params.get('blocks') || '').trim();
-      const allowedBlocks = blocksParam
-        ? blocksParam.split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
-        : null;
-
-      // Normalize category aliases between LMS manifests and Scratch 3.0 Blockly:
-      if (allowedCategories.includes('variables') && !allowedCategories.includes('data')) {
-        allowedCategories.push('data');
-      }
-      if (allowedCategories.includes('data') && !allowedCategories.includes('variables')) {
-        allowedCategories.push('variables');
-      }
-      if (allowedCategories.includes('myblocks') && !allowedCategories.includes('procedures')) {
-        allowedCategories.push('procedures');
-      }
-      if (allowedCategories.includes('procedures') && !allowedCategories.includes('myblocks')) {
-        allowedCategories.push('myblocks');
-      }
-
-      // Check whether this task allows the full/unrestricted Scratch toolbox (e.g. Free programming, Super cat)
-      const baseMainCategories = ['motion', 'looks', 'sound', 'events', 'control', 'sensing', 'operators', 'variables'];
-      const isFullToolbox = true; // Always allow full toolbox per user instruction
-
-      const allCategories = [
-        'motion', 'looks', 'sound', 'events', 'control',
-        'sensing', 'operators', 'variables', 'myblocks', 'data', 'procedures'
-      ];
-      const disallowed = isFullToolbox ? [] : allCategories.filter(c => !allowedCategories.includes(c));
-
-      // Category building blocks for dynamic XML generation
-      const MOTION_XML = `
-  <category name="Motion" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
-    <block type="motion_movesteps">
-      <value name="STEPS">
-        <shadow type="math_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="motion_turnright">
-      <value name="DEGREES">
-        <shadow type="math_number"><field name="NUM">15</field></shadow>
-      </value>
-    </block>
-    <block type="motion_turnleft">
-      <value name="DEGREES">
-        <shadow type="math_number"><field name="NUM">15</field></shadow>
-      </value>
-    </block>
-    <block type="motion_goto">
-      <value name="TO">
-        <shadow type="motion_goto_menu"/>
-      </value>
-    </block>
-    <block type="motion_gotoxy">
-      <value name="X">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-      <value name="Y">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-    </block>
-    <block type="motion_glideto">
-      <value name="SECS">
-        <shadow type="math_number"><field name="NUM">1</field></shadow>
-      </value>
-      <value name="TO">
-        <shadow type="motion_glideto_menu"/>
-      </value>
-    </block>
-    <block type="motion_glidesecstoxy">
-      <value name="SECS">
-        <shadow type="math_number"><field name="NUM">1</field></shadow>
-      </value>
-      <value name="X">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-      <value name="Y">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-    </block>
-    <block type="motion_pointindirection">
-      <value name="DIRECTION">
-        <shadow type="math_angle"><field name="NUM">90</field></shadow>
-      </value>
-    </block>
-    <block type="motion_pointtowards">
-      <value name="TOWARDS">
-        <shadow type="motion_pointtowards_menu">
-          <field name="TOWARDS">_mouse_</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="motion_changexby">
-      <value name="DX">
-        <shadow type="math_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="motion_setx">
-      <value name="X">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-    </block>
-    <block type="motion_changeyby">
-      <value name="DY">
-        <shadow type="math_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="motion_sety">
-      <value name="Y">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-    </block>
-    <block type="motion_ifonedgebounce"/>
-  </category>`;
-
-      const LOOKS_XML = `
-  <category name="Looks" id="looks" colour="#9966FF" secondaryColour="#774DCB">
-    <block type="looks_sayforsecs">
-      <value name="MESSAGE">
-        <shadow type="text"><field name="TEXT">Hello!</field></shadow>
-      </value>
-      <value name="SECS">
-        <shadow type="math_number"><field name="NUM">2</field></shadow>
-      </value>
-    </block>
-    <block type="looks_say">
-      <value name="MESSAGE">
-        <shadow type="text"><field name="TEXT">Hello!</field></shadow>
-      </value>
-    </block>
-    <block type="looks_thinkforsecs">
-      <value name="MESSAGE">
-        <shadow type="text"><field name="TEXT">Hmm...</field></shadow>
-      </value>
-      <value name="SECS">
-        <shadow type="math_number"><field name="NUM">2</field></shadow>
-      </value>
-    </block>
-    <block type="looks_think">
-      <value name="MESSAGE">
-        <shadow type="text"><field name="TEXT">Hmm...</field></shadow>
-      </value>
-    </block>
-    <block type="looks_switchcostumeto">
-      <value name="COSTUME">
-        <shadow type="looks_costume"><field name="COSTUME">costume1</field></shadow>
-      </value>
-    </block>
-    <block type="looks_nextcostume"/>
-    <block type="looks_switchbackdropto">
-      <value name="BACKDROP">
-        <shadow type="looks_backdrops"><field name="BACKDROP">backdrop1</field></shadow>
-      </value>
-    </block>
-    <block type="looks_nextbackdrop"/>
-    <block type="looks_changesizeby">
-      <value name="CHANGE">
-        <shadow type="math_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="looks_setsizeto">
-      <value name="SIZE">
-        <shadow type="math_number"><field name="NUM">100</field></shadow>
-      </value>
-    </block>
-    <block type="looks_changeeffectby">
-      <value name="CHANGE">
-        <shadow type="math_number"><field name="NUM">25</field></shadow>
-      </value>
-    </block>
-    <block type="looks_seteffectto">
-      <value name="VALUE">
-        <shadow type="math_number"><field name="NUM">0</field></shadow>
-      </value>
-    </block>
-    <block type="looks_cleargraphiceffects"/>
-    <block type="looks_show"/>
-    <block type="looks_hide"/>
-  </category>`;
-
-      const SOUND_XML = `
-  <category name="Sound" id="sound" colour="#D65CD6" secondaryColour="#BD42BD">
-    <block type="sound_playuntildone">
-      <value name="SOUND_MENU">
-        <shadow type="sound_sounds_menu"/>
-      </value>
-    </block>
-    <block type="sound_play">
-      <value name="SOUND_MENU">
-        <shadow type="sound_sounds_menu"/>
-      </value>
-    </block>
-    <block type="sound_stopallsounds"/>
-    <block type="sound_changevolumeby">
-      <value name="VOLUME">
-        <shadow type="math_number"><field name="NUM">-10</field></shadow>
-      </value>
-    </block>
-    <block type="sound_setvolumeto">
-      <value name="VOLUME">
-        <shadow type="math_number"><field name="NUM">100</field></shadow>
-      </value>
-    </block>
-  </category>`;
-
-      const EVENTS_XML = `
-  <category name="Events" id="events" colour="#FFD500" secondaryColour="#CC9900">
-    <block type="event_whenflagclicked"/>
-    <block type="event_whenkeypressed"/>
-    <block type="event_whenthisspriteclicked"/>
-    <block type="event_whenbackdropswitchesto"/>
-    <block type="event_whengreaterthan">
-      <value name="VALUE">
-        <shadow type="math_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="event_whenbroadcastreceived"/>
-    <block type="event_broadcast">
-      <value name="BROADCAST_INPUT">
-        <shadow type="event_broadcast_menu"/>
-      </value>
-    </block>
-    <block type="event_broadcastandwait">
-      <value name="BROADCAST_INPUT">
-        <shadow type="event_broadcast_menu"/>
-      </value>
-    </block>
-  </category>`;
-
-      const CONTROL_XML = `
-  <category name="Control" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
-    <block type="control_wait">
-      <value name="DURATION">
-        <shadow type="math_positive_number"><field name="NUM">1</field></shadow>
-      </value>
-    </block>
-    <block type="control_repeat">
-      <value name="TIMES">
-        <shadow type="math_whole_number"><field name="NUM">10</field></shadow>
-      </value>
-    </block>
-    <block type="control_forever"/>
-    <block type="control_if"/>
-    <block type="control_if_else"/>
-    <block type="control_wait_until"/>
-    <block type="control_repeat_until"/>
-    <block type="control_stop"/>
-  </category>`;
-
-      const SENSING_XML = `
-  <category name="Sensing" id="sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
-    <block type="sensing_touchingobject">
-      <value name="TOUCHINGOBJECTMENU">
-        <shadow type="sensing_touchingobjectmenu"/>
-      </value>
-    </block>
-    <block type="sensing_touchingcolor">
-      <value name="COLOR">
-        <shadow type="colour_picker"/>
-      </value>
-    </block>
-    <block type="sensing_askandwait">
-      <value name="QUESTION">
-        <shadow type="text"><field name="TEXT">What's your name?</field></shadow>
-      </value>
-    </block>
-    <block type="sensing_answer"/>
-    <block type="sensing_keypressed">
-      <value name="KEY_OPTION">
-        <shadow type="sensing_keyoptions"/>
-      </value>
-    </block>
-    <block type="sensing_mousedown"/>
-  </category>`;
-
-      const OPERATORS_XML = `
-  <category name="Operators" id="operators" colour="#40BF4A" secondaryColour="#389438">
-    <block type="operator_add">
-      <value name="NUM1"><shadow type="math_number"/></value>
-      <value name="NUM2"><shadow type="math_number"/></value>
-    </block>
-    <block type="operator_subtract">
-      <value name="NUM1"><shadow type="math_number"/></value>
-      <value name="NUM2"><shadow type="math_number"/></value>
-    </block>
-    <block type="operator_multiply">
-      <value name="NUM1"><shadow type="math_number"/></value>
-      <value name="NUM2"><shadow type="math_number"/></value>
-    </block>
-    <block type="operator_divide">
-      <value name="NUM1"><shadow type="math_number"/></value>
-      <value name="NUM2"><shadow type="math_number"/></value>
-    </block>
-    <block type="operator_random">
-      <value name="FROM"><shadow type="math_number"><field name="NUM">1</field></shadow></value>
-      <value name="TO"><shadow type="math_number"><field name="NUM">10</field></shadow></value>
-    </block>
-    <block type="operator_gt">
-      <value name="OPERAND1"><shadow type="text"/></value>
-      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
-    </block>
-    <block type="operator_lt">
-      <value name="OPERAND1"><shadow type="text"/></value>
-      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
-    </block>
-    <block type="operator_equals">
-      <value name="OPERAND1"><shadow type="text"/></value>
-      <value name="OPERAND2"><shadow type="text"><field name="TEXT">50</field></shadow></value>
-    </block>
-    <block type="operator_and"/>
-    <block type="operator_or"/>
-    <block type="operator_not"/>
-  </category>`;
-
-      const VARIABLES_XML = `
-  <category name="Variables" id="data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE"/>`;
-
-      const MYBLOCKS_XML = `
-  <category name="My Blocks" id="myBlocks" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE"/>`;
-
-      function filterCategoryXmlBlocks(categoryXmlStr, allowedBlockTypes) {
-        if (!allowedBlockTypes || allowedBlockTypes.length === 0) return categoryXmlStr;
-        try {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(`<root>${categoryXmlStr}</root>`, 'text/xml');
-          const blocks = Array.from(doc.querySelectorAll('category > block'));
-          blocks.forEach(b => {
-            const type = (b.getAttribute('type') || '').toLowerCase();
-            if (!allowedBlockTypes.includes(type)) {
-              b.remove();
-            }
-          });
-          const cat = doc.querySelector('category');
-          if (!cat) return '';
-          const serializer = new XMLSerializer();
-          return serializer.serializeToString(cat);
-        } catch (err) {
-          return categoryXmlStr;
-        }
-      }
-
-      function buildDynamicToolboxXml(allowed, allowedBlockTypes) {
-        let xml = '<xml id="toolbox" style="display: none">\n';
-        if (allowed.includes('motion')) xml += filterCategoryXmlBlocks(MOTION_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('looks')) xml += filterCategoryXmlBlocks(LOOKS_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('sound')) xml += filterCategoryXmlBlocks(SOUND_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('events')) xml += filterCategoryXmlBlocks(EVENTS_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('control')) xml += filterCategoryXmlBlocks(CONTROL_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('sensing')) xml += filterCategoryXmlBlocks(SENSING_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('operators')) xml += filterCategoryXmlBlocks(OPERATORS_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('variables') || allowed.includes('data')) xml += filterCategoryXmlBlocks(VARIABLES_XML, allowedBlockTypes) + '\n';
-        if (allowed.includes('myblocks') || allowed.includes('procedures')) xml += filterCategoryXmlBlocks(MYBLOCKS_XML, allowedBlockTypes) + '\n';
-        xml += '</xml>';
-        return xml;
-      }
-
-      // Targeted CSS rules to prevent flicker of disallowed categories
-      const categoryClassMap = {
-        motion: '.scratchCategoryId-motion',
-        looks: '.scratchCategoryId-looks',
-        sound: '.scratchCategoryId-sound',
-        events: '.scratchCategoryId-events',
-        control: '.scratchCategoryId-control',
-        sensing: '.scratchCategoryId-sensing',
-        operators: '.scratchCategoryId-operators',
-        variables: '.scratchCategoryId-variables, .scratchCategoryId-data',
-        data: '.scratchCategoryId-variables, .scratchCategoryId-data',
-        myblocks: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures',
-        procedures: '.scratchCategoryId-myBlocks, .scratchCategoryId-procedures'
-      };
-
-      const filterStyleElement = document.createElement('style');
-      filterStyleElement.id = 'algo-lms-toolbox-filter';
-
-      function updateCssFilter(disallowedList) {
-        if (isFullToolbox || disallowedList.length === 0) {
-          filterStyleElement.textContent = '';
-          return;
-        }
-        const cssRules = [];
-        disallowedList.forEach(cat => {
-          if (categoryClassMap[cat]) {
-            cssRules.push(`${categoryClassMap[cat]} { display: none !important; }`);
-          }
-        });
-        filterStyleElement.textContent = cssRules.join('\n');
-      }
-
-      updateCssFilter(disallowed);
-      document.head.appendChild(filterStyleElement);
-
-      // 2. Native Blockly updateToolbox hook: intercept all updateToolbox calls
-      function filterToolboxXml(rawXml, allowed, allowedBlockTypes) {
-        if (isFullToolbox && (!allowedBlockTypes || allowedBlockTypes.length === 0)) return rawXml;
-        try {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(rawXml, 'text/xml');
-          const catAliases = {
-            event: 'events',
-            events: 'events',
-            data: 'variables',
-            variables: 'variables',
-            procedures: 'myblocks',
-            myblocks: 'myblocks'
-          };
-          const allowedNorm = allowed.map(c => catAliases[c] || c.toLowerCase());
-          const cats = Array.from(doc.querySelectorAll('category'));
-          cats.forEach(c => {
-            const id = (c.getAttribute('id') || '').toLowerCase();
-            const norm = catAliases[id] || id;
-            if (!allowedNorm.includes(norm)) {
-              c.remove();
-            } else if (allowedBlockTypes && allowedBlockTypes.length > 0) {
-              const blocks = Array.from(c.children).filter(el => el.tagName.toLowerCase() === 'block');
-              blocks.forEach(b => {
-                const type = (b.getAttribute('type') || '').toLowerCase();
-                if (!allowedBlockTypes.includes(type)) {
-                  b.remove();
-                }
-              });
-            }
-          });
-          const serializer = new XMLSerializer();
-          return serializer.serializeToString(doc);
-        } catch (err) {
-          console.warn('[AlgoLMS Bridge] filterToolboxXml error:', err);
-          return rawXml;
-        }
-      }
-
-      function hookWorkspaceToolbox(ws) {
-        if (!ws || ws.__algoToolboxHooked) return;
-        ws.__algoToolboxHooked = true;
-        const originalUpdateToolbox = ws.updateToolbox.bind(ws);
-
-        ws.updateToolbox = function(tree) {
-          if (isFullToolbox && (!allowedBlocks || allowedBlocks.length === 0)) {
-            return originalUpdateToolbox(tree);
-          }
-          if (typeof tree === 'string') {
-            const filteredTree = filterToolboxXml(tree, allowedCategories, allowedBlocks);
-            return originalUpdateToolbox(filteredTree);
-          }
-          if (tree && tree.querySelectorAll) {
-            try {
-              const catAliases = {
-                event: 'events',
-                events: 'events',
-                data: 'variables',
-                variables: 'variables',
-                procedures: 'myblocks',
-                myblocks: 'myblocks'
-              };
-              const allowedNorm = allowedCategories.map(c => catAliases[c] || c.toLowerCase());
-              const cats = Array.from(tree.querySelectorAll('category'));
-              cats.forEach(c => {
-                const id = (c.getAttribute('id') || '').toLowerCase();
-                const norm = catAliases[id] || id;
-                if (!allowedNorm.includes(norm)) {
-                  c.remove();
-                } else if (allowedBlocks && allowedBlocks.length > 0) {
-                  const blocks = Array.from(c.children).filter(el => el.tagName.toLowerCase() === 'block');
-                  blocks.forEach(b => {
-                    const type = (b.getAttribute('type') || '').toLowerCase();
-                    if (!allowedBlocks.includes(type)) {
-                      b.remove();
-                    }
-                  });
-                }
-              });
-            } catch (err) {}
-            return originalUpdateToolbox(tree);
-          }
-          return originalUpdateToolbox(tree);
-        };
-      }
-
-      function applyBlocklyToolbox() {
-        if (isPlayerOnly) return true;
-        if (!window.Blockly || !window.Blockly.getMainWorkspace) return false;
-        const ws = window.Blockly.getMainWorkspace();
-        if (!ws || !ws.options) return false;
+      function configureScratchToolbox() {
         const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
-        if (!vm || !vm.runtime || !Array.isArray(vm.runtime.targets) || vm.runtime.targets.length === 0) return false;
+        if (!vm?.editingTarget) return false;
 
-        try {
-          hookWorkspaceToolbox(ws);
-          if (!isFullToolbox || (allowedBlocks && allowedBlocks.length > 0)) {
-            const customXml = buildDynamicToolboxXml(allowedCategories, allowedBlocks);
-            ws.updateToolbox(customXml);
+        vm.runtime._primitives.sensing_online ??= () => navigator.onLine;
+        vm.runtime.monitorBlockInfo.sensing_online ??= { getId: () => 'online' };
+        if (isPlayerOnly) return true;
+
+        const workspace = window.Blockly?.getMainWorkspace?.();
+        if (!workspace) return false;
+        if (workspace.__algoFullToolbox) return true;
+
+        // Keep Scratch's own toolbox so menus, monitors and extensions
+        // update with the selected target and the project's contents.
+        const updateToolbox = workspace.updateToolbox.bind(workspace);
+        workspace.updateToolbox = function (toolbox) {
+          if (typeof toolbox === 'string' && !toolbox.includes('type="sensing_online"')) {
+            toolbox = toolbox.replace(/(<block type="sensing_username"[^>]*\/>)/,
+              '<block id="online" type="sensing_online"/>$1');
           }
-          return true;
-        } catch (err) {
-          console.warn('[AlgoLMS Bridge] updateToolbox error:', err);
+          return updateToolbox(toolbox);
+        };
+        workspace.__algoFullToolbox = true;
+        // The first toolbox may already have rendered before the bridge attached.
+        const currentToolbox = workspace.options.languageTree;
+        if (currentToolbox) {
+          const xml = typeof currentToolbox === 'string'
+            ? currentToolbox
+            : new XMLSerializer().serializeToString(currentToolbox);
+          workspace.updateToolbox(xml);
         }
-        return false;
+        return true;
       }
 
       // 3. Project Title Resolver & Application
@@ -923,8 +454,7 @@
             return;
           }
         }
-        vm.emitTargetsUpdate(false);
-        vm.emitWorkspaceUpdate();
+        vm.refreshWorkspace();
       }
 
       function registerLibraryAssetFallback(vm) {
@@ -964,9 +494,10 @@
             // VM loading is independent of Scratch's file-upload Redux state.
             // onLoadingFinished is only valid after requestProjectUpload; calling it
             // here dispatches undefined when the GUI is already showing a project.
-            setTimeout(applyBlocklyToolbox, 100);
-            setTimeout(applyBlocklyToolbox, 400);
-            setTimeout(applyBlocklyToolbox, 1000);
+            configureScratchToolbox();
+            setTimeout(configureScratchToolbox, 100);
+            setTimeout(configureScratchToolbox, 400);
+            setTimeout(configureScratchToolbox, 1000);
             setTimeout(() => applyProjectTitle(finalTitle), 200);
             setTimeout(() => applyProjectTitle(finalTitle), 800);
             if (isPlayerOnly) {
@@ -1071,7 +602,7 @@
           applyProjectTitle(expectedTitle);
           const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
           if (vm?.runtime?.storage) registerLibraryAssetFallback(vm);
-          if (applyBlocklyToolbox()) {
+          if (configureScratchToolbox()) {
             clearInterval(blocklyInterval);
             setTimeout(() => applyProjectTitle(expectedTitle), 200);
             setTimeout(() => applyProjectTitle(expectedTitle), 800);
@@ -1104,8 +635,8 @@
                   await vm.loadProject(savedBuffer);
                   refreshEditorAfterProjectLoad(vm);
                   loadedFromStorage = true;
-                  setTimeout(applyBlocklyToolbox, 100);
-                  setTimeout(applyBlocklyToolbox, 500);
+                  setTimeout(configureScratchToolbox, 100);
+                  setTimeout(configureScratchToolbox, 500);
                 } catch (loadErr) {
                   console.warn('[AlgoLMS Bridge] Could not restore saved project, falling back to starter:', loadErr);
                 }
@@ -1148,9 +679,10 @@
           const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
           if (vm) {
             await vm.loadProject(arrayBuffer);
+            refreshEditorAfterProjectLoad(vm);
             const title = file.name.replace(/\.sb[23]?$/i, '');
             applyProjectTitle(title);
-            applyBlocklyToolbox();
+            configureScratchToolbox();
           }
           input.remove();
         };
@@ -1298,18 +830,7 @@
         if (e.data.type === 'SET_PROJECT_TITLE' && e.data.title) {
           applyProjectTitle(e.data.title);
         }
-        if (e.data.type === 'UPDATE_CATEGORIES' && e.data.categories) {
-          const newCats = String(e.data.categories).split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
-          allowedCategories = newCats;
-          if (allowedCategories.includes('variables') && !allowedCategories.includes('data')) allowedCategories.push('data');
-          if (allowedCategories.includes('data') && !allowedCategories.includes('variables')) allowedCategories.push('variables');
-          if (allowedCategories.includes('myblocks') && !allowedCategories.includes('procedures')) allowedCategories.push('procedures');
-          if (allowedCategories.includes('procedures') && !allowedCategories.includes('myblocks')) allowedCategories.push('myblocks');
 
-          const newDisallowed = isFullToolbox ? [] : allCategories.filter(c => !allowedCategories.includes(c));
-          updateCssFilter(newDisallowed);
-          applyBlocklyToolbox();
-        }
       });
     })();
   </script>

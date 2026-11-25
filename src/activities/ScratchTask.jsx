@@ -31,24 +31,6 @@ export default function ScratchTask({
     ''
   );
 
-  // Flyout categories / command keys: prioritize task definition, then state definition, then fall back
-  const taskCommandKeys =
-    (Array.isArray(task?.command_keys) && task.command_keys.length > 0 ? task.command_keys : null) ||
-    (Array.isArray(task?.commandKeys) && task.commandKeys.length > 0 ? task.commandKeys : null) ||
-    (Array.isArray(task?.states?.[0]?.command_keys) && task.states[0].command_keys.length > 0 ? task.states[0].command_keys : null) ||
-    (Array.isArray(state?.command_keys) && state.command_keys.length > 0 ? state.command_keys : null);
-
-  // Specific allowed command blocks (opcodes)
-  const taskCommandBlocks =
-    (Array.isArray(task?.command_blocks) && task.command_blocks.length > 0 ? task.command_blocks : null) ||
-    (Array.isArray(task?.commandBlocks) && task.commandBlocks.length > 0 ? task.commandBlocks : null) ||
-    (Array.isArray(task?.states?.[0]?.command_blocks) && task.states[0].command_blocks.length > 0 ? task.states[0].command_blocks : null) ||
-    (Array.isArray(state?.command_blocks) && state.command_blocks.length > 0 ? state.command_blocks : null);
-
-  // User request: Always show full block commands in the flyout without restriction
-  const categoriesQuery = 'all';
-  const blocksQuery = '';
-
   const tipItems = React.useMemo(() => {
     const candidates = [task?.tips, task?.config?.tips, task?.states?.[0]?.tips, state?.tips];
     return candidates.find((items) => Array.isArray(items) && items.length > 0) || [];
@@ -189,7 +171,7 @@ export default function ScratchTask({
   );
 
   const editorProjectId = isM3L4_L6 ? '' : projectId;
-  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}categories=${encodeURIComponent(categoriesQuery)}${blocksQuery ? `&blocks=${encodeURIComponent(blocksQuery)}` : ''}&level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
+  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
 
   // Selected requirement ID for highlighting and displaying its image/GIF
   const [selectedReqId, setSelectedReqId] = useState(null);
@@ -765,7 +747,7 @@ export default function ScratchTask({
 
         <div className="scratch-task-iframe-wrapper">
           <iframe
-            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${categoriesQuery}-${derivedProjectTitle}`}
+            key={`scratch-${task?.id || task?.taskId || levelPosition}-${projectId}-${derivedProjectTitle}`}
             ref={iframeRef}
             src={editorUrl}
             className="scratch-task-iframe"

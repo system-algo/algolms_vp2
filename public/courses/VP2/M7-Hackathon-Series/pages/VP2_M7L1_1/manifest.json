@@ -15,7 +15,7 @@
     {
       "taskId": "task-1-b416t3",
       "url": "https://lms.logikaschool.com/task-preview/26845?track=1&lesson=11644&position=1",
-      "title": "Final project",
+      "title": "Task description",
       "activityType": "generic_captured_task",
       "documentTitle": "Final project",
       "firstCapturedAt": "2026-05-29T07:43:53.149Z",
@@ -39,7 +39,8 @@
             "width": 1920
           },
           "textLines": [
-            "Next"
+            "Task description",
+            "Choose your favorite project to present at the final lesson or create a new one. Start programming it."
           ],
           "buttons": [
             {
@@ -154,10 +155,11 @@
         }
       ],
       "id": "task-1-b416t3",
-      "instruction": "Next",
-      "bodyText": "Next",
+      "instruction": "Choose your favorite project to present at the final lesson or create a new one. Start programming it.",
+      "bodyText": "Choose your favorite project to present at the final lesson or create a new one. Start programming it.",
       "textLines": [
-        "Next"
+        "Task description",
+        "Choose your favorite project to present at the final lesson or create a new one. Start programming it."
       ],
       "images": []
     },
@@ -201,21 +203,13 @@
         "looks_show",
         "control_if"
       ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Final project",
-          "text": "Come up with a project and program it!",
-          "type": "gif",
-          "url": ""
-        }
-      ],
+      "requirements": [],
       "media": [
         {
           "type": "presentation",
           "title": "Final project",
           "text": "Come up with a project and program it!",
-          "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L1_1/workspace/assets/task-2-7r5f8w/after-10-top-toolbar-button/asset-10t1jwk.png"
+          "url": ""
         }
       ],
       "starter_project_id": "M7L1_Final_project.sb3",
@@ -259,29 +253,23 @@
             "looks_show",
             "control_if"
           ],
-          "requirements": [
-            {
-              "id": "req_2_1",
-              "title": "Final project",
-              "text": "Come up with a project and program it!",
-              "type": "gif",
-              "url": ""
-            }
-          ],
+          "requirements": [],
           "media": [
             {
               "type": "presentation",
               "title": "Final project",
               "text": "Come up with a project and program it!",
-              "url": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L1_1/workspace/assets/task-2-7r5f8w/after-10-top-toolbar-button/asset-10t1jwk.png"
+              "url": ""
             }
           ],
           "title": "Final project",
-          "project_title": "M7L1 Final project"
+          "project_title": "M7L1 Final project",
+          "source_project_id": "10699281"
         }
       ],
       "project_title": "M7L1 Final project",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_project_id": "10699281"
     },
     {
       "taskId": "task-23-1o8yicw",

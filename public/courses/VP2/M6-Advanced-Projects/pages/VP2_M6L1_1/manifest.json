@@ -50,16 +50,16 @@
         {
           "id": "req_1_1",
           "title": "When you click on the green flag, clones of the leaf appear",
-          "text": "When you click on the green flag, clones of the leaf appear",
+          "text": "To create the effect of endlessly falling leaves, use the commands \"create clone of myself\" and \"wait __ seconds\".",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/hints/create-leaf-clones.png"
         },
         {
           "id": "req_1_2",
           "title": "Leaves falling",
-          "text": "Leaves falling",
+          "text": "Let's program the leaves to fall: when a leaf starts out as a clone, it falls.",
           "type": "gif",
-          "url": ""
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/hints/falling-leaves.png"
         }
       ],
       "media": [
@@ -109,16 +109,16 @@
             {
               "id": "req_1_1",
               "title": "When you click on the green flag, clones of the leaf appear",
-              "text": "When you click on the green flag, clones of the leaf appear",
+              "text": "To create the effect of endlessly falling leaves, use the commands \"create clone of myself\" and \"wait __ seconds\".",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/hints/create-leaf-clones.png"
             },
             {
               "id": "req_1_2",
               "title": "Leaves falling",
-              "text": "Leaves falling",
+              "text": "Let's program the leaves to fall: when a leaf starts out as a clone, it falls.",
               "type": "gif",
-              "url": ""
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/hints/falling-leaves.png"
             }
           ],
           "media": [
@@ -181,7 +181,7 @@
         {
           "id": "req_2_1",
           "title": "Initial placement",
-          "text": "Initial placement",
+          "text": "Set the initial placement so that the snowflakes fall from different places.",
           "type": "gif",
           "url": ""
         },
@@ -205,12 +205,28 @@
           "text": "Snowflakes stop like in the example.",
           "type": "gif",
           "url": ""
+        },
+        {
+          "id": "req_2_5",
+          "title": "Counting snowflakes",
+          "text": "Modify the program to count as many clones as possible.",
+          "taskType": "bonus",
+          "type": "gif",
+          "url": ""
+        },
+        {
+          "id": "req_2_6",
+          "title": "*Bonus: change the program to define the rules for inheriting graphic effects",
+          "text": "",
+          "taskType": "bonus",
+          "type": "gif",
+          "url": ""
         }
       ],
       "media": [
         {
           "type": "presentation",
-          "title": "Snowfall",
+          "title": "Run the project!",
           "text": "Run the project! Snowflakes stop like in the example.",
           "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-22-rbmrdc/initial/asset-1bh7bew.png"
         }
@@ -261,7 +277,7 @@
             {
               "id": "req_2_1",
               "title": "Initial placement",
-              "text": "Initial placement",
+              "text": "Set the initial placement so that the snowflakes fall from different places.",
               "type": "gif",
               "url": ""
             },
@@ -285,12 +301,28 @@
               "text": "Snowflakes stop like in the example.",
               "type": "gif",
               "url": ""
+            },
+            {
+              "id": "req_2_5",
+              "title": "Counting snowflakes",
+              "text": "Modify the program to count as many clones as possible.",
+              "taskType": "bonus",
+              "type": "gif",
+              "url": ""
+            },
+            {
+              "id": "req_2_6",
+              "title": "*Bonus: change the program to define the rules for inheriting graphic effects",
+              "text": "",
+              "taskType": "bonus",
+              "type": "gif",
+              "url": ""
             }
           ],
           "media": [
             {
               "type": "presentation",
-              "title": "Snowfall",
+              "title": "Run the project!",
               "text": "Run the project! Snowflakes stop like in the example.",
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_1/workspace/assets/task-22-rbmrdc/initial/asset-1bh7bew.png"
             }

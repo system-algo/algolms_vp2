@@ -54,28 +54,7 @@
         {
           "id": "req_1_1",
           "title": "Create!",
-          "text": "Create!",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Tips",
-          "text": "Tips",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_3",
-          "title": "Snowflake 1",
-          "text": "Snowflake 1",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_4",
-          "title": "Snowflake 2",
-          "text": "Snowflake 2",
+          "text": "Run the program and see how it works. Change it so that you get a different snowflake.",
           "type": "gif",
           "url": ""
         }
@@ -84,7 +63,7 @@
         {
           "type": "presentation",
           "title": "Draw snowflakes!",
-          "text": "Run the program and see how it works.",
+          "text": "Run the program and see how it works. Change it so that you get a different snowflake.",
           "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/after-10-top-toolbar-button/asset-1gwz70s.png"
         }
       ],
@@ -137,28 +116,7 @@
             {
               "id": "req_1_1",
               "title": "Create!",
-              "text": "Create!",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_2",
-              "title": "Tips",
-              "text": "Tips",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_3",
-              "title": "Snowflake 1",
-              "text": "Snowflake 1",
-              "type": "gif",
-              "url": ""
-            },
-            {
-              "id": "req_1_4",
-              "title": "Snowflake 2",
-              "text": "Snowflake 2",
+              "text": "Run the program and see how it works. Change it so that you get a different snowflake.",
               "type": "gif",
               "url": ""
             }
@@ -167,16 +125,64 @@
             {
               "type": "presentation",
               "title": "Draw snowflakes!",
-              "text": "Run the program and see how it works.",
+              "text": "Run the program and see how it works. Change it so that you get a different snowflake.",
               "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/workspace/assets/task-1-1cqfzcp/after-10-top-toolbar-button/asset-1gwz70s.png"
             }
           ],
           "title": "Draw snowflakes!",
-          "project_title": "M6L1 Draw snowflakes-bonus"
+          "project_title": "M6L1 Draw snowflakes-bonus",
+          "tips": [
+            {
+              "id": "snowflake-1",
+              "title": "Snowflake 1",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-1.webp"
+            },
+            {
+              "id": "snowflake-2",
+              "title": "Snowflake 2",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-2.webp"
+            },
+            {
+              "id": "snowflake-3",
+              "title": "Snowflake 3",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-3.webp"
+            },
+            {
+              "id": "snowflake-4",
+              "title": "Snowflake 4",
+              "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-4.webp"
+            }
+          ],
+          "source_project_id": "10692902",
+          "source_demo_project_id": "10692901"
         }
       ],
       "project_title": "M6L1 Draw snowflakes-bonus",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "tips": [
+        {
+          "id": "snowflake-1",
+          "title": "Snowflake 1",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-1.webp"
+        },
+        {
+          "id": "snowflake-2",
+          "title": "Snowflake 2",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-2.webp"
+        },
+        {
+          "id": "snowflake-3",
+          "title": "Snowflake 3",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-3.webp"
+        },
+        {
+          "id": "snowflake-4",
+          "title": "Snowflake 4",
+          "url": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_2/hints/snowflake-4.webp"
+        }
+      ],
+      "source_project_id": "10692902",
+      "source_demo_project_id": "10692901"
     }
   ]
 }

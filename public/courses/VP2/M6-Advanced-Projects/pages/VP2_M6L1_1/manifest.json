@@ -71,7 +71,7 @@
         }
       ],
       "starter_project_id": "M6L1_Leaf_fall.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M6L1_1_Task_1_Demo.sb3",
       "states": [
         {
           "id": "VP2_M6L1_1_1_state_1",
@@ -130,11 +130,14 @@
             }
           ],
           "title": "Leaf fall",
-          "project_title": "M6L1 Leaf fall"
+          "project_title": "M6L1 Leaf fall",
+          "demo_project_id": "M6L1_1_Task_1_Demo.sb3",
+          "source_demo_project_id": "6152324"
         }
       ],
       "project_title": "M6L1 Leaf fall",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "6152324"
     },
     {
       "id": "VP2_M6L1_1_2",
@@ -232,7 +235,7 @@
         }
       ],
       "starter_project_id": "M6P1_Snowfall.sb3",
-      "demo_project_id": "",
+      "demo_project_id": "M6L1_1_Task_2_Demo.sb3",
       "states": [
         {
           "id": "VP2_M6L1_1_2_state_1",
@@ -328,11 +331,14 @@
             }
           ],
           "title": "Snowfall",
-          "project_title": "M6P1 Snowfall"
+          "project_title": "M6P1 Snowfall",
+          "demo_project_id": "M6L1_1_Task_2_Demo.sb3",
+          "source_demo_project_id": "384954"
         }
       ],
       "project_title": "M6P1 Snowfall",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK"
+      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
+      "source_demo_project_id": "384954"
     }
   ]
 }

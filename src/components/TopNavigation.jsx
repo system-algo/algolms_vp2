@@ -478,6 +478,19 @@ export default function TopNavigation({
     mappedNavigation.courseTitle ||
     rawCourseTitle;
 
+  const isVisualProgramming = [
+    mappedNavigation.courseCode,
+    courseId,
+    rawCourseTitle,
+    resolvedCourseTitle,
+  ].some((value) =>
+    /^(?:vp2?|visual\s*programming(?:\s*2)?)$/i.test(String(value || '').trim()),
+  );
+
+  const resolvedCourseCode = isVisualProgramming
+    ? 'VP'
+    : mappedNavigation.courseCode || resolvedCourseTitle;
+
   let {
     moduleLabel,
     lessonLabel,
@@ -1106,7 +1119,7 @@ export default function TopNavigation({
               className="lms-topbar__course-code"
               title={resolvedCourseTitle}
             >
-              {resolvedCourseTitle}
+              {resolvedCourseCode}
             </strong>
           </div>
 

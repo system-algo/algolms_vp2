@@ -1342,12 +1342,6 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
                         if (isLocked) return;
 
                         setSelectedLessonIndex(index);
-                        const progress = getLessonProgress(lesson);
-
-                        if (progress.percentage === 100) {
-                          setCelebratedLesson(lesson);
-                          setShowCelebration(true);
-                        }
                       }}
                     >
                       <div className="lesson-number-badge">L{lesson.number}</div>

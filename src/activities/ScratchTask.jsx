@@ -5,6 +5,8 @@ import { DEMO_SOURCE_CODE } from './demoSourceCode';
 export default function ScratchTask({
   task,
   state,
+  lessonId,
+  pageId,
   onTaskCompleted,
   onNextTask,
   onPrevTask,
@@ -88,6 +90,9 @@ export default function ScratchTask({
     (task?.title || '').toLowerCase().includes('chatbot. planning') ||
     (task?.title || '').toLowerCase().includes('project. presentation');
 
+  const draftTaskId = String(task?.id || task?.taskId || task?.activity_id || '');
+  const draftLesson = lessonId || task?.lesson_id || task?.lessonId || '';
+  const draftPage = pageId || task?.page_id || task?.pageId || '';
   const storageKey = isM3L4_L6
     ? 'M3L4_Shared_Game_BlankStarter'
     : isM5L5_L6
@@ -97,24 +102,24 @@ export default function ScratchTask({
   const handleSaveClick = () => {
     setIsSaving(true);
     setSaveError('');
-    const win = iframeRef.current?.contentWindow;
-    if (win) {
-      win.postMessage({ type: 'SAVE_TO_STORAGE', storageKey }, '*');
-    }
+    iframeRef.current?.contentWindow?.postMessage({ type: 'SAVE_TO_STORAGE' }, window.location.origin);
     clearTimeout(saveTimeoutRef.current);
     saveTimeoutRef.current = setTimeout(() => {
       setIsSaving(false);
-      if (isM5L5_L6) setSaveError('Save was not confirmed. Try again before switching lessons.');
-    }, isM5L5_L6 ? 15000 : 400);
+      setSaveError('Online save was not confirmed. Try again before switching lessons.');
+    }, 80000);
   };
 
   useEffect(() => {
     const handleSavedMsg = (e) => {
       if (e.origin !== window.location.origin || e.source !== iframeRef.current?.contentWindow) return;
+      if (e.data?.type === 'PROJECT_RESTORE_FAILED') {
+        setSaveError('Could not restore the online draft. Reopen this task to retry.');
+      }
       if (e.data?.type === 'PROJECT_SAVE_FAILED') {
         clearTimeout(saveTimeoutRef.current);
         setIsSaving(false);
-        setSaveError('Could not save the project. Try again or download a copy.');
+        setSaveError('Could not save the project online. Try again or download a copy.');
       }
       if (e.data?.type === 'PROJECT_SAVED_SUCCESS') {
         clearTimeout(saveTimeoutRef.current);
@@ -127,7 +132,10 @@ export default function ScratchTask({
       }
     };
     window.addEventListener('message', handleSavedMsg);
-    return () => window.removeEventListener('message', handleSavedMsg);
+    return () => {
+      clearTimeout(saveTimeoutRef.current);
+      window.removeEventListener('message', handleSavedMsg);
+    };
   }, []);
 
   useEffect(() => {
@@ -171,7 +179,11 @@ export default function ScratchTask({
   );
 
   const editorProjectId = isM3L4_L6 ? '' : projectId;
-  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}`;
+  const draftScope = isM3L4_L6 || isM5L5_L6 ? storageKey : [draftLesson, draftPage, draftTaskId].join(':');
+  const draftParams = new URLSearchParams({
+    draftScope, draftLesson, draftPage, draftTask: draftTaskId,
+  });
+  const editorUrl = `/scratch-gui/index.html?${editorProjectId ? `project=${encodeURIComponent(editorProjectId)}&` : ''}${derivedProjectTitle ? `title=${encodeURIComponent(derivedProjectTitle)}&` : ''}level=${encodeURIComponent(levelPosition)}${storageKey ? `&storageKey=${encodeURIComponent(storageKey)}` : ''}&${draftParams}`;
 
   // Selected requirement ID for highlighting and displaying its image/GIF
   const [selectedReqId, setSelectedReqId] = useState(null);
@@ -205,7 +217,6 @@ export default function ScratchTask({
 
   // Modal confirm state
   const [showConfirmModal, setShowConfirmModal] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Checklist from static manifest requirements or default fallback
   const checklistItems = React.useMemo(() => {
@@ -346,58 +357,16 @@ export default function ScratchTask({
     setShowConfirmModal(true);
   };
 
-  // Student confirms in popup: Save to activity_progress by email, run progress bar, go next
-  const confirmAndProceed = async () => {
-    setIsSubmitting(true);
-    const studentEmail = localStorage.getItem('lms_student_email') || '';
-    const supabaseUrl = localStorage.getItem('lms_supabase_url') || import.meta.env.VITE_SUPABASE_URL;
-    const supabaseKey = localStorage.getItem('lms_supabase_key') || import.meta.env.VITE_SUPABASE_ANON_KEY;
-    const taskId = task?.activity_id || task?.id || task?.taskId || 'scratch-level';
-
-    // 1. Lưu vào activity_progress của Supabase theo studentEmail
-    if (supabaseUrl && supabaseKey && studentEmail) {
-      try {
-        await fetch(`${supabaseUrl}/rest/v1/activity_progress`, {
-          method: 'POST',
-          headers: {
-            'apikey': supabaseKey,
-            'Authorization': `Bearer ${supabaseKey}`,
-            'Content-Type': 'application/json',
-            'Prefer': 'resolution=merge-duplicates',
-          },
-          body: JSON.stringify({
-            user_id: studentEmail,
-            course_id: task?.course_id || 'VP2',
-            lesson_id: String(task?.lesson_id || task?.lessonId || 'VP2_L1'),
-            page_id: String(task?.page_id || task?.pageId || 'page_1'),
-            task_id: taskId,
-            activity_type: 'scratch',
-            status: 'completed',
-            is_completed: true,
-            updated_at: new Date().toISOString(),
-          }),
-        });
-      } catch (err) {
-        console.warn('Lỗi lưu activity_progress:', err);
-      }
-    }
-
-    // 2. Kích hoạt hoàn thành để TopNavigation cập nhật thanh progress bar
-    if (typeof onTaskCompleted === 'function') {
-      onTaskCompleted({
-        taskId,
-        completed: true,
-        activityType: 'scratch-task',
-      });
-    }
-
+  const confirmAndProceed = () => {
+    if (isSaving || !draftTaskId) return;
+    onTaskCompleted?.({
+      taskId: draftTaskId,
+      completed: true,
+      activityType: 'scratch-task',
+      autoTransition: false,
+    });
     setShowConfirmModal(false);
-    setIsSubmitting(false);
-
-    // 3. Chuyển sang level / task tiếp theo
-    if (typeof onNextTask === 'function') {
-      onNextTask();
-    }
+    onNextTask?.();
   };
 
   // Toggle drawer open/close
@@ -738,6 +707,7 @@ export default function ScratchTask({
               type="button"
               className="scratch-task-check-btn"
               onClick={handleCheck}
+              disabled={isSaving}
               title="Check your project"
             >
               ✓ Check
@@ -1101,17 +1071,17 @@ export default function ScratchTask({
                 className="lms-badge-unlock__name"
                 style={{ cursor: 'pointer', margin: 0, minHeight: '42px', minWidth: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                 onClick={() => setShowConfirmModal(false)}
-                disabled={isSubmitting}
+                disabled={isSaving}
               >
                 Check Again
               </button>
               <button
                 type="button"
-                style={{ margin: 0, minWidth: '150px', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+                style={{ margin: 0, minWidth: '150px', cursor: isSaving ? 'not-allowed' : 'pointer' }}
                 onClick={confirmAndProceed}
-                disabled={isSubmitting}
+                disabled={isSaving}
               >
-                {isSubmitting ? 'Saving...' : 'Yes, It Matches!'}
+                {isSaving ? 'Saving...' : 'Yes, It Matches!'}
               </button>
             </div>
           </div>

@@ -1201,7 +1201,7 @@ export default function ActivityRouter(props) {
   }
 
   if (rendererType === 'scratch-task') {
-    return <ScratchTask {...rendererProps} task={nextTask} />;
+    return <ScratchTask key={taskId} {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'feedback-rating-task') {

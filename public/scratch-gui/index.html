@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="static/favicon.ico">
   <title>Scratch 3.0 GUI</title>
   <script defer="defer" src="gui.js"></script>
+  <script src="vp2-scratch-draft.js"></script>
   <script>
     // Algo LMS Scratch editor and demo bridge
     (function() {
@@ -580,30 +581,40 @@
       // The shared chatbot must finish restoring before it can replace its draft.
       let chatbotReadyToSave = storageKeyParam !== 'M5L5_Shared_Chatbot';
 
-      window.saveProjectToStorage = async function(key) {
-        const k = key || storageKeyParam;
+      const cloudDraft = window.vp2ScratchDraft;
+      const scopedStorageKey = params.has('draftScope') ? cloudDraft?.localKey : storageKeyParam;
+      let restoringDraft = Boolean(cloudDraft);
+      let savingCloudDraft = false;
+
+      window.saveProjectToStorage = async function(key, syncCloud = false) {
+        const k = scopedStorageKey;
+        if (restoringDraft || savingCloudDraft || (syncCloud && !cloudDraft)) return false;
         if (!k || !chatbotReadyToSave) return false;
         const vm = window.vm || window.__scratchProjectLoader?.props?.vm;
         if (!vm || typeof vm.saveProjectSb3 !== 'function') return false;
+        if (syncCloud) savingCloudDraft = true;
         try {
           const blob = await vm.saveProjectSb3();
           const buffer = await blob.arrayBuffer();
+          if (syncCloud) await cloudDraft.save(buffer);
           const db = await openProjectDb();
-          if (!db) return false;
+          if (!db) return syncCloud;
           const saved = await new Promise((resolve) => {
             const tx = db.transaction(STORE_NAME, 'readwrite');
-            tx.objectStore(STORE_NAME).put(buffer, k);
+            tx.objectStore(STORE_NAME).put(cloudDraft ? { buffer, cloudHash: cloudDraft.cloudHash } : buffer, k);
             tx.oncomplete = () => resolve(true);
             tx.onerror = () => resolve(false);
             tx.onabort = () => resolve(false);
           });
-          if (!saved) return false;
+          if (!saved) return syncCloud;
           console.log('[AlgoLMS] Saved project to storage for key:', k);
-          window.parent.postMessage({ type: 'PROJECT_SAVED_SUCCESS', storageKey: k, timestamp: Date.now() }, '*');
+          if (!cloudDraft) window.parent.postMessage({ type: 'PROJECT_SAVED_SUCCESS' }, window.location.origin);
           return true;
         } catch (err) {
           console.error('[AlgoLMS] Failed to save project to storage:', err);
           return false;
+        } finally {
+          if (syncCloud) savingCloudDraft = false;
         }
       };
 
@@ -648,8 +659,17 @@
             // First check if a saved project exists in IndexedDB for this storageKey
             let loadedFromStorage = false;
             let hadSavedProject = false;
-            if (storageKeyParam) {
-              const savedBuffer = await getSavedProject(storageKeyParam);
+            let savedDraftLoadFailed = false;
+            if (scopedStorageKey) {
+              const localProject = await getSavedProject(scopedStorageKey);
+              let savedBuffer = cloudDraft ? localProject?.buffer : localProject;
+              if (cloudDraft) {
+                try {
+                  savedBuffer = await cloudDraft.restore(localProject);
+                } catch {
+                  window.parent.postMessage({ type: 'PROJECT_RESTORE_FAILED' }, window.location.origin);
+                }
+              }
               if (savedBuffer) {
                 hadSavedProject = true;
                 console.log('[AlgoLMS Bridge] Restoring saved project for key:', storageKeyParam);
@@ -660,9 +680,14 @@
                   setTimeout(configureScratchToolbox, 100);
                   setTimeout(configureScratchToolbox, 500);
                 } catch (loadErr) {
+                  savedDraftLoadFailed = true;
                   console.warn('[AlgoLMS Bridge] Could not restore saved project, falling back to starter:', loadErr);
                 }
               }
+            }
+
+            if (savedDraftLoadFailed && cloudDraft) {
+              window.parent.postMessage({ type: 'PROJECT_RESTORE_FAILED' }, window.location.origin);
             }
 
             if (!loadedFromStorage && initialProjectUrl) {
@@ -674,6 +699,7 @@
             if (storageKeyParam === 'M5L5_Shared_Chatbot') {
               chatbotReadyToSave = loadedFromStorage || !hadSavedProject;
             }
+            restoringDraft = false;
           }
           if (attempts > 300) {
             clearInterval(loaderCheck);
@@ -838,9 +864,12 @@
           window.saveProjectToComputer(e.data.title);
         }
         if (e.data.type === 'SAVE_TO_STORAGE') {
-          const saved = await window.saveProjectToStorage(e.data.storageKey || storageKeyParam);
-          if (!saved && storageKeyParam === 'M5L5_Shared_Chatbot') {
-            window.parent.postMessage({ type: 'PROJECT_SAVE_FAILED' }, window.location.origin);
+          if (e.source !== window.parent || e.origin !== window.location.origin) return;
+          const saved = await window.saveProjectToStorage(storageKeyParam, params.has('draftScope'));
+          if (params.has('draftScope') || !saved) {
+            window.parent.postMessage({
+              type: saved ? 'PROJECT_SAVED_SUCCESS' : 'PROJECT_SAVE_FAILED',
+            }, window.location.origin);
           }
         }
         if (e.data.type === 'REVERT_DRAFT_PROJECT') {

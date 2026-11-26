@@ -1,3 +1,4 @@
+import ImageViewingTask from '../../activities/ImageViewingTask.jsx';
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
 import { BLOCK_TYPES, createBlockInstance, countCommands, isWithinCommandLimit } from './BlockWorkspace/blockDefinitions.js';
@@ -92,6 +93,15 @@ function ReferenceBoard({ level, robot, execution }) {
 
 export default function ExcursionTask(props) {
   if (props.level.type === 'typing') return <CoordinateTyping {...props} />;
+  if (props.level.type === 'image') {
+    const taskId = String(props.task?.id || props.task?.taskId || '');
+    const sources = props.level.images || [props.level.image];
+    const images = [...new Set(sources.filter(Boolean))].map((src) => ({ src }));
+    if (images.length) {
+      return <ImageViewingTask key={taskId || props.level.number} {...props} taskId={taskId}
+        title={props.level.hint} images={images} />;
+    }
+  }
   if (props.level.type) return <ExcursionInterlude {...props} />;
   return <ExcursionMaze {...props} />;
 }

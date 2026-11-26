@@ -3,7 +3,7 @@
   "id": "VP_M5L4_3",
   "title": "Martian variables",
   "type": "block-game-task",
-  "taskCount": 16,
+  "taskCount": 15,
   "metadata": {
     "courseId": "VP2",
     "source": "learn.alg.academy rendered UI",
@@ -17,7 +17,7 @@
       "level_position": 1,
       "levelPosition": 1,
       "title": "Martian variables - 1",
-      "instruction": "Martian variables \u2014 introduction comic",
+      "instruction": "Martian variables — introduction comic",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",
@@ -319,27 +319,6 @@
         {
           "id": "VP_M5L4_3_15_state_1",
           "stateId": "VP_M5L4_3_15_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
-        }
-      ]
-    },
-    {
-      "id": "VP_M5L4_3_16",
-      "taskId": "VP_M5L4_3_16",
-      "position": 16,
-      "level_position": 16,
-      "levelPosition": 16,
-      "title": "Martian variables - 16",
-      "instruction": "Way to go! You finished the task!",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "states": [
-        {
-          "id": "VP_M5L4_3_16_state_1",
-          "stateId": "VP_M5L4_3_16_state_1",
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game"

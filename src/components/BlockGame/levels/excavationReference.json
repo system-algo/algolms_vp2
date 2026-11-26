@@ -12472,11 +12472,5 @@
       "destroy"
     ],
     "sourceToolboxCount": 7
-  },
-  {
-    "number": 15,
-    "type": "finish",
-    "activityName": "Excavations",
-    "hint": "Way to go! You finished the task!"
   }
 ]

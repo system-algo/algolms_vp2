@@ -2,7 +2,7 @@
   {
     "number": 1,
     "type": "source",
-    "hint": "Martian variables \u2014 introduction comic",
+    "hint": "Martian variables — introduction comic",
     "sourceUrl": "https://learn.alg.academy/lesson?module=5&lesson=11475&task=26033&level=1"
   },
   {
@@ -7939,10 +7939,5 @@
         }
       }
     ]
-  },
-  {
-    "number": 16,
-    "type": "finish",
-    "hint": "Way to go! You finished the task!"
   }
 ]

@@ -1,3 +1,4 @@
+import { isCurrentProgressRecord, isRemovedFinishTask } from '../lib/vp2RemovedFinishTasks.js';
 import { getMainPlatformSignOutUrl } from '../lib/authConfig';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import customNames from '../config/mapping.json';
@@ -206,7 +207,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
         })
         .then((data) => {
           if (Array.isArray(data)) {
-            setDbProgress(data);
+            setDbProgress(data.filter(isCurrentProgressRecord));
             setHasFetchedProgress(true);
           }
         })
@@ -769,7 +770,7 @@ export default function Dashboard({ onOpenCourse, onOpenPage, initialCourseId = 
       ].join(':');
       const localCompleted = JSON.parse(localStorage.getItem(storageKey) || '[]');
       const taskCount = page.taskCount || 0;
-      if (Array.isArray(localCompleted) && taskCount > 0 && localCompleted.length >= taskCount) {
+      if (Array.isArray(localCompleted) && taskCount > 0 && localCompleted.filter((id) => !isRemovedFinishTask(pageId, id)).length >= taskCount) {
         return true;
       }
     } catch (e) {}

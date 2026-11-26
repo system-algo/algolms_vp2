@@ -1,3 +1,4 @@
+import { isCurrentProgressRecord } from '../lib/vp2RemovedFinishTasks.js';
 import { getMainPlatformSignOutUrl } from '../lib/authConfig';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import TeacherCoursePreview from '../components/TeacherCoursePreview.jsx';
@@ -430,7 +431,7 @@ export default function TeacherDashboard({
         .then((data) => {
           console.log(`TeacherDashboard: fetched ${data?.length || 0} progress rows from DB.`);
           if (Array.isArray(data)) {
-            setDbAttempts(data);
+            setDbAttempts(data.filter(isCurrentProgressRecord));
           }
         })
         .catch((err) => {
@@ -642,7 +643,7 @@ export default function TeacherDashboard({
             headers: { 'apikey': supabaseKey, 'Authorization': `Bearer ${supabaseToken}` }
           })
             .then((res) => res.json())
-            .then((data) => Array.isArray(data) ? data : [])
+            .then((data) => Array.isArray(data) ? data.filter(isCurrentProgressRecord) : [])
             .catch(() => []);
           progressPromises.push(pPromise);
         });

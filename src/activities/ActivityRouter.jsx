@@ -1,3 +1,5 @@
+import ImageViewingTask from './ImageViewingTask.jsx';
+import { cleanTextLines, getPrimaryState, getUniqueImages } from '../lib/taskExtractors.js';
 import ScratchDemoPlayer from './ScratchDemoPlayer.jsx';
 import CodeClassificationTask from './CodeClassificationTask.jsx';
 import CodePlaceholderTask from './CodePlaceholderTask.jsx';
@@ -698,6 +700,7 @@ function resolveRendererType(props) {
     task?.selectedType === 'feedback_rating_task' ||
     task?.level_type === 'rating' ||
     task?.type === 'rating' ||
+    /^did you enjoy (?:the|this) (?:task|lesson|activity|project)\s*\??$/i.test(task?.title?.trim() || '') ||
     /did you like/i.test(task?.title || '') ||
     /did you like/i.test(task?.instruction || '') ||
     /did you like/i.test(task?.bodyText || '') ||
@@ -780,8 +783,6 @@ function resolveRendererType(props) {
     pageId === 'VP2_M6L2_6' ||
     taskId.includes('VP2_M6L3_2') ||
     pageId === 'VP2_M6L3_2' ||
-    taskId.includes('VP2_M7L2_4') ||
-    pageId === 'VP2_M7L2_4' ||
     task?.activityType === 'marsbot-quiz' ||
     task?.selectedType === 'marsbot-quiz' ||
     pageInstance?.type === 'marsbot-quiz';
@@ -923,6 +924,24 @@ export default function ActivityRouter(props) {
 
   if (rawMode) {
     return <GenericCapturedTask {...rendererProps} forceReplay />;
+  }
+
+  const primaryState = getPrimaryState(task);
+  const lines = cleanTextLines(primaryState?.textLines || []);
+  const capturedSlide = task?.activityType === 'code_typing_task' &&
+    lines.length === 1 && /^next$/i.test(lines[0]) &&
+    !primaryState?.inputs?.length && !primaryState?.choiceOptions?.length &&
+    !primaryState?.codeBlocks?.length;
+  const isImageSlide = capturedSlide || [task?.activityType, task?.selectedType, task?.level_type]
+    .some((type) => /^(?:lesson[-_]slide[-_]card|comics?)$/.test(type || ''));
+
+  if (isImageSlide) {
+    const images = getUniqueImages({ states: [primaryState].filter(Boolean) });
+    if (images.length) {
+      return <ImageViewingTask key={taskId} {...rendererProps} taskId={taskId}
+        title={task?.title} images={images}
+        description={lines.filter((line) => line !== task?.title && !/^next$/i.test(line))} />;
+    }
   }
 
   const taskRenderer = getTaskRendererFromPageInstance(props.pageInstance, taskId);
@@ -1186,7 +1205,7 @@ export default function ActivityRouter(props) {
   }
 
   if (rendererType === 'feedback-rating-task') {
-    return <FeedbackRatingTask {...rendererProps} task={nextTask} />;
+    return <FeedbackRatingTask key={taskId} {...rendererProps} task={nextTask} />;
   }
 
   return <GenericCapturedTask {...rendererProps} task={nextTask} />;

@@ -4,7 +4,7 @@
   "title": "Bonus! Excavations. Loops in Loops",
   "type": "block-game-task",
   "level_type": "block_game",
-  "taskCount": 15,
+  "taskCount": 14,
   "tasks": [
     {
       "id": "VP2_M1L2_2_1",
@@ -308,28 +308,6 @@
         {
           "id": "VP2_M1L2_2_14_state_1",
           "stateId": "VP2_M1L2_2_14_state_1",
-          "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
-        }
-      ]
-    },
-    {
-      "id": "VP2_M1L2_2_15",
-      "taskId": "VP2_M1L2_2_15",
-      "position": 15,
-      "level_position": 15,
-      "levelPosition": 15,
-      "title": "Excavations - 15",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
-      "levelId": "mars_level_10",
-      "instruction": "Way to go! You finished the task!",
-      "states": [
-        {
-          "id": "VP2_M1L2_2_15_state_1",
-          "stateId": "VP2_M1L2_2_15_state_1",
           "position": 1,
           "type": "block_game",
           "selectedType": "block_game"

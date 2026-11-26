@@ -4,7 +4,7 @@
   "title": "Graduation - Part 4",
   "type": "scratch-task",
   "level_type": "scratch",
-  "taskCount": 5,
+  "taskCount": 4,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M7-Hackathon-Series",
@@ -18,59 +18,23 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Graduation: Communication man - Question 1",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Graduation: Communication man\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Graduation: Communication man - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Communication man",
+      "activityType": "lesson_slide_card",
+      "selectedType": "lesson_slide_card",
       "states": [
         {
           "id": "VP2_M7L2_4_1_state_1",
-          "stateId": "VP2_M7L2_4_1_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Graduation: Communication man - Question 1"
+          "type": "lesson_slide_card",
+          "textLines": [
+            "Communication man"
+          ],
+          "images": [
+            {
+              "src": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_4/workspace/assets/task-1-1wdrgp8/initial/asset-8bz1su.png"
+            }
+          ]
         }
-      ],
-      "project_title": "Graduation: Communication man - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M7L2_4_2",
@@ -259,59 +223,23 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Graduation: Communication man - Question 3",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Graduation: Communication man\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Graduation: Communication man - Review 3",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Communication man",
+      "activityType": "lesson_slide_card",
+      "selectedType": "lesson_slide_card",
       "states": [
         {
           "id": "VP2_M7L2_4_3_state_1",
-          "stateId": "VP2_M7L2_4_3_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Graduation: Communication man - Question 3"
+          "type": "lesson_slide_card",
+          "textLines": [
+            "Communication man"
+          ],
+          "images": [
+            {
+              "src": "/courses/VP2/M7-Hackathon-Series/pages/VP2_M7L2_4/workspace/assets/task-23-1ymq6y/initial/asset-qnlhvv.png"
+            }
+          ]
         }
-      ],
-      "project_title": "Graduation: Communication man - Question 3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     },
     {
       "id": "VP2_M7L2_4_4",
@@ -319,119 +247,18 @@
       "position": 4,
       "level_position": 4,
       "levelPosition": 4,
-      "title": "Graduation: Communication man - Question 4",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_4_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Graduation: Communication man\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_4_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Graduation: Communication man - Review 4",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you enjoy the task?",
+      "activityType": "feedback-rating-task",
+      "selectedType": "feedback-rating-task",
       "states": [
         {
           "id": "VP2_M7L2_4_4_state_1",
-          "stateId": "VP2_M7L2_4_4_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Graduation: Communication man - Question 4"
+          "type": "feedback-rating-task",
+          "textLines": [
+            "Did you enjoy the task?"
+          ]
         }
-      ],
-      "project_title": "Graduation: Communication man - Question 4",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
-    },
-    {
-      "id": "VP2_M7L2_4_5",
-      "taskId": "VP2_M7L2_4_5",
-      "position": 5,
-      "level_position": 5,
-      "levelPosition": 5,
-      "title": "Graduation: Communication man - Question 5",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_5_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Graduation: Communication man\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_5_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Graduation: Communication man - Review 5",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
-      "states": [
-        {
-          "id": "VP2_M7L2_4_5_state_1",
-          "stateId": "VP2_M7L2_4_5_state_1",
-          "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Graduation: Communication man - Question 5"
-        }
-      ],
-      "project_title": "Graduation: Communication man - Question 5",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      ]
     }
   ]
 }

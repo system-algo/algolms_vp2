@@ -69,7 +69,7 @@
           "id": "VP2_M1L2_2",
           "title": "Bonus! Excavations....",
           "lessonId": "VP2_M1L2",
-          "taskCount": 15,
+          "taskCount": 14,
           "isBonus": true
         },
         {
@@ -142,7 +142,7 @@
         }
       ],
       "pageCount": 17,
-      "taskCount": 128
+      "taskCount": 127
     },
     {
       "id": "M2-Control-Structures",
@@ -644,7 +644,7 @@
           "id": "VP2_M5L4_3",
           "title": "Martian variables",
           "lessonId": "VP2_M5L4",
-          "taskCount": 16,
+          "taskCount": 15,
           "type": "block-game-task",
           "level_type": "block_game"
         },
@@ -668,7 +668,7 @@
         }
       ],
       "pageCount": 18,
-      "taskCount": 86
+      "taskCount": 85
     },
     {
       "id": "M6-Advanced-Projects",
@@ -710,79 +710,79 @@
           "id": "VP2_M7L2_1",
           "title": "Graduation: Captain",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_2",
           "title": "Graduation: Assistant Captain",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_3",
           "title": "Graduation: Navigation man",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_4",
           "title": "Graduation: Communication man",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_5",
           "title": "Graduation: Research Scientist",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_6",
           "title": "Graduation: MarsBots Programmer",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_7",
           "title": "Graduation: MarsBots Engineer",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_8",
           "title": "Graduation: Fuel Systems Engineer",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_9",
           "title": "Graduation: Navigation Systems Engineer",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_10",
           "title": "Graduation: Astromech",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_11",
           "title": "Graduation: Navigator",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         },
         {
           "id": "VP2_M7L2_12",
           "title": "Graduation: Meteorologist",
           "lessonId": "VP2_M7L2",
-          "taskCount": 5
+          "taskCount": 4
         }
       ],
       "pageCount": 13,
-      "taskCount": 63
+      "taskCount": 51
     }
   ],
   "pageCount": 103,
-  "taskCount": 615
+  "taskCount": 601
 }

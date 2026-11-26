@@ -24,11 +24,10 @@
   },
   {
     "number": 4,
-    "type": "source",
+    "type": "image",
     "activityName": "Rocket flight",
     "hint": "Rocket flight",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=4",
-    "sourceType": "comics"
+    "image": "/vp-assets/restored-comics-flight/flight-4-1.webp"
   },
   {
     "number": 5,
@@ -202,11 +201,10 @@
   },
   {
     "number": 12,
-    "type": "source",
+    "type": "image",
     "activityName": "Rocket flight",
     "hint": "Rocket flight",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21608&level=12",
-    "sourceType": "comics"
+    "image": "/vp-assets/restored-comics-flight/flight-12-1.webp"
   },
   {
     "number": 13,

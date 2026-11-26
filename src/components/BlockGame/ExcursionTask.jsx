@@ -1,3 +1,4 @@
+import { recordBlockRun } from '../../lib/supabaseProgress.js';
 import FeedbackRatingTask from '../../activities/FeedbackRatingTask.jsx';
 import ImageViewingTask from '../../activities/ImageViewingTask.jsx';
 import { useEffect, useId, useRef, useState } from 'react';
@@ -124,7 +125,7 @@ function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
   </section>;
 }
 
-function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
+function ExcursionMaze({ level, lessonId, pageId, task, onNextTask, onTaskCompleted }) {
   const [blocks, setBlocks] = useState(() => {
     const make = b => ({ ...createBlockInstance(b.type), params: { ...createBlockInstance(b.type).params, ...b.params }, ...(b.children ? { children: b.children.map(make) } : {}) });
     const hat = createBlockInstance(BLOCK_TYPES.START_HAT);
@@ -134,6 +135,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   const [activeBlockId, setActiveBlockId] = useState(null);
   const [execution, setExecution] = useState(null);
   const [status, setStatus] = useState('idle');
+  const [runSaveError, setRunSaveError] = useState(false);
   const [message, setMessage] = useState('');
   const [guide, setGuide] = useState('intro');
   const [split, setSplit] = useState(60);
@@ -156,6 +158,12 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
   }
 
   function run() {
+    if (task) {
+      setRunSaveError(false);
+      recordBlockRun({ lessonId, pageId, task, blocks }).then((saved) => {
+        if (!saved) setRunSaveError(true);
+      });
+    }
     reset();
     if (!isWithinCommandLimit(blocks, level.maxCommands)) { setStatus('failed'); setMessage(`Commands used: ${countCommands(blocks)} out of ${level.maxCommands}. Reduce the number of blocks to complete this task.`); return; }
     let steps;
@@ -218,6 +226,7 @@ function ExcursionMaze({ level, onNextTask, onTaskCompleted }) {
       <div className={`excursion-stage ${level.loops ? "excursion-forest" : ""}`} style={level.pattern ? { backgroundImage: `url("${level.pattern}")`, backgroundColor: level.stageColor, backgroundSize: level.buildings ? "cover" : undefined } : undefined}>
         <div className={`excursion-world${level.scenery ? " excursion-scenery-world" : ""}`}><ReferenceBoard level={level} robot={robot} execution={status === 'running' ? execution : null} /></div>
         <div className="excursion-controls">
+          {runSaveError && <p role="status">This run could not be saved online.</p>}
           {status === 'running' && execution && <output className="excursion-execution" aria-live="polite">{execution.label}</output>}
           <button className="excursion-play" type="button" aria-label={status === 'running' ? 'Stop program' : 'Run program'} onClick={status === 'running' ? reset : run}>
             {status === 'running' ? <span className="excursion-stop-icon" /> : <span className="excursion-play-icon" />}

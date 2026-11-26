@@ -130,3 +130,23 @@ export async function saveTaskCompletionToSupabase({
 export async function syncLocalStorageToSupabase() {
   return;
 }
+
+export async function recordBlockRun({ lessonId, pageId, task, blocks }) {
+  const taskId = task?.id || task?.taskId || task?.activity_id;
+  const { supabaseUrl, supabaseKey } = getSupabaseCredentials();
+  const headers = supabaseKey && getSupabaseHeaders(supabaseKey);
+  if (!supabaseUrl || !headers?.Authorization || !lessonId || !pageId || !taskId) return false;
+
+  try {
+    const body = JSON.stringify({ p_lesson_id: lessonId, p_page_id: pageId, p_task_id: taskId, p_blocks: blocks });
+    const response = await fetch(`${supabaseUrl.replace(/\/+$/, '')}/rest/v1/rpc/record_vp2_block_run`, {
+      method: 'POST',
+      headers,
+      body,
+      keepalive: new Blob([body]).size < 60_000,
+    });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}

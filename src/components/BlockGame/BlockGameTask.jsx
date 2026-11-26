@@ -1,3 +1,4 @@
+import { recordBlockRun } from '../../lib/supabaseProgress.js';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace';
 import GameView from './GameEngine/GameView';
@@ -115,12 +116,14 @@ export default function BlockGameTask(props) {
   if (collecting) return <ExcursionTask key={taskId} {...props} level={collectingReferences.find(l => l.number === Number(collecting[1]))} />;
   const reference = match && (match[1] === "2" ? (match[2] === "1" ? constructionReferences : excavationReferences) : match[2] === "2" ? rocketReferences : excursionReferences).find(item => item.number === Number(match[3]));
   if (reference) return <ExcursionTask key={taskId} {...props} level={reference} />;
-  return <LegacyBlockGameTask {...props} />;
+  return <LegacyBlockGameTask key={taskId} {...props} />;
 }
 
 function LegacyBlockGameTask({
   task,
   state,
+  lessonId,
+  pageId,
   onTaskCompleted,
   onNextTask,
   onPrevTask,
@@ -156,6 +159,7 @@ function LegacyBlockGameTask({
   // Execution state
   const [isExecuting, setIsExecuting] = useState(false);
   const [executionStatus, setExecutionStatus] = useState('idle'); // 'idle' | 'running' | 'completed' | 'failed'
+  const [runSaveError, setRunSaveError] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
 
   // Resizable split pane state ("kéo ra kéo dô" chia cột giao diện)
@@ -231,6 +235,13 @@ function LegacyBlockGameTask({
   // Run program
   const handleRun = useCallback(() => {
     if (isExecuting) return;
+
+    if (!standalone && task) {
+      setRunSaveError(false);
+      recordBlockRun({ lessonId, pageId, task, blocks }).then((saved) => {
+        if (!saved) setRunSaveError(true);
+      });
+    }
 
     // Reset board before running
     setRobotState({ ...level.initialRobot });
@@ -440,7 +451,7 @@ function LegacyBlockGameTask({
     }
 
     executionTimerRef.current = setTimeout(executeNextStep, 150);
-  }, [blocks, isExecuting, level, onTaskCompleted]);
+  }, [blocks, isExecuting, level, lessonId, pageId, task, standalone, onTaskCompleted]);
 
   // Clean up timer on unmount
   useEffect(() => {
@@ -646,7 +657,7 @@ function LegacyBlockGameTask({
             onRun={handleRun}
             onReset={handleReset}
             executionStatus={executionStatus}
-            statusMessage={statusMessage}
+            statusMessage={[statusMessage, runSaveError && 'This run could not be saved online.'].filter(Boolean).join(' ')}
           />
         </div>
       </div>

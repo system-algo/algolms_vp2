@@ -1,61 +1,84 @@
 import { useEffect, useRef, useState } from 'react';
 import './ImageViewingTask.css';
+import ViewingTaskNavigation from './ViewingTaskNavigation.jsx';
 
 const VIEWING_DURATION_MS = 5000;
 
 export default function ImageViewingTask({
-  taskId, title, description = [], images, completedTaskIds = [], onTaskCompleted,
+  taskId, title, description = [], images, completedTaskIds = [], onTaskCompleted, ...navigation
 }) {
-  const [viewed, setViewed] = useState(images.length === 1);
-  const [loaded, setLoaded] = useState(() => new Set());
-  const [imageError, setImageError] = useState(false);
-  const endOfImages = useRef(null);
+  const scroller = useRef(null);
   const complete = useRef(onTaskCompleted);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [visible, setVisible] = useState(new Set());
+  const [loaded, setLoaded] = useState(new Set());
+  const [failed, setFailed] = useState(false);
   const done = completedTaskIds.includes(taskId);
-  const ready = images.every(({ src }) => loaded.has(src));
-  const counting = viewed && ready && !done;
+  const viewed = done || images.every(({ src }) => loaded.has(src) && visible.has(src));
 
   useEffect(() => {
     complete.current = onTaskCompleted;
   }, [onTaskCompleted]);
 
   useEffect(() => {
-    if (viewed || done || !ready) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) setViewed(true);
-    });
-    observer.observe(endOfImages.current);
+    const root = scroller.current;
+    const observer = new IntersectionObserver((entries) => {
+      const shown = entries.find((entry) => entry.isIntersecting);
+      if (!shown) return;
+      setActiveIndex(Number(shown.target.dataset.index));
+      setVisible((previous) => new Set([
+        ...previous,
+        ...entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target.dataset.src),
+      ]));
+    }, { root, threshold: 0.55 });
+
+    for (const slide of root.children) observer.observe(slide);
     return () => observer.disconnect();
-  }, [viewed, done, ready]);
+  }, []);
 
   useEffect(() => {
-    if (!counting) return;
+    if (done || !viewed) return;
     const timer = window.setTimeout(() => {
-      complete.current?.({ taskId, completionType: 'viewed' });
+      complete.current?.({ taskId, activityType: 'image-viewing', completionType: 'viewed' });
     }, VIEWING_DURATION_MS);
     return () => window.clearTimeout(timer);
-  }, [counting, taskId]);
+  }, [done, viewed, taskId]);
 
-  const status = done ? 'Done' : imageError ? 'An image could not load.' :
-    viewed ? 'Viewed' : 'Scroll down to view all images.';
+  const viewedCount = images.filter(({ src }) => loaded.has(src) && visible.has(src)).length;
 
   return (
-    <article className="image-viewing-task">
-      <header className="image-viewing-task__status">
-        <span role="status">{status}</span>
-        <div className="image-viewing-task__track" aria-hidden="true">
-          <div className={done ? 'is-done' : counting ? 'is-counting' : ''}
-            style={{ animationDuration: VIEWING_DURATION_MS + 'ms' }} />
-        </div>
-      </header>
-      {title && <h1>{title}</h1>}
+    <article className="image-viewing-task" aria-label={title || 'Comic'}>
+      <ViewingTaskNavigation {...navigation} />
       {description.map((line, index) => <p key={index}>{line}</p>)}
-      {images.map(({ src, alt }, index) => (
-        <img key={src} src={src} alt={alt || 'Illustration ' + (index + 1)}
-          onLoad={() => setLoaded((current) => new Set(current).add(src))}
-          onError={() => setImageError(true)} />
-      ))}
-      <div ref={endOfImages} className="image-viewing-task__end" aria-hidden="true" />
+      <div className="image-viewing-task__panel">
+        <div ref={scroller} className="image-viewing-task__scroll" tabIndex={0} aria-label="Comic pages">
+          {images.map(({ src, alt }, index) => (
+            <div className="image-viewing-task__slide" data-index={index} data-src={src} key={src}>
+              <img src={src} alt={alt || 'Illustration ' + (index + 1)} draggable={false}
+                onLoad={() => setLoaded((previous) => new Set(previous).add(src))}
+                onError={() => setFailed(true)} />
+            </div>
+          ))}
+        </div>
+        <div className="image-viewing-task__status">
+          <span>{activeIndex + 1} / {images.length}</span>
+          {images.length > 1 && (
+            <div className="image-viewing-task__pages">
+              {images.map(({ src }, index) => (
+                <button key={src} type="button" aria-label={'Show page ' + (index + 1)}
+                  aria-current={index === activeIndex ? 'page' : undefined}
+                  onClick={() => {
+                    const root = scroller.current;
+                    root.scrollTo({ top: root.children[index].offsetTop, behavior: 'smooth' });
+                  }} />
+              ))}
+            </div>
+          )}
+          <span role="status" className={viewed ? 'is-viewed' : ''}>
+            {viewed ? 'Viewed ✓' : failed ? 'An image could not load.' : viewedCount + '/' + images.length + ' viewed'}
+          </span>
+        </div>
+      </div>
     </article>
   );
 }

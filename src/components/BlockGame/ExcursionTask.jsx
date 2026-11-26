@@ -1,3 +1,4 @@
+import FeedbackRatingTask from '../../activities/FeedbackRatingTask.jsx';
 import ImageViewingTask from '../../activities/ImageViewingTask.jsx';
 import { useEffect, useId, useRef, useState } from 'react';
 import BlockWorkspace from './BlockWorkspace/BlockWorkspace.jsx';
@@ -92,6 +93,7 @@ function ReferenceBoard({ level, robot, execution }) {
 }
 
 export default function ExcursionTask(props) {
+  if (props.level.type === 'rating') return <FeedbackRatingTask {...props} />;
   if (props.level.type === 'typing') return <CoordinateTyping {...props} />;
   if (props.level.type === 'image') {
     const taskId = String(props.task?.id || props.task?.taskId || '');
@@ -114,29 +116,8 @@ function CoordinateTyping({ level, onNextTask, onTaskCompleted }) {
 
 function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
   if (level.type === 'source') return <section className="excursion-interlude"><h2>{level.hint}</h2><a href={level.sourceUrl} target="_blank" rel="noreferrer">Open original activity</a><button type="button" onClick={onNextTask}>Next</button></section>;
-  const [rating, setRating] = useState(null);
   const [slide, setSlide] = useState(0);
   const image = level.images?.[slide] || level.image;
-  if (level.type === 'rating' && rating === null) {
-    const ratingOptions = [
-      { label: 'Disliked', robot: 'difficult' },
-      { label: 'Neutral', robot: 'okay' },
-      { label: 'Liked', robot: 'easy' },
-    ];
-
-    return (
-      <section className="excursion-rating" aria-label="Task feedback">
-        <h2>{level.hint}</h2>
-        <div>
-          {ratingOptions.map(({ label, robot }, index) => (
-            <button type="button" aria-label={label} key={label} onClick={() => setRating(index)}>
-              <img src={`/assets/feedback/robot-${robot}.png`} alt="" />
-            </button>
-          ))}
-        </div>
-      </section>
-    );
-  }
   return <section className="excursion-interlude" aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
     {image ? <img src={image} alt={level.hint} /> : <div><h2>{level.type === 'finish' ? level.hint : 'Thanks!'}</h2>{level.type !== 'finish' && <p>We love having cool lessons!</p>}</div>}
     <button type="button" onClick={() => { if (level.images && slide < level.images.length - 1) { setSlide(slide + 1); return; } onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }}>Next</button>

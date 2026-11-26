@@ -875,6 +875,9 @@ export default function GeneratedPageShell({
       />
 
       <ActivityRouter
+        courseId={courseId}
+        lessonId={lessonId}
+        pageId={pageId}
         pageInstance={pageInstance}
         frameConfig={frameConfig}
         task={task}

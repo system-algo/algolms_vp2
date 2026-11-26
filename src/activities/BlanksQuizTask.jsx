@@ -1,3 +1,4 @@
+import { submitQuizAttempt } from '../lib/quizGradingApi';
 import React, { useEffect, useMemo, useState } from 'react';
 import { playLmsSound, LMS_SOUND_TYPES } from '../utils/lmsSounds';
 import { saveTaskCompletionToSupabase } from '../lib/supabaseProgress';
@@ -79,6 +80,7 @@ function getConfig(task) {
     image: raw.image || '',
     imageAlt: raw.imageAlt || raw.title || '',
     text: raw.text || '',
+    gradeOnServer: raw.gradeOnServer === true,
     answers,
   };
 }
@@ -111,11 +113,13 @@ export default function BlanksQuizTask({
   const taskId = task?.id || task?.taskId || 'blanks-quiz';
   const config = useMemo(() => getConfig(task), [task]);
   const lines = useMemo(() => parseText(config.text), [config.text]);
-  const blankKeys = useMemo(() => Object.keys(config.answers), [config.answers]);
+  const blankKeys = useMemo(() => config.gradeOnServer ? [...new Set(lines.flatMap((line) => line.filter((part) => part.blank).map((part) => part.blank)))] : Object.keys(config.answers), [config, lines]);
 
   const [values, setValues] = useState({});
   const [checked, setChecked] = useState({}); // key -> 'is-correct' | 'is-wrong'
   const [status, setStatus] = useState(''); // '', 'correct', 'wrong'
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [hasUserReset, setHasUserReset] = useState(false);
 
   useEffect(() => {
@@ -129,11 +133,11 @@ export default function BlanksQuizTask({
     try {
       isAlreadyDone =
         completedTaskIds.includes(taskId) ||
-        localStorage.getItem(`task_completed_${taskId}`) === 'true';
+        (!config.gradeOnServer && localStorage.getItem(`task_completed_${taskId}`) === 'true');
     } catch {}
 
     if (isAlreadyDone) {
-      setValues(Object.fromEntries(blankKeys.map((key) => [key, config.answers[key][0]])));
+      setValues(Object.fromEntries(blankKeys.map((key) => [key, config.answers[key]?.[0] ?? ''])));
       setChecked(Object.fromEntries(blankKeys.map((key) => [key, 'is-correct'])));
       setStatus('correct');
     } else {
@@ -162,14 +166,50 @@ export default function BlanksQuizTask({
     try {
       localStorage.removeItem(`task_completed_${taskId}`);
     } catch {}
+    setErrorMessage('');
     setHasUserReset(true);
     setValues({});
     setChecked({});
     setStatus('');
   };
 
-  const handleAnswer = () => {
-    if (!allFilled || isLocked) return;
+  const handleAnswer = async () => {
+    if (!allFilled || isLocked || isSubmitting) return;
+
+    if (config.gradeOnServer) {
+      const params = new URLSearchParams(window.location.search);
+      setIsSubmitting(true);
+      setErrorMessage('');
+      try {
+        const result = await submitQuizAttempt(getBackendUrl(), {
+          sessionId: getSessionId(),
+          userId: getUserId(),
+          courseId: params.get('course') || task?.courseId || 'VP2',
+          lessonId: params.get('lesson') || task?.lessonId || '',
+          pageId: params.get('page') || task?.pageId || '',
+          taskId,
+          activityType: 'fill-blank-task',
+          answer: { values },
+        });
+        if (result.isCorrect === true && result.status === 'correct') {
+          setChecked(Object.fromEntries(blankKeys.map((key) => [key, 'is-correct'])));
+          setStatus('correct');
+          onTaskCompleted?.({ taskId, completionType: 'correct', isCorrect: true,
+            score: result.score, maxScore: result.maxScore });
+        } else if (result.isCorrect === false) {
+          setChecked(Object.fromEntries(Object.entries(result.details?.blankResults || {})
+            .map(([key, correct]) => [key, correct ? 'is-correct' : 'is-wrong'])));
+          setStatus('wrong');
+        } else {
+          setErrorMessage('Answer not yet available. Please contact your teacher.');
+        }
+      } catch (error) {
+        setErrorMessage(error.message || 'Cannot check your answer now. Please try again.');
+      } finally {
+        setIsSubmitting(false);
+      }
+      return;
+    }
 
     const nextChecked = {};
     let isCorrect = true;
@@ -260,6 +300,7 @@ export default function BlanksQuizTask({
             <h2 className={`icq-title ${status === 'correct' ? 'is-correct' : ''}`}>{config.title}</h2>
             {config.description ? <p className="icq-description bq-description">{config.description}</p> : null}
 
+            {errorMessage && <p role="status">{errorMessage}</p>}
             {status ? (
               <div className={`icq-feedback icq-feedback--${status}`} role="status" aria-live="polite">
                 {status === 'correct' && 'Correct!'}
@@ -273,7 +314,7 @@ export default function BlanksQuizTask({
               type="button"
               className="icq-btn icq-btn-reset"
               onClick={handleReset}
-              disabled={!anyFilled && !status}
+              disabled={isSubmitting || (!anyFilled && !status && !errorMessage)}
               aria-label="Reset"
               title="Reset"
             >
@@ -282,7 +323,7 @@ export default function BlanksQuizTask({
                 <polyline points="3 3 3 9 9 9" />
               </svg>
             </button>
-            <button type="button" className="icq-btn icq-btn-answer" onClick={handleAnswer} disabled={!allFilled || isLocked}>
+            <button type="button" className="icq-btn icq-btn-answer" onClick={handleAnswer} disabled={!allFilled || isLocked || isSubmitting}>
               ANSWER
             </button>
           </div>
@@ -307,7 +348,7 @@ export default function BlanksQuizTask({
                       onKeyDown={(event) => {
                         if (event.key === 'Enter') handleAnswer();
                       }}
-                      disabled={isLocked}
+                      disabled={isLocked || isSubmitting}
                       aria-label={`Blank ${part.blank}`}
                     />
                   ),

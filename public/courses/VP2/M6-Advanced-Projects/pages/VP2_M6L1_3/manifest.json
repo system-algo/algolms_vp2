@@ -1,16 +1,15 @@
 {
   "version": 1,
-  "id": "VP2_M6L1_3",
-  "title": "Classes and objects - Part 3",
-  "type": "marsbot-quiz",
-  "level_type": "quiz",
-  "taskCount": 3,
   "metadata": {
     "courseId": "VP2",
     "moduleId": "M6-Advanced-Projects",
-    "pageId": "VP2_M6L1_3",
-    "convertedAt": "2026-11-10T14:32:36.102Z"
+    "pageId": "VP2_M6L1_3"
   },
+  "id": "VP2_M6L1_3",
+  "title": "Test yourself. Clones",
+  "type": "marsbot-quiz",
+  "level_type": "quiz",
+  "taskCount": 3,
   "tasks": [
     {
       "id": "VP2_M6L1_3_1",
@@ -18,59 +17,23 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Classes and objects - Question 1",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Classes and objects\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Classes and objects - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you like the lesson?",
+      "activityType": "feedback-rating-task",
+      "selectedType": "feedback-rating-task",
+      "level_type": "rating",
       "states": [
         {
           "id": "VP2_M6L1_3_1_state_1",
-          "stateId": "VP2_M6L1_3_1_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Classes and objects - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating"
         }
       ],
-      "project_title": "Test yourself. Classes and objects - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you like the lesson?"
+      }
     },
     {
       "id": "VP2_M6L1_3_2",
@@ -78,59 +41,55 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Classes and objects - Question 2",
-      "activityType": "marsbot-quiz",
+      "title": "Match the event with the object it is run for.",
+      "activityType": "category-quiz-task",
+      "selectedType": "category-quiz-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Classes and objects\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Classes and objects - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
       "states": [
         {
           "id": "VP2_M6L1_3_2_state_1",
-          "stateId": "VP2_M6L1_3_2_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Classes and objects - Question 2"
+          "type": "category-quiz-task",
+          "selectedType": "category-quiz-task",
+          "level_type": "quiz"
         }
       ],
-      "project_title": "Test yourself. Classes and objects - Question 2",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "categoryQuizTask": {
+        "title": "Match the event with the object it is run for.",
+        "image": "",
+        "layout": "match",
+        "items": [
+          {
+            "id": "item1",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-14-19zn748/initial/asset-15fi79z.jpg",
+            "alt": "Item 1"
+          },
+          {
+            "id": "item2",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-14-19zn748/initial/asset-345qw8.jpg",
+            "alt": "Item 2"
+          },
+          {
+            "id": "item3",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-14-19zn748/initial/asset-13xqos6.jpg",
+            "alt": "Item 3"
+          }
+        ],
+        "categories": [
+          {
+            "id": "cat1",
+            "title": "Clone"
+          },
+          {
+            "id": "cat2",
+            "title": "Main sprite"
+          },
+          {
+            "id": "cat3",
+            "title": "Everything"
+          }
+        ]
+      }
     },
     {
       "id": "VP2_M6L1_3_3",
@@ -138,60 +97,55 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Classes and objects - Question 3",
-      "activityType": "marsbot-quiz",
+      "title": "Match the class objects with their properties.",
+      "activityType": "category-quiz-task",
+      "selectedType": "category-quiz-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Classes and objects\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Classes and objects - Review 3",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
       "states": [
         {
           "id": "VP2_M6L1_3_3_state_1",
-          "stateId": "VP2_M6L1_3_3_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Classes and objects - Question 3"
+          "type": "category-quiz-task",
+          "selectedType": "category-quiz-task",
+          "level_type": "quiz"
         }
       ],
-      "project_title": "Test yourself. Classes and objects - Question 3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "categoryQuizTask": {
+        "title": "Match the class objects with their properties.",
+        "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-21-1m08ih/initial/asset-1idx1nc.jpg",
+        "layout": "match",
+        "items": [
+          {
+            "id": "item1",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-21-1m08ih/initial/asset-14h08tj.jpg",
+            "alt": "Item 1"
+          },
+          {
+            "id": "item2",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-21-1m08ih/initial/asset-qtwzeo.jpg",
+            "alt": "Item 2"
+          },
+          {
+            "id": "item3",
+            "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L1_3/workspace/assets/task-21-1m08ih/initial/asset-jtw70d.jpg",
+            "alt": "Item 3"
+          }
+        ],
+        "categories": [
+          {
+            "id": "cat1",
+            "title": "Amoebas and Balloons (change size and shape)"
+          },
+          {
+            "id": "cat2",
+            "title": "Chameleons and Amoebas (change color and shape)"
+          },
+          {
+            "id": "cat3",
+            "title": "Amoebas or Balloons (change size and/or shape)"
+          }
+        ]
+      }
     }
-  ],
-  "activityType": "marsbot-quiz"
+  ]
 }

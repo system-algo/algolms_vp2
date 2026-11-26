@@ -70,6 +70,7 @@ function getConfig(task) {
   return {
     title: raw.title || task?.title || '',
     description: raw.description || '',
+    image: raw.image || '',
     items: (raw.items || []).map((item, index) => ({
       id: String(item.id || `item-${index + 1}`),
       image: item.image || '',
@@ -290,6 +291,9 @@ export default function CategoryQuizTask({
       <div className={`icq-layout cq-layout ${isMatch ? 'is-match' : ''}`}>
         <div className="icq-left">
           <article className="icq-card cq-side-card">
+            {config.image && <div className="icq-image-wrap">
+              <img src={config.image} alt="Question illustration" className="icq-image" />
+            </div>}
             <h2 className={`icq-title cq-title ${status === 'correct' ? 'is-correct' : ''}`}>{config.title}</h2>
             {config.description ? <p className="cq-description">{config.description}</p> : null}
 

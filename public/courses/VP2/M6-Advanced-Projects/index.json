@@ -22,11 +22,23 @@
     },
     {
       "id": "VP2_M6L1_3",
-      "title": "Classes and objects - Part 3",
+      "title": "Test yourself. Clones",
       "lessonId": "VP2_M6L1",
       "taskCount": 3
+    },
+    {
+      "id": "VP2_M6L2_2",
+      "title": "Test yourself. Local variables",
+      "taskCount": 2,
+      "lessonId": "VP2_M6L2"
+    },
+    {
+      "id": "VP2_M6L3_2",
+      "title": "Test yourself. Adding an interface",
+      "taskCount": 3,
+      "lessonId": "VP2_M6L3"
     }
   ],
-  "pageCount": 4,
-  "taskCount": 7
+  "pageCount": 6,
+  "taskCount": 12
 }

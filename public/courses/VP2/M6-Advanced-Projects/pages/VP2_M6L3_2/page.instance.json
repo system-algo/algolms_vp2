@@ -12,59 +12,23 @@
       "position": 1,
       "level_position": 1,
       "levelPosition": 1,
-      "title": "Test yourself. Adding an interface - Question 1",
-      "activityType": "marsbot-quiz",
-      "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_1_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Adding an interface\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_1_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Adding an interface - Review 1",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
+      "title": "Did you enjoy the lesson?",
+      "activityType": "feedback-rating-task",
+      "selectedType": "feedback-rating-task",
+      "level_type": "rating",
       "states": [
         {
           "id": "VP2_M6L3_2_1_state_1",
-          "stateId": "VP2_M6L3_2_1_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Adding an interface - Question 1"
+          "type": "feedback-rating-task",
+          "selectedType": "feedback-rating-task",
+          "level_type": "rating"
         }
       ],
-      "project_title": "Test yourself. Adding an interface - Question 1",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "renderMode": "robot",
+      "feedbackRatingTask": {
+        "question": "Did you enjoy the lesson?"
+      }
     },
     {
       "id": "VP2_M6L3_2_2",
@@ -72,59 +36,43 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Test yourself. Adding an interface - Question 2",
-      "activityType": "marsbot-quiz",
+      "title": "What is the single word that identifies the game menu, buttons, and the game rules?",
+      "activityType": "image-choice-quiz-task",
+      "selectedType": "image-choice-quiz-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_2_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Adding an interface\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_2_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Adding an interface - Review 2",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
       "states": [
         {
           "id": "VP2_M6L3_2_2_state_1",
-          "stateId": "VP2_M6L3_2_2_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Adding an interface - Question 2"
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz"
         }
       ],
-      "project_title": "Test yourself. Adding an interface - Question 2",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "imageChoiceQuizTask": {
+        "title": "What is the single word that identifies the game menu, buttons, and the game rules?",
+        "description": "",
+        "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_2/workspace/assets/task-14-rpjih9/initial/asset-nqz3re.jpg",
+        "multiple": false,
+        "options": [
+          {
+            "id": "opt1",
+            "text": "Interface"
+          },
+          {
+            "id": "opt2",
+            "text": "Scene"
+          },
+          {
+            "id": "opt3",
+            "text": "Function"
+          },
+          {
+            "id": "opt4",
+            "text": "Script"
+          }
+        ]
+      }
     },
     {
       "id": "VP2_M6L3_2_3",
@@ -132,59 +80,43 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Test yourself. Adding an interface - Question 3",
-      "activityType": "marsbot-quiz",
+      "title": "What should happen to the New Game and Rules sprites when the user clicks the checkbox?",
+      "activityType": "image-choice-quiz-task",
+      "selectedType": "image-choice-quiz-task",
       "level_type": "quiz",
-      "selectedType": "marsbot-quiz",
-      "drawerOpen": true,
-      "command_keys": [
-        "motion",
-        "looks",
-        "sound",
-        "events",
-        "control"
-      ],
-      "command_blocks": [
-        "event_whenflagclicked",
-        "motion_movesteps"
-      ],
-      "requirements": [
-        {
-          "id": "req_3_1",
-          "title": "Read the question carefully",
-          "text": "Review the concepts of \"Test yourself. Adding an interface\" and complete the interactive test task.",
-          "type": "gif",
-          "url": ""
-        },
-        {
-          "id": "req_3_2",
-          "title": "Verify and save",
-          "text": "Run your solution to verify correctness, then save.",
-          "type": "gif",
-          "url": ""
-        }
-      ],
-      "media": [
-        {
-          "type": "presentation",
-          "title": "Test yourself. Adding an interface - Review 3",
-          "text": "Test your knowledge and apply what you learned in this lesson."
-        }
-      ],
       "states": [
         {
           "id": "VP2_M6L3_2_3_state_1",
-          "stateId": "VP2_M6L3_2_3_state_1",
           "position": 1,
-          "type": "marsbot-quiz",
-          "selectedType": "marsbot-quiz",
-          "level_type": "quiz",
-          "project_title": "Test yourself. Adding an interface - Question 3"
+          "type": "image-choice-quiz-task",
+          "selectedType": "image-choice-quiz-task",
+          "level_type": "quiz"
         }
       ],
-      "project_title": "Test yourself. Adding an interface - Question 3",
-      "checklist_heading": "TASKS WITH AUTOMATIC CHECK",
-      "isAutoCheck": true
+      "imageChoiceQuizTask": {
+        "title": "What should happen to the New Game and Rules sprites when the user clicks the checkbox?",
+        "description": "",
+        "image": "/courses/VP2/M6-Advanced-Projects/pages/VP2_M6L3_2/workspace/assets/task-31-3677xq/initial/asset-q3vndg.png",
+        "multiple": false,
+        "options": [
+          {
+            "id": "opt1",
+            "text": "They should hide"
+          },
+          {
+            "id": "opt2",
+            "text": "They should appear"
+          },
+          {
+            "id": "opt3",
+            "text": "They should draw with a quill"
+          },
+          {
+            "id": "opt4",
+            "text": "They should send messages immediately at the start of the game"
+          }
+        ]
+      }
     }
   ]
 }

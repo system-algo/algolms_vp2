@@ -688,13 +688,25 @@
         },
         {
           "id": "VP2_M6L1_3",
-          "title": "Test yourself. Classes and objects",
+          "title": "Test yourself. Clones",
           "lessonId": "VP2_M6L1",
           "taskCount": 3
+        },
+        {
+          "id": "VP2_M6L2_2",
+          "title": "Test yourself. Local variables",
+          "taskCount": 2,
+          "lessonId": "VP2_M6L2"
+        },
+        {
+          "id": "VP2_M6L3_2",
+          "title": "Test yourself. Adding an interface",
+          "taskCount": 3,
+          "lessonId": "VP2_M6L3"
         }
       ],
-      "pageCount": 3,
-      "taskCount": 6
+      "pageCount": 5,
+      "taskCount": 11
     },
     {
       "id": "M7-Hackathon-Series",
@@ -783,6 +795,6 @@
       "taskCount": 51
     }
   ],
-  "pageCount": 103,
-  "taskCount": 601
+  "pageCount": 105,
+  "taskCount": 606
 }

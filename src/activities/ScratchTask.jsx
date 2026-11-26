@@ -932,20 +932,23 @@ export default function ScratchTask({
                           className="scratch-task-req-header"
                           onClick={() => toggleReqAccordion(item.id)}
                         >
-                          <div
+                          <button
+                            type="button"
+                            role="checkbox"
+                            aria-checked={isDone}
                             className="scratch-task-checkbox"
                             onClick={(e) => {
                               e.stopPropagation();
                               toggleCheckItem(item.id);
                             }}
-                            title={isDone ? 'Đánh dấu chưa xong' : 'Đánh dấu đã hoàn thành'}
+                            title={isDone ? 'Mark as incomplete' : 'Mark as completed'}
                           >
                             {isDone && (
-                              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ width: 12, height: 12 }}>
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ width: 12, height: 12 }}>
                                 <polyline points="20 6 9 17 4 12" />
                               </svg>
                             )}
-                          </div>
+                          </button>
 
                           <span className="scratch-task-req-title">
                             {item.title || item.text}

@@ -883,6 +883,7 @@
 .scratch-task-checkbox {
   width: 20px;
   height: 20px;
+  padding: 0;
   border-radius: 50%;
   border: 2px solid #cbd5e1;
   display: flex;
@@ -892,8 +893,23 @@
   margin-top: 1px;
   transition: all 0.15s ease;
   background: #ffffff;
+  cursor: pointer;
 }
 
+.scratch-task-checkbox:hover {
+  border-color: #22c55e;
+}
+
+.scratch-task-req-card.is-done {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.scratch-task-req-card.is-done .scratch-task-req-header {
+  background: #f0fdf4;
+}
+
+.scratch-task-req-card.is-done .scratch-task-checkbox,
 .scratch-task-checklist-item.completed .scratch-task-checkbox {
   background: #22c55e;
   border-color: #22c55e;

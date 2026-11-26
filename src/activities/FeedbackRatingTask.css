@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.lms-feedback-emojis {
+.lms-feedback-robots {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-.lms-feedback-emoji-btn {
+.lms-feedback-robot-btn {
   width: clamp(96px, 12vw, 121px);
   height: clamp(96px, 12vw, 121px);
   border-radius: 50%;
@@ -57,23 +57,27 @@
   outline: none;
 }
 
-.lms-feedback-emoji-btn svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 50%;
+.lms-feedback-robot-btn img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
-.lms-feedback-emoji-btn:hover {
+.lms-feedback-robot-btn:focus-visible {
+  outline: 3px solid #ffd633;
+  outline-offset: 5px;
+}
+
+.lms-feedback-robot-btn:hover {
   transform: scale(1.12);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
 }
 
-.lms-feedback-emoji-btn:active {
+.lms-feedback-robot-btn:active {
   transform: scale(0.96);
 }
 
-.lms-feedback-emoji-btn.is-selected {
+.lms-feedback-robot-btn.is-selected {
   transform: scale(1.16);
   box-shadow:
     0 0 0 5px #a855f7,

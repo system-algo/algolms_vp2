@@ -107,7 +107,26 @@ function ExcursionInterlude({ level, onNextTask, onTaskCompleted }) {
   const [rating, setRating] = useState(null);
   const [slide, setSlide] = useState(0);
   const image = level.images?.[slide] || level.image;
-  if (level.type === 'rating' && rating === null) return <section className="excursion-rating" aria-label="Task feedback"><h2>{level.hint}</h2><div>{['Disliked', 'Neutral', 'Liked'].map((label, i) => <button type="button" aria-label={label} key={label} onClick={() => setRating(i)}><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="white" /><g fill="#101b26"><circle cx="39" cy="44" r="7" /><circle cx="81" cy="44" r="7" /></g><path d={i === 0 ? 'M33 83 Q60 48 87 83' : i === 1 ? 'M33 76 H87' : 'M33 70 Q60 105 87 70'} fill="none" stroke="#101b26" strokeWidth="9" strokeLinecap="round" /></svg></button>)}</div></section>;
+  if (level.type === 'rating' && rating === null) {
+    const ratingOptions = [
+      { label: 'Disliked', robot: 'difficult' },
+      { label: 'Neutral', robot: 'okay' },
+      { label: 'Liked', robot: 'easy' },
+    ];
+
+    return (
+      <section className="excursion-rating" aria-label="Task feedback">
+        <h2>{level.hint}</h2>
+        <div>
+          {ratingOptions.map(({ label, robot }, index) => (
+            <button type="button" aria-label={label} key={label} onClick={() => setRating(index)}>
+              <img src={`/assets/feedback/robot-${robot}.png`} alt="" />
+            </button>
+          ))}
+        </div>
+      </section>
+    );
+  }
   return <section className="excursion-interlude" aria-label={`${level.activityName || "Excursion"} task ${level.number}`}>
     {image ? <img src={image} alt={level.hint} /> : <div><h2>{level.type === 'finish' ? level.hint : 'Thanks!'}</h2>{level.type !== 'finish' && <p>We love having cool lessons!</p>}</div>}
     <button type="button" onClick={() => { if (level.images && slide < level.images.length - 1) { setSlide(slide + 1); return; } onTaskCompleted?.({ isCorrect: true, completionType: 'correct', score: 1, maxScore: 1 }); onNextTask?.(); }}>Next</button>

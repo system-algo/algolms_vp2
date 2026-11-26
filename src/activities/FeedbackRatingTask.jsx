@@ -536,7 +536,7 @@ export default function FeedbackRatingTask(props) {
     );
   }
 
-  // Official LMS Standard 3-Emoji Rating Layout
+  // Compact rating layout
   return (
     <main className="lms-feedback-page" role="main">
       <section className="lms-feedback-content">
@@ -545,59 +545,42 @@ export default function FeedbackRatingTask(props) {
         </h1>
 
         <div
-          className="lms-feedback-emojis"
+          className="lms-feedback-robots"
           role="radiogroup"
           aria-label={config.question || 'Did you like the lesson?'}
         >
-          {/* 1. Sad face 🙁 */}
+
           <button
             type="button"
-            className={`lms-feedback-emoji-btn ${selectedId === 'difficult' || selectedId === 'sad' ? 'is-selected' : ''}`}
+            className={`lms-feedback-robot-btn ${selectedId === 'difficult' || selectedId === 'sad' ? 'is-selected' : ''}`}
             role="radio"
             aria-checked={selectedId === 'difficult' || selectedId === 'sad'}
             aria-label="Sad / Difficult"
             onClick={() => handleSelectEmoji(config.options[0])}
           >
-            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
-              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <path d="M 37.5 86 C 45 68, 76 68, 83.5 86" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" fill="none" />
-            </svg>
+            <img src={DEFAULT_CONFIG.options[0].image} alt="" />
           </button>
 
-          {/* 2. Neutral face 😐 */}
           <button
             type="button"
-            className={`lms-feedback-emoji-btn ${selectedId === 'okay' || selectedId === 'neutral' ? 'is-selected' : ''}`}
+            className={`lms-feedback-robot-btn ${selectedId === 'okay' || selectedId === 'neutral' ? 'is-selected' : ''}`}
             role="radio"
             aria-checked={selectedId === 'okay' || selectedId === 'neutral'}
             aria-label="Neutral / Okay"
             onClick={() => handleSelectEmoji(config.options[1])}
           >
-            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
-              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <path d="M 37.5 75 L 83.5 75" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" />
-            </svg>
+            <img src={DEFAULT_CONFIG.options[1].image} alt="" />
           </button>
 
-          {/* 3. Happy face 🙂 */}
           <button
             type="button"
-            className={`lms-feedback-emoji-btn ${selectedId === 'easy' || selectedId === 'happy' ? 'is-selected' : ''}`}
+            className={`lms-feedback-robot-btn ${selectedId === 'easy' || selectedId === 'happy' ? 'is-selected' : ''}`}
             role="radio"
             aria-checked={selectedId === 'easy' || selectedId === 'happy'}
             aria-label="Happy / Easy"
             onClick={() => handleSelectEmoji(config.options[2])}
           >
-            <svg viewBox="0 0 121 121" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60.5" cy="60.5" r="59" fill="#ffffff" />
-              <circle cx="37.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <circle cx="83.5" cy="45" r="7.5" fill="#0f1c2c" />
-              <path d="M 37.5 68 C 45 86, 76 86, 83.5 68" stroke="#0f1c2c" strokeWidth="7" strokeLinecap="round" fill="none" />
-            </svg>
+            <img src={DEFAULT_CONFIG.options[2].image} alt="" />
           </button>
         </div>
       </section>

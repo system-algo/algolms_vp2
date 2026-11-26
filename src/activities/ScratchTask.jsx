@@ -738,7 +738,7 @@ export default function ScratchTask({
               type="button"
               className="scratch-task-check-btn"
               onClick={handleCheck}
-              title="Kiểm tra kết quả bài làm"
+              title="Check your project"
             >
               ✓ Check
             </button>
@@ -1064,117 +1064,51 @@ export default function ScratchTask({
 
       {/* Confirmation Popup Modal */}
       {showConfirmModal && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.65)',
-          backdropFilter: 'blur(4px)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          zIndex: 9999,
-          animation: 'fadeIn 0.2s ease',
-        }}>
-          <div style={{
-            background: '#ffffff',
-            borderRadius: '20px',
-            padding: '32px 28px 24px',
-            maxWidth: '440px',
-            width: '90%',
-            textAlign: 'center',
-            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.25)',
-            transform: 'scale(1)',
-            animation: 'modalPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-          }}>
-            <div style={{
-              width: '64px',
-              height: '64px',
-              borderRadius: '50%',
-              background: '#e0e7ff',
-              color: '#4f46e5',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              margin: '0 auto 16px',
-              fontSize: '32px',
-            }}>
-              🎯
+        <div className="lms-badge-unlock" role="dialog" aria-modal="true">
+          <div className="lms-badge-unlock__card">
+            <span className="lms-badge-unlock__eyebrow">
+              ONE LAST CHECK!
+            </span>
+
+            <div
+              className="lms-badge-unlock__medal"
+              style={{
+                background: 'linear-gradient(145deg, #fbbf24, #f59e0b)',
+                boxShadow: '0 13px 27px rgba(245, 158, 11, 0.34), inset 0 4px 0 rgba(255, 255, 255, 0.28)',
+                borderColor: '#fde68a',
+              }}
+              aria-hidden="true"
+            >
+              <span>?</span>
             </div>
 
-            <h3 style={{
-              margin: '0 0 10px',
-              fontSize: '20px',
-              fontWeight: 700,
-              color: '#1e293b',
-            }}>
-              Kiểm tra kết quả bài làm
-            </h3>
-
-            <p style={{
-              margin: '0 0 24px',
-              fontSize: '15px',
-              lineHeight: 1.5,
-              color: '#64748b',
-            }}>
-              Hãy đối chiếu với sản phẩm mẫu: Bạn đã hoàn thành các bước và dự án đã hoạt động đúng yêu cầu chưa?
+            <h2>Does your project match?</h2>
+            <p>
+              Compare <strong>Your Project</strong> with the <strong>Sample Output</strong>.
+              <br />
+              <br />
+              If they work the same, you’re ready to finish.
+              <br />
+              Not sure? Ask your teacher for help.
             </p>
 
-            <div style={{
-              display: 'flex',
-              gap: '12px',
-              justifyContent: 'center',
-            }}>
+            <div style={{ display: 'flex', gap: '12px', marginTop: '24px', justifyContent: 'center', alignItems: 'center' }}>
               <button
                 type="button"
+                className="lms-badge-unlock__name"
+                style={{ cursor: 'pointer', margin: 0, minHeight: '42px', minWidth: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                 onClick={() => setShowConfirmModal(false)}
                 disabled={isSubmitting}
-                style={{
-                  flex: 1,
-                  padding: '12px 18px',
-                  borderRadius: '12px',
-                  border: '1px solid #cbd5e1',
-                  background: '#f8fafc',
-                  color: '#475569',
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  transition: 'all 0.15s ease',
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = '#e2e8f0'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = '#f8fafc'; }}
               >
-                Kiểm tra lại
+                Check Again
               </button>
-
               <button
                 type="button"
+                style={{ margin: 0, minWidth: '150px', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
                 onClick={confirmAndProceed}
                 disabled={isSubmitting}
-                style={{
-                  flex: 1.2,
-                  padding: '12px 20px',
-                  borderRadius: '12px',
-                  border: 'none',
-                  background: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',
-                  color: '#ffffff',
-                  fontSize: '15px',
-                  fontWeight: 700,
-                  cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                  boxShadow: '0 4px 14px rgba(79, 70, 229, 0.4)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '6px',
-                  transition: 'all 0.15s ease',
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-1px)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
               >
-                {isSubmitting ? 'Đang lưu...' : 'Đã giống mẫu 🚀'}
+                {isSubmitting ? 'Saving...' : 'Yes, It Matches!'}
               </button>
             </div>
           </div>

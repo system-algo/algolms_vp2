@@ -1,7 +1,7 @@
 // VP2 quiz grading is authoritative on the LMS backend.
 // The backend retrieves correct answers from Supabase activity_answer_keys;
 // the browser submits its selection only, never a claimed score or correctness.
-export async function submitQuizAttempt(baseUrl, payload) {
+export async function submitQuizAttempt(baseUrl, payload, signal) {
   const accessToken =
     sessionStorage.getItem('lms_access_token') ||
     localStorage.getItem('lms_access_token');
@@ -11,6 +11,7 @@ export async function submitQuizAttempt(baseUrl, payload) {
   }
 
   const response = await fetch(`${baseUrl}/api/activity-attempts`, {
+    signal,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

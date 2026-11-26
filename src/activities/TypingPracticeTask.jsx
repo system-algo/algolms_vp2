@@ -1,8 +1,17 @@
+import { submitQuizAttempt } from '../lib/quizGradingApi.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import LmsActivityFrame from '../components/LmsActivityFrame.jsx';
 import './TypingPracticeTask.css';
 
-const API_BASE_URL = String(import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
+function getBackendUrl() {
+  return String(
+    sessionStorage.getItem('lms_backend_url') ||
+    localStorage.getItem('lms_backend_url') ||
+    import.meta.env.VITE_API_BASE_URL ||
+    import.meta.env.VITE_API_URL ||
+    'https://algo-lms-backend.onrender.com',
+  ).replace(/\/+$/, '');
+}
 
 function normalizeText(value) {
   return String(value || '')
@@ -49,13 +58,10 @@ function getSessionId() {
 }
 
 function getUserId() {
-  const params = new URLSearchParams(window.location.search);
-
   return (
-    params.get('userId') ||
-    localStorage.getItem('lms-user-id') ||
+    sessionStorage.getItem('lms_student_email') ||
     localStorage.getItem('lms_student_email') ||
-    'tim.tran@algo.edu.vn'
+    ''
   );
 }
 
@@ -258,46 +264,6 @@ function getFeedbackFromResult(result) {
   return feedback;
 }
 
-async function submitTypingToBackend(payload) {
-  const endpoint = `${API_BASE_URL}/api/activity-attempts`;
-
-  console.log('[TypingPractice] Submit endpoint:', endpoint);
-  console.log('[TypingPractice] Submit payload:', payload);
-
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  });
-
-  const text = await response.text();
-
-  console.log('[TypingPractice] Response status:', response.status);
-  console.log('[TypingPractice] Response text:', text);
-
-  let data = null;
-
-  try {
-    data = text ? JSON.parse(text) : null;
-  } catch {
-    data = null;
-  }
-
-  if (!response.ok) {
-    throw new Error(
-      data?.message ||
-      data?.feedback ||
-      data?.error?.message ||
-      text ||
-      `API error ${response.status}`,
-    );
-  }
-
-  return data;
-}
-
 export default function TypingPracticeTask(props) {
   const {
     task,
@@ -305,6 +271,8 @@ export default function TypingPracticeTask(props) {
     pageInstance,
     onNextTask,
     onPrevTask,
+    onTaskCompleted,
+    completedTaskIds = [],
   } = props;
 
   const [typed, setTyped] = useState('');
@@ -316,10 +284,15 @@ export default function TypingPracticeTask(props) {
   const [backendResult, setBackendResult] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submittedText, setSubmittedText] = useState('');
+  const [retry, setRetry] = useState(0);
+  const completionCallback = useRef(onTaskCompleted);
+
+  useEffect(() => {
+    completionCallback.current = onTaskCompleted;
+  }, [onTaskCompleted]);
 
   const focusRef = useRef(null);
   const wrongTimerRef = useRef(null);
-  const autoNextTimerRef = useRef(null);
 
   const taskId = getTaskId(task);
 
@@ -348,7 +321,8 @@ export default function TypingPracticeTask(props) {
     return getLineStartIndexes(data.lines);
   }, [data]);
 
-  const complete = data.mode === 'typing' && targetText.length > 0 && typed.length >= targetText.length;
+  const alreadyCompleted = completedTaskIds.includes(taskId);
+  const complete = data.mode === 'typing' && targetText.length > 0 && typed === targetText;
 
   useEffect(() => {
     const initialMode = String(config?.mode || '').trim().toLowerCase();
@@ -367,7 +341,7 @@ export default function TypingPracticeTask(props) {
     setWrongText('');
     setStartedAt(savedState?.startedAt || null);
     setFinishedAt(savedState?.finishedAt || null);
-    setSubmitStatus(savedState?.submitStatus || '');
+    setSubmitStatus('');
     setBackendResult(savedState?.backendResult || null);
     setSubmittedText(savedState?.submittedText || '');
   }, [storageKey, task, state]);
@@ -412,66 +386,60 @@ export default function TypingPracticeTask(props) {
   }, [complete, finishedAt]);
 
   useEffect(() => {
-    async function submitCompletedTyping() {
-      if (!complete) return;
-      if (!targetText) return;
-      if (!taskId) return;
-      if (isSubmitting) return;
-      if (submittedText === typed) return;
+    if (!complete || !taskId || alreadyCompleted || submittedText === typed) return;
 
-      const { courseId, lessonId, pageId } = getRouteContext();
+    const controller = new AbortController();
+    let active = true;
+    const timeout = window.setTimeout(() => controller.abort(), 15000);
+    setIsSubmitting(true);
+    setSubmitStatus('Saving...');
 
-      const payload = {
-        sessionId: getSessionId(),
-        userId: getUserId(),
-        courseId,
-        lessonId,
-        pageId,
-        taskId,
-        activityType: 'typing-practice',
-        answer: {
-          typedText: typed,
-        },
-      };
-
-      setIsSubmitting(true);
-      setSubmitStatus('Saving...');
-
+    async function saveAttempt() {
       try {
-        const responseData = await submitTypingToBackend(payload);
-        const gradingResult = responseData?.result || responseData;
-        const nextStatus = getFeedbackFromResult(gradingResult);
-
-        setBackendResult(gradingResult);
-        setSubmitStatus(nextStatus || 'Saved.');
-        setSubmittedText(typed);
-      } catch (error) {
-        console.error('[TypingPracticeTask] Backend grading failed:', error);
-        setSubmitStatus(error?.message || 'Cannot connect to backend grading.');
-        setBackendResult({
-          isCorrect: false,
-        });
-      } finally {
+        const userId = getUserId();
+        if (!userId) throw new Error('Please sign in to save your progress.');
+        const result = await submitQuizAttempt(getBackendUrl(), {
+          ...getRouteContext(),
+          sessionId: getSessionId(),
+          userId,
+          taskId,
+          activityType: 'typing-practice',
+          answer: { typedText: typed },
+        }, controller.signal);
+        if (!active) return;
+        if (result.isCorrect !== true || !['completed', 'correct'].includes(result.status)) {
+          throw new Error(result.feedback || 'The typing attempt could not be saved.');
+        }
+        setBackendResult(result);
+        setSubmitStatus(getFeedbackFromResult(result) || 'Saved.');
         setIsSubmitting(false);
+        setSubmittedText(typed);
+        completionCallback.current?.({
+          taskId,
+          completionType: 'correct',
+          activityType: 'typing-practice',
+          isCorrect: true,
+          score: result.score,
+          maxScore: result.maxScore,
+          autoTransition: data.autoNextOnComplete || taskId === 'VP2_M2L1_1_1',
+        });
+      } catch (error) {
+        if (!active) return;
+        setSubmitStatus(controller.signal.aborted ? 'Saving timed out. Try again.' : error.message);
+        setBackendResult({ isCorrect: false });
+      } finally {
+        window.clearTimeout(timeout);
+        if (active) setIsSubmitting(false);
       }
     }
 
-    submitCompletedTyping();
-  }, [complete, typed, targetText, taskId, isSubmitting, submittedText]);
-
-  useEffect(() => {
-    if (!complete || !data.autoNextOnComplete || !onNextTask) return;
-
-    autoNextTimerRef.current = window.setTimeout(() => {
-      onNextTask();
-    }, 700);
-
+    saveAttempt();
     return () => {
-      if (autoNextTimerRef.current) {
-        window.clearTimeout(autoNextTimerRef.current);
-      }
+      active = false;
+      window.clearTimeout(timeout);
+      controller.abort();
     };
-  }, [complete, data.autoNextOnComplete, onNextTask]);
+  }, [complete, taskId, typed, alreadyCompleted, submittedText, retry, data.autoNextOnComplete]);
 
   function handleStart() {
     setStartedAt((current) => current || Date.now());
@@ -679,7 +647,7 @@ export default function TypingPracticeTask(props) {
 
           {complete ? (
             <div className="typing-practice-complete">
-              Completed
+              {alreadyCompleted || backendResult?.isCorrect === true ? 'Completed' : 'Typing complete'}
             </div>
           ) : (
             <div className="typing-practice-hint">
@@ -691,6 +659,7 @@ export default function TypingPracticeTask(props) {
             type="button"
             className="typing-practice-reset"
             onClick={resetTyping}
+            disabled={isSubmitting}
           >
             Reset
           </button>
@@ -712,6 +681,9 @@ export default function TypingPracticeTask(props) {
             }}
           >
             {submitStatus}
+            {!isSubmitting && backendResult?.isCorrect === false && !alreadyCompleted && (
+              <button type="button" onClick={() => setRetry((value) => value + 1)}>Try again</button>
+            )}
           </div>
         ) : null}
       </article>

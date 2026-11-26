@@ -1121,7 +1121,7 @@ export default function ActivityRouter(props) {
   }
 
   if (rendererType === 'typing-practice') {
-    return <TypingPracticeTask {...rendererProps} task={nextTask} />;
+    return <TypingPracticeTask key={taskId} {...rendererProps} task={nextTask} />;
   }
 
   if (rendererType === 'matching-connect') {

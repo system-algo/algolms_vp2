@@ -40,20 +40,28 @@
       "position": 2,
       "level_position": 2,
       "levelPosition": 2,
-      "title": "Rocket flight - 2",
-      "instruction": "Scratch game",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Catching crystals",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
       "states": [
         {
           "id": "VP2_M2L1_1_2_state_1",
           "stateId": "VP2_M2L1_1_2_state_1",
           "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "type": "scratch",
+          "selectedType": "scratch",
+          "title": "Catching crystals",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "demoFullPage": true,
+          "demo_project_id": "M2L1_1_Task_2_Demo.sb3",
+          "source_project_id": "9934416"
         }
-      ]
+      ],
+      "demoFullPage": true,
+      "demo_project_id": "M2L1_1_Task_2_Demo.sb3",
+      "source_project_id": "9934416"
     },
     {
       "id": "VP2_M2L1_1_3",
@@ -61,20 +69,28 @@
       "position": 3,
       "level_position": 3,
       "levelPosition": 3,
-      "title": "Rocket flight - 3",
-      "instruction": "Scratch game",
-      "activityType": "block_game",
-      "level_type": "block_game",
-      "selectedType": "block_game",
+      "title": "Dodging a comet",
+      "activityType": "scratch",
+      "level_type": "scratch",
+      "selectedType": "scratch",
       "states": [
         {
           "id": "VP2_M2L1_1_3_state_1",
           "stateId": "VP2_M2L1_1_3_state_1",
           "position": 1,
-          "type": "block_game",
-          "selectedType": "block_game"
+          "type": "scratch",
+          "selectedType": "scratch",
+          "title": "Dodging a comet",
+          "activityType": "scratch",
+          "level_type": "scratch",
+          "demoFullPage": true,
+          "demo_project_id": "M2L1_1_Task_3_Demo.sb3",
+          "source_project_id": "9935071"
         }
-      ]
+      ],
+      "demoFullPage": true,
+      "demo_project_id": "M2L1_1_Task_3_Demo.sb3",
+      "source_project_id": "9935071"
     },
     {
       "id": "VP2_M2L1_1_4",
@@ -146,7 +162,7 @@
       "level_position": 7,
       "levelPosition": 7,
       "title": "Rocket flight - 7",
-      "instruction": "Look \u2014 everything is the same, but now the coordinates are in the range of -80...80!",
+      "instruction": "Look — everything is the same, but now the coordinates are in the range of -80...80!",
       "activityType": "block_game",
       "level_type": "block_game",
       "selectedType": "block_game",

@@ -651,11 +651,30 @@ export default function MarsBotQuizTask(props) {
           <div className="marsbot-question-body">
             <h2 className="marsbot-prompt">{questionData.prompt}</h2>
 
-            {feedbackText && (
-              <div className={`marsbot-feedback ${submissionStatus}`}>
-                {feedbackText}
-              </div>
-            )}
+            {feedbackText && (() => {
+              const isCorrectStatus = submissionStatus === 'correct';
+              const feedbackTitle = isCorrectStatus ? 'Correct!' : 'Not quite right';
+              const feedbackIcon = isCorrectStatus ? '✓' : '!';
+              const feedbackDetail = feedbackText
+                .replace(/^(?:Correct!|Not quite right[.!]?)\s*/i, '')
+                .trim();
+
+              return (
+                <div
+                  className={`marsbot-feedback ${submissionStatus}`}
+                  role="status"
+                  aria-live="polite"
+                >
+                  <span className="marsbot-feedback-icon" aria-hidden="true">
+                    {feedbackIcon}
+                  </span>
+                  <div className="marsbot-feedback-content">
+                    <strong>{feedbackTitle}</strong>
+                    {feedbackDetail ? <p>{feedbackDetail}</p> : null}
+                  </div>
+                </div>
+              );
+            })()}
           </div>
 
           <div className="marsbot-action-bar">

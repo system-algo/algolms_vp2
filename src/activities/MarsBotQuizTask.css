@@ -79,25 +79,62 @@
 }
 
 .marsbot-feedback {
-  margin-top: 16px;
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
   animation: fadeIn 0.2s ease-in-out;
 }
 
 .marsbot-feedback.correct {
-  background: #dcfce7;
-  border: 1px solid #86efac;
+  background: #f0fdf4;
+  border-color: #86efac;
   color: #166534;
 }
 
 .marsbot-feedback.incorrect {
-  background: #fee2e2;
-  border: 1px solid #fca5a5;
+  background: #fef2f2;
+  border-color: #fca5a5;
   color: #991b1b;
+}
+
+.marsbot-feedback-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.marsbot-feedback.correct .marsbot-feedback-icon {
+  background: #16a34a;
+}
+
+.marsbot-feedback.incorrect .marsbot-feedback-icon {
+  background: #dc2626;
+}
+
+.marsbot-feedback-content strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.marsbot-feedback-content p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .marsbot-action-bar {

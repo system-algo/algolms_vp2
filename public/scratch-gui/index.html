@@ -471,7 +471,7 @@
 
       function registerLibraryAssetFallback(vm) {
         const storage = vm.runtime.storage;
-        if (isPlayerOnly || !storage || storage.__algoLibraryAssetFallback) return;
+        if (!storage || storage.__algoLibraryAssetFallback) return;
 
         // This standalone Scratch build ships without its asset fetch worker.
         // Use Scratch Storage's existing fetch transport so downloads cannot
@@ -507,6 +507,13 @@
             console.log('[AlgoLMS Bridge] Loading arrayBuffer directly into VM...');
             await vm.loadProject(arrayBuffer);
             console.log('[AlgoLMS Bridge] Project successfully loaded into VM!');
+            if (isPlayerOnly) {
+              configureScratchToolbox();
+              // Never signal readiness before the SB3 has completed loading.
+              window.__algoDemoLoaded = true;
+              window.parent.postMessage({ type: 'SCRATCH_DEMO_READY' }, window.location.origin);
+              return true;
+            }
             refreshEditorAfterProjectLoad(vm);
             const finalTitle = resolveProjectTitle(url, levelParam, titleParam);
             applyProjectTitle(finalTitle);
@@ -520,11 +527,6 @@
             setTimeout(configureScratchToolbox, 1000);
             setTimeout(() => applyProjectTitle(finalTitle), 200);
             setTimeout(() => applyProjectTitle(finalTitle), 800);
-            if (isPlayerOnly) {
-              // Never signal readiness before the SB3 has completed loading.
-              window.__algoDemoLoaded = true;
-              window.parent.postMessage({ type: 'SCRATCH_DEMO_READY' }, window.location.origin);
-            }
             return true;
           }
         } catch (e) {
@@ -664,7 +666,10 @@
             }
 
             if (!loadedFromStorage && initialProjectUrl) {
-              await loadProjectFile(initialProjectUrl);
+              const loaded = await loadProjectFile(initialProjectUrl);
+              if (isPlayerOnly && !loaded) {
+                window.parent.postMessage({ type: 'SCRATCH_DEMO_ERROR' }, window.location.origin);
+              }
             }
             if (storageKeyParam === 'M5L5_Shared_Chatbot') {
               chatbotReadyToSave = loadedFromStorage || !hadSavedProject;

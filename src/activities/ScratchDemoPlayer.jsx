@@ -14,6 +14,10 @@ export default function ScratchDemoPlayer({ project, title }) {
         setFailed(false);
         window.clearInterval(poll);
         window.clearTimeout(timeout);
+      } else if (event.data?.type === 'SCRATCH_DEMO_ERROR') {
+        setFailed(true);
+        window.clearInterval(poll);
+        window.clearTimeout(timeout);
       }
     }
 
@@ -37,13 +41,13 @@ export default function ScratchDemoPlayer({ project, title }) {
   }
 
   return (
-    <section aria-label={title} style={{ width: '100%', background: '#fff' }}>
+    <section aria-label={title} style={{ width: 'min(100%, max(320px, calc((100dvh - 15rem) * 4 / 3)))', margin: '0 auto', border: '1px solid #c4ceda', borderRadius: 12, overflow: 'hidden', background: '#fff' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '8px 16px', background: '#e7ebef' }}>
         <button type="button" aria-label="Start demo" disabled={!ready}
           onClick={() => control('SCRATCH_DEMO_RUN')} style={{ color: '#15803d', fontSize: 20 }}>⚑</button>
         <button type="button" aria-label="Stop demo" disabled={!ready}
           onClick={() => control('SCRATCH_DEMO_STOP')}>🛑</button>
-        {!ready && <span role="status">{failed ? 'The demo is taking longer than expected.' : 'Loading demo…'}</span>}
+        {!ready && <span role="status">{failed ? 'The demo could not load.' : 'Loading demo…'}</span>}
         {failed && <button type="button" onClick={() => {
           setFailed(false);
           setAttempt(attempt + 1);
@@ -55,7 +59,7 @@ export default function ScratchDemoPlayer({ project, title }) {
         title={title}
         src={`/scratch-gui/index.html?project=${encodeURIComponent(project)}&isPlayerOnly=true&fitStage=true&bridge=2`}
         allow="autoplay"
-        style={{ display: 'block', width: '100%', height: 'max(240px, calc(100dvh - 12rem))', border: 0 }}
+        style={{ display: 'block', width: '100%', aspectRatio: '4 / 3', border: 0 }}
       />
     </section>
   );

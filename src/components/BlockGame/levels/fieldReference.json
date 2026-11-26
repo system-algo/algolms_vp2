@@ -1,9 +1,9 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Getting the soccer field ready \u2014 comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10870&task=24491&level=1"
+    "type": "image",
+    "hint": "Getting the soccer field ready — comic",
+    "image": "/vp-assets/restored-comics-field/field-1-1.webp"
   },
   {
     "number": 2,
@@ -583,9 +583,9 @@
   },
   {
     "number": 10,
-    "type": "source",
-    "hint": "Getting the soccer field ready \u2014 comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10870&task=24491&level=10"
+    "type": "image",
+    "hint": "Getting the soccer field ready — comic",
+    "image": "/vp-assets/restored-comics-field/field-10-1.webp"
   },
   {
     "number": 11,

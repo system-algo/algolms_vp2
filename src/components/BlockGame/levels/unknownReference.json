@@ -1,9 +1,9 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Unknown maze \u2014 introduction comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10800&task=24121&level=1"
+    "type": "image",
+    "hint": "Unknown maze — introduction comic",
+    "image": "/vp-assets/restored-comics-unknown/unknown-1-1.webp"
   },
   {
     "number": 2,

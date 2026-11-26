@@ -1,9 +1,15 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Land of minerals \u2014 introduction comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=5&lesson=10985&task=24870&level=1"
+    "type": "image",
+    "hint": "Land of minerals — introduction comic",
+    "images": [
+      "/vp-assets/restored-comics-mineral/mineral-1-1.webp",
+      "/vp-assets/restored-comics-mineral/mineral-1-2.webp",
+      "/vp-assets/restored-comics-mineral/mineral-1-3.webp",
+      "/vp-assets/restored-comics-mineral/mineral-1-4.webp",
+      "/vp-assets/restored-comics-mineral/mineral-1-5.webp"
+    ]
   },
   {
     "number": 2,

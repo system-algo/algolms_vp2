@@ -1,9 +1,9 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Martian Chef \u2014 comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10664&task=23815&level=1"
+    "type": "image",
+    "hint": "Martian Chef — comic",
+    "image": "/vp-assets/restored-comics-chef/chef-1-1.webp"
   },
   {
     "number": 2,
@@ -1235,9 +1235,9 @@
   },
   {
     "number": 11,
-    "type": "source",
-    "hint": "Martian Chef \u2014 comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10664&task=23815&level=11"
+    "type": "image",
+    "hint": "Martian Chef — comic",
+    "image": "/vp-assets/restored-comics-chef/chef-11-1.webp"
   },
   {
     "number": 12,

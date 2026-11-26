@@ -1,9 +1,12 @@
 [
   {
     "number": 1,
-    "type": "source",
+    "type": "image",
     "hint": "Martian variables — introduction comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=5&lesson=11475&task=26033&level=1"
+    "images": [
+      "/vp-assets/restored-comics-martian/martian-1-1.webp",
+      "/vp-assets/restored-comics-martian/martian-1-2.webp"
+    ]
   },
   {
     "number": 2,

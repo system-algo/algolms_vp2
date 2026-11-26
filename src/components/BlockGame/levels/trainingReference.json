@@ -1,9 +1,12 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Training base \u2014 introduction comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10800&task=24122&level=1"
+    "type": "image",
+    "hint": "Training base — introduction comic",
+    "images": [
+      "/vp-assets/restored-comics-training/training-1-1.webp",
+      "/vp-assets/restored-comics-training/training-1-2.webp"
+    ]
   },
   {
     "number": 2,
@@ -783,7 +786,7 @@
     "mode": "training",
     "dynamic": true,
     "activityName": "Training base",
-    "hint": "Two tanks \u2014 one in each group. Deal with the green group first, and then deal with the red one.",
+    "hint": "Two tanks — one in each group. Deal with the green group first, and then deal with the red one.",
     "viewBox": "0 0 600 600",
     "tiles": "https://learn.alg.academy/img/games/maze/lesson6/tiles_pegman.svg",
     "start": {

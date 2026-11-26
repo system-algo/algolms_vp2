@@ -1,9 +1,9 @@
 [
   {
     "number": 1,
-    "type": "source",
-    "hint": "Maze in the dark \u2014 introduction comic",
-    "sourceUrl": "https://learn.alg.academy/lesson?module=4&lesson=10800&task=24123&level=1"
+    "type": "image",
+    "hint": "Maze in the dark — introduction comic",
+    "image": "/vp-assets/restored-comics-dark/dark-1-1.webp"
   },
   {
     "number": 2,

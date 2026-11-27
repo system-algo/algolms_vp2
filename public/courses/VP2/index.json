@@ -542,11 +542,11 @@
           "id": "VP2_M4L5_2",
           "title": "Group project. Planning - Part 2",
           "lessonId": "VP2_M4L5",
-          "taskCount": 5
+          "taskCount": 3
         }
       ],
       "pageCount": 20,
-      "taskCount": 148
+      "taskCount": 146
     },
     {
       "id": "M5-Game-Development",
@@ -796,5 +796,5 @@
     }
   ],
   "pageCount": 105,
-  "taskCount": 606
+  "taskCount": 604
 }

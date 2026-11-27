@@ -59,7 +59,7 @@ export default function ScratchDemoPlayer({ project, title }) {
         key={attempt}
         ref={frame}
         title={title}
-        src={`/scratch-gui/index.html?project=${encodeURIComponent(project)}&isPlayerOnly=true&fitStage=true&bridge=4`}
+        src={`/scratch-gui/index.html?project=${encodeURIComponent(project)}&isPlayerOnly=true&fitStage=true&bridge=5`}
         allow="autoplay"
         style={{ display: 'block', width: '100%', aspectRatio: '4 / 3', border: 0 }}
       />

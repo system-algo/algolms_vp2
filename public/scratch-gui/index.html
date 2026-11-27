@@ -78,7 +78,7 @@
             display: block !important;
           }
 
-          /* Scale the stage and overlays AS A UNIT; sprites and speech bubbles stay aligned. */
+          /* Keep layout dimensions independent of the renderer's pixel buffer. */
           html.is-player-only [class*="stage_stage-wrapper_"] {
             position: fixed !important;
             top: 50% !important;
@@ -88,10 +88,20 @@
             transform-origin: center center !important;
             z-index: 10 !important;
           }
-          html.is-player-only [class*="stage_stage_"],
-          html.is-player-only [class*="stage_stage-wrapper_"] canvas {
+          html.is-player-only [class*="stage_stage-wrapper_"],
+          html.is-player-only [class*="stage_stage_"] {
+            box-sizing: border-box !important;
+            width: 480px !important;
+            height: 360px !important;
+            min-width: 0 !important;
+            min-height: 0 !important;
             max-width: none !important;
             max-height: none !important;
+          }
+          html.is-player-only [class*="stage_stage_"] canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
           }
         `;
         document.head.appendChild(style);
@@ -100,13 +110,9 @@
         let fittedTransform;
         const fitDemoStage = () => {
           const stageWrapper = document.querySelector('[class*="stage_stage-wrapper_"]');
-          const stage = stageWrapper?.querySelector('[class*="stage_stage_"]');
-          if (!stage || !stageWrapper) return false;
-          // Offset dimensions are untransformed, so fitting remains stable on every resize.
-          const w = stage.offsetWidth || 480;
-          const h = stage.offsetHeight || 360;
+          if (!stageWrapper?.querySelector('[class*="stage_stage_"] canvas')) return false;
           const maxScale = params.get('fitStage') === 'true' ? Infinity : 1;
-          const scale = Math.min(maxScale, window.innerWidth / w, window.innerHeight / h);
+          const scale = Math.min(maxScale, window.innerWidth / 480, window.innerHeight / 360);
           if (!Number.isFinite(scale) || scale <= 0) return false;
           const transform = `translate(-50%, -50%) scale(${scale})`;
           if (fittedStage !== stageWrapper || fittedTransform !== transform) {

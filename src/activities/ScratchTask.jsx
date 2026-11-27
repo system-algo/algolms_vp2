@@ -797,7 +797,7 @@ export default function ScratchTask({
                       <iframe
                         ref={demoIframeRef}
                         key={`demo-${demoProjectId}-${levelPosition}`}
-                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&fitStage=true&bridge=5&level=${encodeURIComponent(levelPosition)}`}
+                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&fitStage=true&bridge=4&level=${encodeURIComponent(levelPosition)}`}
                         className="scratch-task-demo-iframe"
                         title="Scratch Demo Preview"
                         allow="autoplay"

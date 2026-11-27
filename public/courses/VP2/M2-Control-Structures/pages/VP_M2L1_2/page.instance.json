@@ -17,7 +17,6 @@
       "level_type": "scratch",
       "selectedType": "scratch",
       "source_project_id": "9935219",
-      "scratchSourceUrl": "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21609&level=1",
       "states": [
         {
           "id": "VP2_M2L1_2_1_state_1",
@@ -25,9 +24,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "title": "Find the coordinates"
+          "title": "Find the coordinates",
+          "demoFullPage": true,
+          "demo_project_id": "M2L1_2_Task_1_Demo.sb3"
         }
-      ]
+      ],
+      "demoFullPage": true,
+      "demo_project_id": "M2L1_2_Task_1_Demo.sb3"
     },
     {
       "id": "VP2_M2L1_2_2",
@@ -40,7 +43,6 @@
       "level_type": "scratch",
       "selectedType": "scratch",
       "source_project_id": "31821225",
-      "scratchSourceUrl": "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21609&level=2",
       "states": [
         {
           "id": "VP2_M2L1_2_2_state_1",
@@ -48,9 +50,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "title": "Endless diamond rain"
+          "title": "Endless diamond rain",
+          "demoFullPage": true,
+          "demo_project_id": "M2L1_2_Task_2_Demo.sb3"
         }
-      ]
+      ],
+      "demoFullPage": true,
+      "demo_project_id": "M2L1_2_Task_2_Demo.sb3"
     },
     {
       "id": "VP2_M2L1_2_3",
@@ -63,7 +69,6 @@
       "level_type": "scratch",
       "selectedType": "scratch",
       "source_project_id": "9935545",
-      "scratchSourceUrl": "https://learn.alg.academy/lesson?module=2&lesson=9520&task=21609&level=3",
       "states": [
         {
           "id": "VP2_M2L1_2_3_state_1",
@@ -71,9 +76,13 @@
           "position": 1,
           "type": "scratch",
           "selectedType": "scratch",
-          "title": "Endless meteor shower"
+          "title": "Endless meteor shower",
+          "demoFullPage": true,
+          "demo_project_id": "M2L1_2_Task_3_Demo.sb3"
         }
-      ]
+      ],
+      "demoFullPage": true,
+      "demo_project_id": "M2L1_2_Task_3_Demo.sb3"
     }
   ]
 }

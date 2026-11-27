@@ -1201,16 +1201,6 @@ export default function ActivityRouter(props) {
   }
 
   if (rendererType === 'scratch-task') {
-    if (nextTask.scratchSourceUrl) {
-      return (
-        <section className="empty-screen" aria-label={nextTask.title}>
-          <h2>{nextTask.title}</h2>
-          <a href={nextTask.scratchSourceUrl} target="_blank" rel="noopener noreferrer">
-            Open Scratch game on Algorithmics
-          </a>
-        </section>
-      );
-    }
     return <ScratchTask key={taskId} {...rendererProps} task={nextTask} />;
   }
 

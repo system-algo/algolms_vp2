@@ -96,6 +96,8 @@
         `;
         document.head.appendChild(style);
 
+        let fittedStage;
+        let fittedTransform;
         const fitDemoStage = () => {
           const stageWrapper = document.querySelector('[class*="stage_stage-wrapper_"]');
           const stage = stageWrapper?.querySelector('[class*="stage_stage_"]');
@@ -106,7 +108,15 @@
           const maxScale = params.get('fitStage') === 'true' ? Infinity : 1;
           const scale = Math.min(maxScale, window.innerWidth / w, window.innerHeight / h);
           if (!Number.isFinite(scale) || scale <= 0) return false;
-          stageWrapper.style.setProperty('transform', `translate(-50%, -50%) scale(${scale})`, 'important');
+          const transform = `translate(-50%, -50%) scale(${scale})`;
+          if (fittedStage !== stageWrapper || fittedTransform !== transform) {
+            fittedStage = stageWrapper;
+            fittedTransform = transform;
+            stageWrapper.style.setProperty('transform', transform, 'important');
+            // Scratch caches the canvas rectangle. Notify it after CSS scaling
+            // so mouse sensing uses the same coordinates as the visible stage.
+            window.dispatchEvent(new Event('resize'));
+          }
           document.documentElement.classList.add('demo-stage-mounted');
           return true;
         };
@@ -114,6 +124,13 @@
         const fitTimer = setInterval(fitDemoStage, 250);
         setTimeout(() => clearInterval(fitTimer), 15000);
         window.addEventListener('resize', fitDemoStage);
+        const refreshPointerBounds = (event) => {
+          if (event.target === fittedStage?.querySelector('canvas')) {
+            window.dispatchEvent(new Event('resize'));
+          }
+        };
+        document.addEventListener('mousedown', refreshPointerBounds, true);
+        document.addEventListener('touchstart', refreshPointerBounds, { capture: true, passive: true });
             } else {
         const editorStyle = document.createElement('style');
         editorStyle.textContent = `

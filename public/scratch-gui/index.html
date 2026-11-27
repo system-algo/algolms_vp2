@@ -506,6 +506,39 @@
         storage.__algoLibraryAssetFallback = true;
       }
 
+      const boundDemoVMs = new WeakSet();
+      function bindDemoVM(vm) {
+        if (boundDemoVMs.has(vm)) return;
+        boundDemoVMs.add(vm);
+
+        const postIOData = vm.postIOData.bind(vm);
+        vm.postIOData = (device, data) => {
+          if (device === 'mouse') {
+            const canvas = vm.renderer?.canvas;
+            const width = canvas?.clientWidth;
+            const height = canvas?.clientHeight;
+            // GUI sends scaled CSS pixels, but renderer picking uses layout pixels.
+            if (width && height && data.canvasWidth && data.canvasHeight) {
+              data = {
+                ...data,
+                x: data.x * width / data.canvasWidth,
+                y: data.y * height / data.canvasHeight,
+                canvasWidth: width,
+                canvasHeight: height,
+              };
+            }
+          }
+          return postIOData(device, data);
+        };
+
+        const reportRunning = (running) => window.parent.postMessage(
+          { type: 'SCRATCH_DEMO_RUNNING', running }, window.location.origin,
+        );
+        vm.on('PROJECT_RUN_START', () => reportRunning(true));
+        vm.on('PROJECT_RUN_STOP', () => reportRunning(false));
+        vm.on('PROJECT_STOP_ALL', () => reportRunning(false));
+      }
+
       async function loadProjectFile(url) {
         if (!url) return false;
         console.log('[AlgoLMS Bridge] Fetching project:', url);
@@ -526,6 +559,7 @@
             await vm.loadProject(arrayBuffer);
             console.log('[AlgoLMS Bridge] Project successfully loaded into VM!');
             if (isPlayerOnly) {
+              bindDemoVM(vm);
               configureScratchToolbox();
               // Never signal readiness before the SB3 has completed loading.
               window.__algoDemoLoaded = true;

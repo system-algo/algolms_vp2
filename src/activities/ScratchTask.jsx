@@ -44,6 +44,7 @@ export default function ScratchTask({
   // Drawer open/collapse state
   const iframeRef = useRef(null);
   const demoIframeRef = useRef(null);
+  const [demoRunning, setDemoRunning] = useState(false);
   const [demoReady, setDemoReady] = useState(false);
   const containerRef = useRef(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(
@@ -300,12 +301,14 @@ export default function ScratchTask({
   // enabling controls, and never send commands to the student's editable project.
   useEffect(() => {
     setDemoReady(false);
+    setDemoRunning(false);
   }, [demoProjectId, levelPosition, isPresentationOpen]);
 
   useEffect(() => {
     const onDemoMessage = (event) => {
       if (event.origin !== window.location.origin || event.source !== demoIframeRef.current?.contentWindow) return;
       if (event.data?.type === 'SCRATCH_DEMO_READY') setDemoReady(true);
+      if (event.data?.type === 'SCRATCH_DEMO_RUNNING') setDemoRunning(event.data.running === true);
     };
     window.addEventListener('message', onDemoMessage);
     return () => window.removeEventListener('message', onDemoMessage);
@@ -769,6 +772,8 @@ export default function ScratchTask({
                         disabled={!demoReady}
                         title={demoReady ? 'Run demo (green flag)' : 'Loading demo'}
                         aria-label="Run demo"
+                        aria-pressed={demoRunning}
+                        style={demoRunning ? { outline: '2px solid #15803d', background: '#dcfce7' } : undefined}
                         onClick={() => controlDemo('SCRATCH_DEMO_RUN')}
                       >
                         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
@@ -792,7 +797,7 @@ export default function ScratchTask({
                       <iframe
                         ref={demoIframeRef}
                         key={`demo-${demoProjectId}-${levelPosition}`}
-                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&fitStage=true&bridge=3&level=${encodeURIComponent(levelPosition)}`}
+                        src={`/scratch-gui/index.html?project=${encodeURIComponent(demoProjectId)}&isPlayerOnly=true&fitStage=true&bridge=4&level=${encodeURIComponent(levelPosition)}`}
                         className="scratch-task-demo-iframe"
                         title="Scratch Demo Preview"
                         allow="autoplay"
